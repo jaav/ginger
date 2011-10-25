@@ -1,0 +1,10 @@
+#{extends 'main.html' /}
+<h2>Edit ActivityTargets</h2>
+<div class="entity">
+#{form @ActivityTargetss.update(), id:'createForm'}
+	#{include 'ActivityTargetss/_form.html' /}
+	<input type="submit" name="submit" value="Save" />
+#{/form}
+</div>
+<a href="@{ActivityTargetss.index}">Cancel</a>
+

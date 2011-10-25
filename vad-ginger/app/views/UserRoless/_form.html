@@ -1,0 +1,44 @@
+ <div class="row">
+  <div class="label">Role Id</div>
+  <div class="field">
+        <select name="entity.roleId.id">
+                      <option value="">(None)</option>              
+        %{ models.Roles.all().fetch().sort{ it.toString() }.each() { }%
+          %{
+            selected = false;
+            if (entity?.roleId?.id == it.id) {
+              selected = true
+            }
+          }%
+          <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option>
+        %{ } }%
+        </select>
+  </div>
+  <span class="error">${errors.forKey('entity.roleId')}</span>
+</div>
+ <div class="row">
+  <div class="label">User Id</div>
+  <div class="field">
+        <select name="entity.userId.id">
+                      <option value="">(None)</option>              
+        %{ models.GingerUsers.all().fetch().sort{ it.toString() }.each() { }%
+          %{
+            selected = false;
+            if (entity?.userId?.id == it.id) {
+              selected = true
+            }
+          }%
+          <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option>
+        %{ } }%
+        </select>
+  </div>
+  <span class="error">${errors.forKey('entity.userId')}</span>
+</div>
+ <div class="row">
+  <div class="label"></div>
+  <div class="field">
+      <input type="hidden" name="entity.id" value="${entity?.id}"/>
+  </div>
+  <span class="error">${errors.forKey('entity.id')}</span>
+</div>
+

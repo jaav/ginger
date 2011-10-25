@@ -1,0 +1,46 @@
+#{extends 'main.html' /}
+<h2>View GingerUsers</h2>
+<div class="entity">
+	<div class="row">
+		<span class="elem">
+			password:
+		</span>
+		<span class="value">
+      ${entity.password}
+		</span>
+	</div>
+	<div class="row">
+		<span class="elem">
+			email:
+		</span>
+		<span class="value">
+      ${entity.email}
+		</span>
+	</div>
+	<div class="row">
+		<span class="elem">
+			firstName:
+		</span>
+		<span class="value">
+      ${entity.firstName}
+		</span>
+	</div>
+	<div class="row">
+		<span class="elem">
+			lastName:
+		</span>
+		<span class="value">
+      ${entity.lastName}
+		</span>
+	</div>
+	<div class="row">
+		<span class="elem">
+			id:
+		</span>
+		<span class="value">
+      ${entity.id}
+		</span>
+	</div>
+</div>
+<a href="@{GingerUserss.index}">Back</a>
+

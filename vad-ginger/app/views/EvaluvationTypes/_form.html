@@ -1,0 +1,15 @@
+ <div class="row">
+  <div class="label">Eval Type</div>
+  <div class="field">
+      <input type="text" name="entity.evalType" value="${entity?.evalType}"/>
+  </div>
+  <span class="error">${errors.forKey('entity.evalType')}</span>
+</div>
+ <div class="row">
+  <div class="label"></div>
+  <div class="field">
+      <input type="hidden" name="entity.id" value="${entity?.id}"/>
+  </div>
+  <span class="error">${errors.forKey('entity.id')}</span>
+</div>
+

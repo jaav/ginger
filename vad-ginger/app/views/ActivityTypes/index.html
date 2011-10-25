@@ -1,0 +1,30 @@
+#{extends 'main.html' /}
+<h2>ActivityTypes</h2>
+<table class="entity ActivityType">
+	<thead>
+		<tr>
+			<th><!-- actions --></th>
+				<th>Ouder</th>
+				<th>Naam</th>
+				<th>Beschrijving</th>
+				<th>Id</th>
+		</tr>
+	</thead>
+	<tbody>
+	#{list items:entities, as:'entity'}
+		<tr>
+			<td>
+				<a href="@{ActivityTypes.show(entity.id)}">Show</a>&nbsp;
+				<a href="@{ActivityTypes.edit(entity.id)}">Edit</a>&nbsp;
+				<a href="@{ActivityTypes.delete(entity.id)}" onclick="if (!confirm('Are you sure you want to delete this record?')) return false;">Delete</a>
+			</td>
+					<td>${entity.ouder}</td>
+					<td>${entity.naam}</td>
+					<td>${entity.beschrijving}</td>
+					<td>${entity.id}</td>
+		</tr>
+	#{/list}
+	</tbody>
+</table>
+<a href="@{ActivityTypes.create}">Create</a>
+

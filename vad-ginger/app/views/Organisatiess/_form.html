@@ -1,0 +1,93 @@
+ <div class="row">
+  <div class="label">User Id</div>
+  <div class="field">
+        <select name="entity.userId.id">
+                      <option value="">(None)</option>              
+        %{ models.GingerUsers.all().fetch().sort{ it.toString() }.each() { }%
+          %{
+            selected = false;
+            if (entity?.userId?.id == it.id) {
+              selected = true
+            }
+          }%
+          <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option>
+        %{ } }%
+        </select>
+  </div>
+  <span class="error">${errors.forKey('entity.userId')}</span>
+</div>
+ <div class="row">
+  <div class="label">Ouder</div>
+  <div class="field">
+        <select name="entity.ouder.id">
+                      <option value="">(None)</option>              
+        %{ models.Organisaties.all().fetch().sort{ it.toString() }.each() { }%
+          %{
+            selected = false;
+            if (entity?.ouder?.id == it.id) {
+              selected = true
+            }
+          }%
+          <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option>
+        %{ } }%
+        </select>
+  </div>
+  <span class="error">${errors.forKey('entity.ouder')}</span>
+</div>
+ <div class="row">
+  <div class="label">Naam</div>
+  <div class="field">
+      <input type="text" name="entity.naam" value="${entity?.naam}"/>
+  </div>
+  <span class="error">${errors.forKey('entity.naam')}</span>
+</div>
+ <div class="row">
+  <div class="label">Organisatie Netwerk</div>
+  <div class="field">
+      <input type="text" name="entity.organisatieNetwerk" value="${entity?.organisatieNetwerk}"/>
+  </div>
+  <span class="error">${errors.forKey('entity.organisatieNetwerk')}</span>
+</div>
+ <div class="row">
+  <div class="label">Adres</div>
+  <div class="field">
+      <input type="text" name="entity.adres" value="${entity?.adres}"/>
+  </div>
+  <span class="error">${errors.forKey('entity.adres')}</span>
+</div>
+ <div class="row">
+  <div class="label">Postcode</div>
+  <div class="field">
+      <input type="text" name="entity.postcode" value="${entity?.postcode}"/>
+  </div>
+  <span class="error">${errors.forKey('entity.postcode')}</span>
+</div>
+ <div class="row">
+  <div class="label">Gemeente</div>
+  <div class="field">
+      <input type="text" name="entity.gemeente" value="${entity?.gemeente}"/>
+  </div>
+  <span class="error">${errors.forKey('entity.gemeente')}</span>
+</div>
+ <div class="row">
+  <div class="label">Land</div>
+  <div class="field">
+      <input type="text" name="entity.land" value="${entity?.land}"/>
+  </div>
+  <span class="error">${errors.forKey('entity.land')}</span>
+</div>
+ <div class="row">
+  <div class="label">Centrum</div>
+  <div class="field">
+      <input type="text" name="entity.centrum" value="${entity?.centrum}"/>
+  </div>
+  <span class="error">${errors.forKey('entity.centrum')}</span>
+</div>
+ <div class="row">
+  <div class="label"></div>
+  <div class="field">
+      <input type="hidden" name="entity.id" value="${entity?.id}"/>
+  </div>
+  <span class="error">${errors.forKey('entity.id')}</span>
+</div>
+
