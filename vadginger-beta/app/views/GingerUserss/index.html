@@ -1,0 +1,66 @@
+#{extends 'main.html' /}
+
+<h2>GingerUserss</h2>
+
+<table class="entity GingerUsers">
+	<thead>
+		<tr>
+			<th><!-- actions --></th>
+			
+	        
+				<th>Password</th>
+	        
+			
+	        
+				<th>Email</th>
+	        
+			
+	        
+				<th>First Name</th>
+	        
+			
+	        
+				<th>Last Name</th>
+	        
+			
+	        
+				<th>Id</th>
+	        
+			
+		</tr>
+	</thead>
+	<tbody>
+	#{list items:entities, as:'entity'}
+		<tr>
+			<td>
+				<a href="@{GingerUserss.show(entity.id)}">Show</a>&nbsp;
+				<a href="@{GingerUserss.edit(entity.id)}">Edit</a>&nbsp;
+				<a href="@{GingerUserss.delete(entity.id)}" onclick="if (!confirm('Are you sure you want to delete this record?')) return false;">Delete</a>
+			</td>
+			
+        
+					<td>${entity.password}</td>
+        
+			
+        
+					<td>${entity.email}</td>
+        
+			
+        
+					<td>${entity.firstName}</td>
+        
+			
+        
+					<td>${entity.lastName}</td>
+        
+			
+        
+					<td>${entity.id}</td>
+        
+			
+		</tr>
+	#{/list}
+	</tbody>
+</table>
+
+<a href="@{GingerUserss.create}">Create</a>

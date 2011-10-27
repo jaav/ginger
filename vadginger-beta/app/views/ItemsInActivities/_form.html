@@ -1,0 +1,95 @@
+
+ <div class="row">
+  <div class="label">Activity Id</div>
+  <div class="field">
+    
+    
+    
+    
+      
+      
+        <select name="entity.activityId.id">
+              
+                      <option value="">(None)</option>              
+              
+        %{ models.Activity.all().fetch().sort{ it.toString() }.each() { }%
+          
+          %{
+            selected = false;
+            if (entity?.activityId?.id == it.id) {
+              selected = true
+            }
+          }%
+          <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option>
+        %{ } }%
+        </select>
+      
+    
+    
+    
+    
+    
+    
+    
+  </div>
+  <span class="error">${errors.forKey('entity.activityId')}</span>
+</div>
+
+
+ <div class="row">
+  <div class="label">Item Id</div>
+  <div class="field">
+    
+    
+    
+    
+      
+      
+        <select name="entity.itemId.id">
+              
+                      <option value="">(None)</option>              
+              
+        %{ models.Items.all().fetch().sort{ it.toString() }.each() { }%
+          
+          %{
+            selected = false;
+            if (entity?.itemId?.id == it.id) {
+              selected = true
+            }
+          }%
+          <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option>
+        %{ } }%
+        </select>
+      
+    
+    
+    
+    
+    
+    
+    
+  </div>
+  <span class="error">${errors.forKey('entity.itemId')}</span>
+</div>
+
+
+ <div class="row">
+  <div class="label"></div>
+  <div class="field">
+    
+    
+    
+    
+    
+    
+    
+    
+      <input type="hidden" name="entity.id" value="${entity?.id}"/>
+    
+    
+    
+  </div>
+  <span class="error">${errors.forKey('entity.id')}</span>
+</div>
+
+

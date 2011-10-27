@@ -1,0 +1,149 @@
+
+ <div class="row">
+  <div class="label">User ID</div>
+  <div class="field">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <input type="text" name="entity.userID" value="${entity?.userID}"/>
+    
+  </div>
+  <span class="error">${errors.forKey('entity.userID')}</span>
+</div>
+
+
+ <div class="row">
+  <div class="label">First Name</div>
+  <div class="field">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <input type="text" name="entity.firstName" value="${entity?.firstName}"/>
+    
+  </div>
+  <span class="error">${errors.forKey('entity.firstName')}</span>
+</div>
+
+
+ <div class="row">
+  <div class="label">Last Name</div>
+  <div class="field">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <input type="text" name="entity.lastName" value="${entity?.lastName}"/>
+    
+  </div>
+  <span class="error">${errors.forKey('entity.lastName')}</span>
+</div>
+
+
+ <div class="row">
+  <div class="label">Email Address</div>
+  <div class="field">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <input type="text" name="entity.emailAddress" value="${entity?.emailAddress}"/>
+    
+  </div>
+  <span class="error">${errors.forKey('entity.emailAddress')}</span>
+</div>
+
+
+ <div class="row">
+  <div class="label">Role</div>
+  <div class="field">
+    
+    
+    
+      <select name="entity.role">
+        
+          <option value="MEMBER" 
+            ${(entity?.role?.name() == 'MEMBER') ? 'selected':''}>MEMBER</option>
+        
+          <option value="ADMIN" 
+            ${(entity?.role?.name() == 'ADMIN') ? 'selected':''}>ADMIN</option>
+        
+      </select>
+    
+    
+    
+    
+    
+    
+    
+    
+  </div>
+  <span class="error">${errors.forKey('entity.role')}</span>
+</div>
+
+
+ <div class="row">
+  <div class="label">Login Count</div>
+  <div class="field">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <input type="text" name="entity.loginCount" value="${entity?.loginCount}"/>
+    
+  </div>
+  <span class="error">${errors.forKey('entity.loginCount')}</span>
+</div>
+
+
+ <div class="row">
+  <div class="label"></div>
+  <div class="field">
+    
+    
+    
+    
+    
+    
+    
+    
+      <input type="hidden" name="entity.id" value="${entity?.id}"/>
+    
+    
+    
+  </div>
+  <span class="error">${errors.forKey('entity.id')}</span>
+</div>
+
+

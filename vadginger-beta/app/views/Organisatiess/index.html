@@ -1,0 +1,106 @@
+#{extends 'main.html' /}
+
+<h2>Organisatiess</h2>
+
+<table class="entity Organisaties">
+	<thead>
+		<tr>
+			<th><!-- actions --></th>
+			
+	        
+				<th>User Id</th>
+	        
+			
+	        
+				<th>Ouder</th>
+	        
+			
+	        
+				<th>Naam</th>
+	        
+			
+	        
+				<th>Organisatie Netwerk</th>
+	        
+			
+	        
+				<th>Adres</th>
+	        
+			
+	        
+				<th>Postcode</th>
+	        
+			
+	        
+				<th>Gemeente</th>
+	        
+			
+	        
+				<th>Land</th>
+	        
+			
+	        
+				<th>Centrum</th>
+	        
+			
+	        
+				<th>Id</th>
+	        
+			
+		</tr>
+	</thead>
+	<tbody>
+	#{list items:entities, as:'entity'}
+		<tr>
+			<td>
+				<a href="@{Organisatiess.show(entity.id)}">Show</a>&nbsp;
+				<a href="@{Organisatiess.edit(entity.id)}">Edit</a>&nbsp;
+				<a href="@{Organisatiess.delete(entity.id)}" onclick="if (!confirm('Are you sure you want to delete this record?')) return false;">Delete</a>
+			</td>
+			
+        
+					<td>${entity.userId}</td>
+        
+			
+        
+					<td>${entity.ouder}</td>
+        
+			
+        
+					<td>${entity.naam}</td>
+        
+			
+        
+					<td>${entity.organisatieNetwerk}</td>
+        
+			
+        
+					<td>${entity.adres}</td>
+        
+			
+        
+					<td>${entity.postcode}</td>
+        
+			
+        
+					<td>${entity.gemeente}</td>
+        
+			
+        
+					<td>${entity.land}</td>
+        
+			
+        
+					<td>${entity.centrum}</td>
+        
+			
+        
+					<td>${entity.id}</td>
+        
+			
+		</tr>
+	#{/list}
+	</tbody>
+</table>
+
+<a href="@{Organisatiess.create}">Create</a>
