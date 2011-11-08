@@ -1,0 +1,48 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                                       Application.index
+*       /admin                                  module:crud
+GET     /activity                               Activities.index
+GET     /activity/search						Activities.searchForm
+GET		/sublocations/list						Locationss.list
+GET     /ActivityEvaluvatorss                   ActivityEvaluvatorss.index
+GET     /ActivitySectorss                       ActivitySectorss.index
+GET     /ActivityTargetss                       ActivityTargetss.index
+GET     /ActivityTypeJunctions                  ActivityTypeJunctions.index
+GET     /ActivityTypes                          ActivityTypes.index
+GET     /AttendantTypes                         AttendantTypes.index
+GET		/attendantTypes/list					AttendantTypes.list
+GET		/attendantTypes/nList					AttendantTypes.nList
+GET     /EvaluvationTypes                       EvaluvationTypes.index
+GET     /Evaluvatorss                           Evaluvatorss.index
+GET     /GingerUserss                           GingerUserss.index
+GET     /ItemsInActivities                      ItemsInActivities.index
+GET     /Itemss                                 Itemss.index
+GET     /Locationss                             Locationss.index
+GET     /MaterialsInActivities                  MaterialsInActivities.index
+GET     /Materialss                             Materialss.index
+GET     /Organisatiess                          Organisatiess.index
+GET		/suborganizations/list					Organisatiess.list
+GET     /Roless                                 Roless.index
+GET     /SectorActivityJunctions                SectorActivityJunctions.index
+GET     /Sectorss                               Sectorss.index
+GET     /sectors/list                           Sectorss.list
+GET     /TargetTypes                            TargetTypes.index
+GET     /UserRoless                             UserRoless.index
+#GET     /login                                  Secure.login
+#GET     /logout                                 Secure.logout
+
+
+
+
+# Ignore favicon requests
+GET     /favicon.ico                            404
+
+# Map static resources from the /app/public folder to the /public path
+GET     /public/                                staticDir:public
+
+# Catch all
+*       /{controller}/{action}                  {controller}.{action}

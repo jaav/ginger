@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>#{get 'title' /}</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/default.css'}">
+        <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/main.css'}">
+        <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/jquery-ui-1.8.2.custom.css'}">
+        #{get 'moreStyles' /}
+        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+        <script src="@{'/public/javascripts/jquery-1.4.2.min.js'}" type="text/javascript" charset="utf-8"></script>
+        <script src="@{'/public/javascripts/jquery-ui-1.8.2.custom.min.js'}" type="text/javascript" charset="utf-8"></script>
+        #{get 'moreScripts' /}
+    </head>
+    <body>
+		<div id="header"> 
+		     <a class="title" href="@{Application.index}">VAD Ginger .be</a>
+		</div>
+		<div id="content-container">
+      <div id="menu">
+                <span style="float:right;">
+          #{if session.get("username") == null}
+          <a href="/secure/login">Login</a>
+          #{/if}
+          #{else}
+          <a href="/secure/logout">Logout</a>
+          #{/else}
+        </span>
+              </div>
+			<div id="content">
+		        #{if flash.error}
+		            <div class="fError">
+		                <strong>${play.i18n.Messages.get(flash.error)}</strong>
+		            </div>
+		        #{/if}
+		        #{if flash.success}
+		            <div class="fSuccess">
+		                <strong>${play.i18n.Messages.get(flash.success)}</strong>
+		            </div>
+		        #{/if}
+				
+		        #{doLayout /}
+		    </div>
+		</div>
+		<div id="footer">
+			<script type="text/javascript"> 
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+			<script type="text/javascript">
+			//TODO: add Google Analytics tracking ID and uncomment
+			//try {
+			//var pageTracker = _gat._getTracker("YOUR_TRACKING_ID");
+			//pageTracker._trackPageview();
+			//} catch(err) {}
+			</script>
+		</div>
+    </body>
+</html>

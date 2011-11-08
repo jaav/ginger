@@ -1,0 +1,50 @@
+#{extends 'main.html' /}
+
+<h2>Materialss</h2>
+
+<table class="entity Materials">
+	<thead>
+		<tr>
+			<th><!-- actions --></th>
+			
+	        
+				<th>Naam</th>
+	        
+			
+	        
+				<th>Beschrijving</th>
+	        
+			
+	        
+				<th>Id</th>
+	        
+			
+		</tr>
+	</thead>
+	<tbody>
+	#{list items:entities, as:'entity'}
+		<tr>
+			<td>
+				<a href="@{Materialss.show(entity.id)}">Show</a>&nbsp;
+				<a href="@{Materialss.edit(entity.id)}">Edit</a>&nbsp;
+				<a href="@{Materialss.delete(entity.id)}" onclick="if (!confirm('Are you sure you want to delete this record?')) return false;">Delete</a>
+			</td>
+			
+        
+					<td>${entity.naam}</td>
+        
+			
+        
+					<td>${entity.beschrijving}</td>
+        
+			
+        
+					<td>${entity.id}</td>
+        
+			
+		</tr>
+	#{/list}
+	</tbody>
+</table>
+
+<a href="@{Materialss.create}">Create</a>

@@ -1,0 +1,66 @@
+#{extends 'main.html' /}
+
+<h2>Locationss</h2>
+
+<table class="entity Locations">
+	<thead>
+		<tr>
+			<th><!-- actions --></th>
+			
+	        
+				<th>Ouder</th>
+	        
+			
+	        
+				<th>Naam</th>
+	        
+			
+	        
+				<th>Beschrijving</th>
+	        
+			
+	        
+				<th>Is Cluster</th>
+	        
+			
+	        
+				<th>Id</th>
+	        
+			
+		</tr>
+	</thead>
+	<tbody>
+	#{list items:entities, as:'entity'}
+		<tr>
+			<td>
+				<a href="@{Locationss.show(entity.id)}">Show</a>&nbsp;
+				<a href="@{Locationss.edit(entity.id)}">Edit</a>&nbsp;
+				<a href="@{Locationss.delete(entity.id)}" onclick="if (!confirm('Are you sure you want to delete this record?')) return false;">Delete</a>
+			</td>
+			
+        
+					<td>${entity.ouder}</td>
+        
+			
+        
+					<td>${entity.naam}</td>
+        
+			
+        
+					<td>${entity.beschrijving}</td>
+        
+			
+        
+					<td>${entity.isCluster}</td>
+        
+			
+        
+					<td>${entity.id}</td>
+        
+			
+		</tr>
+	#{/list}
+	</tbody>
+</table>
+
+<a href="@{Locationss.create}">Create</a>

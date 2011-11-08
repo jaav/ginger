@@ -1,0 +1,12 @@
+#{extends 'main.html' /}
+
+<h2>Edit ActivityType</h2>
+
+<div class="entity">
+#{form @ActivityTypes.update(), id:'createForm'}
+	#{include 'ActivityTypes/_form.html' /}
+	<input type="submit" name="submit" value="Save" />
+#{/form}
+</div>
+
+<a href="@{ActivityTypes.index}">Cancel</a>
