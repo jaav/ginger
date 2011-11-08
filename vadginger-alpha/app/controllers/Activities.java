@@ -235,7 +235,7 @@ private static void getActivityByLocation(List<models.Activity> activities) {
 	   if (locId==null)
 		   locId = getParam("location");
 	   if (locId!=null&&!locId.trim().equalsIgnoreCase("")) {
-		   List<models.Locations> locs = models.Locations.find("id is " + locId).fetch();
+		   models.Locations locs = models.Locations.find("id is " + locId).first();
 		   List<Activity> acts = Activity.find("byLocationId", locs).fetch();
 		   activities.addAll(acts);
 	   }
