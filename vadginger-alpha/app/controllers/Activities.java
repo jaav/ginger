@@ -1,8 +1,13 @@
 package controllers;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Hashtable;
+import java.util.Iterator;
 import java.util.List;
+
+import javax.persistence.TemporalType;
 
 import org.apache.commons.lang.StringUtils;
 
@@ -54,6 +59,7 @@ public class Activities extends Controller {
 			flash.error(Messages.get("scaffold.validation"));
 			render("@create", entity);
 		}
+		getDate(entity);
 		entity.save();
 		storeEvaluvationsAndEvaluvators(entity);
 		storeActivityTargets(entity);
@@ -63,6 +69,22 @@ public class Activities extends Controller {
 		storeMaterials(entity);
 		flash.success(Messages.get("scaffold.created", "Activity"));
 		index();
+	}
+
+	private static void getDate(Activity entity) {
+		String actDate = request.params.get("activity_date");
+		Date d = getDateFromString(actDate);
+		entity.activityDate = d;
+	}
+
+	private static Date getDateFromString(String actDate) {
+		Date d = null;
+		try {
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		 d = sdf.parse(actDate);
+		} catch (Exception e){}
+		return d;
 	}
 
 	private static void storeEvaluvationsAndEvaluvators(Activity entity) {
@@ -182,6 +204,7 @@ public class Activities extends Controller {
 	   List<models.Activity> entities = new ArrayList<Activity>();
 	   boolean internalActivity = (getParam("internal_activity")!=null);
 	   boolean nonInternalActivity = (getParam("non_internal_activity")!=null);
+	   getActivityByDate(entities);
 	   getActivityByItemsUsed(entities);
 	   getActivityBySector(entities);
 	   getActivityByLocation(entities);
@@ -189,8 +212,31 @@ public class Activities extends Controller {
 	   getActivityByDescription(entities);
 	   getActivityByActvityType(entities);
 	   getActivityByActivityTargets(entities);
+	   Iterator<Activity> actIter = entities.iterator();
+	   if (!(internalActivity && nonInternalActivity))  {
+		      while(actIter.hasNext()) {
+		    	  Activity e = actIter.next();
+				   if (e.internalActivity&&internalActivity) {
+					  actIter.remove();
+			} else if(!e.internalActivity&&nonInternalActivity)
+				actIter.remove();
+	   }
+	   }
 	   renderTemplate("Activities/index.html", entities);
    }
+
+private static void getActivityByDate(List<models.Activity> entities) {
+	Date fromDate = getDateFromString(getParam("from_date"));
+	   Date toDate = getDateFromString(getParam("to_date"));
+	   if (fromDate!=null&&toDate!=null) {
+	   List<models.Activity> ae = models.Activity.em().createQuery("SELECT e " +
+               "FROM Activity e " +
+               "WHERE e.activityDate BETWEEN :start AND :end")
+  .setParameter("start", fromDate, TemporalType.DATE)
+  .setParameter("end", toDate, TemporalType.DATE)
+  .getResultList();
+	   entities.addAll(ae); }
+}
 
 private static void getActivityByActivityTargets(
 		List<models.Activity> activities) {

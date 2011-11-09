@@ -90,6 +90,29 @@
 </div>
 <hr>
 <div class="row">
+  <div class="label">Datum vanaf</div>
+  <div class="field">
+
+      <input type="text" name="from_date" id="datepicker"/>
+      <script>
+      $( "#datepicker" ).datepicker({ appendText: '(yyyy-mm-dd)' });
+  </script>
+  </div>
+  <span class="error">${errors.forKey('entity.activityDate')}</span>
+</div>
+<div class="row">
+  <div class="label">Datum tot en met</div>
+  <div class="field">
+
+      <input type="text" name="to_date" id="datepicker1"/>
+      <script>
+      $( "#datepicker1" ).datepicker({ appendText: '(yyyy-mm-dd)' });
+  </script>
+  </div>
+  <span class="error">${errors.forKey('entity.activityDate')}</span>
+</div>
+<hr>
+<div class="row">
   <div class="label">Geef een korte omschrijving van de activiteit:</div>
   <div class="field">
 

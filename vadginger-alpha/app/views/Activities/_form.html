@@ -44,6 +44,18 @@
   <span class="error">${errors.forKey('entity.internalActivity')}</span>
 </div>
 <hr>
+<div class="row">
+  <div class="label">Op welke dag vond de activiteit plaats?</div>
+  <div class="field">
+
+      <input type="text" name="activity_date" value="${entity?.activityDate} id="datepicker"/>
+      <script>
+      $( "#datepicker" ).datepicker({ appendText: '(yyyy-mm-dd)' });
+  </script>
+  </div>
+  <span class="error">${errors.forKey('entity.activityDate')}</span>
+</div>
+
  <div class="row">
   <div class="label">Geef een korte omschrijving van de activiteit:</div>
   <div class="field">
@@ -222,14 +234,14 @@
   <div class="field">
         <select name="activity_type">
                       <option value="">(None)</option>              
-        %{ models.ActivityType.all().fetch().sort{ it.toString() }.each() { }%
+        %{ models.ActivityType.find("ouder is null").fetch().sort{ it.toString() }.each() { }%
           %{
             selected = false;
             if (entity?.userId?.id == it.id) {
               selected = true
             }
           }%
-          <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option>
+          <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it.naam}</option>
         %{ } }%
         </select>
   </div>

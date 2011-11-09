@@ -1,6 +1,7 @@
 package models;
 
 import java.sql.Clob;
+import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
@@ -17,6 +18,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.persistence.TypedQuery;
 
 import play.data.validation.Required;
@@ -89,6 +92,10 @@ public class Activity extends Model {
 	
 	@ManyToOne
 	public VadGingerUser userId;
+	
+	@Column(name = "Activity_date")
+	@Temporal(TemporalType.TIMESTAMP) 
+	public Date	activityDate;
 	
 	/*@ManyToOne
 	public VadGingerUser userId;
