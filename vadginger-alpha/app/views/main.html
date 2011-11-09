@@ -16,19 +16,9 @@
   #{get 'moreScripts' /}
 </head>
 <body class="yui-skin-sam">
-<div id="doc3" class="yui-t2">
+<div id="doc3" class="yui-t3">
   <div id="hd" role="banner">
     <h1>VAD Ginger .be</h1>
-    <div id="menu">
-      <span style="float:right;">
-        #{if session.get("username") == null}
-        <a href="/secure/login">Login</a>
-        #{/if}
-        #{else}
-        <a href="/secure/logout">Logout</a>
-        #{/else}
-      </span>
-    </div>
   </div>
   <div id="bd" role="main">
     <div id="yui-main">
@@ -54,12 +44,44 @@
       <div id="accordion">
           <h3><a href="#">Meer Info</a></h3>
           <div>First content</div>
-          <h3><a href="#">Gebruikers</a></h3>
-          <div>First content</div>
+          <h3><a href="#">Gebruiker(s)</a></h3>
+          <div><ul>
+            <li><a href="@{VadGingerUsers.index()}">Toon Gebruikers</a></li>
+            <li><a href="@{VadGingerUsers.create()}">Nieuwe Gebruiker</a></li>
+            <li>
+              #{if session.get("username") == null}
+              <a href="/secure/login">Login</a>
+              #{/if}
+              #{else}
+              <a href="/secure/logout">Logout</a>
+              #{/else}
+            </li>
+          </ul></div>
           <h3><a href="#">Activiteiten</a></h3>
-          <div>Second content</div>
+          <div><ul>
+            <li><a href="@{Activities.index()}">Toon Activiteiten</a></li>
+            <li><a href="@{Activities.search()}">Filter Activiteiten</a></li>
+            <li><a href="@{Activities.create()}">Nieuwe Activiteit</a></li>
+          </ul></div>
           <h3><a href="#">Organisaties</a></h3>
-          <div>Second content</div>
+          <div><ul>
+            <li><a href="@{Organisatiess.index()}">Toon Organisaties</a></li>
+            <li><a href="@{Organisatiess.create()}">Nieuwe Organisatie</a></li>
+          </ul></div>
+          <h3><a href="#">Administratie</a></h3>
+          <div><ul>
+            <li>Activiteit types (<a href="@{ActivityTypes.index()}">Lijst</a> / <a href="@{ActivityTypes.create()}">Nieuw</a>)</li>
+            <li>Sectoren (<a href="@{ActivitySectorss.index()}">Lijst</a> / <a href="@{ActivitySectorss.create()}">Nieuw</a>)</li>
+            <li>Doelgroepen (<a href="@{ActivityTargetss.index()}">Lijst</a> / <a href="@{ActivityTargetss.create()}">Nieuw</a>)</li>
+            <li>Doelgroep types (<a href="@{TargetTypes.index()}">Lijst</a> / <a href="@{TargetTypes.create()}">Nieuw</a>)</li>
+            <li>Evaluators (<a href="@{ActivityEvaluvatorss.index()}">Lijst</a> / <a href="@{ActivityEvaluvatorss.create()}">Nieuw</a>)</li>
+            <li>Evaluator types (<a href="@{ActivityEvaluvatorss.index()}">Lijst</a> / <a href="@{ActivityEvaluvatorss.create()}">Nieuw</a>)</li>
+            <li>Deelnemer types (<a href="@{AttendantTypes.index()}">Lijst</a> / <a href="@{AttendantTypes.create()}">Nieuw</a>)</li>
+            <li>Items (<a href="@{Itemss.index()}">Lijst</a> / <a href="@{Itemss.create()}">Nieuw</a>)</li>
+            <li>Locaties (<a href="@{Locationss.index()}">Lijst</a> / <a href="@{Locationss.create()}">Nieuw</a>)</li>
+            <li>Materialen (<a href="@{Materialss.index()}">Lijst</a> / <a href="@{Materialss.create()}">Nieuw</a>)</li>
+            <li></li>
+          </ul></div>
           <h3><a href="#">Tips voor Gebruikers</a></h3>
           <div>Second content</div>
           <h3><a href="#">Wachtwoord vergeten?</a></h3>
