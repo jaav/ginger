@@ -23,7 +23,8 @@ public class Security extends Secure.Security {
       flash.error("Invalid userid or password.");
       return false;
     }
-    String passwordHash = md5(password);
+    //String passwordHash = md5(password);
+    String passwordHash = play.libs.Codec.encodeBASE64(Security.md5(password));
     boolean match = user != null && user.passwordHash.equals(passwordHash);
     if (match) {
     	session.put("userId", user.id);

@@ -1,0 +1,32 @@
+/*
+  Adapted from original content found here:  http://intensivstation.ch/en/templates/
+
+  Licensed under the Creative Commons Attribution 1.0 License: http://creativecommons.org/licenses/by/1.0/
+*/
+
+body {
+  font-family: Lucida Grande, Lucida Sans, Arial, sans-serif;
+  font-size: 0.7em;
+}
+
+#hd{
+  text-align: center;
+}
+
+#hd h1{
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #2E6E9E;
+}
+
+#ft{
+  text-align: center;
+}
+#ft p{
+  color:#404040;
+  font-size: 1em;
+}
+
+.vad-main-block{
+  padding: 10px;
+}
