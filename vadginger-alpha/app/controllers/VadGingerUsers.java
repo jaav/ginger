@@ -12,23 +12,28 @@ import play.mvc.With;
 
 @With(Secure.class)
 
-public class VadGingerUsers extends Controller {
+public class VadGingerUsers extends GingerController {
+
 	public static void index() {
 		List<VadGingerUser> entities = models.VadGingerUser.all().fetch();
+    setAccordionTab(1);
 		render(entities);
 	}
 
 	public static void create(VadGingerUser entity) {
+    setAccordionTab(1);
 		render(entity);
 	}
 
 	public static void show(java.lang.Long id) {
     VadGingerUser entity = VadGingerUser.findById(id);
+    setAccordionTab(1);
 		render(entity);
 	}
 
 	public static void edit(java.lang.Long id) {
     VadGingerUser entity = VadGingerUser.findById(id);
+    setAccordionTab(1);
 		render(entity);
 	}
 

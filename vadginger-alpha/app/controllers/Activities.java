@@ -343,9 +343,5 @@ private static String getParam(String paramName) {
 	return request.params.get(paramName);
 }
 
-	@After
-	static void setAccordionTab() {
-    renderArgs.put("accordionTab", "3");
-	}
 
 }

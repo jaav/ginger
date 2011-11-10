@@ -14,15 +14,19 @@ public class Statics extends Controller {
 		render();
 	}
 	public static void usersStart() {
+    renderArgs.put("accordionTab", "1");
 		render();
 	}
 	public static void usersData() {
+    renderArgs.put("accordionTab", "1");
 		render();
 	}
 	public static void organisationsStart() {
+    renderArgs.put("accordionTab", "3");
 		render();
 	}
 	public static void activitiesStart() {
+    renderArgs.put("accordionTab", "2");
 		render();
 	}
 	public static void moreInfo() {

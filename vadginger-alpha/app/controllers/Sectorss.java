@@ -12,23 +12,27 @@ import play.mvc.With;
 
 @With(Secure.class)
 
-public class Sectorss extends Controller {
+public class Sectorss extends GingerController {
 	public static void index() {
 		List<Sectors> entities = models.Sectors.all().fetch();
+    setAccordionTab(4);
 		render(entities);
 	}
 
 	public static void create(Sectors entity) {
+    setAccordionTab(4);
 		render(entity);
 	}
 
 	public static void show(java.lang.Long id) {
     Sectors entity = Sectors.findById(id);
+    setAccordionTab(4);
 		render(entity);
 	}
 
 	public static void edit(java.lang.Long id) {
     Sectors entity = Sectors.findById(id);
+    setAccordionTab(4);
 		render(entity);
 	}
 

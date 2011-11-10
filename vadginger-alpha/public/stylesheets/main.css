@@ -36,6 +36,14 @@ body {
   padding: 10px;
 }
 
+.vad-main-block h2{
+  font-size: 1.6em;
+  font-weight: bold;
+  text-align:center;
+  color: #2E6E9E;
+  margin: 0 0 0.5em 0;
+}
+
 .statics{
 
 }
@@ -57,4 +65,95 @@ body {
 }
 .statics .content p.subtitle{
   font-weight: bold;
+}
+
+/* *********** TABLES ************ */
+#mytable {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+caption {
+	padding: 0 0 5px 0;
+	width: 700px;
+	font: italic 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	text-align: right;
+}
+
+#mytable th {
+  font-weight: bold;
+	color: #2E6E9E;
+	border-right: 1px solid #A6C9E2;
+	border-bottom: 1px solid #A6C9E2;
+	border-top: 1px solid #A6C9E2;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 6px 6px 6px 12px;
+	background-color: #d1e8ff;
+}
+
+#mytable th.nobg {
+	border-top: 0;
+	border-left: 0;
+	border-right: 1px solid #A6C9E2;
+	background: none;
+}
+
+#mytable td {
+	border-right: 1px solid #A6C9E2;
+	border-bottom: 1px solid #A6C9E2;
+	background: #fff;
+	padding: 6px 6px 6px 12px;
+}
+
+
+#mytable td.alt {
+	background: #F5FAFA;
+	color: #797268;
+}
+
+#mytable th.spec {
+	border-left: 1px solid #A6C9E2;
+	border-top: 0;
+	background: #fff url(images/bullet1.gif) no-repeat;
+	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+#mytable th.specalt {
+	border-left: 1px solid #A6C9E2;
+	border-top: 0;
+	background: #f5fafa url(images/bullet2.gif) no-repeat;
+	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #797268;
+}
+
+#mytable .actiontable{
+  width: 60px;
+}
+
+#mytable .actiontable td{
+  border: 0;
+  padding: 0;
+}
+
+.actionbutton{
+  background: transparent url("images/actions.png") no-repeat;
+  float: left;
+  width: 16px;
+  height: 16px;
+}
+
+.adder{
+  background-position: -17px 0px;
+}
+.editor{
+  background-position: -34px 0px;
+}
+.deleter{
+  background-position: -50px 0px;
+}
+.viewer{
+  background-position: 0px 0px;
 }

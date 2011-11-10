@@ -15,20 +15,24 @@ import play.mvc.With;
 public class ActivityTypes extends Controller {
 	public static void index() {
 		List<ActivityType> entities = models.ActivityType.all().fetch();
+    setAccordianTab();
 		render(entities);
 	}
 
 	public static void create(ActivityType entity) {
+    setAccordianTab();
 		render(entity);
 	}
 
 	public static void show(java.lang.Long id) {
     ActivityType entity = ActivityType.findById(id);
+    setAccordianTab();
 		render(entity);
 	}
 
 	public static void edit(java.lang.Long id) {
     ActivityType entity = ActivityType.findById(id);
+    setAccordianTab();
 		render(entity);
 	}
 
@@ -60,5 +64,9 @@ public class ActivityTypes extends Controller {
 		flash.success(Messages.get("scaffold.updated", "ActivityType"));
 		index();
 	}
+
+private static void setAccordianTab(){
+  renderArgs.put("accordionTab", "4");
+}
 
 }
