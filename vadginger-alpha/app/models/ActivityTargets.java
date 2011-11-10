@@ -7,7 +7,7 @@ import javax.persistence.Table;
 import play.db.jpa.Model;
 
 @Entity
-@Table(name = "ActivityTargets")
+@Table( name = "ActivityTargets")
 public class ActivityTargets extends Model {
 
 	/*

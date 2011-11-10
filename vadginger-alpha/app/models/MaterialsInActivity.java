@@ -13,7 +13,7 @@ import play.db.jpa.Model;
 import play.db.jpa.Transactional;
 
 @Entity
-@Table(name = "MaterialsInActivity")
+@Table( name = "MaterialsInActivity")
 public class MaterialsInActivity extends Model{
 
 	

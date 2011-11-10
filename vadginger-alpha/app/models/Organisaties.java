@@ -27,7 +27,7 @@ import play.db.jpa.Model;
 import play.db.jpa.Transactional;
 
 @Entity
-@Table(name = "Organisaties")
+@Table( name = "Organisaties")
 public class Organisaties extends Model {
 
 	/*

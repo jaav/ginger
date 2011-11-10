@@ -20,7 +20,7 @@ import play.db.jpa.Model;
 import play.db.jpa.Transactional;
 
 @Entity
-@Table(name = "Materials")
+@Table( name = "Materials")
 public class Materials extends Model{
 
 	/*@PersistenceContext

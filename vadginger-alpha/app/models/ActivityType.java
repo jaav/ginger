@@ -13,7 +13,7 @@ import play.data.validation.Required;
 import play.db.jpa.Model;
 
 @Entity
-@Table(name = "ActivityType")
+@Table( name = "ActivityType")
 public class ActivityType extends Model {
 
 	/*
