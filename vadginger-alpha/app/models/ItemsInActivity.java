@@ -21,7 +21,7 @@ import play.db.jpa.Model;
 import play.db.jpa.Transactional;
 
 @Entity
-@Table(schema = "dbo", name = "ItemsInActivity")
+@Table( name = "ItemsInActivity")
 //@IdClass(ItemsInActivityId.class)
 public class ItemsInActivity extends Model {
 

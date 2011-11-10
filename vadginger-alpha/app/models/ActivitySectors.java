@@ -15,7 +15,7 @@ import play.db.jpa.Model;
 import play.db.jpa.Transactional;
 
 @Entity
-@Table(schema = "dbo",name = "ActivitySectors")
+@Table( name = "ActivitySectors")
 
 public class ActivitySectors extends Model{
 

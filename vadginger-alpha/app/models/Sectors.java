@@ -21,7 +21,7 @@ import play.db.jpa.Model;
 import play.db.jpa.Transactional;
 
 @Entity
-@Table(schema = "dbo",name = "Sectors")
+@Table(name = "Sectors")
 public class Sectors extends Model{
 
 	@OneToMany(mappedBy = "sectorId")

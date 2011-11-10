@@ -11,7 +11,7 @@ import play.data.validation.Required;
 import play.db.jpa.Model;
 
 @Entity
-@Table(schema = "dbo",name = "Evaluvators")
+@Table( name = "Evaluvators")
 public class Evaluvators extends Model{
 
 	@OneToMany(mappedBy = "evaluvatorsId")

@@ -19,7 +19,7 @@ import play.db.jpa.Model;
 import play.db.jpa.Transactional;
 
 @Entity
-@Table(schema = "dbo", name = "Items")
+@Table( name = "Items")
 public class Items extends Model {
 
 	/*
