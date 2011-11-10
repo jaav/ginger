@@ -57,7 +57,7 @@
           <div><ul>
             <li><a href="@{Statics.usersStart()}">Startpagina</a></li>
             <li><a href="@{Statics.usersData()}">Gebruikersgegevens</a></li>
-            <li><a href="@{VadGingerUsers.index()}">Toon Gebruikers</a></li>
+            <li><a href="@{VadGingerUsers.index()}">Lijst Gebruikers</a></li>
             <li><a href="@{VadGingerUsers.create()}">Nieuwe Gebruiker</a></li>
             <li>
               #{if session.get("username") == null}
@@ -89,8 +89,8 @@
             <li>Sectoren (<a href="@{ActivitySectorss.index()}">Lijst</a> / <a href="@{ActivitySectorss.create()}">Nieuw</a>)</li>
             <li>Doelgroepen (<a href="@{ActivityTargetss.index()}">Lijst</a> / <a href="@{ActivityTargetss.create()}">Nieuw</a>)</li>
             <li>Doelgroep types (<a href="@{TargetTypes.index()}">Lijst</a> / <a href="@{TargetTypes.create()}">Nieuw</a>)</li>
-            <li>Evaluators (<a href="@{ActivityEvaluvatorss.index()}">Lijst</a> / <a href="@{ActivityEvaluvatorss.create()}">Nieuw</a>)</li>
-            <li>Evaluator types (<a href="@{ActivityEvaluvatorss.index()}">Lijst</a> / <a href="@{ActivityEvaluvatorss.create()}">Nieuw</a>)</li>
+            <li>Evaluators (<a href="@{Evaluvatorss.index()}">Lijst</a> / <a href="@{ActivityEvaluvatorss.create()}">Nieuw</a>)</li>
+            <li>Evaluator types (<a href="@{EvaluvationTypes.index()}">Lijst</a> / <a href="@{ActivityEvaluvatorss.create()}">Nieuw</a>)</li>
             <li>Deelnemer types (<a href="@{AttendantTypes.index()}">Lijst</a> / <a href="@{AttendantTypes.create()}">Nieuw</a>)</li>
             <li>Items (<a href="@{Itemss.index()}">Lijst</a> / <a href="@{Itemss.create()}">Nieuw</a>)</li>
             <li>Locaties (<a href="@{Locationss.index()}">Lijst</a> / <a href="@{Locationss.create()}">Nieuw</a>)</li>

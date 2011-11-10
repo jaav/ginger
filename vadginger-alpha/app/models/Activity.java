@@ -106,6 +106,9 @@ public class Activity extends Model {
 	
 	/*@ManyToOne
 	private Organisaties organizationId;*/
-	
-	
+
+  @Override
+  public String toString() {
+    return beschrijving + "' - '" + organizationId;
+  }
 }

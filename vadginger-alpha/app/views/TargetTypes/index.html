@@ -1,42 +1,26 @@
 #{extends 'main.html' /}
 
-<h2>TargetTypes</h2>
+<h2>Doelgroep Types</h2>
 
-<table class="entity TargetType">
+<table id="mytable" class="entity TargetType">
 	<thead>
 		<tr>
-			<th><!-- actions --></th>
-			
-	        
 				<th>Beschrijving</th>
-	        
-			
-	        
-				<th>Id</th>
-	        
-			
+			  <th><!-- actions --></th>
 		</tr>
 	</thead>
 	<tbody>
 	#{list items:entities, as:'entity'}
 		<tr>
-			<td>
-				<a href="@{TargetTypes.show(entity.id)}">Show</a>&nbsp;
-				<a href="@{TargetTypes.edit(entity.id)}">Edit</a>&nbsp;
-				<a href="@{TargetTypes.delete(entity.id)}" onclick="if (!confirm('Are you sure you want to delete this record?')) return false;">Delete</a>
-			</td>
-			
-        
 					<td>${entity.beschrijving}</td>
-        
-			
-        
-					<td>${entity.id}</td>
-        
-			
+          <td>
+            <table class="actiontable"><tr>
+              <td><a href="@{TargetTypes.show(entity.id)}"><div class="viewer actionbutton"></div></a></td>
+              <td><a href="@{TargetTypes.edit(entity.id)}"><div class="editor actionbutton"></div></a></td>
+              <td><a href="@{TargetTypes.delete(entity.id)}" onclick="if (!confirm('Ben je zeker dat je dit object will verwijderen?')) return false;"><div class="deleter actionbutton"></div></a></td>
+            </tr></table>
+          </td>
 		</tr>
 	#{/list}
 	</tbody>
 </table>
-
-<a href="@{TargetTypes.create}">Create</a>

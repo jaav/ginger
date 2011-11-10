@@ -32,6 +32,7 @@ public class Organisatiess extends GingerController {
 
 	public static void edit(java.lang.Long id) {
     Organisaties entity = Organisaties.findById(id);
+    setAccordionTab(3);
 		render(entity);
 	}
 

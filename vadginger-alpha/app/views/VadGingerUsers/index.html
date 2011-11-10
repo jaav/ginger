@@ -1,38 +1,16 @@
 #{extends 'main.html' /}
 
-<h2>VadGingerUsers</h2>
+<h2>Gebruikers</h2>
 
-<table class="entity VadGingerUser">
+<table id="mytable" class="entity VadGingerUser">
 	<thead>
 		<tr>
-			<th><!-- actions --></th>
-			
-	        
-				<th>User ID</th>
-	        
-			
-	        
-				<th>First Name</th>
-	        
-			
-	        
-				<th>Last Name</th>
-	        
-			
-	        
-				<th>Email Address</th>
-	        
-			
-	        
-				<th>Role</th>
-	        
-			
-	        
-				<th>Login Count</th>
-	        
-			
-	        
-				<th>Id</th>
+				<th>Naam</th>
+				<th>Gebruikersnaam</th>
+				<th>Email</th>
+				<th>Rol</th>
+				<th>Login Teller</th>
+			  <th><!-- actions --></th>
 	        
 			
 		</tr>
@@ -40,38 +18,18 @@
 	<tbody>
 	#{list items:entities, as:'entity'}
 		<tr>
-			<td>
-				<a href="@{VadGingerUsers.show(entity.id)}">Show</a>&nbsp;
-				<a href="@{VadGingerUsers.edit(entity.id)}">Edit</a>&nbsp;
-				<a href="@{VadGingerUsers.delete(entity.id)}" onclick="if (!confirm('Are you sure you want to delete this record?')) return false;">Delete</a>
-			</td>
-			
-        
+					<td>${entity.firstName} ${entity.lastName}</td>
 					<td>${entity.userID}</td>
-        
-			
-        
-					<td>${entity.firstName}</td>
-        
-			
-        
-					<td>${entity.lastName}</td>
-        
-			
-        
 					<td>${entity.emailAddress}</td>
-        
-			
-        
 					<td>${entity.role}</td>
-        
-			
-        
 					<td>${entity.loginCount}</td>
-        
-			
-        
-					<td>${entity.id}</td>
+          <td>
+            <table class="actiontable"><tr>
+              <td><a href="@{VadGingerUsers.show(entity.id)}"><div class="viewer actionbutton"></div></a></td>
+              <td><a href="@{VadGingerUsers.edit(entity.id)}"><div class="editor actionbutton"></div></a></td>
+              <td><a href="@{VadGingerUsers.delete(entity.id)}" onclick="if (!confirm('Ben je zeker dat je dit object will verwijderen?')) return false;"><div class="deleter actionbutton"></div></a></td>
+            </tr></table>
+          </td>
         
 			
 		</tr>
@@ -79,4 +37,3 @@
 	</tbody>
 </table>
 
-<a href="@{VadGingerUsers.create}">Create</a>

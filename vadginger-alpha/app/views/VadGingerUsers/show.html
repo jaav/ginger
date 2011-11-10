@@ -1,68 +1,44 @@
 #{extends 'main.html' /}
 
-<h2>View VadGingerUser</h2>
+<h2>Gebruiker Detail</h2>
 
 <div class="entity">
-
-  
 	<div class="row">
 		<span class="elem">
-			userID:
+			Naam:
 		</span>
 		<span class="value">
-      ${entity.userID}
-		</span>
-	</div>
-  
-
-  
-	<div class="row">
-		<span class="elem">
-			firstName:
-		</span>
-		<span class="value">
-      ${entity.firstName}
-		</span>
-	</div>
-  
-
-  
-	<div class="row">
-		<span class="elem">
-			lastName:
-		</span>
-		<span class="value">
+      ${entity.firstName}&nbsp;
       ${entity.lastName}
 		</span>
 	</div>
-  
-
-  
 	<div class="row">
 		<span class="elem">
-			emailAddress:
+			Email:
 		</span>
 		<span class="value">
       ${entity.emailAddress}
 		</span>
 	</div>
-  
-
-  
 	<div class="row">
 		<span class="elem">
-			role:
+			Rol:
 		</span>
 		<span class="value">
       ${entity.role}
 		</span>
 	</div>
-  
-
-  
 	<div class="row">
 		<span class="elem">
-			loginCount:
+			Organisatie:
+		</span>
+    #{list items:entity.organizationId, as:'org'}
+      <li><span class="value">${org}</span></li>
+  #{/list}
+	</div>
+	<div class="row">
+		<span class="elem">
+			Login teller:
 		</span>
 		<span class="value">
       ${entity.loginCount}
@@ -70,18 +46,7 @@
 	</div>
   
 
-  
-	<div class="row">
-		<span class="elem">
-			id:
-		</span>
-		<span class="value">
-      ${entity.id}
-		</span>
-	</div>
-  
-
 </div>
 
-<a href="@{VadGingerUsers.index}">Back</a>
+<a href="@{VadGingerUsers.index}">Terug</a>
 

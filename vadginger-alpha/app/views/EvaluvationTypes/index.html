@@ -1,42 +1,26 @@
 #{extends 'main.html' /}
 
-<h2>EvaluvationTypes</h2>
+<h2>Evaluator Types</h2>
 
-<table class="entity EvaluvationType">
+<table id="mytable" class="entity EvaluvationType">
 	<thead>
 		<tr>
-			<th><!-- actions --></th>
-			
-	        
 				<th>Eval Type</th>
-	        
-			
-	        
-				<th>Id</th>
-	        
-			
+			  <th><!-- actions --></th>
 		</tr>
 	</thead>
 	<tbody>
 	#{list items:entities, as:'entity'}
 		<tr>
-			<td>
-				<a href="@{EvaluvationTypes.show(entity.id)}">Show</a>&nbsp;
-				<a href="@{EvaluvationTypes.edit(entity.id)}">Edit</a>&nbsp;
-				<a href="@{EvaluvationTypes.delete(entity.id)}" onclick="if (!confirm('Are you sure you want to delete this record?')) return false;">Delete</a>
-			</td>
-			
-        
 					<td>${entity.evalType}</td>
-        
-			
-        
-					<td>${entity.id}</td>
-        
-			
+          <td>
+            <table class="actiontable"><tr>
+              <td><a href="@{EvaluvationTypes.show(entity.id)}"><div class="viewer actionbutton"></div></a></td>
+              <td><a href="@{EvaluvationTypes.edit(entity.id)}"><div class="editor actionbutton"></div></a></td>
+              <td><a href="@{EvaluvationTypes.delete(entity.id)}" onclick="if (!confirm('Ben je zeker dat je dit object will verwijderen?')) return false;"><div class="deleter actionbutton"></div></a></td>
+            </tr></table>
+          </td>
 		</tr>
 	#{/list}
 	</tbody>
 </table>
-
-<a href="@{EvaluvationTypes.create}">Create</a>
