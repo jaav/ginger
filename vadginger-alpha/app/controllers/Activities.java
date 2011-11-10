@@ -14,6 +14,7 @@ import org.apache.commons.lang.StringUtils;
 import models.Activity;
 import play.data.validation.Valid;
 import play.i18n.Messages;
+import play.mvc.After;
 import play.mvc.Controller;
 import play.mvc.With;
 
@@ -341,5 +342,10 @@ private static String getParam(String paramName) {
 	// TODO Auto-generated method stub
 	return request.params.get(paramName);
 }
+
+	@After
+	static void setAccordionTab() {
+    renderArgs.put("accordionTab", "3");
+	}
 
 }

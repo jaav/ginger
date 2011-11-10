@@ -14,9 +14,14 @@ body {
 }
 
 #hd h1{
-  font-size: 1.6em;
+  margin: 10px 0 20px;
+}
+
+#hd h1 a{
+  font-size: 1.8em;
   font-weight: bold;
   color: #2E6E9E;
+  text-decoration: none;
 }
 
 #ft{
@@ -29,4 +34,27 @@ body {
 
 .vad-main-block{
   padding: 10px;
+}
+
+.statics{
+
+}
+.statics h2{
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.statics .content{
+  font-size: 1.1em;
+}
+.statics .content ul{
+  padding: 0.4em 3em 0;
+}
+.statics .content li{
+  list-style: disc;
+}
+.statics .content p{
+  margin: 1em 0 0;
+}
+.statics .content p.subtitle{
+  font-weight: bold;
 }

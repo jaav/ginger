@@ -3,7 +3,7 @@
 # ~~~~
 
 # Home page
-GET     /                                       Application.index
+GET     /                                       Statics.index
 *       /admin                                  module:crud
 GET     /activity                               Activities.index
 GET     /activity/search						Activities.searchForm
