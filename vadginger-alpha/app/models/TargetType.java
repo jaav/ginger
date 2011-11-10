@@ -11,7 +11,7 @@ import javax.persistence.Table;
 import play.db.jpa.Model;
 
 @Entity
-@Table(schema = "dbo", name = "TargetType")
+@Table(name = "TargetType")
 public class TargetType extends Model {
 
 	@OneToMany(mappedBy = "targetTypeId")

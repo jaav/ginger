@@ -15,7 +15,7 @@ import javax.persistence.Table;
 import play.db.jpa.Model;
 
 @Entity
-@Table(schema = "dbo", name = "Evaluvation_Type")
+@Table(name = "Evaluvation_Type")
 public class EvaluvationType extends Model{
 
 	@OneToMany(mappedBy = "evalTypeId")

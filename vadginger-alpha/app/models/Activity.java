@@ -28,7 +28,7 @@ import play.db.jpa.Transactional;
 import play.modules.scaffold.NoScaffolding;
 
 @Entity
-@Table(schema = "dbo", name = "Activity")
+@Table(name = "Activity")
 public class Activity extends Model {
 
 	

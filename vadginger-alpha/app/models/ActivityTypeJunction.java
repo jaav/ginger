@@ -7,7 +7,7 @@ import javax.persistence.Table;
 import play.db.jpa.Model;
 
 @Entity
-@Table(schema = "dbo", name = "ActivityTypeJunction")
+@Table(name = "ActivityTypeJunction")
 public class ActivityTypeJunction extends Model {
 
 	/*
