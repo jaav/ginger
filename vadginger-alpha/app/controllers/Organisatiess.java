@@ -2,6 +2,7 @@ package controllers;
 
 import java.util.List;
 import models.Organisaties;
+import play.modules.paginate.ModelPaginator;
 import play.mvc.Controller;
 import play.i18n.Messages;
 import play.data.validation.Validation;
@@ -14,7 +15,9 @@ import play.mvc.With;
 
 public class Organisatiess extends Controller {
 	public static void index() {
-		List<Organisaties> entities = models.Organisaties.all().fetch();
+		//List<Organisaties> entities = models.Organisaties.all().fetch();
+		ModelPaginator entities = new ModelPaginator(Organisaties.class);
+		entities.setPageSize(20);
 		render(entities);
 	}
 

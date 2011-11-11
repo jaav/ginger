@@ -1,7 +1,10 @@
 package controllers;
 
 import java.util.List;
+
+import models.Activity;
 import models.Sectors;
+import play.modules.paginate.ModelPaginator;
 import play.mvc.Controller;
 import play.i18n.Messages;
 import play.data.validation.Validation;
@@ -14,7 +17,9 @@ import play.mvc.With;
 
 public class Sectorss extends Controller {
 	public static void index() {
-		List<Sectors> entities = models.Sectors.all().fetch();
+		//List<Sectors> entities = models.Sectors.all().fetch();
+		ModelPaginator entities = new ModelPaginator(Sectors.class);
+		entities.setPageSize(20);
 		render(entities);
 	}
 

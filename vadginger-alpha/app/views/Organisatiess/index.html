@@ -50,7 +50,7 @@
 		</tr>
 	</thead>
 	<tbody>
-	#{list items:entities, as:'entity'}
+	#{paginate.list items:entities, as:'entity'}
 		<tr>
 			<td>
 				<a href="@{Organisatiess.show(entity.id)}">Show</a>&nbsp;
@@ -99,8 +99,8 @@
         
 			
 		</tr>
-	#{/list}
+	#{/paginate.list}
 	</tbody>
 </table>
-
+#{paginate.controls items:entities /} 
 <a href="@{Organisatiess.create}">Create</a>

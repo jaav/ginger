@@ -30,7 +30,7 @@
 		</tr>
 	</thead>
 	<tbody>
-	#{list items:entities, as:'entity'}
+	#{paginate.list items:entities, as:'entity'}
 		<tr>
 			<td>
 				<a href="@{Locationss.show(entity.id)}">Show</a>&nbsp;
@@ -59,8 +59,8 @@
         
 			
 		</tr>
-	#{/list}
+	#{/paginate.list}
 	</tbody>
 </table>
-
+#{paginate.controls items:entities /} 
 <a href="@{Locationss.create}">Create</a>

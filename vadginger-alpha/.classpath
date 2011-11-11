@@ -3,14 +3,16 @@
 	<classpathentry excluding="views/**" kind="src" path="app"/>
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="src" path="scaffold-head"/>
+	<classpathentry kind="src" path="paginate-head"/>
 	<classpathentry kind="src" path="scaffold-0.1"/>
 	<classpathentry kind="src" path="secure"/>
 	<classpathentry kind="src" path="crud"/>
 	
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/home/krishna/play-1.2.3/framework/play-1.2.3.jar" sourcepath="/home/krishna/play-1.2.3/framework/src" />
-	<classpathentry kind="lib" path="/media/mynewdrive/play-ginger/test1/lib/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="/media/mynewdrive/app-ginger/vadginger-alpha/lib/sqljdbc4.jar"/>
 	<classpathentry kind="lib" path="/home/krishna/play-1.2.3/modules/scaffold-head/lib/play-scaffold.jar"/>
+	<classpathentry kind="lib" path="/home/krishna/play-1.2.3/modules/paginate-head/lib/play-paginate.jar"/>
 	<classpathentry kind="lib" path="/home/krishna/play-1.2.3/modules/scaffold-0.1/lib/play-scaffold.jar"/>
 	<classpathentry kind="lib" path="/home/krishna/play-1.2.3/framework/lib/groovy-all-1.7.7.jar"/>
 	<classpathentry kind="lib" path="/home/krishna/play-1.2.3/framework/lib/commons-codec-1.4.jar"/>

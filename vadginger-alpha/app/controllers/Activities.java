@@ -13,7 +13,10 @@ import org.apache.commons.lang.StringUtils;
 
 import models.Activity;
 import play.data.validation.Valid;
+import play.db.jpa.JPA;
 import play.i18n.Messages;
+import play.modules.paginate.ModelPaginator;
+import play.modules.paginate.ValuePaginator;
 import play.mvc.After;
 import play.mvc.Controller;
 import play.mvc.With;
@@ -21,7 +24,9 @@ import play.mvc.With;
 @With(Secure.class)
 public class Activities extends Controller {
 	public static void index() {
-		List<Activity> entities = models.Activity.all().fetch();
+		/*List<Activity> entities = models.Activity.all().fetch();*/
+		ModelPaginator entities = new ModelPaginator(Activity.class);
+		entities.setPageSize(20);
 		render(entities);
 	}
 

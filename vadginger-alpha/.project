@@ -18,6 +18,9 @@
 	<linkedResources><link><name>scaffold-head</name><type>2</type><location>/home/krishna/play-1.2.3/modules/scaffold-head/app</location></link>
 <link><name>conf/scaffold-head</name><type>2</type><location>/home/krishna/play-1.2.3/modules/scaffold-head/conf</location></link>
 <link><name>public/scaffold-head</name><type>2</type><location>/home/krishna/play-1.2.3/modules/scaffold-head/public</location></link>
+<link><name>paginate-head</name><type>2</type><location>/home/krishna/play-1.2.3/modules/paginate-head/app</location></link>
+<link><name>conf/paginate-head</name><type>2</type><location>/home/krishna/play-1.2.3/modules/paginate-head/conf</location></link>
+<link><name>public/paginate-head</name><type>2</type><location>/home/krishna/play-1.2.3/modules/paginate-head/public</location></link>
 <link><name>scaffold-0.1</name><type>2</type><location>/home/krishna/play-1.2.3/modules/scaffold-0.1/app</location></link>
 <link><name>conf/scaffold-0.1</name><type>2</type><location>/home/krishna/play-1.2.3/modules/scaffold-0.1/conf</location></link>
 <link><name>public/scaffold-0.1</name><type>2</type><location>/home/krishna/play-1.2.3/modules/scaffold-0.1/public</location></link>
