@@ -16,9 +16,19 @@ import play.mvc.With;
 public class Organisatiess extends GingerController {
 	public static void index() {
 		//List<Organisaties> entities = models.Organisaties.all().fetch();
-    ModelPaginator entities = new ModelPaginator(Organisaties.class);
+    ModelPaginator entities = new ModelPaginator(Organisaties.class, "ouder is null");
     setAccordionTab(3);
 		render(entities);
+	}
+	
+	public static void subOrgIndex() {
+		ModelPaginator entities = new ModelPaginator(Organisaties.class, "ouder is not null");
+	    setAccordionTab(3);
+		render("Organisatiess/index.html",entities);
+	}
+	
+	public static void clusterIndex() {
+		
 	}
 
 	public static void create(Organisaties entity) {

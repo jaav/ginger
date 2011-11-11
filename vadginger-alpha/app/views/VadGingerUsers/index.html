@@ -16,7 +16,7 @@
 		</tr>
 	</thead>
 	<tbody>
-	#{list items:entities, as:'entity'}
+	#{paginate.list items:entities, as:'entity'}
 		<tr>
 					<td>${entity.firstName} ${entity.lastName}</td>
 					<td>${entity.userID}</td>
@@ -33,7 +33,7 @@
         
 			
 		</tr>
-	#{/list}
+	#{/paginate.list}
 	</tbody>
 </table>
-
+#{paginate.controls items:entities /} 

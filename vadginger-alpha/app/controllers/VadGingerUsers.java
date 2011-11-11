@@ -1,7 +1,10 @@
 package controllers;
 
 import java.util.List;
+
+import antlr.StringUtils;
 import models.VadGingerUser;
+import play.modules.paginate.ModelPaginator;
 import play.mvc.Controller;
 import play.i18n.Messages;
 import play.data.validation.Validation;
@@ -15,13 +18,15 @@ import play.mvc.With;
 public class VadGingerUsers extends GingerController {
 
 	public static void index() {
-		List<VadGingerUser> entities = models.VadGingerUser.all().fetch();
+		//List<VadGingerUser> entities = models.VadGingerUser.all().fetch();
+		ModelPaginator entities = new ModelPaginator(VadGingerUser.class);
     setAccordionTab(1);
 		render(entities);
 	}
 
 	public static void create(VadGingerUser entity) {
     setAccordionTab(1);
+    entity.password="";
 		render(entity);
 	}
 
@@ -48,7 +53,14 @@ public class VadGingerUsers extends GingerController {
 			flash.error(Messages.get("scaffold.validation"));
 			render("@create", entity);
 		}
-    entity.save();
+		String pass = request.params.get("password");
+		if(pass!=null&&pass.length()>=5) {
+			entity.passwordHash = play.libs.Codec.encodeBASE64(Security.md5(pass));
+		} else {
+			//flash.error(Messages.get("scaffold.validation"));
+			render("@create", entity);
+		}
+		entity.save();
 		flash.success(Messages.get("scaffold.created", "VadGingerUser"));
 		index();
 	}

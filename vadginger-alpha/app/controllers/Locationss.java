@@ -16,10 +16,17 @@ import play.mvc.With;
 public class Locationss extends GingerController {
 	public static void index() {
 		//List<Locations> entities = models.Locations.all().fetch();
-		ModelPaginator entities = new ModelPaginator(Locations.class);
+		ModelPaginator entities = new ModelPaginator(Locations.class, "ouder is null and isCluster is null");
 		entities.setPageSize(20);
     setAccordionTab(4);
 		render(entities);
+	}
+	
+	public static void clustersIndex() {
+		ModelPaginator entities = new ModelPaginator(Locations.class, "isCluster is 1");
+		entities.setPageSize(20);
+		setAccordionTab(4);
+		render("Locationss/index.html",entities);
 	}
 
 	public static void create(Locations entity) {

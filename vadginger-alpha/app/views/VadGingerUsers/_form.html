@@ -72,10 +72,10 @@
     
     
     
-      <input type="text" name="entity.emailAddress" value="${entity?.emailAddress}"/>
-    
+      <input type="text" name="entity.emailAddress" value="${entity?.emailAddress}" id="emailId"/>
+     <span id="emailIdSpan"></span>
   </div>
-  <span class="error">${errors.forKey('entity.emailAddress')}</span>
+ 
 </div>
 
 
@@ -94,37 +94,41 @@
             ${(entity?.role?.name() == 'ADMIN') ? 'selected':''}>ADMIN</option>
         
       </select>
-    
-    
-    
-    
-    
-    
-    
-    
+
   </div>
   <span class="error">${errors.forKey('entity.role')}</span>
 </div>
 
 
  <div class="row">
-  <div class="label">Login Count</div>
+  <div class="label">Password</div>
   <div class="field">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      <input type="text" name="entity.loginCount" value="${entity?.loginCount}"/>
-    
+      <input name="c_password" id="password"/>
+      
+      <span id="invalidPassword"></span>
   </div>
-  <span class="error">${errors.forKey('entity.loginCount')}</span>
-</div>
+  </div>
+<script>
+$("form").submit(function(){
+	var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+	var emailIdVal = $("#emailId").val();
+	if(emailIdVal==''||!emailReg.test(emailIdVal)) {
+		$("#emailIdSpan").text("Invalid Email Id").show();
+		return false;
+	} else {
+		$("#emailIdSpan").hide();
+	}
+	//alert($("#password").val());
+	if($("#password").val().length<5) {
+		$('#invalidPassword').text("Invalid Password").show();
+		return false;
+	} else {
+		return true;
+	}
+	
+	
+});
+</script>
 
 
  <div class="row">
