@@ -157,3 +157,44 @@ caption {
 .viewer{
   background-position: 0px 0px;
 }
+
+/* *********** SHOW ENTITIES ************ */
+
+div.entity{
+
+}
+div.entity .row{
+
+}
+div.entity .row .elem{
+  font-weight: bold;
+}
+div.entity .row .value{
+
+}
+div.entity .row .value ul{
+  margin: 0 0 0 2em;
+}
+div.entity .bigSearch{
+  font-weight: bold;
+  font-size: 30px;
+  width: 360px;
+  height: 60px;
+}
+
+
+
+
+
+
+/* *********** UTILS ************ */
+
+.centerMe{
+  text-align: center;
+}
+.clearMe{
+  clear: both;
+}
+.dist50{
+  margin: 50px;
+}

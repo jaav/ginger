@@ -14,6 +14,14 @@
 	</div>
 	<div class="row">
 		<span class="elem">
+			Gebruikersnaam:
+		</span>
+		<span class="value">
+      ${entity.userID}
+		</span>
+	</div>
+	<div class="row">
+		<span class="elem">
 			Email:
 		</span>
 		<span class="value">
@@ -30,11 +38,15 @@
 	</div>
 	<div class="row">
 		<span class="elem">
-			Organisatie:
+			Organisaties:
 		</span>
+    <span class="value">
+    <ul>
     #{list items:entity.organizationId, as:'org'}
-      <li><span class="value">${org}</span></li>
-  #{/list}
+      <li>${org}</li>
+    #{/list}
+    </ul>
+    </span>
 	</div>
 	<div class="row">
 		<span class="elem">

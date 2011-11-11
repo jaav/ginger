@@ -67,17 +67,20 @@ public class Locationss extends GingerController {
 	
 	public static void list(String id) {
 		List<models.Locations> locs = models.Locations.find("ouder is " + id).fetch();
-		StringBuffer htmlData = new StringBuffer();
-		htmlData.append("<div class=\"label\">Sub Location</div>");
-		htmlData.append("<div class=\"field\">");
-		htmlData.append("<select name=\"entity.locationId.id\" id=\"subLocationSelect\">\n");
-		for (models.Locations loc: locs) {
-			htmlData.append(" <option value=\""+loc.id+"\" >"+loc.naam+"</option>\n");
-			
-		}
-		htmlData.append("</select></div></div>");
-		
-		renderText(htmlData.toString());
+    if(locs.isEmpty()) renderText("");
+    else{
+      StringBuffer htmlData = new StringBuffer();
+      htmlData.append("<div class=\"label\">Sub Location</div>");
+      htmlData.append("<div class=\"field\">");
+      htmlData.append("<select name=\"entity.locationId.id\" id=\"subLocationSelect\">\n");
+      for (models.Locations loc: locs) {
+        htmlData.append(" <option value=\""+loc.id+"\" >"+loc.naam+"</option>\n");
+
+      }
+      htmlData.append("</select></div></div>");
+
+      renderText(htmlData.toString());
+    }
 	}
 
 }

@@ -94,7 +94,7 @@ public class AttendantTypes extends GingerController {
 			getAttendantTypes(atdTypes, htmlData, interLabel);
 			getSectors(htmlData, secLabel);
 		} else
-			getAttendantTypes(atdTypes, htmlData, "	Uiteindelijke doelgroep");
+			getAttendantTypes(atdTypes, htmlData, "Aanwezigen");
 		renderText(htmlData.toString());
 	}
 
@@ -108,7 +108,7 @@ public class AttendantTypes extends GingerController {
 			htmlData.append("<span class=\"field\" id=\"atd_typ_"+ atd.getId()+"\"></span><br>");
 					
 		}
-		htmlData.append("</div><BR><BR>");
+		htmlData.append("</div><BR>");
 	}
 
 	private static void getSectors(StringBuffer htmlData, String label) {

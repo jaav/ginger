@@ -69,17 +69,20 @@ public class Organisatiess extends GingerController {
 
 		//List<models.Locations> locs = models.Locations.find("ouder is " + id).fetch();
 		List<models.Organisaties> orgs = models.Organisaties.find("ouder is " + id).fetch();
-		StringBuffer htmlData = new StringBuffer();
-		htmlData.append("<div class=\"label\">Sub Organization</div>");
-		htmlData.append("<div class=\"field\">");
-		htmlData.append("<select name=\"entity.organizationId.id\" id=\"subOrganizationSelect\">\n");
-		for (models.Organisaties org: orgs) {
-			htmlData.append(" <option value=\""+org.id+"\" >"+org.naam+"</option>\n");
-			
-		}
-		htmlData.append("</select></div></div>");
-		
-		renderText(htmlData.toString());
+    if(orgs.isEmpty()) renderText("");
+    else{
+      StringBuffer htmlData = new StringBuffer();
+      htmlData.append("<div class=\"label\">Sub Organization</div>");
+      htmlData.append("<div class=\"field\">");
+      htmlData.append("<select name=\"entity.organizationId.id\" id=\"subOrganizationSelect\">\n");
+      for (models.Organisaties org: orgs) {
+        htmlData.append(" <option value=\""+org.id+"\" >"+org.naam+"</option>\n");
+
+      }
+      htmlData.append("</select></div></div>");
+
+      renderText(htmlData.toString());
+    }
 	
 		renderText(id);
 	}
