@@ -46,5 +46,10 @@ public class VadGingerUser extends Model {
       return false;
     return currentUserName.equalsIgnoreCase(currentUser);
   }
+
+  @Override
+  public String toString() {
+    return userID+" ("+firstName +" "+lastName+")";
+  }
 }
 

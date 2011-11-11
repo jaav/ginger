@@ -2,47 +2,19 @@
 
 <h2>Activities</h2>
 
-<table class="entity Activity">
+<table id="mytable" class="entity Activity">
 	<thead>
 		<tr>
-			<th><!-- actions --></th>
-			
-	        
+				<th>Bescrijving</th>
+				<th>Datum</th>
+				<th>Organisatie</th>
 				<th>Duur</th>
-	        
-			
-	        
-				<th>Evaluvated</th>
-	        
-			
-	        
-				<th>Internal Activity</th>
-	        
-			
-	        
-				<th>Reported</th>
-	        
-			
-	        
-				<th>Total Participants</th>
-	        
-			
-	        
-				<th>Organization Id</th>
-	        
-			
-	        
-				<th>Location Id</th>
-	        
-			
-	        
-				<th>User Id</th>
-	        
-			
-	        
-				<th>Id</th>
-	        
-			
+				<th>Eval.</th>
+				<th>Intern</th>
+				<th>Deel-nemers</th>
+				<th>Locatie</th>
+				<th>Organisator</th>
+			  <th><!-- actions --></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -50,48 +22,22 @@
 	
 	
 		<tr>
-			<td>
-				<a href="@{Activities.show(entity.id)}">Show</a>&nbsp;
-				<a href="@{Activities.edit(entity.id)}">Edit</a>&nbsp;
-				<a href="@{Activities.delete(entity.id)}" onclick="if (!confirm('Are you sure you want to delete this record?')) return false;">Delete</a>
-			</td>
-			
-        
+					<td></td>
+          <td></td>
+          <td>${entity.organizationId}</td>
 					<td>${entity.duur}</td>
-        
-			
-        
 					<td>${entity.evaluvated}</td>
-        
-			
-        
 					<td>${entity.internalActivity}</td>
-        
-			
-        
-					<td>${entity.reported}</td>
-        
-			
-        
 					<td>${entity.totalParticipants}</td>
-        
-			
-        
-					<td>${entity.organizationId}</td>
-        
-			
-        
 					<td>${entity.locationId}</td>
-        
-			
-        
 					<td>${entity.userId}</td>
-        
-			
-        
-					<td>${entity.id}</td>
-        
-			
+          <td>
+            <table class="actiontable"><tr>
+              <td><a href="@{Activities.show(entity.id)}"><div class="viewer actionbutton"></div></a></td>
+              <td><a href="@{Activities.edit(entity.id)}"><div class="editor actionbutton"></div></a></td>
+              <td><a href="@{Activities.delete(entity.id)}" onclick="if (!confirm('Ben je zeker dat je dit object will verwijderen?')) return false;"><div class="deleter actionbutton"></div></a></td>
+            </tr></table>
+          </td>
 		</tr>
 		
 	#{/paginate.list}
