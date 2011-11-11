@@ -13,7 +13,7 @@
 		</tr>
 	</thead>
 	<tbody>
-	#{list items:entities, as:'entity'}
+	#{paginate.list items:entities, as:'entity'}
 		<tr>
 					<td>${entity.naam}</td>
 					<td>${entity.organisatieNetwerk}</td>
@@ -29,8 +29,8 @@
         
 			
 		</tr>
-	#{/list}
+	#{/paginate.list}
 	</tbody>
 </table>
-
+#{paginate.controls items:entities /} 
 <a href="@{Organisatiess.create}">Create</a>

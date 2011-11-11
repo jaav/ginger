@@ -12,7 +12,7 @@
 		</tr>
 	</thead>
 	<tbody>
-	#{list items:entities, as:'entity'}
+	#{paginate.list items:entities, as:'entity'}
 		<tr>
 					<td>${entity.naam}</td>
 					<td>${entity.beschrijving}</td>
@@ -25,7 +25,7 @@
             </tr></table>
           </td>
 		</tr>
-	#{/list}
+	#{/paginate.list}
 	</tbody>
 </table>
-
+#{paginate.controls items:entities /} 

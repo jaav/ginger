@@ -2,6 +2,7 @@ package controllers;
 
 import java.util.List;
 import models.Locations;
+import play.modules.paginate.ModelPaginator;
 import play.mvc.Controller;
 import play.i18n.Messages;
 import play.data.validation.Validation;
@@ -14,7 +15,9 @@ import play.mvc.With;
 
 public class Locationss extends GingerController {
 	public static void index() {
-		List<Locations> entities = models.Locations.all().fetch();
+		//List<Locations> entities = models.Locations.all().fetch();
+		ModelPaginator entities = new ModelPaginator(Locations.class);
+		entities.setPageSize(20);
     setAccordionTab(4);
 		render(entities);
 	}

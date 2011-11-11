@@ -2,6 +2,6 @@
 
 require:
     - play
-    - play -> crud
     - play -> scaffold 0.1
     - play -> secure
+    - play -> paginate 0.11
