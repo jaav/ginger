@@ -184,6 +184,24 @@ div.entity .bigSearch{
 
 
 
+/* *********** PAGINATION ************ */
+.pagination-container{
+  float: right;
+  margin: 20px;
+}
+
+.pagination-container .pagination li{
+  border-color: #A6C9E2;
+}
+
+.pagination-container .pagination .active{
+  background-color: #D1E8FF;
+  color: #2E6E9E;
+}
+.pagination a:link, .pagination a:visited {
+  color: #2E6E9E;
+}
+
 
 
 
@@ -197,4 +215,8 @@ div.entity .bigSearch{
 }
 .dist50{
   margin: 50px;
+}
+.addressblock{
+  display: block;
+  margin: -14px 0 0 50px;
 }

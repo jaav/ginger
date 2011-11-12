@@ -22,11 +22,12 @@ import play.mvc.Controller;
 import play.mvc.With;
 
 @With(Secure.class)
-public class Activities extends Controller {
+public class Activities extends GingerController {
 	public static void index() {
 		/*List<Activity> entities = models.Activity.all().fetch();*/
 		ModelPaginator entities = new ModelPaginator(Activity.class);
 		entities.setPageSize(20);
+    setAccordionTab(2);
 		render(entities);
 	}
 
@@ -38,16 +39,19 @@ public class Activities extends Controller {
 		 */
 		List<models.Items> items = models.Items.all().fetch();
 		List<models.Materials> materials = models.Materials.all().fetch();
+    setAccordionTab(2);
 		render(entity, items, materials);
 	}
 
 	public static void show(java.lang.Long id) {
 		Activity entity = Activity.findById(id);
+    setAccordionTab(2);
 		render(entity);
 	}
 
 	public static void edit(java.lang.Long id) {
 		Activity entity = Activity.findById(id);
+    setAccordionTab(2);
 		render(entity);
 	}
 

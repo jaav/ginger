@@ -1,13 +1,33 @@
 #{extends 'main.html' /}
 
-<h2>View Activity</h2>
+<h2>Detail Activiteit</h2>
 
 <div class="entity">
 
   
 	<div class="row">
 		<span class="elem">
-			duur:
+			Beschrijving:
+		</span>
+		<span class="value">
+      ${entity.beschrijving}
+		</span>
+	</div>
+
+
+	<div class="row">
+		<span class="elem">
+			Datum:
+		</span>
+		<span class="value">
+      ${entity.activityDate}
+		</span>
+	</div>
+
+
+	<div class="row">
+		<span class="elem">
+			Duurtijd (minuten):
 		</span>
 		<span class="value">
       ${entity.duur}
@@ -18,7 +38,7 @@
   
 	<div class="row">
 		<span class="elem">
-			evaluvated:
+			Ge&euml;valueerd:
 		</span>
 		<span class="value">
       ${entity.evaluvated}
@@ -29,7 +49,7 @@
   
 	<div class="row">
 		<span class="elem">
-			internalActivity:
+			Interne Activiteit:
 		</span>
 		<span class="value">
       ${entity.internalActivity}
@@ -40,7 +60,7 @@
   
 	<div class="row">
 		<span class="elem">
-			reported:
+			?reported?:
 		</span>
 		<span class="value">
       ${entity.reported}
@@ -51,7 +71,7 @@
   
 	<div class="row">
 		<span class="elem">
-			totalParticipants:
+			Aantal deelnemers:
 		</span>
 		<span class="value">
       ${entity.totalParticipants}
@@ -62,7 +82,7 @@
   
 	<div class="row">
 		<span class="elem">
-			organizationId:
+			Georganiseerd door:
 		</span>
 		<span class="value">
       ${entity.organizationId}
@@ -73,7 +93,7 @@
   
 	<div class="row">
 		<span class="elem">
-			locationId:
+			Locatie:
 		</span>
 		<span class="value">
       ${entity.locationId}
@@ -84,7 +104,7 @@
   
 	<div class="row">
 		<span class="elem">
-			userId:
+			Verantwoordelijke:
 		</span>
 		<span class="value">
       ${entity.userId}
@@ -92,18 +112,5 @@
 	</div>
   
 
-  
-	<div class="row">
-		<span class="elem">
-			id:
-		</span>
-		<span class="value">
-      ${entity.id}
-		</span>
-	</div>
-  
-
 </div>
-
-<a href="@{Activities.index}">Terug</a>
 

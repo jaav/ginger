@@ -2,6 +2,7 @@ package controllers;
 
 import java.util.List;
 import models.ActivityTargets;
+import play.modules.paginate.ModelPaginator;
 import play.mvc.Controller;
 import play.i18n.Messages;
 import play.data.validation.Validation;
@@ -14,25 +15,27 @@ import play.mvc.With;
 
 public class ActivityTargetss extends GingerController {
 	public static void index() {
-		List<ActivityTargets> entities = models.ActivityTargets.all().fetch();
-    setAccordionTab(2);
+		//List<ActivityTargets> entities = models.ActivityTargets.all().fetch();
+		ModelPaginator entities = new ModelPaginator(ActivityTargets.class);
+		entities.setPageSize(20);
+    setAccordionTab(4);
 		render(entities);
 	}
 
 	public static void create(ActivityTargets entity) {
-    setAccordionTab(2);
+    setAccordionTab(4);
 		render(entity);
 	}
 
 	public static void show(java.lang.Long id) {
     ActivityTargets entity = ActivityTargets.findById(id);
-    setAccordionTab(2);
+    setAccordionTab(4);
 		render(entity);
 	}
 
 	public static void edit(java.lang.Long id) {
     ActivityTargets entity = ActivityTargets.findById(id);
-    setAccordionTab(2);
+    setAccordionTab(4);
 		render(entity);
 	}
 

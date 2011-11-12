@@ -5,7 +5,7 @@
 <table id="mytable" class="entity Activity">
 	<thead>
 		<tr>
-				<th>Bescrijving</th>
+				<th>Beschrijving</th>
 				<th>Datum</th>
 				<th>Organisatie</th>
 				<th>Duur</th>
@@ -22,8 +22,8 @@
 	
 	
 		<tr>
-					<td></td>
-          <td></td>
+					<td>${entity.beschrijving}</td>
+          <td>${entity.activityDate}</td>
           <td>${entity.organizationId}</td>
 					<td>${entity.duur}</td>
 					<td>${entity.evaluvated}</td>
@@ -45,5 +45,4 @@
 		
 	</tbody>
 </table>
-#{paginate.controls items:entities /} 
-<a href="@{Activities.create}">Create</a>
+#{paginate.controls items:entities /}

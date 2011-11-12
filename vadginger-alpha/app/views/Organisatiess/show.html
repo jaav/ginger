@@ -1,46 +1,39 @@
 #{extends 'main.html' /}
 
-<h2>View Organisaties</h2>
+<h2>Organisatie ${entity.naam}</h2>
 
 <div class="entity">
 
-  
 	<div class="row">
 		<span class="elem">
-			userId:
-		</span>
-		<span class="value">
-      ${entity.userId}
-		</span>
-	</div>
-  
-
-  
-	<div class="row">
-		<span class="elem">
-			ouder:
-		</span>
-		<span class="value">
-      ${entity.ouder}
-		</span>
-	</div>
-  
-
-  
-	<div class="row">
-		<span class="elem">
-			naam:
+			Naam:
 		</span>
 		<span class="value">
       ${entity.naam}
 		</span>
 	</div>
   
-
+	<div class="row">
+		<span class="elem">
+			Verantwoordelijke:
+		</span>
+		<span class="value">
+      ${entity.userId}
+		</span>
+	</div>
   
 	<div class="row">
 		<span class="elem">
-			organisatieNetwerk:
+			Afhankelijk van:
+		</span>
+		<span class="value">
+      ${entity.ouder}
+		</span>
+	</div>
+  
+	<div class="row">
+		<span class="elem">
+			Organisatie of Netwerk:
 		</span>
 		<span class="value">
       ${entity.organisatieNetwerk}
@@ -51,40 +44,17 @@
   
 	<div class="row">
 		<span class="elem">
-			adres:
+			Adres:
 		</span>
-		<span class="value">
-      ${entity.adres}
+		<span class="value addressblock">
+      ${entity.adres}<br />${entity.postcode} ${entity.gemeente}
 		</span>
 	</div>
-  
 
   
 	<div class="row">
 		<span class="elem">
-			postcode:
-		</span>
-		<span class="value">
-      ${entity.postcode}
-		</span>
-	</div>
-  
-
-  
-	<div class="row">
-		<span class="elem">
-			gemeente:
-		</span>
-		<span class="value">
-      ${entity.gemeente}
-		</span>
-	</div>
-  
-
-  
-	<div class="row">
-		<span class="elem">
-			land:
+			Land:
 		</span>
 		<span class="value">
       ${entity.land}
@@ -95,7 +65,7 @@
   
 	<div class="row">
 		<span class="elem">
-			centrum:
+			Centrum:
 		</span>
 		<span class="value">
       ${entity.centrum}
@@ -103,18 +73,6 @@
 	</div>
   
 
-  
-	<div class="row">
-		<span class="elem">
-			id:
-		</span>
-		<span class="value">
-      ${entity.id}
-		</span>
-	</div>
-  
-
 </div>
 
-<a href="@{Organisatiess.index}">Terug</a>
 

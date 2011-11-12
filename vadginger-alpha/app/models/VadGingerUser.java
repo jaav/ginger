@@ -49,7 +49,12 @@ public class VadGingerUser extends Model {
 
   @Override
   public String toString() {
-    return userID+" ("+firstName +" "+lastName+")";
+    String name = null;
+    if(firstName!=null) name = firstName;
+    if(lastName!=null && name!=null) name = name+" "+lastName;
+    if(lastName!=null && name==null) name = lastName;
+    if(name!=null) return userID+" ("+name+")";
+    else return userID;
   }
 }
 

@@ -109,6 +109,9 @@ public class Activity extends Model {
 
   @Override
   public String toString() {
-    return beschrijving + "' - '" + organizationId;
+    if(beschrijving!=null)
+      return beschrijving + " - " + organizationId;
+    else
+      return "Geen beschrijving - "+organizationId;
   }
 }

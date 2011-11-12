@@ -15,10 +15,10 @@
 		</tr>
 	</thead>
 	<tbody>
-	#{list items:entities, as:'entity'}
+	#{paginate.list items:entities, as:'entity'}
 		<tr>
 					<td>${entity.activityId}</td>
-					<td>${entity.attendantTypeId}</td>
+					<td>${entity.attendantTypeId?.naam}</td>
           <td>
             <table class="actiontable"><tr>
               <td><a href="@{ActivityTargetss.show(entity.id)}"><div class="viewer actionbutton"></div></a></td>
@@ -29,7 +29,8 @@
         
 			
 		</tr>
-	#{/list}
+	#{/paginate.list}
 	</tbody>
 </table>
+#{paginate.controls items:entities /}
 

@@ -86,6 +86,8 @@ public class Organisaties extends Model {
 	 */
 	
 	public String toString() {
+    if(ouder!=null)
+      return ouder.naam + " (" + naam + ")";
 		return naam;
 	}
 }
