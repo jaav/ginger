@@ -23,6 +23,14 @@ public class Sectorss extends GingerController {
 		setAccordionTab(4);
 		render(entities);
 	}
+	
+	public static void subIndex() {
+		//List<Sectors> entities = models.Sectors.all().fetch();
+		ModelPaginator entities = new ModelPaginator(Sectors.class, "ouder is not null");
+		entities.setPageSize(20);
+		setAccordionTab(4);
+		render("Sectorss/index.html",entities);
+	}
 
 	public static void create(Sectors entity) {
     setAccordionTab(4);
