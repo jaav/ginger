@@ -60,6 +60,8 @@
             <li><a href="@{Statics.usersData()}">Gebruikersgegevens</a></li>
             <li><a href="@{VadGingerUsers.index()}">Lijst Gebruikers</a></li>
             <li><a href="@{VadGingerUsers.create()}">Nieuwe Gebruiker</a></li>
+            <li><a href="@{VadGingerUsers.changeEmailIdForm()}">Emailadres wijzigen</a></li>
+            <li><a href="@{VadGingerUsers.changePasswordForm()}">Wachtwoord wijzigen</a></li>
             <li>
               #{if session.get("username") == null}
               <a href="/secure/login">Login</a>

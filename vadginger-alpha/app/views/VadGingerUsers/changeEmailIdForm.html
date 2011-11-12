@@ -1,0 +1,33 @@
+#{extends 'main.html' /}
+
+<h2>Indien jouw emailadres verandert, gelieve de VAD-beheerder hiervan op de hoogte te brengen door hier het nieuwe adres in te voeren en op "Emailadres wijzigen" klikken.</h2>
+
+<div class="entity">
+
+#{form @VadGingerUsers.changeEmail(), id:'changeEmailForm'}
+	
+	 <div class="row">
+  <div class="label">Email Address</div>
+  <div class="field">
+       <input type="text" name="entity.emailAddress" value="${entity?.emailAddress}" id="emailId"/>
+     <span id="emailIdSpan"></span>
+  </div>
+ 
+</div>
+	<script>
+$("#changeEmailForm").submit(function(){
+	var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+	var emailIdVal = $("#emailId").val();
+	if(emailIdVal==''||!emailReg.test(emailIdVal)) {
+		$("#emailIdSpan").text("Invalid Email Id").show();
+		return false;
+	} else {
+		$("#emailIdSpan").hide();
+	}	
+	
+});
+</script>
+	<input type="submit" name="submit" value="Emailadres wijzigen" id="submit"/>
+#{/form}
+</div>
+<a href="@{VadGingerUsers.index}">Cancel</a>

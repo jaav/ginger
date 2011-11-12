@@ -35,6 +35,37 @@ public class VadGingerUsers extends GingerController {
     setAccordionTab(1);
 		render(entity);
 	}
+	
+	public static void changeEmailIdForm() {
+		VadGingerUser entity = VadGingerUser.findById(Long.parseLong(session.get("userId")));
+		setAccordionTab(1);
+		render(entity);
+	}
+	
+	public static void changeEmail() {
+		VadGingerUser entity = VadGingerUser.findById(Long.parseLong(session.get("userId")));
+		entity.emailAddress=request.params.get("entity.emailAddress");
+		entity.save();
+		index();
+	}
+	
+	public static void changePasswordForm() {
+		boolean invalidPassword = false;
+		setAccordionTab(1);
+		render(invalidPassword);
+	}
+	
+	public static void changePassword() {
+		VadGingerUser entity = VadGingerUser.findById(Long.parseLong(session.get("userId")));
+		if (entity.passwordHash.equals(play.libs.Codec.encodeBASE64(Security.md5((request.params.get("oud_password")))))) {
+			entity.passwordHash=play.libs.Codec.encodeBASE64(Security.md5(request.params.get("c_password")));
+			entity.save();
+		} else {
+			boolean invalidPassword = true;
+			render("VadGingerUsers/changePasswordForm.html", invalidPassword); 
+		}
+		Application.index();
+	}
 
 	public static void edit(java.lang.Long id) {
     VadGingerUser entity = VadGingerUser.findById(id);
