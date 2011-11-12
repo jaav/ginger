@@ -46,7 +46,7 @@ public class VadGingerUsers extends GingerController {
 		VadGingerUser entity = VadGingerUser.findById(Long.parseLong(session.get("userId")));
 		entity.emailAddress=request.params.get("entity.emailAddress");
 		entity.save();
-		index();
+		Application.index();
 	}
 	
 	public static void changePasswordForm() {
