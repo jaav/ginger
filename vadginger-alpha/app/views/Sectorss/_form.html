@@ -12,7 +12,7 @@
               
                       <option value="">(None)</option>              
               
-        %{ models.Sectors.all().fetch().sort{ it.toString() }.each() { }%
+        %{ models.Sectors.find("ouder is null").fetch().sort{ it.toString() }.each() { }%
           
           %{
             selected = false;

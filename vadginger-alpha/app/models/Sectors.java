@@ -52,4 +52,9 @@ public class Sectors extends Model{
 
 	@PersistenceContext
     transient EntityManager entityManager;*/
+	
+	
+	public String toString() {
+		return this.naam;
+	}
 }

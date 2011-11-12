@@ -18,8 +18,9 @@ import play.mvc.With;
 public class Sectorss extends GingerController {
 	public static void index() {
 		//List<Sectors> entities = models.Sectors.all().fetch();
-		ModelPaginator entities = new ModelPaginator(Sectors.class);
-    setAccordionTab(4);
+		ModelPaginator entities = new ModelPaginator(Sectors.class, "ouder is null");
+		entities.setPageSize(20);
+		setAccordionTab(4);
 		render(entities);
 	}
 
