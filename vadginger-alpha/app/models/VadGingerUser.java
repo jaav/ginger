@@ -30,6 +30,9 @@ public class VadGingerUser extends Model {
   
   @OneToMany(mappedBy = "userId")
   public Set<Organisaties> organizationId;
+  
+  @OneToMany(mappedBy = "userId")
+  public Set<OrgUserJunction> orgUserJunction;
 
   public VadGingerUser() {
   }

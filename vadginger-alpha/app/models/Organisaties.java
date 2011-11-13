@@ -44,6 +44,9 @@ public class Organisaties extends Model {
 
 	@ManyToOne
 	public VadGingerUser userId;
+	
+	@OneToMany(mappedBy = "orgId")
+	public Set<OrgUserJunction> orgUserJunction;
 
 	@ManyToOne
 	public Organisaties ouder;

@@ -1,0 +1,75 @@
+
+
+ <div class="row">
+  <div class="label">Organisaties</div>
+  <div class="field">
+       <select name="entity.orgId.id">
+              
+                      <option value="">(None)</option>              
+              #{if models.VadGingerUser.find("id is " + session.get("userId")).first().role.name().equalsIgnoreCase("org_admin") }
+             
+        %{ models.OrgUserJunction.find("userId is ${session.get("userId")}").fetch().sort{ it.toString() }.each() { }%
+          
+          %{
+            selected = false;
+            if (entity?.orgId?.id == it.orgId.id) {
+              selected = true
+            }
+          }%
+          <option value="${it?.orgId.id}" ${selected ? 'selected'.raw() : ''}>${it.orgId}</option>
+        %{ } }%
+        #{/if}
+        #{if models.VadGingerUser.find("id is " + session.get("userId")).first().role.name().equalsIgnoreCase("admin")}
+             
+        %{ models.Organisaties.all().fetch().sort{ it.toString() }.each() { }%
+          
+          %{
+            selected = false;
+            if (entity?.orgId?.id == it.id) {
+              selected = true
+            }
+          }%
+          <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option>
+        %{ } }%
+        #{/if}
+        </select>
+      
+  </div>
+  <span class="error">${errors.forKey('entity.orgId')}</span>
+</div>
+
+
+ <div class="row">
+  <div class="label">User</div>
+  <div class="field">
+       <select name="entity.userId.id">
+              
+                      <option value="">(None)</option>              
+              
+        %{ models.VadGingerUser.all().fetch().sort{ it.toString() }.each() { }%
+          
+          %{
+            selected = false;
+            if (entity?.userId?.id == it.id) {
+              selected = true
+            }
+          }%
+          <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option>
+        %{ } }%
+        </select>
+      
+  </div>
+  <span class="error">${errors.forKey('entity.userId')}</span>
+</div>
+
+
+ <div class="row">
+  <div class="label"></div>
+  <div class="field">
+        <input type="hidden" name="entity.id" value="${entity?.id}"/>
+    
+  </div>
+  <span class="error">${errors.forKey('entity.id')}</span>
+</div>
+
+

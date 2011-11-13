@@ -1,0 +1,13 @@
+#{extends 'main.html' /}
+
+<h2>Create OrgUserJunction</h2>
+
+<div class="entity">
+#{form @OrgUserJunctions.save(), id:'createForm'}
+	#{include 'OrgUserJunctions/_form.html' /}
+	<button class="submit ui-corner-all" onclick="this.submit()">Opslaan</button>
+  <button class="submit ui-corner-all" onclick="history.back();return false;">Terug</button>
+#{/form}
+</div>
+
+<a href="@{OrgUserJunctions.index}">Cancel</a>
