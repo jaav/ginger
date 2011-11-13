@@ -117,13 +117,12 @@ $("form").submit(function(){
 		return false;
 	} else {
 		$("#emailIdSpan").hide();
+		return true;
 	}
 	//alert($("#password").val());
 	if($("#password").val().length<5) {
 		$('#invalidPassword').text("Invalid Password").show();
 		return false;
-	} else {
-		return true;
 	}
 	
 	

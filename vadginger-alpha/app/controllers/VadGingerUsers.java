@@ -84,7 +84,8 @@ public class VadGingerUsers extends GingerController {
 			flash.error(Messages.get("scaffold.validation"));
 			render("@create", entity);
 		}
-		String pass = request.params.get("password");
+		
+		String pass = request.params.get("c_password");
 		if(pass!=null&&pass.length()>=5) {
 			entity.passwordHash = play.libs.Codec.encodeBASE64(Security.md5(pass));
 		} else {
