@@ -4,6 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import models.OrgUserJunction;
+import models.RoleType;
 import models.VadGingerUser;
 import play.data.validation.Valid;
 import play.i18n.Messages;
@@ -61,6 +62,9 @@ public class OrgUserJunctions extends Controller {
 			render("@create", entity);
 		}
     entity.save();
+    models.VadGingerUser user = entity.userId;
+    user.role = RoleType.ORG_ADMIN;
+    user.save();
 		flash.success(Messages.get("scaffold.created", "OrgUserJunction"));
 		index();
 	}
