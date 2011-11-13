@@ -12,6 +12,9 @@ import javax.persistence.TemporalType;
 import org.apache.commons.lang.StringUtils;
 
 import models.Activity;
+import models.OrgUserJunction;
+import models.RoleType;
+import models.VadGingerUser;
 import play.data.validation.Valid;
 import play.db.jpa.JPA;
 import play.i18n.Messages;
@@ -24,14 +27,33 @@ import play.mvc.With;
 @With(Secure.class)
 public class Activities extends GingerController {
 	public static void index() {
-		/*List<Activity> entities = models.Activity.all().fetch();*/
-		ModelPaginator entities = new ModelPaginator(Activity.class);
+		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
+		ModelPaginator entities = null;
+		if (user.role.name().equalsIgnoreCase("admin")) {
+		entities = new ModelPaginator(Activity.class);
+		
+		}
+		else if (user.role.name().equalsIgnoreCase("org_admin")) {
+			List<OrgUserJunction> orgUserJuncs = OrgUserJunction.find("userId is " + user.id).fetch();
+			StringBuffer query = new StringBuffer("organizationId in (");
+			Iterator<OrgUserJunction> i = orgUserJuncs.iterator();
+			while(i.hasNext())
+			{
+				query.append("" + i.next().orgId.id);
+				if (i.hasNext())
+					query.append(",");
+			}
+			query.append(")");
+			entities = new ModelPaginator(Activity.class, query.toString());
+		} else {
+			entities = new ModelPaginator(Activity.class, "userId is " + user.id);
+		}
 		entities.setPageSize(20);
-    setAccordionTab(2);
 		render(entities);
 	}
 
 	public static void create(Activity entity) {
+		System.out.println("++++++++++++++++> " + play.libs.Codec.encodeBASE64(Security.md5("123456")));
 		/*
 		 * List<models.Locations> locs =
 		 * models.Locations.find("ouder is 1").fetch(); for (models.Locations
@@ -218,6 +240,7 @@ public class Activities extends GingerController {
    }
    
    public static void search() {
+	   VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
 	   List<models.Activity> entities = new ArrayList<Activity>();
 	   boolean internalActivity = (getParam("internal_activity")!=null);
 	   boolean nonInternalActivity = (getParam("non_internal_activity")!=null);
@@ -238,6 +261,15 @@ public class Activities extends GingerController {
 			} else if(!e.internalActivity&&nonInternalActivity)
 				actIter.remove();
 	   }
+	   }
+	   if (user.role.equals(RoleType.MEMBER)) {
+		   actIter = entities.iterator();
+		   while(actIter.hasNext()) {
+			   Activity e = actIter.next();
+					if (e.userId.id!=user.id) {
+						  actIter.remove();
+				} 
+		   }   
 	   }
      setAccordionTab(2);
 	   renderTemplate("Activities/index.html", entities);

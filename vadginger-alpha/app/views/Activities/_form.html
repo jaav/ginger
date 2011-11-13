@@ -15,18 +15,32 @@
     <select name="organization" id="organizationSelect">
 
       <option value="">(None)</option>
-
-      %{ models.Organisaties.find("ouder is null").fetch().sort{ it.toString() }.each() { }%
-
-      %{
-      selected = false;
-      if (entity?.organizationId?.id == it.id) {
-      selected = true
-      }
-      }%
-      <option value="${it?.id}"
-      ${selected ? 'selected'.raw() : ''}>${it}</option>
-      %{ } }%
+     #{if models.VadGingerUser.find("id is " + session.get("userId")).first().role.name().equalsIgnoreCase("org_admin") }
+             
+        %{ models.OrgUserJunction.find("userId is ${session.get("userId")}").fetch().sort{ it.toString() }.each() { }%
+          
+          %{
+            selected = false;
+            if (entity?.organizationId?.id == it.orgId.id) {
+              selected = true
+            }
+          }%
+          <option value="${it?.orgId.id}" ${selected ? 'selected'.raw() : ''}>${it.orgId}</option>
+        %{ } }%
+        #{/if}
+        #{else}
+             
+        %{ models.Organisaties.all().fetch().sort{ it.toString() }.each() { }%
+          
+          %{
+            selected = false;
+            if (entity?.organizationId?.id == it.id) {
+              selected = true
+            }
+          }%
+          <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option>
+        %{ } }%
+        #{/else}
     </select>
 
   </div>
