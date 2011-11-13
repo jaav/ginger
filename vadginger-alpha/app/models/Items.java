@@ -46,6 +46,10 @@ public class Items extends Model {
 	}
 	
 	
+	public String toString() {
+		return this.naam;
+	}
+	
 	public Items(String naam,String beschrijving) {
 		this.naam = naam;
 		this.beschrijving = beschrijving;

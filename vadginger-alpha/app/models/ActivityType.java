@@ -35,6 +35,10 @@ public class ActivityType extends Model {
 	@Column(name = "Beschrijving")
 	@Lob
 	public String beschrijving;
+	
+	public String toString() {
+		return this.naam;
+	}
 
 	/*
 	 * @PersistenceContext transient EntityManager entityManager;

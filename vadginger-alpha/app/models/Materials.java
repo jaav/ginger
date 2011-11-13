@@ -41,4 +41,8 @@ public class Materials extends Model{
 	@Column(name = "Beschrijving")
     @Lob
     public Clob beschrijving;
+	
+	public String toString() {
+		return this.naam;
+	}
 }

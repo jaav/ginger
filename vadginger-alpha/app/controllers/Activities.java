@@ -45,8 +45,14 @@ public class Activities extends GingerController {
 
 	public static void show(java.lang.Long id) {
 		Activity entity = Activity.findById(id);
-    setAccordionTab(2);
-		render(entity);
+		setAccordionTab(2);
+		List<models.ItemsInActivity> iia = models.ItemsInActivity.find("byActivityId", entity).fetch();
+		List<models.MaterialsInActivity> mia = models.MaterialsInActivity.find("byActivityId", entity).fetch();
+		List<models.ActivitySectors> asc = models.ActivitySectors.find("byActivityId", entity).fetch();
+		List<models.ActivityTypeJunction> atj = models.ActivityTypeJunction.find("byActivityId", entity).fetch();
+		List<models.ActivityEvaluvators> aes = models.ActivityEvaluvators.find("byActivityId", entity).fetch();
+		List<models.ActivityTargets> ats = models.ActivityTargets.find("byActivityId", entity).fetch();
+		render(entity, iia, mia, asc, atj, aes, ats);
 	}
 
 	public static void edit(java.lang.Long id) {
@@ -312,23 +318,23 @@ private static void getActivityBySector(List<models.Activity> activities) {
 	List<models.Sectors> secs = models.Sectors.find("ouder is null").fetch();
 		for (models.Sectors sec: secs) {
 			if (request.params.get("sector_" + sec.id)!=null) {
-				List<models.SectorActivityJunction> sacs;
+				List<models.ActivitySectors> sacs;
 				String sub_sec_id = request.params.get("sub_sector_" + sec.id);
 				models.Sectors sub_sec = sec;
-				if (sub_sec_id!=null) {
+				if (sub_sec_id!=null&&!sub_sec_id.trim().equals("")) {
 					sub_sec = models.Sectors.find("id is " + sub_sec_id).first();
-					 sacs = models.SectorActivityJunction.find("bySectorId", sub_sec).fetch();
+					 sacs = models.ActivitySectors.find("bySectorId", sub_sec).fetch();
 				} else {
-					sacs = models.SectorActivityJunction.find("bySectorId", sec).fetch(); 
+					sacs = models.ActivitySectors.find("bySectorId", sec).fetch(); 
 				}
-				for(models.SectorActivityJunction sac:sacs) {
+				for(models.ActivitySectors sac:sacs) {
 					activities.add(sac.activityId);
 				}
 			}
 			if (request.params.get("sec_atd_" + sec.id) != null) {
-				models.ActivitySectors as = new models.ActivitySectors();
-				List<models.ActivitySectors> acs = models.ActivitySectors.find("bySectorId", sec).fetch();
-				for(models.ActivitySectors ac: acs)
+				models.SectorActivityJunction as = new models.SectorActivityJunction();
+				List<models.SectorActivityJunction> acs = models.SectorActivityJunction.find("bySectorId", sec).fetch();
+				for(models.SectorActivityJunction ac: acs)
 					activities.add(ac.activityId);
 			}
 			

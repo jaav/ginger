@@ -12,7 +12,7 @@
               
                       <option value="">(None)</option>              
               
-        %{ models.ActivityType.all().fetch().sort{ it.toString() }.each() { }%
+        %{ models.ActivityType.find("ouder is null").fetch().sort{ it.toString() }.each() { }%
           
           %{
             selected = false;
