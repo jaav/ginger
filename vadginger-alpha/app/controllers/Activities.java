@@ -207,6 +207,7 @@ public class Activities extends GingerController {
 	
    public static void searchForm() {
 	   //System.out.println("++++++++++++> HERE");
+     setAccordionTab(2);
 	   render();
    }
    
@@ -232,6 +233,7 @@ public class Activities extends GingerController {
 				actIter.remove();
 	   }
 	   }
+     setAccordionTab(2);
 	   renderTemplate("Activities/index.html", entities);
    }
 

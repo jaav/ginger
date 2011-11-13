@@ -80,7 +80,7 @@ public class Locationss extends GingerController {
     if(locs.isEmpty()) renderText("");
     else{
       StringBuffer htmlData = new StringBuffer();
-      htmlData.append("<div class=\"label\">Sub Location</div>");
+      htmlData.append("<div class=\"label\">Sub-locatie</div>");
       htmlData.append("<div class=\"field\">");
       htmlData.append("<select name=\"entity.locationId.id\" id=\"subLocationSelect\">\n");
       for (models.Locations loc: locs) {

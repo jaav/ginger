@@ -84,7 +84,7 @@ public class Organisatiess extends GingerController {
     if(orgs.isEmpty()) renderText("");
     else{
       StringBuffer htmlData = new StringBuffer();
-      htmlData.append("<div class=\"label\">Sub Organization</div>");
+      htmlData.append("<div class=\"label\">Sub-organisatie</div>");
       htmlData.append("<div class=\"field\">");
       htmlData.append("<select name=\"entity.organizationId.id\" id=\"subOrganizationSelect\">\n");
       for (models.Organisaties org: orgs) {

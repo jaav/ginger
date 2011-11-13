@@ -1,45 +1,62 @@
- <div class="row">
-  <div class="label">Organization Id</div>
+<div class="row">
+  <div class="label">Omschrijving van de activiteit:</div>
   <div class="field">
 
-        <select name="organization" id="organizationSelect">
-              
-                      <option value="">(None)</option>              
-              
-        %{ models.Organisaties.find("ouder is null").fetch().sort{ it.toString() }.each() { }%
-          
-          %{
-            selected = false;
-            if (entity?.organizationId?.id == it.id) {
-              selected = true
-            }
-          }%
-          <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option>
-        %{ } }%
-        </select>
+    <input type="text" name="entity.beschrijving" value="${entity?.beschrijving}" size="80"/>
+
+  </div>
+  <span class="error">${errors.forKey('entity.beschrijving')}</span>
+</div>
+
+<div class="row">
+  <div class="label">Organisatie</div>
+  <div class="field">
+
+    <select name="organization" id="organizationSelect">
+
+      <option value="">(None)</option>
+
+      %{ models.Organisaties.find("ouder is null").fetch().sort{ it.toString() }.each() { }%
+
+      %{
+      selected = false;
+      if (entity?.organizationId?.id == it.id) {
+      selected = true
+      }
+      }%
+      <option value="${it?.id}"
+      ${selected ? 'selected'.raw() : ''}>${it}</option>
+      %{ } }%
+    </select>
 
   </div>
   <span class="error">${errors.forKey('entity.organizationId')}</span>
-   <div class="field" id="hiddenOrg"> </div>
-  	
-  		<script>
-  		$("#organizationSelect").change(function() {
-  			$("#hiddenOrg").empty();
-  			var selectedOrganization = $("#organizationSelect option:selected").val();
-  			var listLocations = #{jsAction @Organisatiess.list(':id')/}
-			$("#hiddenOrg").load(listLocations({id: selectedOrganization}), function(){});
-  		}).trigger();
-  	</script>
+
+  <div class="field" id="hiddenOrg"></div>
+
+  <script>
+    $("#organizationSelect").change(
+      function() {
+        $("#hiddenOrg").empty();
+        var selectedOrganization = $("#organizationSelect option:selected").val();
+        var listLocations = #{jsAction @Organisatiess.list(':id')/}
+          $("#hiddenOrg").load(listLocations({id: selectedOrganization}), function() {
+          });
+      }).trigger();
+  </script>
 </div>
- <div class="row">
-  <div class="label">Internal Activity</div>
+<div class="row">
+  <div class="label">Interne / Extern</div>
   <div class="field">
-    
-      <input type="checkbox" name="entity.internalActivity"
-        ${entity?.internalActivity ? 'checked':''}
-      />
- 
-    
+    Intern: <input type="radio" name="entity.internalActivity" value="true"
+    #{if entity?.internalActivity==true} checked#{/if}
+    /><br />
+    Extern: <input type="radio" name="entity.internalActivity" value="false"
+    #{if entity?.internalActivity==false} checked#{/if}
+    />
+
+
+
   </div>
   <span class="error">${errors.forKey('entity.internalActivity')}</span>
 </div>
@@ -48,89 +65,80 @@
   <div class="label">Op welke dag vond de activiteit plaats?</div>
   <div class="field">
 
-      <input type="text" name="activity_date" value="${entity?.activityDate}" id="datepicker"/>
-      <script>
-      $( "#datepicker" ).datepicker({ appendText: '(yyyy-mm-dd)' });
-  </script>
+    <input type="text" name="activity_date" value="${entity?.activityDate}" id="datepicker"/>
+    <script>
+      $("#datepicker").datepicker({ appendText: '(dd/mm/yyyy)', dateFormat: 'dd/mm/yy', monthNames: ['Januari', 'Februari', 'Maart', 'April', 'Mei', 'Juni', 'Juli', 'Augustus', 'September', 'Oktober', 'November', 'December']});
+    </script>
   </div>
   <span class="error">${errors.forKey('entity.activityDate')}</span>
 </div>
-
- <div class="row">
-  <div class="label">Geef een korte omschrijving van de activiteit:</div>
-  <div class="field">
-
-      <input type="text" name="entity.beschrijving" value="${entity?.beschrijving}"/>
-
-  </div>
-  <span class="error">${errors.forKey('entity.beschrijving')}</span>
-</div>
- <div class="row">
+<div class="row">
   <div class="label">Hoe lang duurde de activiteit (in minuten)?</div>
   <div class="field">
 
-      <input type="text" name="entity.duur" value="${entity?.duur}"/>
+    <input type="text" name="entity.duur" value="${entity?.duur}"/>
 
   </div>
   <span class="error">${errors.forKey('entity.duur')}</span>
 </div>
 
 <hr>
- <div class="row">
-  <div class="label">Met welke sector en detailsector(en) voer je de preventieactiviteit uit? 
-<div class="label">Sector:</div>  
-</div>
+<div class="row">
+  <div class="label">Met welke sector en detailsector(en) voer je de preventieactiviteit uit?
+    <div class="label">Sector:</div>
+  </div>
   <div class="field">
-                 
-              
-        %{ models.Sectors.find("ouder is null").fetch().sort{ it.toString() }.each() { }%
-          
-          %{
-            selected = false;
-            if (entity?.locationId?.id == it.id) {
-              selected = true
-            }
-          }%
-         
-          
-        <input id="${it?.id}" name="sector_${it?.id}" type="checkbox" class="chkbx" >  
-		<label class = "choice" for="sector_${it?.id}">${it?.naam}</label>
-		<span class="field" id="${it?.id}cont"></span><br>
-          <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
-        %{ } }%
-       
- 
+
+
+    %{ models.Sectors.find("ouder is null").fetch().sort{ it.toString() }.each() { }%
+
+    %{
+    selected = false;
+    if (entity?.locationId?.id == it.id) {
+    selected = true
+    }
+    }%
+
+
+    <input id="${it?.id}" name="sector_${it?.id}" type="checkbox" class="chkbx">
+    <label class="choice" for="sector_${it?.id}">${it?.naam}</label>
+    <span class="field" id="${it?.id}cont"></span><br>
+    <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
+    %{ } }%
+
+
   </div>
   <span class="error">${errors.forKey('entity.locationId')}</span>
   <script>
-  		$(".chkbx").change(function() {
-  			var $input = $(this);
-  		    var currentId = $(this).attr('id');
-  		    var currentIdcont = "#"+currentId+"cont";
-  		  	if($input.is(':checked'))
-  		  	{
-  		  	var listLocations = #{jsAction @Sectorss.list(':id')/}
-  			$(currentIdcont).load(listLocations({id: currentId}), function(){});
-  			} 
-  		  	else { $(currentIdcont).html(""); } 
-  		});
-  	</script>
-  	<!-- </select> -->
- 
+    $(".chkbx").change(function() {
+      var $input = $(this);
+      var currentId = $(this).attr('id');
+      var currentIdcont = "#" + currentId + "cont";
+      if ($input.is(':checked')) {
+        var listLocations = #{jsAction @Sectorss.list(':id')/}
+          $(currentIdcont).load(listLocations({id: currentId}), function() {
+          });
+      }
+      else {
+        $(currentIdcont).html("");
+      }
+    });
+  </script>
+  <!-- </select> -->
+
 </div>
 <hr>
 
 
-
 <!--  <div class="row">
-  <div class="label">Reported</div>
-  <div class="field">
-    
-      <input type="checkbox" name="entity.reported"
-        ${entity?.reported ? 'checked':''}
-      />
-    </div>
-  <span class="error">${errors.forKey('entity.reported')}</span>
+ <div class="label">Reported</div>
+ <div class="field">
+
+     <input type="checkbox" name="entity.reported"
+       ${entity?.reported ? 'checked':''}
+     />
+   </div>
+ <span class="error">${errors.forKey('entity.reported')}</span>
 </div> -->
 
 
@@ -154,96 +162,114 @@
 </div> -->
 
 
-
-
-
- <div class="row">
+<div class="row">
   <div class="label">Tot welk locatieniveau richt de activiteit zich?</div>
-  <div class="label">Locatie</div>
   <div class="field">
-         <select name="location" id="locationSelect">
-         
-              
-                      <option value="">(None)</option>              
-              
-        %{ models.Locations.find("ouder is null").fetch().sort{ it.toString() }.each() { }%
-          
-          %{
-            selected = false;
-            if (entity?.locationId?.id == it.id) {
-              selected = true
-            }
-          }%
-          <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option>
-        %{ } }%
-        </select>
- 
+    <select name="location" id="locationSelect">
+
+
+      <option value="">(Niet van toepassing)</option>
+
+      %{ models.Locations.find("ouder = 1").fetch().sort{ it.toString() }.each() { }%
+
+      %{
+      selected = false;
+      if (entity?.locationId?.id == it.id) {
+      selected = true
+      }
+      }%
+      <option value="${it?.id}"
+      ${selected ? 'selected'.raw() : ''}>${it.naam}</option>
+      %{ } }%
+    </select>
+
   </div>
   <span class="error">${errors.forKey('entity.locationId')}</span>
-  <div class="field" id="hiddenLoc"> </div>
-  	<!-- <select id="sub_location_id"> -->
-  		<script>
-  		$("#locationSelect").change(function() {
-  			$("#hiddenLoc").empty();
-  			var selectedLocation = $("#locationSelect option:selected").val();
-  			var listLocations = #{jsAction @Locationss.list(':id')/}
-			$("#hiddenLoc").load(listLocations({id: selectedLocation}), function(){});
-  		}).trigger();
-  	</script>
-  	<!-- </select> -->
- 
+
+  <div class="field" id="hiddenLoc"></div>
+  <!-- <select id="sub_location_id"> -->
+  <script>
+    $("#locationSelect").change(
+      function() {
+        $("#hiddenLoc").empty();
+        var selectedLocation = $("#locationSelect option:selected").val();
+        var listLocations = #{jsAction @Locationss.list(':id')/}
+          $("#hiddenLoc").load(listLocations({id: selectedLocation}), function() {
+          });
+      }).trigger();
+  </script>
+  <!-- </select> -->
+
 </div>
 <hr>
- <div class="row">
-  <div class="label">Met welke doelgroep vond de activiteit plaats </div>
-   %{ models.TargetType.all().fetch().sort{ it.toString() }.each() { }%
-          
-          %{
-            selected = false;
-            if (entity?.locationId?.id == it.id) {
-              selected = true
-            }
-          }%
-         
-          
-        <input id="${it?.id}" name="attendant_type" type="radio" class="rdbx" value="${it?.id}">${it}
-		<!-- <span class="field" id="${it?.id}cont"></span><br> -->
-          <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
-        %{ } }%
-  <div class="field" id="atd_type">
-  </div>
-  <script>
-  		$(".rdbx").change(function() {
-  			var $input = $(this);
-  		    var currentId = $(this).attr('id');
-  		    var currentIdcont = "#atd_type";
-  		   if($input.is(':checked'))
-  		  	{
-  		  	var listAtdTypes = #{jsAction @AttendantTypes.list(':id')/}
-  			$(currentIdcont).load(listAtdTypes({id: currentId}), function(){});
-  			} 
-  		  	else { $(currentIdcont).html(""); } 
-  		});
-  	</script>
-  
-  </div>
-  <hr>
+<div class="row">
+  <div class="label">Met welke doelgroep vond de activiteit plaats</div>
+  %{ models.TargetType.all().fetch().sort{ it.toString() }.each() { }%
+  %{
+  tti = 0;
+  entity?.activityTargets?.each(){
+    tti = it.attendantTypeId?.targetTypeId.id;
+  }
+  checked = "";
+  if (tti == it.id){
+    checked = "checked";
+  }
+  }%
 
- <div class="row">
+  <input id="${it?.id}" name="attendant_type" type="radio" class="rdbx" value="${it?.id}" ${checked}>${it}
+  <!-- <span class="field" id="${it?.id}cont"></span><br> -->
+  <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
+  %{ } }%
+  <div class="field" id="atd_type"></div>
+  %{
+  if (entity?.id) {
+  }%
+  <script>
+    $(document).ready(function(){
+      var currentIdcont = "#atd_type";
+      var listAtdTypes = #{jsAction @AttendantTypes.filledList(':id')/}
+      $(currentIdcont).load(listAtdTypes({id: ${entity.id}}), function() {
+      });
+    })
+  </script>
+  %{
+  }
+  }%
+  <script>
+    $(".rdbx").change(function() {
+      var $input = $(this);
+      var currentId = $(this).attr('id');
+      var currentIdcont = "#atd_type";
+      if ($input.is(':checked')) {
+        var listAtdTypes = #{jsAction @AttendantTypes.list(':id')/}
+          $(currentIdcont).load(listAtdTypes({id: currentId}), function() {
+          });
+      }
+      else {
+        $(currentIdcont).html("");
+      }
+    });
+  </script>
+
+</div>
+<hr>
+
+<div class="row">
   <div class="label">Over welke soort activiteit gaat het?</div>
   <div class="field">
-        <select name="activity_type">
-                      <option value="">(None)</option>              
-        %{ models.ActivityType.find("ouder is null").fetch().sort{ it.toString() }.each() { }%
-          %{
-            selected = false;
-            if (entity?.userId?.id == it.id) {
-              selected = true
-            }
-          }%
-          <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it.naam}</option>
-        %{ } }%
-        </select>
+    <select name="activity_type">
+      <option value="">(None)</option>
+      %{ models.ActivityType.find("ouder is null").fetch().sort{ it.toString() }.each() { }%
+      %{
+      selected = false;
+      if (entity?.userId?.id == it.id) {
+      selected = true
+      }
+      }%
+      <option value="${it?.id}"
+      ${selected ? 'selected'.raw() : ''}>${it.naam}</option>
+      %{ } }%
+    </select>
   </div>
   <!-- <span class="error">${errors.forKey('entity.userId')}</span> -->
 </div>
@@ -287,131 +313,125 @@
 </div>
  -->
 
- <div class="row">
+<div class="row">
   <div class="label"></div>
   <div class="field">
-    
-    
-    
-    
-    
-    
-    
-    
-      <input type="hidden" name="entity.id" value="${entity?.id}"/>
-    
-    
-    
+
+
+    <input type="hidden" name="entity.id" value="${entity?.id}"/>
+
+
   </div>
   <span class="error">${errors.forKey('entity.id')}</span>
 </div>
 
 
-
- <div class="row">
+<div class="row">
   <div class="label">Welke items werden tijdens de activiteit behandeld?</div>
-  <div class="field">		
-		
-		
-		<ul >
-			
-	<!-- 				<li id="li_1" > -->
+  <div class="field">
+
+
+    <ul>
+
+      <!-- 				<li id="li_1" > -->
 		<span>
 #{list items, as:'item'}
 <li>
-<input id="item_1_${item.id}" name="item_1_${item.id}" class="element checkbox" type="checkbox" value="1" />
-<label class="choice" for="item_1_${item.id}">${item.naam}</label><BR>
+  <input id="item_1_${item.id}" name="item_1_${item.id}" class="element checkbox" type="checkbox" value="1"/>
+  <label class="choice" for="item_1_${item.id}">${item.naam}</label><BR>
 </li>
 #{/list}
-		</span> 
-		
-		<!-- </li> -->
-		</ul>
+		</span>
 
-</div>
+      <!-- </li> -->
+    </ul>
+
+  </div>
 </div>
 <hr>
- <div class="row">
+<div class="row">
   <div class="label">Welk materiaal werd ter voorbereiding en/of tijdens de uitvoering van de activiteit gebruikt?</div>
   <div class="field">
-					
-		
-		<!-- <label class="description" for="material_1">Materials </label><BR> -->
-		<ul >
-			
-					<!-- <li id="li_1" > -->
+
+
+    <!-- <label class="description" for="material_1">Materials </label><BR> -->
+    <ul>
+
+      <!-- <li id="li_1" > -->
 		<span>
 #{list materials, as:'material'}
 <li>
-<input id="material_1_${material.id}" name="material_1_${material.id}" class="element checkbox" type="checkbox" value="1" />
-<label class="choice" for="material_1_${material.id}">${material.naam}</label><BR>
+  <input id="material_1_${material.id}" name="material_1_${material.id}" class="element checkbox" type="checkbox"
+         value="1"/>
+  <label class="choice" for="material_1_${material.id}">${material.naam}</label><BR>
 </li>
 #{/list}
-		</span> 
-		<!-- </li> -->
-		</ul>
-	</div>
-	</div>
-	<hr>
- <div class="row">
+		</span>
+      <!-- </li> -->
+    </ul>
+  </div>
+</div>
+<hr>
+<div class="row">
   <div class="label">Is de activiteit geëvalueerd?</div>
   <div class="field">
-    
-      <input type="checkbox" name="entity.evaluvated" id ="evaled"
-        ${entity?.evaluvated ? 'checked':''}
-      />
 
-    
+    <input type="checkbox" name="entity.evaluvated" id="evaled"
+    ${entity?.evaluvated ? 'checked':''}
+    />
+
+
   </div>
   <span class="error">${errors.forKey('entity.evaluvated')}</span>
 </div>
 <script>
-$("#evaled").change(function() {
-		var $input = $(this);
-	   if($input.is(':checked'))
-	  	{
-	  	 $("#evaluvated").show();
-		} 
-	  	else { $("#evaluvated").hide(); } 
-	});
+  $("#evaled").change(function() {
+    var $input = $(this);
+    if ($input.is(':checked')) {
+      $("#evaluvated").show();
+    }
+    else {
+      $("#evaluvated").hide();
+    }
+  });
 </script>
 
- <div class="row" id="evaluvated" style="display: none">
- 
- <div class="row">
-  <div class="label">Hoe is de activiteit geëvalueerd?</div>
-  <div class="field">
-    %{ models.EvaluvationType.all().fetch().sort{ it.toString() }.each() { }%
-          %{
-            selected = false;
-          }%
-        <input id="${it?.id}" name="eval_type_${it?.id}" type="checkbox" >  
-		<label class = "choice" for="eval_type_${it?.id}">${it?.evalType}</label>
-		  <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
-        %{ } }%
+<div class="row" id="evaluvated" style="display: none">
+
+  <div class="row">
+    <div class="label">Hoe is de activiteit geëvalueerd?</div>
+    <div class="field">
+      %{ models.EvaluvationType.all().fetch().sort{ it.toString() }.each() { }%
+      %{
+      selected = false;
+      }%
+      <input id="${it?.id}" name="eval_type_${it?.id}" type="checkbox">
+      <label class="choice" for="eval_type_${it?.id}">${it?.evalType}</label>
+      <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
+      %{ } }%
+    </div>
+    <span class="error">${errors.forKey('entity.evaluvated')}</span>
   </div>
-  <span class="error">${errors.forKey('entity.evaluvated')}</span>
-</div>
-<div class="row">
-  <div class="label">Wie heeft de activiteit geëvalueerd?</div>
-  <div class="field">
-   %{ models.Evaluvators.all().fetch().sort{ it.toString() }.each() { }%
-          %{
-            selected = false;
-          }%
-        <input id="${it?.id}" name="evaluvators" type="radio" value="${it?.id}">${it}
-		<!-- <span class="field" id="${it?.id}cont"></span><br> -->
-          <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
-        %{ } }%
+  <div class="row">
+    <div class="label">Wie heeft de activiteit geëvalueerd?</div>
+    <div class="field">
+      %{ models.Evaluvators.all().fetch().sort{ it.toString() }.each() { }%
+      %{
+      selected = false;
+      }%
+      <input id="${it?.id}" name="evaluvators" type="radio" value="${it?.id}">${it}
+      <!-- <span class="field" id="${it?.id}cont"></span><br> -->
+      <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
+      %{ } }%
+    </div>
+    <span class="error">${errors.forKey('entity.evaluvated')}</span>
   </div>
-  <span class="error">${errors.forKey('entity.evaluvated')}</span>
-</div>
-<div class="row">
-  <div class="label">Is er een verslag gemaakt?</div>
-  <div class="field">
-    
+  <div class="row">
+    <div class="label">Is er een verslag gemaakt?</div>
+    <div class="field">
+
       <input type="checkbox" name="entity.reported"/>
     </div>
-  <span class="error">${errors.forKey('entity.reported')}</span>
-</div>
+    <span class="error">${errors.forKey('entity.reported')}</span>
+  </div>
 </div>
