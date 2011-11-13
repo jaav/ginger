@@ -3,4 +3,5 @@ vad-ginger/modules
 vadginger-alpha/conf/application.conf
 vadginger-alpha/eclipse
 vadginger-alpha/modules
+vadginger-alpha/tmp
 
