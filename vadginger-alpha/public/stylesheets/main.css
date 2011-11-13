@@ -182,6 +182,20 @@ div.entity .bigSearch{
   height: 60px;
 }
 
+/* *********** FORMS ************ */
+
+.vad-main-block form{
+  font-size: 1.1em;
+}
+.vad-main-block form .field{
+  margin: 5px 0 20px 10px;
+}
+.vad-main-block form .submit{
+  font-weight: bold;
+  font-size: 16px;
+  width: 140px;
+  height: 30px;
+}
 
 
 /* *********** PAGINATION ************ */

@@ -86,7 +86,7 @@ public class Sectorss extends GingerController {
 			query += id;
 		List<models.Sectors> secs = models.Sectors.find(query).fetch();
 		StringBuffer htmlData = new StringBuffer();
-		htmlData.append("<div class=\"label\">Sub Sectors</div>");
+		htmlData.append("<div class=\"label\">Sub-sector</div>");
 		htmlData.append("<div class=\"field\">");
 		htmlData.append("<select name=\"sub_sector_"+id+"\" id=\"subSectorSelect\">\n");
 		htmlData.append(" <option value=\"\">none</option>\n");

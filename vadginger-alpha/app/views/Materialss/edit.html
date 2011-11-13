@@ -5,7 +5,8 @@
 <div class="entity">
 #{form @Materialss.update(), id:'createForm'}
 	#{include 'Materialss/_form.html' /}
-	<input type="submit" name="submit" value="Save" />
+	<button class="submit ui-corner-all" onclick="this.submit()">Opslaan</button>
+  <button class="submit ui-corner-all" onclick="history.back();return false;">Terug</button>
 #{/form}
 </div>
 

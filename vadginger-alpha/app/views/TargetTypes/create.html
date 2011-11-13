@@ -5,7 +5,8 @@
 <div class="entity">
 #{form @TargetTypes.save(), id:'createForm'}
 	#{include 'TargetTypes/_form.html' /}
-	<input type="submit" name="submit" value="Save" />
+	<button class="submit ui-corner-all" onclick="this.submit()">Opslaan</button>
+  <button class="submit ui-corner-all" onclick="history.back();return false;">Terug</button>
 #{/form}
 </div>
 

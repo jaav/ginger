@@ -1,12 +1,11 @@
 #{extends 'main.html' /}
 
-<h2>Create VadGingerUser</h2>
+<h2>Nieuwe gebruiker aanmaken</h2>
 
 <div class="entity">
 #{form @VadGingerUsers.save(), id:'createForm'}
 	#{include 'VadGingerUsers/_form.html' /}
-	<input type="submit" name="submit" value="Save" id="submit"/>
+  <button class="submit ui-corner-all" onclick="this.submit()">Opslaan</button>
+  <button class="submit ui-corner-all" onclick="history.back();return false;">Terug</button>
 #{/form}
 </div>
-
-<a href="@{VadGingerUsers.index}">Cancel</a>

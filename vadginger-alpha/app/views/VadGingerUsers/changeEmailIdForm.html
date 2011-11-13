@@ -27,7 +27,7 @@ $("#changeEmailForm").submit(function(){
 	
 });
 </script>
-	<input type="submit" name="submit" value="Emailadres wijzigen" id="submit"/>
+	<button class="submit ui-corner-all" onclick="this.submit()">Opslaan</button>
+  <button class="submit ui-corner-all" onclick="history.back();return false;">Terug</button>
 #{/form}
 </div>
-<a href="@{VadGingerUsers.index}">Cancel</a>
