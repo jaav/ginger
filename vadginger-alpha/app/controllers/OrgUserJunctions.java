@@ -21,7 +21,7 @@ public class OrgUserJunctions extends Controller {
 		}
 		else if (user.role.name().equalsIgnoreCase("org_admin")) {
 			List<OrgUserJunction> orgUserJuncs = OrgUserJunction.find("userId is " + user.id).fetch();
-			StringBuffer query = new StringBuffer("orgId in (");
+			StringBuffer query = new StringBuffer("organizationId in (");
 			Iterator<OrgUserJunction> i = orgUserJuncs.iterator();
 			while(i.hasNext())
 			{
@@ -30,7 +30,7 @@ public class OrgUserJunctions extends Controller {
 					query.append(",");
 			}
 			query.append(")");
-			entities = new ModelPaginator(OrgUserJunction.class, query.toString());
+			entities = new ModelPaginator(Activities.class, query.toString());
 		}
 		entities.setPageSize(20);
 		render(entities);
@@ -63,8 +63,10 @@ public class OrgUserJunctions extends Controller {
 		}
     entity.save();
     models.VadGingerUser user = entity.userId;
-    user.role = RoleType.ORG_ADMIN;
-    user.save();
+    if (!user.role.equals(RoleType.ADMIN)||!user.role.equals(RoleType.ORG_ADMIN)) {
+    	user.role = RoleType.ORG_ADMIN;
+    	user.save();
+    }
 		flash.success(Messages.get("scaffold.created", "OrgUserJunction"));
 		index();
 	}
