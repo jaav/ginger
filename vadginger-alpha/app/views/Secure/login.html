@@ -16,8 +16,25 @@
 				&{flash.success}
 			</p>
 		#{/if}
-	
-		<p id="username-field">
+
+<div class="row">
+  <div class="label">Gebruiker</div>
+  <div class="field">
+    <input type="text" name="username" id="username" value="${flash.username}" />
+  </div>
+</div>
+<div class="row">
+  <div class="label">Paswoord</div>
+  <div class="field">
+    <input type="password" name="password" id="password" value="" />
+  </div>
+</div>
+
+<button class="submit ui-corner-all" onclick="this.submit()">Login</button>
+<button class="submit ui-corner-all" onclick="history.back();return false;">Terug</button>
+
+
+		<!--p id="username-field">
 			<label for="username">&{'secure.username'}</label>
 			<input type="text" name="username" id="username" value="${flash.username}" />
 		</p>
@@ -31,6 +48,6 @@
 		</p>
 		<p id="signin-field">
 			<input type="submit" id="signin" value="&{'secure.signin'}" />
-		</p>
+		</p-->
 	#{/form}
 </div>
