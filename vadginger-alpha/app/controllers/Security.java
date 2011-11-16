@@ -27,7 +27,9 @@ public class Security extends Secure.Security {
     String passwordHash = play.libs.Codec.encodeBASE64(Security.md5(password));
     boolean match = user != null && user.passwordHash.equals(passwordHash);
     if (match) {
-    	session.put("userId", user.id);
+      session.put("userId", user.id);
+      if (user.centrumId!=null) {
+      session.put("centrum", user.centrumId.id); }
       user.loginCount++;
       user.merge();
       user.save();

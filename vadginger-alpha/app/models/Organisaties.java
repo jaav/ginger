@@ -1,30 +1,16 @@
 package models;
 
-import java.util.Date;
-import java.util.List;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EntityManager;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
-import javax.persistence.PersistenceContext;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-
-import net.sf.oval.constraint.Future;
-import net.sf.oval.constraint.Past;
 
 import play.data.validation.Required;
 import play.db.jpa.Model;
-import play.db.jpa.Transactional;
 
 @Entity
 @Table( name = "Organisaties")
@@ -45,9 +31,9 @@ public class Organisaties extends Model {
 	@ManyToOne
 	public VadGingerUser userId;
 	
-	@OneToMany(mappedBy = "orgId")
-	public Set<OrgUserJunction> orgUserJunction;
-
+	@ManyToOne
+	public Centrums centrumId;
+	
 	@ManyToOne
 	public Organisaties ouder;
 
@@ -70,9 +56,6 @@ public class Organisaties extends Model {
 	@Column(name = "Land", length = 20)
 	public String land;
 
-	@Column(name = "Centrum", length = 3)
-	@Required
-	public String centrum;
 	/*
 	 * @Column(name = "ChangeDate")
 	 * 

@@ -38,10 +38,6 @@ public class Activity extends Model {
 	@Column(name = "ActivityId", insertable=false, updatable=false)
 	public Integer activityId;*/
 
-	@NoScaffolding
-	@Column(name = "Centrum", length = 10)
-	public String centrum;
-
 	@Column(name = "Duur")
 	public Integer duur;
 	
@@ -86,6 +82,9 @@ public class Activity extends Model {
 	
 	@ManyToOne
 	public Organisaties organizationId;
+	
+	@ManyToOne
+	public Centrums centrumId;
 	
 	@ManyToOne
 	public Locations locationId;

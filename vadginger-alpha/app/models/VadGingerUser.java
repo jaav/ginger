@@ -3,6 +3,7 @@ package models;
 import java.util.Set;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 import controllers.Security;
@@ -31,8 +32,8 @@ public class VadGingerUser extends Model {
   @OneToMany(mappedBy = "userId")
   public Set<Organisaties> organizationId;
   
-  @OneToMany(mappedBy = "userId")
-  public Set<OrgUserJunction> orgUserJunction;
+  @ManyToOne
+  public Centrums centrumId;
 
   public VadGingerUser() {
   }
