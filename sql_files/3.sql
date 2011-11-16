@@ -1,5 +1,3 @@
-
-
 INSERT INTO Locations (id,Naam) VALUES (1,'Lokaal');
 INSERT INTO Locations (id,Naam,ouder_id) VALUES (2,'''S GRAVENVOEREN',1);
 INSERT INTO Locations (id,Naam,ouder_id) VALUES (3,'''S GRAVENWEZEL',1);
@@ -2886,8 +2884,8 @@ INSERT INTO Locations (id,Naam,ouder_id) VALUES (2883,'ZWEVEGEM',1);
 INSERT INTO Locations (id,Naam,ouder_id) VALUES (2884,'ZWEVEZELE',1);
 INSERT INTO Locations (id,Naam,ouder_id) VALUES (2885,'ZWIJNAARDE',1);
 INSERT INTO Locations (id,Naam,ouder_id) VALUES (2886,'ZWIJNDRECHT',1);
-INSERT INTO Locations (id,Naam) VALUES (2887,'Regionaal-$');
-INSERT INTO Locations (id,Naam) VALUES (2888,'Provinciaal-$');
+INSERT INTO Locations (id,Naam) VALUES (2887,'Regionaal');
+INSERT INTO Locations (id,Naam) VALUES (2888,'Provinciaal');
 INSERT INTO Locations (id,Naam,ouder_id) VALUES (2889,'Vlaams Brabant-$',2888);
 INSERT INTO Locations (id,Naam,ouder_id) VALUES (2890,'Antwerpen-$',2888);
 INSERT INTO Locations (id,Naam,ouder_id) VALUES (2891,'Limburg-$',2888);
@@ -2895,15 +2893,12 @@ INSERT INTO Locations (id,Naam,ouder_id) VALUES (2892,'West Vlaanderen-$',2888);
 INSERT INTO Locations (id,Naam,ouder_id) VALUES (2893,'Oost Vlaanderen-$',2888);
 INSERT INTO Locations (id,Naam,ouder_id) VALUES (2894,'Brussel Hoofdstedelijk Gewest-$',2888);
 INSERT INTO Locations (id,Naam,ouder_id) VALUES (2895,'Interprovinciaal, niet gemeenschaps-$',2888);
-INSERT INTO Locations (id,Naam) VALUES (2896,'Gemeenschap of gewest-$');
+INSERT INTO Locations (id,Naam) VALUES (2896,'Gemeenschap of gewest');
 INSERT INTO Locations (id,Naam,ouder_id) VALUES (2897,'Vlaamse gemeenschap-$',2896);
 INSERT INTO Locations (id,Naam,ouder_id) VALUES (2898,'Franse gemeenschap-$',2896);
 INSERT INTO Locations (id,Naam,ouder_id) VALUES (2899,'Duitstalige gemeenschap-$',2896);
 INSERT INTO Locations (id,Naam,ouder_id) VALUES (2900,'Intercommunautair-$',2896);
 INSERT INTO Locations (id,Naam,ouder_id) VALUES (2901,'Brussels gewest-$',2896);
 INSERT INTO Locations (id,Naam,ouder_id) VALUES (2902,'Waals gewest-$',2896);
-INSERT INTO Locations (id,Naam) VALUES (2903,'Federaal-$');
-INSERT INTO Locations (id,Naam) VALUES (2904,'Internationaal-$');
-
-
-
+INSERT INTO Locations (id,Naam) VALUES (2903,'Federaal');
+INSERT INTO Locations (id,Naam) VALUES (2904,'Internationaal');

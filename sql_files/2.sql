@@ -1,5 +1,3 @@
-
-
 INSERT INTO Sectors (id,Naam) VALUES (1,'Arbeid');
 INSERT INTO Sectors (id,Naam,ouder_id) VALUES (2,'Overheidsbedrijven (1-50 personeelsleden)',1);
 INSERT INTO Sectors (id,Naam,ouder_id) VALUES (3,'Overheidsbedrijven (>50 personeelsleden)',1);
@@ -97,6 +95,3 @@ INSERT INTO Sectors (id,Naam,ouder_id) VALUES (94,'Minderhedensector (integratie
 INSERT INTO Sectors (id,Naam,ouder_id) VALUES (95,'Andere',82);
 INSERT INTO Sectors (id,Naam,ouder_id) VALUES (96,'Meerdere',82);
 INSERT INTO Sectors (id,Naam) VALUES (97,'Algemene bevolking');
-
-
-
