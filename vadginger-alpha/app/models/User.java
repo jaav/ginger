@@ -2,13 +2,12 @@ package models;
 
 import javax.persistence.Entity;
 
-import controllers.Security;
-
 import org.apache.commons.lang.StringUtils;
 
-import play.modules.scaffold.NoScaffolding;
 import play.db.jpa.Model;
+import play.modules.scaffold.NoScaffolding;
 import play.mvc.Scope.Session;
+import controllers.Security;
 
 @Entity
 public class User extends Model {
@@ -21,6 +20,7 @@ public class User extends Model {
   public transient String password;
   public RoleType role;
   public int loginCount;
+  
 
   public User() {
   }

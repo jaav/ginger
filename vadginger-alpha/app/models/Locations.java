@@ -40,6 +40,9 @@ public class Locations extends Model{
 	@ManyToOne
 	//@JoinColumn(name = "Ouder", referencedColumnName = "LocationId", insertable = false, updatable = false)
 	public Locations ouder;
+	
+	@ManyToOne
+	public Centrums centrumId;
 
 	@Column(name = "Naam", length = 100)
 	@Required

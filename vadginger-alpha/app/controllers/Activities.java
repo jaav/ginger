@@ -3,25 +3,17 @@ package controllers;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.List;
 
 import javax.persistence.TemporalType;
 
-import org.apache.commons.lang.StringUtils;
-
 import models.Activity;
-import models.OrgUserJunction;
 import models.RoleType;
 import models.VadGingerUser;
 import play.data.validation.Valid;
-import play.db.jpa.JPA;
 import play.i18n.Messages;
 import play.modules.paginate.ModelPaginator;
-import play.modules.paginate.ValuePaginator;
-import play.mvc.After;
-import play.mvc.Controller;
 import play.mvc.With;
 
 @With(Secure.class)
@@ -29,11 +21,11 @@ public class Activities extends GingerController {
 	public static void index() {
 		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
 		ModelPaginator entities = null;
-		if (user.role.name().equalsIgnoreCase("admin")) {
+		if (user.role.equals(RoleType.ADMIN)) {
 		entities = new ModelPaginator(Activity.class);
 		
 		}
-		else if (user.role.name().equalsIgnoreCase("org_admin")) {
+		else if (user.role.equals(RoleType.ORG_ADMIN)) {/*
 			List<OrgUserJunction> orgUserJuncs = OrgUserJunction.find("userId is " + user.id).fetch();
 			StringBuffer query = new StringBuffer("organizationId in (");
 			Iterator<OrgUserJunction> i = orgUserJuncs.iterator();
@@ -43,8 +35,8 @@ public class Activities extends GingerController {
 				if (i.hasNext())
 					query.append(",");
 			}
-			query.append(")");
-			entities = new ModelPaginator(Activity.class, query.toString());
+			query.append(")");*/
+			entities = new ModelPaginator(Activity.class, "centrumId is " + session.get("centrumId"));
 		} else {
 			entities = new ModelPaginator(Activity.class, "userId is " + user.id);
 		}
@@ -91,7 +83,7 @@ public class Activities extends GingerController {
 
 	public static void save(@Valid Activity entity) {
 		models.VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
-		entity.centrum = user.userID.toUpperCase().substring(0, 3);
+		//entity.centrum = user.userID.toUpperCase().substring(0, 3);
 		entity.userId = user;
 		if (validation.hasErrors()) {
 			flash.error(Messages.get("scaffold.validation"));
@@ -366,7 +358,7 @@ private static void getActivityBySector(List<models.Activity> activities) {
 				}
 			}
 			if (request.params.get("sec_atd_" + sec.id) != null) {
-				models.SectorActivityJunction as = new models.SectorActivityJunction();
+				//models.SectorActivityJunction as = new models.SectorActivityJunction();
 				List<models.SectorActivityJunction> acs = models.SectorActivityJunction.find("bySectorId", sec).fetch();
 				for(models.SectorActivityJunction ac: acs)
 					activities.add(ac.activityId);
