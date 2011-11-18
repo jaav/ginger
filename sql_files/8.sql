@@ -1,7 +1,7 @@
 
 
-INSERT INTO TargetType (id,Beschrijving) VALUES (1,'Intermediaire doelgroep');
-INSERT INTO TargetType (id,Beschrijving) VALUES (5,'Uiteindelijke doelgroep');
+INSERT INTO TargetType (id,Beschrijving, IsActive) VALUES (1,'Intermediaire doelgroep',1);
+INSERT INTO TargetType (id,Beschrijving, IsActive) VALUES (5,'Uiteindelijke doelgroep',1);
 
 
 
@@ -17,9 +17,9 @@ INSERT INTO AttendantType (id,targetTypeId_id,Naam) VALUES (9, 5, 'Andere');
 
 
 
-INSERT INTO Evaluvators (id, Naam) VALUES (1, 'Jijzelf');
-INSERT INTO Evaluvators (id, Naam) VALUES (2, 'Een externe persoon of organisatie');
-INSERT INTO Evaluvators (id, Naam) VALUES (3, 'Beide');
+INSERT INTO Evaluvators (id, Naam,IsActive) VALUES (1, 'Jijzelf', 1);
+INSERT INTO Evaluvators (id, Naam, IsActive) VALUES (2, 'Een externe persoon of organisatie', 1);
+INSERT INTO Evaluvators (id, Naam, IsActive) VALUES (3, 'Beide', 1);
 
 
 INSERT INTO Evaluvation_Type (id,EvalType) VALUES (1,'Mondeling');

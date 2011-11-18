@@ -1,3 +1,4 @@
+;
 UPDATE Activity SET locationId_id = 8 WHERE id = 3;
 UPDATE Activity SET locationId_id = 402 WHERE id = 6;
 UPDATE Activity SET locationId_id = 374 WHERE id = 7;
@@ -15791,3 +15792,5 @@ UPDATE Activity SET locationId_id = 378 WHERE id = 16884;
 UPDATE Activity SET locationId_id = 378 WHERE id = 16885;
 UPDATE Activity SET locationId_id = 378 WHERE id = 16886;
 UPDATE Activity SET locationId_id = 378 WHERE id = 16887;
+;
+;
