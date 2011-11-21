@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.1.41, for debian-linux-gnu (i486)
 --
--- Host: localhost    Database: ginger_db
+-- Host: localhost    Database: ginger_db_1
 -- ------------------------------------------------------
 -- Server version	5.1.41-3ubuntu12.10
 
@@ -29,6 +29,7 @@ CREATE TABLE `Activity` (
   `Duur` int(11) DEFAULT NULL,
   `Evaluvated` bit(1) DEFAULT NULL,
   `InternalActivity` bit(1) DEFAULT NULL,
+  `IsActive` int(11) NOT NULL,
   `Reported` bit(1) DEFAULT NULL,
   `TotalParticipants` int(11) DEFAULT NULL,
   `centrumId_id` bigint(20) DEFAULT NULL,
@@ -106,6 +107,7 @@ DROP TABLE IF EXISTS `ActivityType`;
 CREATE TABLE `ActivityType` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `Beschrijving` longtext,
+  `IsActive` int(11) NOT NULL,
   `Naam` varchar(100) DEFAULT NULL,
   `ouder_id` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -157,6 +159,7 @@ DROP TABLE IF EXISTS `Centrum`;
 CREATE TABLE `Centrum` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `Beschrijving` longtext,
+  `IsActive` int(11) NOT NULL,
   `Naam` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=46 DEFAULT CHARSET=latin1;
@@ -185,6 +188,7 @@ DROP TABLE IF EXISTS `Evaluvators`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `Evaluvators` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `IsActive` int(11) NOT NULL,
   `Naam` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
@@ -200,6 +204,7 @@ DROP TABLE IF EXISTS `Items`;
 CREATE TABLE `Items` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `Beschrijving` longtext,
+  `IsActive` int(11) NOT NULL,
   `Naam` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
@@ -232,7 +237,8 @@ DROP TABLE IF EXISTS `Locations`;
 CREATE TABLE `Locations` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `Beschrijving` longtext,
-  `IsCluster` bit(1) DEFAULT NULL,
+  `IsActive` int(11) NOT NULL,
+  `IsCluster` int(11) NOT NULL,
   `Naam` varchar(100) DEFAULT NULL,
   `centrumId_id` bigint(20) DEFAULT NULL,
   `ouder_id` bigint(20) DEFAULT NULL,
@@ -252,6 +258,7 @@ DROP TABLE IF EXISTS `Materials`;
 CREATE TABLE `Materials` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `Beschrijving` longtext,
+  `IsActive` int(11) NOT NULL,
   `Naam` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
@@ -285,6 +292,7 @@ CREATE TABLE `Organisaties` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `Adres` varchar(50) DEFAULT NULL,
   `Gemeente` varchar(50) DEFAULT NULL,
+  `IsActive` int(11) NOT NULL,
   `Land` varchar(20) DEFAULT NULL,
   `Naam` varchar(50) DEFAULT NULL,
   `OrganisatieNetwerk` varchar(3) DEFAULT NULL,
@@ -326,6 +334,7 @@ DROP TABLE IF EXISTS `Sectors`;
 CREATE TABLE `Sectors` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `beschrijving` longtext,
+  `IsActive` int(11) NOT NULL,
   `Naam` varchar(200) DEFAULT NULL,
   `ouder_id` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -343,6 +352,7 @@ DROP TABLE IF EXISTS `TargetType`;
 CREATE TABLE `TargetType` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `Beschrijving` longtext,
+  `IsActive` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -378,6 +388,7 @@ CREATE TABLE `VadGingerUser` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `emailAddress` varchar(255) DEFAULT NULL,
   `firstName` varchar(255) DEFAULT NULL,
+  `IsActive` int(11) NOT NULL,
   `lastName` varchar(255) DEFAULT NULL,
   `loginCount` int(11) NOT NULL,
   `passwordHash` varchar(255) DEFAULT NULL,
@@ -398,4 +409,4 @@ CREATE TABLE `VadGingerUser` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2011-11-16  7:01:52
+-- Dump completed on 2011-11-18  5:14:26

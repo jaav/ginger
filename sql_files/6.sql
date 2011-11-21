@@ -1,12 +1,12 @@
 
 
-INSERT INTO Items (id,Naam) VALUES (1,'Middelengebruik algemeen');
-INSERT INTO Items (id,Naam) VALUES (2,'Alcohol');
-INSERT INTO Items (id,Naam) VALUES (3,'Illegale drugs');
-INSERT INTO Items (id,Naam) VALUES (4,'Medicatie');
-INSERT INTO Items (id,Naam) VALUES (5,'Tabak');
-INSERT INTO Items (id,Naam) VALUES (6,'Gokken');
-INSERT INTO Items (id,Naam) VALUES (7,'ICT-verslavingen (games, chatten, surfen, ...)');
+INSERT INTO Items (id,Naam, IsActive) VALUES (1,'Middelengebruik algemeen',1);
+INSERT INTO Items (id,Naam, IsActive) VALUES (2,'Alcohol',1);
+INSERT INTO Items (id,Naam, IsActive) VALUES (3,'Illegale drugs',1);
+INSERT INTO Items (id,Naam, IsActive) VALUES (4,'Medicatie',1);
+INSERT INTO Items (id,Naam, IsActive) VALUES (5,'Tabak',1);
+INSERT INTO Items (id,Naam, IsActive) VALUES (6,'Gokken',1);
+INSERT INTO Items (id,Naam, IsActive) VALUES (7,'ICT-verslavingen (games, chatten, surfen, ...)',1);
 
 
 
