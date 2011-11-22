@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Type;
+
 import play.data.validation.Required;
 import play.db.jpa.Model;
 
@@ -20,6 +22,10 @@ public class Evaluvators extends Model{
 	@Column(name = "Naam", length = 50)
     @Required
     public String naam;
+	
+	@Column(name="IsActive", nullable=false)
+	@Type(type = "org.hibernate.type.NumericBooleanType")
+	public Boolean isActive;
 
 	/*
 	 * @PersistenceContext transient EntityManager entityManager;

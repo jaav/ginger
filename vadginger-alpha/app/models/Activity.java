@@ -22,6 +22,8 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.TypedQuery;
 
+import org.hibernate.annotations.Type;
+
 import play.data.validation.Required;
 import play.db.jpa.Model;
 import play.db.jpa.Transactional;
@@ -95,6 +97,10 @@ public class Activity extends Model {
 	@Column(name = "Activity_date")
 	@Temporal(TemporalType.TIMESTAMP) 
 	public Date	activityDate;
+	
+	@Column(name="IsActive", nullable=false)
+	@Type(type = "org.hibernate.type.NumericBooleanType")
+	public Boolean isActive;
 	
 	/*@ManyToOne
 	public VadGingerUser userId;

@@ -9,6 +9,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Type;
+
 import play.data.validation.Required;
 import play.db.jpa.Model;
 
@@ -55,6 +57,10 @@ public class Organisaties extends Model {
 
 	@Column(name = "Land", length = 20)
 	public String land;
+	
+	@Column(name="IsActive", nullable=false)
+	@Type(type = "org.hibernate.type.NumericBooleanType")
+	public Boolean isActive;
 
 	/*
 	 * @Column(name = "ChangeDate")

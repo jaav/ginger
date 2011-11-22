@@ -3,6 +3,7 @@ package controllers;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+import models.RoleType;
 import models.VadGingerUser;
 
 //import models.User;
@@ -16,6 +17,7 @@ public class Security extends Secure.Security {
       VadGingerUser adminUser = new VadGingerUser();
       adminUser.userID = "admin";
       adminUser.setPassword("admin");
+      adminUser.role = RoleType.ADMIN;
       adminUser.save();
     }
     VadGingerUser user = VadGingerUser.find("byUserID", userID).first();

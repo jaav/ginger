@@ -16,6 +16,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Type;
+
 import play.data.validation.Required;
 import play.db.jpa.Model;
 import play.db.jpa.Transactional;
@@ -44,6 +46,10 @@ public class Sectors extends Model{
 	@Column(name = "beschrijving")
     @Lob
     public Clob beschrijving;
+	
+	@Column(name="IsActive", nullable=false)
+	@Type(type = "org.hibernate.type.NumericBooleanType")
+	public Boolean isActive;
 /*
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)

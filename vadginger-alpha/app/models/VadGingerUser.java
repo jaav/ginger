@@ -2,6 +2,7 @@ package models;
 
 import java.util.Set;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
@@ -9,6 +10,7 @@ import javax.persistence.OneToMany;
 import controllers.Security;
 
 import org.apache.commons.lang.StringUtils;
+import org.hibernate.annotations.Type;
 
 import play.modules.scaffold.NoScaffolding;
 import play.db.jpa.Model;
@@ -34,6 +36,10 @@ public class VadGingerUser extends Model {
   
   @ManyToOne
   public Centrums centrumId;
+  
+  @Column(name="IsActive", nullable=false)
+  @Type(type = "org.hibernate.type.NumericBooleanType")
+  public Boolean isActive;
 
   public VadGingerUser() {
   }
