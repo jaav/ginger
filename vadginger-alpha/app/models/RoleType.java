@@ -1,6 +1,6 @@
 package models;
 
 public enum RoleType {
-  MEMBER, ADMIN, ORG_ADMIN;
+  MEMBER, ORG_ADMIN, ADMIN, SUPER_ADMIN;
 }
 

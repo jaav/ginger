@@ -8,6 +8,8 @@ import javax.persistence.Lob;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Type;
+
 import play.db.jpa.Model;
 
 @Entity
@@ -20,6 +22,10 @@ public class TargetType extends Model {
 	@Column(name = "Beschrijving")
 	@Lob
 	public String beschrijving;
+	
+	@Column(name="IsActive", nullable=false)
+	@Type(type = "org.hibernate.type.NumericBooleanType")
+	public Boolean isActive;
 
 	/*
 	 * @PersistenceContext transient EntityManager entityManager;

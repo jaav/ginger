@@ -3,6 +3,7 @@ package controllers;
 import java.util.List;
 
 import antlr.StringUtils;
+import models.Centrums;
 import models.VadGingerUser;
 import play.modules.paginate.ModelPaginator;
 import play.mvc.Controller;
@@ -19,7 +20,12 @@ public class VadGingerUsers extends GingerController {
 
 	public static void index() {
 		//List<VadGingerUser> entities = models.VadGingerUser.all().fetch();
-		ModelPaginator entities = new ModelPaginator(VadGingerUser.class);
+		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
+		ModelPaginator entities = null;
+		if (user.role.equals(models.RoleType.ADMIN))
+			entities = new ModelPaginator(VadGingerUser.class, "role in (0,1)");
+		else
+			entities = new ModelPaginator(VadGingerUser.class);
     setAccordionTab(1);
 		render(entities);
 	}
@@ -59,6 +65,7 @@ public class VadGingerUsers extends GingerController {
 		VadGingerUser entity = VadGingerUser.findById(Long.parseLong(session.get("userId")));
 		if (entity.passwordHash.equals(play.libs.Codec.encodeBASE64(Security.md5((request.params.get("oud_password")))))) {
 			entity.passwordHash=play.libs.Codec.encodeBASE64(Security.md5(request.params.get("c_password")));
+			entity.isActive = true;
 			entity.save();
 		} else {
 			boolean invalidPassword = true;
@@ -84,7 +91,10 @@ public class VadGingerUsers extends GingerController {
 			flash.error(Messages.get("scaffold.validation"));
 			render("@create", entity);
 		}
-		
+		//sysout
+		Centrums cen = Centrums.find("id is " + request.params.get("centrum_id")).first();
+		System.out.println(":::"+cen.id);
+		entity.centrumId = cen;
 		String pass = request.params.get("c_password");
 		if(pass!=null&&pass.length()>=5) {
 			entity.passwordHash = play.libs.Codec.encodeBASE64(Security.md5(pass));
@@ -92,6 +102,7 @@ public class VadGingerUsers extends GingerController {
 			//flash.error(Messages.get("scaffold.validation"));
 			render("@create", entity);
 		}
+		entity.isActive = true;
 		entity.save();
 		flash.success(Messages.get("scaffold.created", "VadGingerUser"));
 		index();
@@ -102,7 +113,9 @@ public class VadGingerUsers extends GingerController {
 			flash.error(Messages.get("scaffold.validation"));
 			render("@edit", entity);
 		}
-		
+		Centrums cen = Centrums.find("id is " + request.params.get("centrum_id")).first();
+		System.out.println(":::"+cen.id);
+		entity.centrumId = cen;
       		entity = entity.merge();
 		
 		entity.save();

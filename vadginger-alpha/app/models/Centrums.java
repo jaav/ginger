@@ -10,6 +10,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.CascadeType;
 
+import org.hibernate.annotations.Type;
+
 import play.data.validation.Required;
 import play.db.jpa.Model;
 
@@ -32,6 +34,10 @@ public class Centrums extends Model {
 	public Set<models.Organisaties> organizationId;
 	
 	@OneToMany(mappedBy="centrumId",cascade = CascadeType.ALL)
-	public Set<models.VadGingerUser> userId;	
+	public Set<models.VadGingerUser> userId;
+	
+	@Column(name="IsActive", nullable=false)
+	@Type(type = "org.hibernate.type.NumericBooleanType")
+	public Boolean isActive;
 
 }

@@ -1,18 +1,33 @@
-
+%{user_cur = models.VadGingerUser.find("id is " + session.get("userId")).first();
+  	userRole = user_cur.role;
+  	centrumId = user_cur.centrumId;%}
  <div class="row">
   <div class="label">Gebruikersnaam</div>
   <div class="field">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
       <input type="text" name="entity.userID" value="${entity?.userID}"/>
+    
+  </div>
+  <span class="error">${errors.forKey('entity.userID')}</span>
+</div>
+
+
+ <div class="row">
+  <div class="label">Centrum</div>
+  <div class="field">
+
+      <select name="centrum_id">
+      %{ models.Centrums.all().fetch().sort{ it.toString() }.each() { }%
+      %{
+      selected = false;
+      if (entity?.centrumId?.id == it.id) {
+      selected = true
+      }
+      }%
+      <option value="${it?.id}"
+      ${selected ? 'selected'.raw() : ''}>${it.naam}</option>
+      %{ } }%
+    </select>
     
   </div>
   <span class="error">${errors.forKey('entity.userID')}</span>
@@ -22,63 +37,25 @@
  <div class="row">
   <div class="label">Voornaam</div>
   <div class="field">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
       <input type="text" name="entity.firstName" value="${entity?.firstName}"/>
-    
   </div>
   <span class="error">${errors.forKey('entity.firstName')}</span>
 </div>
-
-
  <div class="row">
   <div class="label">Familienaam</div>
   <div class="field">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
       <input type="text" name="entity.lastName" value="${entity?.lastName}"/>
-    
   </div>
   <span class="error">${errors.forKey('entity.lastName')}</span>
 </div>
-
-
  <div class="row">
   <div class="label">Email</div>
   <div class="field">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
       <input type="text" name="entity.emailAddress" value="${entity?.emailAddress}" id="emailId"/>
      <span id="emailIdSpan"></span>
   </div>
  
 </div>
-
-
  <div class="row">
   <div class="label">Rol</div>
   <div class="field">
@@ -90,12 +67,13 @@
           <option value="MEMBER" 
             ${(entity?.role?.name() == 'MEMBER') ? 'selected':''}>MEMBER</option>
         
-          <option value="ADMIN" 
-            ${(entity?.role?.name() == 'ADMIN') ? 'selected':''}>ADMIN</option>
-            
             <option value="ORG_ADMIN" 
             ${(entity?.role?.name() == 'ORG_ADMIN') ? 'selected':''}>ORG_ADMIN</option>
         
+        #{if userRole.compareTo(models.RoleType.SUPER_ADMIN) >= 0}
+          <option value="ADMIN" 
+            ${(entity?.role?.name() == 'ADMIN') ? 'selected':''}>ADMIN</option>
+            #{/if}
       </select>
 
   </div>

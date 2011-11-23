@@ -14,6 +14,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Type;
+
 import play.data.validation.Required;
 import play.db.jpa.Model;
 import play.db.jpa.Transactional;
@@ -40,6 +42,10 @@ public class Items extends Model {
 
 	@OneToMany(mappedBy = "itemId")
 	public Set<ItemsInActivity> itemsInActivities;
+	
+	@Column(name="IsActive", nullable=false)
+	@Type(type = "org.hibernate.type.NumericBooleanType")
+	public Boolean isActive;
 	
 	public Items(String naam) {
 		this.naam = naam;

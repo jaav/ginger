@@ -1,3 +1,7 @@
+%{user_cur = models.VadGingerUser.find("id is " + session.get("userId")).first();
+  	userRole = user_cur.role;
+  	centrumId = user_cur.centrumId;%}
+
 <div class="row">
   <div class="label">Omschrijving van de activiteit:</div>
   <div class="field">
@@ -15,22 +19,22 @@
     <select name="organization" id="organizationSelect">
 
       <option value="">(None)</option>
-     #{if models.VadGingerUser.find("id is " + session.get("userId")).first().role.name().equalsIgnoreCase("org_admin") }
+     #{if userRole.compareTo(models.RoleType.ORG_ADMIN) > 0 }
              
-        %{ models.OrgUserJunction.find("userId is ${session.get("userId")}").fetch().sort{ it.toString() }.each() { }%
+        %{ models.Organisaties.all().fetch().sort{ it.toString() }.each() { }%
           
           %{
             selected = false;
-            if (entity?.organizationId?.id == it.orgId.id) {
+            if (entity?.organizationId?.id == it.id) {
               selected = true
             }
           }%
-          <option value="${it?.orgId.id}" ${selected ? 'selected'.raw() : ''}>${it.orgId}</option>
+          <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option>
         %{ } }%
         #{/if}
         #{else}
              
-        %{ models.Organisaties.all().fetch().sort{ it.toString() }.each() { }%
+        %{ models.Organisaties.find("centrumId is " + centrumId.id).fetch().sort{ it.toString() }.each() { }%
           
           %{
             selected = false;

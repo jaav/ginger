@@ -17,6 +17,15 @@
       ginger.accordionTab = ${accordionTab};
     #{/if}
   </script>
+ 
+  %{
+  	if (session.get("username")!=null) {
+  	user_cur = models.VadGingerUser.find("id is " + session.get("userId")).first();
+  	userRole = user_cur.role;
+  	centrumId = user_cur.centrumId;
+  	}
+  	}%
+  
   <script src="@{'/public/javascripts/jquery-1.6.2.min.js'}" type="text/javascript" charset="utf-8"></script>
   <script src="@{'/public/javascripts/jquery-ui-1.8.16.custom.min.js'}" type="text/javascript" charset="utf-8"></script>
   <script src="@{'/public/javascripts/main.js'}" type="text/javascript" charset="utf-8"></script>
@@ -60,10 +69,11 @@
             <li><a href="@{Statics.usersData()}">Gebruikersgegevens</a></li>
             <li><a href="@{VadGingerUsers.changeEmailIdForm()}">Emailadres wijzigen</a></li>
             <li><a href="@{VadGingerUsers.changePasswordForm()}">Wachtwoord wijzigen</a></li>
-             #{secure.check 'admin'}
+            #{if userRole && userRole.compareTo(models.RoleType.ADMIN)>=0 }
+             
             <li><a href="@{VadGingerUsers.index()}">Lijst Gebruikers</a></li>
             <li><a href="@{VadGingerUsers.create()}">Nieuwe Gebruiker</a></li>
-            #{/secure.check}
+            #{/if}
             <li>
               #{if session.get("username") == null}
               <a href="/secure/login">Login</a>
@@ -80,46 +90,41 @@
             <li><a href="@{Activities.searchForm()}">Filter Activiteiten</a></li>
             <li><a href="@{Activities.create()}">Nieuwe Activiteit</a></li>
           </ul></div>
-          #{secure.check 'admin'}
+          
+          
+          #{if userRole && userRole.compareTo(models.RoleType.ORG_ADMIN) >=0}
           <h3><a href="#">Organisaties</a></h3>
           <div><ul>
             <li><a href="@{Statics.organisationsStart()}">Startpagina</a></li>
             <li><a href="@{Organisatiess.index()}">Lijst organisaties</a></li>
             <li><a href="@{Organisatiess.subOrgIndex()}">Lijst sub-organisaties</a></li>
-           
             <li><a href="@{Locationss.clustersIndex()}">Lijst regionale clusters</a></li>
           </ul></div>
-          #{/secure.check}
-          #{secure.check 'org_admin'}
-          <h3><a href="#">Organisaties</a></h3>
-          <div><ul>
-            <li><a href="@{Statics.organisationsStart()}">Startpagina</a></li>
-            <li><a href="@{Organisatiess.index()}">Lijst organisaties</a></li>
-            <li><a href="@{Organisatiess.subOrgIndex()}">Lijst sub-organisaties</a></li>
-            <li><a href="@{OrgUserJunctions.index()}">Lijst Org-User_Mapping</a></li>
-            <li><a href="@{OrgUserJunctions.create()}">Nieuwe Org-User_Mapping</a></li>
-            <li><a href="@{Locationss.clustersIndex()}">Lijst regionale clusters</a></li>
-          </ul></div>
-          #{/secure.check}
-            #{secure.check 'admin'}
+          #{/if}
+          
+           #{if userRole && userRole.compareTo(models.RoleType.ADMIN)>=0 }
           <h3><a href="#">Administratie</a></h3>
           <div><ul>
             <li>Organisaties (<a href="@{Organisatiess.index()}">Lijst</a> / <a href="@{Organisatiess.create()}">Nieuw</a>)</li>
             <li>Activiteit types (<a href="@{ActivityTypes.index()}">Lijst</a> / <a href="@{ActivityTypes.create()}">Nieuw</a>)</li>
+             #{if userRole && userRole.compareTo(models.RoleType.SUPER_ADMIN)>=0 }
             <li>Sectoren (<a href="@{Sectorss.index()}">Lijst</a> / <a href="@{Sectorss.create()}">Nieuw</a>)</li>
+            #{/if}
             <li>SubSectoren (<a href="@{Sectorss.subIndex()}">Lijst</a> / <a href="@{Sectorss.create()}">Nieuw</a>)</li>
             <!--li>Doelgroepen (<a href="@{ActivityTargetss.index()}">Lijst</a> / <a href="@{ActivityTargetss.create()}">Nieuw</a>)</li-->
+             #{if userRole && userRole.compareTo(models.RoleType.SUPER_ADMIN)>=0 }
             <li>Doelgroep types (<a href="@{TargetTypes.index()}">Lijst</a> / <a href="@{TargetTypes.create()}">Nieuw</a>)</li>
             <li>Evaluators (<a href="@{Evaluvatorss.index()}">Lijst</a> / <a href="@{ActivityEvaluvatorss.create()}">Nieuw</a>)</li>
             <li>Evaluator types (<a href="@{EvaluvationTypes.index()}">Lijst</a> / <a href="@{ActivityEvaluvatorss.create()}">Nieuw</a>)</li>
             <li>Deelnemer types (<a href="@{AttendantTypes.index()}">Lijst</a> / <a href="@{AttendantTypes.create()}">Nieuw</a>)</li>
+            #{/if}
             <li>Items (<a href="@{Itemss.index()}">Lijst</a> / <a href="@{Itemss.create()}">Nieuw</a>)</li>
             <li>Locaties (<a href="@{Locationss.index()}">Lijst</a> / <a href="@{Locationss.create()}">Nieuw</a>)</li>
             <li>Sub Locaties (<a href="@{Locationss.subLocindex()}">Lijst</a> / <a href="@{Locationss.create()}">Nieuw</a>)</li>
             <li>Materialen (<a href="@{Materialss.index()}">Lijst</a> / <a href="@{Materialss.create()}">Nieuw</a>)</li>
             <li></li>
           </ul></div>
-            #{/secure.check}
+            #{/if}
       </div>
       <div id="after-accordion" class="ui-accordion ui-widget ui-helper-reset ui-accordion-icons">
         <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" role="tab" aria-expanded="false" aria-selected="false" tabindex="-1">

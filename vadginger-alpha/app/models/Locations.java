@@ -16,6 +16,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Type;
+
 import play.data.validation.Required;
 import play.db.jpa.Model;
 
@@ -52,8 +54,13 @@ public class Locations extends Model{
 	@Lob
 	public Clob beschrijving;
 
-	@Column(name = "IsCluster")
+	@Column(name = "IsCluster", nullable=false)
+	@Type(type = "org.hibernate.type.NumericBooleanType")
 	public Boolean isCluster;
+	
+	@Column(name="IsActive", nullable=false)
+	@Type(type = "org.hibernate.type.NumericBooleanType")
+	public Boolean isActive;
 	
 	public String toString() {
 		return naam;
