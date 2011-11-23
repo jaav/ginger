@@ -107,13 +107,17 @@
           <div><ul>
             <li>Organisaties (<a href="@{Organisatiess.index()}">Lijst</a> / <a href="@{Organisatiess.create()}">Nieuw</a>)</li>
             <li>Activiteit types (<a href="@{ActivityTypes.index()}">Lijst</a> / <a href="@{ActivityTypes.create()}">Nieuw</a>)</li>
+             #{if userRole && userRole.compareTo(models.RoleType.SUPER_ADMIN)>=0 }
             <li>Sectoren (<a href="@{Sectorss.index()}">Lijst</a> / <a href="@{Sectorss.create()}">Nieuw</a>)</li>
+            #{/if}
             <li>SubSectoren (<a href="@{Sectorss.subIndex()}">Lijst</a> / <a href="@{Sectorss.create()}">Nieuw</a>)</li>
             <!--li>Doelgroepen (<a href="@{ActivityTargetss.index()}">Lijst</a> / <a href="@{ActivityTargetss.create()}">Nieuw</a>)</li-->
+             #{if userRole && userRole.compareTo(models.RoleType.SUPER_ADMIN)>=0 }
             <li>Doelgroep types (<a href="@{TargetTypes.index()}">Lijst</a> / <a href="@{TargetTypes.create()}">Nieuw</a>)</li>
             <li>Evaluators (<a href="@{Evaluvatorss.index()}">Lijst</a> / <a href="@{ActivityEvaluvatorss.create()}">Nieuw</a>)</li>
             <li>Evaluator types (<a href="@{EvaluvationTypes.index()}">Lijst</a> / <a href="@{ActivityEvaluvatorss.create()}">Nieuw</a>)</li>
             <li>Deelnemer types (<a href="@{AttendantTypes.index()}">Lijst</a> / <a href="@{AttendantTypes.create()}">Nieuw</a>)</li>
+            #{/if}
             <li>Items (<a href="@{Itemss.index()}">Lijst</a> / <a href="@{Itemss.create()}">Nieuw</a>)</li>
             <li>Locaties (<a href="@{Locationss.index()}">Lijst</a> / <a href="@{Locationss.create()}">Nieuw</a>)</li>
             <li>Sub Locaties (<a href="@{Locationss.subLocindex()}">Lijst</a> / <a href="@{Locationss.create()}">Nieuw</a>)</li>
