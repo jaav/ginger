@@ -19,8 +19,11 @@
   </script>
  
   %{
-  	if (session.get("username")!=null)
-  	userRole = models.VadGingerUser.find("id is " + session.get("userId")).first().role;
+  	if (session.get("username")!=null) {
+  	user_cur = models.VadGingerUser.find("id is " + session.get("userId")).first();
+  	userRole = user_cur.role;
+  	centrumId = user_cur.centrumId;
+  	}
   	}%
   
   <script src="@{'/public/javascripts/jquery-1.6.2.min.js'}" type="text/javascript" charset="utf-8"></script>
