@@ -68,7 +68,7 @@ public class ActivityTypes extends Controller {
 	public static void list(String id) {
 		StringBuffer htmlData = new StringBuffer("");
 		if (id!=null&&!id.trim().equals("")) {
-			List<ActivityType> actTyps = models.ActivityType.find("ouder is " + id).fetch();
+			List<ActivityType> actTyps = models.ActivityType.find("ouder is " + id +" and isActive=1").fetch();
 			if (actTyps.size()>0){
 			 htmlData.append("<div class=\"label\">Sub-ActivityType</div>");
 		      htmlData.append("<div class=\"field\">");

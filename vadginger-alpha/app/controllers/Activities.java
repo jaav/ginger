@@ -51,8 +51,8 @@ public class Activities extends GingerController {
 		 * models.Locations.find("ouder is 1").fetch(); for (models.Locations
 		 * loc: locs) { System.out.println(loc.naam); }
 		 */
-		List<models.Items> items = models.Items.all().fetch();
-		List<models.Materials> materials = models.Materials.all().fetch();
+		List<models.Items> items = models.Items.find("isActive=1").fetch();
+		List<models.Materials> materials = models.Materials.find("isActive=1").fetch();
     setAccordionTab(2);
 		render(entity, items, materials);
 	}
@@ -91,7 +91,13 @@ public class Activities extends GingerController {
 			render("@create", entity);
 		}
 		String orgId =request.params.get("organization").trim(); 
-		if (!orgId.trim().equals("")&&request.params.get("entity.organizationId.id")==null) {
+		if (!orgId.trim().equals("")) {
+			
+			String sub_org_id = request.params.get("sub_org_id");
+			if (sub_org_id!=null&&!sub_org_id.trim().equals("")) {
+				orgId = sub_org_id;
+				
+			}
 			entity.organizationId = Organisaties.find("id is " + orgId).first(); 
 		}
 		entity.isActive = true;

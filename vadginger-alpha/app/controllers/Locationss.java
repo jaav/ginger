@@ -84,7 +84,7 @@ public class Locationss extends GingerController {
 	}
 	
 	public static void list(String id) {
-		List<models.Locations> locs = models.Locations.find("ouder is " + id).fetch();
+		List<models.Locations> locs = models.Locations.find("ouder is " + id +" and isActive=1").fetch();
     if(locs.isEmpty()) renderText("");
     else{
       StringBuffer htmlData = new StringBuffer();

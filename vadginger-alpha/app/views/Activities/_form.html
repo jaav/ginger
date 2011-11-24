@@ -21,7 +21,7 @@
       <option value="">(None)</option>
      #{if userRole.compareTo(models.RoleType.ORG_ADMIN) > 0 }
              
-        %{ models.Organisaties.all().fetch().sort{ it.toString() }.each() { }%
+        %{ models.Organisaties.find("ouder is null and isActive=1").fetch().sort{ it.toString() }.each() { }%
           
           %{
             selected = false;
@@ -34,7 +34,7 @@
         #{/if}
         #{else}
              
-        %{ models.Organisaties.find("centrumId is " + centrumId.id).fetch().sort{ it.toString() }.each() { }%
+        %{ models.Organisaties.find("ouder is null and isActive=1 and centrumId is " + centrumId.id).fetch().sort{ it.toString() }.each() { }%
           
           %{
             selected = false;
@@ -60,7 +60,7 @@
         var listLocations = #{jsAction @Organisatiess.list(':id')/}
           $("#hiddenOrg").load(listLocations({id: selectedOrganization}), function() {
           });
-      }).trigger();
+      });
   </script>
 </div>
 <div class="row">
@@ -108,7 +108,7 @@
   <div class="field">
 
 
-    %{ models.Sectors.find("ouder is null").fetch().sort{ it.toString() }.each() { }%
+    %{ models.Sectors.find("ouder is null and isActive=1").fetch().sort{ it.toString() }.each() { }%
 
     %{
     selected = false;
@@ -188,7 +188,7 @@
 
       <option value="">(Niet van toepassing)</option>
 
-      %{ models.Locations.find("ouder = 1").fetch().sort{ it.toString() }.each() { }%
+      %{ models.Locations.find("ouder = 1 and isActive=1").fetch().sort{ it.toString() }.each() { }%
 
       %{
       selected = false;
@@ -214,7 +214,7 @@
         var listLocations = #{jsAction @Locationss.list(':id')/}
           $("#hiddenLoc").load(listLocations({id: selectedLocation}), function() {
           });
-      }).trigger();
+      });
   </script>
   <!-- </select> -->
 
@@ -222,7 +222,7 @@
 <hr>
 <div class="row">
   <div class="label">Met welke doelgroep vond de activiteit plaats</div>
-  %{ models.TargetType.all().fetch().sort{ it.toString() }.each() { }%
+  %{ models.TargetType.find("isActive=1").fetch().sort{ it.toString() }.each() { }%
   %{
   tti = 0;
   entity?.activityTargets?.each(){
@@ -277,7 +277,7 @@
   <div class="field">
     <select name="activity_type" id="activity_type_select">
       <option value="">(None)</option>
-      %{ models.ActivityType.find("ouder is null").fetch().sort{ it.toString() }.each() { }%
+      %{ models.ActivityType.find("ouder is null and isActive=1").fetch().sort{ it.toString() }.each() { }%
       %{
       selected = false;
       if (entity?.userId?.id == it.id) {
@@ -300,7 +300,7 @@
         var listLocations = #{jsAction @ActivityTypes.list(':id')/}
           $("#hiddenActType").load(listLocations({id: selectedActivityType}), function() {
           });
-      }).trigger();
+      });
   </script>
 </div>
 <hr>
