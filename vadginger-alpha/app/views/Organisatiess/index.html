@@ -1,6 +1,6 @@
 #{extends 'main.html' /}
 
-<h2>Organisaties</h2>
+<h2>${title}</h2>
 
 <table id="mytable" class="entity Organisaties">
 	<thead>
@@ -18,7 +18,7 @@
 					<td>${entity.naam}</td>
 					<td>${entity.organisatieNetwerk}</td>
 					<td>${entity.adres}, ${entity.postcode}&nbsp;${entity.gemeente}</td>
-					<td>${entity.centrum}</td>
+					<td>${entity.centrumId?.naam}</td>
           <td>
             <table class="actiontable"><tr>
               <td><a href="@{Organisatiess.show(entity.id)}"><div class="viewer actionbutton"></div></a></td>

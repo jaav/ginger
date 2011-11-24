@@ -2,6 +2,7 @@ package controllers;
 
 import java.util.List;
 import models.Organisaties;
+import models.VadGingerUser;
 import play.modules.paginate.ModelPaginator;
 import play.mvc.Controller;
 import play.i18n.Messages;
@@ -17,13 +18,38 @@ public class Organisatiess extends GingerController {
 	public static void index() {
 		//List<Organisaties> entities = models.Organisaties.all().fetch();
     ModelPaginator entities = new ModelPaginator(Organisaties.class, "ouder is null");
-    setAccordionTab(3);
+    setAccordionTab(4);
+    renderArgs.put("title", "Organisaties");
 		render(entities);
 	}
+
+	public static void centrumOrganisaties() {
+		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
+		ModelPaginator entities = null;
+    entities = new ModelPaginator(Organisaties.class, "centrumId = " + user.centrumId.id + "and ouder is null");
+    setAccordionTab(3);
+    renderArgs.put("title", "Organisaties afhankelijk van "+user.centrumId.naam);
+		renderTemplate("Organisatiess/index.html", entities);
+
+
+		//List<Organisaties> entities = models.Organisaties.all().fetch();
+    //ModelPaginator entities = new ModelPaginator(Organisaties.class, "ouder is null");
+	}
+
+	public static void centrumSubOrganisaties() {
+		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
+		ModelPaginator entities = null;
+    entities = new ModelPaginator(Organisaties.class, "centrumId = " + user.centrumId.id + "and ouder is not null");
+    setAccordionTab(3);
+    renderArgs.put("title", "Suborganisaties afhankelijk van "+user.centrumId.naam);
+		renderTemplate("Organisatiess/index.html", entities);
+	}
+
 	
 	public static void subOrgIndex() {
 		ModelPaginator entities = new ModelPaginator(Organisaties.class, "ouder is not null");
-	    setAccordionTab(3);
+	    setAccordionTab(4);
+    renderArgs.put("title", "Suborganisaties");
 		render("Organisatiess/index.html",entities);
 	}
 	
@@ -32,6 +58,9 @@ public class Organisatiess extends GingerController {
 	}
 
 	public static void create(Organisaties entity) {
+		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
+    entity.centrumId = user.centrumId;
+    entity.userId = user;
     setAccordionTab(3);
 		render(entity);
 	}
@@ -61,7 +90,7 @@ public class Organisatiess extends GingerController {
 		}
     entity.save();
 		flash.success(Messages.get("scaffold.created", "Organisaties"));
-		index();
+		centrumOrganisaties();
 	}
 
 	public static void update(@Valid Organisaties entity) {
@@ -74,7 +103,7 @@ public class Organisatiess extends GingerController {
 		
 		entity.save();
 		flash.success(Messages.get("scaffold.updated", "Organisaties"));
-		index();
+		centrumOrganisaties();
 	}
 	
 	public static void list(String id) {

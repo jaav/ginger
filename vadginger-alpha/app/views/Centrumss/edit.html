@@ -1,0 +1,13 @@
+#{extends 'main.html' /}
+
+<h2>Edit Centrums</h2>
+
+<div class="entity">
+#{form @Centrumss.update(), id:'createForm'}
+	#{include 'Centrumss/_form.html' /}
+	<button class="submit ui-corner-all" onclick="this.submit()">Opslaan</button>
+  <button class="submit ui-corner-all" onclick="history.back();return false;">Terug</button>
+#{/form}
+</div>
+
+<a href="@{Centrumss.index}">Cancel</a>

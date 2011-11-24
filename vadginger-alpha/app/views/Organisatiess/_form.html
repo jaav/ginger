@@ -1,49 +1,24 @@
 
- <div class="row">
-  <div class="label">User Id</div>
-  <div class="field">
-    
-    
-    
-    
+<input type="hidden" value="${entity?.userId?.id}" name="entity.userId.id">
+<input type="hidden" name="entity.centrum.id" value="${entity?.centrumId?.id}"/>
+<input type="hidden" name="entity.id" value="${entity?.id}"/>
       
-      
-        <select name="entity.userId.id">
-              
-                      <option value="">(None)</option>              
-              
-        %{ models.VadGingerUser.all().fetch().sort{ it.toString() }.each() { }%
-          
-          %{
-            selected = false;
-            if (entity?.userId?.id == it.id) {
-              selected = true
-            }
-          }%
-          <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option>
-        %{ } }%
-        </select>
-      
-    
-    
-    
-    
-    
-    
-    
-  </div>
-  <span class="error">${errors.forKey('entity.userId')}</span>
-</div>
 
+
+
+
+<div class="row">
+  <div class="label">Naam</div>
+  <div class="field">
+      <input type="text" name="entity.naam" value="${entity?.naam}" size="80"/>
+
+  </div>
+  <span class="error">${errors.forKey('entity.naam')}</span>
+</div>
 
  <div class="row">
   <div class="label">Afhankelijk van</div>
   <div class="field">
-    
-    
-    
-    
-      
       
         <select name="entity.ouder.id">
               
@@ -60,36 +35,9 @@
           <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option>
         %{ } }%
         </select>
-      
-    
-    
-    
-    
-    
-    
     
   </div>
   <span class="error">${errors.forKey('entity.ouder')}</span>
-</div>
-
-
- <div class="row">
-  <div class="label">Naam</div>
-  <div class="field">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      <input type="text" name="entity.naam" value="${entity?.naam}"/>
-    
-  </div>
-  <span class="error">${errors.forKey('entity.naam')}</span>
 </div>
 
 
@@ -106,7 +54,11 @@
     
     
     
-      <input type="text" name="entity.organisatieNetwerk" value="${entity?.organisatieNetwerk}"/>
+      <select name="entity.organisatieNetwerk" >
+        <option value="org">Organisatie</option>
+        <option value="net">Netwerk</option>
+
+      </select>
     
   </div>
   <span class="error">${errors.forKey('entity.organisatieNetwerk')}</span>
@@ -126,7 +78,7 @@
     
     
     
-      <input type="text" name="entity.adres" value="${entity?.adres}"/>
+      <input type="text" name="entity.adres" value="${entity?.adres}" size="120"/>
     
   </div>
   <span class="error">${errors.forKey('entity.adres')}</span>
@@ -166,7 +118,7 @@
     
     
     
-      <input type="text" name="entity.gemeente" value="${entity?.gemeente}"/>
+      <input type="text" name="entity.gemeente" value="${entity?.gemeente}" size="80"/>
     
   </div>
   <span class="error">${errors.forKey('entity.gemeente')}</span>
@@ -191,45 +143,4 @@
   </div>
   <span class="error">${errors.forKey('entity.land')}</span>
 </div>
-
-
- <div class="row">
-  <div class="label">Centrum</div>
-  <div class="field">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      <input type="text" name="entity.centrum" value="${entity?.centrum}"/>
-    
-  </div>
-  <span class="error">${errors.forKey('entity.centrum')}</span>
-</div>
-
-
- <div class="row">
-  <div class="label"></div>
-  <div class="field">
-    
-    
-    
-    
-    
-    
-    
-    
-      <input type="hidden" name="entity.id" value="${entity?.id}"/>
-    
-    
-    
-  </div>
-  <span class="error">${errors.forKey('entity.id')}</span>
-</div>
-
 

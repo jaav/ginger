@@ -32,6 +32,14 @@ public class VadGingerUsers extends GingerController {
 		render(entities);
 	}
 
+	public static void centrumUsers() {
+		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
+		ModelPaginator entities = null;
+    entities = new ModelPaginator(VadGingerUser.class, "centrumId = " + user.centrumId.id);
+    setAccordionTab(3);
+		renderTemplate("VadGingerUsers/index.html", entities);
+	}
+
 	public static void create(VadGingerUser entity) {
     setAccordionTab(1);
     entity.password="";
