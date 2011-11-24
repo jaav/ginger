@@ -47,6 +47,14 @@ body {
   padding: 10px;
 }
 
+.vad-main-block .show{
+  font-size: 1.1em;
+}
+
+.vad-main-block .show .row{
+  margin-bottom: 10px;
+}
+
 .vad-main-block h2{
   font-size: 1.6em;
   font-weight: bold;

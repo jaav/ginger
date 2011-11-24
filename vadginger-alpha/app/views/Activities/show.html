@@ -1,5 +1,5 @@
 #{extends 'main.html' /}
-
+<div class="show">
 <h2>Detail Activiteit</h2>
 
 <div class="entity">
@@ -20,7 +20,7 @@
 			Datum:
 		</span>
 		<span class="value">
-      ${entity.activityDate}
+      ${entity.activityDate.format('dd MMMM yyyy', 'nl')}
 		</span>
 	</div>
 
@@ -42,13 +42,15 @@
 		</span>
 		<span class="value">
       ${entity.evaluvated}
-		</span>
 		#{if entity.evaluvated}
+      <ul>
 			#{list items:aes, as:'ae'}
-			<BR><span class="elem"$>Eval Type </span>: ${ae.evalTypeId}
-			<BR><span class="elem"$>Evaluvators </span>${ae.evaluvatorsId}
+			<li><span class="value"$>Type evaluatie: </span>${ae.evalTypeId}
+			<BR><span class="value"$>Evaluvators: </span>${ae.evaluvatorsId}</li>
 			#{/list}
+      </ul>
 		#{/if}
+		</span>
 	</div>
 	
 	<div class="row">
@@ -59,7 +61,7 @@
 		<ul>
 		<li>
      		#{list items:iia, as:'ia'}
-			<span class="elem">${ia.itemId} </span>
+			<span class="value">${ia.itemId} </span>
 			
 			#{/list}
 		</li>
@@ -69,13 +71,13 @@
 	
 	<div class="row">
 		<span class="elem">
-			Materials:
+			Materialen:
 		</span>
 		<span class="value">
 		<ul>
 		<li>
      		#{list items:mia, as:'ia'}
-			<span class="elem">${ia.materialId} </span>
+			<span class="value">${ia.materialId} </span>
 			
 			#{/list}
 		</li>
@@ -85,17 +87,17 @@
   
   <div class="row">
 		<span class="elem">
-			Sectors:
+			Sectoren:
 		</span>
 		<span class="value">
 		<ul>
 		<li>
      		#{list items:asc, as:'ia'}
      		#{if ia.sectorId.ouder!=null} 
-     		<span class="elem">${ia.sectorId.ouder} </span>
+     		<span class="value">${ia.sectorId.ouder} </span>
      		#{/if}
      		<ul><li>
-			<span class="elem">${ia.sectorId} </span>
+			<span class="value">${ia.sectorId} </span>
 			</li></ul>
 			#{/list}
 		</li>
@@ -105,17 +107,17 @@
 	
 	 <div class="row">
 		<span class="elem">
-			Activity Type:
+			Type activiteit:
 		</span>
 		<span class="value">
 		<ul>
 		<li>
      		#{list items:atj, as:'ia'}
      		#{if ia.activityTypeId.ouder!=null} 
-     		<span class="elem">${ia.activityTypeId.ouder} </span>
+     		<span class="value">${ia.activityTypeId.ouder} </span>
      		#{/if}
      		<ul><li>
-			<span class="elem">${ia.activityTypeId} </span>
+			<span class="value">${ia.activityTypeId} </span>
 			</li></ul>
 			#{/list}
 		</li>
@@ -138,7 +140,7 @@
   
 	<div class="row">
 		<span class="elem">
-			?reported?:
+			Gerapporteerd:
 		</span>
 		<span class="value">
       ${entity.reported}
@@ -148,19 +150,17 @@
   
   <div class="row">
   <span class="elem">
-  Activity Target
+  Doelgroep
+  </span>
   <span class="value">
 		<ul>
-		<li>
-     		#{list items:ats, as:'ia'}
-     		<ul><li>
-			<span class="elem">${ia.attendantTypeId.targetTypeId} </span> :${ia.attendantTypeId} 
-			</li></ul>
+     	#{list items:ats, as:'ia'}
+      <li>
+			<span class="value">${ia.attendantTypeId.targetTypeId} </span> :${ia.attendantTypeId}
+			</li>
 			#{/list}
-		</li>
 		</ul>
-		</span>
-  </span>
+	</span>
   </div>
 
   
@@ -208,4 +208,4 @@
   
 
 </div>
-
+</div>
