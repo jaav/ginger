@@ -16,7 +16,7 @@
   <div class="label">Organisatie</div>
   <div class="field">
 
-    <select name="organization" id="organizationSelect">
+    <select name="entity.organization" id="organizationSelect">
 
       <option value="">(None)</option>
      #{if userRole.compareTo(models.RoleType.ORG_ADMIN) > 0 }
@@ -57,10 +57,12 @@
       function() {
         $("#hiddenOrg").empty();
         var selectedOrganization = $("#organizationSelect option:selected").val();
-        var listLocations = #{jsAction @Organisatiess.list(':id')/}
-          $("#hiddenOrg").load(listLocations({id: selectedOrganization}), function() {
-          });
-      }).trigger();
+        if(selectedOrganization){
+          g.listLocations = #{jsAction @Organisatiess.list(':id')/};
+          var test = g.listLocations;
+            $("#hiddenOrg").load(g.listLocations({id: selectedOrganization}));
+        }
+      });
   </script>
 </div>
 <div class="row">
@@ -83,7 +85,7 @@
   <div class="label">Op welke dag vond de activiteit plaats?</div>
   <div class="field">
 
-    <input type="text" name="activity_date" value="${entity?.activityDate}" id="datepicker"/>
+    <input type="text" name="entity.activity_date" value="${entity?.activityDate}" id="datepicker"/>
     <script>
       $("#datepicker").datepicker({ appendText: '(dd/mm/yyyy)', dateFormat: 'dd/mm/yy', monthNames: ['Januari', 'Februari', 'Maart', 'April', 'Mei', 'Juni', 'Juli', 'Augustus', 'September', 'Oktober', 'November', 'December']});
     </script>
@@ -183,7 +185,7 @@
 <div class="row">
   <div class="label">Tot welk locatieniveau richt de activiteit zich?</div>
   <div class="field">
-    <select name="location" id="locationSelect">
+    <select name="entity.location" id="locationSelect">
 
 
       <option value="">(Niet van toepassing)</option>
@@ -437,7 +439,7 @@
       %{
       selected = false;
       }%
-      <input id="${it?.id}" name="evaluvators" type="radio" value="${it?.id}">${it}
+      <input id="${it?.id}" name="entity.evaluvators" type="radio" value="${it?.id}">${it}
       <!-- <span class="field" id="${it?.id}cont"></span><br> -->
       <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
       %{ } }%

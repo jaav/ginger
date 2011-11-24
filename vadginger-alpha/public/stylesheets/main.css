@@ -24,6 +24,17 @@ body {
   text-decoration: none;
 }
 
+#hd .login{
+  position: absolute;
+  top:20px;
+  right: 20px;
+}
+
+#hd .login a{
+  color: #000;
+  font-size: 1.1em;
+}
+
 #ft{
   text-align: center;
 }

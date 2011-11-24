@@ -35,6 +35,14 @@
 <div id="doc3" class="yui-t3">
   <div id="hd" role="banner">
     <h1><a href="/">VAD Ginger .be</a></h1>
+    <span class="login">
+      #{if session.get("username") == null}
+      <a href="/secure/login">Gebruiker login</a>
+      #{/if}
+      #{else}
+      <a href="/secure/logout">Logout</a>
+      #{/else}
+    </span>
   </div>
   <div id="bd" role="main">
     <div id="yui-main">

@@ -5,4 +5,15 @@ jQuery(document).ready(function(){
   }
   else props.active = false;
 	$("#accordion").accordion(props);
+  $(".submitbutton").click(function(ev){
+    ev.preventDefault();
+    g.doSubmit(this);
+  });
 });
+
+var g = {};
+g.doSubmit = function(button){
+  var form = button.form;
+  form.submit();
+
+}
