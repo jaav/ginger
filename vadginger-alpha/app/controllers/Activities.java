@@ -102,6 +102,7 @@ public class Activities extends GingerController {
 			entity.organizationId = Organisaties.find("id is " + orgId).first(); 
 		}
 		entity.isActive = true;
+		entity.centrumId = user.centrumId;
 		getDate(entity);
 		entity.save();
 		storeEvaluvationsAndEvaluvators(entity);
@@ -124,7 +125,7 @@ public class Activities extends GingerController {
 		Date d = null;
 		try {
 		
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		 d = sdf.parse(actDate);
 		} catch (Exception e){}
 		return d;
