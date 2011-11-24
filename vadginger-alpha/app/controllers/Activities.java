@@ -101,6 +101,7 @@ public class Activities extends GingerController {
 			entity.organizationId = Organisaties.find("id is " + orgId).first(); 
 		}
 		entity.isActive = true;
+		entity.centrumId = user.centrumId;
 		getDate(entity);
 		entity.save();
 		storeEvaluvationsAndEvaluvators(entity);
