@@ -8,7 +8,7 @@
   
 	<div class="row">
 		<span class="elem">
-			naam:
+			Naam:
 		</span>
 		<span class="value">
       ${entity.naam}
@@ -19,10 +19,42 @@
   
 	<div class="row">
 		<span class="elem">
-			beschrijving:
+			Beschrijving:
 		</span>
 		<span class="value">
       ${entity.beschrijving}
+		</span>
+	</div>
+
+	<div class="row">
+		<span class="elem">
+			Leden:
+		</span>
+		<span class="value">
+		<ul>
+		<li>
+     		#{list items:entity.userId, as:'ia'}
+			<span class="value">${ia.userID}</span>
+
+			#{/list}
+		</li>
+		</ul>
+		</span>
+	</div>
+
+	<div class="row">
+		<span class="elem">
+			Organisaties:
+		</span>
+		<span class="value">
+		<ul>
+		<li>
+     		#{list items:entity.organizationId, as:'ia'}
+			<span class="value">${ia.naam}</span>
+
+			#{/list}
+		</li>
+		</ul>
 		</span>
 	</div>
   
