@@ -275,7 +275,7 @@
 <div class="row">
   <div class="label">Over welke soort activiteit gaat het?</div>
   <div class="field">
-    <select name="activity_type">
+    <select name="activity_type" id="activity_type_select">
       <option value="">(None)</option>
       %{ models.ActivityType.find("ouder is null").fetch().sort{ it.toString() }.each() { }%
       %{
@@ -290,6 +290,18 @@
     </select>
   </div>
   <!-- <span class="error">${errors.forKey('entity.userId')}</span> -->
+   <div class="field" id="hiddenActType"></div>
+
+  <script>
+    $("#activity_type_select").change(
+      function() {
+        $("#hiddenOrg").empty();
+        var selectedActivityType = $("#activity_type_select option:selected").val();
+        var listLocations = #{jsAction @ActivityTypes.list(':id')/}
+          $("#hiddenActType").load(listLocations({id: selectedActivityType}), function() {
+          });
+      }).trigger();
+  </script>
 </div>
 <hr>
 
