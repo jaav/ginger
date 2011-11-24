@@ -16,12 +16,12 @@
   <div class="label">Organisatie</div>
   <div class="field">
 
-    <select name="entity.organization" id="organizationSelect">
+    <select name="organization" id="organizationSelect">
 
       <option value="">(None)</option>
      #{if userRole.compareTo(models.RoleType.ORG_ADMIN) > 0 }
              
-        %{ models.Organisaties.all().fetch().sort{ it.toString() }.each() { }%
+        %{ models.Organisaties.find("ouder is null and isActive=1").fetch().sort{ it.toString() }.each() { }%
           
           %{
             selected = false;
@@ -34,7 +34,7 @@
         #{/if}
         #{else}
              
-        %{ models.Organisaties.find("centrumId is " + centrumId.id).fetch().sort{ it.toString() }.each() { }%
+        %{ models.Organisaties.find("ouder is null and isActive=1 and centrumId is " + centrumId.id).fetch().sort{ it.toString() }.each() { }%
           
           %{
             selected = false;
@@ -57,11 +57,9 @@
       function() {
         $("#hiddenOrg").empty();
         var selectedOrganization = $("#organizationSelect option:selected").val();
-        if(selectedOrganization){
-          g.listLocations = #{jsAction @Organisatiess.list(':id')/};
-          var test = g.listLocations;
-            $("#hiddenOrg").load(g.listLocations({id: selectedOrganization}));
-        }
+        var listLocations = #{jsAction @Organisatiess.list(':id')/}
+          $("#hiddenOrg").load(listLocations({id: selectedOrganization}), function() {
+          });
       });
   </script>
 </div>
@@ -85,7 +83,7 @@
   <div class="label">Op welke dag vond de activiteit plaats?</div>
   <div class="field">
 
-    <input type="text" name="entity.activity_date" value="${entity?.activityDate}" id="datepicker"/>
+    <input type="text" name="activity_date" value="${entity?.activityDate}" id="datepicker"/>
     <script>
       $("#datepicker").datepicker({ appendText: '(dd/mm/yyyy)', dateFormat: 'dd/mm/yy', monthNames: ['Januari', 'Februari', 'Maart', 'April', 'Mei', 'Juni', 'Juli', 'Augustus', 'September', 'Oktober', 'November', 'December']});
     </script>
@@ -110,7 +108,7 @@
   <div class="field">
 
 
-    %{ models.Sectors.find("ouder is null").fetch().sort{ it.toString() }.each() { }%
+    %{ models.Sectors.find("ouder is null and isActive=1").fetch().sort{ it.toString() }.each() { }%
 
     %{
     selected = false;
@@ -185,12 +183,12 @@
 <div class="row">
   <div class="label">Tot welk locatieniveau richt de activiteit zich?</div>
   <div class="field">
-    <select name="entity.location" id="locationSelect">
+    <select name="location" id="locationSelect">
 
 
       <option value="">(Niet van toepassing)</option>
 
-      %{ models.Locations.find("ouder = 1").fetch().sort{ it.toString() }.each() { }%
+      %{ models.Locations.find("ouder = 1 and isActive=1").fetch().sort{ it.toString() }.each() { }%
 
       %{
       selected = false;
@@ -216,7 +214,7 @@
         var listLocations = #{jsAction @Locationss.list(':id')/}
           $("#hiddenLoc").load(listLocations({id: selectedLocation}), function() {
           });
-      }).trigger();
+      });
   </script>
   <!-- </select> -->
 
@@ -224,7 +222,7 @@
 <hr>
 <div class="row">
   <div class="label">Met welke doelgroep vond de activiteit plaats</div>
-  %{ models.TargetType.all().fetch().sort{ it.toString() }.each() { }%
+  %{ models.TargetType.find("isActive=1").fetch().sort{ it.toString() }.each() { }%
   %{
   tti = 0;
   entity?.activityTargets?.each(){
@@ -277,9 +275,9 @@
 <div class="row">
   <div class="label">Over welke soort activiteit gaat het?</div>
   <div class="field">
-    <select name="activity_type">
+    <select name="activity_type" id="activity_type_select">
       <option value="">(None)</option>
-      %{ models.ActivityType.find("ouder is null").fetch().sort{ it.toString() }.each() { }%
+      %{ models.ActivityType.find("ouder is null and isActive=1").fetch().sort{ it.toString() }.each() { }%
       %{
       selected = false;
       if (entity?.userId?.id == it.id) {
@@ -292,6 +290,18 @@
     </select>
   </div>
   <!-- <span class="error">${errors.forKey('entity.userId')}</span> -->
+   <div class="field" id="hiddenActType"></div>
+
+  <script>
+    $("#activity_type_select").change(
+      function() {
+        $("#hiddenOrg").empty();
+        var selectedActivityType = $("#activity_type_select option:selected").val();
+        var listLocations = #{jsAction @ActivityTypes.list(':id')/}
+          $("#hiddenActType").load(listLocations({id: selectedActivityType}), function() {
+          });
+      });
+  </script>
 </div>
 <hr>
 
@@ -439,7 +449,7 @@
       %{
       selected = false;
       }%
-      <input id="${it?.id}" name="entity.evaluvators" type="radio" value="${it?.id}">${it}
+      <input id="${it?.id}" name="evaluvators" type="radio" value="${it?.id}">${it}
       <!-- <span class="field" id="${it?.id}cont"></span><br> -->
       <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
       %{ } }%

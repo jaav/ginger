@@ -20,6 +20,8 @@ public class VadGingerUsers extends GingerController {
 
 	public static void index() {
 		//List<VadGingerUser> entities = models.VadGingerUser.all().fetch();
+		System.out.println("++++++++++>" + play.libs.Codec.encodeBASE64(Security.md5("123456")));
+    	
 		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
 		ModelPaginator entities = null;
 		if (user.role.equals(models.RoleType.ADMIN))

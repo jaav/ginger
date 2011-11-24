@@ -84,6 +84,7 @@ public class Sectorss extends GingerController {
 			query = "ouder is null";
 		else
 			query += id;
+		query+= " and isActive=1";
 		List<models.Sectors> secs = models.Sectors.find(query).fetch();
 		StringBuffer htmlData = new StringBuffer();
 		htmlData.append("<div class=\"label\">Sub-sector</div>");

@@ -9,6 +9,7 @@ import java.util.List;
 import javax.persistence.TemporalType;
 
 import models.Activity;
+import models.Organisaties;
 import models.RoleType;
 import models.VadGingerUser;
 import play.data.validation.Valid;
@@ -45,14 +46,13 @@ public class Activities extends GingerController {
 	}
 
 	public static void create(Activity entity) {
-		System.out.println("++++++++++++++++> " + play.libs.Codec.encodeBASE64(Security.md5("123456")));
 		/*
 		 * List<models.Locations> locs =
 		 * models.Locations.find("ouder is 1").fetch(); for (models.Locations
 		 * loc: locs) { System.out.println(loc.naam); }
 		 */
-		List<models.Items> items = models.Items.all().fetch();
-		List<models.Materials> materials = models.Materials.all().fetch();
+		List<models.Items> items = models.Items.find("isActive=1").fetch();
+		List<models.Materials> materials = models.Materials.find("isActive=1").fetch();
     setAccordionTab(2);
 		render(entity, items, materials);
 	}
@@ -90,6 +90,18 @@ public class Activities extends GingerController {
 			flash.error(Messages.get("scaffold.validation"));
 			render("@create", entity);
 		}
+    String test = params.get("organization");
+		String orgId = params.get("organization").trim();
+		if (!orgId.trim().equals("")) {
+			
+			String sub_org_id = request.params.get("sub_org_id");
+			if (sub_org_id!=null&&!sub_org_id.trim().equals("")) {
+				orgId = sub_org_id;
+				
+			}
+			entity.organizationId = Organisaties.find("id is " + orgId).first(); 
+		}
+		entity.isActive = true;
 		getDate(entity);
 		entity.save();
 		storeEvaluvationsAndEvaluvators(entity);
@@ -122,12 +134,13 @@ public class Activities extends GingerController {
 		if (entity.evaluvated) {
 			List<models.EvaluvationType> evalTypes = models.EvaluvationType.all().fetch();
 			for (models.EvaluvationType evalType: evalTypes) {
-				if(request.params.get("eval_type_" + evalType.getId())!=null) {
+				String evID = request.params.get("eval_type_" + evalType.getId());
+				if(evID!=null&&!evID.trim().equals("")) {
 					models.ActivityEvaluvators ae = new models.ActivityEvaluvators();
 					ae.activityId = entity;
 					ae.evalTypeId = evalType;
 					String evaluvatorId = request.params.get("evaluvators");
-					if (evaluvatorId!=null) {
+					if (!evaluvatorId.trim().equals("")&&evaluvatorId!=null) {
 						ae.evaluvatorsId  = models.Evaluvators.find("id is " + evaluvatorId).first();
 					}
 					ae.save();
@@ -138,12 +151,12 @@ public class Activities extends GingerController {
 
 	private static void storeActivityTargets(Activity entity) {
 		String activityTargetId = request.params.get("attendant_type");
-		if (activityTargetId!=null) {
+		if (activityTargetId!=null&&!activityTargetId.trim().equals("")) {
 			List<models.AttendantType> atdTypes = models.AttendantType.find("byTargetTypeId", models.TargetType.find("id is " + activityTargetId).first()).fetch();
 			String atdId = null;
 			for (models.AttendantType atd: atdTypes) {
 				atdId = request.params.get("atd_typ_" + atd.getId());
-				if (atdId!=null) {
+				if (atdId!=null&&!atdId.trim().equals("")) {
 					models.ActivityTargets at = new models.ActivityTargets();
 					at.activityId = entity;
 					at.attendantTypeId = atd;
@@ -155,7 +168,10 @@ public class Activities extends GingerController {
 
 	private static void storeActivityType(Activity entity) {
 		String activityType = request.params.get("activity_type");
-		if (activityType != null) {
+		if (activityType != null && !activityType.trim().equals("")) {
+			String sub_act_type = request.params.get("sub_activity_type");
+			if (sub_act_type!=null&&!sub_act_type.equals(""))
+				activityType = sub_act_type;
 			models.ActivityType actTyp = models.ActivityType.find("id is " + activityType).first();
 			models.ActivityTypeJunction atj = new models.ActivityTypeJunction();
 			atj.activityId = entity;
@@ -182,7 +198,9 @@ public class Activities extends GingerController {
 			if (request.params.get("sector_" + sec.id)!=null) {
 				String sub_sec_id = request.params.get("sub_sector_" + sec.id);
 				models.Sectors sub_sec = sec;
-				if (sub_sec_id!=null) {
+				System.out.println("++++> is empty " + sub_sec_id);
+				if (sub_sec_id!=null&&!sub_sec_id.trim().equals("")) {
+					System.out.println("++++> shuoldn;t be here " + sub_sec_id);
 					sub_sec = models.Sectors.find("id is " + sub_sec_id).first();
 				}
 				models.SectorActivityJunction sac = new models.SectorActivityJunction(); 

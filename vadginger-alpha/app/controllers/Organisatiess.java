@@ -80,13 +80,13 @@ public class Organisatiess extends GingerController {
 	public static void list(String id) {
 
 		//List<models.Locations> locs = models.Locations.find("ouder is " + id).fetch();
-		List<models.Organisaties> orgs = models.Organisaties.find("ouder is " + id).fetch();
+		List<models.Organisaties> orgs = models.Organisaties.find("ouder is " + id +" and isActive=1").fetch();
     if(orgs.isEmpty()) renderText("");
     else{
       StringBuffer htmlData = new StringBuffer();
       htmlData.append("<div class=\"label\">Sub-organisatie</div>");
       htmlData.append("<div class=\"field\">");
-      htmlData.append("<select name=\"entity.organizationId.id\" id=\"subOrganizationSelect\">\n");
+      htmlData.append("<select name=\"sub_org_id\" id=\"subOrganizationSelect\">\n");
       for (models.Organisaties org: orgs) {
         htmlData.append(" <option value=\""+org.id+"\" >"+org.naam+"</option>\n");
 
