@@ -49,7 +49,9 @@ public class Organisatiess extends GingerController {
 	public static void subOrgIndex() {
 		ModelPaginator entities = new ModelPaginator(Organisaties.class, "ouder is not null");
 	    setAccordionTab(4);
+    ModelPaginator mainorgs = new ModelPaginator(Organisaties.class, "ouder is null");
     renderArgs.put("title", "Suborganisaties");
+    renderArgs.put("mainorgs", mainorgs);
 		render("Organisatiess/index.html",entities);
 	}
 	
