@@ -61,17 +61,26 @@
           $("#hiddenOrg").load(listLocations({id: selectedOrganization}), function() {
           });
       });
+    (function(){
+      $("#hiddenOrg").empty();
+      var selectedOrganization = $("#organizationSelect option:selected").val();
+      var listLocations = #{jsAction @Organisatiess.list(':id')/}
+        $("#hiddenOrg").load(listLocations({id: selectedOrganization}), function() {
+        });
+    })();
   </script>
 </div>
 <div class="row">
-  <div class="label">Interne / Extern</div>
+  <div class="label">Interne activiteit</div>
   <div class="field">
-    Intern: <input type="radio" name="entity.internalActivity" value="true"
-    #{if entity?.internalActivity==true} checked#{/if}
-    /><br />
-    Extern: <input type="radio" name="entity.internalActivity" value="false"
-    #{if entity?.internalActivity==false} checked#{/if}
-    />
+
+    Ja:
+    #{if entity?.internalActivity}
+    <input type="checkbox" name="entity.internalActivity" value="true" checked/>
+    #{/if}
+    #{else}
+    <input type="checkbox" name="entity.internalActivity" value="true"/>
+    #{/else}
 
 
 
@@ -83,7 +92,7 @@
   <div class="label">Op welke dag vond de activiteit plaats?</div>
   <div class="field">
 
-    <input type="text" name="activity_date" value="${entity?.activityDate}" id="datepicker"/>
+    <input type="text" name="activity_date" value="${entity?.activityDate?.format('dd/MM/yyyy', 'nl')}" id="datepicker"/>
     <script>
       $("#datepicker").datepicker({ appendText: '(dd/mm/yyyy)', dateFormat: 'dd/mm/yy', monthNames: ['Januari', 'Februari', 'Maart', 'April', 'Mei', 'Juni', 'Juli', 'Augustus', 'September', 'Oktober', 'November', 'December']});
     </script>
@@ -187,12 +196,13 @@
 
 
       <option value="">(Niet van toepassing)</option>
-
-      %{ models.Locations.find("ouder = 1 and isActive=1").fetch().sort{ it.toString() }.each() { }%
-
+      %{ models.Locations.find("ouder is null and isCluster = 0 and isActive=1").fetch().sort{ it.toString() }.each() { }%
       %{
       selected = false;
       if (entity?.locationId?.id == it.id) {
+      selected = true
+      }
+      if(!selected&&entity.locationId!=null&&entity.locationId.ouder!=null&&entity.locationId.ouder.id==it.id) {
       selected = true
       }
       }%
@@ -414,29 +424,20 @@
   </div>
   <span class="error">${errors.forKey('entity.evaluvated')}</span>
 </div>
-<script>
-  $("#evaled").change(function() {
-    var $input = $(this);
-    if ($input.is(':checked')) {
-      $("#evaluvated").show();
-    }
-    else {
-      $("#evaluvated").hide();
-    }
-  });
-</script>
 
 <div class="row" id="evaluvated" style="display: none">
 
   <div class="row">
     <div class="label">Hoe is de activiteit geëvalueerd?</div>
     <div class="field">
-      %{ models.EvaluvationType.all().fetch().sort{ it.toString() }.each() { }%
+      %{ models.EvaluvationType.all().fetch().sort{ it.toString() }.eachWithIndex() {ob, i -> }%
       %{
       selected = false;
       }%
-      <input id="${it?.id}" name="eval_type_${it?.id}" type="checkbox">
-      <label class="choice" for="eval_type_${it?.id}">${it?.evalType}</label>
+      <input id="${ob?.id}" name="eval_type_${ob?.id}" type="checkbox"
+      ${(entity?.activityEvaluvatorsId?.evalTypeId?.evalType && ob?.evalType == entity?.activityEvaluvatorsId?.evalTypeId?.evalType[0]) ? 'checked':''}
+      />
+      <label class="choice" for="eval_type_${ob?.id}">${ob?.evalType}</label>
       <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
       %{ } }%
     </div>
@@ -449,7 +450,9 @@
       %{
       selected = false;
       }%
-      <input id="${it?.id}" name="evaluvators" type="radio" value="${it?.id}">${it}
+      <input id="${it?.id}" name="evaluvators" type="radio" value="${it?.id}"
+      ${(entity?.activityEvaluvatorsId?.evaluvatorsId && it?.naam == entity?.activityEvaluvatorsId?.evaluvatorsId?.naam[0]) ? 'checked':''}
+      />${it}
       <!-- <span class="field" id="${it?.id}cont"></span><br> -->
       <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
       %{ } }%
@@ -460,8 +463,30 @@
     <div class="label">Is er een verslag gemaakt?</div>
     <div class="field">
 
-      <input type="checkbox" name="entity.reported"/>
+      Ja: <input type="checkbox" name="entity.reported"
+      ${entity?.reported ? 'checked':''}
+      />
     </div>
     <span class="error">${errors.forKey('entity.reported')}</span>
   </div>
 </div>
+
+
+<script>
+  $("#evaled").change(function() {
+    var $input = $(this);
+    if ($input.is(':checked')) {
+      $("#evaluvated").show();
+    }
+    else {
+      $("#evaluvated").hide();
+    }
+  });
+  (function(){
+    var test = $("#evaled:checked").length;
+    test = $("#evaluvated");
+    if ($("#evaled:checked").length>0) {
+      $("#evaluvated").slideDown();
+    }
+  })();
+</script>

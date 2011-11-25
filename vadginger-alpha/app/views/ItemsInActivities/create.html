@@ -5,9 +5,9 @@
 <div class="entity">
 #{form @ItemsInActivities.save(), id:'createForm'}
 	#{include 'ItemsInActivities/_form.html' /}
-	<button class="submit ui-corner-all" onclick="this.submit()">Opslaan</button>
+	<button class="submit ui-corner-all submitbutton"">Opslaan</button>
   <button class="submit ui-corner-all" onclick="history.back();return false;">Terug</button>
 #{/form}
 </div>
 
-<a href="@{ItemsInActivities.index}">Cancel</a>
+

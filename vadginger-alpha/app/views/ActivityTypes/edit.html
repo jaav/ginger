@@ -5,9 +5,7 @@
 <div class="entity">
 #{form @ActivityTypes.update(), id:'createForm'}
 	#{include 'ActivityTypes/_form.html' /}
-	<button class="submit ui-corner-all" onclick="this.submit()">Opslaan</button>
+	<button class="submit ui-corner-all submitbutton"">Opslaan</button>
   <button class="submit ui-corner-all" onclick="history.back();return false;">Terug</button>
 #{/form}
 </div>
-
-<a href="@{ActivityTypes.index}">Cancel</a>

@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/jquery-ui-1.8.16.custom.css'}">
   <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/main.css'}">
   #{get 'moreStyles' /}
-  <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+  <link rel="shortcut icon" type="image/png" href="@{'/public/images/vad.jpg'}">
   <script>
     ginger = {};
     #{if accordionTab}
@@ -35,7 +35,7 @@
 <body class="yui-skin-sam">
 <div id="doc3" class="yui-t3">
   <div id="hd" role="banner">
-    <h1><a href="/">VAD Ginger .be</a></h1>
+    <h1><a href="/">VAD Ginger</a><!--img src="http://www.vad.be/images/logo.jpg" style="float:right;"--></h1>
     <span class="login">
       #{if session.get("username") == null}
       <a href="/secure/login">Gebruiker login</a>

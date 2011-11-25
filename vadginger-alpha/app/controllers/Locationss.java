@@ -84,7 +84,16 @@ public class Locationss extends GingerController {
 	}
 	
 	public static void list(String id) {
-		List<models.Locations> locs = models.Locations.find("ouder is " + id +" and isActive=1").fetch();
+		//List<models.Locations> locs = models.Locations.find("ouder is " + id).fetch();
+		models.Locations org1 = models.Locations.find("id is " + id).first();
+		String query = "ouder is " + id +" and isActive=1";
+		if (org1.naam.toLowerCase().indexOf("regionaal")>-1) {
+			models.VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
+			query = "isActive=1 and isCluster=1";
+			if (user.role.equals(models.RoleType.ORG_ADMIN)||user.role.equals(models.RoleType.MEMBER))
+				query += " centrumId=" + user.centrumId.id;
+		}
+		List<models.Locations> locs = models.Locations.find(query).fetch();
     if(locs.isEmpty()) renderText("");
     else{
       StringBuffer htmlData = new StringBuffer();

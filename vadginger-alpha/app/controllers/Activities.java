@@ -70,9 +70,11 @@ public class Activities extends GingerController {
 	}
 
 	public static void edit(java.lang.Long id) {
+		List<models.Items> items = models.Items.find("isActive=1").fetch();
+		List<models.Materials> materials = models.Materials.find("isActive=1").fetch();
 		Activity entity = Activity.findById(id);
     setAccordionTab(2);
-		render(entity);
+		render(entity, items, materials);
 	}
 
 	public static void delete(java.lang.Long id) {
@@ -90,17 +92,8 @@ public class Activities extends GingerController {
 			flash.error(Messages.get("scaffold.validation"));
 			render("@create", entity);
 		}
-    String test = params.get("organization");
-		String orgId = params.get("organization").trim();
-		if (!orgId.trim().equals("")) {
-			
-			String sub_org_id = request.params.get("sub_org_id");
-			if (sub_org_id!=null&&!sub_org_id.trim().equals("")) {
-				orgId = sub_org_id;
-				
-			}
-			entity.organizationId = Organisaties.find("id is " + orgId).first(); 
-		}
+		storeLocation(entity);
+		storeOrganization(entity);
 		entity.isActive = true;
 		entity.centrumId = user.centrumId;
 		getDate(entity);
@@ -113,6 +106,30 @@ public class Activities extends GingerController {
 		storeMaterials(entity);
 		flash.success(Messages.get("scaffold.created", "Activity"));
 		index();
+	}
+
+	private static void storeLocation(Activity entity) {
+		if (entity.locationId==null) {
+			String locationId = request.params.get("location");
+			if (locationId!=null&&!locationId.trim().equals("")) {
+				models.Locations loc = models.Locations.find("id is " + locationId).first();
+				entity.locationId = loc;
+			}
+		}
+		
+	}
+
+	private static void storeOrganization(Activity entity) {
+		String orgId =request.params.get("organization").trim(); 
+		if (!orgId.trim().equals("")) {
+			
+			String sub_org_id = request.params.get("sub_org_id");
+			if (sub_org_id!=null&&!sub_org_id.trim().equals("")) {
+				orgId = sub_org_id;
+				
+			}
+			entity.organizationId = Organisaties.find("id is " + orgId).first(); 
+		}
 	}
 
 	private static void getDate(Activity entity) {
@@ -238,14 +255,44 @@ public class Activities extends GingerController {
 			render("@edit", entity);
 		}
 
+
+		//entity.save();
+		storeOrganization(entity);
+		entity.isActive = true;
+		getDate(entity);
 		entity = entity.merge();
 
 		entity.save();
+		deletedAllRelationships(entity);
+		storeEvaluvationsAndEvaluvators(entity);
+		storeActivityTargets(entity);
+		storeActivityType(entity);
+		storeItems(entity);
+		storeSectors(entity);
+		storeMaterials(entity);
+		flash.success(Messages.get("scaffold.created", "Activity"));
+		index();
 		flash.success(Messages.get("scaffold.updated", "Activity"));
 		index();
 	}
 	
-   public static void searchForm() {
+   private static void deletedAllRelationships(Activity entity) {
+		for (models.MaterialsInActivity mia: entity.materialsInActivities)
+			mia.delete();
+		for (models.ItemsInActivity iia: entity.itemsInActivity)
+			iia.delete();
+		for (models.ActivityTypeJunction atj: entity.activityTypeJunctions)
+			atj.delete();
+		for (models.ActivitySectors as: entity.activitySectorss)
+			as.delete();
+		for(models.ActivityEvaluvators ae: entity.activityEvaluvatorsId)
+			ae.delete();
+		for (models.ActivityTargets at: entity.activityTargets)
+			at.delete();
+	
+	}
+
+public static void searchForm() {
 	   //System.out.println("++++++++++++> HERE");
      setAccordionTab(2);
 	   render();

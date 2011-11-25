@@ -5,9 +5,7 @@
 <div class="entity">
 #{form @ActivitySectorss.update(), id:'createForm'}
 	#{include 'ActivitySectorss/_form.html' /}
-	<button class="submit ui-corner-all" onclick="this.submit()">Opslaan</button>
+	<button class="submit ui-corner-all submitbutton"">Opslaan</button>
   <button class="submit ui-corner-all" onclick="history.back();return false;">Terug</button>
 #{/form}
 </div>
-
-<a href="@{ActivitySectorss.index}">Cancel</a>

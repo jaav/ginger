@@ -5,9 +5,9 @@
 <div class="entity">
 #{form @UserRoless.save(), id:'createForm'}
 	#{include 'UserRoless/_form.html' /}
-	<button class="submit ui-corner-all" onclick="this.submit()">Opslaan</button>
+	<button class="submit ui-corner-all submitbutton"">Opslaan</button>
   <button class="submit ui-corner-all" onclick="history.back();return false;">Terug</button>
 #{/form}
 </div>
 
-<a href="@{UserRoless.index}">Cancel</a>
+
