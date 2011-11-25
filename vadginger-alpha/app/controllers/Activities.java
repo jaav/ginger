@@ -1,5 +1,6 @@
 package controllers;
 
+import java.lang.reflect.InvocationTargetException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -8,10 +9,8 @@ import java.util.List;
 
 import javax.persistence.TemporalType;
 
-import models.Activity;
-import models.Organisaties;
-import models.RoleType;
-import models.VadGingerUser;
+import models.*;
+import org.apache.commons.beanutils.BeanUtils;
 import play.data.validation.Valid;
 import play.i18n.Messages;
 import play.modules.paginate.ModelPaginator;
@@ -52,9 +51,86 @@ public class Activities extends GingerController {
 		 * loc: locs) { System.out.println(loc.naam); }
 		 */
 		List<models.Items> items = models.Items.find("isActive=1").fetch();
-		List<models.Materials> materials = models.Materials.find("isActive=1").fetch();
+		List<models.Materials> materials = models.Materials.find("isActive=1 order by id").fetch();
     setAccordionTab(2);
 		render(entity, items, materials);
+	}
+
+	public static void copy(Long id) {
+		models.VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
+		Activity entity = Activity.findById(id);
+    Activity copy = new Activity();
+    try {
+      BeanUtils.copyProperties(copy, entity);
+      copy.id = null;
+      copy.beschrijving = "copy van "+copy.beschrijving;
+      copy.isActive = true;
+      copy.centrumId = user.centrumId;
+      copy.activityEvaluvatorsId = null;
+      copy.activityTargets = null;
+      copy.activitySectorss = null;
+      copy.sectorActivityJunctions = null;
+      copy.itemsInActivity = null;
+      copy.materialsInActivities = null;
+      copy.activityTypeJunctions = null;
+      copy = copy.save();
+
+      List<ActivityEvaluvators> aes = ActivityEvaluvators.find("activityId_id is " + entity.id).fetch();
+      for (ActivityEvaluvators ae : aes) {
+        ActivityEvaluvators newAe = new ActivityEvaluvators();
+        BeanUtils.copyProperties(newAe, ae);
+        newAe.activityId = copy;
+        newAe.save();
+      }                  
+
+      List<ActivityTargets> ats = ActivityTargets.find("activityId_id is " + entity.id).fetch();
+      for (ActivityTargets at : ats) {
+        ActivityTargets newAt = new ActivityTargets();
+        BeanUtils.copyProperties(newAt, at);
+        newAt.activityId = copy;
+        newAt.save();
+      }                    
+
+      List<ActivityTypeJunction> atjs = ActivityTypeJunction.find("activityId_id is " + entity.id).fetch();
+      for (ActivityTypeJunction atj : atjs) {
+        ActivityTypeJunction newAtj = new ActivityTypeJunction();
+        BeanUtils.copyProperties(newAtj, atj);
+        newAtj.activityId = copy;
+        newAtj.save();
+      }                    
+
+      List<ItemsInActivity> iias = ItemsInActivity.find("activityId_id is " + entity.id).fetch();
+      for (ItemsInActivity iia : iias) {
+        ItemsInActivity newAtj = new ItemsInActivity();
+        BeanUtils.copyProperties(newAtj, iia);
+        newAtj.activityId = copy;
+        newAtj.save();
+      }                     
+
+      List<SectorActivityJunction> sajs = SectorActivityJunction.find("activityId_id is " + entity.id).fetch();
+      for (SectorActivityJunction saj : sajs) {
+        SectorActivityJunction newAtj = new SectorActivityJunction();
+        BeanUtils.copyProperties(newAtj, saj);
+        newAtj.activityId = copy;
+        newAtj.save();
+      }                       
+
+      List<MaterialsInActivity> mias = MaterialsInActivity.find("activityId_id is " + entity.id).fetch();
+      for (MaterialsInActivity mia : mias) {
+        MaterialsInActivity newAtj = new MaterialsInActivity();
+        BeanUtils.copyProperties(newAtj, mia);
+        newAtj.activityId = copy;
+        newAtj.save();
+      }
+      
+
+      edit(copy.id);
+    } catch (IllegalAccessException e) {
+      e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+    } catch (InvocationTargetException e) {
+      e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+    }
+    show(id);
 	}
 
 	public static void show(java.lang.Long id) {

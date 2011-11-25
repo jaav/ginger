@@ -22,6 +22,7 @@ body {
   font-weight: bold;
   color: #2E6E9E;
   text-decoration: none;
+  padding-left: 250px;
 }
 
 #hd .login{
@@ -41,6 +42,7 @@ body {
 #ft p{
   color:#404040;
   font-size: 1em;
+  padding-left: 250px;
 }
 
 .vad-main-block{
@@ -54,6 +56,18 @@ body {
 .vad-main-block .show .row{
   margin-bottom: 10px;
 }
+
+.vad-main-block .show .row .elem .floater{
+  float:right;
+  text-align: center;
+}
+
+.vad-main-block .show .row .elem a{
+  font-weight: bold;
+  color: #2E6E9E;
+  text-decoration: none;
+}
+
 
 .vad-main-block h2{
   font-size: 1.6em;

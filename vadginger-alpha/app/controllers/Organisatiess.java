@@ -120,7 +120,7 @@ public class Organisatiess extends GingerController {
       StringBuffer htmlData = new StringBuffer();
       htmlData.append("<div class=\"label\">Sub-organisatie</div>");
       htmlData.append("<div class=\"field\">");
-      htmlData.append("<select name=\"sub_org_id\" id=\"subOrganizationSelect\">\n");
+      htmlData.append("<select name=\"sub_org_id\" id=\"subOrganizationSelect\" multiple size=\"4\">\n");
       for (models.Organisaties org: orgs) {
         htmlData.append(" <option value=\""+org.id+"\" >"+org.naam+"</option>\n");
 

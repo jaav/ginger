@@ -111,7 +111,7 @@
 
 <hr>
 <div class="row">
-  <div class="label">Met welke sector en detailsector(en) voer je de preventieactiviteit uit?
+  <div class="label">Welke sector(en) en detailsector(en) waren aanwezig op de activiteit?
     <div class="label">Sector:</div>
   </div>
   <div class="field">
@@ -231,7 +231,7 @@
 </div>
 <hr>
 <div class="row">
-  <div class="label">Met welke doelgroep vond de activiteit plaats</div>
+  <div class="label">Welke doelgroep was aanwezig op de activiteit?</div>
   %{ models.TargetType.find("isActive=1").fetch().sort{ it.toString() }.each() { }%
   %{
   tti = 0;

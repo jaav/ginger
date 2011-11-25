@@ -100,13 +100,14 @@
             <li><a href="@{Activities.create()}">Nieuwe Activiteit</a></li>
           </ul></div>
           
-          
-          #{if userRole && userRole.compareTo(models.RoleType.ORG_ADMIN) >=0}
-          <h3><a href="#">Mijn centrum</a></h3>
+
+          #{if userRole && userRole.compareTo(models.RoleType.MEMBER) >=0}
+          <h3><a href="#" onclick="location.href='@{Statics.organisationsStart()}';return false;">Databank ${centrumId != null ? centrumId.naam : 'mijn centrum'}</a></h3>
           <div><ul>
             <li><a href="@{Statics.organisationsStart()}">Startpagina</a></li>
-            <li><a href="@{Centrumss.showMyCentrum()}">Centrum details</a></li>
+          #{if userRole && userRole.compareTo(models.RoleType.ORG_ADMIN) >=0}
             <li><a href="@{VadGingerUsers.centrumUsers()}">Leden</a></li>
+          #{/if}
             <li>Organisaties<ul style="margin-left: 10px;"><li>(<a href="@{Organisatiess.centrumOrganisaties()}">Lijst</a> / <a href="@{Organisatiess.centrumSubOrganisaties()}">Subs</a> / <a href="@{Organisatiess.create()}">Nieuw</a>)</li></ul></li>
             <li>Clusters (<a href="#">Lijst</a> / <a href="#">Nieuw</a>)</li>
           </ul></div>
