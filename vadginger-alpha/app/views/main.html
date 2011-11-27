@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/jquery-ui-1.8.16.custom.css'}">
   <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/main.css'}">
   #{get 'moreStyles' /}
-  <link rel="shortcut icon" type="image/png" href="@{'/public/images/vad.jpg'}">
+  <link rel="shortcut icon" type="image/png" href="@{'/public/images/vad.png'}">
   <script>
     ginger = {};
     #{if accordionTab}
@@ -109,7 +109,7 @@
             <li><a href="@{VadGingerUsers.centrumUsers()}">Leden</a></li>
           #{/if}
             <li>Organisaties<ul style="margin-left: 10px;"><li>(<a href="@{Organisatiess.centrumOrganisaties()}">Lijst</a> / <a href="@{Organisatiess.centrumSubOrganisaties()}">Subs</a> / <a href="@{Organisatiess.create()}">Nieuw</a>)</li></ul></li>
-            <li>Clusters (<a href="#">Lijst</a> / <a href="#">Nieuw</a>)</li>
+            <li>Clusters (<a href="@{Locationss.clustersIndex()}">Lijst</a> / <a href="@{Locationss.createCluster()}">Nieuw</a>)</li>
           </ul></div>
           #{/if}
           

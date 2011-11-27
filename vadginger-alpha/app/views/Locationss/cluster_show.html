@@ -1,0 +1,47 @@
+#{extends 'main.html' /}
+<div class="show">
+
+<h2>View Locations</h2>
+
+<div class="entity">
+
+ 	<div class="row">
+		<span class="elem">
+			naam:
+		</span>
+		<span class="value">
+      ${entity.naam}
+		</span>
+	</div>
+  
+	<div class="row">
+		<span class="elem">
+			beschrijving:
+		</span>
+		<span class="value">
+      ${entity.beschrijving}
+		</span>
+	</div>
+	
+	%{
+		List<models.Locations> clusterLocs = models.Locations.find("ouder="+entity.id).fetch();
+		i = 0
+	}%
+	
+	
+	<div class="row">
+		<span class="elem">
+			Regions:
+		</span>
+		<span class="value">
+     
+	
+#{list items:clusterLocs, as:'loc'}
+%{i++%}
+    <li>PS${i}:  ${loc.naam}</li>
+#{/list}
+  	</span>
+	</div>
+</div>
+</div>
+

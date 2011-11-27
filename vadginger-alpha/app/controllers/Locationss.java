@@ -16,7 +16,7 @@ import play.mvc.With;
 public class Locationss extends GingerController {
 	public static void index() {
 		//List<Locations> entities = models.Locations.all().fetch();
-		ModelPaginator entities = new ModelPaginator(Locations.class, "ouder is null and isCluster is null");
+		ModelPaginator entities = new ModelPaginator(Locations.class, "ouder is null and isCluster=0");
 		entities.setPageSize(20);
     setAccordionTab(4);
 		render(entities);
@@ -24,40 +24,53 @@ public class Locationss extends GingerController {
 	
 	public static void subLocindex() {
 		//List<Locations> entities = models.Locations.all().fetch();
-		ModelPaginator entities = new ModelPaginator(Locations.class, "ouder is not null and isCluster is null");
+		ModelPaginator entities = new ModelPaginator(Locations.class, "ouder is not null and isCluster=0");
 		entities.setPageSize(20);
 		setAccordionTab(4);
 		render("Locationss/index.html",entities);
 	}
 	
 	public static void clustersIndex() {
-		ModelPaginator entities = new ModelPaginator(Locations.class, "isCluster is 1");
+		ModelPaginator entities = new ModelPaginator(Locations.class, "ouder is null and isCluster=1");
 		entities.setPageSize(20);
 		setAccordionTab(4);
-		render("Locationss/index.html",entities);
+		render("Locationss/cluster_index.html",entities);
 	}
 
 	public static void create(Locations entity) {
     setAccordionTab(4);
-		render(entity);
+    render(entity);
 	}
+	
+	public static void createCluster(Locations entity) {
+	  setAccordionTab(4);
+	  render("Locationss/cluster_create.html",entity);
+		
+	}
+	
 
 	public static void show(java.lang.Long id) {
     Locations entity = Locations.findById(id);
     setAccordionTab(4);
-		render(entity);
+    if(isCluster(entity))
+    	render("Locationss/cluster_show.html",entity);
+	render(entity);
 	}
 
 	public static void edit(java.lang.Long id) {
     Locations entity = Locations.findById(id);
     setAccordionTab(4);
-		render(entity);
+    if(isCluster(entity)) {
+    	List<models.Locations> locs = models.Locations.find("ouder="+entity.id).fetch();
+    	render("Locationss/cluster_edit.html",entity, locs);
+    }
+    render(entity);
 	}
 
 	public static void delete(java.lang.Long id) {
     Locations entity = Locations.findById(id);
     entity.delete();
-		index();
+	index();
 	}
 	
 	public static void save(@Valid Locations entity) {
@@ -68,6 +81,51 @@ public class Locationss extends GingerController {
     entity.save();
 		flash.success(Messages.get("scaffold.created", "Locations"));
 		index();
+	}
+	
+	public static void saveCluster(@Valid Locations entity) {
+		entity.isCluster = true;
+		if (validation.hasErrors()) {
+			flash.error(Messages.get("scaffold.validation"));
+			render("Locationss/cluster_create.html", entity);
+		}
+		entity.isActive=true;
+		entity.save();
+		createClusterLocations(entity);
+		clustersIndex();
+	}
+
+	private static void createClusterLocations(Locations entity) {
+		utils.ClusterUtils cu = new utils.ClusterUtils();
+		models.Locations clusterLoc = null;
+		for (int i = 1 ;i <=10;i++) {
+			String key = request.params.get("cluster"+i);
+			if (key!=null&&!key.trim().equals("")) {
+				clusterLoc = new models.Locations();
+				clusterLoc.isActive = true; clusterLoc.isCluster = false;
+				clusterLoc.ouder = entity; clusterLoc.naam = cu.postCodeList.get(Integer.parseInt(key));
+				clusterLoc.save();
+			}
+		}
+	}
+	
+	public static void updateCluster(@Valid Locations entity) {
+		if (validation.hasErrors()) {
+			flash.error(Messages.get("scaffold.validation"));
+			render("@edit", entity);
+		}
+      	entity = entity.merge();
+		entity.save();
+		removeCurrentLocations(entity);
+		createClusterLocations(entity);
+		clustersIndex();
+	}
+
+	private static void removeCurrentLocations(Locations entity) {
+		List<models.Locations> clusterLocs = models.Locations.find("ouder="+entity.id).fetch();
+		for (models.Locations loc: clusterLocs){
+			loc.delete();
+		}
 	}
 
 	public static void update(@Valid Locations entity) {
@@ -108,6 +166,10 @@ public class Locationss extends GingerController {
 
       renderText(htmlData.toString());
     }
+	}
+	
+	private static boolean isCluster(Locations loc) {
+		return loc.isCluster;
 	}
 
 }

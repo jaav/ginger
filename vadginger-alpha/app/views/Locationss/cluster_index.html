@@ -1,0 +1,33 @@
+#{extends 'main.html' /}
+
+<h2>Clusters</h2>
+
+<table id="mytable" class="entity Locations">
+	<thead>
+		<tr>
+				<th>Naam</th>
+				<th>Beschrijving</th>
+				<th>Afhankelijk van</th>
+				<!-- <th>Is Cluster</th> -->
+			<th><!-- actions --></th>
+		</tr>
+	</thead>
+	<tbody>
+	#{paginate.list items:entities, as:'entity'}
+		<tr>
+					<td>${entity.naam}</td>
+					<td>${entity.beschrijving}</td>
+					<td>${entity.ouder}</td>
+					<!-- <td>${entity.isCluster}</td> -->
+          <td>
+            <table class="actiontable"><tr>
+              <td><a href="@{Locationss.show(entity.id)}"><div class="viewer actionbutton"></div></a></td>
+              <td><a href="@{Locationss.edit(entity.id)}"><div class="editor actionbutton"></div></a></td>
+              <td><a href="@{Locationss.delete(entity.id)}" onclick="if (!confirm('Ben je zeker dat je dit object will verwijderen?')) return false;"><div class="deleter actionbutton"></div></a></td>
+            </tr></table>
+          </td>
+		</tr>
+	#{/paginate.list}
+	</tbody>
+</table>
+#{paginate.controls items:entities /} 

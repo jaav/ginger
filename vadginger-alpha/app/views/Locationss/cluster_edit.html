@@ -1,0 +1,13 @@
+#{extends 'main.html' /}
+
+<h2>Edit Cluster</h2>
+
+<div class="entity">
+#{form @Locationss.updateCluster(), id:'createForm'}
+	#{include 'Locationss/_cluster_form.html' /}
+	<button class="submit ui-corner-all submitbutton"">Opslaan</button>
+  <button class="submit ui-corner-all" onclick="history.back();return false;">Terug</button>
+#{/form}
+</div>
+
+
