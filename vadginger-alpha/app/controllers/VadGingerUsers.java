@@ -62,7 +62,7 @@ public class VadGingerUsers extends GingerController {
 		VadGingerUser entity = VadGingerUser.findById(Long.parseLong(session.get("userId")));
 		entity.emailAddress=request.params.get("entity.emailAddress");
 		entity.save();
-		Application.index();
+		Statics.usersOk();
 	}
 	
 	public static void changePasswordForm() {
@@ -81,7 +81,7 @@ public class VadGingerUsers extends GingerController {
 			boolean invalidPassword = true;
 			render("VadGingerUsers/changePasswordForm.html", invalidPassword); 
 		}
-		Application.index();
+		Statics.usersOk();
 	}
 
 	public static void edit(java.lang.Long id) {

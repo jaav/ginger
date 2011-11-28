@@ -18,8 +18,8 @@ public class Organisatiess extends GingerController {
 	public static void index() {
 		//List<Organisaties> entities = models.Organisaties.all().fetch();
     ModelPaginator entities = new ModelPaginator(Organisaties.class, "ouder is null");
-    setAccordionTab(4);
     renderArgs.put("title", "Organisaties");
+    setAccordionTab(3);
 		render(entities);
 	}
 
@@ -28,7 +28,7 @@ public class Organisatiess extends GingerController {
 		ModelPaginator entities = null;
     entities = new ModelPaginator(Organisaties.class, "centrumId = " + user.centrumId.id + "and ouder is null");
     setAccordionTab(3);
-    renderArgs.put("title", "Organisaties afhankelijk van "+user.centrumId.naam);
+    renderArgs.put("title", user.centrumId.naam+" organisaties");
 		renderTemplate("Organisatiess/index.html", entities);
 
 
@@ -36,13 +36,18 @@ public class Organisatiess extends GingerController {
     //ModelPaginator entities = new ModelPaginator(Organisaties.class, "ouder is null");
 	}
 
-	public static void centrumSubOrganisaties() {
+	public static void centrumSubOrganisaties(Long orgId) {
 		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
 		ModelPaginator entities = null;
-    entities = new ModelPaginator(Organisaties.class, "centrumId = " + user.centrumId.id + "and ouder is not null");
+    if(orgId==null)
+      entities = new ModelPaginator(Organisaties.class, "centrumId = " + user.centrumId.id + "and ouder is not null");
+    else{
+      entities = new ModelPaginator(Organisaties.class, "centrumId = " + user.centrumId.id + "and ouder = "+orgId);
+      renderArgs.put("orgId", orgId);
+    }
     setAccordionTab(3);
     ModelPaginator mainorgs = new ModelPaginator(Organisaties.class, "centrumId = " + user.centrumId.id + "and ouder is null");
-    renderArgs.put("title", "Suborganisaties afhankelijk van "+user.centrumId.naam);
+    renderArgs.put("title", user.centrumId.naam +" - suborganisaties afhankelijk ");
     renderArgs.put("mainorgs", mainorgs);
 		renderTemplate("Organisatiess/index.html", entities);
 	}
@@ -66,6 +71,8 @@ public class Organisatiess extends GingerController {
 		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
     entity.centrumId = user.centrumId;
     entity.userId = user;
+    ModelPaginator mainorgs = new ModelPaginator(Organisaties.class, "centrumId = " + user.centrumId.id + "and ouder is null");
+    renderArgs.put("mainorgs", mainorgs);
     setAccordionTab(3);
 		render(entity);
 	}
@@ -89,10 +96,13 @@ public class Organisatiess extends GingerController {
 	}
 	
 	public static void save(@Valid Organisaties entity) {
+		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
 		if (validation.hasErrors()) {
 			flash.error(Messages.get("scaffold.validation"));
 			render("@create", entity);
 		}
+    entity.isActive = true;
+    entity.centrumId = user.centrumId;
     entity.save();
 		flash.success(Messages.get("scaffold.created", "Organisaties"));
 		centrumOrganisaties();

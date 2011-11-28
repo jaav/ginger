@@ -1,33 +1,48 @@
 #{extends 'main.html' /}
 
-<h2>Indien jouw emailadres verandert, gelieve de VAD-beheerder hiervan op de hoogte te brengen door hier het nieuwe adres in te voeren en op "Emailadres wijzigen" klikken.</h2>
+<h2>Indien jouw emailadres verandert, gelieve de VAD-beheerder hiervan op de hoogte te brengen door hier het nieuwe
+  adres in te voeren en op "Emailadres wijzigen" klikken.</h2>
 
 <div class="entity">
 
-#{form @VadGingerUsers.changeEmail(), id:'changeEmailForm'}
-	
-	 <div class="row">
-  <div class="label">Email Address</div>
-  <div class="field">
-       <input type="text" name="entity.emailAddress" value="${entity?.emailAddress}" id="emailId"/>
-     <span id="emailIdSpan"></span>
+  #{form @VadGingerUsers.changeEmail(), id:'changeEmailForm'}
+
+  <div class="row">
+    <div class="label">Nieuw email adres</div>
+    <div class="field">
+      <input type="text" name="entity.emailAddress" value="${entity?.emailAddress}" id="emailId"/>
+      <span id="emailIdSpan" class="error"></span>
+    </div>
+
   </div>
- 
-</div>
-	<script>
-$("#changeEmailForm").submit(function(){
-	var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-	var emailIdVal = $("#emailId").val();
-	if(emailIdVal==''||!emailReg.test(emailIdVal)) {
-		$("#emailIdSpan").text("Invalid Email Id").show();
-		return false;
-	} else {
-		$("#emailIdSpan").hide();
-	}	
-	
-});
-</script>
-	<button class="submit ui-corner-all submitbutton"">Opslaan</button>
+
+  <div class="row">
+    <div class="label">Bevestig je nieuw email Adres</div>
+    <div class="field">
+      <input type="text" value="" id="emailIdConf"/>
+    </div>
+
+  </div>
+  <script>
+    $("#changeEmailForm").submit(function(ev) {
+      var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+      var emailIdVal = $("#emailId").val();
+      if (emailIdVal != $("#emailIdConf").val()) {
+        $("#emailIdSpan").text("Beide email adressen zijn niet identiek. Gelieve dit te corrigeren.").show();
+        ev.preventDefault();
+        return false;
+      }
+      if (emailIdVal == '' || !emailReg.test(emailIdVal)) {
+        $("#emailIdSpan").text("Dit email adres is niet geldig").show();
+        ev.preventDefault();
+        return false;
+      } else {
+        $("#emailIdSpan").hide();
+      }
+
+    });
+  </script>
+  <button class="submit ui-corner-all">Opslaan</button>
   <button class="submit ui-corner-all" onclick="history.back();return false;">Terug</button>
-#{/form}
+  #{/form}
 </div>
