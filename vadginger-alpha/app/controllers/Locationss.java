@@ -43,7 +43,7 @@ public class Locationss extends GingerController {
 		}
 		ModelPaginator entities = new ModelPaginator(Locations.class, query);
 		entities.setPageSize(20);
-		setAccordionTab(4);
+    setAccordionTab(3);
 		render("Locationss/cluster_index.html",entities);
 	}
 
@@ -53,7 +53,7 @@ public class Locationss extends GingerController {
 	}
 	
 	public static void createCluster(Locations entity) {
-	  setAccordionTab(4);
+    setAccordionTab(3);
 		String query = "ouder_id = 1 and isActive = 1";
     renderArgs.put("locations", models.Locations.find(query).fetch());
 	  render("Locationss/cluster_create.html", entity);
@@ -63,7 +63,7 @@ public class Locationss extends GingerController {
 
 	public static void show(java.lang.Long id) {
     Locations entity = Locations.findById(id);
-    setAccordionTab(4);
+    setAccordionTab(3);
     if(isCluster(entity))
     	render("Locationss/cluster_show.html",entity);
 	render(entity);
@@ -71,7 +71,7 @@ public class Locationss extends GingerController {
 
 	public static void edit(java.lang.Long id) {
     Locations entity = Locations.findById(id);
-    setAccordionTab(4);
+    setAccordionTab(3);
     if(isCluster(entity)) {
     	List<models.CityClusterJunction> locs = models.CityClusterJunction.find("clusterId="+entity.id).fetch();
     	render("Locationss/cluster_edit.html",entity, locs);

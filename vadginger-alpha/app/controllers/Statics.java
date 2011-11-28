@@ -17,6 +17,10 @@ public class Statics extends Controller {
     renderArgs.put("accordionTab", "1");
 		render();
 	}
+	public static void usersOk() {
+    renderArgs.put("accordionTab", "1");
+		render();
+	}
 	public static void usersData() {
     renderArgs.put("accordionTab", "1");
 		render();

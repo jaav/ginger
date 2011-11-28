@@ -22,18 +22,15 @@
       
         <select name="entity.ouder.id">
               
-                      <option value="">(None)</option>              
-              
-        %{ models.Organisaties.all().fetch().sort{ it.toString() }.each() { }%
-          
-          %{
-            selected = false;
-            if (entity?.ouder?.id == it.id) {
-              selected = true
-            }
-          }%
-          <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option>
-        %{ } }%
+                      <option value="">(None)</option>
+          #{list items:mainorgs, as:'org'}
+          #{if org.id == entity?.ouder?.id}
+          <option value="${org.id}" selected>${org.naam}</option>
+          #{/if}
+          #{else}
+          <option value="${org.id}">${org.naam}</option>
+          #{/else}
+          #{/list}
         </select>
     
   </div>

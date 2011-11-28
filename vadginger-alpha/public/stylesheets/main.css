@@ -229,6 +229,9 @@ div.entity .bigSearch{
   width: 140px;
   height: 30px;
 }
+.error{
+  color: #FF3333;
+}
 
 
 /* *********** PAGINATION ************ */

@@ -28,6 +28,7 @@ public class Security extends Secure.Security {
     }
     //String passwordHash = md5(password);
     String passwordHash = play.libs.Codec.encodeBASE64(Security.md5(password));
+    Logger.debug("***********************Passwordhash = %s",passwordHash);
     boolean match = user != null && user.passwordHash.equals(passwordHash);
     if (match) {
       session.put("userId", user.id);
