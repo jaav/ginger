@@ -22,7 +22,7 @@ public class Activities extends GingerController {
 		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
 		ModelPaginator entities = null;
 		if (user.role.compareTo(RoleType.ADMIN)>= 0) {
-		entities = new ModelPaginator(Activity.class);
+		entities = new ModelPaginator(Activity.class, "isActive=1");
 		
 		}
 		else if (user.role.equals(RoleType.ORG_ADMIN)) {/*
@@ -36,9 +36,9 @@ public class Activities extends GingerController {
 					query.append(",");
 			}
 			query.append(")");*/
-			entities = new ModelPaginator(Activity.class, "centrumId is " + user.centrumId.id);
+			entities = new ModelPaginator(Activity.class, "centrumId is " + user.centrumId.id +" and isActive=1");
 		} else {
-			entities = new ModelPaginator(Activity.class, "userId is " + user.id);
+			entities = new ModelPaginator(Activity.class, "userId is " + user.id + " and isActive=1");
 		}
 		entities.setPageSize(20);
 		render(entities);
@@ -156,6 +156,7 @@ public class Activities extends GingerController {
 	public static void delete(java.lang.Long id) {
 		Activity entity = Activity.findById(id);
 		entity.isActive = false;
+		entity.save();
 		//entity.delete();
 		index();
 	}
