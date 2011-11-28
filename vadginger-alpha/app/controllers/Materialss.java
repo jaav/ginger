@@ -14,7 +14,7 @@ import play.mvc.With;
 
 public class Materialss extends GingerController {
 	public static void index() {
-		List<Materials> entities = models.Materials.all().fetch();
+		List<Materials> entities = models.Materials.find("order by id").fetch();
     setAccordionTab(4);
 		render(entities);
 	}
@@ -47,6 +47,7 @@ public class Materialss extends GingerController {
 			flash.error(Messages.get("scaffold.validation"));
 			render("@create", entity);
 		}
+    entity.isActive = true;
     entity.save();
 		flash.success(Messages.get("scaffold.created", "Materials"));
 		index();

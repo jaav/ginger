@@ -47,6 +47,7 @@ public class TargetTypes extends GingerController {
 			flash.error(Messages.get("scaffold.validation"));
 			render("@create", entity);
 		}
+    entity.isActive = true;
     entity.save();
 		flash.success(Messages.get("scaffold.created", "TargetType"));
 		index();

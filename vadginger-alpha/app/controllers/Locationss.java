@@ -154,6 +154,7 @@ public class Locationss extends GingerController {
 			render("@edit", entity);
 		}
       	entity = entity.merge();
+    entity.isActive = true;
 		entity.save();
 		removeCurrentLocations(entity);
 		saveClusterLocations(entity);
@@ -174,7 +175,8 @@ public class Locationss extends GingerController {
 		}
 		
       		entity = entity.merge();
-		
+
+    entity.isActive = true;
 		entity.save();
 		flash.success(Messages.get("scaffold.updated", "Locations"));
 		index();

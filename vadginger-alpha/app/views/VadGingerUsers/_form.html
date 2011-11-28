@@ -17,7 +17,7 @@
   <div class="field">
 
       <select name="centrum_id">
-      %{ models.Centrums.all().fetch().sort{ it.toString() }.each() { }%
+      %{ models.Centrums.all().fetch().sort{ it.naam }.each() { }%
       %{
       selected = false;
       if (entity?.centrumId?.id == it.id) {
@@ -28,7 +28,7 @@
       ${selected ? 'selected'.raw() : ''}>${it.naam}</option>
       %{ } }%
     </select>
-    
+
   </div>
   <span class="error">${errors.forKey('entity.userID')}</span>
 </div>
@@ -85,7 +85,7 @@
   <div class="label">Password</div>
   <div class="field">
       <input name="c_password" id="password"/>
-      
+
       <span id="invalidPassword"></span>
   </div>
   </div>

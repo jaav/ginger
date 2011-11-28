@@ -47,6 +47,7 @@ public class ActivityTypes extends Controller {
 			flash.error(Messages.get("scaffold.validation"));
 			render("@create", entity);
 		}
+    entity.isActive = true;
     entity.save();
 		flash.success(Messages.get("scaffold.created", "ActivityType"));
 		index();
