@@ -17,12 +17,8 @@ import play.mvc.With;
 public class Organisatiess extends GingerController {
 	public static void index() {
 		//List<Organisaties> entities = models.Organisaties.all().fetch();
-<<<<<<< HEAD
-    ModelPaginator entities = new ModelPaginator(Organisaties.class, "ouder is null");
-=======
     ModelPaginator entities = new ModelPaginator(Organisaties.class, "ouder is null and isActive=1");
     setAccordionTab(4);
->>>>>>> 3428ad691385418721e21922aeac403ab0386b3e
     renderArgs.put("title", "Organisaties");
     setAccordionTab(3);
 		render(entities);
