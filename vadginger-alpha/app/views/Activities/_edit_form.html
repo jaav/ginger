@@ -275,7 +275,7 @@
   	} else if (entity.locationId.isCluster) {
   		query = "isCluster=1 and isActive=1"
   		if (userRole.equals(models.RoleType.ORG_ADMIN)||userRole.equals(models.RoleType.MEMBER)) {
-  		query += " centrumId="+centrumId;
+  		query += " and centrumId="+centrumId.id;
   		}
   	}
 
