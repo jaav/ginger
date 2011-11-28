@@ -251,7 +251,7 @@
       if(!selected&&entity.locationId!=null&&entity.locationId.ouder!=null&&entity.locationId.ouder.id==it.id) {
       selected = true
       }
-      if(!selected&&entity.locationId.isCluster) {
+      if(!selected&&entity.locationId!=null&&entity.locationId.isCluster) {
       	if (it.naam.toLowerCase().indexOf("regionaal")>-1) {
       		selected = true
       	}
@@ -564,7 +564,7 @@
   });
 </script>
 
-<div class="row" id="evaluvated" ${entity.evaluvated ? '': 'style="display: none"'}>
+<div class="row" id="evaluvated" ${entity.evaluvated ? '': 'style="display: none"'.raw()}>
 
   <div class="row">
     <div class="label">Hoe is de activiteit ge&euml;valueerd?</div>

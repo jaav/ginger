@@ -149,8 +149,8 @@ public class Activities extends GingerController {
 		List<models.Items> items = models.Items.find("isActive=1").fetch();
 		List<models.Materials> materials = models.Materials.find("isActive=1").fetch();
 		Activity entity = Activity.findById(id);
-    setAccordionTab(2);
-		render(entity, items, materials);
+		setAccordionTab(2);
+    	render(entity, items, materials);
 	}
 
 	public static void delete(java.lang.Long id) {
@@ -292,9 +292,9 @@ public class Activities extends GingerController {
 			if (request.params.get("sector_" + sec.id)!=null) {
 				String sub_sec_id = request.params.get("sub_sector_" + sec.id);
 				models.Sectors sub_sec = sec;
-				System.out.println("++++> is empty " + sub_sec_id);
+				//System.out.println("++++> is empty " + sub_sec_id);
 				if (sub_sec_id!=null&&!sub_sec_id.trim().equals("")) {
-					System.out.println("++++> shuoldn;t be here " + sub_sec_id);
+					//System.out.println("++++> shuoldn;t be here " + sub_sec_id);
 					sub_sec = models.Sectors.find("id is " + sub_sec_id).first();
 				}
 				models.SectorActivityJunction sac = new models.SectorActivityJunction(); 
@@ -337,7 +337,20 @@ public class Activities extends GingerController {
 		entity.isActive = true;
 		getDate(entity);
 		entity = entity.merge();
-
+		if(request.params.get("entity.internalActivity")==null)
+			entity.internalActivity = false;
+		else
+			entity.internalActivity = true;
+		if (request.params.get("entity.evaluvated")==null) {
+			entity.evaluvated = false;
+			entity.reported = false;
+		}
+		else {
+			entity.evaluvated = true;
+			//entity.reported = true;
+				if (request.params.get("entity.reported")==null)
+					entity.reported = false;
+			}
 		entity.save();
 		deletedAllRelationships(entity);
 		storeEvaluvationsAndEvaluvators(entity);
