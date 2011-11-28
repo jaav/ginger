@@ -14,7 +14,7 @@ import java.util.List;
 public class Centrumss extends GingerController {
 	public static void index() {
 		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
-		List<Centrums> entities = Centrums.find("order by naam").fetch();
+		List<Centrums> entities = Centrums.find("isActive=1 order by naam").fetch();
     setAccordionTab(4);
 		render(entities);
 	}
@@ -43,7 +43,14 @@ public class Centrumss extends GingerController {
 
 	public static void delete(Long id) {
     Centrums entity = Centrums.findById(id);
-    entity.delete();
+    entity.isActive = false;
+    /*
+     * get activity
+     * get users
+     * get orgs
+     */
+    entity.save();
+    //entity.delete();
 		index();
 	}
 	
