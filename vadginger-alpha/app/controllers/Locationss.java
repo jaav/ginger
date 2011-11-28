@@ -188,7 +188,7 @@ public class Locationss extends GingerController {
 			models.VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
 			query = "isActive=1 and isCluster=1";
 			if (user.role.equals(models.RoleType.ORG_ADMIN)||user.role.equals(models.RoleType.MEMBER))
-				query += " centrumId=" + user.centrumId.id;
+				query += "and centrumId=" + user.centrumId.id;
 		}
 		List<models.Locations> locs = models.Locations.find(query).fetch();
     if(locs.isEmpty()) renderText("");

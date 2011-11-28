@@ -1,6 +1,9 @@
 package controllers;
 
 import java.util.List;
+
+import org.apache.commons.lang.StringUtils;
+
 import models.Organisaties;
 import models.VadGingerUser;
 import play.modules.paginate.ModelPaginator;
@@ -140,7 +143,7 @@ public class Organisatiess extends GingerController {
 	}
 	
 	public static void list(String id) {
-
+		if(StringUtils.isBlank(id)) { renderText(""); return;} 
 		//List<models.Locations> locs = models.Locations.find("ouder is " + id).fetch();
 		List<models.Organisaties> orgs = models.Organisaties.find("ouder is " + id +" and isActive=1").fetch();
     if(orgs.isEmpty()) renderText("");
