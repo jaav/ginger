@@ -11,6 +11,7 @@ import javax.persistence.TemporalType;
 
 import models.*;
 import org.apache.commons.beanutils.BeanUtils;
+import play.Logger;
 import play.data.validation.Valid;
 import play.i18n.Messages;
 import play.modules.paginate.ModelPaginator;
@@ -61,8 +62,21 @@ public class Activities extends GingerController {
 		Activity entity = Activity.findById(id);
     Activity copy = new Activity();
     try {
-      BeanUtils.copyProperties(copy, entity);
-      copy.id = null;
+      //BeanUtils.copyProperties(copy, entity);
+      copy.beschrijving = "copy van "+entity.beschrijving;
+      copy.activityDate = entity.activityDate;
+      copy.centrumId = entity.centrumId;
+      copy.evaluvated = entity.evaluvated;
+      copy.internalActivity = entity.internalActivity;
+      copy.isActive = true;
+      copy.locationId = entity.locationId;
+      copy.organizationId = entity.organizationId;
+      copy.totalParticipants = entity.totalParticipants;
+      copy.duur = entity.duur;
+      copy.userId = user;
+      Logger.debug("Activity was copied from %s"+entity);
+      Logger.debug("Activity was copied into %s"+copy);
+      /*copy.id = null;
       copy.beschrijving = "copy van "+copy.beschrijving;
       copy.isActive = true;
       copy.centrumId = user.centrumId;
@@ -72,13 +86,15 @@ public class Activities extends GingerController {
       copy.sectorActivityJunctions = null;
       copy.itemsInActivity = null;
       copy.materialsInActivities = null;
-      copy.activityTypeJunctions = null;
+      copy.activityTypeJunctions = null;*/
       copy = copy.save();
 
       List<ActivityEvaluvators> aes = ActivityEvaluvators.find("activityId_id is " + entity.id).fetch();
       for (ActivityEvaluvators ae : aes) {
         ActivityEvaluvators newAe = new ActivityEvaluvators();
-        BeanUtils.copyProperties(newAe, ae);
+        //BeanUtils.copyProperties(newAe, ae);
+        newAe.evalTypeId = ae.evalTypeId;
+        newAe.activityId = ae.activityId;
         newAe.activityId = copy;
         newAe.save();
       }                  
@@ -86,7 +102,8 @@ public class Activities extends GingerController {
       List<ActivityTargets> ats = ActivityTargets.find("activityId_id is " + entity.id).fetch();
       for (ActivityTargets at : ats) {
         ActivityTargets newAt = new ActivityTargets();
-        BeanUtils.copyProperties(newAt, at);
+        //BeanUtils.copyProperties(newAt, at);
+        newAt.attendantTypeId = at.attendantTypeId;
         newAt.activityId = copy;
         newAt.save();
       }                    
@@ -94,7 +111,8 @@ public class Activities extends GingerController {
       List<ActivityTypeJunction> atjs = ActivityTypeJunction.find("activityId_id is " + entity.id).fetch();
       for (ActivityTypeJunction atj : atjs) {
         ActivityTypeJunction newAtj = new ActivityTypeJunction();
-        BeanUtils.copyProperties(newAtj, atj);
+        //BeanUtils.copyProperties(newAtj, atj);
+        newAtj.activityTypeId = atj.activityTypeId;
         newAtj.activityId = copy;
         newAtj.save();
       }                    
@@ -102,7 +120,8 @@ public class Activities extends GingerController {
       List<ItemsInActivity> iias = ItemsInActivity.find("activityId_id is " + entity.id).fetch();
       for (ItemsInActivity iia : iias) {
         ItemsInActivity newAtj = new ItemsInActivity();
-        BeanUtils.copyProperties(newAtj, iia);
+        //BeanUtils.copyProperties(newAtj, iia);
+        newAtj.itemId = iia.itemId;
         newAtj.activityId = copy;
         newAtj.save();
       }                     
@@ -110,7 +129,8 @@ public class Activities extends GingerController {
       List<SectorActivityJunction> sajs = SectorActivityJunction.find("activityId_id is " + entity.id).fetch();
       for (SectorActivityJunction saj : sajs) {
         SectorActivityJunction newAtj = new SectorActivityJunction();
-        BeanUtils.copyProperties(newAtj, saj);
+        //BeanUtils.copyProperties(newAtj, saj);
+        newAtj.sectorId = saj.sectorId;
         newAtj.activityId = copy;
         newAtj.save();
       }                       
@@ -118,18 +138,23 @@ public class Activities extends GingerController {
       List<MaterialsInActivity> mias = MaterialsInActivity.find("activityId_id is " + entity.id).fetch();
       for (MaterialsInActivity mia : mias) {
         MaterialsInActivity newAtj = new MaterialsInActivity();
-        BeanUtils.copyProperties(newAtj, mia);
+        //BeanUtils.copyProperties(newAtj, mia);
+        newAtj.materialId = mia.materialId;
         newAtj.activityId = copy;
         newAtj.save();
       }
       
 
       edit(copy.id);
-    } catch (IllegalAccessException e) {
+    }
+    catch (Exception e){
+      e.printStackTrace();
+    }
+    /* catch (IllegalAccessException e) {
       e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
     } catch (InvocationTargetException e) {
       e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-    }
+    }*/
     show(id);
 	}
 

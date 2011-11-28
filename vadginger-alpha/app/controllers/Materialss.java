@@ -38,7 +38,8 @@ public class Materialss extends GingerController {
 
 	public static void delete(java.lang.Long id) {
     Materials entity = Materials.findById(id);
-    entity.delete();
+    entity.isActive = false;
+    entity.save();
 		index();
 	}
 	

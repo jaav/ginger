@@ -142,13 +142,13 @@
     %{
     selected=false
     for(models.SectorActivityJunction sac: entity.sectorActivityJunctions) {
-		if (sac.sectorId.ouder!=null) {
+		if (sac.sectorId!=null && sac.sectorId.ouder!=null) {
 			if (sac.sectorId.ouder.id==it.id) {
 			selected=true
 			secOuder = it.id
 			subSecId = sac.sectorId.id
 			}
-		} else if (sac.sectorId.id==it.id) {
+		} else if (sac.sectorId!=null && sac.sectorId.id==it.id) {
 		selected=true
 		secOuder = it.id
 		}
@@ -320,7 +320,7 @@
   %{
   tti = 0;
   entity?.activityTargets?.each(){
-    tti = it.attendantTypeId?.targetTypeId.id;
+    tti = it.attendantTypeId?.targetTypeId?.id;
   }
   checked = "";
   if (tti == it.id){
@@ -375,7 +375,7 @@
       %{
       selected = false;
       for(models.ActivityTypeJunction atj: entity.activityTypeJunctions) {
-      	 if (atj.activityTypeId.ouder!=null) {
+      	 if (atj.activityTypeId!=null && atj.activityTypeId.ouder!=null) {
       	 if (atj.activityTypeId.ouder.id == it.id) {
       	 	selected=true
       	 	acTypeOuder= it.id
@@ -491,7 +491,7 @@
       %{
       selected = false;
       for(models.ItemsInActivity iia: entity.itemsInActivity) {
-		if (iia.itemId.id == it.id) {
+		if (iia?.itemId?.id == it?.id) {
 		selected = true
 		}
 	}
@@ -523,7 +523,7 @@
       %{
       selected = false;
       for(models.MaterialsInActivity mia: entity.materialsInActivities) {
-		if (mia.materialId.id == it.id) {
+		if (mia.materialId?.id == it?.id) {
 		selected = true
 		}
 	}
@@ -573,7 +573,7 @@
       %{
       selected = false;
       for(models.ActivityEvaluvators ae: entity.activityEvaluvatorsId) {
-      		if (ae.evalTypeId.id == it.id) {
+      		if (ae.evalTypeId?.id == it?.id) {
       		selected = true;
       		}
       }
@@ -592,7 +592,7 @@
       %{
        selected = false;
       for(models.ActivityEvaluvators ae: entity.activityEvaluvatorsId) {
-      		if (ae.evaluvatorsId.id == it.id) {
+      		if (ae.evaluvatorsId?.id == it?.id) {
       		selected = true;
       		}
 }      }%
