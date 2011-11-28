@@ -1,7 +1,10 @@
 package controllers;
 
 import java.util.List;
+
+import models.CityClusterJunction;
 import models.Locations;
+import org.apache.commons.lang.StringUtils;
 import play.modules.paginate.ModelPaginator;
 import play.mvc.Controller;
 import play.i18n.Messages;
@@ -44,7 +47,9 @@ public class Locationss extends GingerController {
 	
 	public static void createCluster(Locations entity) {
 	  setAccordionTab(4);
-	  render("Locationss/cluster_create.html",entity);
+		String query = "ouder_id = 1 and isActive = 1";
+    renderArgs.put("locations", models.Locations.find(query).fetch());
+	  render("Locationss/cluster_create.html", entity);
 		
 	}
 	
@@ -83,6 +88,25 @@ public class Locationss extends GingerController {
 		index();
 	}
 	
+	public static void newSaveCluster(@Valid Locations entity) {
+		entity.isCluster = true;
+		if (validation.hasErrors()) {
+			flash.error(Messages.get("scaffold.validation"));
+			render("Locationss/cluster_create.html", entity);
+		}
+		entity.isActive=true;
+    entity = entity.save();
+    for(int i = 0; i<10; i++){
+      if(StringUtils.isNotBlank(params.get("cluster_locations_"+i))){
+        CityClusterJunction ccj = new CityClusterJunction();
+        ccj.cityId = Locations.findById(Long.parseLong(params.get("cluster_locations_"+i)));
+        ccj.clusterId = entity;
+        ccj.save();
+      }
+    }
+
+  }
+
 	public static void saveCluster(@Valid Locations entity) {
 		entity.isCluster = true;
 		if (validation.hasErrors()) {

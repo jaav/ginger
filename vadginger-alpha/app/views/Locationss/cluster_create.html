@@ -3,8 +3,8 @@
 <h2>Create Locations</h2>
 
 <div class="entity">
-#{form @Locationss.saveCluster(), id:'createForm'}
-	#{include 'Locationss/_cluster_form.html' /}
+#{form @Locationss.newSaveCluster(), id:'createForm'}
+	#{include 'Locationss/_new_cluster_form.html' /}
 	<button class="submit ui-corner-all submitbutton"">Opslaan</button>
   <button class="submit ui-corner-all" onclick="history.back();return false;">Terug</button>
 #{/form}
