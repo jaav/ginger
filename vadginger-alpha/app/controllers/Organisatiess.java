@@ -17,7 +17,7 @@ import play.mvc.With;
 public class Organisatiess extends GingerController {
 	public static void index() {
 		//List<Organisaties> entities = models.Organisaties.all().fetch();
-    ModelPaginator entities = new ModelPaginator(Organisaties.class, "ouder is null");
+    ModelPaginator entities = new ModelPaginator(Organisaties.class, "ouder is null and isActive=1");
     setAccordionTab(4);
     renderArgs.put("title", "Organisaties");
 		render(entities);
@@ -26,33 +26,43 @@ public class Organisatiess extends GingerController {
 	public static void centrumOrganisaties() {
 		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
 		ModelPaginator entities = null;
-    entities = new ModelPaginator(Organisaties.class, "centrumId = " + user.centrumId.id + "and ouder is null");
+		if (user.role.compareTo(models.RoleType.ADMIN)>=0)
+			index();
+		else {
+		/*if (user.centrumId!=null)
+			
+		else*/
+			entities = new ModelPaginator(Organisaties.class, "centrumId = " + user.centrumId.id + "and ouder is null and isActive=1");
     setAccordionTab(3);
     renderArgs.put("title", "Organisaties afhankelijk van "+user.centrumId.naam);
 		renderTemplate("Organisatiess/index.html", entities);
 
-
+		}
 		//List<Organisaties> entities = models.Organisaties.all().fetch();
     //ModelPaginator entities = new ModelPaginator(Organisaties.class, "ouder is null");
 	}
 
 	public static void centrumSubOrganisaties() {
 		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
+		if (user.role.compareTo(models.RoleType.ADMIN)>=0)
+			subOrgIndex();
+		else {
 		ModelPaginator entities = null;
-    entities = new ModelPaginator(Organisaties.class, "centrumId = " + user.centrumId.id + "and ouder is not null");
+    entities = new ModelPaginator(Organisaties.class, "centrumId = " + user.centrumId.id + "and ouder is not null and isActive=1");
     setAccordionTab(3);
-    ModelPaginator mainorgs = new ModelPaginator(Organisaties.class, "centrumId = " + user.centrumId.id + "and ouder is null");
+    ModelPaginator mainorgs = new ModelPaginator(Organisaties.class, "centrumId = " + user.centrumId.id + "and ouder is null and isActive=1");
     renderArgs.put("title", "Suborganisaties afhankelijk van "+user.centrumId.naam);
     renderArgs.put("mainorgs", mainorgs);
 		renderTemplate("Organisatiess/index.html", entities);
+		}
 	}
 
 
 
 	public static void subOrgIndex() {
-		ModelPaginator entities = new ModelPaginator(Organisaties.class, "ouder is not null");
+		ModelPaginator entities = new ModelPaginator(Organisaties.class, "ouder is not null and isActive=1");
 	    setAccordionTab(4);
-    ModelPaginator mainorgs = new ModelPaginator(Organisaties.class, "ouder is null");
+    ModelPaginator mainorgs = new ModelPaginator(Organisaties.class, "ouder is null and isActive=1");
     renderArgs.put("title", "Suborganisaties");
     renderArgs.put("mainorgs", mainorgs);
 		render("Organisatiess/index.html",entities);
@@ -84,7 +94,14 @@ public class Organisatiess extends GingerController {
 
 	public static void delete(java.lang.Long id) {
     Organisaties entity = Organisaties.findById(id);
-    entity.delete();
+    entity.isActive = false;
+    entity.save();
+    List<models.Activity> activities = models.Activity.find("organizationId=" + entity.id +" and isActive=1").fetch();
+    for (models.Activity activity: activities) {
+    	activity.isActive = false;
+    	activity.save();
+    }
+    //entity.delete();
 		index();
 	}
 	

@@ -20,22 +20,23 @@ public class VadGingerUsers extends GingerController {
 
 	public static void index() {
 		//List<VadGingerUser> entities = models.VadGingerUser.all().fetch();
-		System.out.println("++++++++++>" + play.libs.Codec.encodeBASE64(Security.md5("123456")));
-    	
 		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
 		ModelPaginator entities = null;
 		if (user.role.equals(models.RoleType.ADMIN))
-			entities = new ModelPaginator(VadGingerUser.class, "role in (0,1)");
+			entities = new ModelPaginator(VadGingerUser.class, "role in (0,1) and isActive=1");
 		else
-			entities = new ModelPaginator(VadGingerUser.class);
-    setAccordionTab(1);
+			entities = new ModelPaginator(VadGingerUser.class, "isActive=1");
+		setAccordionTab(1);
 		render(entities);
 	}
 
 	public static void centrumUsers() {
 		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
 		ModelPaginator entities = null;
-    entities = new ModelPaginator(VadGingerUser.class, "centrumId = " + user.centrumId.id);
+		if (user.centrumId!=null)
+			entities = new ModelPaginator(VadGingerUser.class, "centrumId = " + user.centrumId.id + " and isActive=1");
+		else
+			entities = new ModelPaginator(VadGingerUser.class, "isActive=1");
     setAccordionTab(3);
 		renderTemplate("VadGingerUsers/index.html", entities);
 	}
@@ -92,7 +93,15 @@ public class VadGingerUsers extends GingerController {
 
 	public static void delete(java.lang.Long id) {
     VadGingerUser entity = VadGingerUser.findById(id);
-    entity.delete();
+    entity.isActive = false;
+    entity.save();
+    List<models.Activity> activities = models.Activity.find("userId=" + entity.id + " and isActive=1").fetch();
+    for(models.Activity activity: activities) {
+    	activity.isActive = false;
+    	activity.save();
+    }
+    //List<models.Organisaties> organizations = models.Activity
+    //entity.delete();
 		index();
 	}
 	
@@ -126,7 +135,9 @@ public class VadGingerUsers extends GingerController {
 		Centrums cen = Centrums.find("id is " + request.params.get("centrum_id")).first();
 		System.out.println(":::"+cen.id);
 		entity.centrumId = cen;
-      		entity = entity.merge();
+		String pass = request.params.get("c_password");
+		entity.passwordHash = play.libs.Codec.encodeBASE64(Security.md5(pass));
+      	entity = entity.merge();
 		
 		entity.save();
 		flash.success(Messages.get("scaffold.updated", "VadGingerUser"));
