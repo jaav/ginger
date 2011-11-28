@@ -96,6 +96,9 @@ public class Locationss extends GingerController {
 	}
 	
 	public static void newSaveCluster(@Valid Locations entity) {
+		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
+		if (user.role.compareTo(models.RoleType.ORG_ADMIN)<=0)
+			entity.centrumId = user.centrumId;
 		entity.isCluster = true;
 		if (validation.hasErrors()) {
 			flash.error(Messages.get("scaffold.validation"));
