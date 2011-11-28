@@ -4,6 +4,8 @@ import java.util.List;
 
 import models.CityClusterJunction;
 import models.Locations;
+import models.VadGingerUser;
+
 import org.apache.commons.lang.StringUtils;
 import play.modules.paginate.ModelPaginator;
 import play.mvc.Controller;
@@ -34,7 +36,12 @@ public class Locationss extends GingerController {
 	}
 	
 	public static void clustersIndex() {
-		ModelPaginator entities = new ModelPaginator(Locations.class, "ouder is null and isCluster=1");
+		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
+		String query = "ouder is null and isCluster=1";
+		if (user.role.compareTo(models.RoleType.ADMIN)<0) {
+			query+= " and centrumId=" + user.centrumId.id;
+		}
+		ModelPaginator entities = new ModelPaginator(Locations.class, query);
 		entities.setPageSize(20);
 		setAccordionTab(4);
 		render("Locationss/cluster_index.html",entities);
