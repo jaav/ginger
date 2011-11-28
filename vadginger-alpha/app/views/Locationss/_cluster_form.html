@@ -31,7 +31,7 @@
   
     <div class="label"></div>
   <div class="field">
-      <input type="hidden" name="entity.centrumId.id" value="${entity?.centrumId?.id}"/>
+      <input type="hidden" name="entity.centrumId.id" value="${user_cur?.centrumId?.id}"/>
   </div>
   <span class="error">${errors.forKey('entity.id')}</span>
   #{/else}
@@ -58,13 +58,10 @@
   %{
   	i = 0;
   	k = 10;
-  	ut = new utils.ClusterUtils();
-  	keys = new ArrayList<String>(ut.postCodeList.keySet());
+  	keys = models.Locations.find("ouder=1 and isActive=1").fetch();
   	if (locs!=null) {
   		i = locs.size();
   		k = k - i;
-  		
-  		
   	}
   	z = 0
   }%
@@ -72,21 +69,16 @@
   <div class="field">
  
  %{z++;}%
- <li>PS${z}:  <select name="cluster${z}" id="clusterSelect">
+ <li>PS${z}:  <select name="cluster_locations_${z}" id="clusterSelect">
  <option value="">(None)</option>
  #{list items:keys, as:'key'}
  %{
  	selected = false;
- 	loc_name = ut.postCodeList.get(key);
- 	
- 	if (loc_name.length()>50&&loc.naam.length()>50) {
- 		selected = loc_name.substring(0,50).equals(loc.naam.substring(0,50));
- 	} else
- 	   selected = loc_name.equals(loc.naam)
- 
+ 	loc_name = key.naam;
+ 	selected = key.naam.trim().equals(loc.cityId.naam.trim());
  	
  }%
- <option value="${key}" ${selected ? 'selected'.raw() : ''}>${loc_name}</option>
+ <option value="${key.id}" ${selected ? 'selected'.raw() : ''}>${loc_name}</option>
  #{/list}
  </select>
  </li>
@@ -95,10 +87,10 @@
   %{ while (k > 0) { %}
    <div class="field">
  %{z++}%
- <li>PS${z}:  <select name="cluster${z}" id="clusterSelect">
+ <li>PS${z}:  <select name="cluster_locations_${z}" id="clusterSelect">
  <option value="">(None)</option>
  #{list items:keys, as:'key'}
- <option value="${key}"}>${ut.postCodeList.get(key)}</option>
+ <option value="${key.id}"}>${key.naam}</option>
  #{/list}
  </select>
  </li>

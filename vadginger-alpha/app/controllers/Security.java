@@ -18,6 +18,7 @@ public class Security extends Secure.Security {
       adminUser.userID = "admin";
       adminUser.setPassword("admin");
       adminUser.role = RoleType.ADMIN;
+      adminUser.isActive = true;
       adminUser.save();
     }
     VadGingerUser user = VadGingerUser.find("byUserID", userID).first();

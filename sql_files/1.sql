@@ -148,7 +148,7 @@ INSERT INTO VadGingerUser (id,userID,passwordHash, emailAddress, role, loginCoun
 INSERT INTO VadGingerUser (id,userID,passwordHash, emailAddress, role, loginCount, centrumId_id, IsActive) VALUES ('147','wvlpfr','123456','admin@vadginger.be', '0','0', 45, 1);
 INSERT INTO VadGingerUser (id,userID,passwordHash, emailAddress, role, loginCount, centrumId_id, IsActive) VALUES ('148','wvlsac','123456','admin@vadginger.be', '0','0', 45, 1);
 INSERT INTO VadGingerUser (id,userID,passwordHash, emailAddress, role, loginCount,IsActive) VALUES ('150','UNKNOWN_USER','123456','admin@vadginger.be', '0','0',1);
-INSERT INTO VadGingerUser (id,userID,passwordHash, emailAddress, role, loginCount,IsActive) VALUES ('151','admin','SkR2dnY3M3Z2NzBENzcrOTc3KzlCZSsvdmUrL3ZVUHZ2NzBCWkdvPQ==','admin@vadginger.be', '1','0',1);
+INSERT INTO VadGingerUser (id,userID,passwordHash, emailAddress, role, loginCount,IsActive) VALUES ('151','admin','SVNNdktYcFg3Nys5NzcrOVErKy92VW9PU3UrL3ZSL3Z2NzA9','admin@vadginger.be', '2','0',1);
 
 
 

@@ -66,7 +66,7 @@ public class Locationss extends GingerController {
     Locations entity = Locations.findById(id);
     setAccordionTab(4);
     if(isCluster(entity)) {
-    	List<models.Locations> locs = models.Locations.find("ouder="+entity.id).fetch();
+    	List<models.CityClusterJunction> locs = models.CityClusterJunction.find("clusterId="+entity.id).fetch();
     	render("Locationss/cluster_edit.html",entity, locs);
     }
     render(entity);
@@ -96,18 +96,23 @@ public class Locationss extends GingerController {
 		}
 		entity.isActive=true;
     entity = entity.save();
-    for(int i = 0; i<10; i++){
-      if(StringUtils.isNotBlank(params.get("cluster_locations_"+i))){
-        CityClusterJunction ccj = new CityClusterJunction();
-        ccj.cityId = Locations.findById(Long.parseLong(params.get("cluster_locations_"+i)));
-        ccj.clusterId = entity;
-        ccj.save();
-      }
-    }
+    saveClusterLocations(entity);
+    clustersIndex();
 
   }
 
-	public static void saveCluster(@Valid Locations entity) {
+	private static void saveClusterLocations(Locations entity) {
+		for(int i = 0; i<10; i++){
+		  if(StringUtils.isNotBlank(params.get("cluster_locations_"+i))){
+		    CityClusterJunction ccj = new CityClusterJunction();
+		    ccj.cityId = Locations.findById(Long.parseLong(params.get("cluster_locations_"+i)));
+		    ccj.clusterId = entity;
+		    ccj.save();
+		  }
+		}
+	}
+
+	/*public static void saveCluster(@Valid Locations entity) {
 		entity.isCluster = true;
 		if (validation.hasErrors()) {
 			flash.error(Messages.get("scaffold.validation"));
@@ -131,7 +136,7 @@ public class Locationss extends GingerController {
 				clusterLoc.save();
 			}
 		}
-	}
+	}*/
 	
 	public static void updateCluster(@Valid Locations entity) {
 		if (validation.hasErrors()) {
@@ -141,13 +146,13 @@ public class Locationss extends GingerController {
       	entity = entity.merge();
 		entity.save();
 		removeCurrentLocations(entity);
-		createClusterLocations(entity);
+		saveClusterLocations(entity);
 		clustersIndex();
 	}
 
 	private static void removeCurrentLocations(Locations entity) {
-		List<models.Locations> clusterLocs = models.Locations.find("ouder="+entity.id).fetch();
-		for (models.Locations loc: clusterLocs){
+		List<models.CityClusterJunction> clusterLocs = models.CityClusterJunction.find("clusterId="+entity.id).fetch();
+		for (models.CityClusterJunction loc: clusterLocs){
 			loc.delete();
 		}
 	}

@@ -24,7 +24,7 @@
 	</div>
 	
 	%{
-		List<models.Locations> clusterLocs = models.Locations.find("ouder="+entity.id).fetch();
+		List<models.CityClusterJunction> clusterLocs = models.CityClusterJunction.find("clusterId="+entity.id).fetch();
 		i = 0
 	}%
 	
@@ -38,7 +38,7 @@
 	
 #{list items:clusterLocs, as:'loc'}
 %{i++%}
-    <li>PS${i}:  ${loc.naam}</li>
+    <li>PS${i}:  ${loc.cityId.naam}</li>
 #{/list}
   	</span>
 	</div>
