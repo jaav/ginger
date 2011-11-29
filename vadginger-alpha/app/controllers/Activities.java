@@ -1,5 +1,6 @@
 package controllers;
 
+import java.lang.reflect.Array;
 import java.lang.reflect.InvocationTargetException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -377,6 +378,7 @@ public class Activities extends GingerController {
 
 		//entity.save();
 		storeOrganization(entity);
+    List subor = params.get("sub_org_id", List.class);
 		entity.isActive = true;
 		getDate(entity);
 		entity = entity.merge();
