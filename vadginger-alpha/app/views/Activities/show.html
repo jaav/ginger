@@ -27,7 +27,9 @@
 			Datum:
 		</span>
 		<span class="value">
+		#{if entity.activityDate!=null}
       ${entity.activityDate.format('dd MMMM yyyy', 'nl')}
+      #{/if}
 		</span>
 	</div>
 
@@ -98,6 +100,23 @@
 		</span>
 		<span class="value">
 		<ul>
+		<li>
+     		#{list items:sajs, as:'ia'}
+     		#{if ia.sectorId.ouder!=null} 
+     		<span class="value">${ia.sectorId.ouder} </span>
+     		
+     		<ul><li>
+			<span class="value">${ia.sectorId} </span>
+			</li></ul>
+			#{/if}
+			#{else}
+				
+			<span class="value">${ia.sectorId} </span>
+			
+			#{/else}
+			#{/list}
+		</li>
+		
 		<li>
      		#{list items:asc, as:'ia'}
      		#{if ia.sectorId.ouder!=null} 

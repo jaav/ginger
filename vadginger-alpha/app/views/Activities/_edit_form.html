@@ -141,12 +141,13 @@
 
     %{
     selected=false
+    subSecId = []
     for(models.SectorActivityJunction sac: entity.sectorActivityJunctions) {
 		if (sac.sectorId!=null && sac.sectorId.ouder!=null) {
 			if (sac.sectorId.ouder.id==it.id) {
 			selected=true
 			secOuder = it.id
-			subSecId = sac.sectorId.id
+			subSecId.add(sac.sectorId.id)
 			}
 		} else if (sac.sectorId!=null && sac.sectorId.id==it.id) {
 		selected=true
@@ -169,7 +170,7 @@
 
           %{
             checked=false
-            if (subSecId == it.id) {
+            if (it.id in subSecId) {
               checked = true
             }
           }%
