@@ -23,8 +23,13 @@
 	
 		<tr>
 					<td>${entity.beschrijving}</td>
-          <td>${entity.activityDate.format('dd/MM/yyyy', 'nl')}</td>
-          <td>${entity.organizationId}</td>
+					#{if entity.activityDate!=null}
+          				<td>${entity.activityDate.format('dd/MM/yyyy', 'nl')}</td>
+          			#{/if}
+          			#{else}
+         				 <td></td>
+          			#{/else}
+          			<td>${entity.organizationId}</td>
 					<td>${entity.duur}</td>
 					<td>${entity.evaluvated}</td>
 					<td>${entity.internalActivity}</td>

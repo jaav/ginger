@@ -167,10 +167,11 @@ public class Activities extends GingerController {
 		List<models.ItemsInActivity> iia = models.ItemsInActivity.find("byActivityId", entity).fetch();
 		List<models.MaterialsInActivity> mia = models.MaterialsInActivity.find("byActivityId", entity).fetch();
 		List<models.ActivitySectors> asc = models.ActivitySectors.find("byActivityId", entity).fetch();
+		List<models.SectorActivityJunction> sajs = models.SectorActivityJunction.find("byActivityId", entity).fetch();
 		List<models.ActivityTypeJunction> atj = models.ActivityTypeJunction.find("byActivityId", entity).fetch();
 		List<models.ActivityEvaluvators> aes = models.ActivityEvaluvators.find("byActivityId", entity).fetch();
 		List<models.ActivityTargets> ats = models.ActivityTargets.find("byActivityId", entity).fetch();
-		render(entity, iia, mia, asc, atj, aes, ats);
+		render(entity, iia, mia, asc, atj, aes, ats, sajs);
 	}
 
 	public static void edit(java.lang.Long id) {
@@ -201,21 +202,13 @@ public class Activities extends GingerController {
 		storeOrganization(entity);
 		entity.isActive = true;
 		entity.centrumId = user.centrumId;
-		System.out.println(" ::: HERE 0");
 		getDate(entity);
-		System.out.println(" ::: HERE 1");
 		entity.save();
-		System.out.println(" ::: HERE 2");
 		storeEvaluvationsAndEvaluvators(entity);
-		System.out.println(" ::: HERE 3");
 		storeActivityTargets(entity);
-		System.out.println(" ::: HERE 4");
 		storeActivityType(entity);
-		System.out.println(" ::: HERE 5");
 		storeItems(entity);
-		System.out.println(" ::: HERE 6");
 		storeSectors(entity);
-		System.out.println(" ::: HERE 7");
 		storeMaterials(entity);
 		flash.success(Messages.get("scaffold.created", "Activity"));
 		index();
@@ -336,15 +329,22 @@ public class Activities extends GingerController {
 			if (request.params.get("sector_" + sec.id)!=null) {
 				String sub_sec_id = request.params.get("sub_sector_" + sec.id);
 				models.Sectors sub_sec = sec;
-				//System.out.println("++++> is empty " + sub_sec_id);
 				if (sub_sec_id!=null&&!sub_sec_id.trim().equals("")) {
-					//System.out.println("++++> shuoldn;t be here " + sub_sec_id);
-					sub_sec = models.Sectors.find("id is " + sub_sec_id).first();
-				}
+					String[] arr = request.params.getAll("sub_sector_"+sec.id);
+					for (String ar: arr) {
+						sub_sec = models.Sectors.find("id is " + ar).first();
+						models.SectorActivityJunction sac = new models.SectorActivityJunction(); 
+						sac.activityId = entity;
+						sac.sectorId = sub_sec;
+						sac.save();
+					}
+				} else {
+					
+				
 				models.SectorActivityJunction sac = new models.SectorActivityJunction(); 
 				sac.activityId = entity;
 				sac.sectorId = sub_sec;
-				sac.save();
+				sac.save();} 
 			}
 			if (request.params.get("sec_atd_" + sec.id) != null) {
 				models.ActivitySectors as = new models.ActivitySectors();
@@ -467,7 +467,7 @@ public static void searchForm() {
 	   getActivityByActvityType(whereClause, joinClause);
 	   getActivityByActivityTargets(whereClause, joinClause);
 	   getActivityByDate(whereClause);
-	   System.out.println("+++ where clause = "+ whereClause.toString());
+	   //System.out.println("+++ where clause = "+ whereClause.toString());
 	   StringBuffer where = new StringBuffer();
 	   String[] whereArr = new String[whereClause.size()]; 
 	   whereClause.toArray(whereArr);
@@ -477,9 +477,9 @@ public static void searchForm() {
 			   where.append(" and ");
 	   }
 	   String quer = joinClause.toString() + " where " +where.toString();
-	   System.out.println("=========================> query=" + quer);
+	   //System.out.println("=========================> query=" + quer);
 	   List<models.Activity> entities = models.Activity.find(quer).fetch();
-	   System.out.println("=========================> query=" + quer);
+	   //System.out.println("=========================> query=" + quer);
 	   //Iterator<Activity> actIter = entities.iterator();
 	   setAccordionTab(2);
 	   renderTemplate("Activities/index.html", entities);
