@@ -1,5 +1,7 @@
 #{extends 'main.html' /}
-
+%{user_cur = models.VadGingerUser.find("id is " + session.get("userId")).first();
+  	userRole = user_cur.role;
+  	centrumId = user_cur.centrumId;%}
 <span>Hoeveel preventieactiviteiten voerde ons centrum uit met de welzijnssector? Wat is het aandeel van coaching in mijn jaaractiviteiten? Deze en andere vragen kan GinGer beantwoorden. GinGer biedt namelijk niet enkel op macroniveau mogelijkheden om een overzicht te geven van de uitgevoerde preventieactiviteiten. Ook op meso- en microniveau is dit mogelijk. Zo kan een registrator of een centrum de eigen ingevoerde data analyseren en aldus een overzicht krijgen. De mogelijkheiden zijn legio. Er kan gefilterd worden op meer dan tien variabelen, met alle mogelijke combinaties vandien. Hieronder kan je de selectiecriteria ingeven en dan op "Filter activiteiten volgens bovenstaande selectiecriteria" klikken. Zo worden enkel de ingevoerde activiteiten weergegeven die aan de opgegeven selectiecriteria voldoen. Bovendien kan je de filterresultaten naar een tekstbestand exporteren en van daaruit de data in andere bestanden (word, excel, ...) importeren of plakken. Dit doe je door op de onderste knop "exporteer de (gefilterde) gegevens naar een *.txt bestand" te klikken. Nadien moet je via een rechtermuisknop enkel nog aangeven hoe je de data wilt exporteren.</span>
 <h2>FILTER ACTIVITEITEN VOLGENS ONDERSTAANDE SELECTIECRITERIA </h2>
 
@@ -24,22 +26,21 @@
   <div class="field">
         <select name="org_id" id="organizationSelect">
           <option value="">(Niet van toepassing)</option>
-          #{if models.VadGingerUser.find("id is " + session.get("userId")).first().role.name().equalsIgnoreCase("org_admin") }
+          #{if userRole.compareTo(models.RoleType.ORG_ADMIN) <=0}
              
-        %{ models.OrgUserJunction.find("userId is ${session.get("userId")}").fetch().sort{ it.toString() }.each() { }%
+        %{ models.Organisaties.find("ouder is null and isActive=1 and centrumId="+centrumId.id).fetch().sort{ it.toString() }.each() { }%
           
           %{
             selected = false;
-            if (entity?.organizationId?.id == it.orgId.id) {
-              selected = true
-            }
+            
+            
           }%
-          <option value="${it?.orgId.id}" ${selected ? 'selected'.raw() : ''}>${it.orgId}</option>
+           <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option>
         %{ } }%
         #{/if}
         #{else}
              
-        %{ models.Organisaties.all().fetch().sort{ it.toString() }.each() { }%
+        %{ models.Organisaties.find("ouder is null and isActive=1").fetch().sort{ it.toString() }.each() { }%
           
           %{
             selected = false;
@@ -68,7 +69,7 @@
 <div class="label">Sector:</div>  
 
   <div class="field">
-        %{ models.Sectors.find("ouder is null").fetch().sort{ it.toString() }.each() { }%
+        %{ models.Sectors.find("ouder is null and isActive=1").fetch().sort{ it.toString() }.each() { }%
         <input id="${it?.id}" name="sector_${it?.id}" type="checkbox" class="chkbx" >  
         <label class = "choice" for="sector_${it?.id}">${it?.naam}</label>
 		<span class="field" id="${it?.id}cont"></span><br>
@@ -160,7 +161,7 @@
   <div class="field">
         <select name="activity_type">
                       <option value="">(Niet van toepassing)</option>
-        %{ models.ActivityType.all().fetch().sort{ it.toString() }.each() { }%
+        %{ models.ActivityType.find("isActive=1").fetch().sort{ it.toString() }.each() { }%
           <option value="${it?.id}">${it?.naam}</option>
         %{ } }%
         </select>
