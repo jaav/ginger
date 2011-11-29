@@ -95,11 +95,6 @@ public class VadGingerUsers extends GingerController {
     VadGingerUser entity = VadGingerUser.findById(id);
     entity.isActive = false;
     entity.save();
-    List<models.Activity> activities = models.Activity.find("userId=" + entity.id + " and isActive=1").fetch();
-    for(models.Activity activity: activities) {
-    	activity.isActive = false;
-    	activity.save();
-    }
     //List<models.Organisaties> organizations = models.Activity
     //entity.delete();
 		index();

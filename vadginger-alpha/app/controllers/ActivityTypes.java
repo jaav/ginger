@@ -38,8 +38,10 @@ public class ActivityTypes extends Controller {
 
 	public static void delete(java.lang.Long id) {
     ActivityType entity = ActivityType.findById(id);
-    entity.delete();
-		index();
+    entity.isActive = false;
+    entity.save();
+    //entity.delete();
+	index();
 	}
 	
 	public static void save(@Valid ActivityType entity) {

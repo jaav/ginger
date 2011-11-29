@@ -107,13 +107,7 @@ public class Organisatiess extends GingerController {
     Organisaties entity = Organisaties.findById(id);
     entity.isActive = false;
     entity.save();
-    List<models.Activity> activities = models.Activity.find("organizationId=" + entity.id +" and isActive=1").fetch();
-    for (models.Activity activity: activities) {
-    	activity.isActive = false;
-    	activity.save();
-    }
-    //entity.delete();
-		index();
+    index();
 	}
 	
 	public static void save(@Valid Organisaties entity) {

@@ -51,7 +51,9 @@ public class Sectorss extends GingerController {
 
 	public static void delete(java.lang.Long id) {
     Sectors entity = Sectors.findById(id);
-    entity.delete();
+    entity.isActive = false;
+    entity.save();
+    //entity.delete();
 		index();
 	}
 	
