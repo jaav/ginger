@@ -133,7 +133,7 @@
               
                       <option value="">(Niet van toepassing)</option>
               
-        %{ models.Locations.find("ouder = 1").fetch().sort{ it.toString() }.each() { }%
+        %{ models.Locations.find("ouder is null and isCluster=0 and isActive=1").fetch().sort{ it.toString() }.each() { }%
           <option value="${it?.id}" >${it?.naam}</option>
         %{ } }%
         </select>
