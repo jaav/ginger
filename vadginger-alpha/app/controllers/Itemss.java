@@ -38,8 +38,10 @@ public class Itemss extends GingerController {
 
 	public static void delete(java.lang.Long id) {
     Items entity = Items.findById(id);
-    entity.delete();
-		index();
+    entity.isActive = false;
+    entity.save();
+    //entity.delete();
+	index();
 	}
 	
 	public static void save(@Valid Items entity) {

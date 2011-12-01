@@ -44,14 +44,8 @@ public class Centrumss extends GingerController {
 	public static void delete(Long id) {
     Centrums entity = Centrums.findById(id);
     entity.isActive = false;
-    /*
-     * get activity
-     * get users
-     * get orgs
-     */
     entity.save();
-    //entity.delete();
-		index();
+    index();
 	}
 	
 	public static void save(@Valid Centrums entity) {

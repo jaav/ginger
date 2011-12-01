@@ -81,7 +81,9 @@ public class Locationss extends GingerController {
 
 	public static void delete(java.lang.Long id) {
     Locations entity = Locations.findById(id);
-    entity.delete();
+    entity.isActive = false;
+    entity.save();
+    //entity.delete();
 	index();
 	}
 	
