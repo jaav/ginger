@@ -458,13 +458,17 @@ public static void searchForm() {
 			   whereClause.add("act.internalActivity=0");
 	   }
 	   getActivityByItemsUsed(whereClause, joinClause);
+	   getActivityByMaterialUsed(whereClause, joinClause);
 	   getActivityBySector(whereClause, joinClause);
 	   getActivityByLocation(whereClause);
 	   getActivityByOrganization(whereClause);
+	   getActivityByTotalParticipants(whereClause);
+	   getActivityByDuration(whereClause);
 	   getActivityByDescription(whereClause);
 	   getActivityByActvityType(whereClause, joinClause);
 	   getActivityByActivityTargets(whereClause, joinClause);
 	   getActivityByDate(whereClause);
+	   getActivityByEvaluvation(whereClause,joinClause);
 	   //System.out.println("+++ where clause = "+ whereClause.toString());
 	   StringBuffer where = new StringBuffer();
 	   String[] whereArr = new String[whereClause.size()]; 
@@ -474,14 +478,30 @@ public static void searchForm() {
 		   if(i!=whereArr.length-1)
 			   where.append(" and ");
 	   }
+	   if (where.toString().trim().equals(""))
+		   searchForm();
+	   else {
 	   String quer = joinClause.toString() + " where " +where.toString();
 	   //System.out.println("=========================> query=" + quer);
 	   List<models.Activity> entities = models.Activity.find(quer).fetch();
 	   //System.out.println("=========================> query=" + quer);
 	   //Iterator<Activity> actIter = entities.iterator();
 	   setAccordionTab(2);
-	   renderTemplate("Activities/index.html", entities);
+	   renderTemplate("Activities/index.html", entities);}
    }
+
+private static void getActivityByDuration(ArrayList<String> whereClause) {
+	String durr = request.params.get("entity.duur");
+	if(!StringUtils.isBlank(durr))
+		whereClause.add("act.duur = " + durr);
+	
+}
+
+private static void getActivityByTotalParticipants(ArrayList<String> whereClause) {
+	String totalParticipants = request.params.get("entity.totalParticipants");
+	if(!StringUtils.isBlank(totalParticipants))
+		whereClause.add("act.totalParticipants = " + totalParticipants);
+}
 
 private static void getActivityByDate(ArrayList<String> whereClause) {
 	Date fromDate = getDateFromString(getParam("from_date"));
@@ -563,7 +583,7 @@ private static void getActivityBySector(ArrayList<String> whereClause, StringBuf
 				//List<models.ActivitySectors> sacs;
 				String sub_sec_id = request.params.get("sub_sector_" + sec.id);
 				
-				models.Sectors sub_sec = sec;
+				//models.Sectors sub_sec = sec;
 				if (sub_sec_id!=null&&!sub_sec_id.trim().equals("")) {
 					whereClause.add("asid="+sub_sec_id);
 					//sub_sec = models.Sectors.find("id is " + sub_sec_id).first();
@@ -583,7 +603,7 @@ private static void getActivityBySector(ArrayList<String> whereClause, StringBuf
 				}
 				whereClause.add("sajid="+sec.id);
 				//models.SectorActivityJunction as = new models.SectorActivityJunction();
-				List<models.SectorActivityJunction> acs = models.SectorActivityJunction.find("bySectorId", sec).fetch();
+				//List<models.SectorActivityJunction> acs = models.SectorActivityJunction.find("bySectorId", sec).fetch();
 				/*for(models.SectorActivityJunction ac: acs)
 					activities.add(ac.activityId);*/
 			}
@@ -603,6 +623,62 @@ private static void getActivityByItemsUsed(ArrayList<String> whereClause, String
 			   whereClause.add("iid="+item.id);
 		   }			   
 	   }
+}
+
+
+private static void getActivityByMaterialUsed(ArrayList<String> whereClause, StringBuffer joinCaluse) {
+	boolean joinAdded = false;
+	List<models.Materials> materials = models.Materials.all().fetch();
+	   for (models.Materials material: materials) {
+		   if (getParam("material_1_"+material.getId())!=null) {
+			   if(!joinAdded) {
+				   joinCaluse.append(" join act.materialsInActivities mia join mia.materialId mid ");
+				   joinAdded = true;
+			   }
+			   whereClause.add("mid="+material.id);
+		   }			   
+	   }
+}
+
+
+private static void getActivityByEvaluvation(ArrayList<String> whereClause, StringBuffer joinCaluse) {
+	String evaluvated = request.params.get("entity.evaluvated");
+	if (!StringUtils.isBlank(evaluvated)) {
+		whereClause.add("act.evaluvated=1");
+		getActivityByEvaluvators(whereClause, joinCaluse);
+	}
+}
+
+private static void getActivityByEvaluvators(ArrayList<String> whereClause,
+		StringBuffer joinCaluse) {
+	boolean joinAdded = false;
+	List<String> evalTypeIds = new ArrayList<String>();
+	List<models.EvaluvationType> evalTypes = models.EvaluvationType.all().fetch();
+	for (models.EvaluvationType evalType: evalTypes) {
+		String evalTypeId = request.params.get("eval_type_");
+		if (!StringUtils.isBlank(evalTypeId)) {
+			
+			evalTypeIds.add(evalTypeId);
+		}
+	}
+	 if (evalTypeIds.size() == 1) {
+		 joinCaluse.append(" join act.activityEvaluvatorsId actEval join actEval.evalTypeId actEvalTypeId ");
+		 joinAdded = true;
+		 whereClause.add("actEvalTypeId=" + evalTypeIds.get(0));
+	 }
+	 String evaluvators = request.params.get("evaluvators");
+	 if (!StringUtils.isBlank(evaluvators)) {
+		 if (joinAdded) {
+			 joinCaluse.append(" join actEval.evaluvatorsId actEvalId ");
+			 whereClause.add("actEvalId="+evaluvators);
+		 } else {
+			 joinCaluse.append(" join act.activityEvaluvatorsId actEval join actEval.evaluvatorsId actEvalId ");
+			 whereClause.add("actEvalId="+evaluvators);
+		 }
+	 }
+	String isReported = request.params.get("entity.reported");
+	if (!StringUtils.isBlank(isReported)) 
+		whereClause.add("act.reported=1");
 }
 
 private static String getParam(String paramName) {

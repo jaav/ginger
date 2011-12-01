@@ -133,8 +133,10 @@ public class AttendantTypes extends GingerController {
 		StringBuffer htmlData = new StringBuffer("<BR>");
 		if (id.trim().equals("1")) {
 			getAttendantTypes(atdTypes, htmlData, interLabel, null);
+			getTotalParticipants(htmlData, null);
 			getSectors(htmlData, secLabel, null);
 		} else
+			getTotalParticipants(htmlData, null);
 			getAttendantTypes(atdTypes, htmlData, "Aanwezigen", null);
 		renderText(htmlData.toString());
 	}
