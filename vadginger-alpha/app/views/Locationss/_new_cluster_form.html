@@ -47,15 +47,7 @@ userRole = user_cur.role;
 </div>
 
 <div class="row">
-  <div class="label">Beschrijving</div>
-  <div class="field">
-    <textarea name="entity.beschrijving" rows="10" cols="40">${entity?.beschrijving}</textarea>
-  </div>
-  <span class="error">${errors.forKey('entity.beschrijving')}</span>
-</div>
-
-<div class="row">
-  <div class="label">Locaties</div>
+  <div class="label">Gemeenten</div>
   <div class="field">
     #{list items:0..10, as:'i'}
     <select name="cluster_locations_${i}">

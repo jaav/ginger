@@ -1,5 +1,6 @@
 package controllers;
 
+import java.sql.Clob;
 import java.util.List;
 
 import models.CityClusterJunction;
@@ -37,12 +38,24 @@ public class Locationss extends GingerController {
 	
 	public static void clustersIndex() {
 		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
+    //String query = "select loc.naam from Locations loc, CityClusterJunction ccj where ccj.cityId = loc and loc.ouder is null and loc.isCluster=1";//ccj.clusterId_id = 2908;";
 		String query = "ouder is null and isCluster=1";
 		if (user.role.compareTo(models.RoleType.ADMIN)<0) {
 			query+= " and centrumId=" + user.centrumId.id;
 		}
-		ModelPaginator entities = new ModelPaginator(Locations.class, query);
-		entities.setPageSize(20);
+
+    List<Locations> entities = Locations.find(query).fetch();
+    for (Locations entity : entities) {
+      StringBuilder sb = new StringBuilder();
+      String namesquery = "select loc from CityClusterJunction ccj, Locations loc where ccj.clusterId = "+entity.id+" and ccj.cityId=loc";
+      List<Locations> cities = Locations.find(namesquery).fetch();
+      for (Locations city : cities) {
+        sb.append(city.naam).append(", ");
+      }
+      entity.cities = sb.toString();
+    }
+		/*ModelPaginator entities = new ModelPaginator(Locations.class, query);
+		entities.setPageSize(20);*/
     setAccordionTab(3);
 		render("Locationss/cluster_index.html",entities);
 	}

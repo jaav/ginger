@@ -25,9 +25,9 @@
 					<td>${entity.loginCount}</td>
           <td>
             <table class="actiontable"><tr>
-              <td><a href="@{VadGingerUsers.show(entity.id)}"><div class="viewer actionbutton"></div></a></td>
-              <td><a href="@{VadGingerUsers.edit(entity.id)}"><div class="editor actionbutton"></div></a></td>
-              <td><a href="@{VadGingerUsers.delete(entity.id)}" onclick="if (!confirm('Ben je zeker dat je dit object will verwijderen?')) return false;"><div class="deleter actionbutton"></div></a></td>
+              <td><a href="@{VadGingerUsers.show(entity.id)}" title="Bekijken" name="Bekijken"><div class="viewer actionbutton"></div></a></td>
+              <td><a href="@{VadGingerUsers.edit(entity.id)}" title="Bewerken" name="Bewerken"><div class="editor actionbutton"></div></a></td>
+              <td><a href="@{VadGingerUsers.delete(entity.id)}" title="Verwijderen" name="Verwijderen" onclick="if (!confirm('Ben je zeker dat je dit object will verwijderen?')) return false;"><div class="deleter actionbutton"></div></a></td>
             </tr></table>
           </td>
         

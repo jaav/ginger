@@ -7,7 +7,6 @@
 		<tr>
 				<th>Naam</th>
 				<th>Beschrijving</th>
-				<th>Afhankelijk van</th>
 				<!-- <th>Is Cluster</th> -->
 			<th><!-- actions --></th>
 		</tr>
@@ -16,14 +15,15 @@
 	#{paginate.list items:entities, as:'entity'}
 		<tr>
 					<td>${entity.naam}</td>
-					<td>${entity.beschrijving}</td>
-					<td>${entity.ouder}</td>
+					<td>${entity.cities}</td>
 					<!-- <td>${entity.isCluster}</td> -->
           <td>
             <table class="actiontable"><tr>
-              <td><a href="@{Locationss.show(entity.id)}"><div class="viewer actionbutton"></div></a></td>
-              <td><a href="@{Locationss.edit(entity.id)}"><div class="editor actionbutton"></div></a></td>
-              <td><a href="@{Locationss.delete(entity.id)}" onclick="if (!confirm('Ben je zeker dat je dit object will verwijderen?')) return false;"><div class="deleter actionbutton"></div></a></td>
+              <td><a href="@{Locationss.show(entity.id)}" title="Bekijken" name="Bekijken"><div class="viewer actionbutton"></div></a></td>
+              #{if userRole && userRole.compareTo(models.RoleType.ORG_ADMIN)>=0 }
+              <td><a href="@{Locationss.edit(entity.id)}" title="Bewerken" name="Bewerken"><div class="editor actionbutton"></div></a></td>
+              <td><a href="@{Locationss.delete(entity.id)}" title="Verwijderen" name="Verwijderen" onclick="if (!confirm('Ben je zeker dat je dit object will verwijderen?')) return false;"><div class="deleter actionbutton"></div></a></td>
+              #{/if}
             </tr></table>
           </td>
 		</tr>

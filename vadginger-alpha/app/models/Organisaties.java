@@ -2,12 +2,7 @@ package models;
 
 import java.util.Set;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import org.hibernate.annotations.Type;
 
@@ -38,6 +33,9 @@ public class Organisaties extends Model {
 	
 	@ManyToOne
 	public Organisaties ouder;
+
+  @Transient
+  public String ouderName;
 
 	@Column(name = "Naam", length = 50)
 	@Required

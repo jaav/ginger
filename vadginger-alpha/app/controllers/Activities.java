@@ -483,13 +483,15 @@ public static void searchForm() {
 	   if (where.toString().trim().equals(""))
 		   searchForm();
 	   else {
-	   String quer = joinClause.toString() + " where " +where.toString();
-	   //System.out.println("=========================> query=" + quer);
-	   List<models.Activity> entities = models.Activity.find(quer).fetch();
-	   //System.out.println("=========================> query=" + quer);
-	   //Iterator<Activity> actIter = entities.iterator();
-	   setAccordionTab(2);
-	   renderTemplate("Activities/index.html", entities);}
+       String quer = joinClause.toString() + " where " +where.toString();
+       //System.out.println("=========================> query=" + quer);
+       List<models.Activity> entities = models.Activity.find(quer).fetch();
+       //System.out.println("=========================> query=" + quer);
+       //Iterator<Activity> actIter = entities.iterator();
+       setAccordionTab(2);
+       renderArgs.put("count", entities.size());
+       renderTemplate("Activities/index.html", entities);
+     }
    }
 
 private static void getActivityByDuration(ArrayList<String> whereClause) {

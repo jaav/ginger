@@ -23,7 +23,7 @@
 			<td>
 				<a href="@{Roless.show(entity.id)}">Show</a>&nbsp;
 				<a href="@{Roless.edit(entity.id)}">Edit</a>&nbsp;
-				<a href="@{Roless.delete(entity.id)}" onclick="if (!confirm('Are you sure you want to delete this record?')) return false;">Delete</a>
+				<a href="@{Roless.delete(entity.id)}" title="Verwijderen" name="Verwijderen" onclick="if (!confirm('Are you sure you want to delete this record?')) return false;">Delete</a>
 			</td>
 			
         

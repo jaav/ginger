@@ -84,8 +84,9 @@
       function() {
         $("#hiddenOrg").empty();
         var selectedOrganization = $("#organizationSelect option:selected").val();
-        var listLocations = #{jsAction @Organisatiess.list(':id')/}
-          $("#hiddenOrg").load(listLocations({id: selectedOrganization}), function() {
+        var listLocations = "/suborganizations/list?id="+selectedOrganization+"&centrumId=${centrumId.id}";
+        //var listLocations = #{jsAction @Organisatiess.list(':id')/}
+          $("#hiddenOrg").load(listLocations, function() {
           });
       });
   </script>

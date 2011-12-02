@@ -1,6 +1,9 @@
 #{extends 'main.html' /}
 
-<h2>Activities</h2>
+<h2>
+  #{if count >= 0}${count} activiteiten gevonden#{/if}
+  #{else}Activiteiten#{/else}
+</h2>
 
 <table id="mytable" class="entity Activity">
 	<thead>
@@ -38,9 +41,9 @@
 					<td>${entity.userId}</td>
           <td>
             <table class="actiontable"><tr>
-              <td><a href="@{Activities.show(entity.id)}"><div class="viewer actionbutton"></div></a></td>
-              <td><a href="@{Activities.edit(entity.id)}"><div class="editor actionbutton"></div></a></td>
-              <td><a href="@{Activities.delete(entity.id)}" onclick="if (!confirm('Ben je zeker dat je dit object will verwijderen?')) return false;"><div class="deleter actionbutton"></div></a></td>
+              <td><a href="@{Activities.show(entity.id)}" title="Bekijken" name="Bekijken"><div class="viewer actionbutton"></div></a></td>
+              <td><a href="@{Activities.edit(entity.id)}" title="Bewerken" name="Bewerken"><div class="editor actionbutton"></div></a></td>
+              <td><a href="@{Activities.delete(entity.id)}" title="Verwijderen" name="Verwijderen" onclick="if (!confirm('Ben je zeker dat je dit object will verwijderen?')) return false;"><div class="deleter actionbutton"></div></a></td>
             </tr></table>
           </td>
 		</tr>

@@ -177,6 +177,22 @@ caption {
   width: 16px;
   height: 16px;
 }
+.infoMessageCont {
+font-size: 12px;
+border: 5px solid #039;
+background: #FFFFCC;
+padding: 10px;
+position: absolute;
+top: -40px;
+left: 25px;
+min-width: 100px;
+text-align: center;
+color: #404040;
+display: none;
+text-align: left;
+  max-width: 80%;
+  z-index: 999;
+}
 
 .adder{
   background-position: -17px 0px;

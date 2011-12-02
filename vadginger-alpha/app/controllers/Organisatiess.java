@@ -58,6 +58,12 @@ public class Organisatiess extends GingerController {
       entities = new ModelPaginator(Organisaties.class, "centrumId = " + user.centrumId.id + "and ouder = "+orgId);
       renderArgs.put("orgId", orgId);
     }
+    for (Object entity : entities) {
+      Organisaties org = (Organisaties)entity;
+      String namesquery = "from Organisaties where id = "+((Organisaties)entity).ouder.id;
+      Organisaties ouder = Organisaties.find(namesquery).first();
+      ((Organisaties)entity).ouderName = ouder.naam;
+    }
     setAccordionTab(3);
     ModelPaginator mainorgs = new ModelPaginator(Organisaties.class, "centrumId = " + user.centrumId.id + "and ouder is null");
     renderArgs.put("title", user.centrumId.naam +" - suborganisaties afhankelijk ");
@@ -136,10 +142,13 @@ public class Organisatiess extends GingerController {
 		centrumOrganisaties();
 	}
 	
-	public static void list(String id) {
+	public static void list(String id, String centrumId) {
 		if(StringUtils.isBlank(id)) { renderText(""); return;} 
 		//List<models.Locations> locs = models.Locations.find("ouder is " + id).fetch();
-		List<models.Organisaties> orgs = models.Organisaties.find("ouder is " + id +" and isActive=1").fetch();
+    String q = "ouder is " + id +" and isActive=1";
+    if(StringUtils.isNotBlank(centrumId))
+      q = q + " and centrumId = "+centrumId;
+		List<models.Organisaties> orgs = models.Organisaties.find(q).fetch();
     if(orgs.isEmpty()) renderText("");
     else{
       StringBuffer htmlData = new StringBuffer();

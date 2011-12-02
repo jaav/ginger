@@ -45,16 +45,10 @@
   </div>
   <span class="error">${errors.forKey('entity.naam')}</span>
 </div>
- <div class="row">
-  <div class="label">Beschrijving</div>
-  <div class="field">
-      <textarea name="entity.beschrijving" rows="10" cols="40">${entity?.beschrijving}</textarea>
-  </div>
-  <span class="error">${errors.forKey('entity.beschrijving')}</span>
-</div>
 
  <div class="row">
-  <div class="label">Regions</div>
+  <div class="label">Gemeenten</div>
+  <div class="field">
   %{
   	i = 0;
   	k = 10;
@@ -66,11 +60,10 @@
   	z = 0
   }%
  #{list items:locs, as:'loc'}
-  <div class="field">
  
  %{z++;}%
- <li>PS${z}:  <select name="cluster_locations_${z}" id="clusterSelect">
- <option value="">(None)</option>
+ <li><select name="cluster_locations_${z}" id="clusterSelect">
+ <option value="">Selecteer locatie</option>
  #{list items:keys, as:'key'}
  %{
  	selected = false;
@@ -82,22 +75,20 @@
  #{/list}
  </select>
  </li>
- </div>
  #{/list}
   %{ while (k > 0) { %}
-   <div class="field">
  %{z++}%
- <li>PS${z}:  <select name="cluster_locations_${z}" id="clusterSelect">
- <option value="">(None)</option>
+ <li><select name="cluster_locations_${z}" id="clusterSelect">
+ <option value="">Selecteer locatie</option>
  #{list items:keys, as:'key'}
  <option value="${key.id}"}>${key.naam}</option>
  #{/list}
  </select>
  </li>
- </div>
   %{
   k--;
   }}%
+ </div>
 </div>
 
 
