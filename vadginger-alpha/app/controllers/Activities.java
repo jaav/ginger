@@ -478,16 +478,20 @@ public static void searchForm() {
 		   if(i!=whereArr.length-1)
 			   where.append(" and ");
 	   }
-	   if (where.toString().trim().equals(""))
+	   if (where.toString().trim().equals("")){
 		   searchForm();
+		   session.put("query", "");
+   }
 	   else {
 	   String quer = joinClause.toString() + " where " +where.toString();
+	   session.put("query", quer);
 	   //System.out.println("=========================> query=" + quer);
 	   List<models.Activity> entities = models.Activity.find(quer).fetch();
 	   //System.out.println("=========================> query=" + quer);
 	   //Iterator<Activity> actIter = entities.iterator();
 	   setAccordionTab(2);
-	   renderTemplate("Activities/index.html", entities);}
+	   boolean allowExport = true;
+	   renderTemplate("Activities/index.html", entities, allowExport);}
    }
 
 private static void getActivityByDuration(ArrayList<String> whereClause) {
@@ -684,6 +688,15 @@ private static void getActivityByEvaluvators(ArrayList<String> whereClause,
 private static String getParam(String paramName) {
 	// TODO Auto-generated method stub
 	return request.params.get(paramName);
+}
+
+public static void exportQuery() {
+	response.setHeader("Content-Disposition", 
+	"attachment;filename=csv_export.csv");
+	String quer = session.get("query");
+	List<models.Activity> entities = models.Activity.find(quer).fetch();
+	renderArgs.put("entities", entities); 
+	render("Activities/csv_file");
 }
 
 
