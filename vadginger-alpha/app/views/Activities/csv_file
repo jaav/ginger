@@ -27,11 +27,23 @@ for(models.ActivityType act: acts) {
 	a++;
 }
 
+target_type_string = "Doelgroep" + ",";
+target_type_arr = [:]
+tgt_count = 0;
+List<models.TargetType> tgts = models.TargetType.find("isActive=1").fetch();
+for(models.TargetType tgt: tgts) {
+	List<models.AttendantType> atTypes = models.AttendantType.find("targetTypeId="+tgt.id).fetch();
+	for (models.AttendantType atType: atTypes) {
+		target_type_string += atType.naam + ",";
+		target_type_arr.put(atType.id,tgt_count); tgt_count++;
+	}
+}
 
-//SoortActiviteit,OVVoorwaardenscheppend,OVUitwisseling,OVConcept,OVEvaluatie,OVAndere,COBeleidsontwikkelingLok,COBeleidsontwikkelingOrg,VOInformatieoverdracht,VOInspelen,VOInoefenen,VOAndere,VRGroep,VRPersoon,Doelgroep,AantalPreventiewerkers,AantalIntermediairen,AantalBestuursniveau,UDArbeid,UDGezondheid,UDOnderwijs,UDOverheid,UDPolitieEnJustitie,UDVrijetijdsEnCultuurSector,UDWelzijn,UDAlgemeneBevolking,Jongeren,Familiale,Volwassenen,UiteindelijkeAndere,GrootteDoelgroep,MiddelengebruikAlgemeen,Alcohol,IllegaleDrugs,Medicatie,Tabak,Gokken,ICTverslavingen,MatAnder,MatZelf,MatVAD,MatVlaamsN,MatLokaalN,MatInternationaalN,MatGeen,Geevalueerd,Mondeling,Schriftelijk,WieEvaluatie,Verslag,School,Werkplek,Vrijetijdsectoren,Residentiele,Gevangenissen,Lokaal,SpecifiekeDoelgroepen,GeenVanDeze,Locatie,Provincie,Gemeenschap,Postcode,Regio,InterneActiviteit
+
+//,AantalPreventiewerkers,AantalIntermediairen,AantalBestuursniveau,UDArbeid,UDGezondheid,UDOnderwijs,UDOverheid,UDPolitieEnJustitie,UDVrijetijdsEnCultuurSector,UDWelzijn,UDAlgemeneBevolking,Jongeren,Familiale,Volwassenen,UiteindelijkeAndere,GrootteDoelgroep,MiddelengebruikAlgemeen,Alcohol,IllegaleDrugs,Medicatie,Tabak,Gokken,ICTverslavingen,MatAnder,MatZelf,MatVAD,MatVlaamsN,MatLokaalN,MatInternationaalN,MatGeen,Geevalueerd,Mondeling,Schriftelijk,WieEvaluatie,Verslag,School,Werkplek,Vrijetijdsectoren,Residentiele,Gevangenissen,Lokaal,SpecifiekeDoelgroepen,GeenVanDeze,Locatie,Provincie,Gemeenschap,Postcode,Regio,InterneActiviteit
 }%
 
-ActiviteitID,Datum,Omschrijving,Duur,Centrum,Gebruiker,OrgID,SubOrgID,${sec_string}${sub_sec_string}${act_type_string}${sub_act_type_string}
+ActiviteitID,Datum,Omschrijving,Duur,Centrum,Gebruiker,OrgID,SubOrgID,${sec_string}${sub_sec_string}${act_type_string}${sub_act_type_string}${target_type_string}
 
 #{list entities, as :'entity'}
 %{
@@ -101,6 +113,19 @@ else
 	line+=soortAct + ",";
 	for (k in 0..sub_act_type_det.size()-1) {
 		line += sub_act_type_det[k] + ",";
+	}
+	att_type_det = []
+	for (k in 0..tgt_count-1) {
+		att_type_det.add("False");
+	}
+	for(models.ActivityTargets ats: entity.activityTargets) {
+		att_type_det[target_type_arr.get(ats.attendantTypeId.id)] = "True";
+		doel_group = ats.attendantTypeId.targetTypeId.id + ",";
+	}
+	
+	line += doel_group;
+	for (k in 0..att_type_det.size()-1) {
+		line += att_type_det[k] + ",";
 	}
 	
 }%
