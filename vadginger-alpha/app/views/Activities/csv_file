@@ -59,10 +59,21 @@ for (models.Items item: items) {
 	item_arr.put(item.id,item_count);item_count++;
 }
 
+eval_type_string = ""
+eval_count = 0;
+eval_arr = [:]
+List<models.EvaluvationType> evalTypes = models.EvaluvationType.all().fetch();
+for (models.EvaluvationType evalType: evalTypes) {
+	eval_type_string += evalType.evalType + ",";
+	eval_arr.put(evalType.id,eval_count);eval_count++;
+}
+eval_type_string += "WieEvaluatie" + ","
+
 //,GrootteDoelgroep,MiddelengebruikAlgemeen,Alcohol,IllegaleDrugs,Medicatie,Tabak,Gokken,ICTverslavingen,MatAnder,MatZelf,MatVAD,MatVlaamsN,MatLokaalN,MatInternationaalN,MatGeen,Geevalueerd,Mondeling,Schriftelijk,WieEvaluatie,Verslag,School,Werkplek,Vrijetijdsectoren,Residentiele,Gevangenissen,Lokaal,SpecifiekeDoelgroepen,GeenVanDeze,Locatie,Provincie,Gemeenschap,Postcode,Regio,InterneActiviteit
 }%
 
-ActiviteitID,Datum,Omschrijving,Duur,Centrum,Gebruiker,OrgID,SubOrgID,${sec_string}${sub_sec_string}${act_type_string}${sub_act_type_string}${target_type_string}${ud_sector_string}GrootteDoelgroep,${mat_string}${item_string}
+ActiviteitID,Datum,Omschrijving,Duur,Centrum,Gebruiker,OrgID,SubOrgID,${sec_string}${sub_sec_string}${act_type_string}${sub_act_type_string}${target_type_string}${ud_sector_string}GrootteDoelgroep,${mat_string}${item_string}Geevalueerd,${eval_type_string}
+
 
 #{list entities, as :'entity'}
 %{
@@ -193,6 +204,28 @@ else
 		line+=item_det[k] + ","
 	}
 	
+	evaluvated = "False"
+	if (entity.evaluvated)
+		evaluvated = "True"
+	line += evaluvated + ","
+	
+	eval_type_det = []
+	for (k in 0..eval_count-1) {
+	eval_type_det[k]  = "False"
+	}
+	
+	examined_by = ""
+	for (models.ActivityEvaluvators actEval: entity.activityEvaluvatorsId) {
+		id = eval_arr.get(actEval.evalTypeId.id);
+		eval_type_det[id] = "True"
+		examined_by = actEval.evaluvatorsId.id;
+	}
+	
+	for (k in 0..eval_count-1) {
+		line+= eval_type_det[k] + ","
+	}
+	
+	line+= examined_by +","
 	
 }%
 ${line}
