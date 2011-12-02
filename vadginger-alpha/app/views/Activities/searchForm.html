@@ -14,7 +14,7 @@
  <div class="row">
   <!-- <div class="label">Internal Activity</div> -->
   <div class="field">
-    <input name="internal_activity" type="checkbox" class="check_box" value="1">Interne activiteit
+    <input name="internal_activity" type="checkbox" class="check_box" value="1">&nbsp;Interne activiteit
          
   </div>
   <span class="error">${errors.forKey('entity.internalActivity')}</span>
@@ -53,15 +53,7 @@
         #{/else}
         </select>
   </div>
-   <div class="field" id="hiddenOrg"> </div>
-  		<script>
-  		$("#organizationSelect").change(function() {
-  			$("#hiddenOrg").empty();
-  			var selectedOrganization = $("#organizationSelect option:selected").val();
-  			var listLocations = #{jsAction @Organisatiess.list(':id')/}
-        $("#hiddenOrg").load(listLocations({id: selectedOrganization}), function(){});
-  		}).trigger();
-  	</script>
+
 </div>
 <hr>
 
@@ -69,11 +61,14 @@
 <div class="label">Sector:</div>  
 
   <div class="field">
-        %{ models.Sectors.find("ouder is null and isActive=1").fetch().sort{ it.toString() }.each() { }%
+        %{ models.Sectors.find("ouder is null and isActive=1").fetch().sort{ it.id }.each() { }%
         <input id="${it?.id}" name="sector_${it?.id}" type="checkbox" class="chkbx" >  
         <label class = "choice" for="sector_${it?.id}">${it?.naam}</label>
 		<span class="field" id="${it?.id}cont"></span><br>
         %{ } }%
+
+        <input name="sector_999" id="sector_999" type="checkbox" class="chkbx" >
+        <label class = "choice" for="sector_999">Intersectoraal</label>
   </div>
   <span class="error">${errors.forKey('entity.locationId')}</span>
   <script>
@@ -143,7 +138,7 @@
               
                       <option value="">(Niet van toepassing)</option>
               
-        %{ models.Locations.find("ouder is null and isCluster=0 and isActive=1").fetch().sort{ it.toString() }.each() { }%
+        %{ models.Locations.find("ouder is null and isCluster=0 and isActive=1").fetch().sort{ it.id }.each() { }%
           <option value="${it?.id}" >${it?.naam}</option>
         %{ } }%
         </select>
@@ -156,9 +151,10 @@
   		$("#locationSelect").change(function() {
   			$("#hiddenLoc").empty();
   			var selectedLocation = $("#locationSelect option:selected").val();
+        //var listLocations = "/suborganizations/list?id="+selectedOrganization+"&centrumId=${centrumId.id}";
   			var listLocations = #{jsAction @Locationss.list(':id')/}
 			$("#hiddenLoc").load(listLocations({id: selectedLocation}), function(){});
-  		}).trigger();
+  		});
   	</script>
   	<!-- </select> -->
  
@@ -169,20 +165,32 @@
  <div class="row">
   <div class="label">Soort activiteit</div>
   <div class="field">
-        <select name="activity_type">
+        <select name="activity_type" id="activity_type_select">
                       <option value="">(Niet van toepassing)</option>
-        %{ models.ActivityType.find("isActive=1").fetch().sort{ it.toString() }.each() { }%
-          <option value="${it?.id}">${it?.naam}</option>
-        %{ } }%
+      %{ models.ActivityType.find("ouder is null and isActive=1").fetch().sort{ it.toString() }.each() { }%
+      <option value="${it?.id}">${it.naam}</option>
+      %{ } }%
         </select>
   </div>
   <!-- <span class="error">${errors.forKey('entity.userId')}</span> -->
+   <div class="field" id="hiddenActType"></div>
+
+  <script>
+    $("#activity_type_select").change(
+      function() {
+        $("#hiddenOrg").empty();
+        var selectedActivityType = $("#activity_type_select option:selected").val();
+        var listLocations = #{jsAction @ActivityTypes.list(':id')/}
+          $("#hiddenActType").load(listLocations({id: selectedActivityType}), function() {
+          });
+      });
+  </script>
 </div>
 <hr>
  <div class="row">
   <div class="label">Doelgroep </div>
    %{ models.TargetType.all().fetch().sort{ it.toString() }.each() { }%
-        <input id="${it?.id}" name="attendant_type" type="radio" class="rdbx" value="${it?.id}">${it}
+        <input id="${it?.id}" name="attendant_type" type="radio" class="rdbx" value="${it?.id}">${it}&nbsp;&nbsp;&nbsp;
         %{ } }%
   <div class="field" id="atd_type"></div>
   <script>
@@ -247,10 +255,12 @@
   <div class="label">Is de activiteit geëvalueerd?</div>
   <div class="field">
 
-    <input type="checkbox" name="entity.evaluvated" id="evaled"
+    Ja <input type="radio" name="entity.evaluvated" id="evaled_t" value="true"
     ${entity?.evaluvated ? 'checked':''}
     />
-
+    Neen <input type="radio" name="entity.evaluvated" id="evaled_f" value="false"
+    ${!entity?.evaluvated ? 'checked':''}
+    />
 
   </div>
   <span class="error">${errors.forKey('entity.evaluvated')}</span>
@@ -282,7 +292,7 @@
       }%
       <input id="${it?.id}" name="evaluvators" type="radio" value="${it?.id}"
       ${(entity?.activityEvaluvatorsId?.evaluvatorsId && it?.naam == entity?.activityEvaluvatorsId?.evaluvatorsId?.naam[0]) ? 'checked':''}
-      />${it}
+      />${it}&nbsp;&nbsp;&nbsp;
       <!-- <span class="field" id="${it?.id}cont"></span><br> -->
       <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
       %{ } }%
@@ -293,8 +303,11 @@
     <div class="label">Is er een verslag gemaakt?</div>
     <div class="field">
 
-      Ja: <input type="checkbox" name="entity.reported"
+      Ja <input type="radio" name="entity.reported" value="true"
       ${entity?.reported ? 'checked':''}
+      />
+      Neen <input type="radio" name="entity.reported" value="false"
+      ${!entity?.reported ? 'checked':''}
       />
     </div>
     <span class="error">${errors.forKey('entity.reported')}</span>
@@ -303,25 +316,28 @@
 
 
 <script>
-  $("#evaled").change(function() {
+  $("#evaled_t").click(function() {
     var $input = $(this);
     if ($input.is(':checked')) {
       $("#evaluvated").show();
     }
-    else {
+  });
+  $("#evaled_f").click(function() {
+    var $input = $(this);
+    if ($input.is(':checked')) {
       $("#evaluvated").hide();
     }
   });
   (function(){
-    var test = $("#evaled:checked").length;
+    var test = $("#evaled_t:checked").length;
     test = $("#evaluvated");
-    if ($("#evaled:checked").length>0) {
+    if ($("#evaled:checked_t").length>0) {
       $("#evaluvated").slideDown();
     }
   })();
 </script>
 
 <!--  form ends here -->
-<div class="centerMe dist50"><button class="bigSearch ui-corner-all" onclick="this.submit()">Filter uitvoeren</button></div>
+<div class="centerMe dist50"><button class="bigSearch ui-corner-all" onclick="this.form.submit()">Filter uitvoeren</button></div>
 #{/form}
 </div>

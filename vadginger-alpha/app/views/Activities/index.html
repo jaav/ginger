@@ -3,8 +3,12 @@
 <h2>
   #{if count >= 0}${count} activiteiten gevonden#{/if}
   #{else}Activiteiten#{/else}
+  #{if allowExport}
+    #{form @Activities.exportQuery()}
+      <div class="centerMe dist50"><button class="bigSearch ui-corner-all" onclick="this.form.submit()">exporteer de (gefilterde) gegevens naar een *.csv bestand</button></div>
+    #{/form}
+  #{/if}
 </h2>
-
 <table id="mytable" class="entity Activity">
 	<thead>
 		<tr>
@@ -53,4 +57,6 @@
 		
 	</tbody>
 </table>
+
 #{paginate.controls items:entities /}
+

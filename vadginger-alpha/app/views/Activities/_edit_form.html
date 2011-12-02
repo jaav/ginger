@@ -95,12 +95,13 @@
   <div class="label">Interne activiteit</div>
   <div class="field">
 
-    Ja:
     #{if entity?.internalActivity}
-    <input type="checkbox" name="entity.internalActivity" value="true" checked/>
+    Ja <input type="radio" name="entity.internalActivity" value="true" checked/>&nbsp;&nbsp;&nbsp;&nbsp;
+    Neen <input type="radio" name="entity.internalActivity" value="false" />
     #{/if}
     #{else}
-    <input type="checkbox" name="entity.internalActivity" value="true"/>
+    Ja <input type="radio" name="entity.internalActivity" value="true"/>&nbsp;&nbsp;&nbsp;&nbsp;
+    Neen <input type="radio" name="entity.internalActivity" value="false" checked/>
     #{/else}
 
 
@@ -138,7 +139,7 @@
   <div class="field">
 
 
-    %{ models.Sectors.find("ouder is null and isActive=1").fetch().sort{ it.toString() }.each() { }%
+    %{ models.Sectors.find("ouder is null and isActive=1").fetch().sort{ it.id }.each() { }%
 
     %{
     selected=false
@@ -166,7 +167,7 @@
     <div class="label">Sub-sector</div>
     <div class="field">
     <select name="sub_sector_${secOuder}" id="subSectorSelect" multiple size="4">
-     <option value="">none</option>
+     <option value="">Geen sub sector</option>
      %{ models.Sectors.find("isActive=1 and ouder is " + secOuder).fetch().sort{ it.toString() }.each() { }%
 
           %{
@@ -244,7 +245,7 @@
   <div class="field">
     <select name="location" id="locationSelect">
       <option value="">(Niet van toepassing)</option>
-      %{ models.Locations.find("ouder is null and isCluster = 0 and isActive=1").fetch().sort{ it.toString() }.each() { }%
+      %{ models.Locations.find("ouder is null and isCluster = 0 and isActive=1").fetch().sort{ it.id }.each() { }%
       %{
       selected = false;
       if (entity?.locationId?.id == it.id) {
@@ -330,7 +331,7 @@
   }
   }%
 
-  <input id="${it?.id}" name="attendant_type" type="radio" class="rdbx" value="${it?.id}" ${checked}>${it}
+  <input id="${it?.id}" name="attendant_type" type="radio" class="rdbx" value="${it?.id}" ${checked}>${it}&nbsp;&nbsp;&nbsp;
   <!-- <span class="field" id="${it?.id}cont"></span><br> -->
   <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
   %{ } }%
@@ -546,8 +547,12 @@
   <div class="label">Is de activiteit ge&euml;valueerd?</div>
   <div class="field">
 
-    <input type="checkbox" name="entity.evaluvated" id="evaled"
+
+    Ja <input type="radio" name="entity.evaluvated" id="evaled_t" value="true"
     ${entity?.evaluvated ? 'checked':''}
+    />
+    Neen <input type="radio" name="entity.evaluvated" id="evaled_f" value="false"
+    ${!entity?.evaluvated ? 'checked':''}
     />
 
 
@@ -555,12 +560,15 @@
   <span class="error">${errors.forKey('entity.evaluvated')}</span>
 </div>
 <script>
-  $("#evaled").change(function() {
+  $("#evaled_t").click(function() {
     var $input = $(this);
     if ($input.is(':checked')) {
       $("#evaluvated").show();
     }
-    else {
+  });
+  $("#evaled_f").click(function() {
+    var $input = $(this);
+    if ($input.is(':checked')) {
       $("#evaluvated").hide();
     }
   });
@@ -598,7 +606,7 @@
       		selected = true;
       		}
 }      }%
-      <input id="${it?.id}" name="evaluvators" type="radio" value="${it?.id}" ${selected?'checked'.raw(): ''}>${it}
+      <input id="${it?.id}" name="evaluvators" type="radio" value="${it?.id}" ${selected?'checked'.raw(): ''}>${it}&nbsp;&nbsp;&nbsp;
       <!-- <span class="field" id="${it?.id}cont"></span><br> -->
       <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
       %{ } }%
@@ -609,7 +617,12 @@
     <div class="label">Is er een verslag gemaakt?</div>
     <div class="field">
 
-      Ja: <input type="checkbox" name="entity.reported"  ${entity.reported ? 'checked':''}/>
+      Ja <input type="radio" name="entity.reported" value="true"
+      ${entity?.reported ? 'checked':''}
+      />
+      Neen <input type="radio" name="entity.reported" value="false"
+      ${!entity?.reported ? 'checked':''}
+      />
     </div>
     <span class="error">${errors.forKey('entity.reported')}</span>
   </div>

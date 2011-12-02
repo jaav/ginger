@@ -76,14 +76,14 @@ public class AttendantTypes extends GingerController {
 		StringBuffer htmlData = new StringBuffer("<BR>");
 		String interLabel = "Wie waren aanwezig op de activiteit?";
 		String finalLabel = "Welke personen van de uiteindelijke doelgroep zijn aanwezig?";
-		String secLabel = "Tot welke sector(en) behoort de uiteindelijke doelgroep?";
+		//String secLabel = "Tot welke sector(en) behoort de uiteindelijke doelgroep?";
 		if (id.trim().equals("1")) {
-		getAttendantTypes(atdTypes, htmlData, interLabel, null);
-		getTotalParticipants(htmlData, null);
-		getSectors(htmlData, secLabel, null);
+      getAttendantTypes(atdTypes, htmlData, interLabel, null);
+      getTotalParticipants(htmlData, null);
+      //getSectors(htmlData, secLabel, null);
 		} else  {
-			getTotalParticipants(htmlData, null);
 			getAttendantTypes(atdTypes, htmlData, finalLabel, null);
+			getTotalParticipants(htmlData, null);
 		}
 		renderText(htmlData.toString());
 		
@@ -112,14 +112,14 @@ public class AttendantTypes extends GingerController {
       StringBuffer htmlData = new StringBuffer("<BR>");
       String interLabel = "Wie waren aanwezig op de activiteit?";
       String finalLabel = "Welke personen van de uiteindelijke doelgroep zijn aanwezig?";
-      String secLabel = "Tot welke sector(en) behoort de uiteindelijke doelgroep?";
+      //String secLabel = "Tot welke sector(en) behoort de uiteindelijke doelgroep?";
       if (tgtType.id == 1) {
-      getAttendantTypes(atdTypes, htmlData, interLabel, attendantTypes);
-      getTotalParticipants(htmlData, activity.totalParticipants);
-      getSectors(htmlData, secLabel, sectors);
-      } else  {
+        getAttendantTypes(atdTypes, htmlData, interLabel, attendantTypes);
         getTotalParticipants(htmlData, activity.totalParticipants);
+        //getSectors(htmlData, secLabel, sectors);
+      } else  {
         getAttendantTypes(atdTypes, htmlData, finalLabel, attendantTypes);
+        getTotalParticipants(htmlData, activity.totalParticipants);
       }
       renderText(htmlData.toString());
     }
@@ -134,10 +134,11 @@ public class AttendantTypes extends GingerController {
 		if (id.trim().equals("1")) {
 			getAttendantTypes(atdTypes, htmlData, interLabel, null);
 			getTotalParticipants(htmlData, null);
-			getSectors(htmlData, secLabel, null);
-		} else
-			getTotalParticipants(htmlData, null);
+			//getSectors(htmlData, secLabel, null);
+		} else{
 			getAttendantTypes(atdTypes, htmlData, "Aanwezigen", null);
+			getTotalParticipants(htmlData, null);
+    }
 		renderText(htmlData.toString());
 	}
 

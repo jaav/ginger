@@ -45,6 +45,8 @@ public class Activities extends GingerController {
 			entities = new ModelPaginator(Activity.class, "userId is " + user.id + " and isActive=1");
 		}
 		entities.setPageSize(20);
+		setAccordionTab(2);
+    //renderArgs.put("allowExport", true);
 		render(entities);
 	}
 
@@ -480,8 +482,10 @@ public static void searchForm() {
 		   if(i!=whereArr.length-1)
 			   where.append(" and ");
 	   }
-	   if (where.toString().trim().equals(""))
+	   if (where.toString().trim().equals("")){
 		   searchForm();
+		   session.put("query", "");
+   }
 	   else {
        String quer = joinClause.toString() + " where " +where.toString();
        //System.out.println("=========================> query=" + quer);
@@ -489,6 +493,8 @@ public static void searchForm() {
        //System.out.println("=========================> query=" + quer);
        //Iterator<Activity> actIter = entities.iterator();
        setAccordionTab(2);
+       renderArgs.put("allowExport", true);
+		   session.put("query", quer);
        renderArgs.put("count", entities.size());
        renderTemplate("Activities/index.html", entities);
      }
@@ -688,6 +694,15 @@ private static void getActivityByEvaluvators(ArrayList<String> whereClause,
 private static String getParam(String paramName) {
 	// TODO Auto-generated method stub
 	return request.params.get(paramName);
+}
+
+public static void exportQuery() {
+	response.setHeader("Content-Disposition", 
+	"attachment;filename=csv_export.csv");
+	String quer = session.get("query");
+	List<models.Activity> entities = models.Activity.find(quer).fetch();
+	renderArgs.put("entities", entities); 
+	render("Activities/csv_file");
 }
 
 
