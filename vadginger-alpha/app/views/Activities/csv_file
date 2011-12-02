@@ -2,11 +2,13 @@
 
 List<models.Sectors> secs = models.Sectors.find("ouder is null and isActive=1 order by id").fetch();
 sec_string = "";
+ud_sector_string =""
 sub_sec_string = "";
 sec_ouder = [:]
 i = 0;
 for(models.Sectors sec: secs) {
 	sec_string += sec.naam + ","
+	ud_sector_string += "UD" +sec.naam + ","
 	sec_ouder.put(sec.id,i); i++;
 	sub_sec_string += sec.naam.substring(0,2).toUpperCase() + "Detail" + ","; 
 }
@@ -39,11 +41,28 @@ for(models.TargetType tgt: tgts) {
 	}
 }
 
+mat_string = ""
+mat_count = 0;
+mat_arr = [:]
+List<models.Materials> mats = models.Materials.find("isActive=1").fetch();
+for (models.Materials mat: mats) {
+	mat_string += "Mat" + mat.naam.replaceAll(",",":") + ",";
+	mat_arr.put(mat.id,mat_count);mat_count++;
+}
 
-//,AantalPreventiewerkers,AantalIntermediairen,AantalBestuursniveau,UDArbeid,UDGezondheid,UDOnderwijs,UDOverheid,UDPolitieEnJustitie,UDVrijetijdsEnCultuurSector,UDWelzijn,UDAlgemeneBevolking,Jongeren,Familiale,Volwassenen,UiteindelijkeAndere,GrootteDoelgroep,MiddelengebruikAlgemeen,Alcohol,IllegaleDrugs,Medicatie,Tabak,Gokken,ICTverslavingen,MatAnder,MatZelf,MatVAD,MatVlaamsN,MatLokaalN,MatInternationaalN,MatGeen,Geevalueerd,Mondeling,Schriftelijk,WieEvaluatie,Verslag,School,Werkplek,Vrijetijdsectoren,Residentiele,Gevangenissen,Lokaal,SpecifiekeDoelgroepen,GeenVanDeze,Locatie,Provincie,Gemeenschap,Postcode,Regio,InterneActiviteit
+item_string = ""
+item_count = 0;
+item_arr = [:]
+List<models.Items> items = models.Items.find("isActive=1").fetch();
+for (models.Items item: items) {
+	item_string += item.naam.replaceAll(",",":") + ",";
+	item_arr.put(item.id,item_count);item_count++;
+}
+
+//,GrootteDoelgroep,MiddelengebruikAlgemeen,Alcohol,IllegaleDrugs,Medicatie,Tabak,Gokken,ICTverslavingen,MatAnder,MatZelf,MatVAD,MatVlaamsN,MatLokaalN,MatInternationaalN,MatGeen,Geevalueerd,Mondeling,Schriftelijk,WieEvaluatie,Verslag,School,Werkplek,Vrijetijdsectoren,Residentiele,Gevangenissen,Lokaal,SpecifiekeDoelgroepen,GeenVanDeze,Locatie,Provincie,Gemeenschap,Postcode,Regio,InterneActiviteit
 }%
 
-ActiviteitID,Datum,Omschrijving,Duur,Centrum,Gebruiker,OrgID,SubOrgID,${sec_string}${sub_sec_string}${act_type_string}${sub_act_type_string}${target_type_string}
+ActiviteitID,Datum,Omschrijving,Duur,Centrum,Gebruiker,OrgID,SubOrgID,${sec_string}${sub_sec_string}${act_type_string}${sub_act_type_string}${target_type_string}${ud_sector_string}GrootteDoelgroep,${mat_string}${item_string}
 
 #{list entities, as :'entity'}
 %{
@@ -127,6 +146,53 @@ else
 	for (k in 0..att_type_det.size()-1) {
 		line += att_type_det[k] + ",";
 	}
+	sec_ouder_det=[]
+	for (k in 0..i-1) {
+		sec_ouder_det.add("False")
+	}
+	
+	for(models.ActivitySectors asec: entity.activitySectorss) {
+		id = sec_ouder.get(asec.sectorId.id);
+		sec_ouder_det[id] = "True"
+	}
+	
+	for(k in 0..sec_ouder_det.size()-1) {
+		line += sec_ouder_det[k] + ",";
+	}
+	total_participants = entity.totalParticipants
+	if (total_participants == null )
+		total_participants = '';
+	line+= total_participants + ","
+	
+	mat_det = []
+	for (k in 0..mat_count-1) {
+		mat_det.add("False")
+	}
+	
+	for(models.MaterialsInActivity mia: entity.materialsInActivities) {
+		id = mat_arr.get(mia.materialId.id);
+		mat_det[id] = "True"
+	}
+	
+	for (k in 0..mat_count-1) {
+		line += mat_det[k] + ","
+	}
+	
+	
+	item_det = []
+	for(k in 0..item_count-1) {
+		item_det.add("False");
+	}
+	
+	for(models.ItemsInActivity iia: entity.itemsInActivity) {
+		id = item_arr.get(iia.itemId.id);
+		item_det[id] = "True"
+	}
+	
+	for (k in 0..item_count-1) {
+		line+=item_det[k] + ","
+	}
+	
 	
 }%
 ${line}
