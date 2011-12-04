@@ -288,8 +288,8 @@
   <div class="label">Over welke soort activiteit gaat het?</div>
   <div class="field">
     <select name="activity_type" id="activity_type_select">
-      <option value="">(None)</option>
-      %{ models.ActivityType.find("ouder is null and isActive=1").fetch().sort{ it.toString() }.each() { }%
+      <option value="">(Niet van toepassing)</option>
+      %{ models.ActivityType.find("ouder is null and isActive=1").fetch().sort{ it.id }.each() { }%
       %{
       selected = false;
       if (entity?.userId?.id == it.id) {

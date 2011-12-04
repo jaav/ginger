@@ -2,6 +2,7 @@
 <input type="hidden" value="${entity?.userId?.id}" name="entity.userId.id">
 <input type="hidden" name="entity.centrum.id" value="${entity?.centrumId?.id}"/>
 <input type="hidden" name="entity.id" value="${entity?.id}"/>
+<input type="hidden" name="entity.land" value=""/>
       
 
 
@@ -39,7 +40,7 @@
 
 
  <div class="row">
-  <div class="label">Organisatie Netwerk</div>
+  <div class="label">Organisatie of Netwerk</div>
   <div class="field">
     
     
@@ -119,25 +120,5 @@
     
   </div>
   <span class="error">${errors.forKey('entity.gemeente')}</span>
-</div>
-
-
- <div class="row">
-  <div class="label">Land</div>
-  <div class="field">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      <input type="text" name="entity.land" value="${entity?.land}"/>
-    
-  </div>
-  <span class="error">${errors.forKey('entity.land')}</span>
 </div>
 
