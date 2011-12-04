@@ -465,7 +465,7 @@ public static void searchForm() {
 	   getActivityByMaterialUsed(whereClause, joinClause);
 	   getActivityBySector(whereClause, joinClause);
 	   getActivityByLocation(whereClause);
-	   getActivityByOrganization(whereClause);
+	   getActivityByOrganization(whereClause, joinClause);
 	   getActivityByTotalParticipants(whereClause);
 	   getActivityByDuration(whereClause);
 	   getActivityByDescription(whereClause);
@@ -544,9 +544,18 @@ private static void getActivityByActivityTargets(ArrayList<String> whereClause, 
 private static void getActivityByActvityType(ArrayList<String> whereClause, StringBuffer joinClause) {
 	
 	String activityType = getParam("activity_type");
+	String[] sub_act_types = request.params.getAll("sub_activity_type");
+	String act_typ_ids = "";
+	if (sub_act_types != null) {
+	for (String actId : sub_act_types) {
+		act_typ_ids += actId + ",";
+	}
+	}
+	act_typ_ids += activityType;
+	//System.out.println(":: act Types = " + act_typ_ids);
 	   if (activityType!=null&&!activityType.trim().equals("")) {
 		   joinClause.append(" join act.activityTypeJunctions actTypeJunc join actTypeJunc.activityTypeId actTypeId ");
-		   whereClause.add(" actTypeId="+activityType);
+		   whereClause.add(" actTypeId in ("+act_typ_ids+")");
 	   }
 }
 
@@ -568,12 +577,20 @@ private static void getActivityByLocation(ArrayList<String> whereClause) {
 	   }
 }
 
-private static void getActivityByOrganization(ArrayList<String> whereClause) {
+private static void getActivityByOrganization(ArrayList<String> whereClause, StringBuffer joinClause) {
 	String orgId = getParam("sub_org_id");
 	   if (orgId==null)
 		   orgId = getParam("org_id");
 	   if (orgId!=null&&!orgId.trim().equalsIgnoreCase("")) {
-		   whereClause.add("act.organizationId="+orgId);
+		   List<Organisaties> orgs = models.Organisaties.find("isActive=1 and ouder="+orgId).fetch();
+		   String sub_org_ids = "";
+		   for (models.Organisaties org: orgs) {
+			   sub_org_ids += org.id + ",";
+		   }
+		   sub_org_ids += orgId;
+		   //System.out.println(":: sub_org_ids = " + sub_org_ids);
+		   whereClause.add("act.organizationId in ("+sub_org_ids+")");
+		   //System.out.println("::: Org Id = " + orgId);
 		   /*models.Organisaties org = models.Organisaties.find("id is " + orgId).first();
 		   List<Activity> acts = Activity.find("byOrganizationId", org).fetch();
 		   activities.addAll(acts);*/
@@ -583,6 +600,11 @@ private static void getActivityByOrganization(ArrayList<String> whereClause) {
 private static void getActivityBySector(ArrayList<String> whereClause, StringBuffer joinClause) {
 	boolean asJoinAdded = false;
 	boolean sacJoinAdded = false;
+	if (request.params.get("sector_999")!=null) {
+		//System.out.println(":: Intersectoral selected ");
+		joinClause.append(" join act.activitySectorss ass ");
+		whereClause.add("ass.size  > 1");
+	} else {
 	List<models.Sectors> secs = models.Sectors.find("ouder is null").fetch();
 		for (models.Sectors sec: secs) {
 			if (request.params.get("sector_" + sec.id)!=null) {
@@ -606,7 +628,10 @@ private static void getActivityBySector(ArrayList<String> whereClause, StringBuf
 					activities.add(sac.activityId);
 				}*/
 			}
-			if (request.params.get("sec_atd_" + sec.id) != null) {
+			
+			
+
+			/*if (request.params.get("sec_atd_" + sec.id) != null) {
 				if(!sacJoinAdded) {
 					joinClause.append(" join act.sectorActivityJunctions sajs join sajs.sectorId sajid ");
 					sacJoinAdded = true;
@@ -614,11 +639,11 @@ private static void getActivityBySector(ArrayList<String> whereClause, StringBuf
 				whereClause.add("sajid="+sec.id);
 				//models.SectorActivityJunction as = new models.SectorActivityJunction();
 				//List<models.SectorActivityJunction> acs = models.SectorActivityJunction.find("bySectorId", sec).fetch();
-				/*for(models.SectorActivityJunction ac: acs)
-					activities.add(ac.activityId);*/
-			}
+				for(models.SectorActivityJunction ac: acs)
+					activities.add(ac.activityId);
+			}*/
 			
-		}
+		} }
 }
 
 private static void getActivityByItemsUsed(ArrayList<String> whereClause, StringBuffer joinCaluse) {
@@ -653,7 +678,8 @@ private static void getActivityByMaterialUsed(ArrayList<String> whereClause, Str
 
 private static void getActivityByEvaluvation(ArrayList<String> whereClause, StringBuffer joinCaluse) {
 	String evaluvated = request.params.get("entity.evaluvated");
-	if (!StringUtils.isBlank(evaluvated)) {
+	//System.out.println(":: evaluvated " + evaluvated);
+	if (!StringUtils.isBlank(evaluvated)&&!evaluvated.trim().toLowerCase().equals("false")) {
 		whereClause.add("act.evaluvated=1");
 		getActivityByEvaluvators(whereClause, joinCaluse);
 	}
@@ -687,7 +713,7 @@ private static void getActivityByEvaluvators(ArrayList<String> whereClause,
 		 }
 	 }
 	String isReported = request.params.get("entity.reported");
-	if (!StringUtils.isBlank(isReported)) 
+	if (!StringUtils.isBlank(isReported) && !isReported.toLowerCase().equals("false")) 
 		whereClause.add("act.reported=1");
 }
 
