@@ -598,52 +598,35 @@ private static void getActivityByOrganization(ArrayList<String> whereClause, Str
 }
 
 private static void getActivityBySector(ArrayList<String> whereClause, StringBuffer joinClause) {
-	boolean asJoinAdded = false;
-	boolean sacJoinAdded = false;
+	
 	if (request.params.get("sector_999")!=null) {
 		//System.out.println(":: Intersectoral selected ");
 		joinClause.append(" join act.activitySectorss ass ");
 		whereClause.add("ass.size  > 1");
-	} else {
-	List<models.Sectors> secs = models.Sectors.find("ouder is null").fetch();
+	} 
+	else {
+		String sub_org_idss = "";
+		List<models.Sectors> secs = models.Sectors.find("ouder is null").fetch();
 		for (models.Sectors sec: secs) {
 			if (request.params.get("sector_" + sec.id)!=null) {
-				if(!asJoinAdded) {
-					joinClause.append(" join act.activitySectorss ass join ass.sectorId asid ");
-					asJoinAdded = true;
-				}
-				//List<models.ActivitySectors> sacs;
 				String sub_sec_id = request.params.get("sub_sector_" + sec.id);
+				String[] ssids = request.params.getAll("sub_sector_"+sec.id);
+				if (ssids!=null) {
+					for(String ssid: ssids) {
+						sub_org_idss += ssid + ",";
+					}
+				}
+				sub_org_idss += sec.id + ",";
+				}
+			
+		} 
+		if (sub_org_idss.length() > 0) {
+			sub_org_idss = sub_org_idss.substring(0, sub_org_idss.length()-1);
+			joinClause.append(" join act.activitySectorss ass join ass.sectorId asid ");
+			whereClause.add("asid in (" + sub_org_idss+")");
+		}
 				
-				//models.Sectors sub_sec = sec;
-				if (sub_sec_id!=null&&!sub_sec_id.trim().equals("")) {
-					whereClause.add("asid="+sub_sec_id);
-					//sub_sec = models.Sectors.find("id is " + sub_sec_id).first();
-					 //sacs = models.ActivitySectors.find("bySectorId", sub_sec).fetch();
-				} else {
-					whereClause.add("asid="+sec.id);
-					//sacs = models.ActivitySectors.find("bySectorId", sec).fetch(); 
-				}
-				/*for(models.ActivitySectors sac:sacs) {
-					activities.add(sac.activityId);
-				}*/
-			}
-			
-			
-
-			/*if (request.params.get("sec_atd_" + sec.id) != null) {
-				if(!sacJoinAdded) {
-					joinClause.append(" join act.sectorActivityJunctions sajs join sajs.sectorId sajid ");
-					sacJoinAdded = true;
-				}
-				whereClause.add("sajid="+sec.id);
-				//models.SectorActivityJunction as = new models.SectorActivityJunction();
-				//List<models.SectorActivityJunction> acs = models.SectorActivityJunction.find("bySectorId", sec).fetch();
-				for(models.SectorActivityJunction ac: acs)
-					activities.add(ac.activityId);
-			}*/
-			
-		} }
+	}
 }
 
 private static void getActivityByItemsUsed(ArrayList<String> whereClause, StringBuffer joinCaluse) {
