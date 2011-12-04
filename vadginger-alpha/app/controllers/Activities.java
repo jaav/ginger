@@ -5,6 +5,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 
@@ -490,8 +491,21 @@ public static void searchForm() {
        String quer = joinClause.toString() + " where " +where.toString();
        //System.out.println("=========================> query=" + quer);
        List<models.Activity> entities = models.Activity.find(quer).fetch();
-       //System.out.println("=========================> query=" + quer);
-       //Iterator<Activity> actIter = entities.iterator();
+       if (request.params.get("sector_999")!=null) {
+    	   for (Iterator<Activity> i = entities.iterator(); i.hasNext();) {
+    		   Activity e = i.next();
+    		   HashSet<Long> secIds = new HashSet<Long>();
+    		   for (models.SectorActivityJunction saj: e.sectorActivityJunctions) {
+    			   if (saj.sectorId.ouder!=null)
+    				   secIds.add(saj.sectorId.ouder.id);
+    			   else
+    				   secIds.add(saj.sectorId.id);
+    		   }
+    		   if (secIds.size() < 2)
+    			   i.remove();
+    	   }
+    	   
+       }
        setAccordionTab(2);
        renderArgs.put("allowExport", true);
 		   session.put("query", quer);
@@ -598,35 +612,36 @@ private static void getActivityByOrganization(ArrayList<String> whereClause, Str
 }
 
 private static void getActivityBySector(ArrayList<String> whereClause, StringBuffer joinClause) {
-	
-	if (request.params.get("sector_999")!=null) {
-		//System.out.println(":: Intersectoral selected ");
-		joinClause.append(" join act.activitySectorss ass ");
-		whereClause.add("ass.size  > 1");
-	} 
-	else {
-		String sub_org_idss = "";
-		List<models.Sectors> secs = models.Sectors.find("ouder is null").fetch();
-		for (models.Sectors sec: secs) {
-			if (request.params.get("sector_" + sec.id)!=null) {
-				String sub_sec_id = request.params.get("sub_sector_" + sec.id);
-				String[] ssids = request.params.getAll("sub_sector_"+sec.id);
-				if (ssids!=null) {
-					for(String ssid: ssids) {
-						sub_org_idss += ssid + ",";
+		if (request.params.get("sector_999") != null) {
+			// System.out.println(":: Intersectoral selected ");
+			joinClause.append(" join act.activitySectorss ass ");
+			whereClause.add("ass.size  > 1");
+		} else {
+			String sub_org_idss = "";
+			List<models.Sectors> secs = models.Sectors.find("ouder is null")
+					.fetch();
+			for (models.Sectors sec : secs) {
+				if (request.params.get("sector_" + sec.id) != null) {
+					String sub_sec_id = request.params.get("sub_sector_"
+							+ sec.id);
+					String[] ssids = request.params.getAll("sub_sector_"
+							+ sec.id);
+					if (ssids != null) {
+						for (String ssid : ssids) {
+							sub_org_idss += ssid + ",";
+						}
 					}
+					sub_org_idss += sec.id + ",";
 				}
-				sub_org_idss += sec.id + ",";
-				}
-			
-		} 
-		if (sub_org_idss.length() > 0) {
-			sub_org_idss = sub_org_idss.substring(0, sub_org_idss.length()-1);
-			joinClause.append(" join act.activitySectorss ass join ass.sectorId asid ");
-			whereClause.add("asid in (" + sub_org_idss+")");
+			}
+			if (sub_org_idss.length() > 0) {
+				sub_org_idss = sub_org_idss.substring(0,
+						sub_org_idss.length() - 1);
+				joinClause
+						.append(" join act.activitySectorss ass join ass.sectorId asid ");
+				whereClause.add("asid in (" + sub_org_idss + ")");
+			}
 		}
-				
-	}
 }
 
 private static void getActivityByItemsUsed(ArrayList<String> whereClause, StringBuffer joinCaluse) {
