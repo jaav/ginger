@@ -151,6 +151,7 @@
   		$("#locationSelect").change(function() {
   			$("#hiddenLoc").empty();
   			var selectedLocation = $("#locationSelect option:selected").val();
+  			 //var listLocations = "/suborganizations/list?id="+selectedOrganization+"&centrumId=${centrumId.id}";
   			var listLocations = #{jsAction @Locationss.list(':id')/}
 			$("#hiddenLoc").load(listLocations({id: selectedLocation}), function(){});
   		});
