@@ -35,7 +35,7 @@
 				<th>Organisatie/Netwerk</th>
 				<th>Adres</th>
 				<th>Centrum</th>
-				<th>Hangt af van</th>
+				#{if mainorgs}<th>Hangt af van</th>#{/if}
 			  <th><!-- actions --></th>
 		</tr>
 	</thead>
@@ -45,12 +45,12 @@
 					<td>${entity.naam}</td>
 					<td>${entity.organisatieNetwerk}</td>
 					<td>${entity.adres}, ${entity.postcode}&nbsp;${entity.gemeente}</td>
-					<td>${entity.centrumId?.naam}</td>
-					<td>${entity.ouderName}</td>
+					<td>${entity.ouder?.centrumId?.naam}</td>
+					#{if mainorgs}<td>${entity.ouder?.naam}</td>#{/if}
           <td>
             <table class="actiontable"><tr>
               <td><a href="@{Organisatiess.show(entity.id)}" title="Bekijken" name="Bekijken"><div class="viewer actionbutton"></div></a></td>
-              #{if userRole && userRole.compareTo(models.RoleType.ORG_ADMIN)>=0 }
+              #{if user && user.role && user.role.compareTo(models.RoleType.ORG_ADMIN)>=0 }
               <td><a href="@{Organisatiess.edit(entity.id)}" title="Bewerken" name="Bewerken"><div class="editor actionbutton"></div></a></td>
               <td><a href="@{Organisatiess.delete(entity.id)}" title="Verwijderen" name="Verwijderen" onclick="if (!confirm('Ben je zeker dat je dit object will verwijderen?')) return false;"><div class="deleter actionbutton"></div></a></td>
               #{/if}

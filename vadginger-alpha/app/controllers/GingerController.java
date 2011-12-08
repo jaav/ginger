@@ -1,5 +1,6 @@
 package controllers;
 
+import models.VadGingerUser;
 import play.mvc.Controller;
 
 /**
@@ -13,5 +14,8 @@ public abstract class GingerController extends Controller{
 
   protected static void setAccordionTab(int tab){
     renderArgs.put("accordionTab", tab);
+
+	  VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
+    renderArgs.put("user", user);
   }
 }

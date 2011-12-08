@@ -97,7 +97,7 @@ public class Sectorss extends GingerController {
 		for (models.Sectors sec: secs) {
 			htmlData.append(" <option value=\""+sec.id+"\" >"+sec.naam+"</option>\n");
 		}
-		htmlData.append("</select></div></div>");
+		htmlData.append("</select></div>");
 		renderText(htmlData.toString());
 	}
 

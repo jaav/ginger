@@ -5,7 +5,7 @@
   <div class="label">Gebruikersnaam</div>
   <div class="field">
 
-      <input type="text" name="entity.userID" value="${entity?.userID}"/>
+      <input type="text" name="entity.userID" value="${entity?.userID}" title="Gebruikersnaam"  id="Gebruikersnaam"/>
     
   </div>
   <span class="error">${errors.forKey('entity.userID')}</span>
@@ -16,7 +16,8 @@
   <div class="label">Centrum</div>
   <div class="field">
 
-      <select name="centrum_id">
+      <select name="centrum_id" id="centrumSelect" title="Centrum">
+      <option value="">(Selecteer een centrum)</option>
       %{ models.Centrums.all().fetch().sort{ it.naam }.each() { }%
       %{
       selected = false;
@@ -37,21 +38,21 @@
  <div class="row">
   <div class="label">Voornaam</div>
   <div class="field">
-      <input type="text" name="entity.firstName" value="${entity?.firstName}"/>
+      <input type="text" name="entity.firstName" value="${entity?.firstName}" title="Voornaam"  id="Voornaam"/>
   </div>
   <span class="error">${errors.forKey('entity.firstName')}</span>
 </div>
  <div class="row">
   <div class="label">Familienaam</div>
   <div class="field">
-      <input type="text" name="entity.lastName" value="${entity?.lastName}"/>
+      <input type="text" name="entity.lastName" value="${entity?.lastName}" title="Familienaam"  id="Familienaam"/>
   </div>
   <span class="error">${errors.forKey('entity.lastName')}</span>
 </div>
  <div class="row">
   <div class="label">Email</div>
   <div class="field">
-      <input type="text" name="entity.emailAddress" value="${entity?.emailAddress}" id="emailId"/>
+      <input type="text" name="entity.emailAddress" value="${entity?.emailAddress}" id="emailId" title="Email" />
      <span id="emailIdSpan"></span>
   </div>
  
@@ -82,9 +83,9 @@
 
 
  <div class="row">
-  <div class="label">Password</div>
+  <div class="label">Paswoord</div>
   <div class="field">
-      <input name="c_password" id="password"/>
+      <input name="c_password" id="password" title="Paswoord" />
 
       <span id="invalidPassword"></span>
   </div>
@@ -129,5 +130,15 @@ $("form").submit(function(){
   </div>
   <span class="error">${errors.forKey('entity.id')}</span>
 </div>
+<script type="text/javascript">
+    // Select all of the forms on the page (in this case the only one)
+    // and call 'validity' on the result.
+    $(function() {
+        $("form").validity(function() {
+          $("input[type=text]").require();
+          $("#centrumSelect").require();
+        });
+    });
+</script>
 
 

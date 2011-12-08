@@ -9,34 +9,37 @@ import play.mvc.Controller;
  * Time: 6:35 AM
  * To change this template use File | Settings | File Templates.
  */
-public class Statics extends Controller {
+public class Statics extends GingerController {
 	public static void index() {
+    setAccordionTab(0);
 		render();
 	}
 	public static void usersStart() {
-    renderArgs.put("accordionTab", "1");
+    setAccordionTab(1);
 		render();
 	}
 	public static void usersOk() {
-    renderArgs.put("accordionTab", "1");
+    setAccordionTab(1);
 		render();
 	}
 	public static void usersData() {
-    renderArgs.put("accordionTab", "1");
+    setAccordionTab(1);
 		render();
 	}
 	public static void organisationsStart() {
-    renderArgs.put("accordionTab", "3");
+    setAccordionTab(3);
 		render();
 	}
 	public static void activitiesStart() {
-    renderArgs.put("accordionTab", "2");
+    setAccordionTab(2);
 		render();
 	}
 	public static void moreInfo() {
+    setAccordionTab(0);
 		render();
 	}
 	public static void tips() {
+    setAccordionTab(0);
 		render();
 	}
 

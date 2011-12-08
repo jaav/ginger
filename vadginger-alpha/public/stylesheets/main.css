@@ -286,3 +286,18 @@ div.entity .bigSearch{
   display: block;
   margin: -14px 0 0 50px;
 }
+
+
+/* *********** VALIDATION ************ */
+
+label.error {
+    color:#fff;
+    margin-left:2px;
+    background-image:url('images/arrow.gif');
+    background-position:left center;
+    background-repeat:no-repeat;
+    padding:2px;
+    padding-left:18px;
+    -moz-border-radius:4px;
+    -webkit-border-radius: 4px;
+}

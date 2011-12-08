@@ -12,7 +12,7 @@ import play.mvc.With;
 
 @With(Secure.class)
 
-public class SectorActivityJunctions extends Controller {
+public class SectorActivityJunctions extends GingerController {
 	public static void index() {
 		List<SectorActivityJunction> entities = models.SectorActivityJunction.all().fetch();
 		render(entities);

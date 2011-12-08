@@ -20,7 +20,7 @@
           <td>
             <table class="actiontable"><tr>
               <td><a href="@{Locationss.show(entity.id)}" title="Bekijken" name="Bekijken"><div class="viewer actionbutton"></div></a></td>
-              #{if userRole && userRole.compareTo(models.RoleType.ORG_ADMIN)>=0 }
+              #{if user.role && user.role.compareTo(models.RoleType.ORG_ADMIN)>=0 }
               <td><a href="@{Locationss.edit(entity.id)}" title="Bewerken" name="Bewerken"><div class="editor actionbutton"></div></a></td>
               <td><a href="@{Locationss.delete(entity.id)}" title="Verwijderen" name="Verwijderen" onclick="if (!confirm('Ben je zeker dat je dit object will verwijderen?')) return false;"><div class="deleter actionbutton"></div></a></td>
               #{/if}

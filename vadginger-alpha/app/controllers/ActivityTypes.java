@@ -12,27 +12,27 @@ import play.mvc.With;
 
 @With(Secure.class)
 
-public class ActivityTypes extends Controller {
+public class ActivityTypes extends GingerController {
 	public static void index() {
 		List<ActivityType> entities = models.ActivityType.all().fetch();
-    setAccordianTab();
+    setAccordionTab(4);
 		render(entities);
 	}
 
 	public static void create(ActivityType entity) {
-    setAccordianTab();
+    setAccordionTab(4);
 		render(entity);
 	}
 
 	public static void show(java.lang.Long id) {
     ActivityType entity = ActivityType.findById(id);
-    setAccordianTab();
+    setAccordionTab(4);
 		render(entity);
 	}
 
 	public static void edit(java.lang.Long id) {
     ActivityType entity = ActivityType.findById(id);
-    setAccordianTab();
+    setAccordionTab(4);
 		render(entity);
 	}
 
@@ -80,13 +80,9 @@ public class ActivityTypes extends Controller {
 		        htmlData.append(" <option value=\""+org.id+"\" >"+org.naam+"</option>\n");
 
 		      }
-		      htmlData.append("</select></div></div>");}
+		      htmlData.append("</select></div>");}
 		}
 		renderText(htmlData.toString());
 	}
-
-private static void setAccordianTab(){
-  renderArgs.put("accordionTab", "4");
-}
 
 }

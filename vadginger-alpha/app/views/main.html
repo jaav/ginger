@@ -9,6 +9,7 @@
         href="@{'/public/stylesheets/reset-fonts-grids.css'}">
         <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/play-pagination.css'}"> 
   <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/jquery-ui-1.8.16.custom.css'}">
+  <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/jquery.validity.css'}">
   <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/main.css'}">
   #{get 'moreStyles' /}
   <link rel="shortcut icon" type="image/png" href="@{'/public/images/vad.jpg'}">
@@ -17,18 +18,18 @@
     #{if accordionTab}
       ginger.accordionTab = ${accordionTab};
     #{/if}
-  </script>
- 
   %{
-  	if (session.get("username")!=null) {
-  	user_cur = models.VadGingerUser.find("id is " + session.get("userId")).first();
-  	userRole = user_cur.role;
-  	centrumId = user_cur.centrumId;
+  	if (session.get("userId")!=null) {
+      user_cur = models.VadGingerUser.find("id is " + session.get("userId")).first();
+      userRole = user_cur.role;
+      centrumId = user_cur.centrumId;
   	}
   	}%
+  </script>
   
   <script src="@{'/public/javascripts/jquery-1.6.2.min.js'}" type="text/javascript" charset="utf-8"></script>
   <script src="@{'/public/javascripts/jquery-ui-1.8.16.custom.min.js'}" type="text/javascript" charset="utf-8"></script>
+  <script src="@{'/public/javascripts/jquery.validity.js'}" type="text/javascript" charset="utf-8"></script>
 
   <script src="@{'/public/javascripts/main.js'}" type="text/javascript" charset="utf-8"></script>
   #{get 'moreScripts' /}
@@ -79,7 +80,7 @@
             <li><a href="@{Statics.usersData()}">Gebruikersgegevens</a></li>
             <li><a href="@{VadGingerUsers.changeEmailIdForm()}">Emailadres wijzigen</a></li>
             <li><a href="@{VadGingerUsers.changePasswordForm()}">Wachtwoord wijzigen</a></li>
-            #{if userRole && userRole.compareTo(models.RoleType.ADMIN)>=0 }
+            #{if user && user.role && user.role.compareTo(models.RoleType.ADMIN)>=0 }
              
             <li><a href="@{VadGingerUsers.index()}">Lijst Gebruikers</a></li>
             <li><a href="@{VadGingerUsers.create()}">Nieuwe Gebruiker</a></li>
@@ -102,30 +103,31 @@
           </ul></div>
           
 
-          #{if userRole && userRole.compareTo(models.RoleType.MEMBER) >=0}
+          #{if user && user.role && user.role.compareTo(models.RoleType.MEMBER) >=0}
           <h3><a href="#" onclick="location.href='@{Statics.organisationsStart()}';return false;">Databank ${centrumId != null ? centrumId.naam : 'mijn centrum'}</a></h3>
           <div><ul>
             <li><a href="@{Statics.organisationsStart()}">Startpagina</a></li>
-          #{if userRole && userRole.compareTo(models.RoleType.ORG_ADMIN) >=0}
+          #{if user && user.role && user.role.compareTo(models.RoleType.ORG_ADMIN) >=0}
             <li><a href="@{VadGingerUsers.centrumUsers()}">Leden</a></li>
           #{/if}
             <li>Organisaties<ul style="margin-left: 10px;"><li>(<a href="@{Organisatiess.centrumOrganisaties()}">Lijst</a> / <a href="@{Organisatiess.centrumSubOrganisaties()}">Suborganisaties</a> / <a href="@{Organisatiess.create()}">Nieuw</a>)</li></ul></li>
-            <li>Clusters (<a href="@{Locationss.clustersIndex()}">Lijst</a> / <a href="@{Locationss.createCluster()}">Nieuw</a>)</li>
+            <li>Clusters (<a href="@{Locationss.centrumClustersIndex()}">Lijst</a> / <a href="@{Locationss.createCluster()}">Nieuw</a>)</li>
           </ul></div>
           #{/if}
           
-           #{if userRole && userRole.compareTo(models.RoleType.ADMIN)>=0 }
+           #{if user && user.role && user.role.compareTo(models.RoleType.ADMIN)>=0 }
           <h3><a href="#">Administratie</a></h3>
           <div><ul>
             <li>Centra (<a href="@{Centrumss.index()}">Lijst</a> / <a href="@{Centrumss.create()}">Nieuw</a>)</li>
-            <li>Organisaties<ul style="margin-left: 10px;"><li>(<a href="@{Organisatiess.index()}">Lijst</a> / <a href="@{Organisatiess.subOrgIndex()}">Subs</a> / <a href="@{Organisatiess.create()}">Nieuw</a>)</li></ul></li>
+            <li>Organisaties<ul style="margin-left: 10px;"><li>(<a href="@{Organisatiess.index()}">Lijst</a> / <a href="@{Organisatiess.subOrgIndex()}">Suborganisaties</a> / <a href="@{Organisatiess.create()}">Nieuw</a>)</li></ul></li>
+            <li>Clusters (<a href="@{Locationss.clustersIndex()}">Lijst</a> / <a href="@{Locationss.createCluster()}">Nieuw</a>)</li>
             <li>Activiteit types (<a href="@{ActivityTypes.index()}">Lijst</a> / <a href="@{ActivityTypes.create()}">Nieuw</a>)</li>
-             #{if userRole && userRole.compareTo(models.RoleType.SUPER_ADMIN)>=0 }
+             #{if user && user.role && user.role.compareTo(models.RoleType.SUPER_ADMIN)>=0 }
             <li>Sectoren (<a href="@{Sectorss.index()}">Lijst</a> / <a href="@{Sectorss.create()}">Nieuw</a>)</li>
             #{/if}
             <li>Sectoren (<a href="@{Sectorss.subIndex()}">Lijst</a> / <a href="@{Sectorss.create()}">Nieuw</a>)</li>
             <!--li>Doelgroepen (<a href="@{ActivityTargetss.index()}">Lijst</a> / <a href="@{ActivityTargetss.create()}">Nieuw</a>)</li-->
-             #{if userRole && userRole.compareTo(models.RoleType.SUPER_ADMIN)>=0 }
+             #{if user && user.role && user.role.compareTo(models.RoleType.SUPER_ADMIN)>=0 }
             <li>Doelgroep types (<a href="@{TargetTypes.index()}">Lijst</a> / <a href="@{TargetTypes.create()}">Nieuw</a>)</li>
             <li>Evaluators (<a href="@{Evaluvatorss.index()}">Lijst</a> / <a href="@{ActivityEvaluvatorss.create()}">Nieuw</a>)</li>
             <li>Evaluator types (<a href="@{EvaluvationTypes.index()}">Lijst</a> / <a href="@{ActivityEvaluvatorss.create()}">Nieuw</a>)</li>

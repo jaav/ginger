@@ -251,7 +251,7 @@ public class Activities extends GingerController {
 		Date d = null;
 		try {
 		
-		SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		 d = sdf.parse(actDate);
 		} catch (Exception e){}
 		return d;

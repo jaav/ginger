@@ -95,7 +95,7 @@
   <div class="field">
       <input type="text" name="from_date" id="datepicker"/>
       <script>
-      $( "#datepicker" ).datepicker({ appendText: '(yyyy-mm-dd)' });
+      $( "#datepicker" ).datepicker({ dateFormat: 'dd/mm/yy', appendText: '(dd/MM/yyyy)' });
   </script>
   </div>
   <span class="error">${errors.forKey('entity.activityDate')}</span>
@@ -106,7 +106,7 @@
 
       <input type="text" name="to_date" id="datepicker1"/>
       <script>
-      $( "#datepicker1" ).datepicker({ appendText: '(yyyy-mm-dd)' });
+      $( "#datepicker1" ).datepicker({ dateFormat: 'dd/mm/yy', appendText: '(dd/MM/yyyy)' });
   </script>
   </div>
   <span class="error">${errors.forKey('entity.activityDate')}</span>

@@ -11,7 +11,7 @@
 <div class="row">
   <div class="label">Naam</div>
   <div class="field">
-      <input type="text" name="entity.naam" value="${entity?.naam}" size="80"/>
+      <input type="text" name="entity.naam" value="${entity?.naam}" size="80" title="Naam"  id="Naam"/>
 
   </div>
   <span class="error">${errors.forKey('entity.naam')}</span>
@@ -26,10 +26,10 @@
                       <option value="">(None)</option>
           #{list items:mainorgs, as:'org'}
           #{if org.id == entity?.ouder?.id}
-          <option value="${org.id}" selected>${org.naam}</option>
+          <option value="${org.id}" selected>${org.naam} - ${entity?.ouder?.id} - ${org.id} - ${entity?.ouder?.naam}</option>
           #{/if}
           #{else}
-          <option value="${org.id}">${org.naam}</option>
+          <option value="${org.id}">${org.naam} - ${entity?.ouder?.id} - ${org.id}} - ${entity?.ouder?.naam}</option>
           #{/else}
           #{/list}
         </select>
@@ -76,7 +76,7 @@
     
     
     
-      <input type="text" name="entity.adres" value="${entity?.adres}" size="120"/>
+      <input type="text" name="entity.adres" value="${entity?.adres}" size="120" title="Adres"  id="Adres"/>
     
   </div>
   <span class="error">${errors.forKey('entity.adres')}</span>
@@ -96,7 +96,7 @@
     
     
     
-      <input type="text" name="entity.postcode" value="${entity?.postcode}"/>
+      <input type="text" name="entity.postcode" value="${entity?.postcode}" title="Postcode" id="Postcode"/>
     
   </div>
   <span class="error">${errors.forKey('entity.postcode')}</span>
@@ -116,9 +116,16 @@
     
     
     
-      <input type="text" name="entity.gemeente" value="${entity?.gemeente}" size="80"/>
+      <input type="text" name="entity.gemeente" value="${entity?.gemeente}" size="80" title="Gemeente"  id="Gemeente"/>
     
   </div>
   <span class="error">${errors.forKey('entity.gemeente')}</span>
 </div>
+<script type="text/javascript">
+    $(function() {
+        $("form").validity(function() {
+          $(":text").require();
+        });
+    });
+</script>
 

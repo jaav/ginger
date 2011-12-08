@@ -40,10 +40,26 @@ public class Locationss extends GingerController {
   public static void clustersIndex() {
     VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
     //String query = "select loc.naam from Locations loc, CityClusterJunction ccj where ccj.cityId = loc and loc.ouder is null and loc.isCluster=1";//ccj.clusterId_id = 2908;";
-    String query = "ouder is null and isCluster=1";
-    if (user.role.compareTo(models.RoleType.ADMIN) < 0) {
-      query += " and centrumId=" + user.centrumId.id;
+    String query = "ouder is null and isCluster=1 order by naam";
+
+    List<Locations> entities = Locations.find(query).fetch();
+    for (Locations entity : entities) {
+      StringBuilder sb = new StringBuilder();
+      String namesquery = "select loc from CityClusterJunction ccj, Locations loc where ccj.clusterId = " + entity.id + " and ccj.cityId=loc";
+      List<Locations> cities = Locations.find(namesquery).fetch();
+      for (Locations city : cities) {
+        sb.append(city.naam).append(", ");
+      }
+      entity.cities = sb.toString();
     }
+    setAccordionTab(4);
+    render("Locationss/cluster_index.html", entities);
+  }
+
+  public static void centrumClustersIndex() {
+    VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
+    //String query = "select loc.naam from Locations loc, CityClusterJunction ccj where ccj.cityId = loc and loc.ouder is null and loc.isCluster=1";//ccj.clusterId_id = 2908;";
+    String query = "ouder is null and isCluster=1 and centrumId=" + user.centrumId.id + " order by naam";
 
     List<Locations> entities = Locations.find(query).fetch();
     for (Locations entity : entities) {
@@ -204,11 +220,12 @@ public class Locationss extends GingerController {
     models.VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
     if (org1.naam.toLowerCase().indexOf("regionaal") > -1) {
       if (user.role != RoleType.ADMIN)
-        query = "isActive=1 and isCluster=1 and centrumId=" + user.centrumId.id;
+        query = "isActive=1 and isCluster=1 and centrumId=" + user.centrumId.id + " order by naam";
       else
-        query = "isActive=1 and isCluster=1 ";
-    } else
-      query = "isActive=1 and ouder=" + id;
+        query = "isActive=1 and isCluster=1 order by naam ";
+    }
+    else
+      query = "isActive=1 and ouder=" + id + " order by naam";
     List<models.Locations> locs = models.Locations.find(query).fetch();
     if (locs.isEmpty()) renderText("");
     else {
@@ -220,7 +237,7 @@ public class Locationss extends GingerController {
         htmlData.append(" <option value=\"" + loc.id + "\" >" + loc.naam + "</option>\n");
 
       }
-      htmlData.append("</select></div></div>");
+      htmlData.append("</select></div>");
 
       renderText(htmlData.toString());
     }

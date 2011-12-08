@@ -12,7 +12,7 @@ import play.mvc.With;
 
 @With(Secure.class)
 
-public class MaterialsInActivities extends Controller {
+public class MaterialsInActivities extends GingerController {
 	public static void index() {
 		List<MaterialsInActivity> entities = models.MaterialsInActivity.all().fetch();
 		render(entities);

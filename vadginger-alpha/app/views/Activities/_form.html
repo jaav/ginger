@@ -6,7 +6,7 @@
   <div class="label">Omschrijving van de activiteit:</div>
   <div class="field">
 
-    <input type="text" name="entity.beschrijving" value="${entity?.beschrijving}" size="80"/>
+    <input type="text" name="entity.beschrijving" value="${entity?.beschrijving}" size="80" title="Omschrijving"  id="Omschrijving"/>
 
   </div>
   <span class="error">${errors.forKey('entity.beschrijving')}</span>
@@ -16,7 +16,7 @@
   <div class="label">Organisatie</div>
   <div class="field">
 
-    <select name="organization" id="organizationSelect">
+    <select name="organization" id="organizationSelect"  title="Organisatie"  id="Organisatie">
 
       <option value="">(None)</option>
      #{if userRole.compareTo(models.RoleType.ORG_ADMIN) > 0 }
@@ -93,7 +93,7 @@
   <div class="label">Op welke dag vond de activiteit plaats?</div>
   <div class="field">
 
-    <input type="text" name="activity_date" value="${entity?.activityDate?.format('dd/MM/yyyy', 'nl')}" id="datepicker"/>
+    <input type="text" name="activity_date" value="${entity?.activityDate?.format('dd/MM/yyyy', 'nl')}" id="datepicker" title="Datum"  id="Datum"/>
     <script>
       $("#datepicker").datepicker({ appendText: '(dd/mm/yyyy)', dateFormat: 'dd/mm/yy', monthNames: ['Januari', 'Februari', 'Maart', 'April', 'Mei', 'Juni', 'Juli', 'Augustus', 'September', 'Oktober', 'November', 'December']});
     </script>
@@ -104,7 +104,7 @@
   <div class="label">Hoe lang duurde de activiteit (in minuten)?</div>
   <div class="field">
 
-    <input type="text" name="entity.duur" value="${entity?.duur}"/>
+    <input type="text" name="entity.duur" value="${entity?.duur}" title="Duur" id="Duur"/>
 
   </div>
   <span class="error">${errors.forKey('entity.duur')}</span>
@@ -115,8 +115,7 @@
   <div class="label">Welke sector(en) en detailsector(en) waren aanwezig op de activiteit?
     <div class="label">Sector:</div>
   </div>
-  <div class="field">
-
+  <div class="field" id="Sector">
 
     %{ models.Sectors.find("ouder is null and isActive=1").fetch().sort{ it.id }.each() { }%
 
@@ -128,8 +127,9 @@
     }%
 
 
-    <input id="${it?.id}" name="sector_${it?.id}" type="checkbox" class="chkbx">
+    <input id="${it?.id}" name="sector_${it?.id}" type="checkbox" class="chkbx" title="Sector" >
     <label class="choice" for="sector_${it?.id}">${it?.naam}</label>
+    <input type="hidden" value="" title="Sector" id="hs_${it?.id}"/>
     <span class="field" id="${it?.id}cont"></span><br>
     <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
     %{ } }%
@@ -193,7 +193,7 @@
 <div class="row">
   <div class="label">Tot welk locatieniveau richt de activiteit zich?</div>
   <div class="field">
-    <select name="location" id="locationSelect">
+    <select name="location" id="locationSelect" title="Locatie">
 
 
       <option value="">(Niet van toepassing)</option>
@@ -246,7 +246,7 @@
   }
   }%
 
-  <input id="${it?.id}" name="attendant_type" type="radio" class="rdbx" value="${it?.id}" ${checked}>${it}&nbsp;&nbsp;&nbsp;
+  <input id="${it?.id}" name="attendant_type" type="radio" class="rdbx" value="${it?.id}" ${checked} title="Doelgroep">${it}&nbsp;&nbsp;&nbsp;
   <!-- <span class="field" id="${it?.id}cont"></span><br> -->
   <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
   %{ } }%
@@ -287,7 +287,7 @@
 <div class="row">
   <div class="label">Over welke soort activiteit gaat het?</div>
   <div class="field">
-    <select name="activity_type" id="activity_type_select">
+    <select name="activity_type" id="activity_type_select" title="Soort activiteit">
       <option value="">(Niet van toepassing)</option>
       %{ models.ActivityType.find("ouder is null and isActive=1").fetch().sort{ it.id }.each() { }%
       %{
@@ -370,7 +370,7 @@
 
 <div class="row">
   <div class="label">Welke items werden tijdens de activiteit behandeld?</div>
-  <div class="field">
+  <div class="field" id="TheItem">
 
 
     <ul>
@@ -379,8 +379,9 @@
 		<span>
 #{list items, as:'item'}
 <li>
-  <input id="item_1_${item.id}" name="item_1_${item.id}" class="element checkbox" type="checkbox" value="1"/>
-  <label class="choice" for="item_1_${item.id}">${item.naam}</label><BR>
+  <input id="item_1_${item.id}" name="item_1_${item.id}" class="element checkbox" type="checkbox" value="1" titel="Item"/>
+  <label class="choice" for="item_1_${item.id}">${item.naam}</label>
+  <input type="hidden" value="" title="Item" id="hi_${item?.id}"/><BR>
 </li>
 #{/list}
 		</span>
@@ -393,7 +394,7 @@
 <hr>
 <div class="row">
   <div class="label">Welk materiaal werd ter voorbereiding en/of tijdens de uitvoering van de activiteit gebruikt?</div>
-  <div class="field">
+  <div class="field" id="Materiaal">
 
 
     <!-- <label class="description" for="material_1">Materials </label><BR> -->
@@ -404,8 +405,9 @@
 #{list materials, as:'material'}
 <li>
   <input id="material_1_${material.id}" name="material_1_${material.id}" class="element checkbox" type="checkbox"
-         value="1"/>
-  <label class="choice" for="material_1_${material.id}">${material.naam}</label><BR>
+         value="1" titel="Materiaal"/>
+  <label class="choice" for="material_1_${material.id}">${material.naam}</label>
+  <input type="hidden" value="" title="Item" id="hm_${material?.id}"/><BR>
 </li>
 #{/list}
 		</span>
@@ -499,4 +501,27 @@
       $("#evaluvated").slideDown();
     }
   })();
+</script>
+<script type="text/javascript">
+    // Select all of the forms on the page (in this case the only one)
+    // and call 'validity' on the result.
+    $(function() {
+        $("form").validity(function() {
+          $("input[type=text]").require();
+          $("#organizationSelect").require();
+          $("#locationSelect").require();
+          $("#activity_type_select").require();
+
+          if ($("#Sector input:checked").length == 0) {
+              $("#Sector input:hidden:first").require("Gelieve minstens één sector aan te vinken");
+          }
+          var test = $("#TheItem input:hidden:first");
+          if ($("#TheItem input:checked").length == 0) {
+              $("#TheItem input:hidden:first").require("Gelieve minstens één item aan te vinken");
+          }
+          if ($("#Materiaal input:checked").length == 0) {
+              $("#Materiaal input:hidden:first").require("Gelieve minstens één gebruikt materiaal aan te vinken");
+          }
+        });
+    });
 </script>
