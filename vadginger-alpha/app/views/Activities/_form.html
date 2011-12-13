@@ -366,56 +366,6 @@
   </div>
   <span class="error">${errors.forKey('entity.id')}</span>
 </div>
-
-
-<div class="row">
-  <div class="label">Welke items werden tijdens de activiteit behandeld?</div>
-  <div class="field" id="TheItem">
-
-
-    <ul>
-
-      <!-- 				<li id="li_1" > -->
-		<span>
-#{list items, as:'item'}
-<li>
-  <input id="item_1_${item.id}" name="item_1_${item.id}" class="element checkbox" type="checkbox" value="1" titel="Item"/>
-  <label class="choice" for="item_1_${item.id}">${item.naam}</label>
-  <input type="hidden" value="" title="Item" id="hi_${item?.id}"/><BR>
-</li>
-#{/list}
-		</span>
-
-      <!-- </li> -->
-    </ul>
-
-  </div>
-</div>
-<hr>
-<div class="row">
-  <div class="label">Welk materiaal werd ter voorbereiding en/of tijdens de uitvoering van de activiteit gebruikt?</div>
-  <div class="field" id="Materiaal">
-
-
-    <!-- <label class="description" for="material_1">Materials </label><BR> -->
-    <ul>
-
-      <!-- <li id="li_1" > -->
-		<span>
-#{list materials, as:'material'}
-<li>
-  <input id="material_1_${material.id}" name="material_1_${material.id}" class="element checkbox" type="checkbox"
-         value="1" titel="Materiaal"/>
-  <label class="choice" for="material_1_${material.id}">${material.naam}</label>
-  <input type="hidden" value="" title="Item" id="hm_${material?.id}"/><BR>
-</li>
-#{/list}
-		</span>
-      <!-- </li> -->
-    </ul>
-  </div>
-</div>
-<hr>
 <div class="row">
   <div class="label">Is de activiteit geëvalueerd?</div>
   <div class="field">
@@ -477,18 +427,6 @@
       />
     </div>
     <span class="error">${errors.forKey('entity.reported')}</span>
-  </div>
-  <div class="row">
-    <div class="label">Werd het standaardevaluatieformulier gebruikt?</div>
-    <div class="field">
-      Ja <input type="radio" name="entity.defForm" value="true"
-      ${entity?.defForm ? 'checked':''}
-      />
-      Neen <input type="radio" name="entity.defForm" value="false"
-      ${!entity?.defForm ? 'checked':''}
-      />
-    </div>
-    <span class="error">${errors.forKey('entity.defForm')}</span>
   </div>
 </div>
 

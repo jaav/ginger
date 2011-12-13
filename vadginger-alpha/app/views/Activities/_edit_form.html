@@ -478,71 +478,6 @@
   </div>
   <span class="error">${errors.forKey('entity.id')}</span>
 </div>
-
-
-<div class="row">
-  <div class="label">Welke items werden tijdens de activiteit behandeld?</div>
-  <div class="field">
-
-
-    <ul>
-
-      <!-- 				<li id="li_1" > -->
-		<span>
-
- %{ models.Items.find("isActive=1").fetch().sort{ it.toString() }.each() { }%
-      %{
-      selected = false;
-      for(models.ItemsInActivity iia: entity.itemsInActivity) {
-		if (iia?.itemId?.id == it?.id) {
-		selected = true
-		}
-	}
-      }%
-      <li>
-      <input id="item_1_${itid}" name="item_1_${it.id}" class="element checkbox" type="checkbox" value="1" ${selected ? 'checked'.raw() : ''}/>
-  <label class="choice" for="item_1_${it.id}">${it.naam}</label><BR>
-</li>
-      %{ } }%
-		</span>
-
-      <!-- </li> -->
-    </ul>
-
-  </div>
-</div>
-<hr>
-<div class="row">
-  <div class="label">Welk materiaal werd ter voorbereiding en/of tijdens de uitvoering van de activiteit gebruikt?</div>
-  <div class="field">
-
-
-    <!-- <label class="description" for="material_1">Materials </label><BR> -->
-    <ul>
-
-      <!-- <li id="li_1" > -->
-		<span>
- %{ models.Materials.find("isActive=1").fetch().sort{ it.toString() }.each() { }%
-      %{
-      selected = false;
-      for(models.MaterialsInActivity mia: entity.materialsInActivities) {
-		if (mia.materialId?.id == it?.id) {
-		selected = true
-		}
-	}
-      }%
-<li>
-  <input id="material_1_${it.id}" name="material_1_${it.id}" class="element checkbox" type="checkbox"
-         value="1" ${selected ? 'checked'.raw() : ''}/>
-  <label class="choice" for="material_1_${it.id}">${it.naam}</label><BR>
-</li>
-  %{ } }%
-		</span>
-      <!-- </li> -->
-    </ul>
-  </div>
-</div>
-<hr>
 <div class="row">
   <div class="label">Is de activiteit ge&euml;valueerd?</div>
   <div class="field">
@@ -625,18 +560,5 @@
       />
     </div>
     <span class="error">${errors.forKey('entity.reported')}</span>
-  </div>
-  <div class="row">
-    <div class="label">Werd het standaardevaluatieformulier gebruikt?</div>
-    <div class="field">
-
-      Ja <input type="radio" name="entity.defForm" value="true"
-      ${entity?.defForm ? 'checked':''}
-      />
-      Neen <input type="radio" name="entity.defForm" value="false"
-      ${!entity?.defForm ? 'checked':''}
-      />
-    </div>
-    <span class="error">${errors.forKey('entity.defForm')}</span>
   </div>
 </div>
