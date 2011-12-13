@@ -58,6 +58,9 @@ public class Activity extends Model {
 	@Column(name = "Reported")
 	public Boolean reported;
 
+	@Column(name = "DefForm")
+	public Boolean defForm;
+
 	@Column(name = "TotalParticipants")
 	public Integer totalParticipants;
 
