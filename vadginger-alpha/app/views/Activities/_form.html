@@ -385,48 +385,16 @@
 <div class="row" id="evaluvated" style="display: none">
 
   <div class="row">
-    <div class="label">Hoe is de activiteit geëvalueerd?</div>
+    <div class="label">Werd het standaardevaluatieformulier gebruikt?</div>
     <div class="field">
-      %{ models.EvaluvationType.all().fetch().sort{ it.toString() }.eachWithIndex() {ob, i -> }%
-      %{
-      selected = false;
-      }%
-      <input id="${ob?.id}" name="eval_type_${ob?.id}" type="checkbox"
-      ${(entity?.activityEvaluvatorsId?.evalTypeId?.evalType && ob?.evalType == entity?.activityEvaluvatorsId?.evalTypeId?.evalType[0]) ? 'checked':''}
+      Ja <input type="radio" name="entity.defForm" value="true"
+      ${entity?.defForm ? 'checked':''}
       />
-      <label class="choice" for="eval_type_${ob?.id}">${ob?.evalType}</label>
-      <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
-      %{ } }%
-    </div>
-    <span class="error">${errors.forKey('entity.evaluvated')}</span>
-  </div>
-  <div class="row">
-    <div class="label">Wie heeft de activiteit geëvalueerd?</div>
-    <div class="field">
-      %{ models.Evaluvators.all().fetch().sort{ it.toString() }.each() { }%
-      %{
-      selected = false;
-      }%
-      <input id="${it?.id}" name="evaluvators" type="radio" value="${it?.id}"
-      ${(entity?.activityEvaluvatorsId?.evaluvatorsId && it?.naam == entity?.activityEvaluvatorsId?.evaluvatorsId?.naam[0]) ? 'checked':''}
-      />${it}&nbsp;&nbsp;&nbsp;
-      <!-- <span class="field" id="${it?.id}cont"></span><br> -->
-      <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
-      %{ } }%
-    </div>
-    <span class="error">${errors.forKey('entity.evaluvated')}</span>
-  </div>
-  <div class="row">
-    <div class="label">Is er een verslag gemaakt?</div>
-    <div class="field">
-      Ja <input type="radio" name="entity.reported" value="true"
-      ${entity?.reported ? 'checked':''}
+      Neen <input type="radio" name="entity.defForm" value="false"
+      ${!entity?.defForm ? 'checked':''}
       />
-      Neen <input type="radio" name="entity.reported" value="false"
-      ${!entity?.reported ? 'checked':''}
-      />
-    </div>
-    <span class="error">${errors.forKey('entity.reported')}</span>
+      </div>
+    <span class="error">${errors.forKey('entity.defForm')}</span>
   </div>
 </div>
 
