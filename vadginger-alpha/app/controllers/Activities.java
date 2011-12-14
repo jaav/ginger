@@ -69,7 +69,7 @@ public class Activities extends GingerController {
     Activity copy = new Activity();
     try {
       //BeanUtils.copyProperties(copy, entity);
-      copy.beschrijving = "copy van "+entity.beschrijving;
+      copy.beschrijving = "";
       copy.activityDate = entity.activityDate;
       copy.centrumId = entity.centrumId;
       copy.evaluvated = entity.evaluvated;
@@ -392,10 +392,13 @@ public class Activities extends GingerController {
 		if (request.params.get("entity.evaluvated")==null) {
 			entity.evaluvated = false;
 			entity.reported = false;
-      entity.defForm = false;
 		}
 		else
 			entity.evaluvated = true;
+			//entity.reported = true;
+				//if (request.params.get("entity.reported")==null){
+					//entity.reported = false;
+        //}
 		entity.save();
 		deletedAllRelationships(entity);
 		storeEvaluvationsAndEvaluvators(entity);
