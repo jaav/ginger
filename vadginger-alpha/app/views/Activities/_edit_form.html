@@ -625,17 +625,4 @@
     </div>
     <span class="error">${errors.forKey('entity.reported')}</span>
   </div>
-  <div class="row">
-    <div class="label">Werd het standaardevaluatieformulier gebruikt?</div>
-    <div class="field">
-
-      Ja <input type="radio" name="entity.defForm" value="true"
-      ${entity?.defForm ? 'checked':''}
-      />
-      Neen <input type="radio" name="entity.defForm" value="false"
-      ${!entity?.defForm ? 'checked':''}
-      />
-    </div>
-    <span class="error">${errors.forKey('entity.defForm')}</span>
-  </div>
 </div>

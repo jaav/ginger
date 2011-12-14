@@ -392,14 +392,12 @@ public class Activities extends GingerController {
 		if (request.params.get("entity.evaluvated")==null) {
 			entity.evaluvated = false;
 			entity.reported = false;
-      entity.defForm = false;
 		}
 		else {
 			entity.evaluvated = true;
 			//entity.reported = true;
 				if (request.params.get("entity.reported")==null){
 					entity.reported = false;
-          entity.defForm = false;
         }
 			}
 		entity.save();
