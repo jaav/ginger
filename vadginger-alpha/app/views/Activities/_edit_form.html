@@ -164,10 +164,9 @@
     <label class="choice" for="sector_${it?.id}">${it?.naam}</label>
     <span class="field" id="${it?.id}cont">
     #{if selected}
-    <div class="label">Sub-sector</div>
+    <div class="label">Detailsector</div>
     <div class="field">
     <select name="sub_sector_${secOuder}" id="subSectorSelect" multiple size="4">
-     <option value="">Geen sub sector</option>
      %{ models.Sectors.find("isActive=1 and ouder is " + secOuder).fetch().sort{ it.toString() }.each() { }%
 
           %{
@@ -398,7 +397,7 @@
   <!-- <span class="error">${errors.forKey('entity.userId')}</span> -->
    <div class="field" id="hiddenActType">
    	#{if acTypeOuder!=null}
-   	<div class="label">Sub-ActivityType</div>
+   	<div class="label">Detailsoort</div>
    	<div class="field">
    	<select name="sub_activity_type" id="subActivityTypeSelect" multiple size="4">
    	  <option value="">(None)</option>

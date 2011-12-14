@@ -73,7 +73,7 @@ public class ActivityTypes extends GingerController {
 		if (id!=null&&!id.trim().equals("")) {
 			List<ActivityType> actTyps = models.ActivityType.find("ouder is " + id +" and isActive=1").fetch();
 			if (actTyps.size()>0){
-			 htmlData.append("<div class=\"label\">Sub-ActivityType</div>");
+			 htmlData.append("<div class=\"label\">Detailsoort</div>");
 		      htmlData.append("<div class=\"field\">");
 		      htmlData.append("<select name=\"sub_activity_type\" id=\"subActivityTypeSelect\"  multiple size=\"4\">\n");
 		      for (models.ActivityType org: actTyps) {
