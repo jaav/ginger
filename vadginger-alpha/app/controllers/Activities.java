@@ -69,7 +69,7 @@ public class Activities extends GingerController {
     Activity copy = new Activity();
     try {
       //BeanUtils.copyProperties(copy, entity);
-      copy.beschrijving = "copy van "+entity.beschrijving;
+      copy.beschrijving = "";
       copy.activityDate = entity.activityDate;
       copy.centrumId = entity.centrumId;
       copy.evaluvated = entity.evaluvated;
