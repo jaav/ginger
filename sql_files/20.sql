@@ -13,3 +13,8 @@ update VadGingerUser set role = 3 where userID in ('jefwau');
 update ActivityType set id = 999 where Naam = 'Andere Actie';
 update ActivityTypeJunction set activityTypeId_id = 999 where activityTypeId_id = 19;
 update Evaluvation_Type set EvalType = 'Schriftelijk' where EvalType = 'Schriftel';
+
+UPDATE Locations SET Naam=(REPLACE (Naam, '-$',''));
+UPDATE Locations SET Naam=(REPLACE (Naam,'Regionaal O', 'RegiOOO'));
+UPDATE Locations SET Naam=(REPLACE (Naam,'Regionaal', 'Regionaal (clusters)'));
+UPDATE Locations SET Naam=(REPLACE (Naam,'RegiOOO', 'Regionaal O'));

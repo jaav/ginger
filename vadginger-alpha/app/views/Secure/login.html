@@ -5,17 +5,7 @@
 	<h1>&{'secure.title'}</h1>
 		
 	#{form @authenticate()}
-		
-		#{if flash.error}
-			<p class="error">
-				&{flash.error}
-			</p>
-		#{/if}
-		#{if flash.success}
-			<p class="success">
-				&{flash.success}
-			</p>
-		#{/if}
+
 
 <div class="row">
   <div class="label">Gebruiker</div>

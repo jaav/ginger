@@ -90,10 +90,9 @@ public class Sectorss extends GingerController {
 		query+= " and isActive=1";
 		List<models.Sectors> secs = models.Sectors.find(query).fetch();
 		StringBuffer htmlData = new StringBuffer();
-		htmlData.append("<div class=\"label\">Sub-sector</div>");
+		htmlData.append("<div class=\"label\">Detailsector</div>");
 		htmlData.append("<div class=\"field\">");
 		htmlData.append("<select name=\"sub_sector_"+id+"\" id=\"subSectorSelect\" multiple=\"multiple\" size=\"4\">\n");
-		htmlData.append(" <option value=\"\">Geen sub sector</option>\n");
 		for (models.Sectors sec: secs) {
 			htmlData.append(" <option value=\""+sec.id+"\" >"+sec.naam+"</option>\n");
 		}
