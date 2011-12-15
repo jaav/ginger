@@ -42,5 +42,9 @@ public class Statics extends GingerController {
     setAccordionTab(0);
 		render();
 	}
+	public static void passforgot() {
+    setAccordionTab(0);
+		render();
+	}
 
 }
