@@ -1,0 +1,8 @@
+symbol=Mat:
+Mat: Zelf ontwikkeld materiaal
+Mat: Materiaal van VAD/De DrugLijn
+Mat: Ander materiaal op Vlaams niveau
+Mat: Ander materiaal op lokaal/regionaal niveau
+Mat: Ander materiaal op internationaal niveau
+Mat: Ander materiaal op federaal niveau
+Mat: Geen materiaal 

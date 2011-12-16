@@ -1,0 +1,98 @@
+symbol=sec.
+sec. Arbeid
+Overheidsbedrijven (1-50 personeelsleden) 
+Overheidsbedrijven (>50 personeelsleden) 
+Private bedrijven (1-50 personeelsleden)
+Private bedrijven (>50 personeelsleden)
+Social profit organisaties (1-50 personeelsleden) 
+Social profit organisaties (>50 personeelsleden) 
+Externe diensten ter preventie en bescherming op het werk
+Vakbonden
+Meerdere 
+sec. Gezondheid 
+Zelforganisatie (AA, belangengroepen drugs, etc.) 
+Centrum geestelijke gezondheid
+Medisch sociaal opvangcentrum (MSOC) 
+Dagcentrum 
+Therapeutische gemeenschap (TG) 
+Crisiscentrum
+Psychiatrische afdeling algemeen ziekenhuis (PAAZ) / psychiatrisch ziekenhuis 
+Straathoekwerk
+Lokaal gezondheidsoverleg (LOGO)
+Koepels
+Andere 
+Meerdere 
+sec. Onderwijs 
+Basisonderwijs: kleuteronderwijs 
+Basisonderwijs: buitengewoon lager onderwijs (BLO)
+Basisonderwijs: lager onderwijs (LO)
+Basisonderwijs: meerdere onderwijsvormen
+Basisonderwijs: andere 
+Secundair onderwijs: ASO
+Secundair onderwijs: BSO
+Secundair onderwijs: BuSO
+Secundair onderwijs: deeltijds onderwijs 
+Secundair onderwijs: KSO 
+Secundair onderwijs: TSO 
+Secundair onderwijs: ASO & TSO 
+Secundair onderwijs: ASO & BSO 
+Secundair onderwijs: TSO & BSO 
+Secundair onderwijs: ASO, TSO & BSO 
+Secundair onderwijs: andere combinaties van onderwijsvormen 
+Secundair onderwijs: andere 
+Hoger onderwijs: niet-universitair onderwijs 
+Hoger onderwijs: universitair onderwijs 
+Centrum voor leerlingenbegeleiding (CLB) 
+Medisch pedagogisch instituut (MPI) 
+Oudervereniging 
+Koepels 
+Andere
+Meerdere 
+sec. Overheid 
+internationaal 
+Federaal 
+Gemeenschap 
+Provinciaal 
+Regionaal (?: Intergemeentelijke preventiewerker, intercommunale) 
+Lokaal (gemeentelijke ambtenaar/dienst, college, ...) 
+Andere 
+Meerdere 
+sec. Politie en Justitie 
+Gevangenis 
+Politie (?: federale politie, lokale politie, politiezone)
+Rechtbank 
+Justitiehuis 
+Andere 
+Meerdere 
+sec. Vrijetijds- en cultuursector 
+port: sportvereniging, -club 
+Sport: koepels
+Uitgaanssector: horeca 
+Uitgaanssector: dancing, club 
+Uitgaanssector: festivals, en manifestatie 
+Uitgaanssector: koepels 
+Uitgaanssector: andere 
+Jeugdwerk: jeugdvereniging, -beweging 
+Jeugdwerk: jeugdhuis 
+Jeugdwerk: koepels 
+Jeugdwerk: andere 
+Sociocultureel volwassenenwerk 
+Allochtonenorganisaties 
+Andere 
+Meerdere 
+sec. Welzijn 
+entrum voor algemeen welzijnswerk (CAW): deelwerking jongerenadviescentrum (JAC) 
+Centrum voor algemeen welzijnswerk (CAW): deelwerking justitieel welzijnswerk 
+Centrum voor algemeen welzijnswerk (CAW): thuislozenzorg 
+Centrum voor algemeen welzijnswerk (CAW): andere deelwerking 
+Bijzondere jeugdzsec. voorziening bijzondere jeugdzorg 
+Bijzondere jeugdzsec. comité bijzondere jeugdzorg (CBJ) 
+Bijzondere jeugdzsec. sociale dienst jeugdrechtbank 
+Openbaar centrum voor maatschappelijk werk (OCMW) 
+Koepels 
+Straathoekwerk 
+Samenlevingsopbouw (RISO, buurthuis, e.d.)
+Minderhedensector (integratiecentrum, onthaalbureau, opvangcentrum asielzoekers) 
+Andere 
+Meerdere 
+sec. Algemene bevolking 
