@@ -86,7 +86,7 @@
               
                       <option value="">(None)</option>              
               
-        %{ models.Evaluvators.all().fetch().sort{ it.toString() }.each() { }%
+        %{ models.Evaluvators.all().fetch().each() { }%
           
           %{
             selected = false;

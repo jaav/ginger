@@ -346,11 +346,13 @@ public class SQLScriptGenerator {
 			locationBuffer.append("UPDATE ["+ PropsUtils.getDbName()+"].[dbo].[Activity] SET [locationId_id] = "+locationId+" WHERE [id] = "+removeQuote(tokens[0])+"\n");
 		}
 		if (removeQuote(tokens[82]).equals("3")) {
-			String locationId = (2888 + Integer.parseInt(removeQuote(tokens[83]))) +"" ;
+			//String locationId = (2888 + Integer.parseInt(removeQuote(tokens[83]))) +"" ;
+			String locationId = (1010 + Integer.parseInt(removeQuote(tokens[83]))) +"" ;
 			locationBuffer.append("UPDATE ["+ PropsUtils.getDbName()+"].[dbo].[Activity] SET [locationId_id] = "+locationId+" WHERE [id] = "+removeQuote(tokens[0])+"\n");
 		}
 		if(removeQuote(tokens[82]).equals("4")) {
-			String locationId = (2896 + Integer.parseInt(removeQuote(tokens[84]))) +"" ;
+			//String locationId = (2896 + Integer.parseInt(removeQuote(tokens[84]))) +"" ;
+			String locationId = (1018 + Integer.parseInt(removeQuote(tokens[84]))) +"" ;
 			locationBuffer.append("UPDATE ["+ PropsUtils.getDbName()+"].[dbo].[Activity] SET [locationId_id] = "+locationId+" WHERE [id] = "+removeQuote(tokens[0])+"\n");
 		}
 		if (removeQuote(tokens[83]).equals("5"))

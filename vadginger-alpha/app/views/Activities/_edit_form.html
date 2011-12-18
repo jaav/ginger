@@ -18,7 +18,7 @@
 
     <select name="organization" id="organizationSelect">
 
-      <option value="">(None)</option>
+      <option value="">Selecteer een organisatie</option>
      #{if userRole.compareTo(models.RoleType.ORG_ADMIN) > 0 }
 
         %{ models.Organisaties.find("ouder is null and isActive=1").fetch().sort{ it.toString() }.each() { }%
@@ -243,7 +243,7 @@
   <div class="label">Tot welk locatieniveau richt de activiteit zich?</div>
   <div class="field">
     <select name="location" id="locationSelect">
-      <option value="">(Niet van toepassing)</option>
+      <option value="">Selecteer een locatieniveau</option>
       %{ models.Locations.find("ouder is null and isCluster = 0 and isActive=1").fetch().sort{ it.id }.each() { }%
       %{
       selected = false;
@@ -372,7 +372,7 @@
   <div class="label">Over welke soort activiteit gaat het?</div>
   <div class="field">
     <select name="activity_type" id="activity_type_select">
-      <option value="">(None)</option>
+      <option value="">Selecteer de soort activiteit</option>
       %{ models.ActivityType.find("ouder is null and isActive=1").fetch().sort{ it.toString() }.each() { }%
       %{
       selected = false;
@@ -597,7 +597,7 @@
   <div class="row">
     <div class="label">Wie heeft de activiteit ge&euml;valueerd?</div>
     <div class="field">
-      %{ models.Evaluvators.all().fetch().sort{ it.toString() }.each() { }%
+      %{ models.Evaluvators.all().fetch().each() { }%
       %{
        selected = false;
       for(models.ActivityEvaluvators ae: entity.activityEvaluvatorsId) {
