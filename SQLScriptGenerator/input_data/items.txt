@@ -1,0 +1,8 @@
+symbol=ITEM:
+ITEM: Middelengebruik algemeen
+ITEM: Alcohol
+ITEM: Illegale drugs
+ITEM: Medicatie
+ITEM: Tabak
+ITEM: Gokken
+ITEM: ICT-verslavingen (games, chatten, surfen, ...)

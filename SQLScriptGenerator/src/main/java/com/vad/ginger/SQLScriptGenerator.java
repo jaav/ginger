@@ -33,6 +33,7 @@ public class SQLScriptGenerator {
 	public static Hashtable<String,String> roleIdKeyId = new Hashtable<String, String>();
 	public static Hashtable<String,String> userIdKeyId = new Hashtable<String, String>();
 	public static Hashtable<String, Integer> centrumIdKeyId = new Hashtable<String, Integer>();
+	public static Hashtable<String, Integer> lokaalCities = new Hashtable<String, Integer>();
 	
 	public static Set<String> centrums = new HashSet<String>();
 	public static StringBuffer sAJBuffer = new StringBuffer();
@@ -151,14 +152,16 @@ public class SQLScriptGenerator {
 		while ((line = reader.readLine()) != null) {
 				String[] tokens = line.split("\t");
 				userIdKeyId.put(tokens[2].toLowerCase(), user_id_num+"");
-				buffer.append("INSERT INTO [dbo].[VadGingerUser] ([id],[userID],[passwordHash], [emailAddress], [role], [loginCount], [centrumId_id]) VALUES ('"+user_id_num+"','"+tokens[2]+"','"+"123456"+"','"+"admin@vadginger.be"+"', '0','0', "+centrumIdKeyId.get(removeQuote(tokens[2]).substring(0,3).toUpperCase())+")");
+				buffer.append("INSERT INTO [dbo].[VadGingerUser] ([id],[userID],[passwordHash], [emailAddress], [role], [loginCount], [centrumId_id], [IsActive]) VALUES ('"+user_id_num+"','"+tokens[2]+"','"+"123456"+"','"+"admin@vadginger.be"+"', '0','0', "+centrumIdKeyId.get(removeQuote(tokens[2]).substring(0,3).toUpperCase())+", 1)");
 				buffer.append("\n");
 				user_id_num++;
 				k = i;i++;
 				centrums.add(removeQuote(tokens[2]).substring(0,3).toUpperCase());
 		}
 		user_id_num++;
-		buffer.append("INSERT INTO [dbo].[VadGingerUser] ([id],[userID],[passwordHash], [emailAddress], [role], [loginCount]) VALUES ('"+user_id_num+"','UNKNOWN_USER','"+"123456"+"','"+"admin@vadginger.be"+"', '1','0')\n");
+		buffer.append("INSERT INTO [dbo].[VadGingerUser] ([id],[userID],[passwordHash], [emailAddress], [role], [loginCount],[IsActive]) VALUES ('"+user_id_num+"','UNKNOWN_USER','"+"123456"+"','"+"admin@vadginger.be"+"', '0','0',1)\n");
+		user_id_num++;
+		buffer.append("INSERT INTO [dbo].[VadGingerUser] ([id],[userID],[passwordHash], [emailAddress], [role], [loginCount],[IsActive]) VALUES ('"+user_id_num+"','admin','"+"SkR2dnY3M3Z2NzBENzcrOTc3KzlCZSsvdmUrL3ZVUHZ2NzBCWkdvPQ=="+"','"+"admin@vadginger.be"+"', '1','0',1)\n");
 		userIdKeyId.put("UNKNOWN_USER".toLowerCase(),user_id_num+"");
 		buffer.append("\nSET IDENTITY_INSERT ["+ PropsUtils.getDbName()+"].[dbo].[VadGingerUser] OFF");
 		buffer.append("\n");
@@ -233,9 +236,9 @@ public class SQLScriptGenerator {
 				}
 				if (orgId == null)
 					System.out.println("++>" + tokens[15].replace("\"", "") + "," + tokens[16].replace("\"", "") );
-				buffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[Activity] ([id],[Duur],[Evaluvated],[InternalActivity],[Reported],[TotalParticipants],[organizationId_id],[userId_id], [beschrijving], [Activity_date], [centrumId_id) VALUES " +
+				buffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[Activity] ([id],[Duur],[Evaluvated],[InternalActivity],[Reported],[TotalParticipants],[organizationId_id],[userId_id], [beschrijving], [Activity_date], [centrumId_id], [IsActive]) VALUES " +
 						"("+ tokens[0].replace("\"", "") + ","+tokens[3].replace("\"", "") + ","+tokens[69].replace("\"", "")+ ","+((tokens[87]=="TRUE")?1:0) + ","+
-						isReported + ","+tokens[54].replace("\"", "")+ ","+ orgId + ",'"+userId+ "','"+tokens[2]+"',"+tokens[1]+","+centrumIdKeyId.get(removeQuote(tokens[4]).toUpperCase())+")");
+						isReported + ","+tokens[54].replace("\"", "")+ ","+ orgId + ",'"+userId+ "','"+removeQuote(tokens[2])+"',"+tokens[1]+","+centrumIdKeyId.get(removeQuote(tokens[4]).toUpperCase())+", 1)");
 				if (userId == null)
 					System.out.println(tokens[5]);
 				buffer.append("\n");
@@ -299,7 +302,14 @@ public class SQLScriptGenerator {
 			String[] tokens) {
 		if(removeQuote(tokens[82]).equals("1")) {
 			String locationId = "";
-			if (!removeQuote(tokens[85]).trim().equals("0")) {
+			String postCodeVal = removeQuote(tokens[85]).trim();
+			int postCodeInt = 0;
+			try {
+				postCodeInt = Integer.parseInt(postCodeVal);
+			} catch(Exception e) {
+				postCodeInt = 5000;
+			}
+			if (!removeQuote(tokens[85]).trim().equals("0") && postCodes.containsKey(postCodeVal)) {
 				String postCodeId = postCodes.get(removeQuote(tokens[85]).trim()).toLowerCase();
 				if (postCodeId.indexOf(":::")>-1)
 				{
@@ -336,11 +346,13 @@ public class SQLScriptGenerator {
 			locationBuffer.append("UPDATE ["+ PropsUtils.getDbName()+"].[dbo].[Activity] SET [locationId_id] = "+locationId+" WHERE [id] = "+removeQuote(tokens[0])+"\n");
 		}
 		if (removeQuote(tokens[82]).equals("3")) {
-			String locationId = (369 + Integer.parseInt(removeQuote(tokens[83]))) +"" ;
+			//String locationId = (2888 + Integer.parseInt(removeQuote(tokens[83]))) +"" ;
+			String locationId = (1010 + Integer.parseInt(removeQuote(tokens[83]))) +"" ;
 			locationBuffer.append("UPDATE ["+ PropsUtils.getDbName()+"].[dbo].[Activity] SET [locationId_id] = "+locationId+" WHERE [id] = "+removeQuote(tokens[0])+"\n");
 		}
 		if(removeQuote(tokens[82]).equals("4")) {
-			String locationId = (377 + Integer.parseInt(removeQuote(tokens[84]))) +"" ;
+			//String locationId = (2896 + Integer.parseInt(removeQuote(tokens[84]))) +"" ;
+			String locationId = (1018 + Integer.parseInt(removeQuote(tokens[84]))) +"" ;
 			locationBuffer.append("UPDATE ["+ PropsUtils.getDbName()+"].[dbo].[Activity] SET [locationId_id] = "+locationId+" WHERE [id] = "+removeQuote(tokens[0])+"\n");
 		}
 		if (removeQuote(tokens[83]).equals("5"))
@@ -371,7 +383,7 @@ public class SQLScriptGenerator {
 			for (int secAct = 1; secAct < 9; secAct++) {
 				//System.out.println(tokens[secAct+41]);
 				if (removeQuote(tokens[secAct+41]).equalsIgnoreCase("true")) {
-					sAJBuffer.append("INSERT INTO SectorActvityJunction (activityId_id, sectorId_id) VALUES ("+ removeQuote(tokens[0]) +","+ sectorOuderKeyId.get(secAct+"") +");\n");
+					sAJBuffer.append("INSERT INTO SectorActivityJunction (activityId_id, sectorId_id) VALUES ("+ removeQuote(tokens[0]) +","+ sectorOuderKeyId.get(secAct+"") +");\n");
 				}
 				
 			}
@@ -532,8 +544,8 @@ public class SQLScriptGenerator {
 				String userId = userIdKeyId.get(tokens[5].toLowerCase());
 				if (userId == null)
 					userId = userIdKeyId.get("UNKNOWN_USER".toLowerCase());
-				buffer.append("INSERT INTO [dbo].[Organisaties] ([id],[Naam],[ouder_id],[userId_id]) VALUES " +
-						"("+i+",'"+tokens[1].replace("\"", "")+"',"+tokens[2]+","+"'"+userId+"')");
+				buffer.append("INSERT INTO [dbo].[Organisaties] ([id],[Naam],[ouder_id],[userId_id], [IsActive],[centrumId_id]) VALUES " +
+						"("+i+",'"+tokens[1].replace("\"", "")+"',"+tokens[2]+","+"'"+userId+"',1,"+ centrumIdKeyId.get(removeQuote(tokens[4]).toUpperCase())+")");
 				organizationIdKeyId.put(tokens[2].trim() + "," + tokens[0].trim(), i+ "");
 				//System.out.println(tokens[2].trim() + "," + tokens[0].trim() +"=>"+ i+ "");
 				buffer.append("\n");
@@ -580,8 +592,8 @@ public class SQLScriptGenerator {
 				String userId = userIdKeyId.get(tokens[8].toLowerCase());
 				if (userId == null)
 					userId = userIdKeyId.get("UNKNOWN_USER".toLowerCase());
-				buffer.append("INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id) VALUES " +
-						"("+tokens[0]+",'"+tokens[1].replace("\"", "")+"','"+tokens[2]+"','"+tokens[3]+"','"+tokens[4]+"','"+tokens[5]+"','"+tokens[6]+"','"+userId+"',"+centrumIdKeyId.get(removeQuote(tokens[7]).toUpperCase())+")");
+				buffer.append("INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES " +
+						"("+tokens[0]+",'"+tokens[1].replace("\"", "")+"','"+tokens[2]+"','"+tokens[3]+"','"+tokens[4]+"','"+tokens[5]+"','"+tokens[6]+"','"+userId+"',"+centrumIdKeyId.get(removeQuote(tokens[7]).toUpperCase())+", 1)");
 				buffer.append("\n");
 				organizationIdKeyId.put(tokens[0].trim(), i+ "");
 				if (Integer.parseInt(tokens[0]) > i)
@@ -626,7 +638,7 @@ public class SQLScriptGenerator {
 		while ((line = reader.readLine()) != null) {
 			if (line.startsWith(symbol)) {
 				head = line.substring(symbol.length()).trim();
-				buffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[TargetType] ([id],[Beschrijving]) VALUES ("+i+",'"+ head+"')");
+				buffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[TargetType] ([id],[Beschrijving], [IsActive]) VALUES ("+i+",'"+ head+"',1)");
 				buffer.append("\n");
 				k = i;i++;
 			}
@@ -643,9 +655,9 @@ public class SQLScriptGenerator {
 		buffer.append("\n");
 		buffer.append("\nSET IDENTITY_INSERT  ["+ PropsUtils.getDbName()+"].[dbo].[AttendantType] OFF");
 		buffer.append("\nSET IDENTITY_INSERT ["+ PropsUtils.getDbName()+"].[dbo].[Evaluvators] ON");
-		buffer.append("\nINSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[Evaluvators] ([id], [Naam]) VALUES (1, 'Jijzelf')");
-		buffer.append("\nINSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[Evaluvators] ([id], [Naam]) VALUES (2, 'Een externe persoon of organisatie')");
-		buffer.append("\nINSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[Evaluvators] ([id], [Naam]) VALUES (3, 'Beide')");
+		buffer.append("\nINSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[Evaluvators] ([id], [Naam],[IsActive]) VALUES (1, 'Jijzelf', 1)");
+		buffer.append("\nINSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[Evaluvators] ([id], [Naam], [IsActive]) VALUES (2, 'Een externe persoon of organisatie', 1)");
+		buffer.append("\nINSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[Evaluvators] ([id], [Naam], [IsActive]) VALUES (3, 'Beide', 1)");
 		buffer.append("\nSET IDENTITY_INSERT ["+ PropsUtils.getDbName()+"].[dbo].[Evaluvators] OFF");
 		buffer.append("\nSET IDENTITY_INSERT ["+ PropsUtils.getDbName()+"].[dbo].[Evaluvation_Type] ON");
 		buffer.append("\nINSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[Evaluvation_Type] ([id],[EvalType]) VALUES (1,'Mondeling')");
@@ -683,7 +695,7 @@ public class SQLScriptGenerator {
 		while ((line = reader.readLine()) != null) {
 			if (line.startsWith(symbol)) {
 				head = line.substring(symbol.length()).trim();
-				buffer.append("INSERT INTO [dbo].[Materials] ([id],[Naam]) VALUES ("+i+",'"+head+"')");
+				buffer.append("INSERT INTO [dbo].[Materials] ([id],[Naam], [IsActive]) VALUES ("+i+",'"+head+"',1)");
 				buffer.append("\n");
 				k = i;i++;
 			}
@@ -727,7 +739,7 @@ public class SQLScriptGenerator {
 		while ((line = reader.readLine()) != null) {
 			if (line.startsWith(symbol)) {
 				head = line.substring(symbol.length()).trim();
-				buffer.append("INSERT INTO [dbo].[Items] ([id],[Naam]) VALUES ("+i+",'"+head+"')");
+				buffer.append("INSERT INTO [dbo].[Items] ([id],[Naam], [IsActive]]) VALUES ("+i+",'"+head+"',1)");
 				buffer.append("\n");
 				k = i;i++;
 			}
@@ -775,14 +787,14 @@ public class SQLScriptGenerator {
 				a++;
 				b = 0;
 				head = line.substring(symbol.length()).trim();
-				buffer.append("INSERT INTO [dbo].[ActivityType] ([id],[Naam]) VALUES ("+ i +",'"+ head +"')");
+				buffer.append("INSERT INTO [dbo].[ActivityType] ([id],[Naam],[IsActive]) VALUES ("+ i +",'"+ head +"',1)");
 				buffer.append("\n");
 				k = i;i++;
 			}
 			else {
 				b++;
 				head = line.trim();
-				buffer.append("INSERT INTO [dbo].[ActivityType] ([id],[Naam],[ouder_id]) VALUES ("+ i +",'"+ head +"',"+k+")");
+				buffer.append("INSERT INTO [dbo].[ActivityType] ([id],[Naam],[ouder_id], [IsActive]) VALUES ("+ i +",'"+ head +"',"+k+", 1)");
 				activityTypeIdKeyId.put(a+ "," + b, i+"");
 				buffer.append("\n");i++;
 			}
@@ -805,7 +817,7 @@ public class SQLScriptGenerator {
 	}
 
 	private static void generateLocationsInsertStatements() {
-		loadPostCodesFile();
+		
 		File f = checkFileExists(PropsUtils.getLocationsFile());
 		StringBuffer buffer = new StringBuffer();
 		int i = 1;
@@ -825,7 +837,7 @@ public class SQLScriptGenerator {
 			if (line.startsWith(symbol)) {
 				a++;b=1;
 				head = line.substring(symbol.length()).trim().replace("\'", "\'\'");
-				buffer.append("INSERT INTO [dbo].[Locations] ([id],[Naam]) VALUES ("+ i +",'"+ head +"')");
+				buffer.append("INSERT INTO [dbo].[Locations] ([id],[Naam],[IsActive]) VALUES ("+ i +",'"+ head +"',1)");
 				buffer.append("\n");
 				k = i;i++;
 			}
@@ -833,7 +845,10 @@ public class SQLScriptGenerator {
 				locationIdKeyId.put(a+","+b, i+"");
 				locationIdKeyId.put(head.toLowerCase(), a+","+b);
 				head = line.trim().replace("\'", "\'\'");
-				buffer.append("INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id]) VALUES ("+ i +",'"+ head +"',"+k+")");
+				buffer.append("INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES ("+ i +",'"+ head +"',"+k+",1)");
+				if (k==1) {
+					lokaalCities.put(head.trim(), i);
+				}
 				buffer.append("\n");i++;
 				b++;
 			}
@@ -854,6 +869,13 @@ public class SQLScriptGenerator {
 			ie.printStackTrace();
 			System.exit(1);			
 		}
+		//System.out.println("==================================");
+		for (String key: lokaalCities.keySet()) {
+			System.out.println(key);
+			
+		}
+		//System.out.println("==================================");
+		loadPostCodesFile();
 		addClustersToLocations(i++);
 		
 	}
@@ -866,19 +888,20 @@ public class SQLScriptGenerator {
 		buffer.append("SET IDENTITY_INSERT  ["+ PropsUtils.getDbName()+"].[dbo].[Locations] ON");
 		buffer.append("\n");
 		int k = 0;
+		String line = "";
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(f));
-			String line = reader.readLine();
+			line = reader.readLine();
 			while((line=reader.readLine())!=null) {
 				++i;
 				String tokens[] = line.split("\t");
 				centrums.add(tokens[2]);
-				buffer.append("INSERT INTO [dbo].[Locations] ([id],[Naam],[IsCluster], []centrumId_id) VALUES ("+ i +",'"+ tokens[1].replace("\'", "\'\'") +"',1, "+centrumIdKeyId.get(removeQuote(tokens[2]).toUpperCase())+")\n");
+				buffer.append("INSERT INTO [dbo].[Locations] ([id],[Naam],[IsCluster], [centrumId_id],[IsActive]) VALUES ("+ i +",'"+ tokens[1].replace("\'", "\'\'") +"',1, "+centrumIdKeyId.get(removeQuote(tokens[2]).toUpperCase())+",1)\n");
 				clusterIdKeyId.put(tokens[0], i+"");
 				k = i;i++;
 				for (int p = 5; p < tokens.length; p++) {
-					if (!tokens[p].trim().equals("")&&tokens[p]!=null&&!tokens[p].trim().equals("0")) {
-						buffer.append("INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id]) VALUES ("+ i +",'"+postCodes.get(tokens[p].trim()).replace("\'", "\'\'") +"',"+k+")\n");
+					if (!tokens[p].trim().equals("")&&tokens[p]!=null&&!tokens[p].trim().equals("0")&&tokens[p].trim().charAt(tokens[p].length()-1) == '0') {
+						buffer.append("INSERT INTO [dbo].[CityClusterJunction] ([clusterId_id],[cityId_id]) VALUES ("+ k +","+lokaalCities.get(postCodes.get(tokens[p].trim())) +")\n");
 						i++;
 					}
 				}
@@ -888,7 +911,8 @@ public class SQLScriptGenerator {
 			buffer.append("\n");
 			buffer.append("GO");
 			writeBufferToFile("4-clusters.sql", buffer);
-		}catch(Exception e){e.printStackTrace();}
+		}catch(Exception e){e.printStackTrace();
+		System.out.println(line);}
 		
 	}
 
@@ -900,10 +924,15 @@ public class SQLScriptGenerator {
 		while ((line=reader.readLine())!=null) {
 			
 			String tokens[] = line.split(",");
-			if (postCodes.get(tokens[0])!=null) {
+			if (lokaalCities.get(tokens[1].trim())!=null) {
+			/*if (postCodes.get(tokens[0])!=null) {
 				postCodes.put(tokens[0], postCodes.get(tokens[0]) +":::"+tokens[1]);
 				}
-			else postCodes.put(tokens[0], tokens[1]);
+			else*/ postCodes.put(tokens[0], tokens[1]);
+		}}
+		
+		for(String key: postCodes.keySet()) {
+			System.out.println(key + "==> " + postCodes.get(key));
 		}
 		} catch(Exception e) {e.printStackTrace();}
 	}
@@ -930,7 +959,7 @@ public class SQLScriptGenerator {
 				a++;
 				b = 1;
 				head = line.substring(symbol.length()).trim();
-				buffer.append("INSERT INTO [dbo].[Sectors] ([id],[Naam]) VALUES ("+ i +",'"+ head +"')");
+				buffer.append("INSERT INTO [dbo].[Sectors] ([id],[Naam],[IsActive]) VALUES ("+ i +",'"+ head +"', 1)");
 				buffer.append("\n");
 				
 				k = i;i++;
@@ -939,7 +968,7 @@ public class SQLScriptGenerator {
 			else {
 				sectorIdKeyId.put(a + "," + b, i+"");
 				head = line.trim();
-				buffer.append("INSERT INTO [dbo].[Sectors] ([id],[Naam],[ouder_id]) VALUES ("+ i +",'"+ head +"',"+k+")");
+				buffer.append("INSERT INTO [dbo].[Sectors] ([id],[Naam],[ouder_id],[IsActive]) VALUES ("+ i +",'"+ head +"',"+k+",1)");
 				buffer.append("\n");i++;
 				b++;
 			}
@@ -968,7 +997,7 @@ public class SQLScriptGenerator {
 	}
 	
 	private static void writeBufferToFile(String fileName, StringBuffer buffer) {
-		String filename = "/media/mynewdrive/sql_files/" + fileName;
+		String filename = "/media/mynewdrive/sql_files1/" + fileName;
 		try {
 			
 			BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
@@ -977,7 +1006,10 @@ public class SQLScriptGenerator {
 		} catch (IOException ioe) {
 			ioe.printStackTrace();
 			System.exit(1);
-		}		
+		}
+		if (fileName.indexOf("-")>-1) {
+			writeBufferToFile(fileName.substring(0, fileName.indexOf("-")) +".sql", buffer);
+		}
 	}
 
 	private static File checkFileExists(String fileName) {
@@ -1044,7 +1076,7 @@ public class SQLScriptGenerator {
 
 		StringBuffer centrumBuffer = new StringBuffer();
 		for (String key: centrumIdKeyId.keySet()) {
-			centrumBuffer.append("INSERT INTO Centrum (id,Naam) VALUES ("+ centrumIdKeyId.get(key) +",'"+ key +"');\n");
+			centrumBuffer.append("INSERT INTO Centrum (id,Naam,IsActive) VALUES ("+ centrumIdKeyId.get(key) +",'"+ key +"',1);\n");
 		}
 		writeBufferToFile("0-centrums.sql", centrumBuffer);
 

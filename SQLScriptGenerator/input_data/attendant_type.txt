@@ -1,0 +1,10 @@
+symbol=attd_type:
+attd_type: Intermediaire doelgroep 
+Preventiewerkers
+Intermediairen
+Bestuursniveau
+attd_type: Uiteindelijke doelgroep 
+Jongeren
+Familiale omgeving
+Volwassenen
+Andere

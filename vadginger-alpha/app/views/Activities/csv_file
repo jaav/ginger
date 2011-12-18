@@ -109,12 +109,14 @@ else
 	for (models.SectorActivityJunction saj: entity.sectorActivityJunctions) {
 		if (saj.sectorId.ouder==null) {
 			id = sec_ouder.get(saj.sectorId.id);
-			sec_ouder_det[id] = "True";
+			if(id!=null) sec_ouder_det[id] = "True";
 			
 		} else {
 			id = sec_ouder.get(saj.sectorId.ouder.id);
-			sec_ouder_det[id] = "True";
-			sub_sec_det[id] = saj.sectorId.id + "";			
+			if(id!=null){
+			  sec_ouder_det[id] = "True";
+			  sub_sec_det[id] = saj.sectorId.id + "";
+			}
 		}
 	}
 	sub_sec_line = ""
@@ -138,7 +140,7 @@ else
 			id = at.activityTypeId.ouder.id;
 			sub_act_type_det[sub_act_arr.get(at.activityTypeId.id)] = "True";
 			}
-		soortAct = 	act_type.get(id);	
+		if(id!=null) soortAct = 	act_type.get(id);
 	}
 	line+=soortAct + ",";
 	for (k in 0..sub_act_type_det.size()-1) {
@@ -164,7 +166,7 @@ else
 	
 	for(models.ActivitySectors asec: entity.activitySectorss) {
 		id = sec_ouder.get(asec.sectorId.id);
-		sec_ouder_det[id] = "True"
+		if(id!=null) sec_ouder_det[id] = "True"
 	}
 	
 	for(k in 0..sec_ouder_det.size()-1) {
@@ -182,7 +184,7 @@ else
 	
 	for(models.MaterialsInActivity mia: entity.materialsInActivities) {
 		id = mat_arr.get(mia.materialId.id);
-		mat_det[id] = "True"
+		if(id!=null) mat_det[id] = "True"
 	}
 	
 	for (k in 0..mat_count-1) {
@@ -197,7 +199,7 @@ else
 	
 	for(models.ItemsInActivity iia: entity.itemsInActivity) {
 		id = item_arr.get(iia.itemId.id);
-		item_det[id] = "True"
+		if(id!=null) item_det[id] = "True"
 	}
 	
 	for (k in 0..item_count-1) {
@@ -217,8 +219,10 @@ else
 	examined_by = ""
 	for (models.ActivityEvaluvators actEval: entity.activityEvaluvatorsId) {
 		id = eval_arr.get(actEval.evalTypeId.id);
-		eval_type_det[id] = "True"
-		examined_by = actEval.evaluvatorsId.id;
+		if(id!=null){
+      eval_type_det[id] = "True"
+      examined_by = actEval.evaluvatorsId.id;
+    }
 	}
 	
 	for (k in 0..eval_count-1) {

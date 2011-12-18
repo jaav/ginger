@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.1.41, for debian-linux-gnu (i486)
 --
--- Host: localhost    Database: test16
+-- Host: localhost    Database: ginger_P2
 -- ------------------------------------------------------
 -- Server version	5.1.41-3ubuntu12.10
 
@@ -26,18 +26,21 @@ CREATE TABLE `Activity` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `Activity_date` datetime DEFAULT NULL,
   `beschrijving` longtext,
-  `Centrum` varchar(10) DEFAULT NULL,
+  `DefForm` bit(1) DEFAULT NULL,
   `Duur` int(11) DEFAULT NULL,
   `Evaluvated` bit(1) DEFAULT NULL,
   `InternalActivity` bit(1) DEFAULT NULL,
+  `IsActive` int(11) NOT NULL,
   `Reported` bit(1) DEFAULT NULL,
   `TotalParticipants` int(11) DEFAULT NULL,
+  `centrumId_id` bigint(20) DEFAULT NULL,
   `locationId_id` bigint(20) DEFAULT NULL,
   `organizationId_id` bigint(20) DEFAULT NULL,
   `userId_id` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FKA126572F21F92CE4` (`locationId_id`),
   KEY `FKA126572FFCC5691C` (`userId_id`),
+  KEY `FKA126572F76A64812` (`centrumId_id`),
   KEY `FKA126572F9A54B639` (`organizationId_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=16888 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -105,6 +108,7 @@ DROP TABLE IF EXISTS `ActivityType`;
 CREATE TABLE `ActivityType` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `Beschrijving` longtext,
+  `IsActive` int(11) NOT NULL,
   `Naam` varchar(100) DEFAULT NULL,
   `ouder_id` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -147,6 +151,39 @@ CREATE TABLE `AttendantType` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Table structure for table `Centrum`
+--
+
+DROP TABLE IF EXISTS `Centrum`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `Centrum` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `Beschrijving` longtext,
+  `IsActive` int(11) NOT NULL,
+  `Naam` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=46 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `CityClusterJunction`
+--
+
+DROP TABLE IF EXISTS `CityClusterJunction`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `CityClusterJunction` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `cityId_id` bigint(20) DEFAULT NULL,
+  `clusterId_id` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FKB7C7866350635DBF` (`clusterId_id`),
+  KEY `FKB7C786634B1FD4EE` (`cityId_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=526 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Table structure for table `Evaluvation_Type`
 --
 
@@ -169,6 +206,7 @@ DROP TABLE IF EXISTS `Evaluvators`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `Evaluvators` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `IsActive` int(11) NOT NULL,
   `Naam` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
@@ -184,6 +222,7 @@ DROP TABLE IF EXISTS `Items`;
 CREATE TABLE `Items` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `Beschrijving` longtext,
+  `IsActive` int(11) NOT NULL,
   `Naam` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
@@ -216,12 +255,15 @@ DROP TABLE IF EXISTS `Locations`;
 CREATE TABLE `Locations` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `Beschrijving` longtext,
-  `IsCluster` bit(1) DEFAULT NULL,
+  `IsActive` int(11) NOT NULL,
+  `IsCluster` int(11) NOT NULL,
   `Naam` varchar(100) DEFAULT NULL,
+  `centrumId_id` bigint(20) DEFAULT NULL,
   `ouder_id` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `FK3016773E74CE6A29` (`ouder_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3736 DEFAULT CHARSET=latin1;
+  KEY `FK3016773E74CE6A29` (`ouder_id`),
+  KEY `FK3016773E76A64812` (`centrumId_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=1824 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -234,6 +276,7 @@ DROP TABLE IF EXISTS `Materials`;
 CREATE TABLE `Materials` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `Beschrijving` longtext,
+  `IsActive` int(11) NOT NULL,
   `Naam` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
@@ -257,23 +300,6 @@ CREATE TABLE `MaterialsInActivity` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `OrgUserJunction`
---
-
-DROP TABLE IF EXISTS `OrgUserJunction`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `OrgUserJunction` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `orgId_id` bigint(20) DEFAULT NULL,
-  `userId_id` bigint(20) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `FK140B0123FCC5691C` (`userId_id`),
-  KEY `FK140B01231B725B28` (`orgId_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
 -- Table structure for table `Organisaties`
 --
 
@@ -283,17 +309,19 @@ DROP TABLE IF EXISTS `Organisaties`;
 CREATE TABLE `Organisaties` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `Adres` varchar(50) DEFAULT NULL,
-  `Centrum` varchar(3) DEFAULT NULL,
   `Gemeente` varchar(50) DEFAULT NULL,
+  `IsActive` int(11) NOT NULL,
   `Land` varchar(20) DEFAULT NULL,
   `Naam` varchar(50) DEFAULT NULL,
   `OrganisatieNetwerk` varchar(3) DEFAULT NULL,
   `Postcode` varchar(10) DEFAULT NULL,
+  `centrumId_id` bigint(20) DEFAULT NULL,
   `ouder_id` bigint(20) DEFAULT NULL,
   `userId_id` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FK441E53C9B4D4823C` (`ouder_id`),
-  KEY `FK441E53C9FCC5691C` (`userId_id`)
+  KEY `FK441E53C9FCC5691C` (`userId_id`),
+  KEY `FK441E53C976A64812` (`centrumId_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=3763 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -324,6 +352,7 @@ DROP TABLE IF EXISTS `Sectors`;
 CREATE TABLE `Sectors` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `beschrijving` longtext,
+  `IsActive` int(11) NOT NULL,
   `Naam` varchar(200) DEFAULT NULL,
   `ouder_id` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -341,6 +370,7 @@ DROP TABLE IF EXISTS `TargetType`;
 CREATE TABLE `TargetType` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `Beschrijving` longtext,
+  `IsActive` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -376,12 +406,15 @@ CREATE TABLE `VadGingerUser` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `emailAddress` varchar(255) DEFAULT NULL,
   `firstName` varchar(255) DEFAULT NULL,
+  `IsActive` int(11) NOT NULL,
   `lastName` varchar(255) DEFAULT NULL,
   `loginCount` int(11) NOT NULL,
   `passwordHash` varchar(255) DEFAULT NULL,
   `role` int(11) DEFAULT NULL,
   `userID` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `centrumId_id` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK6244FFCC76A64812` (`centrumId_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=152 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -394,4 +427,4 @@ CREATE TABLE `VadGingerUser` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2011-11-13 12:16:39
+-- Dump completed on 2011-12-16  1:38:39

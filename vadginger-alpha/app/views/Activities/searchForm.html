@@ -27,7 +27,7 @@
   <div class="label">Organisatie</div>
   <div class="field">
         <select name="org_id" id="organizationSelect">
-          <option value="">(Niet van toepassing)</option>
+          <option value="">Selecteer een organisatie</option>
           #{if userRole.compareTo(models.RoleType.ORG_ADMIN) <=0}
              
         %{ models.Organisaties.find("ouder is null and isActive=1 and centrumId="+centrumId.id).fetch().sort{ it.toString() }.each() { }%
@@ -138,7 +138,7 @@
          <select name="location" id="locationSelect">
          
               
-                      <option value="">(Niet van toepassing)</option>
+                      <option value="">Selecteer een locatie</option>
               
         %{ models.Locations.find("ouder is null and isCluster=0 and isActive=1").fetch().sort{ it.id }.each() { }%
           <option value="${it?.id}" >${it?.naam}</option>
@@ -168,7 +168,7 @@
   <div class="label">Soort activiteit</div>
   <div class="field">
         <select name="activity_type" id="activity_type_select">
-                      <option value="">(Niet van toepassing)</option>
+                      <option value="">Selecteer de soort activiteit</option>
       %{ models.ActivityType.find("ouder is null and isActive=1").fetch().sort{ it.toString() }.each() { }%
       <option value="${it?.id}">${it.naam}</option>
       %{ } }%

@@ -1,0 +1,20 @@
+symbol=Act:
+Act: Overleg
+Voorwaardenscheppend
+Uitwisseling en afstemming
+Concept- en materiaalontwikkeling
+Evaluatie
+Andere 
+Act: Consult / advies
+Act: Coaching
+Beleidsontwikkeling lokaal
+Beleidsontwikkeling in een organisatie 
+Act: Vorming
+nformatieoverdracht (lesgeven, voordracht geven,…)
+Inspelen op attitude, via interactieve informatieoverdracht (geen training)
+Inoefenen van vaardigheden (training, train de trainer,…)
+Andere 
+Act: Vroeginterventie
+Aan groep
+Aan persoon (incl. verwijzer of persoon uit de omgeving)
+Act: Andere actie
