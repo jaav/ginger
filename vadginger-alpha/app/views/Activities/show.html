@@ -101,25 +101,8 @@
 		<span class="value">
 		<ul>
 		<li>
-     		#{list items:sajs, as:'ia'}
-     		#{if ia.sectorId.ouder!=null} 
-     		<span class="value">${ia.sectorId.ouder} </span>
-     		
-     		<ul><li>
-			<span class="value">${ia.sectorId} </span>
-			</li></ul>
-			#{/if}
-			#{else}
-				
-			<span class="value">${ia.sectorId} </span>
-			
-			#{/else}
-			#{/list}
-		</li>
-		Targets:
-		<li>
      		#{list items:asc, as:'ia'}
-     		#{if ia.sectorId.ouder!=null} 
+     		#{if ia.sectorId.ouder!=null}
      		<span class="value">${ia.sectorId.ouder} </span>
      		#{/if}
      		<ul><li>

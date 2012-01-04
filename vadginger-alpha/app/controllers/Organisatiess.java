@@ -73,6 +73,10 @@ public class Organisatiess extends GingerController {
 	}
 
 	public static void create(Organisaties entity) {
+    doCreate(entity);
+	}
+
+  private static void doCreate(Organisaties entity) {
 		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
     entity.centrumId = user.centrumId;
     entity.userId = user;
@@ -80,7 +84,7 @@ public class Organisatiess extends GingerController {
     //ModelPaginator mainorgs = new ModelPaginator(Organisaties.class, );
     renderArgs.put("mainorgs", mainorgs);
     setAccordionTab(3);
-		render(entity);
+		render("@create", entity);
 	}
 
 	public static void show(java.lang.Long id) {
@@ -111,6 +115,10 @@ public class Organisatiess extends GingerController {
 			flash.error(Messages.get("scaffold.validation"));
 			render("@create", entity);
 		}
+    if(!isUnique(entity, user.centrumId.id)) {
+			flash.error("Er bestaat reeds een organisatie waarvan de naam \""+entity.naam+"\" is. Gelieve een andere naam te kiezen.");
+			doCreate(entity);
+		}
     entity.isActive = true;
     entity.centrumId = user.centrumId;
     entity.save();
@@ -137,6 +145,7 @@ public class Organisatiess extends GingerController {
     String q = "ouder is " + id +" and isActive=1";
     if(StringUtils.isNotBlank(centrumId))
       q = q + " and centrumId = "+centrumId;
+    q += " order by naam";
 		List<models.Organisaties> orgs = models.Organisaties.find(q).fetch();
     if(orgs.isEmpty()) renderText("");
     else{
@@ -155,5 +164,9 @@ public class Organisatiess extends GingerController {
 	
 		renderText(id);
 	}
+
+  private static boolean isUnique(Organisaties org, Long centrumId){
+    return Organisaties.find("centrumId = " + centrumId + "and UPPER(naam) = '" + org.naam.toUpperCase() + "'" + " and isActive=1").fetch().isEmpty();
+  }
 
 }
