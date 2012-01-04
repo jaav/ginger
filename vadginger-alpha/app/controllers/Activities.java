@@ -23,27 +23,18 @@ import play.mvc.With;
 
 @With(Secure.class)
 public class Activities extends GingerController {
-	public static void index() {
+	public static void index(String orderby, String orderhow) {
 		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
+    String orderquery = StringUtils.isNotBlank(orderby)&&StringUtils.isNotBlank(orderhow) ? " order by "+orderby+" "+orderhow : "";
+    if(params.getAll("filter")!=null) orderSearch(orderquery);
 		ModelPaginator entities = null;
 		if (user.role.compareTo(RoleType.ADMIN)>= 0) {
-		entities = new ModelPaginator(Activity.class, "isActive=1");
-		
+		  entities = new ModelPaginator(Activity.class, "isActive=1"+orderquery);
 		}
-		else if (user.role.equals(RoleType.ORG_ADMIN)) {/*
-			List<OrgUserJunction> orgUserJuncs = OrgUserJunction.find("userId is " + user.id).fetch();
-			StringBuffer query = new StringBuffer("organizationId in (");
-			Iterator<OrgUserJunction> i = orgUserJuncs.iterator();
-			while(i.hasNext())
-			{
-				query.append("" + i.next().orgId.id);
-				if (i.hasNext())
-					query.append(",");
-			}
-			query.append(")");*/
-			entities = new ModelPaginator(Activity.class, "centrumId is " + user.centrumId.id +" and isActive=1");
+		else if (user.role.equals(RoleType.ORG_ADMIN)) {
+			entities = new ModelPaginator(Activity.class, "centrumId is " + user.centrumId.id +" and isActive=1"+orderquery);
 		} else {
-			entities = new ModelPaginator(Activity.class, "userId is " + user.id + " and isActive=1");
+			entities = new ModelPaginator(Activity.class, "userId is " + user.id + " and isActive=1"+orderquery);
 		}
 		entities.setPageSize(20);
 		setAccordionTab(2);
@@ -190,7 +181,7 @@ public class Activities extends GingerController {
 		entity.isActive = false;
 		entity.save();
 		//entity.delete();
-		index();
+		index(null, null);
 	}
 
 	public static void save(@Valid Activity entity) {
@@ -214,7 +205,7 @@ public class Activities extends GingerController {
 		storeSectors(entity);
 		storeMaterials(entity);
 		flash.success(Messages.get("scaffold.created", "Activity"));
-		index();
+		index(null, null);
 	}
 
 	private static void storeLocation(Activity entity) {
@@ -408,9 +399,9 @@ public class Activities extends GingerController {
 		storeSectors(entity);
 		storeMaterials(entity);
 		flash.success(Messages.get("scaffold.created", "Activity"));
-		index();
+		index(null, null);
 		flash.success(Messages.get("scaffold.updated", "Activity"));
-		index();
+		index(null, null);
 	}
 	
    private static void deletedAllRelationships(Activity entity) {
@@ -489,7 +480,7 @@ public static void searchForm() {
    }
 	   else {
        String quer = joinClause.toString() + " where " +where.toString();
-       //System.out.println("=========================> query=" + quer);
+       System.out.println("=========================> query=" + quer);
        List<models.Activity> entities = models.Activity.find(quer).fetch();
        if (request.params.get("sector_999")!=null) {
     	   for (Iterator<Activity> i = entities.iterator(); i.hasNext();) {
@@ -513,6 +504,15 @@ public static void searchForm() {
        renderTemplate("Activities/index.html", entities);
      }
    }
+
+  private static void orderSearch(String orderQuery){
+		   String query = session.get("query")+orderQuery;
+       List<models.Activity> entities = models.Activity.find(query).fetch();
+       setAccordionTab(2);
+       renderArgs.put("allowExport", true);
+       renderArgs.put("count", entities.size());
+       renderTemplate("Activities/index.html", entities);
+  }
 
 private static void getActivityByDuration(ArrayList<String> whereClause) {
 	String durr = request.params.get("entity.duur");
@@ -677,10 +677,12 @@ private static void getActivityByMaterialUsed(ArrayList<String> whereClause, Str
 private static void getActivityByEvaluvation(ArrayList<String> whereClause, StringBuffer joinCaluse) {
 	String evaluvated = request.params.get("entity.evaluvated");
 	//System.out.println(":: evaluvated " + evaluvated);
-	if (!StringUtils.isBlank(evaluvated)&&!evaluvated.trim().toLowerCase().equals("false")) {
+	if (!StringUtils.isBlank(evaluvated)&&evaluvated.trim().toLowerCase().equals("yes")) {
 		whereClause.add("act.evaluvated=1");
 		getActivityByEvaluvators(whereClause, joinCaluse);
 	}
+	else if (!StringUtils.isBlank(evaluvated)&&evaluvated.trim().toLowerCase().equals("no"))
+		whereClause.add("act.evaluvated=0");
 }
 
 private static void getActivityByEvaluvators(ArrayList<String> whereClause,
@@ -711,8 +713,10 @@ private static void getActivityByEvaluvators(ArrayList<String> whereClause,
 		 }
 	 }
 	String isReported = request.params.get("entity.reported");
-	if (!StringUtils.isBlank(isReported) && !isReported.toLowerCase().equals("false")) 
+	if (!StringUtils.isBlank(isReported) && isReported.toLowerCase().equals("yes"))
 		whereClause.add("act.reported=1");
+	if (!StringUtils.isBlank(isReported) && isReported.toLowerCase().equals("no"))
+		whereClause.add("act.reported=0");
 }
 
 private static String getParam(String paramName) {

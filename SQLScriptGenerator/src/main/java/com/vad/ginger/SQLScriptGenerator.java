@@ -37,6 +37,7 @@ public class SQLScriptGenerator {
 	
 	public static Set<String> centrums = new HashSet<String>();
 	public static StringBuffer sAJBuffer = new StringBuffer();
+	public static int emptyLoc = 0;
 	
 	
 	public static void main(String[] args) throws Exception {
@@ -66,6 +67,7 @@ public class SQLScriptGenerator {
 		if (!isEmptyOrNull(PropsUtils.getActivityFile()))
 			generateActivityInsertStatements();
 
+		System.out.println(":: emptyLoc " + emptyLoc);
 	}
 
 	private static void generateUserRolesInsertStatements() {
@@ -234,8 +236,8 @@ public class SQLScriptGenerator {
 					orgId = organizationIdKeyId.get(removeQuote(tokens[15]) + "," + removeQuote(tokens[16]));
 					//System.out.println(":: 2 OrgId = " + orgId );
 				}
-				if (orgId == null)
-					System.out.println("++>" + tokens[15].replace("\"", "") + "," + tokens[16].replace("\"", "") );
+				//if (orgId == null)
+					//System.out.println("++>" + tokens[15].replace("\"", "") + "," + tokens[16].replace("\"", "") );
 				buffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[Activity] ([id],[Duur],[Evaluvated],[InternalActivity],[Reported],[TotalParticipants],[organizationId_id],[userId_id], [beschrijving], [Activity_date], [centrumId_id], [IsActive]) VALUES " +
 						"("+ tokens[0].replace("\"", "") + ","+tokens[3].replace("\"", "") + ","+tokens[69].replace("\"", "")+ ","+((tokens[87]=="TRUE")?1:0) + ","+
 						isReported + ","+tokens[54].replace("\"", "")+ ","+ orgId + ",'"+userId+ "','"+removeQuote(tokens[2])+"',"+tokens[1]+","+centrumIdKeyId.get(removeQuote(tokens[4]).toUpperCase())+", 1)");
@@ -300,9 +302,12 @@ public class SQLScriptGenerator {
 
 	private static void loadLocationsBuffer(StringBuffer locationBuffer,
 			String[] tokens) {
+		if (removeQuote(tokens[82]).trim().equals("") || removeQuote(tokens[82]).trim().equals("0"))
+			emptyLoc++;
 		if(removeQuote(tokens[82]).equals("1")) {
 			String locationId = "";
 			String postCodeVal = removeQuote(tokens[85]).trim();
+			postCodeVal = postCodeVal.substring(0, postCodeVal.length()-1) + "0";
 			int postCodeInt = 0;
 			try {
 				postCodeInt = Integer.parseInt(postCodeVal);
@@ -310,7 +315,8 @@ public class SQLScriptGenerator {
 				postCodeInt = 5000;
 			}
 			if (!removeQuote(tokens[85]).trim().equals("0") && postCodes.containsKey(postCodeVal)) {
-				String postCodeId = postCodes.get(removeQuote(tokens[85]).trim()).toLowerCase();
+				//System.out.println( "ppp : "+ postCodeVal);
+				String postCodeId = postCodes.get(postCodeVal).toLowerCase();
 				if (postCodeId.indexOf(":::")>-1)
 				{
 					//System.out.println(postCodeId);
@@ -329,36 +335,40 @@ public class SQLScriptGenerator {
 					
 				}
 				else  {
-					locationId = locationIdKeyId.get(postCodeId);
+					int iddd = 0;
+					iddd = lokaalCities.get(postCodes.get(postCodeVal));
+					if (iddd==0) {
+						System.out.println(":+: POSTCODE " +removeQuote(tokens[85]).trim());
+					}
+					locationId = iddd +"";
 					if (locationId != null && locationId.indexOf(",")>0)
 						locationId = locationIdKeyId.get(locationId);
 					
 					}
-				if (locationId == null)
+				if (locationId == null || locationId.equals("")) {
 					System.out.println(":: POSTCODE " +removeQuote(tokens[85]).trim());
+				}
 				locationBuffer.append("UPDATE ["+ PropsUtils.getDbName()+"].[dbo].[Activity] SET [locationId_id] = "+locationId+" WHERE [id] = "+removeQuote(tokens[0])+"\n");
 			}			
 		}
 		if (removeQuote(tokens[82]).equals("2")) {
 			String locationId = clusterIdKeyId.get(removeQuote(tokens[86]));
 			if (locationId == null)
-				System.out.println(":: CLUSTERId " +removeQuote(tokens[86]).trim());
+				System.out.println(":*: CLUSTERId " +removeQuote(tokens[86]).trim());
 			locationBuffer.append("UPDATE ["+ PropsUtils.getDbName()+"].[dbo].[Activity] SET [locationId_id] = "+locationId+" WHERE [id] = "+removeQuote(tokens[0])+"\n");
 		}
 		if (removeQuote(tokens[82]).equals("3")) {
-			//String locationId = (2888 + Integer.parseInt(removeQuote(tokens[83]))) +"" ;
 			String locationId = (1010 + Integer.parseInt(removeQuote(tokens[83]))) +"" ;
 			locationBuffer.append("UPDATE ["+ PropsUtils.getDbName()+"].[dbo].[Activity] SET [locationId_id] = "+locationId+" WHERE [id] = "+removeQuote(tokens[0])+"\n");
 		}
 		if(removeQuote(tokens[82]).equals("4")) {
-			//String locationId = (2896 + Integer.parseInt(removeQuote(tokens[84]))) +"" ;
 			String locationId = (1018 + Integer.parseInt(removeQuote(tokens[84]))) +"" ;
 			locationBuffer.append("UPDATE ["+ PropsUtils.getDbName()+"].[dbo].[Activity] SET [locationId_id] = "+locationId+" WHERE [id] = "+removeQuote(tokens[0])+"\n");
 		}
-		if (removeQuote(tokens[83]).equals("5"))
-			locationBuffer.append("UPDATE ["+ PropsUtils.getDbName()+"].[dbo].[Activity] SET [locationId_id] = "+384+" WHERE [id] = "+removeQuote(tokens[0])+"\n");
-		if (removeQuote(tokens[83]).equals("6"))
-			locationBuffer.append("UPDATE ["+ PropsUtils.getDbName()+"].[dbo].[Activity] SET [locationId_id] = "+385+" WHERE [id] = "+removeQuote(tokens[0])+"\n");
+		if (removeQuote(tokens[82]).equals("5"))
+			locationBuffer.append("UPDATE ["+ PropsUtils.getDbName()+"].[dbo].[Activity] SET [locationId_id] = "+1025+" WHERE [id] = "+removeQuote(tokens[0])+"\n");
+		if (removeQuote(tokens[82]).equals("6"))
+			locationBuffer.append("UPDATE ["+ PropsUtils.getDbName()+"].[dbo].[Activity] SET [locationId_id] = "+1026+" WHERE [id] = "+removeQuote(tokens[0])+"\n");
 	}
 
 	private static void loadEvalBuffer(StringBuffer evalBuffer, String[] tokens) {
@@ -842,6 +852,9 @@ public class SQLScriptGenerator {
 				k = i;i++;
 			}
 			else {
+				if (head.toLowerCase().trim().indexOf("mald")>-1) {
+					System.out.println(">>> HEAD " + head);
+				}
 				locationIdKeyId.put(a+","+b, i+"");
 				locationIdKeyId.put(head.toLowerCase(), a+","+b);
 				head = line.trim().replace("\'", "\'\'");
@@ -931,9 +944,9 @@ public class SQLScriptGenerator {
 			else*/ postCodes.put(tokens[0], tokens[1]);
 		}}
 		
-		for(String key: postCodes.keySet()) {
+		/*for(String key: postCodes.keySet()) {
 			System.out.println(key + "==> " + postCodes.get(key));
-		}
+		}*/
 		} catch(Exception e) {e.printStackTrace();}
 	}
 
@@ -991,13 +1004,13 @@ public class SQLScriptGenerator {
 		Enumeration<String> oud =sectorOuderKeyId.keys();
 		while(oud.hasMoreElements()) {
 			String key = oud.nextElement();
-			System.out.println(key + "+++>" + sectorOuderKeyId.get(key));
+			//System.out.println(key + "+++>" + sectorOuderKeyId.get(key));
 		}
 		
 	}
 	
 	private static void writeBufferToFile(String fileName, StringBuffer buffer) {
-		String filename = "/media/mynewdrive/sql_files1/" + fileName;
+		String filename = "/media/mynewdrive/sql_files2/" + fileName;
 		try {
 			
 			BufferedWriter writer = new BufferedWriter(new FileWriter(filename));

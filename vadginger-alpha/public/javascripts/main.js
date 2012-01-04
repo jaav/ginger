@@ -9,6 +9,11 @@ jQuery(document).ready(function(){
     ev.preventDefault();
     g.doSubmit(this);
   });
+  /*$('.sorter').click(function(){
+    var url = $(this).attr('href');
+    if(url.indexOf('asc')>0) $(this).attr('href', url.substr(0, url.length-3)+'desc');
+    else if(url.indexOf('desc')>0) $(this).attr('href', url.substr(0, url.length-4)+'asc');
+  })*/
 });
 
 var g = {};

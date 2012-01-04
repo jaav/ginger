@@ -256,13 +256,10 @@
 <div class="row">
   <div class="label">Is de activiteit geëvalueerd?</div>
   <div class="field">
+      <input type="radio" name="entity.evaluvated" id="evaled_t" value="yes"/> Ja&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="entity.evaluvated" class="evaled_f" value="no"/> Neen&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="entity.evaluvated" class="evaled_f" value="both" checked /> Om het even
 
-    Ja <input type="radio" name="entity.evaluvated" id="evaled_t" value="true"
-    ${entity?.evaluvated ? 'checked':''}
-    />
-    Neen <input type="radio" name="entity.evaluvated" id="evaled_f" value="false"
-    ${!entity?.evaluvated ? 'checked':''}
-    />
 
   </div>
   <span class="error">${errors.forKey('entity.evaluvated')}</span>
@@ -279,15 +276,13 @@
       $("#evaluvated").show();
     }
   });
-  $("#evaled_f").click(function() {
+  $(".evaled_f").click(function() {
     var $input = $(this);
     if ($input.is(':checked')) {
       $("#evaluvated").hide();
     }
   });
   (function(){
-    var test = $("#evaled_t:checked").length;
-    test = $("#evaluvated");
     if ($("#evaled:checked_t").length>0) {
       $("#evaluvated").slideDown();
     }

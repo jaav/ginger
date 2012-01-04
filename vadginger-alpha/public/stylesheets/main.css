@@ -123,8 +123,12 @@ caption {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	text-align: left;
-	padding: 6px 6px 6px 12px;
+	padding: 6px 4px;
 	background-color: #d1e8ff;
+}
+
+#mytable th a{
+	color: #2E6E9E;
 }
 
 #mytable th.nobg {
@@ -138,7 +142,7 @@ caption {
 	border-right: 1px solid #A6C9E2;
 	border-bottom: 1px solid #A6C9E2;
 	background: #fff;
-	padding: 6px 6px 6px 12px;
+	padding: 6px 4px;
 }
 
 
@@ -194,6 +198,9 @@ text-align: left;
   z-index: 999;
 }
 
+.copier{
+  background-position: -68px 0px;
+}
 .adder{
   background-position: -17px 0px;
 }
@@ -201,7 +208,7 @@ text-align: left;
   background-position: -34px 0px;
 }
 .deleter{
-  background-position: -50px 0px;
+  background-position: -51px 0px;
 }
 .viewer{
   background-position: 0px 0px;
@@ -247,6 +254,11 @@ div.entity .bigSearch{
 }
 .error{
   color: #FF3333;
+}
+.fError{
+  color: #FF3333;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 
