@@ -157,7 +157,7 @@ public class Organisatiess extends GingerController {
         htmlData.append(" <option value=\""+org.id+"\" >"+org.naam+"</option>\n");
 
       }
-      htmlData.append("</select></div></div>");
+      htmlData.append("</select></div>");
 
       renderText(htmlData.toString());
     }
