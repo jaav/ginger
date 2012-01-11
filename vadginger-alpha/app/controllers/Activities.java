@@ -25,7 +25,7 @@ import play.mvc.With;
 public class Activities extends GingerController {
 	public static void index(String orderby, String orderhow) {
 		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
-    String orderquery = StringUtils.isNotBlank(orderby)&&StringUtils.isNotBlank(orderhow) ? " order by "+orderby+" "+orderhow : "";
+    String orderquery = StringUtils.isNotBlank(orderby)&&StringUtils.isNotBlank(orderhow) ? " order by "+orderby+" "+orderhow : " order by id desc";
     if(params.getAll("filter")!=null) orderSearch(orderquery);
 		ModelPaginator entities = null;
 		if (user.role.compareTo(RoleType.ADMIN)>= 0) {
@@ -478,9 +478,9 @@ public static void searchForm() {
 	   if (where.toString().trim().equals("")){
 		   searchForm();
 		   session.put("query", "");
-   }
+     }
 	   else {
-       String quer = joinClause.toString() + " where " +where.toString();
+       String quer = joinClause.toString() + " where " +where.toString()+ " order by id desc";
        System.out.println("=========================> query=" + quer);
        List<models.Activity> entities = models.Activity.find(quer).fetch();
        if (request.params.get("sector_999")!=null) {
