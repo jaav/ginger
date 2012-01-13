@@ -5,6 +5,9 @@ import java.util.List;
 import antlr.StringUtils;
 import models.Centrums;
 import models.VadGingerUser;
+import org.apache.commons.mail.EmailException;
+import org.apache.commons.mail.SimpleEmail;
+import play.libs.Mail;
 import play.modules.paginate.ModelPaginator;
 import play.mvc.Controller;
 import play.i18n.Messages;
@@ -74,8 +77,8 @@ public class VadGingerUsers extends GingerController {
 	
 	public static void changePassword() {
 		VadGingerUser entity = VadGingerUser.findById(Long.parseLong(session.get("userId")));
-		if (entity.passwordHash.equals(play.libs.Codec.encodeBASE64(Security.md5((request.params.get("oud_password")))))) {
-			entity.passwordHash=play.libs.Codec.encodeBASE64(Security.md5(request.params.get("c_password")));
+		if (entity.passwordHash.equals((request.params.get("oud_password")))) {
+			entity.passwordHash=request.params.get("c_password");
 			entity.isActive = true;
 			entity.save();
 		} else {
@@ -111,7 +114,7 @@ public class VadGingerUsers extends GingerController {
 		entity.centrumId = cen;
 		String pass = request.params.get("c_password");
 		if(pass!=null&&pass.length()>=5) {
-			entity.passwordHash = play.libs.Codec.encodeBASE64(Security.md5(pass));
+			entity.passwordHash = pass;
 		} else {
 			//flash.error(Messages.get("scaffold.validation"));
 			render("@create", entity);
@@ -131,7 +134,7 @@ public class VadGingerUsers extends GingerController {
 		System.out.println(":::"+cen.id);
 		entity.centrumId = cen;
 		String pass = request.params.get("c_password");
-		entity.passwordHash = play.libs.Codec.encodeBASE64(Security.md5(pass));
+		entity.passwordHash = pass;
       	entity = entity.merge();
 		
 		entity.save();
@@ -139,4 +142,4 @@ public class VadGingerUsers extends GingerController {
 		index();
 	}
 
-}
+    }

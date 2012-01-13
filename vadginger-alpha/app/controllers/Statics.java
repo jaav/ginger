@@ -1,5 +1,8 @@
 package controllers;
 
+import org.apache.commons.mail.EmailException;
+import org.apache.commons.mail.SimpleEmail;
+import play.libs.Mail;
 import play.mvc.Controller;
 
 /**
@@ -44,6 +47,25 @@ public class Statics extends GingerController {
 	}
 	public static void passforgot() {
     setAccordionTab(0);
+		render();
+	}
+
+	public static void forgotPass() {
+		setAccordionTab(1);
+		render();
+	}
+
+	public static void sendPass() {
+    SimpleEmail email = new SimpleEmail();
+    try {
+      email.setFrom("johan.rosiers@vad.be");
+      email.addTo("jef@virtualsushi.be");
+      email.setSubject("subject");
+      email.setMsg("Message");
+    } catch (EmailException e) {
+      e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+    }
+    Mail.send(email);
 		render();
 	}
 

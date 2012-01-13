@@ -7,36 +7,38 @@ sub_sec_string = "";
 sec_ouder = [:]
 i = 0;
 for(models.Sectors sec: secs) {
-	sec_string += sec.naam + ","
-	ud_sector_string += "UD" +sec.naam + ","
+	sec_string += sec.naam + ";"
+	ud_sector_string += "UD" +sec.naam + ";"
 	sec_ouder.put(sec.id,i); i++;
-	sub_sec_string += sec.naam.substring(0,2).toUpperCase() + "Detail" + ","; 
+	sub_sec_string += sec.naam.substring(0,2).toUpperCase() + "Detail" + ";"; 
 }
 
 List<models.ActivityType> acts = models.ActivityType.find("ouder is null and isActive=1 order by id").fetch();
-act_type_string = "SoortActiviteit" + ",";
+act_type_string = "SoortActiviteit" + ";";
 sub_act_type_string = "";
 act_type = [:]
 a = 1;sub_act_count = 0;
 sub_act_arr = [:]
 for(models.ActivityType act: acts) {
-	act_type.put(act.id, a);
+	act_type.put(act.id, act.naam);
 	List<models.ActivityType> sub_acts = models.ActivityType.find("ouder is " + act.id + " and isActive=1").fetch();
 	for (models.ActivityType sub_act: sub_acts) {
-		sub_act_type_string += act.naam.substring(0,2).toUpperCase() + sub_act.naam.replaceAll(",",":") + ",";
+		sub_act_type_string += act.naam.substring(0,2).toUpperCase() + sub_act.naam.replaceAll(";",":") + ";";
 		sub_act_arr.put(sub_act.id,sub_act_count);sub_act_count++;
 	}
 	a++;
 }
 
-target_type_string = "Doelgroep" + ",";
+target_type_string = "Doelgroep" + ";";
+target_type = [:]
 target_type_arr = [:]
 tgt_count = 0;
 List<models.TargetType> tgts = models.TargetType.find("isActive=1").fetch();
 for(models.TargetType tgt: tgts) {
+	target_type.put(tgt.id, tgt.beschrijving);
 	List<models.AttendantType> atTypes = models.AttendantType.find("targetTypeId="+tgt.id).fetch();
 	for (models.AttendantType atType: atTypes) {
-		target_type_string += atType.naam + ",";
+		target_type_string += atType.naam + ";";
 		target_type_arr.put(atType.id,tgt_count); tgt_count++;
 	}
 }
@@ -46,7 +48,7 @@ mat_count = 0;
 mat_arr = [:]
 List<models.Materials> mats = models.Materials.find("isActive=1").fetch();
 for (models.Materials mat: mats) {
-	mat_string += "Mat" + mat.naam.replaceAll(",",":") + ",";
+	mat_string += "Mat" + mat.naam.replaceAll(";",":") + ";";
 	mat_arr.put(mat.id,mat_count);mat_count++;
 }
 
@@ -55,7 +57,7 @@ item_count = 0;
 item_arr = [:]
 List<models.Items> items = models.Items.find("isActive=1").fetch();
 for (models.Items item: items) {
-	item_string += item.naam.replaceAll(",",":") + ",";
+	item_string += item.naam.replaceAll(";",":") + ";";
 	item_arr.put(item.id,item_count);item_count++;
 }
 
@@ -64,15 +66,21 @@ eval_count = 0;
 eval_arr = [:]
 List<models.EvaluvationType> evalTypes = models.EvaluvationType.all().fetch();
 for (models.EvaluvationType evalType: evalTypes) {
-	eval_type_string += evalType.evalType + ",";
+	eval_type_string += evalType.evalType + ";";
 	eval_arr.put(evalType.id,eval_count);eval_count++;
 }
-eval_type_string += "WieEvaluatie" + ","
+eval_type_string += "WieEvaluatie" + ";"
+
+evaluators = [:]
+List<models.Evaluvators> evaluvators = models.Evaluvators.all().fetch();
+for (models.Evaluvators evaluvator: evaluvators) {
+	evaluators.put(evaluvator.id,evaluvator.naam);eval_count++;
+}
 
 //,GrootteDoelgroep,MiddelengebruikAlgemeen,Alcohol,IllegaleDrugs,Medicatie,Tabak,Gokken,ICTverslavingen,MatAnder,MatZelf,MatVAD,MatVlaamsN,MatLokaalN,MatInternationaalN,MatGeen,Geevalueerd,Mondeling,Schriftelijk,WieEvaluatie,Verslag,School,Werkplek,Vrijetijdsectoren,Residentiele,Gevangenissen,Lokaal,SpecifiekeDoelgroepen,GeenVanDeze,Locatie,Provincie,Gemeenschap,Postcode,Regio,InterneActiviteit
 }%
 
-ActiviteitID,Datum,Omschrijving,Duur,Centrum,Gebruiker,OrgID,SubOrgID,${sec_string}${sub_sec_string}${act_type_string}${sub_act_type_string}${target_type_string}${ud_sector_string}GrootteDoelgroep,${mat_string}${item_string}Geevalueerd,${eval_type_string}
+ActiviteitID;Datum;Omschrijving;Duur;Centrum;Gebruiker;OrgID;SubOrgID;${sec_string}${sub_sec_string}${act_type_string}${sub_act_type_string}${target_type_string}${ud_sector_string}Grootte Doelgroep;${mat_string}${item_string}Geëvalueerd;${eval_type_string}
 
 
 #{list entities, as :'entity'}
@@ -86,51 +94,51 @@ else
  	date = entity.activityDate.format('dd/MM/yyyy', 'nl');
  else
  	date = "";
- line = entity.id + "," + date + ",'" + entity.beschrijving.replaceAll(",","-") + "',"+entity.duur + "," + centrum + "," + entity.userId.userID + ",";
+ line = entity.id + ";" + date + ";" + entity.beschrijving.replaceAll(";","-").replaceAll("\"", "'") + ";"+entity.duur + ";" + centrum + ";" + entity.userId.userID + ";";
 	sub_org_id  = entity.organizationId
 	if (sub_org_id==null) {
 		org_id = ''
 		sub_org_id = ''
 	}
 	else if (sub_org_id.ouder !=null) {
-		org_id = sub_org_id.ouder.id
-		sub_org_id = sub_org_id.id
+		org_id = models.Organisaties.toString(sub_org_id.ouder.id).replaceAll(";","-").replaceAll("\"", "'")
+		sub_org_id = models.Organisaties.toString(sub_org_id.id).replaceAll(";","-").replaceAll("\"", "'")
 	} else {
-		org_id = sub_org_id.id
-		sub_org_id = 1
+		org_id = models.Organisaties.toString(sub_org_id.id).replaceAll(";","-").replaceAll("\"", "'")
+		sub_org_id = ''
 	}
-	line += org_id + "," + sub_org_id + ","; 
+	line += org_id + ";" + sub_org_id + ";"; 
 	sec_ouder_det = []
 	sub_sec_det = []
 	for (k in 0..i-1) {
-		sec_ouder_det.add("False")
+		sec_ouder_det.add("Neen")
 		sub_sec_det.add("0");
 	}
 	for (models.SectorActivityJunction saj: entity.sectorActivityJunctions) {
 		if (saj.sectorId.ouder==null) {
 			id = sec_ouder.get(saj.sectorId.id);
-			if(id!=null) sec_ouder_det[id] = "True";
-			
+			if(id!=null) sec_ouder_det[id] = "Ja";
+
 		} else {
 			id = sec_ouder.get(saj.sectorId.ouder.id);
 			if(id!=null){
-			  sec_ouder_det[id] = "True";
+			  sec_ouder_det[id] = "Ja";
 			  sub_sec_det[id] = saj.sectorId.id + "";
 			}
 		}
 	}
 	sub_sec_line = ""
 	for (k in 0..i-1) {
-		line += sec_ouder_det[k] + ",";
-		
+		line += sec_ouder_det[k] + ";";
+
 	}
 	for (k in 0..i-1) {
-		line += sub_sec_det[k] + ",";
+		line += sub_sec_det[k] + ";";
 		
 	}
 	sub_act_type_det = [];
 	for (k in 0..sub_act_count-1) {
-		sub_act_type_det.add("False");
+		sub_act_type_det.add("Neen");
 	}
 	for(models.ActivityTypeJunction at: entity.activityTypeJunctions) {
 		soortAct = "";
@@ -138,98 +146,98 @@ else
 			id = at.activityTypeId.id;
 		else {
 			id = at.activityTypeId.ouder.id;
-			sub_act_type_det[sub_act_arr.get(at.activityTypeId.id)] = "True";
+			sub_act_type_det[sub_act_arr.get(at.activityTypeId.id)] = "Ja";
 			}
 		if(id!=null) soortAct = 	act_type.get(id);
 	}
-	line+=soortAct + ",";
+	line+=soortAct + ";";
 	for (k in 0..sub_act_type_det.size()-1) {
-		line += sub_act_type_det[k] + ",";
+		line += sub_act_type_det[k] + ";";
 	}
 	att_type_det = []
 	for (k in 0..tgt_count-1) {
-		att_type_det.add("False");
+		att_type_det.add("Neen");
 	}
 	for(models.ActivityTargets ats: entity.activityTargets) {
-		att_type_det[target_type_arr.get(ats.attendantTypeId.id)] = "True";
-		doel_group = ats.attendantTypeId.targetTypeId.id + ",";
+		att_type_det[target_type_arr.get(ats.attendantTypeId.id)] = "Ja";
+		doel_group = target_type[ats.attendantTypeId.targetTypeId.id] + ";";
 	}
 	
 	line += doel_group;
 	for (k in 0..att_type_det.size()-1) {
-		line += att_type_det[k] + ",";
+		line += att_type_det[k] + ";";
 	}
 	sec_ouder_det=[]
 	for (k in 0..i-1) {
-		sec_ouder_det.add("False")
+		sec_ouder_det.add("Neen")
 	}
 	
 	for(models.ActivitySectors asec: entity.activitySectorss) {
 		id = sec_ouder.get(asec.sectorId.id);
-		if(id!=null) sec_ouder_det[id] = "True"
+		if(id!=null) sec_ouder_det[id] = "Ja"
 	}
 	
 	for(k in 0..sec_ouder_det.size()-1) {
-		line += sec_ouder_det[k] + ",";
+		line += sec_ouder_det[k] + ";";
 	}
 	total_participants = entity.totalParticipants
 	if (total_participants == null )
 		total_participants = '';
-	line+= total_participants + ","
+	line+= total_participants + ";"
 	
 	mat_det = []
 	for (k in 0..mat_count-1) {
-		mat_det.add("False")
+		mat_det.add("Neen")
 	}
 	
 	for(models.MaterialsInActivity mia: entity.materialsInActivities) {
 		id = mat_arr.get(mia.materialId.id);
-		if(id!=null) mat_det[id] = "True"
+		if(id!=null) mat_det[id] = "Ja"
 	}
 	
 	for (k in 0..mat_count-1) {
-		line += mat_det[k] + ","
+		line += mat_det[k] + ";"
 	}
 	
 	
 	item_det = []
 	for(k in 0..item_count-1) {
-		item_det.add("False");
+		item_det.add("Neen");
 	}
 	
 	for(models.ItemsInActivity iia: entity.itemsInActivity) {
 		id = item_arr.get(iia.itemId.id);
-		if(id!=null) item_det[id] = "True"
+		if(id!=null) item_det[id] = "Ja"
 	}
 	
 	for (k in 0..item_count-1) {
-		line+=item_det[k] + ","
+		line+=item_det[k] + ";"
 	}
 	
-	evaluvated = "False"
+	evaluvated = "Neen"
 	if (entity.evaluvated)
-		evaluvated = "True"
-	line += evaluvated + ","
+		evaluvated = "Ja"
+	line += evaluvated + ";"
 	
 	eval_type_det = []
 	for (k in 0..eval_count-1) {
-	eval_type_det[k]  = "False"
+	eval_type_det[k]  = "Neen"
 	}
 	
 	examined_by = ""
 	for (models.ActivityEvaluvators actEval: entity.activityEvaluvatorsId) {
 		id = eval_arr.get(actEval.evalTypeId.id);
 		if(id!=null){
-      eval_type_det[id] = "True"
-      examined_by = actEval.evaluvatorsId.id;
+      eval_type_det[id] = "Ja"
+      if(actEval.evaluvatorsId!=null) examined_by = evaluators[actEval.evaluvatorsId.id];
     }
 	}
 	
 	for (k in 0..eval_count-1) {
-		line+= eval_type_det[k] + ","
+		line+= eval_type_det[k] + ";"
 	}
 	
-	line+= examined_by +","
+	line+= examined_by +";"
 	
 }%
 ${line}

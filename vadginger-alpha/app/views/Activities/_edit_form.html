@@ -164,20 +164,24 @@
     <label class="choice" for="sector_${it?.id}">${it?.naam}</label>
     <span class="field" id="${it?.id}cont">
     #{if selected}
+    %{ List secs = models.Sectors.find("isActive=1 and ouder is " + secOuder).fetch().sort{ it.toString() }
+       if(!secs.isEmpty()){
+    }%
     <div class="label">Detailsector</div>
     <div class="field">
     <select name="sub_sector_${secOuder}" id="subSectorSelect" multiple size="4">
-     %{ models.Sectors.find("isActive=1 and ouder is " + secOuder).fetch().sort{ it.toString() }.each() { }%
 
           %{
-            checked=false
-            if (it.id in subSecId) {
-              checked = true
-            }
+            secs.each(){
+              checked=false
+              if (it.id in subSecId) {
+                checked = true
+              }
           }%
           <option value="${it?.id}" ${checked ? 'selected'.raw() : ''}>${it}</option>
         %{ } }%
      </select></div>
+        %{ } }%
     #{/if}
     </span><br>
     <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
@@ -626,3 +630,27 @@
     <span class="error">${errors.forKey('entity.reported')}</span>
   </div>
 </div>
+<script type="text/javascript">
+    // Select all of the forms on the page (in this case the only one)
+    // and call 'validity' on the result.
+    $(function() {
+        $("form").validity(function() {
+          $("input[type=text]").require();
+          $("#organizationSelect").require();
+          $("#locationSelect").require();
+          $("#activity_type_select").require();
+
+          if ($("#Sector input:checked").length == 0) {
+              $("#Sector input:hidden:first").require("Gelieve minstens één sector aan te vinken");
+          }
+          if($("#TheItem").length){
+            if ($("#TheItem input:checked").length == 0) {
+                $("#TheItem input:hidden:first").require("Gelieve minstens één item aan te vinken");
+            }
+          }
+          if ($("#Materiaal input:checked").length == 0) {
+              $("#Materiaal input:hidden:first").require("Gelieve minstens één gebruikt materiaal aan te vinken");
+          }
+        });
+    });
+</script>

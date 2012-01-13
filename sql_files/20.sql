@@ -10,6 +10,7 @@ update VadGingerUser set role = 3 where userID in ('vadjro');
 update VadGingerUser set role = 3 where userID in ('jefwau');
 
 update ActivityType set id = 999 where Naam = 'Andere Actie';
+Update Items set Naam = 'Geen specifiek middel als item' where Naam = 'Middelengebruik algemeen';
 update ActivityTypeJunction set activityTypeId_id = 999 where activityTypeId_id = 19;
 update Evaluvation_Type set EvalType = 'Schriftelijk' where EvalType = 'Schriftel';
 

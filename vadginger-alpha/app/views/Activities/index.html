@@ -13,12 +13,12 @@
 	<thead>
 		<tr>
 				<th><a href="@{Activities.index()}?orderby=beschrijving&orderhow=${params.orderby=='beschrijving'&&params.orderhow=='asc' ? 'desc':'asc'}${allowExport ? '&filter':''}" class="sorter">Beschrijving</a></th>
-				<th><a href="@{Activities.index()}?orderby=Activity_date&orderhow=${params.orderby=='Activity_date'&&params.orderhow=='asc' ? 'desc':'asc'}${allowExport ? '&filter':''}" class="sorter">Datum</a></th>
+				<th><a href="@{Activities.index()}?orderby=activityDate&orderhow=${params.orderby=='activityDate'&&params.orderhow=='asc' ? 'desc':'asc'}${allowExport ? '&filter':''}" class="sorter">Datum</a></th>
 				<th><a href="@{Activities.index()}?orderby=organizationId.naam&orderhow=${params.orderby=='organizationId.naam'&&params.orderhow=='asc' ? 'desc':'asc'}${allowExport ? '&filter':''}" class="sorter">Organisatie</a></th>
 				<th><a href="@{Activities.index()}?orderby=duur&orderhow=${params.orderby=='duur'&&params.orderhow=='asc' ? 'desc':'asc'}${allowExport ? '&filter':''}" class="sorter">Duur</a></th>
-				<th><a href="@{Activities.index()}?orderby=Evaluvated&orderhow=${params.orderby=='Evaluvated'&&params.orderhow=='asc' ? 'desc':'asc'}${allowExport ? '&filter':''}" class="sorter">Eval.</a></th>
-				<th><a href="@{Activities.index()}?orderby=InternalActivity&orderhow=${params.orderby=='InternalActivity'&&params.orderhow=='asc' ? 'desc':'asc'}${allowExport ? '&filter':''}" class="sorter">Intern</a></th>
-				<th><a href="@{Activities.index()}?orderby=TotalParticipants&orderhow=${params.orderby=='TotalParticipants'&&params.orderhow=='asc' ? 'desc':'asc'}${allowExport ? '&filter':''}" class="sorter">Deel-nemers</a></th>
+				<th><a href="@{Activities.index()}?orderby=evaluvated&orderhow=${params.orderby=='evaluvated'&&params.orderhow=='asc' ? 'desc':'asc'}${allowExport ? '&filter':''}" class="sorter">Eval.</a></th>
+				<th><a href="@{Activities.index()}?orderby=internalActivity&orderhow=${params.orderby=='internalActivity'&&params.orderhow=='asc' ? 'desc':'asc'}${allowExport ? '&filter':''}" class="sorter">Intern</a></th>
+				<th><a href="@{Activities.index()}?orderby=totalParticipants&orderhow=${params.orderby=='totalParticipants'&&params.orderhow=='asc' ? 'desc':'asc'}${allowExport ? '&filter':''}" class="sorter">Deel-nemers</a></th>
 				<th><a href="@{Activities.index()}?orderby=locationId.naam&orderhow=${params.orderby=='locationId.naam'&&params.orderhow=='asc' ? 'desc':'asc'}${allowExport ? '&filter':''}" class="sorter">Locatie</a></th>
 				<th><a href="@{Activities.index()}?orderby=userId.userID&orderhow=${params.orderby=='userId.userID'&&params.orderhow=='asc' ? 'desc':'asc'}${allowExport ? '&filter':''}" class="sorter">Gebr.</a></th>
 			  <th><!-- actions --></th>

@@ -13,11 +13,14 @@ import javax.persistence.TemporalType;
 
 import models.*;
 import org.apache.commons.beanutils.BeanUtils;
+import org.apache.commons.mail.EmailException;
+import org.apache.commons.mail.SimpleEmail;
 import play.Logger;
 import org.apache.commons.lang.StringUtils;
 
 import play.data.validation.Valid;
 import play.i18n.Messages;
+import play.libs.Mail;
 import play.modules.paginate.ModelPaginator;
 import play.mvc.With;
 
@@ -480,7 +483,7 @@ public static void searchForm() {
 		   session.put("query", "");
      }
 	   else {
-       String quer = joinClause.toString() + " where " +where.toString()+ " order by id desc";
+       String quer = joinClause.toString() + " where " +where.toString()+ " order by act.id desc";
        System.out.println("=========================> query=" + quer);
        List<models.Activity> entities = models.Activity.find(quer).fetch();
        if (request.params.get("sector_999")!=null) {
@@ -507,7 +510,8 @@ public static void searchForm() {
    }
 
   private static void orderSearch(String orderQuery){
-		   String query = session.get("query")+orderQuery;
+		   String query = session.get("query");
+        query = query.substring(0, query.indexOf("order by"))+orderQuery.replace("order by ", "order by act.");
        List<models.Activity> entities = models.Activity.find(query).fetch();
        setAccordionTab(2);
        renderArgs.put("allowExport", true);
@@ -727,7 +731,7 @@ private static String getParam(String paramName) {
 
 public static void exportQuery() {
 	response.setHeader("Content-Disposition", 
-	"attachment;filename=csv_export.csv");
+	"attachment;filename=csv_export.txt");
 	String quer = session.get("query");
 	List<models.Activity> entities = models.Activity.find(quer).fetch();
 	renderArgs.put("entities", entities); 

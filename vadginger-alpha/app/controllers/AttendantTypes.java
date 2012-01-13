@@ -177,7 +177,7 @@ public class AttendantTypes extends GingerController {
 		htmlData.append("<div class=\"row\">");
 		htmlData.append("<div class=\"label\">Totaal aantal aanwezigen</div>");
 		htmlData.append("<div class=\"field\">");
-		htmlData.append("<input type=\"text\" name=\"entity.totalParticipants\" value=\""+s_amount+"\"/>");
+		htmlData.append("<input type=\"text\" name=\"entity.totalParticipants\" value=\""+s_amount+"\" title=\"Aantal aanwezigen\" id=\"Aantal_Aanwezigen\"/>");
 		htmlData.append("</div>");
 		//htmlData.append("<span class=\"error\">${errors.forKey('entity.totalParticipants')}</span>");
 		htmlData.append("</div><BR><BR>");

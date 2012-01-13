@@ -87,8 +87,9 @@ public class Sectorss extends GingerController {
 			query = "ouder is null";
 		else
 			query += id;
-		query+= " and isActive=1";
+		query+= " and isActive=1 order by naam";
 		List<models.Sectors> secs = models.Sectors.find(query).fetch();
+    if(secs.isEmpty()) renderText("<div></div>");
 		StringBuffer htmlData = new StringBuffer();
 		htmlData.append("<div class=\"label\">Detailsector</div>");
 		htmlData.append("<div class=\"field\">");

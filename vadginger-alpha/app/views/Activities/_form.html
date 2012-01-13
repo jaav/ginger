@@ -5,7 +5,6 @@
 <div class="row">
   <div class="label">Omschrijving van de activiteit:</div>
   <div class="field">
-
     <input type="text" name="entity.beschrijving" value="${entity?.beschrijving}" size="80" title="Omschrijving"  id="Omschrijving"/>
 
   </div>
@@ -503,26 +502,42 @@
   })();
 </script>
 <script type="text/javascript">
-    // Select all of the forms on the page (in this case the only one)
-    // and call 'validity' on the result.
-    $(function() {
-        $("form").validity(function() {
-          $("input[type=text]").require();
-          $("#organizationSelect").require();
-          $("#locationSelect").require();
-          $("#activity_type_select").require();
+    $("form").submit(function(ev){
+      $("form").validity(function() {
+        var test = ev;
+        test = $("input[name='entity.beschrijving']");
+        $("input[name='entity.beschrijving']").require();
+        $("input[name='activity_date']").require();
+        $("input[name='entity.duur']").require();
+        $("#organizationSelect").require();
+        $("#locationSelect").require();
+        $("#activity_type_select").require();
 
-          if ($("#Sector input:checked").length == 0) {
-              $("#Sector input:hidden:first").require("Gelieve minstens één sector aan te vinken");
+        if ($("#Sector input:checked").length == 0) {
+            $("#Sector input:hidden:first").require("Gelieve minstens één sector aan te vinken");
+        }
+        if($("#TheItem").length){
+          if ($("#TheItem input:checked").length == 0) {
+              $("#TheItem input:hidden:first").require("Gelieve minstens één item aan te vinken");
           }
-          if($("#TheItem").length){
-            if ($("#TheItem input:checked").length == 0) {
-                $("#TheItem input:hidden:first").require("Gelieve minstens één item aan te vinken");
-            }
+        }
+        if ($("#Materiaal input:checked").length == 0) {
+            $("#Materiaal input:hidden:first").require("Gelieve minstens één gebruikt materiaal aan te vinken");
+        }
+        var participants = $("#atd_type input[name='entity.totalParticipants']");
+        if(participants.length){
+          try{
+          participants.require().match('integer', "Het aantal deelnemers moet een positief geheel getal zijn");
+          }catch(err){
+            var e = err;
+            alert(e.message);
           }
-          if ($("#Materiaal input:checked").length == 0) {
-              $("#Materiaal input:hidden:first").require("Gelieve minstens één gebruikt materiaal aan te vinken");
-          }
-        });
+        }
+
+        test = $("label.error");
+        if($("label.error").length){
+          ev.preventDefault();
+        }
+      }());
     });
 </script>

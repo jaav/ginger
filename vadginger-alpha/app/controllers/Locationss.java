@@ -84,7 +84,7 @@ public class Locationss extends GingerController {
 
   public static void createCluster(Locations entity) {
     setAccordionTab(3);
-    String query = "ouder_id = 1 and isActive = 1";
+    String query = "ouder_id = 1 and isActive = 1 order by naam";
     renderArgs.put("locations", models.Locations.find(query).fetch());
     render("Locationss/cluster_create.html", entity);
 
