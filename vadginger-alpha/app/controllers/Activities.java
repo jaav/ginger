@@ -297,14 +297,19 @@ public class Activities extends GingerController {
 	private static void storeActivityType(Activity entity) {
 		String activityType = request.params.get("activity_type");
 		if (activityType != null && !activityType.trim().equals("")) {
-			String sub_act_type = request.params.get("sub_activity_type");
-			if (sub_act_type!=null&&!sub_act_type.equals(""))
-				activityType = sub_act_type;
-			models.ActivityType actTyp = models.ActivityType.find("id is " + activityType).first();
-			models.ActivityTypeJunction atj = new models.ActivityTypeJunction();
-			atj.activityId = entity;
-			atj.activityTypeId = actTyp;
-			atj.save();
+      String[] test = request.params.getAll("sub_activity_type");
+      System.out.println("test = " + test);
+			String[] sub_act_types = request.params.getAll("sub_activity_type");
+      for (int i = 0; i < sub_act_types.length; i++) {
+        String sub_act_type = sub_act_types[i];
+        if (sub_act_type!=null&&!sub_act_type.equals(""))
+          activityType = sub_act_type;
+        models.ActivityType actTyp = models.ActivityType.find("id is " + activityType).first();
+        models.ActivityTypeJunction atj = new models.ActivityTypeJunction();
+        atj.activityId = entity;
+        atj.activityTypeId = actTyp;
+        atj.save();
+      }
 		}
 	}
 
@@ -415,7 +420,7 @@ public class Activities extends GingerController {
 			iia.delete();
 		for (models.ActivityTypeJunction atj: entity.activityTypeJunctions)
 			atj.delete();
-		for (models.ActivitySectors as: entity.activitySectorss)
+		for (SectorActivityJunction as: entity.sectorActivityJunctions)
 			as.delete();
 		for(models.ActivityEvaluvators ae: entity.activityEvaluvatorsId)
 			ae.delete();

@@ -63,4 +63,11 @@ public class Sectors extends Model{
 	public String toString() {
 		return this.naam;
 	}
+
+  public static String toString(Long id){
+    if(id==null) return "" ;
+    Sectors sec = Sectors.findById(id);
+    if(sec!=null) return sec.naam;
+    else return "";
+  }
 }
