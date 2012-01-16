@@ -288,7 +288,7 @@
   <div class="field">
     <select name="activity_type" id="activity_type_select" title="Soort activiteit">
       <option value="">Selecteer de soort activiteit</option>
-      %{ models.ActivityType.find("ouder is null and isActive=1").fetch().sort{ it.id }.each() { }%
+      %{ models.ActivityType.find("ouder is null and isActive=1 order by id").fetch().each() { }%
       %{
       selected = false;
       if (entity?.userId?.id == it.id) {

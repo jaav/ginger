@@ -125,7 +125,7 @@
              #{if user && user.role && user.role.compareTo(models.RoleType.SUPER_ADMIN)>=0 }
             <li>Sectoren (<a href="@{Sectorss.index()}">Lijst</a> / <a href="@{Sectorss.create()}">Nieuw</a>)</li>
             #{/if}
-            <li>Sectoren (<a href="@{Sectorss.subIndex()}">Lijst</a> / <a href="@{Sectorss.create()}">Nieuw</a>)</li>
+            <li>Sub-sectoren (<a href="@{Sectorss.subIndex()}">Lijst</a> / <a href="@{Sectorss.create()}">Nieuw</a>)</li>
             <!--li>Doelgroepen (<a href="@{ActivityTargetss.index()}">Lijst</a> / <a href="@{ActivityTargetss.create()}">Nieuw</a>)</li-->
              #{if user && user.role && user.role.compareTo(models.RoleType.SUPER_ADMIN)>=0 }
             <li>Doelgroep types (<a href="@{TargetTypes.index()}">Lijst</a> / <a href="@{TargetTypes.create()}">Nieuw</a>)</li>

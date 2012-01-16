@@ -109,7 +109,7 @@ else
 	sub_sec_det = []
 	for (k in 0..i-1) {
 		sec_ouder_det.add("Neen")
-		sub_sec_det.add(" - ");
+		sub_sec_det.add("");
 	}
 	int sub_sec_counter = 0;
 	for (models.SectorActivityJunction saj: entity.sectorActivityJunctions) {
@@ -139,7 +139,7 @@ else
 	//ACTIVITY_TYPES & SUBTYPES
 	sub_act_type_det = [];
 	for (k in 0..4) {
-		sub_act_type_det.add(" - ");
+		sub_act_type_det.add("");
 	}
 	int act_sub_type_counter = 0;
 	for(models.ActivityTypeJunction at: entity.activityTypeJunctions) {
