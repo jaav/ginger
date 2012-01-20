@@ -151,6 +151,7 @@ public class AttendantTypes extends GingerController {
       if(attendants!=null && attendants.contains(atd.id)) checked = "checked";
 			htmlData.append("<input id=\""+atd.getId()+"\" name=\"atd_typ_"+ atd.getId()+"\" type=\"checkbox\" "+checked+">");
 			htmlData.append("<label class =\"choice\" for=\"atd_typ_"+ atd.getId()+"\">"+ atd.naam+"</label>");
+      htmlData.append("<input type=\"hidden\" value=\"\" title=\"Aanwezigen\" id=\"ha_"+ atd.getId()+"\"/>");
 			htmlData.append("<span class=\"field\" id=\"atd_typ_"+ atd.getId()+"\"></span><br>");
 					
 		}

@@ -78,11 +78,15 @@
   			var $input = $(this);
   		    var currentId = $(this).attr('id');
   		    var currentIdcont = "#"+currentId+"cont";
-  		  	if($input.is(':checked'))
-  		  	{
-  		  	var listLocations = #{jsAction @Sectorss.list(':id')/}
-  			$(currentIdcont).load(listLocations({id: currentId}), function(){});
-  			} 
+  		  	if($input.is(':checked')){
+            var listLocations = #{jsAction @Sectorss.list(':id')/}
+            $(currentIdcont).load(listLocations({id: currentId}), function(){
+              var currentselect = $(currentIdcont+" div select");
+              //currentselect.prepend($('<option value="-1">Geen enkele detailsector</option>'));
+              //currentselect.append($('<option value="">Al deze detailsectoren</option>'));
+              currentselect.attr("size", parseInt(currentselect.attr('size'))+2);
+            });
+          }
   		  	else { $(currentIdcont).html(""); } 
   		});
   	</script>

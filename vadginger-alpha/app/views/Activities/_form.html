@@ -503,18 +503,22 @@
 </script>
 <script type="text/javascript">
     $("form").submit(function(ev){
+      $("label.error").remove();
       $("form").validity(function() {
         var test = ev;
         test = $("input[name='entity.beschrijving']");
         $("input[name='entity.beschrijving']").require();
         $("input[name='activity_date']").require();
-        $("input[name='entity.duur']").require();
+        $("input[name='entity.duur']").require().match('integer', "De duur moet een positief geheel getal zijn");
         $("#organizationSelect").require();
         $("#locationSelect").require();
         $("#activity_type_select").require();
 
         if ($("#Sector input:checked").length == 0) {
             $("#Sector input:hidden:first").require("Gelieve minstens één sector aan te vinken");
+        }
+        if ($("#atd_type input:checked").length == 0) {
+            $("#atd_type input:hidden:first").require("Gelieve minstens één type aanwezigen van deze doelgroep aan te vinken");
         }
         if($("#TheItem").length){
           if ($("#TheItem input:checked").length == 0) {
@@ -534,8 +538,10 @@
           }
         }
 
-        test = $("label.error");
+        var validationerrors = $("label.error");
         if($("label.error").length){
+          var top = validationerrors.first().offset().top;
+          $(window).scrollTop(top-50);
           ev.preventDefault();
         }
       }());

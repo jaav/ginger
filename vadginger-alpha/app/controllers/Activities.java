@@ -268,7 +268,7 @@ public class Activities extends GingerController {
 					ae.activityId = entity;
 					ae.evalTypeId = evalType;
 					String evaluvatorId = request.params.get("evaluvators");
-					if (!evaluvatorId.trim().equals("")&&evaluvatorId!=null) {
+					if (evaluvatorId!=null&&!evaluvatorId.trim().equals("")) {
 						ae.evaluvatorsId  = models.Evaluvators.find("id is " + evaluvatorId).first();
 					}
 					ae.save();
@@ -331,6 +331,7 @@ public class Activities extends GingerController {
 			if (request.params.get("sector_" + sec.id)!=null) {
 				String sub_sec_id = request.params.get("sub_sector_" + sec.id);
 				models.Sectors sub_sec = sec;
+        //if a sub-sector for the checked sector was selected
 				if (sub_sec_id!=null&&!sub_sec_id.trim().equals("")) {
 					String[] arr = request.params.getAll("sub_sector_"+sec.id);
 					for (String ar: arr) {
@@ -340,20 +341,20 @@ public class Activities extends GingerController {
 						sac.sectorId = sub_sec;
 						sac.save();
 					}
-				} else {
-					
-				
-				models.SectorActivityJunction sac = new models.SectorActivityJunction(); 
-				sac.activityId = entity;
-				sac.sectorId = sub_sec;
-				sac.save();} 
+				}
+        //if only the sector was checked and no sub-sector selected
+        else {
+          models.SectorActivityJunction sac = new models.SectorActivityJunction();
+          sac.activityId = entity;
+          sac.sectorId = sub_sec;
+          sac.save();}
 			}
-			if (request.params.get("sec_atd_" + sec.id) != null) {
+			/*if (request.params.get("sec_atd_" + sec.id) != null) {
 				models.ActivitySectors as = new models.ActivitySectors();
 				as.activityId = entity;
 				as.sectorId = sec;
 				as.save();
-			}
+			}*/
 			
 		}
 	}
@@ -623,17 +624,15 @@ private static void getActivityByOrganization(ArrayList<String> whereClause, Str
 
 private static void getActivityBySector(ArrayList<String> whereClause, StringBuffer joinClause) {
 		if (request.params.get("sector_999") != null) {
-			// System.out.println(":: Intersectoral selected ");
-			joinClause.append(" join act.activitySectorss ass ");
+			joinClause.append(" join act.sectorActivityJunctions ass ");
 			whereClause.add("ass.size  > 1");
 		} else {
+
+      //@TODO correct if subsector is selected in search, all activities of parent sector are found!!!!
 			String sub_org_idss = "";
-			List<models.Sectors> secs = models.Sectors.find("ouder is null")
-					.fetch();
+			List<models.Sectors> secs = models.Sectors.find("ouder is null").fetch();
 			for (models.Sectors sec : secs) {
 				if (request.params.get("sector_" + sec.id) != null) {
-					String sub_sec_id = request.params.get("sub_sector_"
-							+ sec.id);
 					String[] ssids = request.params.getAll("sub_sector_"
 							+ sec.id);
 					if (ssids != null) {
@@ -641,14 +640,15 @@ private static void getActivityBySector(ArrayList<String> whereClause, StringBuf
 							sub_org_idss += ssid + ",";
 						}
 					}
-					sub_org_idss += sec.id + ",";
+          else
+            sub_org_idss += sec.id + ",";
 				}
 			}
 			if (sub_org_idss.length() > 0) {
 				sub_org_idss = sub_org_idss.substring(0,
 						sub_org_idss.length() - 1);
 				joinClause
-						.append(" join act.activitySectorss ass join ass.sectorId asid ");
+						.append(" join act.sectorActivityJunctions ass join ass.sectorId asid ");
 				whereClause.add("asid in (" + sub_org_idss + ")");
 			}
 		}
@@ -742,6 +742,14 @@ public static void exportQuery() {
 	renderArgs.put("entities", entities); 
 	render("Activities/csv_file");
 }
+
+
+  /*SAMPLE FILTER QUERIES
+  select distinct act.id from Activity act  join SectorActivityJunction ass join Sectors asid  where act.centrumId_id=42 and asid.id in (50) and act.Activity_Date >= '2010-01-01' and act.Activity_Date <= '2011-01-01' order by act.id desc;
+
+
+
+   */
 
 
 }

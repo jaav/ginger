@@ -152,10 +152,11 @@ public class Organisatiess extends GingerController {
 		List<models.Organisaties> orgs = models.Organisaties.find(q).fetch();
     if(orgs.isEmpty()) renderText("");
     else{
+      int blocksize = orgs.size() > 10 ? 10 : orgs.size();
       StringBuffer htmlData = new StringBuffer();
       htmlData.append("<div class=\"label\">Sub-organisatie</div>");
       htmlData.append("<div class=\"field\">");
-      htmlData.append("<select name=\"sub_org_id\" id=\"subOrganizationSelect\" multiple size=\"4\">\n");
+      htmlData.append("<select name=\"sub_org_id\" id=\"subOrganizationSelect\" multiple size=\""+blocksize+"\">\n");
       for (models.Organisaties org: orgs) {
         htmlData.append(" <option value=\""+org.id+"\" >"+org.naam+"</option>\n");
 

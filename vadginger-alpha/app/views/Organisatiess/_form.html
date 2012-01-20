@@ -26,10 +26,10 @@
                       <option value="">(None)</option>
           #{list items:mainorgs, as:'org'}
           #{if org.id == entity?.ouder?.id}
-          <option value="${org.id}" selected>${org.naam} - ${entity?.ouder?.id} - ${org.id} - ${entity?.ouder?.naam}</option>
+          <option value="${org.id}" selected>${org.naam}</option>
           #{/if}
           #{else}
-          <option value="${org.id}">${org.naam} - ${entity?.ouder?.id} - ${org.id}} - ${entity?.ouder?.naam}</option>
+          <option value="${org.id}">${org.naam}</option>
           #{/else}
           #{/list}
         </select>

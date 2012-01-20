@@ -38,8 +38,8 @@
           			#{/else}
           			<td>${entity.organizationId}</td>
 					<td>${entity.duur}</td>
-					<td>${entity.evaluvated}</td>
-					<td>${entity.internalActivity}</td>
+					<td>${entity.evaluvated ? "Ja" : "Neen"}</td>
+					<td>${entity.internalActivity ? "Ja" : "Neen"}</td>
 					<td>${entity.totalParticipants}</td>
 					<td>${entity.locationId}</td>
 					<td>${entity.userId}</td>
