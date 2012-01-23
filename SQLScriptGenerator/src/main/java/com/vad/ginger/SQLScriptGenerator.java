@@ -393,7 +393,7 @@ public class SQLScriptGenerator {
 			for (int secAct = 1; secAct < 9; secAct++) {
 				//System.out.println(tokens[secAct+41]);
 				if (removeQuote(tokens[secAct+41]).equalsIgnoreCase("true")) {
-					sAJBuffer.append("INSERT INTO SectorActivityJunction (activityId_id, sectorId_id) VALUES ("+ removeQuote(tokens[0]) +","+ sectorOuderKeyId.get(secAct+"") +");\n");
+					sAJBuffer.append("INSERT INTO ActivitySectors (activityId_id, sectorId_id) VALUES ("+ removeQuote(tokens[0]) +","+ sectorOuderKeyId.get(secAct+"") +");\n");
 				}
 				
 			}
@@ -416,49 +416,49 @@ public class SQLScriptGenerator {
 			String a = "1";
 			String b = removeQuote(tokens[17]);
 			if (!b.equals("0"))
-				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivitySectors] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
+				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[SectorActivityJunction] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
 		}
 		if(removeQuote(tokens[8]).equals("TRUE")) {
 			String a = "2";
 			String b = removeQuote(tokens[18]);
 			if (!b.equals("0"))
-				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivitySectors] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
+				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[SectorActivityJunction] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
 		}
 		if(removeQuote(tokens[9]).equals("TRUE")) {
 			String a = "3";
 			String b = removeQuote(tokens[19]);
 			if (!b.equals("0"))
-				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivitySectors] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
+				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[SectorActivityJunction] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
 		}
 		if(removeQuote(tokens[10]).equals("TRUE")) {
 			String a = "4";
 			String b = removeQuote(tokens[20]);
 			if (!b.equals("0"))
-				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivitySectors] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
+				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[SectorActivityJunction] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
 		}
 		if(removeQuote(tokens[11]).equals("TRUE")) {
 			String a = "5";
 			String b = removeQuote(tokens[21]);
 			if (!b.equals("0"))
-				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivitySectors] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
+				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[SectorActivityJunction] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
 		}
 		if(removeQuote(tokens[12]).equals("TRUE")) {
 			String a = "6";
 			String b = removeQuote(tokens[22]);
 			if (!b.equals("0"))
-				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivitySectors] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
+				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[SectorActivityJunction] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
 		}
 		if(removeQuote(tokens[13]).equals("TRUE")) {
 			String a = "7";
 			String b = removeQuote(tokens[23]);
 			if (!b.equals("0"))
-				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivitySectors] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
+				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[SectorActivityJunction] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
 		}
 		if(removeQuote(tokens[14]).equals("TRUE")) {
-			String a = "1";
-			String b = removeQuote(tokens[17]);
-			if (!b.equals("0"))
-				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivitySectors] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ 95+")\n");
+			//String a = "1";
+			//String b = removeQuote(tokens[17]);
+			//if (!b.equals("0"))
+				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[SectorActivityJunction] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ 97+")\n");
 		}
 	}
 
@@ -468,24 +468,24 @@ public class SQLScriptGenerator {
 			activityTypeBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivityTypeJunction]([activityId_id],[activityTypeId_id]) VALUES ("+removeQuote(tokens[0])+","+7+")\n");
 		if (removeQuote(tokens[24]).equals("1")) {
 			int k = 24;
-			for (int i = 1; i <6; i++)
+			for (int i = 1; i <6; i++) {
 			if(removeQuote(tokens[k+i]).equals("TRUE"))
 				activityTypeBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivityTypeJunction]([activityId_id],[activityTypeId_id]) VALUES ("+removeQuote(tokens[0])+","+activityTypeIdKeyId.get("1," + i)+")\n");
-		}
+		}}
 		if (removeQuote(tokens[24]).equals("3")) {
-			int k = 24;
+			int k = 29;
 			for (int i = 1; i <3; i++)
 			if(removeQuote(tokens[k+i]).equals("TRUE"))
 				activityTypeBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivityTypeJunction]([activityId_id],[activityTypeId_id]) VALUES ("+removeQuote(tokens[0])+","+activityTypeIdKeyId.get("3," + i)+")\n");
 		}
 		if (removeQuote(tokens[24]).equals("4")) {
-			int k = 24;
+			int k = 31;
 			for (int i = 1; i <5; i++)
 			if(removeQuote(tokens[k+i]).equals("TRUE"))
 				activityTypeBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivityTypeJunction]([activityId_id],[activityTypeId_id]) VALUES ("+removeQuote(tokens[0])+","+activityTypeIdKeyId.get("4," + i)+")\n");
 		} 
 		if (removeQuote(tokens[24]).equals("5")) {
-			int k = 24;
+			int k = 35;
 			for (int i = 1; i <3; i++)
 			if(removeQuote(tokens[k+i]).equals("TRUE"))
 				activityTypeBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivityTypeJunction]([activityId_id],[activityTypeId_id]) VALUES ("+removeQuote(tokens[0])+","+activityTypeIdKeyId.get("5," + i)+")\n");
@@ -605,7 +605,7 @@ public class SQLScriptGenerator {
 				buffer.append("INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES " +
 						"("+tokens[0]+",'"+tokens[1].replace("\"", "")+"','"+tokens[2]+"','"+tokens[3]+"','"+tokens[4]+"','"+tokens[5]+"','"+tokens[6]+"','"+userId+"',"+centrumIdKeyId.get(removeQuote(tokens[7]).toUpperCase())+", 1)");
 				buffer.append("\n");
-				organizationIdKeyId.put(tokens[0].trim(), i+ "");
+				organizationIdKeyId.put(tokens[0].trim(), tokens[0].trim());
 				if (Integer.parseInt(tokens[0]) > i)
 					i = Integer.parseInt(tokens[0]);
 				
@@ -822,6 +822,9 @@ public class SQLScriptGenerator {
 			ie.printStackTrace();
 			System.exit(1);			
 		}
+		/*for(String key: activityTypeIdKeyId.keySet()) {
+			System.out.println("ActType == "+ key + ":: " + activityTypeIdKeyId.get(key));
+		}*/
 	
 		
 	}
@@ -1010,7 +1013,7 @@ public class SQLScriptGenerator {
 	}
 	
 	private static void writeBufferToFile(String fileName, StringBuffer buffer) {
-		String filename = "/media/mynewdrive/sql_files2/" + fileName;
+		String filename = "/media/mynewdrive/sql_files3/" + fileName;
 		try {
 			
 			BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
