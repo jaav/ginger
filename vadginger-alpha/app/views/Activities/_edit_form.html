@@ -169,7 +169,7 @@
     }%
     <div class="label">Detailsector</div>
     <div class="field">
-    <select name="sub_sector_${secOuder}" id="subSectorSelect" multiple size="5">
+    <select name="sub_sector_${secOuder}" class="subSectorSelect" multiple size="5">
 
           %{
             secs.each(){
@@ -337,7 +337,7 @@
   <input id="${it?.id}" name="attendant_type" type="radio" class="rdbx" value="${it?.id}" ${checked} title="Doelgroep">${it}&nbsp;&nbsp;&nbsp;
   <!-- <span class="field" id="${it?.id}cont"></span><br> -->
   <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
-  %{ } }%
+  %{ } }%<input type="hidden" id="attendant_type_h" title="Doelgroep" />
   <div class="field" id="atd_type"></div>
   %{
   if (entity?.id) {
@@ -373,6 +373,9 @@
 <hr>
 
 <div class="row">
+  %{
+      List<Long> acTypeSubIds = new ArrayList<Long>();
+  %}
   <div class="label">Over welke soort activiteit gaat het?</div>
   <div class="field">
     <select name="activity_type" id="activity_type_select" title="Soort activiteit">
@@ -382,15 +385,17 @@
       selected = false;
       for(models.ActivityTypeJunction atj: entity.activityTypeJunctions) {
       	 if (atj.activityTypeId!=null && atj.activityTypeId.ouder!=null) {
-      	 if (atj.activityTypeId.ouder.id == it.id) {
-      	 	selected=true
-      	 	acTypeOuder= it.id
-      	 	acTypeSubId = atj.activityTypeId.id
-      	 } else {
-
-      	 if (atj.activityTypeId.id==it.id)
-      	 	selected = true
-      }}}
+           if (atj.activityTypeId.ouder.id == it.id) {
+            selected=true
+            acTypeOuder= it.id
+            acTypeSubIds.add(atj.activityTypeId.id);
+           }
+         }
+         else {
+          if (atj.activityTypeId.id==it.id)
+          selected = true
+         }
+      }
 
       }%
       <option value="${it?.id}"
@@ -404,11 +409,10 @@
    	<div class="label">Detailsoort</div>
    	<div class="field">
    	<select name="sub_activity_type" id="subActivityTypeSelect" multiple size="5">
-   	  <option value="">(None)</option>
       %{ models.ActivityType.find("ouder is "+ acTypeOuder+" and isActive=1").fetch().sort{ it.toString() }.each() { }%
       %{
      	 selected=false
-      	 if (it.id==acTypeSubId){
+      	 if (acTypeSubIds.contains(it.id)){
       		selected=true
       		}
           }%
@@ -596,7 +600,7 @@
       <input id="${it?.id}" name="eval_type_${it?.id}" type="checkbox" ${selected?'checked'.raw(): ''}>
       <label class="choice" for="eval_type_${it?.id}">${it?.evalType}</label>
       <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
-      %{ } }%
+      %{ } }%<input type="hidden" id="eval_type_h" title="EvaluationHow"/>
     </div>
     <span class="error">${errors.forKey('entity.evaluvated')}</span>
   </div>
@@ -614,7 +618,7 @@
       <input id="${it?.id}" name="evaluvators" type="radio" value="${it?.id}" ${selected?'checked'.raw(): ''}>${it}&nbsp;&nbsp;&nbsp;
       <!-- <span class="field" id="${it?.id}cont"></span><br> -->
       <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
-      %{ } }%
+      %{ } }%<input type="hidden" id="eval_who_h" title="EvaluationWho"/>
     </div>
     <span class="error">${errors.forKey('entity.evaluvated')}</span>
   </div>
@@ -644,13 +648,27 @@
         $("#organizationSelect").require();
         $("#locationSelect").require();
         $("#activity_type_select").require();
+        if($("#subActivityTypeSelect").length){
+          $("#activity_type_select").assert(
+            ($("#subActivityTypeSelect").val()),
+                "Gelieve minstens één detail soort aan te duiden"
+            );
+        }
+        $("#attendant_type_h").assert(
+          $("input[name='attendant_type']:checked").length != 0,
+              "Gelieve minstens één doelgroep aan te vinken"
+          );
 
-        if ($("#Sector input:checked").length == 0) {
+        if ($("#Sector input:checked").length == 0)
             $("#Sector input:hidden:first").require("Gelieve minstens één sector aan te vinken");
-        }
-        if ($("#atd_type input:checked").length == 0) {
+        $(".subSectorSelect").each(function(index, elem){
+          if($(elem).val()==undefined){
+            var sectorId = elem.name.substring(11);
+            $("#hs_"+sectorId).require("Gelieve minstens één detail sector aan te duiden");
+          }
+        });
+        if ($("#atd_type input:checked").length == 0)
             $("#atd_type input:hidden:first").require("Gelieve minstens één type aanwezigen van deze doelgroep aan te vinken");
-        }
         if($("#TheItem").length){
           if ($("#TheItem input:checked").length == 0) {
               $("#TheItem input:hidden:first").require("Gelieve minstens één item aan te vinken");
@@ -658,6 +676,12 @@
         }
         if ($("#Materiaal input:checked").length == 0) {
             $("#Materiaal input:hidden:first").require("Gelieve minstens één gebruikt materiaal aan te vinken");
+        }
+        if ($("#evaluvated").css("display")!='none' && $("#evaluvated input[type='checkbox']:checked").length == 0){
+            $("#evaluvated #eval_type_h").require("Gelieve aan te duiden hoe de activiteit werd geëvalueerd");
+        }
+        if ($("#evaluvated").css("display")!='none' && $("#evaluvated input[name='evaluvators'][type='radio']:checked").length == 0){
+            $("#evaluvated #eval_who_h").require("Gelieve aan te duiden door wie de activiteit werd geëvalueerd");
         }
         var participants = $("#atd_type input[name='entity.totalParticipants']");
         if(participants.length){

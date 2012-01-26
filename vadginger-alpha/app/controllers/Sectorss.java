@@ -95,7 +95,7 @@ public class Sectorss extends GingerController {
 		StringBuffer htmlData = new StringBuffer();
 		htmlData.append("<div class=\"label\">Detailsector</div>");
 		htmlData.append("<div class=\"field\">");
-		htmlData.append("<select name=\"sub_sector_"+id+"\" id=\"subSectorSelect\" multiple=\"multiple\" size=\""+blocksize+"\">\n");
+		htmlData.append("<select name=\"sub_sector_"+id+"\" class=\"subSectorSelect\" multiple=\"multiple\" size=\""+blocksize+"\">\n");
     Sectors andere = null;
 		for (models.Sectors sec: secs) {
       if("Andere".equals(sec.naam)) andere = sec;

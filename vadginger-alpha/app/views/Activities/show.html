@@ -50,7 +50,7 @@
 			Ge&euml;valueerd:
 		</span>
 		<span class="value">
-      ${entity.evaluvated}
+      ${entity.evaluvated ? "Ja" : "Neen"}
 		#{if entity.evaluvated}
       <ul>
 			#{list items:aes, as:'ae'}
@@ -61,6 +61,17 @@
 		#{/if}
 		</span>
 	</div>
+
+	<div class="row">
+		<span class="elem">
+			Gerapporteerd:
+		</span>
+		<span class="value">
+      ${entity.reported ? "Ja" : "Neen"}
+		</span>
+
+	</div>
+
 	
 	<div class="row">
 		<span class="elem">
@@ -146,17 +157,6 @@
 		
 	</div>
   
-
-  
-	<div class="row">
-		<span class="elem">
-			Gerapporteerd:
-		</span>
-		<span class="value">
-      ${entity.reported ? "Ja" : "Neen"}
-		</span>
-		
-	</div>
 
 
   <div class="row">

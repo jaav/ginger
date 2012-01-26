@@ -142,4 +142,17 @@ public class VadGingerUsers extends GingerController {
 		index();
 	}
 
-    }
+	public static void list(String id) {
+		StringBuffer htmlData = new StringBuffer("<option value=\"\">Selecteer een gebruiker</option>");
+		if (id!=null&&!id.trim().equals("")) {
+			List<VadGingerUser> users = VadGingerUser.find("centrumId is " + id +" and isActive=1").fetch();
+			if (users.size()>0){
+		      for (VadGingerUser user: users) {
+		        htmlData.append(" <option value=\""+user.id+"\" >"+user.userID+"</option>\n");
+		      }
+      }
+		}
+		renderText(htmlData.toString());
+	}
+
+}

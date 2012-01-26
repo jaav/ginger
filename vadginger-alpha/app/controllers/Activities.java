@@ -3,11 +3,7 @@ package controllers;
 import java.lang.reflect.Array;
 import java.lang.reflect.InvocationTargetException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 import javax.persistence.TemporalType;
 
@@ -26,6 +22,7 @@ import play.mvc.With;
 
 @With(Secure.class)
 public class Activities extends GingerController {
+
 	public static void index(String orderby, String orderhow) {
 		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
     String orderquery = StringUtils.isNotBlank(orderby)&&StringUtils.isNotBlank(orderhow) ? " order by "+orderby+" "+orderhow : " order by id desc";
@@ -297,13 +294,20 @@ public class Activities extends GingerController {
 	private static void storeActivityType(Activity entity) {
 		String activityType = request.params.get("activity_type");
 		if (activityType != null && !activityType.trim().equals("")) {
-      String[] test = request.params.getAll("sub_activity_type");
-      System.out.println("test = " + test);
 			String[] sub_act_types = request.params.getAll("sub_activity_type");
-      for (int i = 0; i < sub_act_types.length; i++) {
-        String sub_act_type = sub_act_types[i];
-        if (sub_act_type!=null&&!sub_act_type.equals(""))
-          activityType = sub_act_type;
+      if(sub_act_types!=null){
+        for (int i = 0; i < sub_act_types.length; i++) {
+          String sub_act_type = sub_act_types[i];
+          if (sub_act_type!=null&&!sub_act_type.equals("")){
+            models.ActivityType actTyp = models.ActivityType.find("id is " + sub_act_type).first();
+            models.ActivityTypeJunction atj = new models.ActivityTypeJunction();
+            atj.activityId = entity;
+            atj.activityTypeId = actTyp;
+            atj.save();
+          }
+        }
+      }
+      else{
         models.ActivityType actTyp = models.ActivityType.find("id is " + activityType).first();
         models.ActivityTypeJunction atj = new models.ActivityTypeJunction();
         atj.activityId = entity;
@@ -389,17 +393,13 @@ public class Activities extends GingerController {
 			entity.internalActivity = false;
 		else
 			entity.internalActivity = true;
-		if (request.params.get("entity.evaluvated")==null) {
-			entity.evaluvated = false;
-			entity.reported = false;
+		if (entity.evaluvated) {
+			entity.evaluvated = true;
 		}
 		else {
-			entity.evaluvated = true;
-			//entity.reported = true;
-				if (request.params.get("entity.reported")==null){
-					entity.reported = false;
-        }
-			}
+			entity.evaluvated = false;
+			entity.reported = false;
+    }
 		entity.save();
 		deletedAllRelationships(entity);
 		storeEvaluvationsAndEvaluvators(entity);
@@ -475,6 +475,7 @@ public static void searchForm() {
 	   getActivityByActivityTargets(whereClause, joinClause);
 	   getActivityByDate(whereClause);
 	   getActivityByEvaluvation(whereClause,joinClause);
+	   getActivityByUser(whereClause,joinClause);
 	   //System.out.println("+++ where clause = "+ whereClause.toString());
 	   StringBuffer where = new StringBuffer();
 	   String[] whereArr = new String[whereClause.size()]; 
@@ -633,15 +634,22 @@ private static void getActivityBySector(ArrayList<String> whereClause, StringBuf
 			List<models.Sectors> secs = models.Sectors.find("ouder is null").fetch();
 			for (models.Sectors sec : secs) {
 				if (request.params.get("sector_" + sec.id) != null) {
-					String[] ssids = request.params.getAll("sub_sector_"
-							+ sec.id);
+					String[] ssids = request.params.getAll("sub_sector_"+ sec.id);
 					if (ssids != null) {
 						for (String ssid : ssids) {
 							sub_org_idss += ssid + ",";
 						}
 					}
-          else
-            sub_org_idss += sec.id + ",";
+          else{
+			      List<models.Sectors> subsecs = models.Sectors.find("ouder = "+sec.id).fetch();
+            if(subsecs.isEmpty())
+              sub_org_idss += sec.id + ",";
+            else{
+              for (Sectors subsec : subsecs) {
+                sub_org_idss += subsec.id + ",";
+              }
+            }
+          }
 				}
 			}
 			if (sub_org_idss.length() > 0) {
@@ -688,6 +696,43 @@ private static void getActivityByEvaluvation(ArrayList<String> whereClause, Stri
 	String evaluvated = request.params.get("entity.evaluvated");
 	//System.out.println(":: evaluvated " + evaluvated);
 	if (!StringUtils.isBlank(evaluvated)&&evaluvated.trim().toLowerCase().equals("yes")) {
+    /*Map<String, String[]> pars = request.params.all();
+    List<String> hows = new ArrayList<String>();
+    String who = null;
+    for (String s : pars.keySet()) {
+      if(s.startsWith("eval_type_")) hows.add(s.substring(10));
+      if(s.equals("evaluvators")) who = pars.get(s)[0];
+    }
+    if(!hows.isEmpty() || who==null){
+      StringBuffer evalJoin = new StringBuffer(" join act.activityEvaluvatorsId eia");
+      StringBuffer evalWhere = new StringBuffer();
+      if(!hows.isEmpty()){
+        evalJoin.append(" join eia.evalTypeId etid ");
+        for (String how : hows) {
+          evalWhere.append("etid=").append(how).append(" or ");
+        }
+        whereClause.add(evalWhere.delete(evalWhere.length()-4, -1).toString());
+        joinCaluse.append(evalJoin.toString());
+      }
+      if(who != null){
+        joinCaluse.append(" join eia.evaluvatorsId esid ");
+        whereClause.add("esid="+who);
+      }
+    }*/
+
+    boolean joinAdded = false;
+    List<models.Materials> materials = models.Materials.all().fetch();
+       for (models.Materials material: materials) {
+         if (getParam("material_1_"+material.getId())!=null) {
+           if(!joinAdded) {
+             joinCaluse.append(" join act.materialsInActivities mia join mia.materialId mid ");
+             joinAdded = true;
+           }
+           whereClause.add("mid="+material.id);
+         }
+       }
+
+
 		whereClause.add("act.evaluvated=1");
 		getActivityByEvaluvators(whereClause, joinCaluse);
 	}
@@ -695,22 +740,39 @@ private static void getActivityByEvaluvation(ArrayList<String> whereClause, Stri
 		whereClause.add("act.evaluvated=0");
 }
 
+
+private static void getActivityByUser(ArrayList<String> whereClause, StringBuffer joinCaluse) {
+	String user = request.params.get("gebruiker");
+	String centrum = request.params.get("centrum");
+	//System.out.println(":: evaluvated " + evaluvated);
+	if (StringUtils.isNotBlank(user)) {
+		whereClause.add("act.userId="+user);
+	}
+	if (StringUtils.isNotBlank(centrum))
+		whereClause.add("act.centrumId="+centrum);
+}
+
 private static void getActivityByEvaluvators(ArrayList<String> whereClause,
 		StringBuffer joinCaluse) {
 	boolean joinAdded = false;
-	List<String> evalTypeIds = new ArrayList<String>();
+	List<Long> evalTypeIds = new ArrayList<Long>();
 	List<models.EvaluvationType> evalTypes = models.EvaluvationType.all().fetch();
 	for (models.EvaluvationType evalType: evalTypes) {
-		String evalTypeId = request.params.get("eval_type_");
+    Long test = evalType.id;
+		String evalTypeId = request.params.get("eval_type_"+evalType.id);
 		if (!StringUtils.isBlank(evalTypeId)) {
-			
-			evalTypeIds.add(evalTypeId);
+			evalTypeIds.add(evalType.id);
 		}
 	}
-	 if (evalTypeIds.size() == 1) {
+	 if (evalTypeIds.size() > 0) {
 		 joinCaluse.append(" join act.activityEvaluvatorsId actEval join actEval.evalTypeId actEvalTypeId ");
 		 joinAdded = true;
-		 whereClause.add("actEvalTypeId=" + evalTypeIds.get(0));
+
+     StringBuffer evalWhere = new StringBuffer("(");
+     for (Long evalTypeId : evalTypeIds) {
+       evalWhere.append("actEvalTypeId=").append(evalTypeId).append(" or ");
+     }
+     whereClause.add(evalWhere.delete(evalWhere.length()-4, 5000).append(")").toString());
 	 }
 	 String evaluvators = request.params.get("evaluvators");
 	 if (!StringUtils.isBlank(evaluvators)) {

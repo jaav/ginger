@@ -11,6 +11,62 @@
 #{form @Activities.search()}
 
 <!--  form begins here -->
+#{if userRole.compareTo(models.RoleType.SUPER_ADMIN) == 0}
+
+  <div class="row">
+  <!-- <div class="label">Internal Activity</div> -->
+  <div class="field">
+    Centra en Gebruikers:<br />
+    <select name="centrum" id="centrumselector">
+           <option value="">Selecteer een centrum</option>
+        %{ models.Centrums.find("isActive=1").fetch().sort{ it.naam }.each() { }%
+           <option value="${it?.id}">${it.naam}</option>
+        %{ } }%
+    </select><br />
+    <select name="gebruiker" id="gebruikerselector">
+           <option value="">Selecteer eerst een centrum</option>
+    </select>
+  </div>
+  </div>
+  <script type="text/javascript">
+    $(function() {
+     $("#centrumselector").change(function(ev){
+       $("#gebruikerselector").empty();
+        var selectedCentrum = $(this).val();
+        var listUsers = #{jsAction @VadGingerUsers.list(':id')/}
+          $("#gebruikerselector").load(listUsers({id: selectedCentrum}), function() {
+        });
+     });
+    });
+  </script>
+#{/if}
+
+#{elseif userRole.compareTo(models.RoleType.ORG_ADMIN) == 0}
+
+  <div class="row">
+  <!-- <div class="label">Internal Activity</div> -->
+  <div class="field">
+    Gebruikers:<br />
+    <select name="gebruiker" id="gebruikerselector">
+           <option value="">Selecteer een gebruiker</option>
+        %{ models.VadGingerUser.find("centrumId = "+centrumId.id+" and isActive=1").fetch().sort{ it.userID }.each() { }%
+           <option value="${it?.id}">${it.userID}</option>
+        %{ } }%
+    </select>
+  </div>
+  </div>
+  <script type="text/javascript">
+    $(function() {
+     $("#centrumselector").change(function(ev){
+       $("#gebruikerselector").empty();
+        var selectedCentrum = $(this).val();
+        var listUsers = #{jsAction @VadGingerUsers.list(':id')/}
+          $("#gebruikerselector").load(listUsers({id: selectedCentrum}), function() {
+        });
+     });
+    });
+  </script>
+#{/elseif}
 
 
  <div class="row">
@@ -55,6 +111,19 @@
         #{/else}
         </select>
   </div>
+
+  <div class="field" id="hiddenOrg"></div>
+
+  <script>
+    $("#organizationSelect").change(
+      function() {
+        $("#hiddenOrg").empty();
+        var selectedOrganization = $("#organizationSelect option:selected").val();
+        var listLocations = "/suborganizations/list?id="+selectedOrganization+"&centrumId=${centrumId.id}";
+          $("#hiddenOrg").load(listLocations, function() {
+          });
+      });
+  </script>
 
 </div>
 <hr>
