@@ -26,7 +26,6 @@ sec. Onderwijs
 Basisonderwijs: kleuteronderwijs 
 Basisonderwijs: buitengewoon lager onderwijs (BLO)
 Basisonderwijs: lager onderwijs (LO)
-Basisonderwijs: meerdere onderwijsvormen
 Basisonderwijs: andere 
 Secundair onderwijs: ASO
 Secundair onderwijs: BSO
@@ -40,6 +39,7 @@ Secundair onderwijs: TSO & BSO
 Secundair onderwijs: ASO, TSO & BSO 
 Secundair onderwijs: andere combinaties van onderwijsvormen 
 Secundair onderwijs: andere 
+Basisonderwijs: meerdere onderwijsvormen
 Hoger onderwijs: niet-universitair onderwijs 
 Hoger onderwijs: universitair onderwijs 
 Centrum voor leerlingenbegeleiding (CLB) 
