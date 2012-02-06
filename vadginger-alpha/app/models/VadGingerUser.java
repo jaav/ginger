@@ -47,7 +47,7 @@ public class VadGingerUser extends Model {
   public void setPassword(String password) {
     if (StringUtils.isBlank(password))
       return;
-    this.passwordHash = play.libs.Codec.encodeBASE64(Security.md5(password));
+    this.passwordHash = password;
   }
 
   public boolean isCurrentUser(String currentUser) {

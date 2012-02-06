@@ -1,5 +1,6 @@
 package controllers;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import models.Activity;
@@ -87,17 +88,43 @@ public class Sectorss extends GingerController {
 			query = "ouder is null";
 		else
 			query += id;
-		query+= " and isActive=1";
+		query+= " and isActive=1 order by naam";
 		List<models.Sectors> secs = models.Sectors.find(query).fetch();
+    if(secs.isEmpty()) renderText("<div></div>");
+    int blocksize = secs.size() > 10 ? 10 : secs.size();
 		StringBuffer htmlData = new StringBuffer();
 		htmlData.append("<div class=\"label\">Detailsector</div>");
 		htmlData.append("<div class=\"field\">");
-		htmlData.append("<select name=\"sub_sector_"+id+"\" id=\"subSectorSelect\" multiple=\"multiple\" size=\"4\">\n");
+		htmlData.append("<select name=\"sub_sector_"+id+"\" class=\"subSectorSelect\" multiple=\"multiple\" size=\""+blocksize+"\">\n");
+    Sectors andere = null;
 		for (models.Sectors sec: secs) {
-			htmlData.append(" <option value=\""+sec.id+"\" >"+sec.naam+"</option>\n");
+      if("Andere".equals(sec.naam)) andere = sec;
+      else
+			  htmlData.append(" <option value=\""+sec.id+"\" >"+sec.naam+"</option>\n");
 		}
+    if(andere!=null) htmlData.append(" <option value=\""+andere.id+"\" >Andere</option>\n");
 		htmlData.append("</select></div>");
 		renderText(htmlData.toString());
 	}
+
+  public static List<Sectors> getOrderedSubSectorList(Long ouder_id){
+    List<models.Sectors> secs = null;
+		if(ouder_id!=null){
+      String query = "ouder is "+ouder_id+" and isActive=1 order by naam";
+      secs = Sectors.find(query).fetch();
+      Sectors andere = null;
+      for (models.Sectors sec: secs) {
+        if("Andere".equals(sec.naam)){
+          andere = sec;
+          break;
+        }
+      }
+      if(andere!=null){
+        secs.remove(andere);
+        secs.add(andere);
+      }
+    }
+    return secs;
+  }
 
 }

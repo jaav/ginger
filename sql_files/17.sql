@@ -1,4924 +1,4924 @@
 
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (21,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (37,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (38,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (40,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (41,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (43,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (44,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (45,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (53,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (54,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (55,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (57,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (58,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (60,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (65,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (66,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (69,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (82,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (89,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (91,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (100,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (101,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (102,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (103,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (104,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (111,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (117,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (118,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (121,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (122,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (124,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (136,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (137,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (149,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (154,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (169,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (170,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (171,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (175,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (179,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (181,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (182,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (183,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (185,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (186,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (188,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (192,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (197,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (204,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (207,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (211,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (217,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (221,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (223,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (232,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (237,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (250,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (252,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (261,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (268,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (282,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (285,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (286,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (287,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (288,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (290,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (295,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (296,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (298,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (307,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (308,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (315,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (316,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (317,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (320,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (321,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (322,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (327,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (328,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (329,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (330,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (331,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (333,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (334,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (336,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (337,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (342,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (345,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (348,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (350,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (351,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (353,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (357,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (359,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (366,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (369,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (387,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (388,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (390,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (395,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (398,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (400,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (402,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (406,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (408,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (410,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (413,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (434,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (436,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (444,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (446,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (453,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (486,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (487,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (500,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (502,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (527,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (535,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (540,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (541,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (543,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (548,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (563,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (575,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (583,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (587,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (592,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (597,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (598,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (600,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (601,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (604,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (606,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (620,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (623,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (625,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (630,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (636,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (656,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (657,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (662,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (666,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (668,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (671,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (673,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (676,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (678,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (688,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (718,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (719,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (720,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (721,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (728,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (742,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (744,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (748,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (766,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (770,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (789,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (790,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (791,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (794,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (795,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (796,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (797,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (802,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (803,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (804,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (809,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (819,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (820,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (821,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (827,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (832,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (839,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (841,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (842,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (849,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (850,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (854,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (856,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (857,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (858,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (859,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (862,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (863,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (870,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (875,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (877,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (879,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (880,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (881,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (884,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (888,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (890,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (892,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (895,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (906,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (910,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (911,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (912,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (916,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (917,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (922,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (927,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (929,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (931,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (935,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (936,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (937,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (939,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (940,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (943,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (948,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (949,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (952,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (954,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (955,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (957,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (958,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (960,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (962,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (967,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (968,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (969,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (970,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (971,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (973,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (974,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (975,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (978,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (979,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (980,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (981,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (982,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (984,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (985,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (988,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (991,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (993,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (995,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (996,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (997,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1000,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1001,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1005,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1007,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1008,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1013,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1014,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1015,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1016,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1017,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1019,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1020,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1021,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1022,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1023,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1027,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1029,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1031,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1032,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1035,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1037,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1041,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1042,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1043,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1044,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1053,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1057,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1060,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1064,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1066,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1067,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1069,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1070,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1071,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1072,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1073,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1076,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1080,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1082,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1084,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1089,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1093,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1101,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1110,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1114,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1119,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1123,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1129,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1133,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1146,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1149,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1152,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1157,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1159,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1160,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1161,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1163,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1164,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1166,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1168,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1169,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1170,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1171,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1172,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1173,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1175,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1177,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1178,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1181,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1186,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1188,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1192,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1193,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1197,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1199,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1204,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1206,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1208,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1212,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1213,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1215,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1218,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1223,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1226,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1229,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1231,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1251,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1255,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1263,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1283,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1289,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1291,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (1292,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1293,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1299,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1312,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1317,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1319,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1321,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1323,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1324,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1327,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1328,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1345,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1357,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1364,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1372,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1373,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1378,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1394,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1395,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1396,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1397,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1400,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1401,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1402,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1409,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1420,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1423,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1431,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1443,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1444,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1445,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1446,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1453,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1456,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1457,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1458,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1468,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1469,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1470,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1480,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1481,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1488,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1502,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1543,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1547,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1548,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1550,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1551,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1552,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1557,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1558,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1566,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1573,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1575,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1576,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1579,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1581,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1583,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1601,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1602,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1603,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1604,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1605,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1606,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1607,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1608,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1609,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1610,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1611,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1612,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1613,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1616,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1617,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1620,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1621,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1622,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1624,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1626,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1627,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1630,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1663,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1664,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1665,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1666,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1667,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1668,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1669,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1670,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1671,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1672,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1673,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1674,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1675,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1678,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1679,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1680,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1682,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1688,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1689,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1690,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1691,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1692,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1693,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1694,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1695,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1698,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1707,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1708,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1709,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1710,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1724,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1725,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1726,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1727,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1728,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1729,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1730,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (1733,2);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (1734,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1736,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1739,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1755,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1757,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1758,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1783,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1788,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1790,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1796,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1799,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1804,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1805,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1807,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1810,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1814,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1821,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1829,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1830,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1832,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1837,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1839,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1845,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1846,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1849,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1850,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1860,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1871,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1874,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1876,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1887,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (1914,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1916,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1917,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1919,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1920,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1921,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1922,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1923,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1925,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1926,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1927,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1928,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1929,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1934,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1936,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1940,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1943,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1945,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1946,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1949,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1950,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1952,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1953,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1954,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1960,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1962,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1963,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1967,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1968,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1969,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1973,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1976,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1979,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1980,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1981,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1982,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1985,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1986,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1988,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1989,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1991,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1992,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1993,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (1994,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1995,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1996,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1997,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1998,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (1999,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2001,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2004,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2005,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2006,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2007,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2008,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2009,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2010,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (2015,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2016,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2017,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2018,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2019,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2029,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2048,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2050,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2088,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2090,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2091,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2092,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2093,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2094,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2095,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2096,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2097,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2098,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2099,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2101,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2109,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2114,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2123,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (2128,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2134,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2139,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2141,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2147,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2148,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2152,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2163,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2164,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2166,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2167,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2168,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2171,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2172,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2173,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2175,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2180,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2181,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2186,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2187,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2188,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2192,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2193,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2194,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2195,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2196,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2197,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2198,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2199,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2200,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2208,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2209,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2210,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2212,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2217,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2220,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2221,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2222,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2223,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2225,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2226,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2227,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2228,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2231,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2232,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2233,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2235,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2237,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2240,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2244,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2262,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2273,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2275,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2276,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2280,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2281,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2282,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2284,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2300,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2305,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2306,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2311,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2312,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2313,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2314,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2316,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2318,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2320,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2322,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2324,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2326,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2330,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2332,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2333,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2334,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2335,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2336,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2337,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2338,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2339,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2344,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2347,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2351,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2358,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2361,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2362,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2363,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2367,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2368,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2372,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2375,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2376,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2383,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2401,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2408,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2410,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2429,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2443,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2445,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2447,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2451,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2463,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2467,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2481,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2482,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2486,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2487,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2488,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2501,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2518,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2524,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2526,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2538,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2543,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2550,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2551,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2556,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2561,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2562,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2563,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2564,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2566,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2568,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2569,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2570,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2572,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2579,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2584,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2586,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2588,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2610,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2612,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2617,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2622,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2625,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2626,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2630,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2633,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2636,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2637,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2645,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2646,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2649,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2660,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2668,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2670,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2727,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2735,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2742,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2743,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2745,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2746,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2747,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2748,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2749,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2751,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2757,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2758,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2760,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2765,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2772,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2774,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2775,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2776,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2778,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2783,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2786,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2792,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2793,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (2794,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2798,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2800,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2801,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2802,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2806,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2808,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2810,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2812,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2817,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2818,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2819,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2822,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2829,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2832,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2848,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2850,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2851,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2852,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2857,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2862,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2865,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2866,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2867,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2875,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2896,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2904,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2905,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2948,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2963,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2987,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2992,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2994,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2995,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2997,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (2999,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3000,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3002,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3004,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3022,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3023,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3025,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3026,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3031,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3033,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3034,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3035,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3036,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3037,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3038,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3039,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3040,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3041,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3042,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3043,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3059,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3062,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3064,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3065,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3066,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3067,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3068,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3069,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3070,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3071,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3072,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3073,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3074,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3075,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3076,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3077,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3078,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3079,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3081,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3083,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3084,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3085,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3087,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3089,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3093,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3134,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3164,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3170,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3172,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3175,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3178,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3179,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3180,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3184,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3185,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3186,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3188,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3195,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3196,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3217,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3220,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3221,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3226,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3227,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3240,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3246,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3264,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3265,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3266,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3267,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3268,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3271,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3272,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3277,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3278,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3279,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3280,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3281,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3282,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3283,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3284,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3285,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3286,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3294,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3295,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3298,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3303,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3306,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3315,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3326,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3331,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3334,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3339,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3342,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3343,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3344,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3345,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3346,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3375,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3376,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3378,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3380,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3381,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3385,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3405,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3406,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3412,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3413,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3414,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3418,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3420,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3430,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3440,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3443,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3444,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3446,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3447,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3448,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3449,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3450,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (3479,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3481,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (3482,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3483,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3484,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3485,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3490,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3498,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3504,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3508,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3516,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3517,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3519,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3520,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3522,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3523,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3529,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3530,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3531,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3532,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3533,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (3535,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3536,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3539,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3542,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3577,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3580,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3581,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3584,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3586,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3587,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3588,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3592,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3593,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3594,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3598,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3599,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3600,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3603,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3605,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3606,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3608,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3609,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3610,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3612,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3617,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3619,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3620,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3621,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3622,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3623,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3624,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3626,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3627,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3628,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3629,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3630,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3632,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3633,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3634,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3644,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3653,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3655,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3660,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3661,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3664,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3665,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3666,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3667,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3671,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3675,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3685,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3712,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3717,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3722,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3724,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3737,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3741,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3766,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3769,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3771,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3772,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3777,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3780,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3781,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3786,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3791,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3792,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3793,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3794,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3795,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3796,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3800,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3812,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3813,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3814,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3815,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3816,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3828,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3829,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3830,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3831,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3832,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3845,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3846,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3849,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3852,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3855,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3856,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3860,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3864,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3872,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3885,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3886,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3898,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3899,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3904,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3906,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3911,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3927,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3928,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3932,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3933,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3934,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3935,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3936,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3937,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3938,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3939,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3940,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3941,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3942,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3943,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3944,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3945,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3946,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3947,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3948,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3949,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3950,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3951,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3952,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3953,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3954,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3955,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3956,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3957,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3958,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3959,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3960,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3961,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3962,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3963,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3964,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3965,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3966,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3968,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3969,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3974,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3975,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3976,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3977,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3980,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3981,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3982,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3994,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3995,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3996,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3997,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (3998,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4008,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4009,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4011,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4017,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4018,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4019,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4023,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4025,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4035,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4044,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4046,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4048,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4049,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4060,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4064,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4065,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4066,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4067,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4068,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4069,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4070,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4071,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4072,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4074,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4075,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4078,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4080,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4081,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4084,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4085,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4087,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4088,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4090,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4091,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4092,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4093,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4099,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4101,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4102,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4105,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4118,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4128,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4129,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4130,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4131,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4133,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4137,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4140,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4145,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4148,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4152,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4153,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4155,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4156,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4167,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4169,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4170,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4171,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4201,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4204,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4207,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4208,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4211,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4213,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4216,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4217,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4218,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4219,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4220,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4221,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4222,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4227,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4242,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4246,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4247,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4248,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4249,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4250,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4251,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4255,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4256,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4257,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4266,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4269,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4270,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4283,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4284,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4285,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4288,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4289,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4290,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4291,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4293,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4295,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4304,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4311,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4313,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4314,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4315,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4316,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4317,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4318,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4319,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4335,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4337,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4338,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4339,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4341,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4358,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (4360,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4373,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4376,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4378,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4389,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4390,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4413,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4414,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4416,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4423,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4441,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4443,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4449,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4451,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4452,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4453,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4455,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4474,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4475,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4476,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4478,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4485,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4486,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4488,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4490,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4498,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4499,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4500,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4502,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4510,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4512,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4513,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4514,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4515,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4523,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4524,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4529,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4531,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4533,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4534,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4536,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4541,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4546,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4555,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4556,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4558,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4621,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4624,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4625,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4626,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4628,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4630,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4633,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4638,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4640,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4642,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4646,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4647,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4652,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4653,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4658,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4663,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4669,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4672,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4684,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4691,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4734,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4735,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4737,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4738,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4752,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4754,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4784,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4788,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4790,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4799,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4811,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4812,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4820,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4826,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4886,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4888,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4895,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4899,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4900,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4901,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4915,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4932,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4954,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4971,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4972,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4980,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4992,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (4998,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5006,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5019,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5020,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5022,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5023,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5025,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5028,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5029,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5030,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5050,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5063,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5067,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5068,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5077,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5078,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5111,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5122,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5123,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5124,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5125,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5126,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5127,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5128,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5129,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5130,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5131,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5132,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5133,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5134,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5138,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5149,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5150,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5152,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5153,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5154,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5155,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5156,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5157,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5158,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5159,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5161,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5162,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5163,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5164,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5191,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5192,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5196,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5215,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5218,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5223,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5225,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5237,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5260,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5261,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5275,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5278,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5279,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5280,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5281,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5282,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5283,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5285,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5286,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5288,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5291,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5292,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5293,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5301,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5304,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5308,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5311,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5312,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5313,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5315,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5320,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5336,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5338,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5341,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5343,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5345,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5347,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5354,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5361,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5362,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5373,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5374,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5387,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5412,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5413,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5414,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5417,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5418,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5422,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5427,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5432,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5438,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5439,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5441,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5442,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5443,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5448,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5455,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5461,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5471,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5476,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5509,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5510,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5511,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5512,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5513,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5514,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5515,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5516,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5517,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5518,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5519,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5520,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5521,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5522,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5524,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5525,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5526,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5527,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5528,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5529,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5530,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5532,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5533,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5534,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5535,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5536,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5538,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5539,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5540,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5541,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5542,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5550,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5552,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5553,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5556,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5558,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5559,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5560,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5563,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5564,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5565,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5566,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5567,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5568,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5570,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5573,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5591,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5593,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5596,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5598,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5600,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5601,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5602,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5603,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5604,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5606,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5608,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5610,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5612,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5613,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5614,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5619,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5620,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5622,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5623,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5624,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5626,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5627,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5629,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5630,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5637,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5639,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5643,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5644,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5645,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5646,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5647,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5651,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5652,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5654,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5657,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5661,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5675,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5679,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (5681,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5682,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5687,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5689,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5690,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5691,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5693,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5695,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5696,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5700,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5707,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5708,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5709,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5710,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5712,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5714,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5715,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5716,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5717,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5718,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5719,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5720,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5721,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5722,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5723,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5725,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5726,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5727,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5728,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5729,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5730,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5731,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5732,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (5734,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5735,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5736,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5737,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5738,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5740,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5741,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5742,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5743,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5744,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5745,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5746,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5747,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5748,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5750,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5751,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5753,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5754,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5755,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5757,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5759,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5760,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5762,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5764,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5766,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5767,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5769,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5783,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5788,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5795,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5800,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5807,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5810,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5811,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5813,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5814,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5821,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5823,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5824,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5826,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5827,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5829,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5830,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5832,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5835,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5836,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5837,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5838,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5845,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5846,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5848,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5851,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5853,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5855,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5857,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5859,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5860,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5861,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5864,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5868,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5869,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5870,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5871,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5872,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5873,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5874,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5875,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5876,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5877,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5878,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5879,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5880,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5881,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5882,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5883,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5884,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5885,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5886,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5887,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5888,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5891,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5894,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5908,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5909,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5910,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5927,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5930,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5937,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5938,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5939,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5947,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5948,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5949,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5950,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5951,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5952,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5953,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5954,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5955,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5956,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5957,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5958,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5959,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5960,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5961,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5962,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5963,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5964,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5966,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5967,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5968,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5969,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5970,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (5972,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5986,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5989,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5990,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (5992,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6000,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6001,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6005,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6006,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6007,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6016,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6027,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6028,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6029,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6032,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6033,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6038,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6040,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6041,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6045,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6047,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6048,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6049,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6050,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6051,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6054,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6055,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6056,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6057,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6068,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6072,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6089,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6097,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6099,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6100,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6101,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6107,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6121,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6123,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6132,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6133,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6134,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6135,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6136,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6137,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6138,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6139,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6140,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6141,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6142,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6143,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6144,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6145,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6146,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6147,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6148,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6149,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6150,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6151,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6152,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6154,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6157,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6159,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6160,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6161,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6162,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6163,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6165,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6166,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6167,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6168,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6169,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6173,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6174,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6175,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6176,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6177,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6178,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6179,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6181,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6182,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6183,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6184,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6185,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6186,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6187,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6188,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6189,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6190,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6191,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6192,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6193,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6194,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6195,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6196,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6201,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6202,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6210,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6211,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6212,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6213,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6215,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6219,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6223,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6226,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6231,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6232,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6233,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6235,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6237,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6243,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6245,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6247,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6248,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6249,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6250,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6251,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6252,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6253,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6254,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6259,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6261,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6262,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6265,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6266,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6268,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6269,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6271,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6272,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6273,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6274,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6275,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6276,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6277,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6279,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6281,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6282,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6283,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6284,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6285,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6288,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6290,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6293,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6294,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6295,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6297,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6298,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6299,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6300,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6301,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6305,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6307,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6313,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6314,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6330,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6331,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6332,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6358,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6381,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6402,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6403,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6405,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6409,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6427,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6436,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6439,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6443,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6444,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6449,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6451,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6453,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6454,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6456,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6457,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6458,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6462,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6465,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6468,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6470,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6475,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6476,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6478,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6480,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6483,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6495,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6500,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6501,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6504,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6505,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6506,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6507,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6511,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6514,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6517,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6522,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6544,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6564,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6565,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6566,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6568,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6569,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6577,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6578,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6579,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6585,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6590,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6592,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6600,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6607,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6611,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6612,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6616,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6617,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6618,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6619,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6622,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6624,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6625,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6626,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6627,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6628,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6629,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6630,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6632,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6633,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6635,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6636,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6637,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6638,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6639,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6640,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6641,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6642,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6644,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6645,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6646,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6647,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6648,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6649,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6651,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6653,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6656,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6657,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6661,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6662,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6663,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6664,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6707,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6724,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6726,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6729,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6730,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6731,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6732,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6733,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6734,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6735,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6736,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6738,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6739,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6740,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6742,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6743,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6744,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6746,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6748,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6749,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6750,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6752,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6753,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6760,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6761,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6765,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6766,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6772,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6774,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6775,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6780,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6781,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6782,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6783,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6802,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6803,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6811,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6812,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6813,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6817,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6821,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6822,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6823,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6824,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6825,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6826,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6827,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6828,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6831,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6836,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6838,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6839,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6849,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6853,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6854,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6855,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6856,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6857,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6858,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6890,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6906,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6913,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6914,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6935,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6949,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6950,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6970,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6971,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6976,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6979,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6996,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (6998,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7000,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7003,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7009,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7019,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7020,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7026,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7027,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7029,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7046,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7052,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7054,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7059,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7061,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7062,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7063,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7064,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7111,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7114,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7115,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7116,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7117,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7118,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7119,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7124,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7131,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7135,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7139,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7141,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7154,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7155,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7156,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7157,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7158,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7159,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7160,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7161,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7162,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7163,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7175,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7178,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7180,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7187,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7213,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7215,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7216,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7217,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7218,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7219,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7220,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7221,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7223,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7224,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7227,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7228,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7229,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7231,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7232,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7233,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7239,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7241,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7242,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7243,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7248,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7251,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7253,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7255,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7256,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7257,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7258,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7259,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7260,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7261,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7262,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7263,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7265,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7267,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7268,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7269,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7271,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7272,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7276,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7277,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7278,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7279,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7284,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7291,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7292,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7293,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7295,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7296,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7297,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7298,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7300,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7302,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7303,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7307,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7309,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7313,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7314,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7315,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7318,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7325,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7326,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7327,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7328,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7332,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7334,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7335,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7337,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7342,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7343,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7346,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7347,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7348,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7349,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7353,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7355,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7356,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7363,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7364,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7366,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7379,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7380,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7381,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7382,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7383,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7384,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7385,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7386,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7387,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7388,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7389,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7390,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7391,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7392,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7393,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7396,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7397,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7398,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7399,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7400,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7401,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7402,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7403,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7404,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7405,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7410,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7412,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7415,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7416,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7417,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7424,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7426,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7452,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7474,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7476,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7477,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7479,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7482,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7492,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7495,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7500,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7501,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7502,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7504,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7505,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7506,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7507,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7508,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7509,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7510,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7519,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7528,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7537,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7540,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7541,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7542,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7543,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7544,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7545,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7547,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7548,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7549,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7550,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7558,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7560,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7565,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7567,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7568,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7570,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7571,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7572,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7573,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7574,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7575,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7576,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7577,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7578,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7579,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7580,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7581,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7582,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7583,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7584,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7585,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7586,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7587,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7588,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7589,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7590,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7591,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7592,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7593,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7594,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7599,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7600,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7627,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7631,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7632,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7633,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7634,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7635,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7636,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7651,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7652,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7653,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7654,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7655,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7656,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7657,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7658,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7659,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7660,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7661,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7662,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7663,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7664,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7665,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7666,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7667,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7668,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7669,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7670,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7671,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7672,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7673,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7674,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7675,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7676,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7677,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7678,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7679,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7680,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7681,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7682,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7683,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7684,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7685,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7686,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7687,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7688,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7689,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7690,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7691,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7694,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7695,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7696,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7697,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7698,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7699,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7700,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7701,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7702,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7703,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7704,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7705,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7706,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7707,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7708,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7709,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7710,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7718,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7721,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7722,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7723,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7724,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7725,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7726,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7727,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7728,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7729,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7730,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7731,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7732,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7733,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7734,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7735,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7737,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7738,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7739,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7740,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7741,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7742,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7743,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7744,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7745,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7746,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7747,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7748,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7749,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7750,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7751,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7752,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7753,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7754,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7755,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7756,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7757,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7758,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7759,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7760,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7761,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7762,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7763,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7764,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7765,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7766,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7767,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7768,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7769,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7770,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7771,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7772,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7773,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7774,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7775,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7776,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7777,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7778,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7780,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7782,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7787,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7793,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7796,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7799,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7804,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7805,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7811,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7814,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7817,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7818,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7826,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7849,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7850,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7853,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7854,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7855,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7856,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7857,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7858,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7859,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7860,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7861,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7862,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7863,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7864,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7865,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7866,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7867,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7868,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7869,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7870,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7871,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7872,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7873,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7874,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7875,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7876,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7877,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7878,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7879,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7880,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7881,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7882,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7883,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7884,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7885,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7886,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7887,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7888,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7889,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7890,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7892,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7893,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7903,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7907,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7913,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7929,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7934,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7938,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7939,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7940,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7941,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7942,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7945,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7947,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7949,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7955,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7956,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7957,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7958,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7963,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7964,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7966,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7969,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7973,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7974,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7979,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7981,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7985,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7986,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7990,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7993,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (7998,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8003,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8011,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8013,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8015,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8016,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8017,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8022,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8024,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8026,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8051,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8054,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8055,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8059,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8061,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8062,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8063,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8074,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8079,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8080,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8081,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8082,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8083,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8092,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8093,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8094,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8095,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8096,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8099,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8100,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8105,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8106,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8107,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8108,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8109,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8110,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8117,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8122,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8131,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8132,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8134,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8135,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8136,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8140,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8141,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8145,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8146,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8147,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8148,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8149,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8150,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8151,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8152,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8153,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8154,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8155,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8156,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8157,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8158,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8159,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8160,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8162,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8163,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8165,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8170,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8178,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8183,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8184,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8185,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8186,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8187,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8188,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8189,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8190,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8191,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8192,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8193,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8194,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8195,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8196,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8197,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8198,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8209,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8210,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8215,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8216,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8217,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8218,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8219,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8220,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8221,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8222,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8223,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8224,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8225,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8226,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8227,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8228,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8229,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8230,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8233,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8234,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8236,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8237,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8240,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8241,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8242,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8243,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8254,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8260,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8267,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8269,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8270,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8271,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8272,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8273,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8274,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8275,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8276,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8277,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8278,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8279,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8280,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8282,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8285,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8286,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8287,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8288,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8289,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8306,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8307,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8317,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8322,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8327,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8333,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8340,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8354,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8355,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8360,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8364,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8366,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8372,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8373,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8374,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8381,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8382,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8385,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8386,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8387,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8391,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8394,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8396,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8398,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8399,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8404,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8406,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8409,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8413,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8414,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8418,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8419,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8422,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8423,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8424,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8425,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8427,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8430,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8440,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8441,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8442,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8443,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8444,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8445,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8447,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8448,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8457,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8458,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8459,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8460,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8462,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8463,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8464,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8465,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8466,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8467,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8468,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8470,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8471,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8472,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8473,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8474,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8475,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8476,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8477,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8478,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8479,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8480,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8481,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8482,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8483,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8484,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8495,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8498,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8499,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8501,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8505,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8508,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8510,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8523,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8524,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8529,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8530,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8531,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8532,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8534,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8536,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8537,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8538,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8544,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8545,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8546,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8554,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8555,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8568,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8569,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8575,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8583,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8584,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8586,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8593,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8594,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8595,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8596,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8597,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8599,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8602,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8608,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8609,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8613,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8614,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8618,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8619,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8631,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8639,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8650,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8661,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8662,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8663,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8664,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8665,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8666,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8667,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8668,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8672,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8673,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8675,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8676,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8677,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8678,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8679,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8680,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8681,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8682,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8685,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8687,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8688,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8689,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8690,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8691,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8692,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8693,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8698,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8701,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8702,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8703,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8704,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8707,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8722,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8726,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8729,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8731,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8732,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8733,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8741,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8743,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8754,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8757,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8765,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8767,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8772,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8779,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8780,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8781,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8793,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (8796,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8797,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8801,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8802,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8803,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8813,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8815,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8818,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8819,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8820,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8821,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8822,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8826,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8827,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8837,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8838,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8840,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8847,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8848,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8849,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8856,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8858,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8865,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8875,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8881,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8887,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8912,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8913,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8914,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8915,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8916,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8917,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8918,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8920,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8934,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8935,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8936,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8938,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8939,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8953,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8954,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8955,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8971,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8974,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8975,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8977,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8988,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8993,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (8996,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9001,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9002,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9003,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9004,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9005,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9006,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9007,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9010,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9013,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9014,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9021,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9022,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9023,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9033,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9037,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9041,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9042,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9043,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9044,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9046,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9048,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9049,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9050,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9053,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9054,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9055,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9056,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9059,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9060,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9061,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9062,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9063,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9064,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9065,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9070,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9094,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9099,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9100,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9102,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9106,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9112,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9114,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9115,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9117,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9118,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9119,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9120,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9122,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9126,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9131,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9134,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9135,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9137,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9140,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9142,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9148,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9152,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9153,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9156,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9157,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9159,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9160,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9161,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9162,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9163,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9166,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9167,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9169,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9170,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9171,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9172,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9173,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9178,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9183,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9191,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9192,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9193,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9197,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9198,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9200,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9202,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9203,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9204,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9205,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9211,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9214,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9215,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9220,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9221,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9229,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9231,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9245,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9248,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9254,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9272,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9274,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9280,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9282,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9283,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9284,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9290,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9295,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9296,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9299,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9313,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9314,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9315,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9317,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9336,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9337,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9349,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9350,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9351,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9353,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9360,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9369,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9377,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9381,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9382,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9392,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9394,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9395,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9402,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9406,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9407,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9408,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9411,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9426,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9427,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9430,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9431,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9433,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9434,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9435,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9436,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9437,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9438,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9439,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9441,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9443,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9444,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9454,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9460,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9464,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9465,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9470,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9471,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9474,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9478,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9479,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9486,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9487,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9488,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9489,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9490,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9491,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9492,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9493,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9494,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9495,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9496,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9497,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9498,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9499,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9500,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9501,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9502,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9503,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9504,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9506,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9507,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9508,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9524,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9525,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9526,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9527,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9530,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9531,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9532,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9534,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9544,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9557,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9558,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9559,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9560,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9561,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9565,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9573,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9587,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9588,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9589,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9590,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9591,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9592,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9593,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9594,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9595,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9596,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9597,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9598,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9599,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9600,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9601,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9602,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9603,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9604,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9605,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9606,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9607,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9652,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9653,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9654,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9657,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9667,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9671,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9676,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9695,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9696,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9697,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9699,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9725,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9726,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9732,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9734,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9750,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9751,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9752,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9754,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9755,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9756,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9757,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9760,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9761,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9762,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9763,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9766,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9767,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9769,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9770,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9771,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9778,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9780,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9801,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9802,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9803,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9804,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9805,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9806,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9807,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9808,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9810,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9811,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9815,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9816,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9818,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9822,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9823,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9824,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (9829,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9833,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9835,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9836,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9837,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9839,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9840,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9841,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9842,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9843,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9846,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9847,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9849,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9851,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9854,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9855,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9856,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9857,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9863,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9864,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9865,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9867,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9905,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9906,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9909,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9912,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9919,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9935,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9936,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9964,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9966,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9968,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9970,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9971,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9973,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9975,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9978,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9979,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9980,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9981,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9984,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9987,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9989,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9991,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9996,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9997,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (9999,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10000,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10004,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (10010,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10013,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10014,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10015,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10031,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10036,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10037,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10038,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10039,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10063,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10086,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10087,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10089,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10090,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10091,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10092,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10099,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10102,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10103,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10109,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10112,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10113,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10117,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10118,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10122,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10130,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10136,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10139,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10140,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10141,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10142,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10143,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10144,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10146,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10150,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10152,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10155,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10157,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10158,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10159,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10161,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10163,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10164,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10165,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10167,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10168,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10224,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10225,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10248,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10256,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10263,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10266,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10267,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10268,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10282,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10283,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10293,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10295,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10296,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10297,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10298,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10304,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10309,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10310,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10311,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10316,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10317,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10326,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10329,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10330,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10331,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10347,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10349,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10350,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10369,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10373,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10374,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10377,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10384,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10387,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10419,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10422,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10428,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10429,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10430,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10431,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10435,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10440,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10441,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10444,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10446,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10448,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10450,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10451,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10452,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10453,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10454,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10455,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10457,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10459,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10460,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10466,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10467,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10468,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10469,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10479,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10480,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10508,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10510,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10520,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10521,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10529,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10531,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10539,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10546,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10547,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10548,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10553,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10579,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10590,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10592,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10603,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10604,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10607,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10609,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10610,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10611,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10614,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10617,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10627,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10631,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10644,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10645,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10656,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10657,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10658,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10659,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10660,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10661,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10662,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10666,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10667,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10668,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10669,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10671,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10672,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10673,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10675,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10680,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10681,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10682,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10683,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10684,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10685,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10686,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10687,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10688,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10689,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10690,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10691,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10692,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10693,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10694,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10695,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10697,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10698,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10703,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10704,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10705,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10711,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10714,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10715,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10723,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10724,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10729,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10730,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10731,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10737,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10738,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10742,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10743,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10744,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10745,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10746,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10747,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10748,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10770,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10771,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10772,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10777,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10778,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10780,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10781,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10785,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10788,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10794,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10796,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10798,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10799,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10804,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10805,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10807,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10808,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10809,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10811,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10815,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10816,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10817,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10818,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10819,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10820,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10821,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10822,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10823,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10824,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10826,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10833,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10845,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10847,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10851,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10852,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10865,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10873,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10875,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10876,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10877,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10882,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10884,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10886,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10905,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10906,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10907,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10908,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10911,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10921,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10922,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10924,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10935,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10937,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10938,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10943,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10944,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10945,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10946,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10947,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10948,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10949,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10950,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10952,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10954,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10955,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10968,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10969,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10971,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10973,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10975,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10983,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10984,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10985,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10986,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10987,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10988,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10990,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10991,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10992,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10993,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10994,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10997,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10998,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (10999,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11001,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11002,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11003,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11005,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11006,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11011,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11016,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11024,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11026,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11029,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11031,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11038,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11042,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11052,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11062,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11075,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11076,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11079,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11086,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11090,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11094,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11095,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11096,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11098,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11099,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11101,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11102,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11103,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11106,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11107,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11108,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11109,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11111,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11112,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11114,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11115,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11116,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11118,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11120,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11121,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11122,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11123,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11124,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11126,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11130,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11132,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11153,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11155,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11156,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11157,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11158,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11163,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11164,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11166,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11167,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11172,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11174,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11180,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11190,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11191,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11199,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11200,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11201,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11206,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11209,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11210,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11212,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11213,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11215,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11217,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11220,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11230,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11231,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11235,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11245,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11251,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11253,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11259,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11274,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11277,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11281,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11282,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11289,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11290,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11291,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11296,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11297,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11298,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11301,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11316,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11317,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11320,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11327,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11331,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11332,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11337,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11339,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11343,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11352,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11354,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11355,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11356,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11358,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11363,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11365,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11366,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11368,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11400,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11406,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11408,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11409,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11410,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11412,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11413,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11418,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11419,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11420,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11438,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11439,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11440,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11441,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11442,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11444,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11445,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11448,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11449,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11452,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11456,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11469,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11478,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11483,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11484,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11503,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11504,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11518,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11531,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11532,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11533,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11538,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11542,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11544,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11548,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11549,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11550,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11556,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11562,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11564,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11565,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11568,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11588,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11590,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11593,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11594,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11595,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11596,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11597,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11598,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11600,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11602,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11603,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11605,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11606,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11607,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11609,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11611,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11612,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11613,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11614,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11616,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11617,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11618,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11619,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11620,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11621,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11622,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11623,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11624,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11625,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11626,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11627,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11629,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11631,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11632,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11633,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11634,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11635,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11636,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11638,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11639,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11640,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11641,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11643,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11644,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11645,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11646,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11647,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11648,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11649,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11650,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11651,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11652,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11653,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11655,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11671,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11672,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11696,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11700,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11710,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11718,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11723,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11726,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11728,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11732,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11734,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11736,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11737,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11738,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11753,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11754,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11755,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11756,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11757,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11758,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11759,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11760,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11761,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11762,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11763,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11764,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11765,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11766,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11767,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11769,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11770,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11771,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11772,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11773,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11775,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11777,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11781,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11791,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11793,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11797,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11799,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11800,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11801,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11802,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11803,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11804,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11805,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11807,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11808,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11810,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11811,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11827,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11828,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11857,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11859,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11874,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11877,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11882,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11885,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11887,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11930,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11938,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11941,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11942,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11956,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11970,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11971,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11972,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11973,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11974,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11975,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11976,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11977,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11982,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11983,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11988,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11989,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11990,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11993,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11995,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (11999,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12000,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12003,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12005,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12015,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12020,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12029,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12041,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12061,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12062,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12064,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12076,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12099,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12101,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12102,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12103,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12105,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12106,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12115,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12119,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12130,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12133,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12135,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12137,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12149,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12154,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12180,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12181,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12182,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12188,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12202,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12203,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12207,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12213,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12214,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12215,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12216,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12217,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12218,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12219,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12220,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12233,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12234,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12242,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12246,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12248,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12257,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12259,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12261,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12264,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12265,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12266,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12267,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12268,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12273,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12276,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12277,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12278,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12279,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12280,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12284,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12286,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12288,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12289,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12302,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12303,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12304,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12305,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12308,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12309,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12310,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12311,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12312,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12313,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12314,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12315,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12316,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12317,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12318,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12319,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12320,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12321,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12322,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12323,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12325,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12326,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12328,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12329,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12330,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12331,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12332,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12333,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12336,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12337,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12341,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12342,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12343,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12344,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12346,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12358,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12359,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12374,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12375,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12379,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12380,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12382,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12384,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12387,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12389,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12390,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12392,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12394,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12396,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12397,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12401,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12402,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12410,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12412,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12415,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12418,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12420,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12421,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12422,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12423,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12424,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12426,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12428,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12433,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12449,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12457,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12477,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12484,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12491,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12493,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12495,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12503,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12519,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12523,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12524,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12535,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12536,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12540,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12542,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12569,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12576,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12577,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12578,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12579,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12581,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12582,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12585,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12592,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12594,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12596,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12597,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12598,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12601,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12603,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12605,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12607,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12608,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12613,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12615,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12617,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12618,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12619,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12620,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12622,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12623,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12624,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12625,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12627,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12632,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12634,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12637,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12638,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12641,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12645,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12646,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12647,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12648,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12649,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12651,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12652,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12655,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12656,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12657,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12658,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12659,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12662,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12665,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12667,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12669,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12670,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12671,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12672,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12673,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12674,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12675,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12676,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12677,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12681,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12686,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12691,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12692,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12693,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12694,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12695,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12696,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12697,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12698,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12699,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12700,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12725,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12726,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12728,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12729,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12730,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12731,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12732,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12736,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12738,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12739,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12742,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12744,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12745,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12747,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12748,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12749,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12750,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12751,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12752,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12753,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12754,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12755,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12756,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12757,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12758,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12760,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12764,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12767,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12768,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12769,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12770,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12771,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12772,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12773,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12774,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12775,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12777,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12778,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12779,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12781,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12783,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12791,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12792,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12793,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12794,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12795,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12796,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12797,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12798,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12799,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12800,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12802,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12803,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12804,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12805,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12806,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12807,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12808,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12809,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12810,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12811,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12812,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12815,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12816,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12817,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12818,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12819,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12820,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12821,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12822,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12823,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12824,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12825,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12826,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12827,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12828,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12831,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12832,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12833,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12834,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12835,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12836,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12837,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12838,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12839,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12840,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12842,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12843,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12844,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12845,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12846,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12847,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12848,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12849,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12850,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12851,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12852,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12853,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12854,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12855,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12858,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12859,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12860,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12861,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12862,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12863,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12864,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12865,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12866,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12867,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12868,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12869,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12870,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12871,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12872,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12873,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12874,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12875,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12876,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12877,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12878,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12879,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12881,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12888,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12906,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12908,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12913,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12914,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12915,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12916,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12919,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12922,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12929,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12930,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12934,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12935,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12938,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12971,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12982,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12983,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12985,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12986,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12987,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12988,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (12989,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13001,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13002,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13003,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13004,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13005,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13006,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13007,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13008,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13009,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13010,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13011,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13012,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13013,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13014,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13015,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13016,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13017,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13018,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13019,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13020,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13021,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13022,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13023,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13024,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13025,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13026,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13027,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13029,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13030,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13038,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13040,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13041,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13042,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13043,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13044,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13045,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13046,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13062,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13073,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13074,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13080,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13081,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13082,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13092,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13100,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13101,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13103,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13107,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13108,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13109,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13110,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13112,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13114,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13120,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13123,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13125,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13126,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13146,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13147,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13149,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13151,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13153,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13155,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13212,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13220,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13226,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13227,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13228,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13233,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13234,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13235,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13238,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13239,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13245,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13277,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13285,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13288,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13289,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13290,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13291,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13292,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13293,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13294,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13295,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13299,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13300,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13301,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13302,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13304,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13305,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13306,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13308,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13311,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13315,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13320,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13325,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13328,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13335,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13336,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13337,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13339,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13343,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13345,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13346,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13349,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13352,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13357,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13359,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13364,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13366,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13372,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13374,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13384,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13389,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13408,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13433,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13435,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13436,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13437,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13438,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13439,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13440,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13441,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13442,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13443,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13444,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13445,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13446,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13447,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13448,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13449,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13450,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13451,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13452,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13453,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13454,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13455,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13456,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13457,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13458,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13459,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13460,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13461,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13462,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13463,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13464,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13467,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13468,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13469,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13470,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13471,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13472,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13477,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13479,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13480,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13481,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13482,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13483,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13489,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13490,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13491,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13492,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13493,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13494,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13495,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13496,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13497,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13498,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13499,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13500,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13501,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13502,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13503,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13504,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13505,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13506,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13507,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13508,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13509,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13510,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13511,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13512,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13513,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13514,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13515,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13516,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13517,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13518,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13519,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13520,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13521,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13522,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13523,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13524,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13525,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13526,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13527,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13528,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13529,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13530,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13541,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13542,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13543,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13544,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13545,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13546,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13549,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13550,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13555,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13562,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13575,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13576,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13580,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13581,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13582,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13583,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13587,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13590,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13592,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13593,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13598,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13617,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13631,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13636,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13644,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13647,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13655,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13656,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13657,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13658,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13659,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13693,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13696,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13698,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13703,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13718,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13719,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13720,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13721,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13722,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13723,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13724,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13735,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13747,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13754,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13765,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13769,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13770,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13771,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13772,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13773,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13774,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13837,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13861,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13862,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13864,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13865,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13866,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13867,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13871,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13872,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13873,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13874,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13875,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13876,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13877,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13892,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13911,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13916,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13917,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13918,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13932,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13933,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13934,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13935,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13936,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13941,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13944,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13945,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13946,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13947,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13948,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13951,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13953,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13954,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13957,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13959,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13960,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13961,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13962,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13963,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13964,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13965,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13966,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13980,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13981,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13982,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13987,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13988,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13989,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (13998,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14000,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14001,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14006,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14007,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14008,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14038,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14039,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14047,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14048,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14049,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14054,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14055,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14057,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14060,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14061,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14063,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14066,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14070,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14071,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14075,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14082,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14088,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14102,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14106,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14111,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14114,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14115,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14124,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14126,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14130,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14156,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14162,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14167,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14168,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14170,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14177,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14179,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14181,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14185,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14186,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14187,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14188,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14189,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14196,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14197,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14211,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14218,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14219,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14220,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14223,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14225,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14226,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14232,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14251,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14252,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14254,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14263,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14264,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14268,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14271,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14272,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14276,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14279,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14283,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14287,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14292,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14297,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14298,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14301,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14303,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14307,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14308,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14314,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14317,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14330,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14340,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14342,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14344,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14345,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14355,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14359,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14363,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14364,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14377,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14379,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14381,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14382,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14384,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14385,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14386,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14389,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14394,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14395,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14396,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14399,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14405,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14409,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14410,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14411,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14412,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14441,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14446,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14448,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14449,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14451,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14452,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14453,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14454,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14455,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14458,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14476,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14493,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14494,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14501,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14505,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14506,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14529,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14530,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14531,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14532,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14533,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14536,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14537,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14538,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14539,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14540,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14541,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14543,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14544,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14545,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14550,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14566,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14567,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14568,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14569,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14578,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14581,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14582,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14583,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14587,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14590,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14593,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14594,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14602,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14604,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14611,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14632,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14633,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14636,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14637,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14643,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14645,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14648,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14652,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14656,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14657,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14661,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14676,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14686,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14687,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14688,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14694,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14714,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14725,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14729,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14730,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14749,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14750,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14753,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14765,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14768,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14771,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14773,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14774,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14775,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14777,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14782,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14783,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14784,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14785,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14787,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14788,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14792,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14794,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14796,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14798,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14799,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14800,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14803,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14806,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14807,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14808,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14813,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14814,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14815,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14822,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14823,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14833,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14839,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14846,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14847,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14850,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14851,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14852,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14853,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14854,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14874,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14876,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14877,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14878,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14879,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14880,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14881,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14882,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14883,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14884,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14885,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14892,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14897,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14900,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14903,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14905,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14908,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14909,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14910,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14911,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14912,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14913,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14914,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14916,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14917,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14921,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14927,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14936,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14938,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14939,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14952,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14953,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14956,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14957,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14981,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14993,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (14998,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15010,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15021,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15023,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15024,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15025,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15026,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15027,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15028,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15029,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15031,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15032,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15035,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15036,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15037,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15039,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15052,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15081,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15090,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15095,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15103,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15105,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15116,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15124,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15126,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15127,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15129,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15144,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15146,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15155,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15161,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15164,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15165,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15166,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15167,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15171,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15173,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15174,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15175,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15185,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15189,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15193,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15200,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15204,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15205,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15206,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15207,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15208,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15209,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15210,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15211,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15212,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15213,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15214,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15215,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15216,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15217,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15218,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15219,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15220,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15221,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15222,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15223,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15224,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15225,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15226,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15227,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15228,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15229,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15230,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15237,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15242,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15243,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15244,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15247,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15251,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15254,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15259,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15260,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15273,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15292,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15307,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15311,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15314,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15315,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15316,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15317,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15318,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15320,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15343,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15345,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15348,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15349,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15350,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15352,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15353,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15358,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15359,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15364,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15367,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15368,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15369,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15370,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15371,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15372,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15373,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15376,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15380,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15382,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15383,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15384,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15385,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15386,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15391,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15396,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15401,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15413,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15419,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15420,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15423,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15425,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15433,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15439,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15445,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15450,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15451,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15452,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15453,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15466,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15478,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15508,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15522,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15529,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15538,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15539,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15542,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15543,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15544,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15546,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15549,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15553,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15554,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15555,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15556,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15557,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15566,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15567,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15568,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15569,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15570,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15571,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15572,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15575,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15576,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15578,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15579,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15588,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15590,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15591,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15594,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15595,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15597,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15599,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15600,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15608,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15609,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15610,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15611,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15612,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15618,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15620,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15622,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15627,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15631,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15632,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15635,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15637,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15638,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15642,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15645,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15647,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15649,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15653,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15656,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15665,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15666,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15667,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15668,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15670,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15671,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15672,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15673,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15675,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15678,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15679,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15680,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15681,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15683,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15687,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15688,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15692,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15693,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15695,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15702,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15704,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15707,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15708,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15730,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15743,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15747,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15755,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15762,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15763,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15772,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15774,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15775,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15777,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15779,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15780,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15782,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15785,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15787,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15788,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15795,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15807,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15808,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15812,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15814,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15817,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15821,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15826,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15830,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15833,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15834,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15835,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15841,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15842,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15853,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15856,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15862,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15867,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15870,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15871,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15873,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15874,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15876,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15877,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15878,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15879,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15889,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15896,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15899,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15904,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15906,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15909,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15910,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15919,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15920,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15921,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15922,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15924,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15930,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15939,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15941,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15944,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15945,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15946,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15951,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15952,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (15955,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15956,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15957,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15960,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15961,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15962,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15963,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15966,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15967,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15969,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15970,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15975,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15978,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (15988,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16004,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16010,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16014,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16016,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16017,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16020,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16023,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16028,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16032,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16043,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16047,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16061,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16062,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16064,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16065,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16068,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16069,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16071,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16072,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16076,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16078,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16083,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16086,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16124,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16127,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16130,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16131,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16135,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16136,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16137,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16138,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16148,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16152,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16168,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16169,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16173,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16182,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16185,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16193,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16201,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16206,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16207,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16209,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16210,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16213,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16214,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16220,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16222,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16226,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16227,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16229,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16240,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16244,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16246,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16251,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16252,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16254,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16257,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16260,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16261,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16277,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16278,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16279,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16282,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16290,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16305,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16308,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16311,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16312,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16313,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16314,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16344,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16352,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16363,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16384,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16397,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16398,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16403,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16404,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16407,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16422,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16428,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16429,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16431,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16435,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16436,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16438,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16440,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16448,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16450,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16452,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16453,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16454,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16460,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16470,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16476,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16477,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16481,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16482,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16483,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16485,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16491,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16492,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16493,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16494,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16502,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16505,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16522,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16525,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16532,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16533,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16536,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16537,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16538,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16539,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16540,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16541,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16542,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16543,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16544,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16545,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16546,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16554,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16571,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16574,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16575,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16576,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16578,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16579,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16580,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16581,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16582,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16583,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16584,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16585,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16586,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16587,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16588,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16589,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16590,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16591,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16592,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16593,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16594,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16595,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16596,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16597,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16598,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16599,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16600,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16601,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16602,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16603,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16604,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16605,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16606,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16607,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16608,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16677,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16679,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16683,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16684,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16685,3,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16686,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16691,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16692,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16693,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16694,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16695,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16696,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16703,2,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16706,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16707,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16708,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16709,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16710,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16711,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16712,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16713,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16714,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16715,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16716,1,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16761,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16764,2,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16767,1,1);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (16803,2);
-INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES (16824,2);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16825,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16841,3,1);
-INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES (16875,1,1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

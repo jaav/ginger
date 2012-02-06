@@ -1,1031 +1,2908 @@
-USE  [test14]
-SET IDENTITY_INSERT  [test14].[dbo].[Locations] ON
-INSERT INTO [dbo].[Locations] ([id],[Naam],[IsActive]) VALUES (1,'Lokaal',1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (2,'Brussel',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (3,'Laken (Brussel)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (4,'Schaarbeek',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (5,'Etterbeek',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (6,'Elsene',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (7,'Sint-Gillis',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (8,'Anderlecht',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (9,'Sint-Jans-Molenbeek',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (10,'Koekelberg',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (11,'Sint-Agatha-Berchem',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (12,'Ganshoren',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (13,'Jette',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (14,'Neder-Over-Heembeek',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (15,'Haren',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (16,'Evere',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (17,'Sint-Pieters-Woluwe',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (18,'Oudergem',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (19,'Watermaal-Bosvoorde',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (20,'Ukkel',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (21,'Vorst',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (22,'Sint-Lambrechts-Woluwe',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (23,'Sint-Joost-ten-Node',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (24,'LIMAL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (25,'WAVRE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (26,'LA HULPE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (27,'BEAUVECHAIN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (28,'HAMME-MILLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (29,'L''ECLUSE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (30,'NODEBAIS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (31,'TOURINNES-LA-GROSSE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (32,'RIXENSART',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (33,'OTTIGNIES',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (34,'OTTIGNIES-LOUVAIN-LA-NEUVE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (35,'ENINES',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (36,'FOLX-LES-CAVES',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (37,'JANDRAIN-JANDRENOUILLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (38,'JAUCHE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (39,'MARILLES',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (40,'NODUWEZ',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (41,'ORP-JAUCHE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (42,'ORP-LE-GRAND',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (43,'MALEVES-SAINTE-MARIE-WASTINES',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (44,'ORBAIS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (45,'PERWEZ',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (46,'THOREMBAIS-LES-BEGUINES',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (47,'THOREMBAIS-SAINT-TROND',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (48,'DONGELBERG',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (49,'JAUCHELETTE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (50,'JODOIGNE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (51,'JODOIGNE-SOUVERAINE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (52,'LATHUY',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (53,'MELIN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (54,'PIETRAIN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (55,'SAINT-JEAN-GEEST',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (56,'SAINT-REMY-GEEST',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (57,'ZETRUD-LUMAY',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (58,'COUTURE-SAINT-GERMAIN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (59,'LASNE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (60,'LASNE-CHAPELLE-SAINT-LAMBERT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (61,'MARANSART',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (62,'OHAIN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (63,'PLANCENOIT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (64,'ARCHENNES',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (65,'BIEZ',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (66,'BOSSUT-GOTTECHAIN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (67,'GREZ-DOICEAU',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (68,'NETHEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (69,'MONSTREUX',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (70,'NIVELLES',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (71,'WATERLOO',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (72,'BRAINE-L''ALLEUD',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (73,'BIERGHES',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (74,'QUENAST',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (75,'REBECQ',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (76,'REBECQ-ROGNON',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (77,'BRAINE-LE-CHATEAU',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (78,'WAUTHIER-BRAINE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (79,'CHASTRE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (80,'CHASTRE-VILLEROUX-BLANMONT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (81,'CORTIL-NOIRMONT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (82,'GENTINNES',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (83,'SAINT-GERY',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (84,'ITTRE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (85,'VIRGINAL-SAMME',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (86,'BAISY-THY',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (87,'BOUSVAL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (88,'GENAPPE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (89,'CLABECQ',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (90,'OISQUERCQ',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (91,'SAINTES',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (92,'TUBIZE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (93,'COURT-SAINT-ETIENNE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (94,'HALLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (95,'HERFELINGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (96,'HERNE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (97,'HOEILAART',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (98,'GALMAARDEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (99,'TOLLEMBEEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (100,'VOLLEZELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (101,'OUDENAKEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (102,'SINT-LAUREINS-BERCHEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (103,'SINT-PIETERS-LEEUW',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (104,'DROGENBOS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (105,'LINKEBEEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (106,'RHODE-SAINT-GENESE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (107,'SINT-GENESIUS-RODE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (108,'BEERSEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (109,'BOGAARDEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (110,'HEIKRUIS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (111,'PEPINGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (112,'DILBEEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (113,'SINT-MARTENS-BODEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (114,'SINT-ULRIKS-KAPELLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (115,'ASSE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (116,'BEKKERZEEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (117,'KOBBEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (118,'MOLLEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (119,'TERNAT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (120,'GAASBEEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (121,'LENNIK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (122,'SINT-KWINTENS-LENNIK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (123,'SINT-MARTENS-LENNIK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (124,'ONZE-LIEVE-VROUW-LOMBEEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (125,'PAMEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (126,'ROOSDAAL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (127,'STRIJTEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (128,'LIEDEKERKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (129,'WEMMEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (130,'AFFLIGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (131,'ESSENE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (132,'HEKELGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (133,'TERALFENE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (134,'PEUTIE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (135,'VILVOORDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (136,'MELSBROEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (137,'PERK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (138,'STEENOKKERZEEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (139,'MACHELEN (BT)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (140,'LONDERZEEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (141,'MALDEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (142,'STEENHUFFEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (143,'GRIMBERGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (144,'BRUSSEGEM (MEISE)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (145,'MEISE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (146,'OPPEM (MEISE)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (147,'KAPELLE-OP-DEN-BOS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (148,'NIEUWENRODE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (149,'RAMSDONK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (150,'BERG (BT.)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (151,'BUKEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (152,'KAMPENHOUT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (153,'NEDEROKKERZEEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (154,'NOSSEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (155,'ZAVENTEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (156,'KRAAINEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (157,'WEZEMBEEK-OPPEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (158,'EPPEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (159,'ZEMST',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (160,'ANTWERPEN 1',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (161,'ANTWERPEN 2',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (162,'ANTWERPEN 3',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (163,'ANTWERPEN 4',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (164,'BERENDRECHT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (165,'LILLO',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (166,'ZANDVLIET',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (167,'ANTWERPEN 5',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (168,'ANTWERPEN 6',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (169,'BURCHT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (170,'ZWIJNDRECHT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (171,'DEURNE (ANTWERPEN)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (172,'WIJNEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (173,'BORGERHOUT (ANTWERPEN)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (174,'BORSBEEK (ANTW.)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (175,'WOMMELGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (176,'MERKSEM (ANTWERPEN)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (177,'EKEREN (ANTWERPEN)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (178,'HERENTALS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (179,'MORKHOVEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (180,'NOORDERWIJK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (181,'HALLAAR',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (182,'HEIST-OP-DEN-BERG',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (183,'HERSELT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (184,'RAMSEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (185,'MASSENHOVEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (186,'VIERSEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (187,'ZANDHOVEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (188,'OLEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (189,'OEVEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (190,'TONGERLO (ANTW.)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (191,'WESTERLO',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (192,'ZOERLE-PARWIJS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (193,'HERENTHOUT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (194,'GROBBENDONK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (195,'VORSELAAR',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (196,'TURNHOUT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (197,'RIJKEVORSEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (198,'HOOGSTRATEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (199,'MERKSPLAS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (200,'BEERSE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (201,'VLIMMEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (202,'VOSSELAAR',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (203,'OUD-TURNHOUT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (204,'ARENDONK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (205,'RAVELS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (206,'MALLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (207,'OOSTMALLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (208,'WESTMALLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (209,'MOL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (210,'EINDHOUT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (211,'LAAKDAL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (212,'VORST (KEMPEN)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (213,'GEEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (214,'MEERHOUT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (215,'KASTERLEE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (216,'LICHTAART',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (217,'TIELEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (218,'RETIE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (219,'DESSEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (220,'BALEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (221,'KONINGSHOOIKT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (222,'LIER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (223,'BROECHEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (224,'EMBLEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (225,'OELEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (226,'RANST',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (227,'BOECHOUT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (228,'HOVE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (229,'KONTICH',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (230,'WAARLOOS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (231,'BEVEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (232,'KESSEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (233,'NIJLEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (234,'DUFFEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (235,'BEERZEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (236,'PUTTE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (237,'BERLAAR',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (238,'GESTEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (239,'BERCHEM (ANTWERPEN)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (240,'WILRIJK (ANTWERPEN)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (241,'HEMIKSEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (242,'AARTSELAAR',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (243,'MORTSEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (244,'EDEGEM (ANTWERPEN)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (245,'HOBOKEN (ANTWERPEN)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (246,'MECHELEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (247,'WALEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (248,'BONHEIDEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (249,'RIJMENAM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (250,'BLAASVELD',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (251,'HEINDONK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (252,'TISSELT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (253,'WILLEBROEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (254,'REET',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (255,'RUMST',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (256,'TERHAGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (257,'BOOM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (258,'SINT-KATELIJNE-WAVER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (259,'BREENDONK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (260,'LIEZELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (261,'PUURS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (262,'RUISBROEK (ANTW.)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (263,'BORNEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (264,'HINGENE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (265,'MARIEKERKE (BORNEM)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (266,'WEERT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (267,'LIPPELO',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (268,'OPPUURS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (269,'SINT-AMANDS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (270,'SCHOTEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (271,'ESSEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (272,'KALMTHOUT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (273,'BRASSCHAAT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (274,'HOEVENEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (275,'STABROEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (276,'KAPELLEN (ANTW.)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (277,'BRECHT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (278,'SINT-JOB-IN-''T-GOOR',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (279,'SINT-LENAARTS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (280,'''S GRAVENWEZEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (281,'SCHILDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (282,'HALLE (KEMPEN)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (283,'ZOERSEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (284,'LOENHOUT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (285,'WUUSTWEZEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (286,'LEUVEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (287,'KESSEL-LO',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (288,'HERENT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (289,'VELTEM-BEISEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (290,'WINKSELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (291,'HULDENBERG',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (292,'LOONBEEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (293,'NEERIJSE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (294,'OTTENBURG',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (295,'SINT-AGATHA-RODE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (296,'OUD-HEVERLEE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (297,'BERTEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (298,'KORBEEK-DIJLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (299,'KORTENBERG',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (300,'DUISBURG',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (301,'TERVUREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (302,'VOSSEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (303,'OVERIJSE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (304,'ROTSELAAR',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (305,'TREMELO',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (306,'BEGIJNENDIJK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (307,'BETEKOM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (308,'KEERBERGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (309,'HAACHT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (310,'TILDONK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (311,'WESPELAAR',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (312,'BOORTMEERBEEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (313,'AARSCHOT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (314,'GELRODE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (315,'LINDEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (316,'LUBBEEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (317,'HOLSBEEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (318,'KORTRIJK-DUTSEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (319,'SINT-PIETERS-RODE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (320,'SCHERPENHEUVEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (321,'SCHERPENHEUVEL-ZICHEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (322,'DEURNE (BT.)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (323,'DIEST',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (324,'SCHAFFEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (325,'WEBBEKOM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (326,'BOST',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (327,'GOETSENHOVEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (328,'HAKENDOVER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (329,'KUMTICH',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (330,'OORBEEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (331,'OPLINTER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (332,'SINT-MARGRIETE-HOUTEM (TIENEN)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (333,'TIENEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (334,'VISSENAKEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (335,'HOEGAARDEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (336,'MELDERT (BT.)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (337,'DRIESLINTER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (338,'LINTER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (339,'MELKWEZER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (340,'NEERHESPEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (341,'NEERLINTER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (342,'ORSMAAL-GUSSENHOVEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (343,'OVERHESPEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (344,'WOMMERSOM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (345,'BIERBEEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (346,'KORBEEK-LO',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (347,'LOVENJOEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (348,'OPVELP',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (349,'BOUTERSEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (350,'HONSEM (BOUTERSEM)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (351,'KERKOM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (352,'NEERVELP',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (353,'ROOSBEEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (354,'VERTRIJK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (355,'WILLEBRINGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (356,'BUNSBEEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (357,'GLABBEEK (ZUURBEMDE)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (358,'HOUWAART',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (359,'SINT-JORIS-WINGE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (360,'TIELT (BT.)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (361,'TIELT-WINGE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (362,'ELIKSEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (363,'EZEMAAL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (364,'LAAR',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (365,'LANDEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (366,'NEERWINDEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (367,'OVERWINDEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (368,'RUMSDORP',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (369,'WANGE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (370,'BUDINGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (371,'DORMAAL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (372,'HALLE-BOOIENHOVEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (373,'HELEN-BOS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (374,'ZOUTLEEUW',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (375,'GEETBETS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (376,'GRAZEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (377,'ASSENT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (378,'BEKKEVOORT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (379,'KORTENAKEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (380,'RANSBERG',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (381,'SINT-MARGRIETE(KORTENAKEN)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (382,'HASSELT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (383,'SINT-LAMBRECHTS-HERK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (384,'KERMT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (385,'SPALBEEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (386,'ZONHOVEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (387,'HELCHTEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (388,'HOUTHALEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (389,'HOUTHALEN-HELCHTEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (390,'BERBROEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (391,'DONK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (392,'HERK-DE-STAD',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (393,'SCHULEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (394,'BOLDERBERG (HEUSDEN-ZOLDER)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (395,'HEUSDEN (LIMB.)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (396,'HEUSDEN-ZOLDER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (397,'ZOLDER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (398,'LINKHOUT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (399,'LUMMEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (400,'MELDERT (LIMB.)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (401,'ALKEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (402,'BERINGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (403,'DIEPENBEEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (404,'BOKRIJK (GENK)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (405,'DE KLIJTE (GENK)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (406,'GENK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (407,'WATERSCHEI (GENK)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (408,'WINTERSLAG (GENK)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (409,'ZWARTBERG (GENK)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (410,'GELLIK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (411,'LANAKEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (412,'NEERHAREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (413,'VELDWEZELT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (414,'EISDEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (415,'LEUT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (416,'MAASMECHELEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (417,'MECHELEN-AAN-DE-MAAS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (418,'MEESWIJK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (419,'OPGRIMBIE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (420,'VUCHT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (421,'KESSENICH',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (422,'KINROOI',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (423,'MOLENBEERSEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (424,'OPHOVEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (425,'DILSEN-STOKKEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (426,'ELEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (427,'LANKLAAR',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (428,'ROTEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (429,'STOKKEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (430,'OPGLABBEEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (431,'ELLIKOM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (432,'GRUITRODE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (433,'MEEUWEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (434,'MEEUWEN-GRUITRODE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (435,'NEERGLABBEEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (436,'WIJSHAGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (437,'MAASEIK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (438,'NEEROETEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (439,'OPOETEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (440,'ZUTENDAAL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (441,'''S HERENELDEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (442,'BERG (LIMB.)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (443,'DIETS-HEUR',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (444,'HAREN (TONGEREN)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (445,'HENIS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (446,'KOLMONT (TONGEREN)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (447,'KONINKSEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (448,'LAUW',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (449,'MAL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (450,'NEERREPEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (451,'NEREM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (452,'OVERREPEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (453,'PIRINGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (454,'RIKSINGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (455,'RUTTEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (456,'SLUIZEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (457,'TONGEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (458,'VREREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (459,'WIDOOIE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (460,'KORTESSEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (461,'HOESELT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (462,'ROMERSHOVEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (463,'SINT-HUIBRECHTS-HERN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (464,'WERM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (465,'BEVERST',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (466,'BILZEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (467,'EIGENBILZEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (468,'GROTE-SPOUWEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (469,'HEES',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (470,'KLEINE-SPOUWEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (471,'MOPERTINGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (472,'MUNSTERBILZEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (473,'RIJKHOVEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (474,'ROSMEER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (475,'SPOUWEN (BILZEN)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (476,'WALTWILDER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (477,'ELDEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (478,'GENOELSELDEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (479,'HERDEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (480,'KANNE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (481,'MEMBRUGGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (482,'MILLEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (483,'RIEMST',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (484,'VAL-MEER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (485,'VLIJTINGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (486,'VROENHOVEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (487,'ZICHEN-ZUSSEN-BOLDER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (488,'FOURON-SAINT-MARTIN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (489,'FOURONS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (490,'MOELINGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (491,'MOULAND',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (492,'SINT-MARTENS-VOEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (493,'VOEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (494,'AALST (LIMB.)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (495,'BRUSTEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (496,'ENGELMANSHOVEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (497,'GELINDEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (498,'GELMEN (SINT-TRUIDEN)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (499,'GROOT-GELMEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (500,'HALMAAL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (501,'KERKOM-BIJ-SINT-TRUIDEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (502,'ORDINGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (503,'SINT-TRUIDEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (504,'ZEPPEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (505,'BERLINGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (506,'WELLEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (507,'BOMMERSHOVEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (508,'BORGLOON',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (509,'BROEKOM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (510,'GORS-OPLEEUW',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (511,'GOTEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (512,'GROOT-LOON',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (513,'HAREN (BORGLOON)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (514,'HENDRIEKEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (515,'HOEPERTINGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (516,'JESSEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (517,'KERNIEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (518,'KOLMONT (BORGLOON)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (519,'KUTTEKOVEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (520,'RIJKEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (521,'VOORT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (522,'BINDERVELD',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (523,'KOZEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (524,'NIEUWERKERKEN (LIMB.)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (525,'WIJER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (526,'BATSHEERS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (527,'BOVELINGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (528,'GUTSCHOVEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (529,'HEERS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (530,'HEKS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (531,'HORPMAAL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (532,'KLEIN-GELMEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (533,'MECHELEN-BOVELINGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (534,'METTEKOVEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (535,'OPHEERS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (536,'RUKKELINGEN-LOON',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (537,'VECHMAAL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (538,'VEULEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (539,'BOEKHOUT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (540,'GINGELOM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (541,'JEUK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (542,'KORTIJS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (543,'MONTENAKEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (544,'NIEL-BIJ-SINT-TRUIDEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (545,'VORSEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (546,'OVERPELT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (547,'NEERPELT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (548,'SINT-HUIBRECHTS-LILLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (549,'LOMMEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (550,'ACHEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (551,'HAMONT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (552,'HAMONT-ACHEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (553,'HECHTEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (554,'HECHTEL-EKSEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (555,'BOCHOLT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (556,'KAULILLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (557,'REPPEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (558,'BEEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (559,'BREE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (560,'GERDINGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (561,'OPITTER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (562,'TONGERLO (LIMB.)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (563,'LEOPOLDSBURG',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (564,'TESSENDERLO',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (565,'GROTE-BROGEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (566,'KLEINE-BROGEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (567,'PEER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (568,'WIJCHMAAL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (569,'GLAIN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (570,'LIEGE 1',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (571,'ROCOURT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (572,'SCLESSIN (LIEGE 1)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (573,'BRUGGE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (574,'KOOLKERKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (575,'HERTSBERGE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (576,'OOSTKAMP',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (577,'RUDDERVOORDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (578,'WAARDAMME',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (579,'SINT-ANDRIES',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (580,'SINT-MICHIELS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (581,'LOPPEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (582,'VELDEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (583,'ZEDELGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (584,'KNOKKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (585,'KNOKKE-HEIST',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (586,'WESTKAPELLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (587,'ASSEBROEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (588,'SINT-KRUIS (BRUGGE)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (589,'DAMME',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (590,'HOEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (591,'LAPSCHEURE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (592,'MOERKERKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (593,'OOSTKERKE (DAMME)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (594,'SIJSELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (595,'BLANKENBERGE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (596,'UITKERKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (597,'DUDZELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (598,'LISSEWEGE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (599,'ZEEBRUGGE (BRUGGE)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (600,'OOSTENDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (601,'STENE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (602,'ZANDVOORDE (OOSTENDE)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (603,'DE HAAN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (604,'KLEMSKERKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (605,'WENDUINE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (606,'MIDDELKERKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (607,'BREDENE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (608,'ETTELGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (609,'OUDENBURG',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (610,'ROKSEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (611,'WESTKERKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (612,'GISTEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (613,'MOERE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (614,'SNAASKERKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (615,'ZEVEKOTE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (616,'BEKEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (617,'EERNEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (618,'ICHTEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (619,'JABBEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (620,'SNELLEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (621,'STALHILLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (622,'VARSENARE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (623,'ZERKEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (624,'KORTRIJK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (625,'BELLEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (626,'KOOIGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (627,'MARKE (KORTRIJK)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (628,'ROLLEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (629,'KUURNE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (630,'HARELBEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (631,'DEERLIJK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (632,'ZWEVEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (633,'GULLEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (634,'MOORSELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (635,'WEVELGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (636,'ANZEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (637,'GIJZELBRECHTEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (638,'INGOOIGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (639,'VICHTE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (640,'AVELGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (641,'BEERST',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (642,'DIKSMUIDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (643,'DRIEKAPELLEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (644,'ESEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (645,'KAASKERKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (646,'KEIEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (647,'LAMPERNISSE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (648,'LEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (649,'NIEUWKAPELLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (650,'OOSTKERKE (DIKSMUIDE)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (651,'OUDEKAPELLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (652,'PERVIJZE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (653,'SINT-JACOBS-KAPELLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (654,'STUIVEKENSKERKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (655,'VLADSLO',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (656,'WOUMEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (657,'HANDZAME',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (658,'KORTEMARK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (659,'WERKEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (660,'ZARREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (661,'NIEUWPOORT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (662,'RAMSKAPELLE (NIEUWPOORT)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (663,'SINT-JORIS (NIEUWPOORT)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (664,'AVEKAPELLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (665,'BEAUVOORDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (666,'BOOITSHOEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (667,'BULSKAMP',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (668,'DE MOEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (669,'EGGEWAARTSKAPELLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (670,'HOUTEM (W.-VL.)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (671,'STEENKERKE (W.-VL.)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (672,'VEURNE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (673,'VINKEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (674,'WULVERINGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (675,'ZOUTENAAIE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (676,'OOSTVLETEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (677,'VLETEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (678,'WESTVLETEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (679,'WOESTEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (680,'HOUTHULST',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (681,'KLERKEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (682,'MERKEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (683,'ADINKERKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (684,'DE PANNE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (685,'KOKSIJDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (686,'OOSTDUINKERKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (687,'WULPEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (688,'BOVEKERKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (689,'KOEKELARE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (690,'ZANDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (691,'ALVERINGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (692,'HOOGSTADE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (693,'OEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (694,'SINT-RIJKERS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (695,'AARSELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (696,'KANEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (697,'SCHUIFERSKAPELLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (698,'TIELT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (699,'OOIGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (700,'SINT-BAAFS-VIJVE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (701,'WIELSBEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (702,'DENTERGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (703,'MARKEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (704,'OESELGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (705,'WAKKEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (706,'BEERNEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (707,'OEDELEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (708,'SINT-JORIS (BEERNEM)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (709,'EGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (710,'PITTEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (711,'WINGENE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (712,'ZWEVEZELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (713,'MEULEBEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (714,'INGELMUNSTER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (715,'OOSTROZEBEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (716,'WAREGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (717,'BEVEREN (ROESELARE)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (718,'OEKENE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (719,'ROESELARE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (720,'RUMBEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (721,'LICHTERVELDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (722,'TORHOUT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (723,'GITS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (724,'HOOGLEDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (725,'OOSTNIEUWKERKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (726,'STADEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (727,'WESTROZEBEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (728,'ARDOOIE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (729,'LENDELEDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (730,'EMELGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (731,'IZEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (732,'KACHTEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (733,'LEDEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (734,'ROLLEGEM-KAPELLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (735,'SINT-ELOOIS-WINKEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (736,'DADIZELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (737,'MOORSLEDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (738,'BRIELEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (739,'DIKKEBUS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (740,'IEPER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (741,'SINT-JAN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (742,'BIKSCHOTE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (743,'LANGEMARK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (744,'LANGEMARK-POELKAPELLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (745,'POELKAPELLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (746,'LAUWE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (747,'MENEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (748,'REKKEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (749,'GELUWE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (750,'WERVIK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (751,'HEUVELLAND',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (752,'NIEUWKERKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (753,'HARINGE (POPERINGE)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (754,'POPERINGE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (755,'RENINGELST',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (756,'BESELARE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (757,'GELUVELD',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (758,'PASSENDALE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (759,'ZANDVOORDE (ZONNEBEKE)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (760,'ZONNEBEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (761,'GENT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (762,'MARIAKERKE (GENT)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (763,'SINT-AMANDSBERG',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (764,'GENTBRUGGE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (765,'LEDEBERG (GENT)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (766,'ZELZATE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (767,'DESTELBERGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (768,'HEUSDEN (O.-VL.)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (769,'BEERVELDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (770,'LOCHRISTI',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (771,'ZAFFELARE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (772,'ZEVENEKEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (773,'GONTRODE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (774,'MELLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (775,'NIEUWKERKEN-WAAS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (776,'SINT-NIKLAAS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (777,'BEVEREN-WAAS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (778,'HAASDONK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (779,'KALLO (BEVEREN-WAAS)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (780,'MELSELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (781,'VRASENE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (782,'DOEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (783,'KALLO (KIELDRECHT)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (784,'KIELDRECHT (BEVEREN)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (785,'VERREBROEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (786,'ELVERSELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (787,'STEENDORP',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (788,'TEMSE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (789,'TIELRODE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (790,'BAZEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (791,'KRUIBEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (792,'RUPELMONDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (793,'DAKNAM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (794,'EKSAARDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (795,'LOKEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (796,'DE KLINGE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (797,'MEERDONK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (798,'SINT-GILLIS-WAAS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (799,'SINT-PAUWELS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (800,'MOERBEKE-WAAS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (801,'KEMZEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (802,'STEKENE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (803,'APPELS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (804,'BAASRODE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (805,'DENDERMONDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (806,'GREMBERGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (807,'MESPELARE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (808,'OUDEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (809,'SCHOONAARDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (810,'SINT-GILLIS-BIJ-DENDERMONDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (811,'HAMME (O.-VL.)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (812,'MOERZEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (813,'MASSEMEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (814,'WESTREM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (815,'WETTEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (816,'ZELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (817,'WAASMUNSTER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (818,'SCHELLEBELLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (819,'SERSKAMP',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (820,'WICHELEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (821,'KALKEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (822,'LAARNE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (823,'DENDERBELLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (824,'LEBBEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (825,'WIEZE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (826,'BERLARE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (827,'OVERMERE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (828,'UITBERGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (829,'AALST',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (830,'BAARDEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (831,'HERDERSEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (832,'MELDERT (O.-VL.)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (833,'MOORSEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (834,'EREMBODEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (835,'NIEUWERKERKEN (AALST)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (836,'IMPE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (837,'LEDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (838,'OORDEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (839,'SMETLEDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (840,'WANZELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (841,'APPELTERRE-EICHEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (842,'DENDERWINDEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (843,'LIEFERINGE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (844,'NEDERHASSELT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (845,'NINOVE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (846,'OKEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (847,'VOORDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (848,'AAIGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (849,'BAMBRUGGE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (850,'BURST',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (851,'ERONDEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (852,'ERPE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (853,'ERPE-MERE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (854,'MERE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (855,'OTTERGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (856,'VLEKKEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (857,'DENDERHOUTEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (858,'HAALTERT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (859,'HELDERGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (860,'DENDERLEEUW',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (861,'GERAARDSBERGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (862,'GOEFERDINGE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (863,'MOERBEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (864,'NEDERBOELARE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (865,'ONKERZELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (866,'OPHASSELT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (867,'OVERBOELARE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (868,'VIANE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (869,'ZARLARDINGE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (870,'BAVEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (871,'OOMBERGEN (SINT-LIEVENS-HOUTEM)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (872,'SINT-LIEVENS-HOUTEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (873,'VLIERZELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (874,'ZONNEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (875,'HERZELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (876,'HILLEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (877,'SINT-ANTELINKS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (878,'SINT-LIEVENS-ESSE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (879,'STEENHUIZE-WIJNHUIZE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (880,'WOUBRECHTEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (881,'DEFTINGE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (882,'LIERDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (883,'SINT-MARIA-LIERDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (884,'RENAIX',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (885,'RONSE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (886,'ELENE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (887,'ERWETEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (888,'GODVEERDEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (889,'GROTENBERGE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (890,'LEEUWERGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (891,'OOMBERGEN (ZOTTEGEM)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (892,'SINT-GORIKS-OUDENHOVE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (893,'SINT-MARIA-OUDENHOVE (ZOTTEGEM)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (894,'STRIJPEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (895,'VELZEKE-RUDDERSHOVE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (896,'ZOTTEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (897,'BEERLEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (898,'DIKKELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (899,'HUNDELGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (900,'MEILEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (901,'MUNKZWALM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (902,'PAULATEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (903,'ROBORST',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (904,'ROZEBEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (905,'SINT-BLASIUS-BOEKEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (906,'SINT-DENIJS-BOEKEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (907,'SINT-MARIA-LATEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (908,'ZWALM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (909,'BRAKEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (910,'ELST',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (911,'EVERBEEK',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (912,'MICHELBEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (913,'NEDERBRAKEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (914,'OPBRAKEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (915,'SINT-MARIA-OUDENHOVE (BRAKEL)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (916,'ZEGELSEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (917,'ETIKHOVE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (918,'MAARKE-KERKEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (919,'MAARKEDAL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (920,'BERCHEM (O.-VL.)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (921,'KLUISBERGEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (922,'KWAREMONT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (923,'RUIEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (924,'ZULZEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (925,'BEVERE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (926,'EDELARE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (927,'EINE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (928,'ENAME',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (929,'HEURNE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (930,'LEUPEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (931,'MATER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (932,'MELDEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (933,'MULLEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (934,'NEDERENAME',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (935,'OOIKE (OUDENAARDE)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (936,'OUDENAARDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (937,'VOLKEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (938,'WELDEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (939,'HUISE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (940,'OUWEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (941,'ZINGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (942,'KRUISHOUTEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (943,'ELSEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (944,'MOREGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (945,'OOIKE (WORTEGEM-PETEGEM)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (946,'PETEGEM-AAN-DE-SCHELDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (947,'WORTEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (948,'WORTEGEM-PETEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (949,'ASTENE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (950,'BACHTE-MARIA-LEERNE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (951,'DEINZE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (952,'GOTTEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (953,'GRAMMENE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (954,'MEIGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (955,'PETEGEM-AAN-DE-LEIE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (956,'SINT-MARTENS-LEERNE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (957,'VINKT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (958,'WONTERGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (959,'ZEVEREN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (960,'EKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (961,'NAZARETH',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (962,'BOTTELARE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (963,'LEMBERGE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (964,'MELSEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (965,'MERELBEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (966,'MUNTE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (967,'SCHELDERODE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (968,'SINT-MARTENS-LATEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (969,'DE PINTE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (970,'ZEVERGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (971,'HANSBEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (972,'LANDEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (973,'MERENDREE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (974,'NEVELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (975,'POESELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (976,'VOSSELARE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (977,'BALEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (978,'GIJZENZELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (979,'LANDSKOUTER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (980,'MOORTSELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (981,'OOSTERZELE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (982,'SCHELDEWINDEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (983,'MACHELEN (O.-VL.)',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (984,'OLSENE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (985,'ZULTE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (986,'AALTER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (987,'LOTENHULLE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (988,'POEKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (989,'ASPER',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (990,'BAAIGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (991,'DIKKELVENNE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (992,'GAVERE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (993,'SEMMERZAKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (994,'VURSTE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (995,'EEKLO',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (996,'KNESSELARE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (997,'URSEL',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (998,'LOVENDEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (999,'ZOMERGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1000,'ERTVELDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1001,'EVERGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1002,'KLUIZEN',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1003,'SLEIDINGE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1004,'WAARSCHOOT',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1005,'ASSENEDE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1006,'KAPRIJKE',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1007,'SINT-LAUREINS',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1008,'MALDEGEM',1,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[IsActive]) VALUES (1009,'Regionaal',1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[IsActive]) VALUES (1010,'Provinciaal',1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1011,'Vlaams Brabant',1010,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1012,'Antwerpen',1010,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1013,'Limburg',1010,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1014,'West Vlaanderen',1010,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1015,'Oost Vlaanderen',1010,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1016,'Brussel Hoofdstedelijk Gewest',1010,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1017,'Interprovinciaal, niet gemeenschaps',1010,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[IsActive]) VALUES (1018,'Gemeenschap of gewest',1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1019,'Vlaamse gemeenschap',1018,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1020,'Franse gemeenschap',1018,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1021,'Duitstalige gemeenschap',1018,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1022,'Intercommunautair',1018,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1023,'Brussels gewest',1018,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES (1024,'Waals gewest',1018,1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[IsActive]) VALUES (1025,'Federaal',1)
-INSERT INTO [dbo].[Locations] ([id],[Naam],[IsActive]) VALUES (1026,'Internationaal',1)
 
-SET IDENTITY_INSERT  [test14].[dbo].[Locations] OFF
-GO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

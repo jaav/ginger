@@ -1,2370 +1,2369 @@
-USE [test14]
-SET IDENTITY_INSERT  [test14].[dbo].[Organisaties] ON
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1,' ','Org',' ',' ',' ',' ','151',1, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (20,'Druglijn','Org','Vanderlindenstraat 15','1030','Schaarbeek','België','133',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (26,'CAT Preventiehuis','Org','Martelaarslaan 204a','9000','Gent','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (27,'Dienst Drugspreventie - vroeginterventiewerking','Org','Europalaan 22','9880','Aalter','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (28,'Provinciebestuur Oost - Vlaanderen','Org','Gouvernementstraat 1','9000','Gent','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (29,'Politie Maldegem','Org','Westeindestraat 1','9990','Maldegem','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (30,'VAD','Org','Vanderlindenstraat 15','1030','Brussel','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (31,'Drugspreventiedienst ELZA','Org','Wippelgem dorp 12','9940','Evergem','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (34,'VAGGA team verslavingszorg en -preventie','Org','Ketsstraat 17','2018','antwerpen','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (35,'Provincie Vlaams-Brabant','Org','Provincieplein 1','3000','Leuven','België','133',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (36,'MEDOV vzw','Org','Gouvernementstraat 1','9000','Gent','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (37,'Dienst Drugspreventie - eigen opleidingen','Org','Europalaan 22','9880','Aalter','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (38,'Zusters Maricolen','Org','Markt 15','9990','Maldegem','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (39,'Jeugdhuis Kadans','Org','Stationstraat 71','9880','Aalter','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (40,'Dienst Drugspreventie - informatie verstrekken','Org','Europalaan 22','9880','Aalter','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (41,'Emmausinstituut','Org','St. Gerolflaan 22','9880','Aalter','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (42,'Dienst Drugspreventie - lokaal overleg','Net','Europalaan 22','9880','Aalter','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (45,'PIUS X COLLEGE TESSENDERLO','Org','STATIONSTRAAT 125','3980','TESSENDERLO','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (46,'VAD','Net','VANDERLINDENSTRAAT 15','1030','BRUSSEL','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (47,'DE UITDAGING GENK','Org','EVENCE COPEELAAN 99','3600','GENK','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (48,'Gemeentebestuur Maldegem','Org','Marktstraat 7','9990','Maldegem','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (49,'Drugspreventiedienst EKASI','Org','J.F. Willemsplein','9900','Eeklo','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (50,'Drugspreventiedienst Drugpunt','Org','Mouterijdreef 20','9800','Deinze','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (51,'Regionaal Welzijnsoverleg Meetjesland','Net','Oostveldstraat 91','9900','Eeklo','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (52,'Dienst Drugspreventie - algemene werking','Org','Europalaan 22','9880','Aalter','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (53,'Jeugdraad Knesselare','Net','Veldstraat 53','9910','Knesselare','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (54,'Scholenoverleg Malle','Net','','','','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (55,'Breakline Peersupport','Org','Ketsstraat 17','2018','Antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (56,'PEER','Org','ZUIDERVEST 2A','3990','PEER','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (59,'SIBSO Stuyvenberg','Org','Schoolstraat','2060','Antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (60,'SINT-JAN BERCHMANS INSTITUUT ZONHOVEN','Org','KLEINE HEMMENWEG 4-4A','3520','ZONHOVEN','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (61,'CGG VAGGA/Altox','Org','Ketsstraat 17','2018','Antwerpen','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (64,'Vlaams agentschap zorg en gezondheid','Org','','1030','Brussel','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (68,'netwerk1','Net','','','','België','133',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (70,'Koninklijk Atheneum','Org','Mevr. Courtmanslaan 80','9990','Maldegem','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (71,'Jeugdraad Aalter','Net','Stationsstraat 71','9880','Aalter','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (72,'Gemeentebestuur Aalter','Org','Europalaan 22','9880','Aalter','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (75,'Preventiedienst Oostende','Org','Vindictivelaan 1','8400','Oostende','België','133',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (76,'Jeugdhuis De Redekiel','Org','Bloemenstraat 13','9990','Maldegem','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (77,'Jeugddienst Maldegem','Org','Mevr. Courtmanslaan 77','9990','Maldegem','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (78,'CGG CAD Limburg','Org','','','','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (80,'WELLEN','Org','DORPSSTRAAT 25','3830','WELLEN','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (81,'ALKEN','Org','PAPENAKKERSTRAAT 5','3570','ALKEN','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (82,'JEUGD RODE KRUIS LIMBURG','Org','BOOMKENSSTRAAT 303','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (83,'BORGLOON','Org','SPEELHOF 10','3840','BORGLOON','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (84,'VRIJE MIDDENSCHOOL ZONHOVEN','Org','ENGSTEGENSEWEG 1','3520','ZONHOVEN','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (85,'ZONHOVEN','Org','KERKPLEIN 1','3520','ZONHOVEN','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (86,'CENTRUM DEELTIJDS ONDERWIJS TIHH','Org','KURINGERSTEENWEG 146','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (87,'TESSENDERLO','Org','MARKT Z/N','3980','TESSENDERLO','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (88,'LEOPOLDSBURG','Org','KONINGIN ASTRIDPLEIN 37','3970','LEOPOLDSBURG','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (89,'SINT-TRUIDEN','Org','KAZERNESTRAAT 13','3800','SINT-TRUIDEN','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (90,'BIOTECHNICUM','Org','KAULILLERWEG 3','3950','BOCHOLT','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (91,'CAD LIMBURG','Org','LUIKERSTEENWEG 134','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (92,'HAM','Org','DORPSTRAAT 19','3945','HAM','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (93,'BOCHOLT','Org','DORPSSTRAAT 16','3950','BOCHOLT','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (94,'PROVINCIALE SECUNDAIRE SCHOOL VOEREN','Org','HOENEVELDJE 2','3798','VOEREN','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (95,'KONINKLIJK TECHNISCH ATHENEUM II VILLERS HASSELT','Org','VILDERSSTRAAT 2','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (96,'PROVINCIE LIMBURG','Org','UNIVERSITEITSLAAN 1','3500','HASSELT ','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (97,'IDEWE','Org','KUNSTLAAN 18','3500','HASSELT ','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (98,'PROVINCIALE KUNSTHUMANIORA HASSELT','Org','GOUVERNEUR VERWILGHENSINGEL 3','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (99,'SINT- ALOYISIUS','Org','','','ZEPPEREN','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (100,'FEDASIL','Org','','','','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (101,'ACLVB','Org','Koning Albertlaan 95 ','9000','gent','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (102,'HEERS','Org','PAARDSKERKHOFSTRAAT 20','3870','HEERS','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (103,'LUMMEN','Org','GEMEENTEPLEIN 13','3560','LUMMEN','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (104,'GINGELOM','Org','SINT_PIETERSSTRAAT 1','3890','GINGELOM','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (105,'FOD VOLKSGEZONDHEID','Org','Victor Hortaplein, 40 bus 10','1060','BRUSSEL','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (106,'DAF TRUCKS','Org','NIJVERHEIDSSTRAAT ','2260','OEVEL WESTERLO ','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (107,'KATHOLIEKE CENTRUMSCHOLEN SINT TRUIDEN','Org','','3800','SINT TRUIDEN','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (108,'PROVINCIALE SCHOOL DIEPENBEEK','Org','STATIONSSTRAAT 36','3590','DIEPENBEEK','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (109,'BEDRIJVENGROEP NOORD-LIMBURG ','Net','KERKSTRAAT ','','NEERPELT ','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (110,'TECHNICUM','Org','','3800','SINT TRUIDEN','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (111,'NIEUWERKERKEN','Org','KERSTRAAT 13','3850','NIEUWERKERKEN','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (112,'GEVANGENIS HASSELT','Org','ZWARTE BRUGSTRAAT 4','3500','HASSELT','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (113,'GEVANGENIS DENDERMONDE','Org','','','','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (114,'STEDELIJK BOUW SCHOOL DI','Org','RIJKSWEG 454','3650','DILSEN-STOKKEM','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (115,'MIDDENSCHOOL 2 HERK-DE-STAD','Org','DR. VANWEDDINGENLAAN 10','3540','HERK-DE-STAD','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (116,'HERK-DE-STAD','Org','PIKKELEERSTRAAT 14','3540','HERK-DE-STAD','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (117,'TECHNISCH HEILIG-HARTINSTITUUT TESSENDERLO','Org','HEILIG-HARTLAAN 16','3980','TESSENDERLO','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (118,'JEUGDHUIS FUEGO','Org','SPORTLAAN 36','3680','MAASEIK','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (119,'PROVINCIAAL INSTITUUT LOMMEL','Org','DUINENSTRAAT 16','3920','LOMMEL','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (120,'FORMAAT JEUGDHUISWERK VLAANDEREN ','Org','VAARTSTRAAT 4','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (121,'MAROKKAANSE MOSKEE HOUTHALEN','Org','ELZENSTRAAT 19','3530','HOUITHALEN-HELCHTEREN','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (122,'DON BOSCO INSTITUUT','Org','DON BOSCOSTRAAT 6','3530','HELCHTEREN','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (123,'PROVINCIALE HANDELSCHOOL ','Org','GOUVERNEUR VERWILGHENSINGEL','3500','HASSELT','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (124,'JEUGDWELZIJNSWERK MEULENBERG','Org','POSTBUS 104','3530','HOUTHALEN-HELCHTEREN','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (125,'KHLIM ','Org','OUDE LUIKERBAAN 79','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (126,'CC DE BUITINCK','Org','KIOSKPLEIN 25','3580','PAAL BERINGEN','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (127,'GENK','Org','STADSPLEIN 1','3600','GENK','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (128,'MAROKKAANSE MOSKEE HASSELT','Org','MOUTRIJSTRAAT 1','3500','HASSELT','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (129,'RODE KRUIS LIMBURG','Org','BOOMKENSSTRAAT 303','3500','HASSELT','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (130,'HOUTHALEN-HELCHTEREN','Org','GROTE BAAN 112','3530','HOUTHALEN-HELCHTEREN','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (131,'PIUS X MIDDENSCHOOL TESSENDERLO','Org','KERKSTRAAT 4/A','3980','TESSENDERLO','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (132,'ST. MARIA OPDRACHT','Org','RIJKSWEG 357','3630','MAASMECHELEN','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (133,'CAT','Org','','9000','Gent','België','133',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (134,'Groep Intro','Org','Nekkersputstraat 189a','9000','Gent','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (135,'MIDDENSCHOOL ST. JAN','Org','BOGAARSVELDSTRAAT 14','3580','BERINGEN','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (136,'OPVANGCENTRUM DE TUNNEL','Org','MARIA PYPELINCKXSTRAAT 20','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (137,'ATHENEUM GENK','Org','MOSSELERLAAN 62','3600','GENK','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (138,'MAROKKAANSE MOSKEE OVERPELT','Org','BREUGELWEG ','3900','OVERPELT','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (139,'CC DE ROEPSTEEN','Org','ST. TRUDOPLEIN 12','3530','HELCHTEREN','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (140,'MAROKKAANSE MOSKEE MAASEIK','Org','SPORTLAAN 31','3680','MAASEIK','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (141,'DON BOSCO GENK','Org','BERM 12','3600','GENK BOXBERGHEIDE','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (142,'MAROKKAANSE MOSKEE WINTERSLAG GENK','Org','DWAARSSTRAAT 133','360','GENK','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (143,'JAC LOMMEL','Org','NORBERT NEECKXLAAN ','3920','LOMMEL','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (144,'LOGO ZUID LIMBURG','Net','STADSOMVAART 9','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (145,'MAROKKAANSE BUURTVADERS HOUTHALEN','Org','','3530','HOUTHALEN-HELCHTEREN','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (146,'LOGO LIMBURG','Net','STADSOMVAART 9','3500','HASSELT','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (147,'AS','Org','DORPSSTRAAT 1 BUS 1','3665','AS','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (148,'VIRGA JESSECOLLEGE HAASELT','Org','MAASTRICHTERSTEENWEG 62','3500','HAASELT','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (149,'AGNETENDAL PEER','Org','KLOOSTERSTRAAT 27','3990','PEER','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (150,'BASISSCHOOL DE STARTLIJN ','Org','SINT AMANDUSSTRAAT 43','3511','STOKROOIE HASSELT ','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (151,'ATHENEUM DE LINDE BORGLOON','Org','STATIONSSTRAAT 32','3840','BORGLOON','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (152,'KINDSHEID JESU','Org','KEMPENSESTEENWEG 400','3500','HASSELT','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (153,'ST. HUBERTUS NEERPELT','Org','STATIONSSTRAAT 25','3910','NEERPELT','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (154,'HEILIG HART INSTITUUT HASSELT','Org','BREEMSTRAAT 5','3500','HASSELT','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (155,'KINROOI','Org','','3640','','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (156,'MAASEIK','Org','','3680','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (157,'DILSEN STOKKEM','Org','','3650','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (158,'MAASMECHELEN','Org','','3630','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (159,'LANAKEN','Org','','3620','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (160,'JEUGDDIENST MAASMECHELEN','Org','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (161,'PROVINCIAAL VEILIGHEIDSCOMITE LIMBURG','Net','','3500','HASSELT','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (162,'KONINKLIJK ATHENEUM MAASEIK','Org','','3680','MAASEIK','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (163,'KONINKLIJK TECHNISCH ATHENEUM MAASEIK','Org','','3680','MAASEIK','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (164,'TEHUIS VOOR KINDEREN VAN OUDERS ZONDER VASTE VERBL','Org','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (165,'TECHNISCH INSTITUUT SINT JANSBERG','Org','','3680','MAASEIK','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (166,'ATHENEUM MAASLAND CAMPUS MAASMECHELEN','Org','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (167,'ATHENEUM MAASLAND CAMPUS DILSEN STOKKEM','Org','','3650','DILSEN STOKKEM','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (168,'HEILIG HARTCOLLEGE MAASMECHELEN','Org','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (169,'INSTITUUT MARIA OPDRACHT CAMPUS RIJKSWEG','Org','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (170,'INSTITUUT MARIA OPDRACHT CAMPUS KASTANJELAAN','Org','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (171,'TECHNISCH INSTITUUT HEILIG HART','Org','LOOHEUVELSTRAAT','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (172,'PROVINCIAAL TECHNISCHE SCHOOL DAGONDERWIJS','Org','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (173,'PROVINCIAAL TECHNISCHE SCHOOL DEELTIJDS','Org','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (174,'MIDDENSCHOOL MAASEIK','Org','','3680','MAASEIK','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (175,'BUITENGEWOON BEROEPSONDERWIJS OLV TER ENGELEN','Org','','3680','MAASEIK','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (176,'BUSO SINT JANSBERG','Org','','3680','MAASEIK','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (177,'COLLEGE HEILIG KRUIS SINT URSULA','Org','','3680 ','MAASEIK','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (178,'INSTITUUT H GRAF','Org','','3640','KINROOI','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (179,'ATHENEUM ALICEBOURG','Org','','3620','LANAKEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (180,'HEILIG HARTCOLLEGE LANAKEN','Org','','3620','LANAKEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (181,'SINT VINCENTIUS MIDDENSCHOOL','Org','','3620','LANAKEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (182,'TECHNISCH INSTITUUT SPARRENDAL','Org','','3620','LANAKEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (183,'OPENBAAR PSYCHIATRISCH ZORGCENTRUM REKEM','Org','','3620','LANAKEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (185,'BUITENGEWOON SECUNDAIR ONDERWIJS DE GARVE','Org','','3650','DILSEN STOKKEM','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (186,'INSTITUUT MARIA KONINGIN','Org','','3650','DILSEN STOKKEM','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (187,'STEDELIJKE HUMANIORA','Org','','3650','DILSEN STOKKEM','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (188,'JEUGDHUIS THEBE','Org','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (189,'SIMILES','Org','','','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (190,'BASISSCHOOL IN DE ENGELSE HOF','Org','','3620','LANAKEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (191,'DIENSTENCENTRUM DE BOLSTER','Org','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (192,'VCLB MAASLAND','Org','','3640','KINROOI','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (193,'ACLVB LIMBURG','Org','','','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (194,'ROTARY MIDDEN LIMBURG','Net','','','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (195,'PREVENTIEDIENST MAASMECHELEN','Org','','','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (196,'JEUGDHUIS OKE','Org','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (198,'BRANDWONDENCENTRUM UZ LEUVEN','Org','','','LEUVEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (200,'JEUGDDIENST KINROOI','Org','','3640','KINROOI','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (201,'JEUGDRAAD ','Org','','3620','LANAKEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (202,'JEUGDHUIS ALIBI','Org','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (204,'CEVA LOGISTICS','Org','','','TONGEREN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (205,'JEUGDHUIS T LONT','Org','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (206,'WIJKCOMITE VRIJHEI','Net','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (207,'LOKALE ECONOMIE ','Org','','3650','DILSEN STOKKEM','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (208,'LOKALE ECONOMIE LANAKEN','Org','','3620','LANAKEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (209,'LOKALE ECONOMIE MAASEIK','Org','','3680','MAASEIK','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (210,'LOKALE ECONOMIE MAASMECHELEN','Org','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (211,'LOKALE ECONOMIE DILSEN STOKKEM','Org','','3650','DILSEN STOKKEM','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (212,'SYNTRA HASSELT','Org','','3500','HASSELT','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (213,'KIDS HASSELT','Org','','3500','','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (214,'FAMILIEHULP','Org','','3500','','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (215,'HEUSDEN-ZOLDER','Org','','3550','','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (216,'OPLEIDINGSCENTRUM ','Org','','3550','','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (217,'WIJKCOMITE CONCORDIA  MAASMECHELEN','Org','OUDE BAAN 207','3630','MAASMECHELEN','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (218,'SINT JAN MIDDENSCHOOL BERINGEN','Org','','3580','BERINGEN','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (219,'DE KIEM','Org','BLAZOENSTRAAT 9A','9000','GENT','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (220,'VORMINGSLEERGANG VOOR SOCIAAL EN PEDAGOGISCH WERK ','Org','BLIJDE INKOMSTSTRAAT 36','3500','HASSELT','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (221,'JEUGDHUIS N8W8','Org','','3520','ZONHOVEN','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (222,'JEUGDHUIS BASSMENT','Org','VLIERBOOMSTRAAT','3530','HOUTHALEN-HELCHTEREN','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (223,'BERINGEN','Org','','3580','BERINGEN','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (224,'HECHTEL-EKSEL','Org','','3940','','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (225,'HALEN','Org','','3545','','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (226,'ARKTOS HASSELT','Org','','3500','HASSELT','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (227,'OLIV VZW ','Org','ETTERBEEKSTRAAT 86','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (228,'BILZEN','Org','DEKEN PAQUAYPLEIN','3740','BILZEN','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (229,'KATARSIS','Org','','3600','GENK','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (230,'VOEREN','Org','GEMEENTEPLEIN 1','3798','VOEREN','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (231,'VIIO HANDEL EN HUMANIORA BORGLOON','Org','TONGERSESTEENWEG 84','3840','BORGLOON','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (232,'KINDERPSYCHIATRISCH CENTRUM GENK','Org','SCHIEPSE BOS 8','3600','GENK','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (233,'SINTE LUTGART INSTITUUT BERINGEN','Org','','3580','','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (234,'HAMONT-ACHEL','Org','','3930','','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (235,'VIIO HANDEL EN ZORG TONGEREN','Org','WATERTORENSTRAAT 5','3700','TONGEREN','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (236,'VRIJ TECHNISCH INSTITUUT BERINGEN','Org','','3580','','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (237,'WARM HART','Org','','3530','','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (238,'NEERPELT','Org','','3910','NEERPELT','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (239,'TONGEREN','Org','MAASTRICHTERSTRAAT 10','3700','TONGEREN','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (240,'ORTHOPEDAGOGISCH CENTRUM SINT FERDINAND ','Org','SINT FERDINANDSTRAAT ','3560','LUMMEN ','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (241,'SBSO GO SIBBO TONGEREN','Org','CORVERSSTRAAT 33','3700','TONGEREN','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (242,'HASSELT','Org','','3500','','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (243,'ST-HUBERTUSCOLLEGE','Org','STATIONSSTRAAT 25','3910','NEERPELT','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (244,'CAMPUS ST-MARIA','Org','STATIONSSTRAAT 74','3910','NEERPELT','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (245,'KTA CAMPUS PLINIUS TONGEREN','Org','KEVERSTRAAT 26','3700','TONGEREN','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (246,'WELZIJNSREGIO NOORD-LIMBURG','Net','KERKSTRAAT 10','3910','NEERPELT','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (247,'LOMMEL','Org','','3920','LOMMEL','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (248,'TEPSI GENK','Org','','3600','GENK','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (249,'VIIO NIJVERHEID TONGEREN','Org','RODE KRUISLAAN 27','3700','TONGEREN','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (250,'KANSSPELCOMMISSIE','Org','','1000','','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (251,'PROVIL','Org','','3920','LOMMEL','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (252,'MPI ZONNEWEELDE','Org','','3920','LOMMEL','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (253,'PIBO TONGEREN','Org','SINT TRUIDERSTEENWEG','3700','TONGEREN','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (254,'O. L. - VROUWINSTITUUT PAAL','Org','','3583','','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (255,'OVERPELT','Org','','3900','OVERPELT','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (256,'WICO MATER DEI','Org','KLOOSTERSTRAAT','3900','OVERPELT','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (257,'MEEUWEN-GRUITRODE','Org','','3670','MEEUWEN','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (258,'MARTINUSSCHOOL BILZEN','Org','SINT MARTINUSSTRAAT','3740','BILZEN','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (259,'HEILIG GRAF INSTITUUT BILZEN','Org','KLOOSTERSTRAAT 9','3740','BILZEN','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (260,'TECHNISCH INSTITUUT SINT JOZEF BILZEN','Org','WIJERSTRAAT 28','3740','BILZEN','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (261,'SCHOLENGROEP 15 NOORD-LIMBURG','Org','','3580','BERINGEN','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (262,'BUURTHUIS BEERENSHEUVEL','Org','BEERENSHEUVELSTRAAT 51','3630','MAASMECHELEN','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (263,'SYNTRA GENK','Org','','3600','GENK','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (264,'VIIO HUMANIORA TONGEREN','Org','SINT TRUIDERSTEENWEG 17','3700','TONGEREN','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (265,'RIEMST','Org','TONGERSESTEENWEG 8','3770','RIEMST','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (266,'SINT JOZEF COLLEGE BERINGEN','Org','','3580','','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (267,'JEUGDHUIS CLUB 9','Org','','3581','','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (268,'LIMBURGS PLATFORM VERSLAVING','Net','','3500','HASSELT','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (269,'JEUGDHUIS SFINX','Org','','3545','','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (270,'VIBO SINT BARBARA BERINGEN','Org','MIJNSCHOOLSTRAAT 63','3580','BERINGEN','België','29',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (271,'DEN HEUVEL INTERNAAT LEOPOLDSBURG','Org','HEUVELSTRAAT 58','3970','LEOPOLDSBURG','België','29',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (272,'EEN HART VOOR LIMBURG VZW','Org','HERCKENRODESINGEL 10','3500','HASSELT','België','29',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (273,'VRIJ TECHNISCH INSTITUUT DEELTIJDS BERINGEN','Org','','3580','','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (274,'LOGO WEST LIMBURG','Net','','3580','','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (275,'PLOT','Net','','3600','','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (276,'TURKSE JONGEREN - EN THEATERVERENIGING','Org','BOSHOEKSTRAAT 110','3600','GENK','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (277,'TURKS MOSKEE MAASMECHELEN','Org','','3630','MAASMECHELEN','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (278,'TURKS MOSKEE IN SLEDDERLO','Org','','3600','GENK','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (279,'TURKS MOSKEE WINTERSLAG','Org','','3600','GENK','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (280,'TURKS MOSKEE KOLDERBOS','Org','','3600','GENK','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (281,'ALTERNATIEF VZW ','Org','RUNKSTERSTEENWEG 134','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (282,'BUSO DE DAGERAAD BORGLOON','Org','WALSTRAAT Z/N','3840','BORGLOON','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (283,'KORTESSEM','Org','KERKPLEIN 11','3720','KORTESSEM','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (284,'JEUGDHUIS BALANS','Org','','3665','AS','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (285,'MUZIEKODROOM','Org','BOOTSTRAAT 9','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (286,'DIEPENBEEK','Org','DORPSSTRAAT 14','3590','DIEPENBEEK','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (287,'KONINKLIJK TECHNISCH ATHENEUM II VILLERS TONGEREN','Org','CORVERSTRAAT 33','3700','TONGEREN','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (288,'ACTIVITEITENCENTRUM DE OASE','Org','HOSPITAALSTRAAT 15','3740','BILZEN','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (289,'BREE','Org','','3960','BREE','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (290,'KONINKLIJK ATHENEUM 2 SPORTSCHOOL HASSELT','Org','KONING BOUDEWIJNLAAN 12','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (291,'SPOC','Org','','3690','','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (292,'VRIJE BASISSCHOOL DE BLOESEM BILZEN','Org','APPELBOOMGAARDSTRAAT','3740','MUNSTERBILZEN','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (293,'HASSELTS OVERLEG WELZIJN','Net','MARTELARENLAAN 13-15','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (294,'EUREGIO MAAS RIJN','Net','','3500','HASSELT','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (295,'DE WINNER','Org','','3900','OVERPELT','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (296,'TER ENGELEN VZW BORGLOON','Org','NIEUWLAND 11','3840','BORGLOON','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (297,'LOGO MAASLAND','Org','','3630','MAASMECHELEN','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (298,'MIDDENSCHOOL LYCEUM HASSELT','Org','VRIJWILLIGERSPLEIN 3','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (299,'LOGO MIDDEN LIMBURG','Net','','3500','HASSELT','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (300,'ONBEVLEKT HART VAN MARIA ','Org','PASTOOR FREDERICKXSTRAAT ','3560','LUMMEN ','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (301,'EURONET','Net','','','','Ander land','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (302,'SIKS GEMEENSCHAP ','Org','','','','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (303,'VORMING PLUS','Org','','3500','HASSELT','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (304,'REVAL','Org','','3600','GENK','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (305,'ZUTENDAAL ','Org','','','','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (306,'LISS','Net','','3600','GENK','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (307,'VRIJE BASISSCHOOL ','Org','KERKSTRAAT 6','AS','','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (308,'GSM MUNSTERBILZEN','Org','APPELBOOMGAARDSTRAAT 2','3740','BILZEN','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (309,'KONINKLIJK ATHENEUM TONGEREN','Org','MOERENSTRAAT 4','3700','TONGEREN','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (310,'BUURTHUIS DE SINGEL','Org','BINNENLAAN  52','3600','GENK','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (311,'TURKSE VROUWENWERKING ETKI','Org','BEERENSHEUVELSTRAAT 72','3630','MAASMECHELEN','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (312,'EX- MIJNWERKERS VZW','Org','RUBENSLAAN 10','3550','HEUSDEN_ZOLDER','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (313,'INTERNAAT DEN HEUVEL','Org','HEUVELSTRAAT','3970','LEOPOLDSBURG','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (314,'TURKSE VERENIGING TEKKE','Org','KOERLOSTRAAT ','3600','GENK','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (315,'DE EENMAKING','Org','BLAZOENSTRAAT 9A','9000','GENT','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (316,'DE SPIEGEL','Org','GROOT PARK 9','3360','BIERBEEK-LOVENJOEL','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (317,'TURKS MOSKEE HASSELT','Org','SINT-TRUIDERSTEENWEG 361','3500','HASSELT','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (318,'HUISBEZOEK TURKS GEZIN','Net','','3600','GENK','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (319,'CURSUS NEDERLANDS ANDERSTALIGEN','Org','','3630','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (320,'OPGLABBEEK','Org','kapelstraat 1','3660','OPGLABBEEK','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (321,'JEUGDHUIS ELDORADO ','Org','HORTENSIASTRAAT 22','3600','GENK','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (322,'TURKS MOSKEE HEUSDEN-ZOLDER','Org','VALENTINUSSTRAAT','3530','HEUSDEN-ZOLDER','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (323,'TURKS OUDERVERENIGING GENK','Org','STALENSTRAAT','3600','GENK','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (324,'ALTOX','Org','KETSSTRAAT 17','2018','ANTWERPEN','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (325,'DBSO SINT JANSBERG','Org','','3680','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (326,'JEUGDDIENST LANAKEN','Org','','3620','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (327,'BUURTWERK','Org','','3630','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (328,'JEUGDRAAD LANAKEN','Net','','3620','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (329,'JEUGDHUIS T AUWELKE','Org','RIEKSKENSTRAAT 1','3960','BREE','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (330,'VAD','Org','Vanderlindenstraat 15','1030','Schaarbeek','België','48',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (331,'MATER DEI','Org','KLOOSTERSTRAAT','3900','OVERPELT','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (332,'CGG Eclips vzw','Org','Elyzeese Velden 74','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (333,'AA LIMBURG','Net','','3600','GENK','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (334,'STUURGROEP ADHV','Net','','3500','HASSELT','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (335,'BUSO WIJCHMAAL','Org','','3990','PEER','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (336,'BLM','Org','','3600','GENK','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (337,'JEUGDHUIS DE BRIK','Org','','3620','LANAKEN','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (338,'ECAT','Net','','3630','MAASMECHELEN','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (339,'TELEONTHAAL','Org','','3500','HASSELT','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (340,'SALVATORCOLLEGE','Org','COLLEGELAAN 25','3930','HAMONT-ACHEL','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (341,'VSPW','Org','','3500','HASSELT','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (342,'Gemeentebestuur Knesselare','Org','De Plaats 14','9910','Knesselare','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (343,'Jeugdhuis Effect','Org','Sportstraat 1','9910','Knesselare','België','2',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (344,'ONTHAAL EN ORÏENTATIECENTRUM ELKEEN ','Org','JAN VAN HELMONTLAAN 1','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (345,'MIDDENSCHOOL CAMPUS URSULA HERK DE STAD','Org','DIESTSESTEENWEG 5','3540','HERK DE STAD','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (346,'CAMPUS AMANDINA HERK DE STAD','Org','SINT TRUIDERSTEENWEG 18','3540','HERK DE STAD','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (347,'ARCELOR MITTAL GENK','Org','BOSDEL 87','3600','GENK','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (348,'BESCHUT WONEN T VEER','Org','','3630','MAASMECHELEN','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (349,'Stad Diest','Org','','','','België','59',11, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (350,'Stad Tienen','Org','Grote Markt 27','3300','Tienen','België','121',40, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (351,'VAD','Org','Vanderlindenstraat 15','1030','Brussel','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (352,'VAD','Org','vanderlindestraat','1030','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (353,'ONS CENTRUM LEOPOLDSBURG','Org','NICOLAYLAAN 141','3970','LEOPOLDSBURG','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (354,'marokkaanse moskee maasmechelen','Org','valkenierstraat 19/b','3630','maasmechelen','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (355,'UNIE VAN IMAM´S EN ISLAMITISCHE LEERKRACHTEN','Org','PLANTIN MORETUSLEI ','2140 ','BORGERHOUT - ANTWERPEN','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (356,'CVO STEP ZONHOVEN','Org','GENKERBAAN 84 ','3520','ZONHOVEN','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (359,'ghjk','Org','','','','België','133',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (360,'Provincie West-Vlaanderen','Org','','','','België','133',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (361,'KRC GENK','Org','STADIONPLEIN 1','3600','GENK','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (363,'VZW attawba HEUSDEN','Org','HEUSDEN','3550','HEUSDEN','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (364,'testorganisatie 1','Org','','','','België','120',39, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (365,'Testorganisatie 2','Org','','','','België','120',39, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (366,'Testnetwerk 1','Net','','','','België','120',39, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (367,'Testnetwerk 2','Net','','','','België','120',39, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (371,'Vereniging voor Alcohol- en andere Drugproblemen','Org','Vanderlindenstraat 15','1030','Schaarbeek','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (372,'vzw De Waaiburg','Org','Kameinestraat 35','2440','Geel','België','60',12, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (373,'St. Aloysiusinstituut','Org','Kollegestraat 15','2440','Geel','België','60',12, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (374,'Jac Geel','Org','Diestseweg 135','2440','Geel','België','60',12, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (375,'St. Jozefinstituut','Org','Technische Schoolstraat 52','2440','Geel','België','60',12, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (376,'OGGPA','Net','Boomgaardstraat 22 bus 110','2600','Berchem','België','60',12, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (378,'Koninklijk Atheneum Tienen','Org','Gilainstraat 70','3300','Tienen','België','121',40, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (379,'Preventieraad werkgroep basisonderwijs','Net','Grote Markt 27','3300','Tienen','België','121',40, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (380,'Preventieraad werkgroep secundair onderwijs','Net','Grote Markt 27','3300','Tienen','België','121',40, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (381,'CGG Leuven','Net','Vital Decosterstraat 86','3000','Leuven','België','121',40, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (382,'Provincie Vlaams-Brabant','Org','Provincieplein 1','3001','Leuven','België','121',40, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (383,'DO_drugpunt','Org','Mouterijdreef 20','9800','Deinze','België','42',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (384,'DO_Aalter_Knesselare_Maldegem','Org','Europalaan 22','9880','Aalter','België','42',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (385,'DO_ELZA','Org','Bosdreef 5A','9080 ','Lochristi','België','42',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (386,'DO_Rhode&Schelde','Net','Vossenstraat 41B','9090','Melle','België','48',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (387,'DO_BerlareZele','Org','Dorp','9290','Berlare','België','42',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (388,'Steunpunt Lo&Vi','Org','Martelaarslaan 204A','9000','Gent','België','42',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (389,'DO_INDRA','Org','Dendermondsesteenweg','','Aalst','België','42',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (390,'DO_EEKASI','Net','JF WIllemplen 13','9900','Eeklo','België','42',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (391,'DO_Wetteren, Laarne en Wichelen','Net','','','Wetteren','België','42',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (392,'DO_Beveren','Net','','','','België','42',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (393,'DO_Lokeren','Net','','','Lokeren','België','42',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (394,'DO_DrugpuntWaas','Net','','','Sint Niklaas','België','42',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (395,'DO_Waarschoot','Net','','','Waarschoot','België','42',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (396,'Provincie Oost-Vlaanderen','Org','Gouvernementstraat 1','9000','Gent','België','48',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (397,'RWO_Sint Niklaas','Org','','','sint niklaas','België','42',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (399,'Preventiedienst','Org','Augustijnenlaan 30','2200','Herentals','België','67',17, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (400,'SIBSO Begijnenvest','Org','Begijnenvest 35','2018','Antwerpen','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (401,'Dennenhof MPI','Org','Van praetlei 173','2170','Merksem','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (402,'Kontich OCMW ','Org','Antwerpsesteenweg 62','2550','Kontich','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (403,'RAFC jeugd','Org','Bredabaan 89 a Plataandreef','2930','Brasschaat','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (404,'Wijnegem gemeente','Org','Tunrhoutsebaan 199','2110','Wijnegem','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (405,'Populier, de (Dienstencentrum)','Org','Guido Gezellelaan 31','2640','Mortsel','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (406,'Onze Lieve Vrouwecollege','Org','Frankrijklei 91','2000','Antwerpen','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (407,'Onze-Lieve-Vrouw-van-Lourdescollege Edegem','Org','Rombaut Keldermansstraat 33','2650','Edegem','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (408,'Ahoy Jeugdcentrum','Org','Kosterijstraat 5','2110','Wijnegem','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (409,'Leonardo Lyceum, SITO 7','Org','Lamorinièrestraat 248','2018','Antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (410,'Delhaize Antwerpen','Org','Alexander Franckstraat 6','2530','Boechout','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (411,'Posthof buurtcentrum','Org','Patriottenstraat 62','2600','berchem','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (412,'RPO (regionaal preventieoverleg)','Net','','','','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (413,'Sint-Johannaschool','Org','Toornstraat 30','2160','Wommelgem','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (414,'Instituut van de Heilige Familie','Org','Jan Moorkenstraat 95','2600','Berchem','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (415,'Brasschaat KTA','Org','Prins Kavellei 98','2930','Brasschaat','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (416,'Mechelen gevangenis','Org','Liersesteenweg 2','2800','Mechelen','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (417,'Don Bosco Hoboken','Org','Salesianenlaan 1','2660','Hoboken','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (418,'BorgerRio festival','Org','Stad Antwerpen regio Tunrhoutsebaan','2018','Antwerpen','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (419,'MSOC Vilvoorde','Org','Leuvensestraat 7','1800','Vilvoorde','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (420,'CGG Ahasverus','Org','Muurveld 38','1730','Asse','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (421,'Gemeentes KLM','Net','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (423,'Gemeentes KASTZE','Net','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (424,'Colruyt Halle','Org','','1500','Halle','België','9',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (425,'De Spiegel','Org','Nieuwstraat 36','1730','Asse','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (426,'Regina Caeli','Org','','1700','Dilbeek','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (427,'PZ Sint-Alexius','Org','Grimbergsesteenweg 40','1850','Grimbergen','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (429,'Vlaams Agentschap Zorg & Gezondheid (o)','Org','Kon. Albert II laan 35 bus 33','1030','Brussel','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (431,'UA Universiteit Antwerpen','Org','Universiteitsplein 1','2610','Wilrijk','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (432,'VAD','Org','Vanderlindenstraat 15','1030','Antwerpen','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (434,'Vrij CLB Roeselare','Org','Kattestraat','','Roeselare','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (435,' Mariawende Blydhove','Org','Boogschutterslaan','','Sint-Kruis','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (436,'Torhout','Org','','','Torhout','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (437,'Scholengroep Sint-Rembert Torhout','Net','','','Torhout','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (438,'Agentschap jongerenwelzijn, regioteam Antwerpen','Org','Frankrijklei 38','2000','Antwerpen','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (440,'Oostende','Net','','','Oostende','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (441,'VTI Roeselare','Org','Leenstraat','','Roeselare','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (442,'Wervik','Net','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (443,'Provincie West-Vlaanderen','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (444,'Ieper','Org','','','','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (445,'Klein Seminarie','Org','Zuidstraat','','Roeselare','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (446,'Roeselare','Net','','','','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (447,'KA Roeselare','Org','','','Roeselare','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (448,'Sint-Jozefshand Sint-Pietersinstituut ','Org','','','Blankenberge','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (449,'IVBO Brugge','Org','','8000','Brugge','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (450,'VAD','Org','vanderlindenstraat 15','','Brussel','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (451,'LVD Gullegem','Org','','','Gullegem','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (452,'Penitentaire complex Brugge','Org','','','Brugge','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (453,'Brugge','Net','','','Brugge','België','99',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (454,'Poperinge','Net','','','Poperinge','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (455,'vormingplus','Org','','','kortrijk','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (456,'Dominiek Savio Instituut vzw','Org','Koolskampstraat 24','8830','Gits','België','100',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (457,'COV','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (458,'Anzegem','Net','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (459,'Jeugd in de Westhoek','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (460,'Moorslede','Net','','','Moorslede','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (461,'Sint Franciscus Xaverius Instituut','Org','','','Brugge','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (462,'Zwevegem','Net','','','Zwevegem','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (463,'Huisvestingsdienst Izegem','Org','','','Izegem','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (464,'onze jeugd','Org','','','roeselare','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (468,'Provincie Vlaams-Brabant','Org','Provincieplein 1','3010','Leuven','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (469,'Vleteren','Net','','','','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (470,'koksijde','Net','','','Koksijde','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (471,'Preventieraad Veurne-Alveringem-Lo-Reninge','Net','','','','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (472,'Leercentrum, Het CDO','Org','Eethuisstraat 80','2170','Merksem','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (473,'VAGGA','Org','','','','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (474,'Familiehulp','Org','Nationalestraat 111','2000','Antwerpen','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (475,'Tuppercare','Net','Ketsstraat 17','2018','Antwerpen','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (476,'Maris Stella','Org','Antwerpsesteenweg 67','2390','Oostmalle','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (477,'Rotary Tielt','Org','','','Tielt','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (478,'Clara Fey','Org','Bethaniënlei 5','2960','Brecht','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (479,'Samenlevingsopbouw - RISO','Org','Breughelstraat 31 - 33','2018','Antwerpen','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (480,'Actieve Stad','Net','F. Wellensplein 1','2018','Antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (481,'Unie van Turkse Verenigingen','Org','Lange Achteromstraat 32','2018','Antwerpen','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (482,'Antwerpen stad','Net','','','','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (483,'OC Linkeroever','Org','Beatrijslaan 100','2050','Antwerpen','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (484,'SHIM, Stedelijk Handels Inst Merksem ','Org','Vuurkruisenlaan 16','2170','Merksem','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (485,'8, de','Org','Van Daelstraat 35','2140','Borgerhout','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (486,'ADIC','Org','Generaal Belliardstraat 15-16','2000','Antwerpen','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (487,'JAC Plus','Org','Korte Nieuwstraat 26','2000','Antwerpen','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (488,'Antwerpen politie','Org','','','Antwerpen','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (489,'ZAPPA','Org','August Leyweg 6','2020','Antwerpen','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (490,'Technicum Noord-Antwerpen','Org','Londenstraat 43','2000','Antwerpen','België','12',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (491,'SPECTRUM - internaat ','Org','ruggeveldlaan 471','2100','Deurne','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (492,'Koninklijk Orthopedagogisch Centrum Antwerpen KOCA','Net','Van Schoonbekestraat 131','2018','Antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (493,'villers','Org','leerwijk','','Ekeren','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (494,'Antwerpen, Ocmw','Org','lange gasthuisstraat','2000 ','Antwerpen','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (495,'Exxon Mobil','Org','Canadastraat 20','2070','zwijndrecht','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (496,'DienstenThuis','Org','lange leemstraat  372','2018','Antwerpen','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (497,'Terp, de CAW ','Org','Prof. V.D. Wildenberglaan','2100','Deurne','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (499,'Hoboken CVO ','Org','Maalbootstraat 19','2660','Hoboken','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (500,'CBJ, team preventie en opvoedingsondersteuning','Org','Frankrijklei 38/3','2000','Antwerpen','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (501,'Scholenoverleg Eilandje','Net','cadixstraat 2','2000','Antwerpen','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (502,'Antwerpen Provincie /welzijn','Net','kon. Elisabethlei 22','2018','Antwerpen ','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (503,'BAYER','Org','Scheldelaan 420','2040','Antwerpen','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (504,'Pension Van Schoonhoven ','Org','Van Schoonhovenstraat 80','2060','Antwerpen','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (505,'SISA','Org','Cadixstraat 2','2000','Antwerpen','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (506,'Centrum Kauwenberg','Org','Korte Winkelstraat 1','2000','Antwerpen','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (508,'Centrum Naschoolse Opleiding','Org','Campus 3 Eiken Universiteistplein 1','2610','Wilrijk','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (509,'SAW ','Org','Diksmuidelaan 50','2600','Berchem','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (510,'SODA','Org','Van Immerseelstraat','2018','Antwerpen','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (511,'Passage, De','Org','Lod. De Raetstraat 3','2020','Antwerpen','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (512,'Broechem opvangcentrum','Org','Van den Nestlaan 64b','2520','Broechem','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (513,'AMOK zelfstandig woonproject ','Org','H. Van Heurckstraat 20','2000','Antwerpen ','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (514,'Federatie van Marokkaanse Verenigingen','Org','Oudstrijdersstraat 9','2140','Antwerpen','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (515,'Sint-Jozef DVC','Org','Galjoenstraat 2','2030','Antwerpen','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (516,'Provinciaal Veiligheidsinstituut','Org','Jezusstraat 28 ',' 2000 ','Antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (517,'JOMA','Org','Maantjessteenweg 130','2170','Merksem ','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (518,'Werkgroep Onderwijs Brugge','Net','','','','België','99',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (520,'KA en Middenschool Assebroek','Org','Daverlostraat','8310','Assebroek','België','99',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (521,'Sociaal Huis Oostende','Org','Edith Cavellstraat','8400','Oostende','België','99',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (522,'Crisishulp t sas','Org','','8000','Brugge','België','99',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (523,'Heuvelland','Net','','','','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (524,'Kansspelcommissie','Org','Kantersteen 47','1000','Brussel','België','138',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (525,'CGGZ Brussel / Primavera','Org','Houba de strooperlaan 134-136','1020','Brussel','België','131',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (526,'LOGO Brussel-VGC Dienst Welzijn en Gezondheid','Org','Lombardstraat 41','1000','Brussel','België','138',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (527,'Provincie Limburg','Org','Universiteitslaan 1','3500 ','Hasselt','België','138',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (528,'OCMW Leuven','Org','Vesaliusstraat 47','3000','Leuven','België','138',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (529,'CAW Leuven','Org','Redingenstraat 6','3000','Leuven','België','138',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (530,'KAVKA Jeugdcentrum','Org','Oudaan 14','2000','antwerpen','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (531,'Nationalistisch Studenten Verbond Antwerpen','Org','Jezuïetenrui 1','2000','antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (532,'Rizla','Org','','2610','wilrijk','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (533,'Preventiedienst Zele-Berlare - Amber Vandewinckel','Org','Gaver 72','9290',' Berlare','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (534,'Proviniciaal Steunpunt Vroeginterventie-An Schelpe','Org','Martelaarslaan 204A','9000','Gent','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (535,'GGZ Waas en Dender - coördinator ','Org','Antwerpse Steenweg 187','9100','Sint-Niklaas','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (536,'GGZ Waas en Dender - Delta-overleg','Org','Grote Peperstraat 15','9100','Sint-Niklaas','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (537,'Stad Dendermonde','Org','','9200','Dendermonde','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (538,'Attentia - Sharon Van Asbroeck','Org','Lenniksebaan 806','1070 ','Brussel ','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (539,'Areaz - Complex','Org','Grote Baan 108','9100','Sint-Niklaas','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (540,'Stad Sint-Niklaas','Org','Grote Markt 1','9100','Sint-Niklaas','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (541,'GGZ Waas en Dender - preventie-overleg','Org','Grote Peperstraat 15','9100','Sint-Niklaas','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (542,'OLVI - PIUS X - Zele','Org','Collegestraat 1','9240','Zele','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (543,'Onafhankelijk Ziekenfonds Antwerpen','Org','Boomsesteenweg 5','2610','Antwerpen','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (544,'Provinciaal overleg','Org','','','gent','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (545,'VAD','Org','Vanderlindenstraat 15','1030','Brussel','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (546,'Hagewinde','Org','Durmelaan 118 - Torenstraat 15','9160','Lokeren','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (547,'Vrij CLB Waas en Dender','Org','Ankerstraat 63','9100','Sint-Niklaas','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (548,'Sint-Maarten Bovenschool','Org','Kallobaan 3A','9120','Beveren-Waas','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (549,'SAMENWERKINGSINITIATIEF THUISZORG LISTEL','Org','A. RODENBACHSTRAAT 29','3500','HASSELT','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (550,'VERTROUWENSCENTRUM KINDERMISHANDELING','Org','BOERENKRIJGSINGEL 30','3500','HASSELT','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (551,'CMGJ','Org','BOSLAAN 27','3600','GENK','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (552,'TEVONA','Org','','3500','HASSELT','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (553,'KINDER- EN JONGERENTELEFOON','Org','','3500','HASSELT','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (554,'KONINKLIJK TECHNISCH ATHENEUM 1 HASSELT','Org','VILDERSTRAAT 28 ','3500','HASSELT','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (555,'Stad Lokeren ','Org','','','Lokeren','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (556,'GGZ Waas en Dender - PO','Org','Antwerpse Steenweg 187','9100','Sint-Niklaas','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (557,'VTS 3','Org','Breedstraat 104','9100','Sint-Niklaas','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (558,'Gemeente Beveren','Org','','9120','Beveren','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (559,'GGZ Waas en Dender - ACT','Org','Grote Peperstraat 15','9100','Sint-Niklaas','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (560,'De Kapelderij - Buggenhout','Org','','','Buggenhout','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (561,'Kick-it','Net','','','','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (562,'Rode Kruis Vlaanderen','Org','','','','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (563,'GGZ Waas en Dender - Directie','Org','Grote Peperstraat 15','9100','Sint-Niklaas','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (564,'Syntra Midden-Vlaanderen','Org','','','','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (565,'Stad Aalst','Org','','','Aalst','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (566,'LOGO','Org','Grote Markt','9100','Sint-Niklaas','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (567,'College Sint-Niklaas','Org','Collegestraat','9100','Sint-Niklaas','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (568,'ID & T Belgium','Org','Leuvenstraat 3 ','2000','Antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (569,'CM Waas en Dender - Kazou','Org','','','Sint-niklaas','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (570,'Het Perron - Deeltijds onderwijs','Org','Noordlaan 32','9100','Sint-Niklaas','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (571,'KONINKLIJK LYCEUM KA 3','Org','VRIJWILLIGERSPLEIN 3','3500','HASSELT','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (572,'ARKTOS BERINGEN','Org','LAAN OP VURTEN 55','3581','BERINGEN','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (573,'PAAZ HEUSDEN ZOLDER','Org','P PAQUALAAN 129',' 3550','HEUSDEN ZOLDER','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (574,'AULAM - overleg Denderstreek Jeugddiensten','Net','','','','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (575,'Indigo','Org','','','Waasmunster','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (576,'De Morgenster','Org','','','Waasmunster','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (577,'SEN vzw','Org','Begijnhof','9000','Gent','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (578,'JAC Waasland','Org','Apostelplein','9100','Sint-Niklaas ','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (579,'Delhaize','Org','','','','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (580,'gemeente Kruibeke  ','Org','','','','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (581,'Cluster BJZ (Indigo, Hof Ter Welle, De Morgenster)','Net','','','','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (582,'RWO Waasland','Org','Monsigneur Stillemansstraat','9100','Sint-Niklaas','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (583,'HaVi overleg','Net','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (584,'ZW Brabants preventieoverleg','Net','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (585,'VLABO','Net','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (586,'OCMW Halle','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (587,'Preventiedienst Ternat','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (588,'FOD Volksgezondheid','Org','Victor Hortaplein 40, bus 10','1060','Brussel','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (589,'Kabinet Vl. minister van Volksgezondheid','Org','Koolstraat 65','1000','Brussel','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (590,'Commissie Volksgezondheid - federaal parlement','Org','Leuvenseweg','1000','Brussel','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (591,'politici','Net','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (592,'GGZ Waas en Dender- hoofdzeteloverleg','Org','grote peperstraat 15','9100','sint-niklaas','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (593,'GGZ Waas en Dender - WG Communicatie','Org','','','','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (594,'CLB Waas & Dender','Org','','','','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (595,'Aliplast','Org','','','Lokeren','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (596,'Groep intro','Org','','','','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (597,'Securex','Org','','','','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (598,'Partnerorverleg (VIGeZ, Sensoa, VAD)','Net','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (599,'VSO-G','Net','Martelaarslaan ','9000','Gent','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (600,'KOPP Vlaanderen','Net','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (601,'provincie Oost-Vlaanderen','Org','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (602,'VIGeZ','Org','Schildknechtstraat ','1020','Brussel','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (603,'Domus Medica','Org','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (604,'Eurocare','Org','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (605,'Al Anon','Org','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (606,'TIO OVERPELT','Org','','3900','OVERPELT','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (607,'KONINKLIJK ATHENEUM DE WINGERD ','Org','','3900','OVERPELT','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (608,'PROFELCO','Org','','3900','OVERPELT','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (609,'KONINKLIJK TECHNISCH ATHENEUM II DE WIJZER','Org','','3600','GENK','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (610,'ONZE-LIEVE-VROUW-LYCEUM GENK','Org','','3600','GENK','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (611,'Essen, MSGO ','Org','Hofstraat 14','2190','Essen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (612,'TECHNISCH INSTITUUT ST-LODEWIJK GENK','Org','','3600','GENK','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (613,'POLITIE BREE','Org','','3690','BREE','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (614,'Gezondheidshuis Antwerpse protituees','Org','Verversrui 3','2000','Antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (615,'Leonardo Lyceum','Org','Jan Devoslei','2020','antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (616,'BIEHAL','Org','','','LOMMEL','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (617,'Don Bosco Jongenstehuis ','Org','Broechemsesteenweg 100 ','2531','Vremde','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (618,'Caritas Sociaal Secretariaat','Org','Interleuvenlaan 10','3001','Heverlee','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (619,'Modus Fiësta','Org','rue van artevelde','1000','brussel','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (620,'ST-JOZEF LOMMEL','Org','','','LOMMEL','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (621,'Democracy cities and drugs','Net','','','','Ander land','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (622,'Kozzmozz','Org','','9000','Gent','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (623,'Rode Kruis vzw','Org','Motstraat 40','2800','Mechelen','België','129',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (624,'Live Nation','Org','','','mechelen','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (625,'Antwerpen provincie','Org','Boomgaardstraat','2600','BERCHEM','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (626,'MIDDENSCHOOL MEEUWEN-GRUITRODE','Org','','','MEEUWEN-GRUITRODE','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (627,'Psynet','Net','','','Antwerpen','België','12',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (628,'Sint-Amedeus Psychiatrisch Centrum','Org','Deurnestraat 252','2640','Mortsel','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (629,'Antwerpen provincie /dienst welzijn en gezondheid','Org','Boomgaardstraat 22','2600','Antwerpen','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (631,'KIDS','Org','Borrewaterstraat 125 A','2170','Merksem','België','12',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (632,'Hof ter Heide','Org','Steynstraat 140 ','2660','Hoboken ','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (633,'Engel, Den ','Org','Turnhoutsebaan 210','2100','Deurne','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (634,'Wingerdbloei','Org','Waterbaan  153','2100','Deurne','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (635,'GROEP INTRO','Org','','3600','GENK','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (636,'KONINKLIJK ATHENEUM HASSELT','Org','CAPUCIENENSTRAAT 28','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (637,'VRIJ TECHNISCH INSTITUUT HASSELT','Org','GROENPLEIN 6','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (638,'Politie Dendermonde','Org','','','Dendermonde','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (639,'GGZ Waas en Dender - Delta curatie','Org','','','','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (640,'VHTI Dendermonde','Org','','','','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (641,'Koninklijk Atheneum Dendermonde','Org','Zuidlaan 3','9200','Dendermonde','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (642,'CGG De Drie Stromen','Org','','','','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (643,'AZ Sint-Blasius','Org','','','Dendermonde','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (644,'JAC Dendermonde ','Org','','','','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (645,'LOK-groep huisartsen Dendermonde ','Org','','','','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (646,'Stedelijke sportdienst Dendermonde','Org','','','','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (647,'UNIZO Dendermonde','Org','','','','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (648,'CAW Dendermonde','Org','','','','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (649,'Al-Anon & Al-Ateen Dendermonde','Org','','','','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (650,'Anonieme Alcoholisten Grembergen','Org','','','','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (651,'Plantijn Hogeschool','Org','Lange Nieuwstraat 101','2000','Antwerpen','België','12',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (652,'Mortsel GTI ','Org','Dieseghemlei 60','2640 ','Mortsel','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (653,'VOKA Dendermonde','Org','','','','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (654,'Rode Kruis Dendermonde','Org','','','','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (655,'LOK-groep huisartsen Sint-Niklaas','Org','','','','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (656,'Apothekers Sint-Niklaas ','Org','','','','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (657,'Anonieme Alcoholisten Sint-Niklaas ','Org','','','','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (658,'PSYCHIATRISCH ZIEKENHUIS SANCTA MARIA','Org','MELVERENCENTRUM 111','3800','SINT-TRUIDEN  ','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (659,'nodenbevraging VAD-VIG-Sensoa','Net','','','','België','128',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (660,'Hogeschool Leuven','Org','','','','België','128',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (661,'Steunpunt Algemeen Welzijnswerk','Org','','','','België','128',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (662,'Kind en Gezin','Org','','','','België','128',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (663,'Horeca Dendermonde','Org','','','','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (664,'VIBEG','Org','','','','België','128',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (665,'bjz Vlaams-Brabant','Net','','','','België','128',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (666,'Leren Ondernemen','Org','','','','België','128',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (667,'Agenschap Jongerenwelzijn','Org','','','','België','128',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (668,'Trimbos','Org','','','','Nederland','128',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (669,'De Spiegel','Org','','','','België','128',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (670,'TEXPERIMENT','Org','POPULIERENSTRAAT ','3560','LUMMEN ','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (671,'Werkgroep BJZ Brugge','Net','Blinde ezelstraat ','8000','Brugge','België','99',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (672,'KA Veurne','Org','','','Veurne','België','99',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (673,'VMB Consult','Org','','','antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (674,'salon','Org','','8000','Brugge','België','99',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (675,'Ter reie','Org','','8000','Brugge','België','99',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (676,'Onze Kinderen','Org','Blinde Rodenbachstraat 88','8800','Roeselare','België','79',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (677,'MAROKKAANSE MOSKEE HEUZDEN ZOLDER','Org','P.PAQUAILAAN 157','3550','HEUZEDN ZOLDER','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (678,'VZW CHABAB ','Org','ELZENSTRAAT 19  ','3530','HOUTHALEN HELCHTEREN','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (679,'MAROKKAANSE MOSKEE ST-TRUIDEN','Org','HAARDSTRAAT 22','','ST-TRUIDEN','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (680,'Blankenberge','Net','','','Blankenberge','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (681,'RAD Kringloopcentrum','Org','','','Ruddervoorde','België','99',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (682,'Scouts en gidsen Vlaanderen','Org','Lange Kievitstraat 74','2018','Antwerpen','België','12',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (684,'DELHAIZE','Org','WATERSCHEI ','3600','GENK ','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (686,'MAROKKAANSE MOSKEE KOERSEL','Org','AARDWEG 20 ','3582','kOERSEL','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (687,'ID&T Belgium','Org','','','','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (688,'Ellie likes electro','Org','','','','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (689,'stuurgroep bewust van je vruchtbaarheid','Net','','','','België','125',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (690,'Stuurgroep Vroeginterventie en Lokaal Beleid','Net','','','','België','125',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (691,'SODA','Org','Contactadres: Francis Wellesplein 1','2018','Antwerpen','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (692,'Langemark-Poelkapelle','Net','Kasteelstraat 4','8920','langemark-poelkapelle ','België','100',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (693,'Zonnebeke','Net','Langemarkstraat 8','8980','Zonnebeke','België','100',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (694,'Gistel','Net','Heyvaertlaan 18','8470','Gistel','België','100',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (695,'Gemeente Waasmunster','Org','','','Waasmunster','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (696,'Gemeente Merelbeke','Org','','','','België','78',21, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (697,'MSOC/MAT','Org','Grote Bergstraat 1','3300','Tienen','België','121',40, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (698,'DE WIEKSLAG ','Org','GROOTSTRAAT 87','3570','ALKEN','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (699,'ACV LIMBURG','Org','MGR. BROEKXPLEIN 1','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (701,'Regionale preventiedienst Leuven','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (702,'SIT Sint-Pieters-Leeuw','Net','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (703,'Lokaal drugoverleg Asse','Net','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (704,'Project vroegdetectie alcohol','Net','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (705,'Preventiedienst Pajottenland','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (707,'Nationale Loterij','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (708,'OCMW Meise','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (709,'Preventiedienst Haviland (Zellik)','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (710,'KITO Vilvoorde','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (711,'SGI en GO!SIGO Lennik','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (712,'Alcoholhulp.be','Net','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (713,'Cresept','Org','','','Drogenbos','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (715,'Renmans','Org','','','Londerzeel','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (717,'CGG Waas en Dender (Delta)','Org','Grote peperstraat 15','9100','Sint Niklaas','België','42',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (718,'GEVANGENIS MERKSPLAS','Org','','','','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (719,'COC Lanaken','Org','','3620','lanaken','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (720,'TECHNISCH INSTITUUT MAASMECHELEN','Org','LOOHEUVELSTRAAT','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (721,'OASE','Org','','3620','LANAKEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (722,'ASTEROIDE MAASMECHELEN','Org','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (723,'WERKWINKEL LANAKEN','Org','','3620','LANAKEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (724,'KONINKLIJK ATHENEUM MAASMECHELEN','Org','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (725,'SINT-AUGUSTINUS','Org','','','LANAKEN','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (726,'CLUB 9','Org','','','','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (727,'HEILIG KRUISCOLLEGE MAASEIK','Org','','3680','MAASEIK','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (728,'LOKOMOTIEF','Org','','3620','LANAKEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (729,'ACV MAASMECHELEN','Org','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (730,'ACLVB MAASMECHELEN','Org','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (731,'HUISARTSENKRING MAASMECHELEN','Net','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (732,'ABVV MAASMECHELEN','Org','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (733,'De Groene Planeet basisschool Houtem (Vilvoorde)','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (734,'C.C.CASINO HOUTHALEN','Org','VARENSTRAAT 22 A','3530','HOUTHALEN - HELCHTEREN','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (737,'JEUGDHUIS T STOOFKE','Org','MOLENSTRAAT','3840','RIJKEL BORGLOON','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (738,'vzw Spit','Org','','','heverlee','België','83',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (739,'MSOC','Org','Leuvensestraat ','1800','Vilvoorde','België','69',19, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (740,'Politiezone Pajottenland','Org','Bruneaustraat 101','1755','Kester','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (741,'Preventiedienst stad Leuven','Org','Philipssite','3001','Heverlee/Leuven','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (742,'B-o-o-g','Org','Tiensevest 162','3000','Leuven','België','85',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (743,'VAD','Org','Vanderlindenstraat 15','1030','Brussel','België','69',19, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (745,'KA2 De Ring','Org','','3000','Leuven','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (746,'logo','Org','','','herent','België','83',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (747,'IGO Leuven','Org','Aarschotsesteenweg 212','3000','Leuven','België','85',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (748,'Scholen ','Net','','','','België','65',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (749,'Sint-Jozefscollege Aarschot Middenschool','Org','Bekaflaan 65','3200','Aarschot','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (750,'Gevangenis Leuven Centraal','Org','Geldenaaksevest 64','3000','Leuven','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (751,'Provincie Vlaams-Brabant','Org','Provincieplein 1','3010','Leuven','België','86',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (752,'KA Redingenhof','Org','Redingenstraat 90','3000','Leuven','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (753,'Regionaal preventieteam','Net','','','','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (754,'VTI Leuven','Org','Dekenstraat 3','3000','Leuven','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (755,'Rode Kruis','Org','Motstraat 40','','Mechelen','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (756,'VAD','Org','Vanderlindenstraat 15','1030','Brussel','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (757,'UPC St.-Kamillus Bierbeek','Org','','','Bierbeek','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (758,'Studenten hoger onderwijs','Org','','','','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (759,'Jeugddienst Tervuren','Org','Oppemstraat 57','3080','Tervuren','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (760,'VDIP','Org','','','','België','8',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (761,'CSG FORD','Org','MONDEOLAAN ','3600','GENK ','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (762,'Sint-Jozefscollege Aarschot Bovenbouw','Org','Schaluin 28','','Aarschot','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (763,'KA Tienen','Org','Gilainstraat 70','3300','Tienen','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (764,'CAW Leuven','Org','','3000','Leuven','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (765,'Stad Tienen','Net','','3300','Tienen','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (766,'Montfortcollege Rotselaar','Org','','','Rotselaar','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (767,'Amber BZW','Org','Pompstraat','','Wilsele','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (768,'Preventiedienst stad Diest','Org','','','Diest','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (769,'VRIJE BASISSCHOOL ENGSBERGEN','Org','LINDENSTRAAT 5','3980','TESSENDERLO','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (770,'JEUGDHUIS DE KOUTER','Org','HEUVELSTRAAT 3','3950','BOCHOLT','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (771,'CAFE AMBIORECA','Org','KEMPISCHE STEENWEG 23','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (772,'CAFE VAN GOGH','Org','KOLONOL DUSARTPLEIN 38','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (773,'CAFE DE WIJZEN','Org','KOLONEL DUSARTPLEIN 40','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (774,'CAFE EXPORT','Org','KOLONEL DUSARTPLEIN 44','3500','HASSET','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (775,'XIOS HOGESCHOOL','Org','UNIVERSITAIRE CAMPUS AGORALAAN CAMPUS H','3590','DIEPENBEEK','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (776,'JEUGDDIENST HERK DE STAD','Org','RIDDERSTRAAT 6','3540','HERK DE STAD','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (777,'OCMW NOORD LIMBURG','Net','','','','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (778,'TECHNISCH INSTITUUT SINT MICHIEL','Org','WITTE TORENSTRAAT 10','3960','BREE','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (779,'KBVB WEST LIMBURG','Net','','','','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (780,'DE WROETER','Org','SINT-ROCHUSSTRAAT 8','3720','KORTESSEM','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (782,'ST-MARIA NEERPELT','Org','','','NEERPELT','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (783,'Sint-Jozefsinstituut Betekom','Org','','3130','Betekom','België','85',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (784,'Regionale welzijnsraad Veurne Diksmuide','Net','','8400','','België','100',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (786,'GGZ - CAW','Net','','','','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (787,'lokale partners','Net','','','','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (788,'Sint-Carolus','Org','Gijselstraat','','Nieuwkerken-waas','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (789,'scouts lokeren','Org','oude heirweg','','Lokeren','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (790,'gemeente stekene','Org','stadionstraat 2','','stekene','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (791,'Formaat','Org','De Wittestraat 2','2600','Berchem','België','12',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (792,'Sint-Martinusschool TSO/BSO','Org','','1730','Asse','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (793,'VDAB Sint-Niklaas','Org','Lamstraat','','Sint-Niklaas','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (794,'WASO','Net','','','','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (795,'Gemeente Zele','Org','','','Zele','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (796,'Boeckenberg','Org','Gouverneur Holvoetlaan 28','2100','Deurne','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (797,'Vlieger, De  (Home Drakenhof)','Org','','','','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (798,'Overstap, De','Org','','','Antwerpen','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (799,'PANASONIC BELGIUM','Org','HAVENLAAN 6','3980','TESSENDERLO','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (800,'VVSG','Org','Paviljoenstraat 9','1030 ','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (801,'SEN Oost-Vlaanderen','Org','','','','België','128',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (802,'O_OOBC Nieuwevaart','Org','Jozef Guislainstraat 47 - 49','9000','Gent','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (803,'O_Instituut Bert Carlier','Org','Oudenaardsesteenweg 74','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (804,'CLB Aarschot','Org','Bekaflaan 63','3200','aarschot','België','86',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (805,'Leren Ondernemen','Org','valkerijgang','3000','leuven','België','83',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (806,'O_Koninklijk Atheneum III Voskenslaan','Org','Voskenslaan 60','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (807,'stad rotselaar','Net','rotselaar','','rotselaar','België','83',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (808,'stad bekkevoort','Net','bekkevoort','','bekkevoort','België','83',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (809,'O_Middelbare Rudolf Steinerschool Vlaanderen','Org','Kasteellaan 54','9000','Gent','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (810,'vzw sporen','Org','geldenaaksevest','3001','heverlee','België','83',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (811,'O_Vrij Instituut voor Secundair Onderwijs Gent','Org','J.B. Guinardstraat 23','9000','Gent','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (812,'Mental Health Europe','Org','Boulevard Clovis 7','1000','Brussel','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (813,'Delhaize','Org','','','Zellik','België','83',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (814,'CGG-VBO','Org','vital decosterstraat','3000','leuven','België','86',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (815,'vlaspit','Org','','','scherpenheuvel','België','83',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (816,'UZ Leuven','Org','','3000','Leuven','België','83',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (819,'Syntra Vlaanderen ','Net','','','','België','129',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (820,'nationale loterij','Org','','','brussel','België','83',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (821,'jeugdhuis overijse','Org','','','overijse','België','83',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (822,'APB - Algemene Pharmaceutische Bond','Org','Stevinstraat 137','1000','BRUSSEL ','België','131',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (823,'Middelpunt CGG-preventie W-Vl','Org','','','','België','131',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (826,'Tweede Kans Onderwijs Leuven','Org','Justus Lipsiusstraat 69','3000','Leuven','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (827,'CAW BERINGEN','Org','KLAVERWEIDE 82','3581','BEVERLO','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (828,'Hoogstraten gevangenis','Org','Steenweg op Wortel','','Merksplas','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (829,'Vlaamse Jeugdraad','Org','','','','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (830,'Elegast vormingsdienst','Org','Belgiëlei ','','Antwerpen','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (831,'Stabroek Jeugddienst','Org','Kerkstraat 37','2940','Stabroek','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (832,'Antwerpen, Koninklijk Lyceum ','Org','Hertoginstraat 17','2018','Antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (833,'Intergemeentelijke vereniging drugs en alcoholprev','Net','','','','België','65',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (834,'Raad van bestuur Haviland','Org','Brusselsesteenweg 617','1731','Zellik','België','65',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (835,'Open Thuis Pleegzorg','Org','Leemputstraat 49','2600','Berchem','België','12',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (836,'Posthof','Org','Pattriottenstraat 62','2600','Berchem','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (837,'OCMW Houthulst','Org','vijverstraat 30','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (838,'Montfortinternaat Rotselaar','Org','Aarschotsesteenweg 39','','Rotselaar','België','85',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (839,'Sint-Idesbald','Org','','','roeselare','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (840,'CLB GO Halle','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (841,'Televil','Org','','','Vilvoorde','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (842,'café Doka','Org','','','Merkem','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (843,'politie arro ieper','Org','','','ieper','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (844,'CLB GO! Brugge','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (845,'Edelweiss','Org','','','Ingelmunster','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (846,'Café zonder bier  (bond zonder naam)','Org','familiestraat 8','2060','Antwerpen','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (847,'VDAB Spoor 21','Org','H Consciencestraat 3','2800','Mechelen','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (848,'Sint-Jozef Borsbeek','Org','Robianostraat 11','2150','Borsbeek','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (849,'VBO','Org','','','','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (850,'Dames, De','Org','Lange Nieuwstraat 94','2000','Antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (851,'ST-JAN BERCHMANSCOLLEGE','Org','','3600','GENK','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (852,'Zuiderkempen Logo','Net','','','Brasschaat','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (853,'LIDO','Net','','','','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (854,'GVB BOXBERG','Org','BOXBERGSTRAAT 1','3600','GENK','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (855,'Pius-X','Org','Abdijstraat 185','2020','Antwerpen','België','12',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (856,'Horst CKG','Org','Horstebaan 14','2900','Schoten','België','12',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (857,'Sluis, De OOOC','Org','Begijnhoeve 1','2040','Zandvliet','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (858,'Cel Gezondheidsbeleid Drugs','Net','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (859,'Kabinet Justitie','Org','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (860,'CGG de Pont','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (861,'ALZ','Org','','3600','GENK','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (862,'VAD','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (863,'Technische Scholen Mechelen','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (864,'Preventiedienst Mechelen','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (865,'Lokale politie Mechelen','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (866,'Dienst Welzijn en Gezondheid','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (867,'Gibo Galbergen','Org','','','Mol','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (868,'strafinrichting van Merksplas','Org','','','Merksplas','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (869,'Kosh ','Net','','','Herentals','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (870,'St.-Isabella Begeleidingstehuis','Org','','','Arendonk','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (871,'De Markt','Org','','','Mol','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (872,'Boskat','Org','','','Herentals','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (873,'BUSO Groenlaar','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (874,'JAC Turnhout','Org','','','Turnhout','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (875,'Heilig Graf instituut','Org','','','Turnhout','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (876,'De Kastelein','Org','','','Turnhout','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (877,'KHK','Org','','','Geel','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (878,'Sportac','Net','','','Herentals','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (879,'Wel & Wee wijkgezondheidscentrum','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (880,'preventiedienst Lier','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (881,'Aleris Duffel','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (882,'PITO Mechelen','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (883,'preventiedienst Geel','Org','','','Geel','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (884,'huisartsenkring Duffel','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (885,'Breakline','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (886,'VAD','Org','','','Brussel','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (887,'Dupont de Nemours','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (888,'OCMW Herentals','Org','','','Herentals','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (889,'Gemeentebestuur Heist o/d Berg','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (890,'CDO Heist o-d Berg','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (891,'CGG Kempen','Org','','','Turnhout','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (892,'PAAZ Lier','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (893,'SK Heist','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (894,'Thuislozenzorg Mechelen','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (895,'Gemeentebestuur Niel','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (896,'Gevangenis Mechelen','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (897,'Dagcentrum Wederik','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (898,'Gemeentebestuur Boom','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (899,'KTA2 DE WIJZER','Org','MOSSELAARLAAN','3600','GENK','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (900,'OCMW Mechelen','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (901,'TISM','Org','','3960','BREE','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (902,'Sint-Jozefinstituut Kontich','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (903,'KTA Heist op den Berg','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (904,'Gemeentebestuur Sint-Amands','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (905,'SK Lierse Jeugd','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (906,'Zelfmoordpreventie Vlaanderen','Net','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (907,'Peda Rooienberg Duffel','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (908,'jeugdhuis Moeve Lier','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (909,'AMPTA Marseille','Org','','','','Frankrijk','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (910,'Vagga Altox','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (911,'Gemeentebestuur Bornem','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (912,'Logistics Kontich','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (913,'LOGO Mechelen','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (914,'Politie Lier','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (915,'SUI OLV-Waver','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (916,'Gemeentebestuur Puurs','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (917,'CLW Merodestraat','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (918,'OCMW Kontich','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (919,'LOGO Antwerpen','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (920,'Gemeentebestuur Duffel','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (921,'Dagcentrum De Sleutel Mechelen','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (922,'De Sleutel Preventie','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (923,'Focusgroep ECAT','Net','','','Sint-Niklaas','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (925,'ST HERLINDIS EN RELINDIS','Org','','3680','MAASEIK','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (926,'Sportdienst Dendermonde','Org','Van Langenhovestraat 203a','9200','Dendermonde','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (927,'GGZ Waas en Dender- Oase','Org','Koning Albertstraat ','9200','Dendermonde','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (928,'ACV Mechelen','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (929,'ST-AUGUSTINUS','Org','','3960','BREE','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (930,'Ursulineninstituut Mechelen','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (931,'Instituut Heilig Hart van Maria Berlaar','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (932,'KTA Lier','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (933,'Gemeentebestuur Berlaar','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (934,'FORD GENK','Org','HENRY FORDLAAN','3600','GENK','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (935,'GIGOS','Net','','3600','GENK','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (936,'Stad Antwerpen','Org','','','','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (937,'CLB Waas en Dender - Sint-Niklaas ','Org','','','Sint-Niklaas','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (938,'Sint Lambertusinstituut Heist od Berg','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (939,'OCMW Duffel','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (940,'OCMW Lier','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (941,'Trimbos Instituut','Org','','','Nieuwegein ','Nederland','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (942,'Wim Knapen - fotograaf','Org','','','Antwerpen','België','56',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (943,'USG Slitter Antwerp','Org','Narvikstraat 2 Haven 118','2030','Antwerpen','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (944,'Tasq en co','Org','Jules Bilmeyerstraat 22','2600','Berchem','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (945,'Metropool CAW onthaal','Org','Vrijdagmarkt','2000','Antwerpen','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (946,'Antwerpen gevangenis','Org','Begijnevest','2000','Antwerpen','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (947,'Kalmthout Jeugddienst','Org','','','Kalmthout','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (948,'Wallenius Wilhelmsen','Org','Prins Boudewijnlaan 43','2650','Edegem','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (949,'Sint Franciscus Xaverius Instituut','Org','Mariastraat 7','8000','Brugge','België','100',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (950,'De Luifel vzw','Org','Tramstraat 42','8700','Tielt','België','100',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (951,'Wivo vzw 11','Org','Koning Leopold 3-laan 31','8200','Brugge','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (952,'Gemeenschapsinstelling De Zande','Org','Bruggesteenweg 130 ','8755 ','Ruiselede','België','100',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (953,'OCMW Oostende','Org','','8400','Oostende','België','100',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (954,'Regionale welzijnsraad Ieper','Net','Korte Meersstraat 6','8900','Ieper','België','100',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (955,'Departement Onderwijs en vorming','Org','Koning Albert II-laan15','1210','Brussel','België','129',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (956,'GO! Onderwijs van de Vlaamse Gemeenschap','Org','Emile Jacqmainlaan 20','1000','Brussel','België','129',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (958,'P.C. Broeders Alexianen Boechout','Org','Provinciesteenweg 408','2530','Boechout','België','129',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (959,'VVKHO','Org','Guimardstraat 1','1040','Brussel','België','129',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (960,'CLB Brugge','Org','Klaverstraat 49','','Brugge','België','129',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (961,'Associatie Universiteit - Hogescholen Gent','Org','','9000','Gent','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (962,'Arteveldehogeschool','Org','Kattenberg 9','9000','Gent','België','129',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (963,'VLOR','Org','Kunstlaan 6 bus 6','1210','Brussel','België','129',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (964,'Sensoa','Org','kipdorpvest','2000','Antwerpen','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (965,'Begeleidingstehuizen Zonnewende (OCMW)11','Org','Pannestraat 43A ','8630','Veurne','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (966,'CAW Vilvoorde','Org','J.B.  Nowélei 33','1800 ','Vilvoorde','België','69',19, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (967,'Gemeente Zemst','Org','De Griet 1','1980','Zemst','België','69',19, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (968,'Gemeente Kampenhout','Org','Gemeentehuisstraat 13','1910','Kampenhout','België','69',19, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (969,'Gemeente Steenokkerzeel','Org','Orchideeënlaan 17','1820','Steenokkerzeel','België','69',19, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (970,'OPZ','Org','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (971,'CGG Ahasverus','Org','Muurveld 38','1730','Asse','België','69',19, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (972,'LOGO','Org','Kloosterweg 9','3020','Herent','België','69',19, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (973,'preventiedienst Herentals','Net','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (974,'CDenV Herenthout','Org','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (975,'KASTZE','Org','De Griet 1','1980','Zemst','België','69',19, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (976,'Pudding','Net','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (977,'Het antwoord','Org','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (978,'Adviesraad Opvoedingsondersteuning Antwerpen','Net','','','Antwerpen','België','12',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (979,'scouts en gidsen','Org','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (980,'Drughulp Kempen','Net','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (981,'VLABO','Org','Groeneweg 151/7','3001','Heverlee','België','69',19, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (982,'De Sleutel ','Org','J. Guislainstraat 43','9000','Gent','België','133',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (983,'KOAP project ','Net','Ketsstraat 17','2018','Antwerpen','België','12',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (984,'Provincie Antwerpen','Org','','2000','Antwerpen','België','133',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (985,'GITOC Kalmthout','Org','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (986,'Project drugbeleid visserijsector','Net','Koning Leopold II-laan','8000','Brugge','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (987,'Hivset','Org','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (988,'LPV','Net','UNIVERSITEITSLAAN 1','3500','HASSELT','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (989,'CLB GENK','Org','ZEVENBONDERSTRAAT ','3600','GENK','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (990,'Werkgroep studentenbevraging 2009 (UA&Ug)','Net','','','','België','133',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (991,'Katholieke Universiteit Leuven','Org','','3000','Leuven','België','133',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (992,'Universiteit Gent','Org','','9000','Gent','België','133',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (993,'CGG Ahasverus','Org','','','','België','133',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (994,'European Agency for Health and Consumers (EAHC)','Org','','','','Ander land','133',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (995,'Vlaamse Vereniging Geestelijke Gezondheid (VVGG)','Org','Tenderstraat 14','9000','Gent','België','133',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (997,'Universiteit Antwerpen','Org','','','','België','133',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (998,'Merksem LOK','Net','Dr. Timmermanslaan 11','2170','Merksem','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (999,'St.Jozefinstituut','Org','Jozef Hendrickxstraat 153','2900','Schoten','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1000,'OSPA','Net','Maurits Sabbestraat 119 ','2800','Mechelen','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1001,'Antwerpen sociale infopunten','Net','Antwerpen','','Antwerpen','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1002,'VRIJ TECHNISCH INSTITUUT SALVATOR','Org','SALVATORSTRAAT ','3500','HASSELT','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1003,'Alpro nv','Org','','','Wevelgem','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1004,'O_Hotelschool_Gent_Tweebrugge','Org','Langevioletestraat','9000','Gent','België','47',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1005,'O_Benedictuspoort campus M. Middelares','Org','Kortrijksesteenweg 1024','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1006,'O_Vrij Instituut voor Secundair Onderwijs Mariaker','Org','Industrieweg 230 ','9030','Mariakerke','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1007,'O_Onze Lieve Vrouweinstituut Poperinge','Org','Boeschepestraat 14','8970','Poperinge','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1008,'O_Internaat Vrij Inst. Sec. Onderwijs Mariakerke','Org','Industrieweg 230 ','9030','Mariakerke','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1009,'O_Koninklijk Orthopedagogisch Centrum St-Grégorius','Org','J. Destréelaan 67','9050','Gentbrugge','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1010,'O_Freinetatheneum_DeWingerd_Gent','Org','Neermeerskaai 1A','9000','Gent','België','47',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1011,'O_VIP-school_HetLabyrint_Gent','Org','Offerlaan 3','9000','Gent','België','47',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1012,'O_Provinciale_Middenschool_Gent','Org','Abdisstraat 56','9000','Gent','België','47',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1014,'Stad Gent','Org','Botermarkt 1','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1015,'LO_Stedelijke Freinetschool De Vlieger ','Org','Dendermondsesteenweg 53','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1016,'Jeugdhuis Maegher Goet','Org','Pijphoekstraat 34','9041','Oostakker','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1018,'O_Secundair Kunstinstituut Stad Gent','Org','Ottogracht 4','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1019,'O_Kunsthumaniora St-Lucas','Org','Oude Houtlei 44','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1020,'HO_Arteveldehogeschool ','Org','Hoogpoort 15','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1021,'Saxion Hogeschool Nederland','Org','Enschede','','','Nederland','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1022,'O_vzw De Werf','Org','Destelbergenstraat 61','9040','Sint-Amandsberg','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1023,'O_Pedagogische Begeleidingsdienst Stad Gent','Org','Offerlaan 3','9000','Gent','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1024,'O_Syntra Midden-Vlaanderen Campus Gent','Org','Autoweg-Zuid 3','9051','Gent','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1025,'O_Sint-Janscollege humaniora ','Org','Heiveldstraat 117','9040','Sint-Amandsberg','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1026,'FRANCISCUSCOLLEGE','Org','BRUGSTRAAT 14','3550','HEUSDEN-ZOLDER','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1027,'BJZ De kantel','Org','','8000','Brugge','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1028,'Diksmuide','Org','','8600','Diksmuide','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1029,'Familiehulp vzw Oudenaarde','Org','Koningin Elisabethlaan 3','9700','Oudenaarde','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1030,'O_Sint-Paulusinstituut Gent','Org','Patijntjestraat 45','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1032,'Verbond van Belgische Ondernemingen ','Org','Ravensteinstraat 4 ','1000','Brussel','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1033,'CGG Ahasverus','Org','Muurveld 38','1730','Asse','België','145',43, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1034,'Preventiedienst Diest','Org','Michel Theysstraat 60','3290','Diest','België','145',43, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1035,'Preventiedienst Dilbeek','Org','Molenstraat 102','170','Dilbeek','België','145',43, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1036,'Preventiedienst Halle','Org','Oudstrijdersplein 18','1500','Halle','België','145',43, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1037,'Hadron vzw','Org','Brandstraat 3','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1038,'Preventiedienst Leuven','Org','Philipssite 4','3001','Leuven','België','145',43, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1039,'Preventiedienst Scherpenheuvel-Zichem','Org','Basilieklaan 75','3270','Scherpenheuvel-Zichem','België','145',43, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1040,'Preventiedienst Tienen','Org','Grote Markt 27','3300','Tienen','België','145',43, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1041,'Preventiedienst Vilvoorde','Org','Leuvensestraat 117','1800','Vilvoorde','België','145',43, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1046,'O_Visitatie Mariakeke','Org','Zandloperstraat 8','9030','Mariakerke','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1049,'Centrum Informatieve Spelen','Org','Naamsesteenweg 130','3001','Leuven','België','145',43, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1050,'Provinciaal Preventieplatform Middelengebruik Vl-B','Net','Provincieplein 1','3010','Leuven','België','145',43, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1051,'ACV ','Org','','','','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1052,'ACLVB ','Org','','','','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1053,'Amcor Flexibles Ghent','Org','Ottergemsesteenweg Zuid 801','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1054,'Begeleidingscentrum Stappen vzw','Org','Westveldstraat 1','9040','Sint-Amandsberg','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1055,'OPZ Geel','Org','Dr. Sanodreef 4','2440','Geel','België','60',12, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1056,'Stad Geel','Org','Werft 20','2440','Geel','België','60',12, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1057,'LO_ BS De Wegwijzer Assenede','Org','Schoolstraat 1','9960','Assenede','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1058,'LO_Vrije Gemengde Basisschool Eke','Org','Steenweg 52','9810','Eke','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1059,'In Petto','Org','Diksmuidelaan 50','2600','berchem','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1060,'De Cocon vzw','Org','Ham 133','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1061,'O_Koninklijk Lyceum Gent','Org','Kortrijksesteenweg 12','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1062,'O_Don Boscollege Zwijnaarde ','Org','Grotesteenweg-Noord','9052','Zwijnaarde','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1063,'VLASTROV','Org','Diksmuidelaan 36a','2600','Berchem','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1064,'Regionale welzijnscommissie Oostende','Net','ECavelstraat ','8400','','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1065,'ECAT I','Net','','','','België','123',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1066,'ECAT II','Net','','','','België','134',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1067,'LO_Vrije Basisschool Brugje Bassevelde','Org','Assenedestraat 18','9968','Bassevelde','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1068,'PREBES vzw','Org','Diestersteenweg 88','3510','Kermt','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1070,'O_Drugnetwerk Sec. Onderwijs Gent','Net','','','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1071,'O_Time-out_project_On@break2','Org','Kiekenstraat 4b','9000','Gent','België','47',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1072,'Theatergezelschap ZamZam (Panda)','Org','Veldegemsestraat 65','8210','Veldegem','België','145',43, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1073,'O_Sint-Franciscus_Evergem','Org','Schepenhuisstraat 4','9940','Evergem','België','47',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1074,'KONINKLIJK ATHENEUM ALICEBOURG LANAKEN','Org','','3620','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1075,'Werkgroep alcohol & zwangerschap','Net','','','','België','130',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1076,'De Wissel','Org','Tervuursevest','3000','Leuven','België','86',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1077,'Overlegplatforms Geestelijke Gezondheidszorg Vlaan','Net','','','Drongen','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1078,'Danscafé Exquis','Org','','','Pepingen','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1079,'Danscafé Square','Org','','','Lennik','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1080,'Werkgroep Gooik','Net','','','Gooik','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1082,'Stad Mechelen','Org','M.Sabbestraat 119','2800','Mechelen','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1083,'Regionaal Overleg Drugs','Net','','','','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1084,'VAD','Org','Vanderlindenstraat','','Brussel','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1085,'Centrum Geestelijke Gezondheidszorg De Pont','Org','Hanswijkstraat 48','2800','Mechelen','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1086,'CAW Vilvoorde','Org','J.B. Nowélei','1800','Vilvoorde','België','65',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1087,'Dagcentrum De Sleutel Mechelen','Org','Frederik de Merodestraat 20','2800','Mechelen','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1088,'vzw Mechelse Hattrick','Net','Kleine Nieuwendijk ','2800','Mechelen','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1089,'Lokale Politie Mechelen','Org','Frederik de Merodestraat','2800','Mechelen','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1090,'Technische School Mechelen','Org','','2800','Mechelen','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1091,'Centrum Leren en Werken','Org','','2800','Mechelen','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1092,'VZW De ploeg','Org','','2800','Mechelen','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1093,'SLIV binnenlandse zaken','Org','','1000','Brussel','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1094,'CLB','Org','bekaflaan 63','3200','Aarschot','België','86',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1095,'Dupont','Org','','2800','Mechelen','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1096,'Gasthuisberg','Org','Herestraat 49','3000','Leuven','België','86',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1097,'Halte 51','Org','Diestsevest','3000','Leuven','België','86',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1098,'Therapiecentrum','Org','','','Sint-Niklaas','België','86',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1099,'Atheneum Aarschot','Org','Pastoor Dergentlaan 1','3200','Aarschot','België','86',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1100,'Gevangenis Mechelen','Org','Liersesteenweg 2','2800','Mechelen','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1101,'Katholieke Hogeschool Mechelen','Org','Zandpoortvest','2800','Mechelen','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1102,'ROJM','Org','Edgar Tinellaan','2800','Mechelen','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1103,'Provincie Antwerpen dienst welzijn','Net','Boomgaardstraat 20','','Antwerpen berchem','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1104,'De Lage Drempel','Org','Louizastraat','2800','Mechelen','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1105,'Groep Intro','Org','Dorpsstraat 30','1070','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1106,'Zaveldal','Org','Huidevettersstraat 41','1000','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1107,'CGGZ-Brussel','Net','Vaartstraat 65','1000','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1108,'CAW Brussel mozaïek','Net','Siunt-Katelijnestraat 16','1000','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1109,'CAW Brussel Archipel','Net','Kogelstraat 36','1000','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1110,'Sint-Alexius Grimbergen','Org','Grimbergsesteenweg 40','1850','Grimbergen','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1111,'CGG Ahasverus','Net','Muurveld 38','1730','Asse','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1112,'TURKSE MOSKEE BERINGEN','Org','','3580','Beringen','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1113,'UZ Brussel','Org','Laarbeeklaan 101','1090 ','Jette','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1114,'Erasmus Hogeschool Brussel','Org','Laabeeklaan 121','1090','Jette','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1115,'Op-Weule','Org','Sint Lambertusstraat 91','1200','Sint-Lambrechts-Woluwe','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1116,'MJA','Org','Sint-jansstraat 32','1000','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1117,'Domus Medica','Net','Sint-Hubertusstraat 58','2600','Berchem','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1118,'BAF (Brabantse Apothekers Forum)','Net','Leopold-I-Straat 24','3000','Leuven','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1119,'Sint-Jozef Kortenberg ','Org','Leuvensesteenweg 51','3070','Kortenberg','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1120,'ODB Overlegplatform Drugs Brussel)','Net','Handelskaai 7 ','1000','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1121,'LOGO Brussel (VGC)','Net','Lombardstraat 41','1000','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1122,'Cardijnschool','Org','Ninoofsesteenweg 333','1070','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1123,'Dienstencentrum Chambery','Org','Chamberystraat 24','1040','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1124,'FOD Pensioenen','Net','Zuidertoren','1060','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1125,'Nationale Loterij','Org','Belliardstraat 25','1040','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1126,'Delhaize Group','Org','Osseghemstraat 53','1080','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1127,'VDAB','Org','Belliarstraat 53','1040','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1128,'Boykot','Org','Nijverheidskaai 170','1070','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1129,'Plan-aid','Org','Jubelfeestlaan 145','1080','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1130,'Ruusbroeckcollege','Org','Forumlaan 4','1020','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1131,'TURKSE ISLAMITISCHE VERENIGING ','Org','EIKESTRAAT ','3600','GENK','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1132,'Sint-Ursulalyceum','Org','Kanunnik Davidlaan 15','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1133,'Sint-Ursulainstituut','Org','Kanunnik Davidlaan 15','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1134,'Vrij Technisch Instituut','Org','Kruisbogenhofstraat 7','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1135,'Sint-Aloysiusinstituut','Org','Kolveniersvest 24','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1136,'Decanale Beroepsschool BuSO','Org','Kapelstraat 33','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1137,'Koninklijk Technisch Atheneum','Org','Predikherenlaan 18','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1138,'Sint-Gummaruscollege','Org','Kanunnik Davidlaan 10','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1139,'Stad Lier','Org','','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1140,'Jeugdhuis De Moeve','Org','Aarschotsesteenweg 1','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1141,'Dienstencentrum De Waaier','Org','Dorpsstraat 111','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1143,'K. Lierse SK','Org','','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1144,'CLB GO!','Org','Berlaarsestraat 29','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1145,'vrij CLB','Org','Kardinaal Mercierplein 13','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1146,'O Benedictuspoort Campus Ledeberg','Org','Hundelgemsesteenweg 93','9050','Ledeberg','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1147,'O_Sint Lievenscollege humaniora','Org','Zilverenberg 1','9000','Gent','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1148,'O_Sint-Bavohumaniora','Org','Reep 4','9000','Gent','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1149,'Vereniging van Vlaamse Steden en Gemeenten vzw','Net','Paviljoenstraat 9','1030','Brussel','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1150,'O_Sint-Barbaracollege humaniora','Org','Savaanstraat 33','9000','Gent','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1151,'Universiteit Gent ','Org','Sint-Pietersnieuwstraat 25','9000','Gent','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1152,'O_KTA-GITO Groenkouter','Org','Sint-Baafskouterstraat 129 ','9040','Sint-Amandsberg','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1153,'Universiteit Antwerpen','Org','Prinsstraat 13  ','2000','Antwerpen','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1154,'BBC Jeugd Gentson','Org','Emeric de Bruynelaan 6 ','9040','Evergem','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1155,'Politie Aalter-Knesselare','Org','Stationsstraat 164','9880','Aalter','België','4',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1156,'REGIOOVERLEG MAASLAND ARBEID','Net','','','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1157,'SINT VINCENTIUSVERENIGING LANAKEN','Org','JAN ROSIER 4','3620','LANAKEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1158,'SCHOOLOPBOUWWERK MAASMECHELEN','Org','','3630','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1159,'Bond Moyson','Org','Tramstraat ','9052 ','Gent','België','46',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1160,'MIGES','Net','Jozef Guislainstraat 47','9000','Gent','België','46',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1161,'Ter Muren ','Org','Termurenlaan 20','9320 ','Aalst','België','46',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1162,'Gemeentebestuur Gooik','Org','Koekoekstraat 2','1755','Gooik','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1163,'Gemeentebestuur Galmaarden','Org','Marktplein 17','1570','Galmaarden','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1164,'Gemeentebestuur Pepingen','Org','Ninoofsesteenweg 116','1670','Pepingen','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1165,'Gemeentebestuur Herne','Org','Centrum 17','1540','Herne','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1166,'Gemeentebestuur Lennik','Org','Markt 18','1750','Lennik','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1167,'Gemeentebestuur Bever','Org','Plaats 10','1547','Bever','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1168,'CGG Ahasverus','Net','Muurveld 38','1730','Asse','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1169,'CAW Delta','Net','','','','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1170,'De Spiegel','Org','Nieuwstraat 36','1730','Asse','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1171,'Sint-Godelieve Instituut','Org','Schapenstraat 39','1750','Sint-Martens-Lennik','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1172,'GO!SIGO','Org','Karel Keymolenstraat 35','1750','Sint-Martens-Lennik','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1173,'Katholiek onderwijs Hartentroef','Org','Boekhoutstraat 1','1670','Pepingen','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1174,'GBS  Markevallei-afdeling Herne','Org','Edingsesteenweg 9A','1540','Herne','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1175,'Gemeentelijke basisschool - Herfelingen','Org','Assesteenweg 162','1540 ','Herne','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1176,'Gemeentelijke basisschool','Org','Hoogstraat 6','1570 ','Galmaarden','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1177,'De Lijn Vlaams-Brabant','Org','Martelarenplein 19','3000','Leuven','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1178,'CGG Vlaams-Brabant Oost','Org','Vital Decosterstraat 86','3000','Leuven','België','145',43, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1179,'VAD','Org','Vanderlindenstraat 15','1030','Brussel','België','145',43, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1180,'CAW OUDE BURELEN','Org','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1181,'Basisschool Bellingen- Spring in ''t veld','Org','Kareelstraat 6','1674','Bellingen','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1182,'St Catharina college','Org','Bergstraat 40','1570','Galmaarden','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1183,'Gemeentelijke basisschool Bever','Org','Kerkhove 14','1547','Bever','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1184,'Vrije basisschool De Bloesem','Org','Kapellestraat 18','1540','Herne','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1185,'GBS Vollezele','Org','Ninoofsesteenweg 72','1570','Galmaarden','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1186,'GBS Tollembeek','Org','Schoolstraat 2 ','1570','Tollembeek','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1187,'GBS Markevallei - afdeling Kokejane','Org','Waardestraat 19','1540','Herne','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1188,'GBS Herhout','Org','Winterkeer 54','1570','Galmaarden','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1189,'BuLO St Franciscus','Org','Lt.Jacobsstraat 41','1750','Lennik','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1190,'GBS afdeling Eizeringen','Org','Assesteenweg 125','1750','Lennik','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1191,'Vrije basisschool De Kleine Prins','Org','Kroonstraat 40','1750','Lennik','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1192,'GBS Strijland','Org','Strijlandstraat 40','1755','Gooik','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1193,'GBS Oetingen','Org','Kerkplein 1 ','1755','Gooik','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1194,'GBS Gooik','Org','Koekoekstraat 2','1755','Gooik','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1195,'VBS Kester','Org','De Ham 2','1755','Gooik','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1196,'Sint-Godelieve Eizeringen','Org','Lt.Jacobsstraat 43','1750','Lennik','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1197,'TURKSE MOSKEE MEULENBERG','Org','','','','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1198,'BASIS VZW','Org','','3500','hASSELT','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1199,'WZC Hove Te Donc','Org','Paardekerkhof 4','9990','Maldegem','België','4',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1200,'Rotary Maldegem','Org','','','','België','4',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1201,'UNIE VAN TURKSE VERENIGINGEN','Org','','','ANTWERPEN','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1202,'BUURTOPBOUWWERK HOUTHALEN','Org','BREMSTRAAT 45','3530','HOUTHALEN - HELCHTEREN','België','40',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1203,'RIMO LIMBURG VZW','Org','MARKTPLEIN 9','3550','ZOLDER','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1204,'POLITIE HOUTHALEN - HELCHTEREN','Org','HOOGSTRAAT 1','3530','HOUTHALEN - HELCHTEREN','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1205,'VZW THEBE','Org','','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1206,'PREBES','Org','','','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1207,'PROVINCIAAL DRUGOVERLEG BRUGGE','Net','','','','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1208,'VVSG','Net','','','','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1209,'Lokale Politie Lier','Org','Paradeplein 1','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1211,'Stuurgroep drugbeleidsplan Lier','Net','Paradeplein 1','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1212,'PAAZ afdeling H Hartziekenhuis Lier','Org','Mechelsestraat','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1213,'Werkgroep drugbeleid scholengemeenschap ','Org','','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1214,'Heilig Hartschool Berlaar','Org','Pastoriestraat ','','Berlaar','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1215,'Koninklijk Atheneum Lier','Org','A. Vanderpoortenlaan 35','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1216,'GO De Beuk','Org','Stationsstraat','9880','Aalter','België','4',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1217,'Horeca Lier','Org','','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1218,'Sint-Ursulaschool Sint-Katelijne-Waver','Org','','','Sint-Katelijne-Waver','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1219,'Heilig Hart Ziekenhuis Lier dienst spoedgevallen','Org','Mechelsestraat','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1220,'Sociale Raad Aalter','Net','','','','België','4',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1221,'Hogeschool Gent','Org','Voskenslaan 362 ','9000','Gent','België','140',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1222,'Handicum','Org','','','','België','140',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1223,'De Stappaert','Org','Kerkstraat','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1224,'Werkgroep Jeugd','Net','Kluizestraat ','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1225,'Willemsfonds Lier','Org','','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1226,'Jongereninfopunt','Org','Aarschotsesteenweg ','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1227,'Middenschool A. Bergmann','Org','A. Bergmannlaan','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1228,'Carrefour Logistics','Org','Neerveld','','Kontich','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1229,'Jeugdraad Maldegem','Net','Mevr. Courtmanslaan 77','9990','Maldegem','België','4',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1230,'OCMW Aalter','Org','Boomgaard 1','9880','Aalter','België','4',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1231,'Sint-Ursulamiddenschool','Org','Kan. Davidlaan 15','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1232,'CGG Lier','Org','Lispersteenweg 17','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1233,'Dagcentrum De Oever','Org','Predikherenlaan ','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1234,'MAATWERK','Org','OUDE BUNDERS','3630','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1235,'Jeugdraad Lier','Org','Aarschotsesteenweg','2500','','België','89',24, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1236,'Sociaal Huis Maldegem','Org','Lazarusbron 1','9990','Maldegem','België','4',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1237,'Jeugddienst Zomergem','Org','Hofbouwstraat 1','9930 ','Zomergem','België','46',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1238,'CLB Gemeenschapsonderwijs Gent','Org','Voskenslaan 262','9000 ','Gent','België','46',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1239,'O_Erasmus Deinze','Org','Volhardingslaan 11','9800','Deinze','België','46',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1240,'PC _ Caritas','Org','Caritasstraat 76','9090','Melle','België','46',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1241,'Stichting Tegen Kanker','Org','','','','België','125',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1242,'PAAZ REKEM','Org','','','','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1243,'Ecatproject','Net','','','','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1244,'BNP Paribas Fortis  - Fortis Bank nv','Org','Loksumstraat 25 (1PA4C)','1000','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1245,'VDAB','Org','THONISSENLAAN 47','','HASSELT','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1246,'CAW Delta','Org','','','Halle','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1247,'STK ','Org','','','Kapelle-op-den-Bos','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1248,'Jeugdhuis AVILO','Org','','','Affligem','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1249,'Preventiedienst Halle','Org','','','Halle','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1250,'Preventiedienst Dilbeek','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1251,'BASISSCHOOL SINT- JORIS','Org','SCHOOLSTRAAT 13','3570','ALKEN','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1252,'EUROCARE','Org','EEDGENOTENSTRAAT 96','1000','BRUSSEL','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1253,'BASISSCHOOL DE EIK','Org','ZONNEVELDWEG 9','3830','WELLEN','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1254,'BASISSCHOOL ULBEEK','Org','DAALSTRAAT 37','3830','WELLEN','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1255,'DE OEVER VZW','Org','ROZENSTRAAT 21','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1256,'Lokale overleg Kring huisartsen (LOK)','Net','','','','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1257,'Tielt','Org','','','','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1258,'CGG De Pont','Org','','','Mechelen','België','136',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1259,'CGG Vlaams-Brabant Oost','Org','','3000','Leuven','België','136',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1260,'GGZ Waas & Dender','Org','','9100','Sint-Niklaas','België','136',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1261,'CGG Eclips','Org','','9000','Gent','België','136',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1262,'Preventiedienst Stad Brugge','Org','','8000','Brugge','België','136',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1263,'Delhaize Brugge','Org','','','Brugge','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1264,'Tordaele Torhout','Org','','','Torhout','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1265,'KA Stene Oostende','Org','Steensedijk','8400','Oostende','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1266,'Arktos Vlaanderen','Org','','','','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1267,'CGG Prisma','Org','','8400','Oostende','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1268,'Familiehulp Roeselare','Org','Henri Horriestraat 33A','8800','Roeselare','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1269,'De Sleutel','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1270,'Walhelius&Wilhelmsen','Org','','','Zeebrugge','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1271,'Hogeschool WestVlaanderen','Org','','','Brugge','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1272,'CLB Brugge(n)','Org','Sint Maartensbilk 2','8000','Bugge','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1273,'LOP Oostende - Middelkerke Secundair','Net','','','','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1274,'Comité Bijzondere Jeugdzorg Brugge','Org','','','Brugge','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1275,'Halle-Vilvoorde overleg.','Net','','','','België','65',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1276,'OCMW Ingelmunster','Org','Oosttozebekestraat','8770','Ingelmunster','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1277,'Kortrijk','Net','','','Kortrijk','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1278,'OCMW Brugge','Org','','','Brugge','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1279,'Kortemark','Net','','','Kortemark','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1280,'Onze Kinderen','Org','Blinde Rodenbachstraat','8800','Roeselare','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1281,'OCMW Gistel','Org','','','Gistel','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1282,'ONDER ONS ','Org','URSULINNENSTRAAT ','3800','SINT-TRUIDEN ','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1283,'SOFIM','Org','MAASTRICHTERSTEENWEG 225','3500','HASSELT ','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1284,'ROM','Net','','','','België','22',5, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1285,'Preventiedienst Boom','Org','','2850','Boom','België','22',5, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1286,'PTS','Org','','2850','Boom','België','22',5, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1287,'De Ploeg','Org','','2850','Boom','België','22',5, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1288,'KA Erasmus','Org','','9800','Deinze','België','52',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1289,'St Theresia Instituut','Org','','9800','Deinze','België','52',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1290,'Basisscholen Sint-Martens-Latem','Net','','','','België','52',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1291,'Lokale politie Deinze - Zulte','Org','Centrumlaan 97','9800','Deinze','België','52',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1292,'OLVI','Org','','2850','Boom','België','22',5, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1293,'ACLVB ','Org','Koning Albertlaan 95','9000','Gent','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1294,'CGG Waas en Dender','Org','Grote Peperstraat 15','9100','Sint-Niklaas','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1295,'Bekaert Advanced Coatings NV','Org','E3-laan  75-79','9800','Deinze','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1296,'Tomorrowland','Org','','','','België','22',5, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1297,'I Generation Festival','Org','','','','België','22',5, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1298,'K Atheneum','Org','','2850','Boom','België','22',5, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1299,'SHZMI','Org','','9800','Deinze','België','52',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1300,'Basisschool Leerne','Org','','9800','Deinze','België','52',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1301,'Basisschool Petegem','Org','','9800','Deinze','België','52',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1302,'EDPB ATTENTIA','Org','De Villegas de Clercampstraat 182      ','1853 ','Strombeek-Bever','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1303,'VRT','Org','','1052','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1304,'FOD Financiën','Org','Koning Albert II-laan 33 bus 978','1030','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1305,'Santé & Entreprise','Org','Rue Mercelis 27','1050','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1306,'Lydian Lawyers','Org','Tour & Taxis Havenlaan 86c b113','1000','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1307,'De Sleutel Preventie','Org','Jozef Guislainstraat 43 a','9000','Gent','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1308,'Volvo Office Brussels','Org','Hunderenveldlaan 10','1082','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1309,'stad OOSTENDE','Org','Vindictivelaan 1 (lokaal 208)','8400','Oostende','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1310,'VLAB','Org','Goossensvest 34','3300','Tienen','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1311,'BASF ','Org','Scheldelaan 600','2040 ','Antwerpen','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1312,'Middenschool Victor Horta','Org','Oud-Strijderslaan 200','1140','Evere','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1313,'Technische Scholen Mechelen Centrum Leren en Werke','Org','Fr. De Merodestraat 77','2800','Mechelen','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1314,'BuSo De Hagewinde','Org','Durmelaan 118','9160','Lokeren','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1315,'De Eenmaking El Wahda','Org','Blazoenstraat 9A','9000','Gent','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1316,'KA Tessenderlo, campus Russelberg','Org','Gerhagenstraat 58','3980','Tessenderlo','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1317,'Sint-Teresiacollege Eksaarde','Org','Eksaarde-Dorp 1A','9160','Eksaarde','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1318,'Borsbeek OCMW ','Org','Lucien Hendrickxlei 17, ','2150','Borsbeek','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1319,'College Onze-Lieve-Vrouw-ten-Doorn','Org','Zuidmoerstraat 125','9900','Eeklo','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1320,'Sint-Guido-Instituut','Org','dokter Jacobsstraat 67','1070','Anderlecht','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1321,'KTA Merelbeke','Org','Potaardeberg 59','9820','Merelbeke','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1322,'Technisch Instituut Sint-Lucas','Org','Oude Leielaan 15','8930','Menen','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1323,'Centrum Deeltijds Leren Brussel','Org','Louis Wittouckstraat 13','1020','Laken','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1324,'Miniemeninstituut ','Org','Diestsestraat 163','3000','Leuven','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1325,'Sint-Barbaracollege','Org','Savaanstraat 33','9000','Gent','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1326,'Scheppersinstituut Nijverheids- en Tuinbouwonderwi','Org','Cooppallaan 128','9230','Wetteren','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1327,'Universiteit Gent, Opleiding Chemie','Org','Krijgslaan 281 (S12)','9000','Gent','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1328,'KA Sint-Niklaas','Org','Parklaan 89','9100','Sint-Niklaas','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1329,'Koninklijk Technisch Atheneum Brasschaat ','Org','Prins Kavellei 98','2930','Brasschaat','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1330,'Hogeschool Gent Departement Sociaal Agogisch Werk','Org','Voskenslaan 362','9000','Gent ','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1331,'Instituut Onze-Lieve-Vrouw Onbevlekt Ontvangen','Org','Nieuwstraat 17','9190','Stekene','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1332,'Oudercomité - Hooglede Gits','Org','Sint-Tillostraat 5','8830','Gits','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1333,'Technisch Instituut der Heilige Harten','Org','Burchstraat 47-49','9400','Ninove','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1334,'Instituut Onze-Lieve-Vrouw-Onbevlekt - Broederscho','Org','Nieuwstraat 75','9100','Sint-Niklaas','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1335,'Poco Loco - Aanloophuis','Org','Lange Violettestraat 209','9000','Gent','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1336,'Jong CD&V Londerzeel','Org','Schoolstraat 3 bus 11','1840','Londerzeel','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1337,'Jeugdhuis Ekseekwo','Org','Driebeekstraat 4','9050','Gentbrugge','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1338,'Stadsbestuur Sint-Niklaas Dienst Preventie','Org','Grote Markt 1','9100','Sint-Niklaas','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1339,'Gemeentelijke Basisschool Wauterbos','Org','Wauterbos 1','1640','Sint-Genesius-Rode','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1340,'Lokale Politie Zone Kruibeke-Temse','Org','Nagelheetmakerslaan 1','9140','Temse','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1341,'Sint-Jozefcollege','Org','Koningin Astridlaan 33','2300','Turnhout','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1342,'Du Pont De Nemours','Org','Antoon Spinoystraat 6','2800','Mechelen','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1343,'Ambulante Drugzorg Waregem','Org','Stormestraat 164','8790','Waregem','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1344,'Technisch Instituut Berkenboom','Org','Kalkstraat 26','9100','Sint-Niklaas','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1345,'Leonardo Lyceum/Pestalozzi','Org','Jan De Voslei 6','2020','Antwerpen','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1346,'Freinetatheneum De Wingerd','Org','Bisdomkaai 1','9000','Gent','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1347,'Stadsbestuur Diksmuide','Org','Grote Markt 6','8600','Diksmuide','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1348,'Scheppersinstituut Mechelen','Org','Melaan 16','2800','Mechelen','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1349,'Stedelijke Jeugddienst JIP - Preventiewerker','Org','Jan Frans Willemsplein 13','9900','Eeklo','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1350,'Groepscentrum Permanente Vorming - HUBrussel','Org','Koningsstraat 336','1030','Brussel','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1351,'Stadhuis Dendermonde','Org','Franz Courtensstraat 11','9200','Dendermonde','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1352,'vzw Don Bosco Onderwijscentrum Middenschool Haacht','Org','Stationsstraat 91','3150','Haacht','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1353,'Vormingscentrum Guislain','Org','Jozef Guislainstraat 43','9000','Gent','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1354,'Technisch Instituut Sint-Carolus','Org','Hospitaalstraat 2','9100','Sint-Niklaas','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1355,'Stadhuis Blankenberge','Org','J.F.Kennedyplein 1','8370 ','Blankenberge','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1356,'Preventiedienst Locale Politie Aalst','Org','Dendermondsesteenweg 178','9300','Aalst','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1357,'Gemeente Beveren Preventieambtenaar','Org','Stationsstraat 2','9120','Beveren','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1358,'Secundair Onderwijs','Net','Stropstraat 119','9000','Gent','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1359,'Provinciale Technische Scholen','Org','Beukenlaan 44/1','2850','Boom','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1360,'Vrije Universiteit Brussel, Inter. Vakgroep Lerare','Org','Pleinlaan 2','1050','Elsene','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1361,'Gevangenis Mechelen - Lokale Stuurgroep Drugs','Org','Liersesteenweg 2','2800','Mechelen','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1362,'Arteveldehogeschool departement Verpleegkunde','Org','Brusselsepoortstraat 93','9000','Gent','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1363,'Renolit Belgium N.V.','Org','Industriepark De Bruwaan 9','9700','Oudenaarde','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1364,'Gemeentebestuur Laarne','Org','Dorpstraat 2','9270','Laarne','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1365,'Sint-Jan Berchmanscollege','Org','Kasteelstraat 12','8580','Avelgem','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1366,'Mater Salvatorisinstituut','Org','Dorpsstraat 40','2950','Kapellen','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1367,'Sint-Angela-Instituut','Org','Kruineikstraat 5','3150','Tildonk','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1368,'Regina Mundi Centrum','Org','Grotestraat 27','3600','Genk','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1369,'Sint-Lambertusinstituut','Org','Kerkplein 14','2220','Heist-op-den-Berg','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1370,'GITHO Nijlen','Org','Gemeentestraat 41','2560','Nijlen','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1371,'Immaculata-instituut','Org','Koninklijke Baan 28','8660','De Panne','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1372,'Koninklijk Technisch Atheneum 2','Org','Weerstandsplein 1','3290','Diest','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1373,'Onze-Lieve-Vrouwcollege Oostende','Org','Vindictivelaan 9','8400','Oostende','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1374,'Koninklijk Atheneum I','Org','Sint-Clarastraat 46','8000','Brugge','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1375,'Sint-Theresiacollege Kapelle-o/d-Bos','Org','Veldstraat 11','1880','Kapelle-op-den-Bos','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1376,'MPI Ten Dries vzw','Org','Poeldendries 32','9850','Landegem','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1377,'Vrije Basisschool - Zwevegem','Org','Sint-Jozefsstraat 11','8550','Zwevegem','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1378,'Basisschool Kriebel','Org','Confortalei 173','2100','Antwerpen - Deurne','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1379,'Coördinator Drugbeleid stad Oostende','Org','Vindictivelaan 1','8400','Oostende','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1380,'P.D.C.L.','Org','Hertogstraat 178','3001','Heverlee','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1381,'KatHo Mechelen - Lerarenopleiding','Org','Zandpoortvest 60','2800','Mechelen','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1382,'SEN Steunpunt expertise netwerken','Net','','3500','Hasselt','België','29',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1383,'TAO Limburg Team Advies en Ondersteuning armoede','Org','','3500','Hasselt','België','29',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1384,'Joetz','Org','','','','België','140',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1385,'DELHAIZE Belgium','Org','Osseghemstraat 53','1080','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1386,'Nationale Loterij','Org','Belliardstraat 25-33','1040','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1387,'Rijksdienst voor Pensioenen','Org','Zuidtoren - 3de verdieping','1060','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1388,'SOCIARE Socioculturele werkgeversfederatie','Org','Ravensteingalerij 28/3','1000','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1389,'AMELIOR ','Org','Beneluxpark 1','8500','Kortrijk','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1390,'stad ROESELARE','Org','','8800','Roeselare','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1391,'stad KORTRIJK','Org','','8500','Kortrijk','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1392,'VVKHO als koepel werkgevers','Org','Guimardstraat 1','1040','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1393,'CRESEPT','Org','W.A. Mozartlaan 4 ','1620','Drogenbos','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1394,'Prevent - LUCINA','Org','Gachardstraat 88','1050','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1395,'ROTARY-project Gent','Net','p/a KBC Antwerpse steenweg 574 (Potuit) ','9040','Sint-Amandsberg','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1396,'ExxonMobil Chemical','Org','Polderdijkweg 3','2030','Antwerpen','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1397,'Nationale Arbeidsraad','Org','Blijde Inkomstlaan 17-21','1040','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1398,'Nationale Bank België','Org','de Berlaimontlaan 24','1000','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1399,'Vlaamse Wet.Vereniging Arbeidsgeneeskunde','Net','UZ Jette','1090','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1400,'FOD WASO Werkgelegenheid,Arbeid & Sociaal Overleg','Org','Ernest Blerotstraat 1 ','1070','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1401,'Vlaams Welzijnsverbond','Org','','1040','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1402,'FEVIA Federatie Voedingsindustrie','Org','Kunstlaan 43','1040','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1403,'VVIB-AMTI Vereniging Interne Bedrijfsartsen ','Net','p/a Ford Genk','3600','Genk','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1404,'AGORIA federatie technologische industrie','Org','Reyerslaan ','1030','Schaarbeek','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1405,'SSC Sociaal Secretariaat Caritas','Org','Interleuvenlaan 10','3001','Heverlee','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1406,'VBO Verbond Belgische Ondernemingen','Org','Ravensteinstraat 4','1000','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1407,'LOGO Zuiderkempen','Org','Dr. Van de Perrestraat 218A','2440','Geel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1408,'VVVB Vl.Ver.Verpleegk. Bedrijfsgezondheidszorg','Net','','','','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1409,'Groep ESSERS','Org','Transportlaan 4','3600','Genk','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1410,'Fairtec vakbeurs SECURA (tweejaarlijks)','Org','Ternesselei 330','2160','Wommelgem','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1411,'BOZAR Paleis voor Schone Kunsten','Org','Ravenstein 23','1000','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1413,'MOW Mobiliteit en Openbare Werken','Org','Koning Albert II-laan 20 bus 2','1000','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1415,'ABVV','Org','Maria Theresiastraat','3000','leuven','België','83',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1416,'Vlaamse overheid (als werkgever)','Org','','','','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1417,'Vlaams Ministerie van Onderwijs en Vorming','Org','Koning Albert II-laan 15','1210','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1418,'PREBES vzw','Org','Diestersteenweg 88','3510','Hasselt','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1419,'Federale politie (als werkgever)','Org','','','','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1420,'NAVB Nat.Actiecomité Veiligheid/Hygiëne in de Bouw','Org','Sint-Jansstraat 4','1000','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1421,'CGG Kempen - De Meander','Org','Parklaan 162','2300','Turnhout','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1422,'CheckMarket','Org','Otterstraat 199','2300','Turnhout','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1423,'VDAB ','Org','Geldroplaan 1','9200','Dendermonde','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1424,'Radio NOSTALGIE','Org','Katwilgweg 2','2050','Antwerpen','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1425,'BIAC Brussels airport Company','Org','Luchthaven Zaventem','','','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1427,'EDPB Corporate Prevention Services (NMBS)','Org','Frankrijkstraat 97','1070','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1428,'SJABI','Org','','','Puurs','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1429,'Lagere scholen Schelle','Net','','','Schelle','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1430,'VUB','Org','','','Brussel','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1431,'OGGPA','Org','','','Antwerpen','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1432,'Pegode vzw','Org','','','Niel','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1433,'Oudercomité VEKBA','Org','Schoolstraat 19','8211','Aartrijke','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1434,'FDFE','Net','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1435,'JOETZ (MJA) soc mutualiteit','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1436,'Groep Intro','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1437,'RENMANS N.V. Quality Meat ','Org','Beukenlaan 54','1653','Dworp','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1438,'HUB Hogeschool-Universiteit Brussel','Org','Campus Stormstraat 2','1000','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1439,'Centrum Algemeen Welzijnswerk De Poort','Org','Vlamingdam 36','8000','Brugge','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1440,'Don Bosco Halle','Org','Lenniksesteenweg 2','1500','Halle','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1441,'Gezinsbond Izenberge','Org','Groenestraat 14','8691','Izenberge','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1442,'Groep Intro','Org','Gistelsesteenweg 223b','8200','Sint-Andries','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1443,'Instituut Mariawende Blydhove','Org','Boogschutterslaan 25','8310','Sint-Kruis','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1444,'Katholieke Hogeschool Brugge Oostende','Org','Koning Albert I-laan 8','8200','Sint-Michiels','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1445,'Groep S Sociaal management','Org','Kardinaal Mercierlaan 65','3001','Heverlee','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1446,'Middenschool Brugge','Org','Hugo Losschaertstraat 5','8000','Brugge','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1447,'O-L-V-Hemelvaartinstituut (Sint-Andries)','Org','Doornstraat 3','8200','Sint-Andries','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1448,'Penitentiair Complex Brugge','Org','Legeweg 200','8200','Sint-Andries','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1449,'Sint-Andreasinstituut','Org','Garenmarkt 8','8000','Brugge','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1450,'Sint-Andreaslyceum','Org','Fortuinstraat 29','8310','Sint-Kruis','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1451,'Sint-Jozefhumaniora','Org','Noordzandstraat 76','8000','Brugge','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1452,'Sint-Jozefinstituut','Org','Zilverstraat 26','8000','Brugge','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1453,'Technisch Instituut Heilige Familie','Org','Oude Zak 38','8000','Brugge','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1454,'Hotelschool en Slagerijschool Ter Groene Poorte','Org','Spoorwegstraat 14','8200','Sint-Michiels','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1456,'Kwintessens copywriting en informatiearchitectuur','Org','Gulden-Peerdenstraat 76a','8310','Brugge','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1457,'Anonieme Alcoholisten','Org','','','','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1458,'Communicatiebureau Belinda Mestiaen','Org','Leermarkt 62','2800','Mechelen','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1459,'These Days','Org','Karel Oomsstraat 47b','2018','Antwerpen','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1460,'EDPB Premed','Org','Tiensevest 61 bus 2','3010','Leuven','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1461,'EDPB Securex','Org','','','','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1462,'Jon Dawson Associates','Org','','','','Ander land','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1463,'DHS Deutsche Hauptstelle für Suchtfragen ','Org','','','','Ander land','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1464,'ALCOLINE','Org','Mansionstraat 20 ','2990','Wuustwezel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1465,'HR magazine','Org','','','','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1466,'Radio 2','Org','','','','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1467,'EVONIK DEGUSSA Antwerpen nv','Org','Tijsmanstunnel west ','2040','Antwerpen','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1468,'ROB TV','Org','Ambachtenlaan','3001','Heverlee','België','85',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1469,'Facil & Cie ','Org','Geleenlaan 20','3600','Genk','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1470,'A Hermes (bedrijfstheater)','Org','Vleugelsstraat 60','1030','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1471,'Spiere-Helkijn','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1472,'Gevangenis Leuven Hulp','Org','Maria Theresiastraat','3000 ','Leuven','België','85',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1473,'EDPB Provikmo','Org','Dirk Martensstraat 26/1','8200','Brugge','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1474,'De Kringwinkel Teleshop vzw','Org','A.Nichelsstraat 14  ','9300','Aalst','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1475,'Vrije Basisschool Scheppers Wetteren','Org','Cooppallaan 128','9230','Wetteren','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1476,'HUMIVAL','Org','Nijverheidsstraat 9','9950','Waarschoot','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1477,'dhr. Stefaan Vergaerde','Org','Maalsesteenweg 234','8310','Sint-Kruis','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1478,'Ter Groene Poorte','Org','Spoorwegstraat 14','8200','Sint-Michiels','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1479,'West-Vlaamse Politieschool','Org','Koning Leopold III-laan 41','8200','Sint-Andries','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1480,'Rotary Club Districtscommissie Drugpreventie','Net','Zamanstraat 34','9160','Lokeren','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1481,'KULeuven, Academische Lerarenopleiding','Org','Hooverplein 10','3000','Leuven','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1482,'FOD Binnenlandse Zaken Beleid Integrale Veiligheid','Net','Waterloolaan 76','1000','Brussel','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1483,'Universiteit Gent, Vakgroep Orthopedagogie','Org','Henri Dunantlaan 2','9000','Gent','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1484,'WESTHUIS','Org','','','','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1485,'CLUB 18','Org','','','PAAL','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1486,'SpoorTwee vzw','Org','Spoorwegstraat 1b','9220','Hamme','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1487,'intergemeentelijke preventiedienst Pajottenland','Org','Bruneaustraat 120','1755','Kester','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1488,'CONTRAPUNT','Org','Pieter Nollekensstraat 95','3010','Leuven','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1489,'BrandNewDay','Org','Klein Dalenstraat 45','3020','Winksele - Herent ','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1490,'ORACLE Belgium bvba','Org','Medialaan 50','1830','Vilvoorde','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1491,'MAROKKAANSE AMBASSADE TE BRUSSEL','Org','29 Boulevard Saint Michel ','1040','BRUSSEL','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1492,'Tyco Fire & Integrated Solutions ','Org','Humaniteitslaan, 241 A ','1620','Drogenbos','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1493,'Gates Power Transmission Europe bvba','Org','Dr. Carlierlaan 30','9320','Erembodegem','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1494,'gemeente GRIMBERGEN','Org','','1850','Grimbergen','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1495,'Leerkrachten secundaire scholen ','Net','','','','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1496,'Basisschool Zevergem','Org','','9840','De Pinte','België','52',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1497,'Basisschool De Pinte (gemeenteschool)','Org','','9840','De Pinte','België','52',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1498,'Basisschool De Kleine Prins','Org','','9840','De Pinte','België','52',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1499,'Vrije Basisschool De Pinte','Org','','9840','De Pinte','België','52',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1500,'Politiezone Deinze - Zulte','Org','','9800','Deinze','België','52',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1501,'Ouders basisscholen De Pinte','Net','','9840','De Pinte','België','52',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1502,'Heilig Hart Heverlee','Org','Naamsesteenweg 355','3001','Heverlee','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1503,'Don Bosco Groenveld','Org','Groenveldstraat 44','3010','Kessel-Lo','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1504,'Sint-Jozef Kessel-Lo','Org','Jozef Pierrestraat 56','3010','Kessel-Lo','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1505,'De Wijnpers','Org','Mechelsevest 72','3000','Leuven','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1506,'Onze Lieve Vrouwe Presentatie','Org','','','Sint-Niklaas','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1507,'EMC2','Org','Rerum Novarumlaan','3010','Kessel-Lo','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1508,'Lemmensinstituut secundair onderwijs','Org','','3000','Leuven','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1509,'Sancta Maria Leuven','Org','Ch. Deberiotstraat 14','3000','Leuven','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1510,'Intergemeentelijke PWs van volledig Vlaams-Brabant','Net','','','','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1512,'Preventiecoach LOGO Loes Huylebroek','Org','','','','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1513,'De Keeting','Org','Kroonstraat 60','2800','Mechelen','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1514,'Sint-Aloysiuscollege','Org','Weggevoerdenstraat 55','9400','Ninove','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1515,'Instituut de Pélichy Ave Maria','Org','Gentsestraat 31','8870','Izegem','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1516,'Koninklijk Atheneum','Org','Donkvijverstraat 30','9120','Beveren-Waas','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1517,'Vrij Technisch Instituut Zandhoven','Org','Langestraat 199','2240','Zandhoven','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1518,'VISO','Org','Poststraat 10','8800','Roeselare','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1519,'Probus Westhoek-Nieuwpoort','Org','Willem Elsschotlaan 39','8670','Koksijde','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1520,'OCMW Geel','Org','J.B. Stessenstraat 69','2440','Geel','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1521,'Stedelijke Preventiedienst - Diest','Org','Michel Theysstraat 60','3290','Diest','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1522,'Stad Waregem, Dienst welzijn en sociale zaken','Org','Gemeenteplein 2','8790','Waregem','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1523,'Vrij Handels- en Technisch Instituut Dendermonde','Org','Kerkstraat 60','9200','Dendermonde','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1524,'IPSOC Bijscholing','Org','Doorniksesteenweg 145','8500','Kortrijk','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1525,'Minor-Ndako vzw','Org','Vogelenzangstraat 76','1070','Anderlecht','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1526,'Orthopedagogisch Centrum Huize Terloo','Org','Kareelstraat 2','1674','Bellingen','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1527,'Vrije Basisschool Sint-Jozefinstituut','Org','Santhovenstraat 1b','8434','Lombardsijde','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1528,'Gemeentelijke Basisschool - Belsele','Org','Gavermolenstraat 83','9111','Belsele','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1529,'Preventiedienst Lier','Org','Grote Markt 57','2500','Lier','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1530,'Gemeentelijke Basisschool - Zuienkerke','Org','Nieuwe Steenweg 37','8377','Zuienkerke','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1531,'Vrije Basisschool - Pittem','Org','Koolskampstraat 4','8740','Pittem','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1532,'Politie AMOW','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1533,'EANDIS','Org','Brusselsesteenweg 199','9090','Melle','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1534,'Dagcentrum BOHETS','Org','','2800','Mechelen','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1535,'Spermalie MPI','Org','Snaggaardstraat 9','','Brugge','België','79',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1536,'ADAM','Org','Frankrijklei 92','2000','antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1537,'Schoten gemeente','Org','Jozef Van Craenstraat 1','2900','schoten','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1538,'Mortsel Anna Theresia Instituut','Org','sint benedictusstraat 14 b','2640 ','Mortsel','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1539,'Stabroek, PITO','Org','Laageind 19','2940','Stabroek','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1540,'OCMW SINT-TRUIDEN ','Org','CARTUYVELSTRAAT ','3800','SINT-TRUIDEN ','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1541,'IKEA Service Centre NV','Org','Ikaroslaan 28','1930','Zaventem','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1542,'Sint-Amedeus Psychiatrisch Centrum','Org','Deurnestraat 252','2640','Mortsel','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1543,'C&A Belgium','Org','SENNEBERG - Jean Monnetlaan z/n','1804','Vilvoorde','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1544,'palliatieve hulpverlening Antwerpen  PHA','Org','Edegemstraat 100','2610','Wilrijk','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1545,'Aralea vzw','Org','gemeentepark 6','2930-','Brasschaat','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1546,'PANASONIC','Org','Brusselsesteenweg 502','1731','Zellik','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1547,'SONY Europe (Belgium) NV','Org','Da Vincilaan 7-D1 ','1935','Zaventem','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1548,'CLB vrij Halle','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1549,'Oracle','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1550,'CAMPUS URSULA','Org','DIESTERSTEENWEG 5','3540 ','HERK DE STAD','België','36',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1551,'DEELTIJDS BEROEPS SECUNDIAR ONDERWIJS KTA2 HASSELT','Org','VILDERSTRAAT 3','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1552,'Sint-Lodewijkscollege','Org','Gerard Davidsstraat 57','8000','Brugge','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1553,'Vrije Basisschool Guido Gezelle correct','Org','Astridlaan 86','8310','Assebroek','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1554,'Koninklijk Atheneum Zelzate','Org','Onteigeningstraat 41B','9060','Zelzate','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1555,'Pius X-instituut','Org','Kapellestraat 7','9240','Zele','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1556,'Koninklijk Technisch Atheneum Sint-Michiels','Org','Rijselstraat 7','8200','Sint-Michiels','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1557,'Sint-Michielscollege','Org','Papenaardekenstraat 53','2900','Schoten','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1558,'O.L.V.-Hemelvaartinstituut (Waregem)','Org','Keukeldam 17','8790','Waregem','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1559,'Ouderraad Virgo Maria','Org','Maantjessteenweg 53','2170','Merksem','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1560,'Stadsbestuur Izegem','Org','Korenmarkt 10','8870','Izegem','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1561,'Rode Kruis Mechelen-Bonheiden','Org','Olivetenvest 37 bus 402','2800','Mechelen','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1562,'DiNAC','Org','Tulpinstraat 75','3500','Hasselt','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1563,'Sportprikkel Vrije Universiteit Brussel','Org','Pleinlaan 2','1050','Elsene','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1564,'LEJO (Leren door Ervaringen voor Jongeren)','Org','Antwerpsesteenweg 701','9040','Sint-Amandsberg','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1565,'Speelplein De Saenhoeve vzw','Org','Strooiheide 25','3630','Maasmechelen','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1566,'Basisschool De Zandlopertjes','Org','Schoollaan 10','8450','Bredene','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1567,'Dijledal sociale huisvesting','Org','Lolanden 8','3010','Leuven','België','85',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1568,'Heilige Drievuldigheidscollege','Org','Oude markt','3000','Leuven','België','85',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1569,'FBFC International','Org','Europalaan 12','2480','Dessel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1570,'''s Gravenwezel KSK','Org','','','','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1571,'Zwaantjes,de  (OOOC)','Org','','','','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1572,'Preventiedienst KASTZE','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1573,'ACV','Org','','','','België','9',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1574,'GGZ Waas & Dender - Delta vroeginterventie','Org','Grote Peperstraat 15','9100','Sint-Niklaas','België','57',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1575,'CGPower','Org','','2800','Mechelen','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1576,'BUSO Puurs','Org','','2890','Puurs','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1577,'DIENST ONDERNEMINGEN KINROOI','Org','','','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1578,'PWA MAASMECHELEN','Org','','','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1579,'CENTRUM VOLWASSENENONDERWIJS','Org','','','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1580,'HEILIG GRAF INSTITUUT KINROOI','Org','','','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1581,'OCMW DILSEN STOKKEM','Org','','','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1582,'VRIJE BASISSCHOOL LEUT','Org','','','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1583,'Atlantis RVT','Org','Bisschopppenhoflaan','2100','deurne','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1584,'Stuurgroep','Net','Brusselsesteenweg 617','1731','Zellik','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1585,'Politiezone Rode','Org','','','','België','65',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1586,'OCMW Wemmel','Org','De Limburg Stirumlaan 116','1780','Wemmel','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1587,'OCMW Linkebeek','Org','Beukenstraat 23','1630 ','Linkebeek','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1588,'OCMW Drogenbos','Org','Grote Baan 226','1620','Drogenbos','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1589,'OCMW Kraainem','Org','Arthur Dezangrélaan 17','1950','Kraainem','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1590,'OCMW Wezembeek-Oppem','Org','Jozef De Keyzerstraat 15','1970','Wezembeek-Oppem','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1591,'Heilig Hart College Wezembeek-Oppem','Org','','','','België','65',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1592,'Campus Wemmel','Org','','','','België','65',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1593,'VZW De rand','Net','','','','België','65',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1594,'Gemeente Wemmel','Net','Dr. H. Folletlaan 28','1780','Wemmel','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1595,'Politiezone WOKRA','Org','','','','België','65',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1596,'CGG Kempen','Org','Parklaan 55 bus 17','','','België','60',12, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1597,'De Mast','Org','Kempenstraat 32','','Kasterlee','België','60',12, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1598,'Politie Turnhout','Org','Grote Markt 1','','','België','60',12, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1599,'Stadsbestuur Lier','Org','Grote Markt 57 ','','Lier','België','60',12, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1600,'Jongerenbeurs','Net','','','','België','60',12, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1601,'Netwerkstage studenten geneeskunde','Net','','','','België','60',12, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1602,'ACV','Org','Haachtsesteenweg 579  ','1030','Brussel','België','85',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1603,'Drughulp Kempen','Net','','','','België','60',12, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1604,'Voortraject Geel','Org','','','','België','60',12, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1605,'Sociale hogeschool Heverlee','Org','','3001','Heverlee','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1606,'ACV - centrale METEA','Org','Pagodenlaan 1-3','1020','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1607,'TUC RAIL','Org','Fonsylaan 39','1060','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1608,'OCMW HAM','Org','ROERDOMPSTRAAT 6-7','3945','HAL','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1609,'OCMW HERK DE STAD','Org','DR. VANWEDDINGENLAAN 21','3540','HERK-DE-STAD','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1610,'BOVENBOUW SINT MICHIEL','Org','DIESTERSTEENWEG 5','3970','LEOPOLDSBURG','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1611,'OCMW Asse','Org','','1730','Asse','België','8',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1612,'MIDDENSCHOOL CAMPUS RUSSELBERG','Org','GERHAGENSTRAAT 58','3980','TESSENDERLO','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1613,'KONINKLIJK ATHENEUM TESSENDERLO','Org','GERHAGENSTRAAT 58','3980','TESSENDERLO','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1614,'Atel','Org','kerkhovelaan 20','2060','antwerpen','België','16',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1615,'Zorgnetwerk Zenneland','Net','','1730','Asse','België','8',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1616,'Family Service (www.derozedoos.be)','Org','Wijngaardenstraat 16','1020','Brussel','België','130',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1617,'Welzijnskoepel','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1618,'ACT preventieoverleg Leuven','Net','','','','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1619,'POM','Org','Koning Leopold III laan','8000','Brugge','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1620,'CGG Largo','Org','J.Lagaelaan 21','8800','Roeselare','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1621,'KTA1 Hotech Oostende','Org','Leopold III laan 1','','Oostende','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1622,'Vamix nv','Org','','','Eeklo','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1623,'AZ Serruys Oostende','Org','','','Oostende','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1624,'De Bruycker','Org','','','Oostende','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1625,'Studio Globo','Org','','8800','Roeselare','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1626,'vzw De Sprong','Org','','','Meerhout','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1627,'Ter Loke','Org','','','Turnhout','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1628,'De Link ','Org','','','Hulshout','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1629,'De Waaiburg vzw','Org','','','Geel','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1630,'Cirkant vzw ','Org','','','Turnhout','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1631,'t Kruispunt ','Org','','','Beerse','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1633,'FBFC International','Org','','','Dessel','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1634,'Izegem','Net','','','','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1635,'Tyco Electronics','Org','','','Oostkamp','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1636,'OCMW Zedelgem','Org','','','Zedelgem','België','80',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1637,'Intervisie intergemeentelijke preventiewerkers d&a','Net','','','','België','65',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1638,'PPM','Net','','','Leuven','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1639,'Havi-overleg','Net','','','','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1640,'VLABO-Overleg','Net','','','','België','65',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1641,'Werkgroep eindejaarscampagne 2010','Net','','','','België','64',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1642,'CGG VAGGA','Org','','','Antwerpen','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1643,'CAD Limburg','Org','','','Genk','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1644,'Jongerenwelzijn','Org','','','','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1645,'FLUXYS N.V.','Org','Kunstlaan 31','1040','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1646,'Umicore','Org','','','','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1647,'DO_Dendermonde','Net','','','Dendermonde','België','42',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1649,'Provincie West-Vlaanderen','Org','Koning Leopold III-laan 41','8200','Sint-Andries','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1650,'KTA Oostende Deeltijds Onderwijs','Org','Duivenhokstraat 78','8400','Oostende','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1651,'Campbell Foods Belgium','Org','Rijksweg 16','2870','Puurs','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1652,'MONSANTO Antwerpen','Org','Scheldelaan 460','2040','Antwerpen','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1653,'Regionaal WelzijnsOverleg voorzieningen BJZ','Net','','','','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1654,'Ontbijtsessie profit en non profit sector','Net','','','','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1655,'Stuwgroep project Druglink','Net','','','','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1656,'Druglink projectmedewerkers','Net','','','','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1657,'EVAPCO ','Org','Heersterveldweg 19','3700','Tongeren','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1658,'OLO','Net','','','Brasschaat','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1659,'Regionale ziekenhuizen','Net','','','','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1660,'IKSO HOESELT','Org','DORPSSTRAAT18','3730','HOESELT','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1661,'Regionale sociale economie','Net','','','','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1662,'TEVONA VZW','Org','Dorpsstraat 38 ','3590','DIEPENBEEK','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1663,'Voka Kempen','Net','','','Geel','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1664,'Nike','Org','','','Vorst','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1665,'CAW De Kempen','Org','','','','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1666,'OCMW Hooglede','Org','Hogestraat 170','8830','Hooglede','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1667,'Sint-Jozefskliniek Pittem','Org','Boterstraat 7','','Pittem','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1668,'Sint-Niklaasinstituut Kortrijk','Org','Burgemeester Nolfstraat 35','8500','Kortrijk','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1669,'Free Clinic','Org','','','','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1670,'MEVA vzw','Org','','','','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1671,'Katho Ipsoc','Org','Doorniksesteenweg 145','8500','Kortrijk','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1672,'Kringwinkel','Org','','','','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1673,'Sint-Maria Instituut ','Org','Sint-Willibrordusstraat 39','2060','Antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1674,'HOESELT','Net','Dorpsstraat 17','3730','HOESELT','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1675,'E-QUIPE: BJZ ','Org','DORPSSTRAAT 56','3740','HOESELT','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1677,'Marco Polo, SISO 2','Org','Confortalei 173','2100','Deurne','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1678,'Ekeren Moretus Katholiek Onderwijscentrum','Org','Oorderseweg 8','2180','Ekeren','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1679,'ECHO','Org','','','HOUTHALEN','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1680,'OOOC KOMPAS','Org','','3530','HOUTHALEN-HELCHTEREN','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1681,'VCLB BREE - PEER','Org','','3690','BREE','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1682,'AZ Herentals','Org','','','Herentals','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1683,'Jobkanaal','Net','','','','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1684,'Welzijnszorg Kempen','Net','','','Geel','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1685,'JES','Org','Werkhuizenstraat 3','1080','Brussel','België','109',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1686,'Tucrail','Org','Fonsnylaan,39 ','1060','brussel','België','109',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1688,'De Lork','Org','Jean Robiestr. 29','1060','Brussel','België','109',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1691,'Educar','Org','Bredabaan 109','2170','Merksem','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1692,'CGG TURNHOUT','Org','','','','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1693,'DIENSTENCHEQUE SINT-TRUIDEN ','Org','','','','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1694,'TALKE','Org','','','','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1695,'FACIL ','Org','','','','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1696,'DEXIA','Org','','','','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1697,'INDUSTRIECLUB LUMMEN ','Net','','','','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1698,'ALTEZ','Net','','','','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1699,'centrum morele dienstverlening','Org','overleiestraat 15 a','','kortrijk','België','98',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1700,'STHEP ','Org','','','PEER','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1701,'Brusselse Welzijns-en gezondheidsraad vzw','Org','Blekerijstr 25','1000','Brussel','België','109',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1702,'Brussels overleg Dienstencentra','Org','Groot sermentstr 8','1000','Brussel','België','109',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1703,'JEUGDHUIS DE MOLEN','Org','KOUTERMANSTRAAT ','3570','ALKEN','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1704,'POLITIE HASSELT','Org','THONISSENLAAN 1','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1705,'KTA LOMMEL','Org','','','','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1706,'DE RICHTER','Org','RICHTER 27','3600','GENK','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1707,'ST-PAULUSCOLLEGE','Org','','3530','HOUTHALEN','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1708,'ONS KINDERHUIS','Org','ERFSTRAAT','3600','GENK','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1709,'OGGPA','Org','Haagbeuklei 12, ','2610 ','Wilrijk','België','12',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1710,'ST-JOZEF BOKRIJK','Org','','3600','GENK','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1711,'KUNSTSCHOOL HASSELT','Org','','3500','HASSELT','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1712,'DE BUIDTELBERG','Org','','3530','HOUTHALEN','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1713,'PTS Boom','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1714,'VKO Middenschool','Org','Karenveldstraat 23','1745','Opwijk','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1715,'PIVO opleiding politie','Org','Poverstraat 75','1731','Asse','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1716,'Gezondheidscoach Vlaams-Brabant','Net','Kerkpleinweg 4','1742','Ternat','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1718,'regio Halle','Net','','','','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1719,'CGG Middelpunt','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1720,'De Sleutel','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1721,'Juno Begeleidingstehuis','Org','Botermelkbaan 75','2900','Schoten','België','12',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1722,'Van Celsthuis Begeleidingstehuis','Org','Waarlooshofstraat 3','2020','Antwerpen','België','12',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1723,'KATHO','Org','','','Kortrijk','België','131',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1724,'Zoersel Opvoedingswinkel ','Org','Handelslei 108','2980','Zoersel','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1725,'VAGGA','Org','Ketsstraat 17','2000','Antwerpen','België','112',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1726,'ACV','Net','','','','België','112',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1728,'Colruyt','Org','Edingsesteenweg 196','1500','Halle','België','3',2, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1729,'Ateljee vzw','Org','Vlaamse Kaai 10','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1730,'Kringloopwinkel Brugse Poort','Org','Haspelstraat 49','9000','Gent','België','48',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1731,'Mediwet','Org','Opvoedingsstraat 143','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1732,'Tenneco Automotive Ghent','Org','Mai Zetterlingstraat 10','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1733,'EANDIS','Org','Brusselsesteenweg 199','9090','Melle','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1734,'VDAB','Org','Kongostraat 7','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1735,'VANDEMOORTELE VAMIX EEKLO','Org','Nieuwendorpe 16','9900','Eeklo','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1737,'LOD Sint-Martens-Latem','Net','','','','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1738,'LOD Deinze','Net','','','','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1739,'LOD Zulte','Net','','','','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1740,'LOD Nazareth','Net','','','','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1741,'LOD De Pinte','Net','','','','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1742,'Rotary Deinze','Org','','','','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1743,'Gezinsbond Nazareth','Org','','','','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1744,'Sportraad Sint-Martens-Latem','Org','','','','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1745,'De Sterrebloem','Org','','9800','Deinze','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1746,'JIP Deinze','Org','','','','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1747,'KA Schaarbeek','Org','Charles Gilisquetlaan 34','1030','Schaarbeek','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1748,'Don Bosco Woluwe voltijds onderwijs','Org','Guldendallaan 90','1150','Sint-Pieters-Woluwe','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1749,'Don Bosco deeltijds onderwijs','Org','Guldendallaan 90','1150','Sint-Pieters-Woluwe','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1750,'Le Pélican','Org','Emile Bockstaellaan 230','1090','Jette','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1751,'centrum morele dienstverlening','Org','jetselaan 362','1090','Jette','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1752,'OCMW','Net','Hoogstraat 298A','1000','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1753,'CHU Brugmann (Horta)','Org','Arthur Van Gehuchtenplein 4','1020','Laken','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1754,'CAW Mozaïek straathoekwerk','Org','Sint-Katelijnestraat 16-18','1000','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1755,'CLB Brussel','Net','Dielegemsesteenweg 24-26','1090','Jette','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1756,'Elishout, school voor voeding','Org','E. Gryzonlaan 1','1070','Anderlecht','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1757,'Rotary Gent','Net','','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1758,'Comité Begijnhof','Org','Begijnhof','1950','Kraainem','België','64',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1759,'Jeugdraad Kraainem','Org','Denaeyerstraat 76','1950','Kraainem','België','65',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1760,'jeugdraad Zulte','Org','','','','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1761,'jeugdraad Nazareth','Org','','','','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1762,'jeugdraad De Pinte','Org','','','','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1763,'jeugdraad Sint-Martens-Latem','Org','','','','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1764,'gemeenteschool Latem','Org','','','','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1765,'Simonnetschool Latem','Org','','','','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1766,'SVVHI','Org','','','Deinze','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1767,'VIBSO Leieland','Org','','','Machelen a/d Leie','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1768,'De Boomhut','Org','','','De Pinte','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1769,'ouders basisscholen Deinze','Net','','','Deinze','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1770,'ouders basisscholen Latem en Deurle','Net','','','Sint-Martens-Latem','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1771,'ouders basisscholen Zulte','Net','','','Zulte','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1772,'vrije basisschool Latem & Deurle','Org','','','Sint-Martens-Latem','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1773,'Gemeentelijke Basisschool Deurle','Org','','','Sint-Martens-Latem','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1774,'handelaren regio Drugpunt','Net','','','','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1775,'JH Impuls','Org','','','De Pinte','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1776,'verenigingen Nazareth','Net','','','Nazareth','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1777,'De Liaan','Org','','','Eke','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1778,'JC Brieljant','Org','','','Deinze','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1779,'oudervereniging GBS Nazareth - Eke','Org','','','Nazareth','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1780,'CD&V Nazareth','Org','','','Nazareth','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1781,'VBS Eke','Org','','','Nazareth','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1782,'Popallure vzw','Org','','','Nazareth','België','53',9, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1783,'PC Sint Alexius Elsene','Org','Gewijde-Boomstraat 102','1050','Elsene','België','112',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1784,'ACLVB','Org','Londenstraat 25','2060','Antwerpen ','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1785,'Delhaize Boechout ','Org','A Franckstraat 6','2530','Boechout','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1786,'Werkhaven vzw','Org','klamperstraat 40','2060','Antwerpen','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1787,'BASF','Org','Scheldelaan 600','2040','Antwerpen ','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1788,'ESSO','Org','Polderdijkweg ','','Antwerpen ','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1789,'UMICORE','Org','A. Greinerstraat 14','2660','Hoboken ','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1790,'AROP','Org','Engelselei','2140','Borgerhout','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1791,'Evonik Degussa','Org','Tijsmanstunnelm West ','','Antwerpen ','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1792,'DOW Belgium','Org','Prins Boudewijnlaan','','Edegem','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1793,'UOP NV - Honneywell group','Org','Noorderlaan 147 ','2030','Antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1794,'Monsanto','Org','Scheldelaan 460','2040','Antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1795,'Ontbijtsessie CAO 100 voor bedrijven in de omgevin','Org','/','','','België','9',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1796,'Nexans','Org','Alsembergsesteenweg 2','1500','Halle','België','9',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1797,'Rotaryclubs regio groot-antwerpen','Net','','','','België','16',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1798,'meerdere organisaties(privébedrijven+social profit','Net','','','','België','16',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1799,'ZHORG (Zaventemse huisartsenorganisatie)','Org','Vilvoordelaan 4','1930','Zaventem','België','85',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1800,'Responsible Young Drivers (RYD)','Org','','1000','Brussel','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1801,'wg peer support','Net','','','','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1802,'Modus Vivendi','Org','Jordaanstraat 15','','Brussel','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1803,'Hogeschool Brussel','Org','','','','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1804,'WG uitgaan','Net','','','','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1805,'Fed.  Ho.Re.Ca. Vlaanderen','Org','','','Brussel','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1806,'La nuits events','Org','','','Oostende','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1807,'Oikonde','Org','Tiensevest 17','3010','Kessel-Lo','België','85',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1808,'LOGIS','Org','INDUSTRIE NOORD','3668','OPGLABBEEK','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1809,'Artesis hogeschool','Org','Keizerstraat 15','2000','Antwerpen','België','12',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1810,'Dosaco ','Org','','','Balen','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1811,'De Vest','Org','Vestenstraat 14','1800','Vilvoorde','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1812,'Sony','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1813,'Le Foyer','Org','Werkhuizenstraat 25','1080','Sint-Jans-Molenbeek','België','112',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1814,'Zorgnet','Net','','','','België','114',34, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1815,'Kliniek Sint-Jozef','Org','Boterstraat 6','8740','Pittem','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1816,'InforDrogues','Org','Rue du Marteau 19','1000','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1817,'Manus ','Org','Jan Denucéstraat 16,','2020','Antwerpen','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1818,'Link (project CGG - BZJ)','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1819,'CAD Limburg','Org','','','','België','8',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1820,'ugent','Net','henri dunantlaan 2','9000','gent','België','112',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1821,'Psychiatrische Thuiszorg','Org','','','','België','8',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1822,'CGG Brussel','Org','','','','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1823,'Universiteit Antwerpen (als werkgever)','Org','Universiteitsplein 1','2000','Antwerpen','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1824,'Deelnemende organisaties ontbijtsessie mei 2010','Net','','','','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1825,'EMCDDA','Net','','','','Ander land','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1826,'kabinet Cerexhe','Org','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1827,'EDPB IDEWE','Org','Interleuvenlaan 58/1','3001','Leuven','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1828,'MAROKKAANSE MOSKEE WATERSCHEI','Org','SOCIALESTRAAT 30','3600','GENK','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1829,'AA','Org','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1830,'Test Aankoop','Org','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1831,'Fedis','Org','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1832,'UNIZO','Org','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1833,'De Eenmaking','Org','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1834,'Formaat koepel jeugdhuizen','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1835,'Sint Calasanz Instituut','Org','','','Nijlen','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1836,'Federal Mogul','Org','','','Kontich','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1837,'OPZ Geel','Org','','','Geel','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1838,'OLVP Bornem','Org','','','Bornem','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1839,'Dienst Welzijn en Gezondheid Provincie Antwerpen','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1840,'Malpertuus','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1841,'Politie Stekene - Sint-Gillis-Waas','Org','','9170','','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1842,'De Sleutel','Org','','','Gent','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1843,'Zonnehoeve','Org','Zonnestraat 13','9810','Eke','België','48',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1844,'Koninklijk Atheneum Etterbeek','Org','Edmond Mesenlaan 2','','Etterbeek','België','112',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1845,'WGC Nieuw Gent','Org','Rerum Novarumplein 180B','9000','Gent','België','48',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1846,'CAT Gent','Net','Lange Violettestraat 84','9000','Gent','België','112',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1847,'Cgg VBO','Org','Vital Decosterstraat','3000','Leuven','België','112',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1848,'Centrum voor leerlingenbegeleiding van het Gemeens','Net','Dieleghemse Steenweg 24 ','1090','Jette','België','112',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1849,'DO_Gent','Net','Botermarkt 1','9000','Gent','België','48',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1850,'CDO Vilvoorde','Org','Groenstraat 260','1800','Vilvoorde','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1851,'Opvoedingsondersteuning Pajottenland','Net','','','','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1852,'Regionale organisaties dienstencheques','Net','','','','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1853,'Regionale RVTs','Net','','','','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1854,'Regionale autocarbedrijven','Net','','','','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1855,'Stad ANTWERPEN','Org','Vandersteenplein 1 ','2060','Antwerpen','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1856,'ECAT III','Net','','','','België','123',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1857,'Preventiedienst Aalst','Org','','','','België','123',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1858,'Preventiedienst Leuven','Org','Philipssite','','Leuven','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1859,'Vroeg-interventieteam CGG','Net','','','','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1860,'NH Hotels','Org','De Kleetlaan 14','1831','Diegem','België','9',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1861,'Dienst Welzijn en Gezondheid provincie Antwerpen','Org','','','','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1862,'Paravang vzw ','Org','Westendelaan 38','8430','Middelkerke','België','98',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1863,'CAW Waasland','Org','Gasmeterstraat 81b','9100','Sint-Niklaas','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1864,'Spoor 2','Org','','','Hamme','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1865,'ECAT (Sint-Niklaas, Dendermonde & Aalst)','Org','Grote Peperstraat 15','9100','Sint-Niklaas','België','57',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1866,'VIVO vzw','Org','Handelskaai 48','1000','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1867,'DOSZ','Org','Louizalaan 194','1050','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1868,'Brandweer ','Org','','','','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1869,'Mano Mundo','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1870,'KULeuven','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1871,'Stad Ninove','Org','Centrumlaan 100','9400','Ninove','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1872,'Janssen Pharma - J&J','Org','Turnhoutseweg 30','2430','Beerse','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1873,'GEODIS WILSON','Org','Bisschoppenhoflaan 645','2100','Deurne','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1874,'DAF Trucks','Org','','2260','Westerlo','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1875,'Twee gezusters, De - kamertraining','Org','Thuysaert 1 - 4','2970','''s Gravenwezel ','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1876,'Vagga forensisch team ','Org','','','','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1877,'Pegode ','Net','','','','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1878,'Regina Pacis','Org','','','Hove','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1879,'UCKJA  krisisunit Middelheim ','Org','','','Wilrijk ','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1880,'scholenoverleg Kiel ','Net','','','','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1881,'CAD Genk','Org','Weg naar As 54 bus 12','3600','Genk','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1882,'CGG Waas & Dender, vestiging St-Niklaas','Org','Antwerpse Steenweg 187, bus 1','9100','Sint-Niklaas','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1883,'CAT Gent','Org','Lange Violettestraat 84','9000','Gent','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1884,'CGG Ahasverus afdeling Asse','Org','Muurveld 38   ','1730','Asse','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1885,'Natuurwerk vzw','Org','','','Turnhout','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1886,'Familiehulp Kortrijk','Org','St. Janslaan 8a ','8500 ','Kortrijk','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1887,'Gezinsbond West-Vlaanderen','Org','Iepersestraat 70  ','8800','ROESELARE ','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1888,'Internaat Zusters van Liefde Kortemark','Org','hospitaalstraat 22','8610','Kortemark','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1889,'Sint-Pauluscollege Wevelgem','Org','Deken Jonckeerestraat 16/1','8560','Wevelgem','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1890,'Koninklijk Atheneum Etterbeek','Org','Edmond Mesenslaan 2','1040','Etterbeek','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1891,'Vrij Technisch Instituut Leuven','Org','Dekenstraat 3','3000','Leuven','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1892,'Sociaal Huis Lokeren','Org','Lepelstraat 4','9160','Lokeren','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1893,'Sint-Godelieve Instituut','Org','Mechelseweg 129','1880','Kapelle-op-den-Bos','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1894,'Arteveldehogeschool campus Kattenberg','Org','Kattenberg 9','9000','Gent','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1895,'Sint-Pauluscollege Houthalen','Org','Herebaan-West 41','3530','Houthalen','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1896,'Vlaamse Westhoekvrienden, afd. Diksmuide VVVG','Net','Eikhofstraat 14','8600','Diksmuide','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1897,'L²','Net','Woeringenstraat 19-21','1000','Brussel','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1898,'Sony','Org','','','Zaventem','België','85',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1899,'National Assembly Slovenia','Org','Subiceva   4 ','1000','Ljubljana - Slovenia','Ander land','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1900,'Honeywell Belgium','Org','Grauwmeer 1','','Haasrode','België','85',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1901,'LiNK project','Net','Ninoofsesteenweg 358','','Dilbeek','België','85',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1902,'Noord CDO','Org','Bredastraat 37','2060','Antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1904,'Preventiedienst Zaventem','Org','','','','België','85',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1905,'CGG Middelpunt','Org','','','Roeselare','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1906,'Gemeente Oud-Heverlee','Org','Gemeentestraat 2','3054','Vaalbeek','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1907,'CLB GO Asse','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1908,'CLB NoordwestBrabant Asse','Org','','','Asse','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1909,'Intergemeentelijk overleg Pajottenland','Net','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1910,'Parket Brussel','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1911,'Gezondheidsraad Zemst','Org','De Griet 1','1980','Zemst','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1912,'Provincie Vlaams Brabant','Org','Provincieplein 1','3000','Leuven','België','64',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1913,'OCMW Wezembeek-Oppem en Kraainem','Org','','','','België','64',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1914,'Gemeente Drogenbos','Net','Grote Baan 222','1620','Drogenbos','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1915,'Het VIERKANT vzw','Org','Oude Kaai 11','9400 ','Ninove','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1916,'VAGGA','Org','Boomgaardstraat','2000','Antwerpen','België','9',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1917,'H. Pius X-instituut','Org','VIIde Olympiadelaan 25','2020','Antwerpen','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1918,'Diocesane Pedagogische Begeleidingsdienst SO ','Net','Marialand 31','9000','Gent','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1919,'Architon','Org','','','Dessel','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1920,'TGT (Turks jongerentheater)','Org','','','Genk','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1921,'LARCIER uitgeverij','Org','Coupure Rechts 298','9000 ','Gent','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1923,'Lessius Hogeschool ','Org','Zandpoortvest 60','2800','Mechelen','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1924,'Levenslust vzw','Org','Scheestraat 74','1750','Lennik','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1925,'CGG VBO','Org','Vital Decosterstraat 86','3000','Leuven','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1926,'Beheerscomité','Net','Brusselsesteenweg 617','1731','Zellik','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1927,'Werkgroep kader preventiewerkers','Net','','','','België','64',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1928,'Gemeente Linkebeek','Net','Gemeenteplein 2','1630','Linkebeek ','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1929,'Gemeentebestuur Genk','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1930,'Campbell Belgium Puurs','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1931,'Scholenoverleg Halle','Net','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1932,'NORBORD ','Org','','','','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1933,'DE BIEHAL ','Org','','','','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1934,'GLASINDUSTRIE BOERMANS','Org','Schampbergstraat 34','3511','Kuringen','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1935,'OPVOEDINGSWINKEL WEST_LIMBURG','Org','GEITELING 13','3580','BERINGEN','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1936,'SINT VINCENTIUS','Org','Dorpsstraat 72','','Halen-Zelem','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1937,'CAT','Org','LANGE VIOLETTESTRAAT 84','9000','GENT','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1938,'SOVO Brussel','Org','','','','België','129',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1939,'SCOUTS EN GIDSEN GODSHEIDE ','Org','','','','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1940,'CARREFOUR','Org','Olympiadenlaan 20','1140','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1941,'Zindering','Org','','','Antwerpen','België','129',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1942,'Brouwerij der Trappisten','Org','Antwerpse Steenweg 496','2390','Westmalle','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1943,'Justitieel Welzijnswerk Antwerpen','Org','Tolstraat','2018','Antwerpen','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1944,'Gemeente Berlare','Org','','','','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1945,'@Tractief','Net','','','Brussel','België','129',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1946,'LPV','Net','','','','België','129',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1947,'Sint-Maria Instituut','Org','Sint- Willebrordusstraat 39','2060','Antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1948,'JAC Delta','Org','','','Asse','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1949,'Uitstraling Permanente Vorming vzw','Org','waversesteenweg 1077','1160','Brussel','België','8',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1950,'Atlas Copco','Org','Boomsesteenweg 957','2610','Wilrijk','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1951,'KOAP werkgroep','Net','','','','België','49',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1952,'Consultoverleg','Net','','','','België','49',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1953,'ANTWERPEN LOGO','Org','Consciencestraat','2000','Antwerpen','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1954,'Preventieteam','Net','','','','België','49',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1955,'DO_Brakel','Net','','','','België','49',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1956,'WG Vroeginterventie','Net','','','','België','49',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1957,'Drugs in beweging','Net','','','','België','49',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1958,'Gemeente, OCMW en politie WOKRA','Net','','','','België','64',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1959,'Mortsel Jeugddienst','Org','Centraal Lusthovenlaan 10 ','2640','Mortsel','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1960,'Edegem gemeente','Org','Kontichstraat 19','2650','Edegem','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1961,'Sowel vzw','Org','Kipdorp 41','2000','Antwerpen','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1962,'Heilig Hart Kalmthout','Org','Heuvel 37','2920','Kalmthout','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1963,'Stad Turnhout','Org','','','Turnhout','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1964,'Provinciaal Veiligheidsinstituut','Org','','','','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1965,'SPK vzw','Org','','','Turnhout','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1966,'De Spiegel','Org','Pellenbergstraat 160','3010','Leuven','België','145',43, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1967,'Intergemeentelijk drugpreventiewerk Vl-Brabant','Net','','','','België','145',43, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1968,'Windowmakers','Org','','','Turnhout','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1969,'KA Keerbergen','Org','Vlieghavenlaan 18','3140','Keerbergen','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1970,'Stad Diest','Org','Grote Markt 1','3290','Diest','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1971,'KA Redingenhof DBSO','Org','Redingenstraat 90','3000','Leuven','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1972,'Scholengemeenschap Leuven','Net','','3000','Leuven','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1973,'MARIAHUIS VZW','Org','SINT JORISSTRAAT 41','3570','ALKEN','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1974,'Onderwijs Gent','Net','','','','België','49',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1975,'O_EDUGO','Org','','','','België','49',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1976,'OCMW Vleteren','Org','woestendorp','','Vleteren','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1977,'CDO Roeselare','Org','leenstraat','','roeselare','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1978,'CAB','Org','','','','België','49',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1979,'Intergemeentelijke preventiewerkers','Net','','','','België','9',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1980,'Team Thuisgezondheidszorg','Net','','','Rotselaar','België','85',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1981,'JOKOT Niel','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1982,'Arktos vzw','Org','Valkerijgang 26','','Leuven','België','85',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1983,'GGALIMERO','Net','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1984,'OCMW Putte','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1985,'MIVAS Beschutte werkplaats Lier ','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1986,'lokale politie Klein-Brabant','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1987,'OSPA','Net','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1988,'St. Maria','Org','Pas','','Geel','België','60',12, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1989,'Politie Geel - Laakdal - Meerhout','Org','','','','België','60',12, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1990,'UG Universiteit Gent','Org','','9000','Gent','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1991,'Sint Jozef BUSO','Org','Kerkstraat ','','Antwerpen','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1992,'Kapellen KTA ','Org','Pastoor Vandenhoudtstraat 8','2950','kapellen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1993,'Bouckenborgh Jongerencentrum','Org','Bredabaan','','Merksem','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1994,'Hogeschool Gent','Org','Voskenslaan 362 ','9000','Gent','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1995,'Soulshine VZW','Org','Leeuwenstraat 21','2000','antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1996,'Koninklijk Atheneum Sint-Niklaas','Org','Parklaan 89','9100','Sint-Niklaas','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1997,'O_MPI Sint-Lodewijk Wetteren','Org','Kwatrechtsesteenweg 168','9230','Wetteren','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (1999,'Sint-Jorisinstituut','Org','Kruibekestraat 55A','9150','Bazel','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2000,'CLB Waasland','Org','dr. Verdurmenstraat 2','9100','Sint-Niklaas','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2001,'projectgroep alcohol en jongeren KHL','Org','','','','België','128',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2002,'OLV Presentatie ','Org','Plezantstraat 135','9100','Sint-Niklaas','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2003,'PSBSO Spectrum','Org','Klaverveld 8','9255','Buggenhout','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2004,'GLS De Zandloper','Org','Zandstraat 16','9170','Sint-Pauwels','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2005,'UAB - universiteit van het algemeen belang','Org','antwerpen','','','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2006,'BIVV','Org','Brussel','','','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2007,'festivalarts','Net','','','','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2008,'Rock Ternat','Org','','','','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2009,'Petrol','Org','Antwerpen','','','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2010,'Formaat','Org','Antwerpen','','','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2011,'KHLim','Org','Hemelrijk ','','Hasselt','België','138',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2012,'Zorgnet Vlaanderen','Org','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2013,'FDGG','Org','Martelaarslaan ','9000','Gent','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2014,'FOD Wetenschapsbeleid','Org','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2015,'Nationale Raad Ziekenhuisvoorzieningen','Net','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2016,'Free Clinic - partner spuitenruil','Org','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2017,'LOGO-overleg (VIGeZ)','Net','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2018,'pers','Net','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2019,'Popov','Org','Drongenplein 26','9031','Drongen','België','140',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2020,'KLJ Nationaal','Org','Waversebaan 99','3050','Oud Heverlee','België','140',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2021,'ONDERNEMERSCLUB TESSENDERLO HAM','Org','MARKT ZN','3980','TESSENDERLO','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2022,'Scouts & Gidsen Vlaanderen','Org','Lange Kievitstraat 74','2018','Antwerpen','België','140',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2023,'In Petto','Org','Diksmuidelaan 50 ','2600','Berchem','België','140',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2024,'De Broej','Org','Henegouwenkaai 29','1080','Sint-Jans-Molenbeek','België','140',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2025,'TRIOC','Org','KUNSTLAAN 16','3500','HASSELT','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2026,'Vlaams InformatiePunt Jeugd (VIP-jeugd)','Org','Zuidlaan 25','1000','Brussel','België','140',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2027,'CAW Brugge','Org','Garenmarkt 3','8000','Brugge','België','79',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2028,'Familiezorg','Org','biscajerplein','8000','Brugge','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2029,'Klink, De ','Org','Wijnegemsteenweg 55 B','2970','''s-Gravenwezel','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2030,'Werkgroep sport','Net','','','','België','64',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2031,'INDUSTRIECLUB HASSELT','Net','KUNSTLAAN 16','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2032,'INDUSTRIECLUB HASPENGOUW','Net','GOUVERNEUR ROPPESINGEL 51','3500','HASSELT','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2033,'Werkgroep Vlaamse vleugel','Net','Handelskaai 7','1000','Brussel','België','109',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2034,'FLUXYS ','Org','Kunstlaan 31','1040','Brussel','België','109',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2035,'Syntra West','Net','','','','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2036,'Huis zevendonk','Org','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2037,'KTA Westerlo','Org','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2038,'st Viktor ','Org','','2300','turnhout','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2039,'tongelsbos','Org','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2040,'CAW Middenkust','Net','St. Sebastiaansstraat 18','8400','Oostende','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2041,'Artevelde hogeschool','Net','','9000','Gent','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2042,'CGG Noord-West-Vlaanderen','Org','Frère Orbanstraat 143','8400','Oostende','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2043,'Gemeente ZEMST','Org','De Griet 1','1980','Zemst','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2044,'IOGT-NTO','Net','Rue van Campenhout 22','1000','brussel','België','123',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2045,'O_Sint-Jozefinstituut BuSO','Org','Ebergiste De Deynestraat 1','9000','Gent','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2046,'O_IVV Sint-Vincentius','Org','Molenaarsstraat 22','9000','Gent','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2047,'JEUGDDIENST SINT-TRUIDEN','Org','','3800','SINT-TRUIDEN','België','38',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2048,'JEUGDDIENST BOCHOLT','Org','','','','België','38',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2049,'JEUGDHUIS HEERS','Org','','','','België','38',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2050,'Eekhoutcentrum','Org','E. Sabbelaan 53','8500','Kortrijk','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2051,'JEUGDDIENST RIEMST','Org','','','RIEMST','België','38',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2052,'DBC Openluchtopvoeding vzw','Org','Miksebaan 264','2830','Brasschaat','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2053,'O_Sint-Franciscusinstituut Melle','Org','Tuinstraat 105','9090','Melle','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2054,'O_Groep Intro','Org','Nekkersputstraat 189a','9000','Gent','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2055,'Sint Lucas KSO','Org','St Jozefstraat 37','2018','Antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2056,'Scholengemeenschap De Zeemeeuw','Net','','','','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2057,'Scholengemeenschap De zeemeeuw','Net','','','','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2058,'attractief','Net','boudewijnlaan 20','1000','brussel','België','112',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2059,'Syntra West vzw','Org','Doorniksesteenweg 220','8500','Kortrijk','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2060,'OCMW Houthulst','Org','Vijverstraat 30','8650','Houthulst','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2061,'Scholengemeenschap Sint Donaas (Brugge)','Net','','','','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2062,'VTI Oostende','Org','','','','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2063,'Provincie Vlaams Brabant','Org','','','Leuven','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2064,'MPI Levenslust','Org','','1750','Lennik','België','61',13, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2065,'SINT MARTINUSSCHOLEN','Org','DIESTSESTEENWEG 5','3540','HERK-DE-STAD','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2066,'Lionshulp vzw','Org','Golfweg 1','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2067,'HO_Hogeschool Gent','Org','Kortrijksesteenweg 14','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2068,'PROJECT JONGERENGROEP','Net','','','','België','8',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2069,'CGG Largo','Org','Jules Lagaelaan 21','8800','Roeselare','België','115',35, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2070,'Lokaal Drugoverleg Roeselare','Net','Zuidstraat 17','8800','Roeselare','België','115',35, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2071,'O_Provinciaal Instituut Heynsdaele','Org','Eisdaele 1','9600','Ronse','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2072,'PopovGGZ','Net','Drongenplein 26','9031','Drongen','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2073,'KU LEUVEN','Org','','3000','LEUVEN','België','38',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2074,'JEUGDDIENST HALEN','Org','SPORTLAAN 2','','HALEN','België','38',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2075,'STVV','Org','','','','België','38',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2076,'ALTHEA GENK','Org','St-Lodewijkstraat 24','3600','GENK','België','38',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2077,'Basisschool De Kameleon','Org','Kaaischoolstraat 4','9400','Ninove','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2078,'Basisschool Arendonk - De Wamp','Org','De Maaskens 10','2370','Arendonk','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2079,'Parket','Org','Keizerstraat','2800','Mechelen','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2080,'Haverlo','Org','Weidestraat 156','8310','Assebroek','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2081,'Onze-Lieve-Vrouwecollege Assebroek','Org','Collegestraat 24','8310','Assebroek','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2082,'CBE Brugge Wijzer','Org','Collaert Mansionstraat 24','8000','Brugge','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2083,'TWEEDE KANSONDERWIJS','Org','GENKERBAAN ','3520','ZONHOVEN','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2084,'Netwerk Psychiatrische thuiszorg Gent','Net','Beukenlan 20','9051','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2085,'Hotel- en Toerismeschool Spermalie','Org','Snaggaardstraat 15','8000','Brugge','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2086,'Kindervreugde vzw','Org','Sombekedries 12','9250','Waasmunster','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2087,'Vrij Technisch Instituut Torhout','Org','Papebrugstraat 8A','8820','Torhout','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2088,'LO_Freinet De Boomgaard','Org','Bommelstraat 24','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2089,'O_Mariagaard','Org','Oosterzelesteenweg 80','9230','Wetteren','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2090,'VroegInterventieProject Dagcentrum Brugge','Net','Barrièrestraat 4','8200','Sint-Michiels','België','116',36, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2091,'Gemeente Nevele','Net','','','','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2092,'KAA Gent','Org','Bruiloftstraat 42','9050','Gentbrugge','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2093,'LO_Klim','Org','Sint-Pietersaalststraat 78/86','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2095,'Stad Roeselare','Org','','','','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2096,'Renolit Belgium','Org','Industriepark De Bruwaan 9','9700','Oudenaarde','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2097,'EOC Oudenaarde/Evergem','Org','IP De Bruwaan 12','9700','Oudenaarde','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2098,'Studioo vzw','Org','St-Amandsstraat 68','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2099,'O_CLW Gent','Org','Wittemolenstraat 9','9000','Gent','België','45',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2100,'Markant','Net','','','','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2101,'CG Powersystems Belgium','Org','Antwerpsesteenweg','2800','Mechelen','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2102,'O_Atheneum Wispelberg','Org','Wispelbergstraat 2','9000','Gent','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2103,'Volvo Parts Gent','Org','Smalleheerweg 29','9041','Oostakker','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2104,'Gezinsbond','Org','','','','België','50',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2105,'GROB- Keep it clean','Net','Bevrijdingslaan 9','9000','Gent','België','48',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2106,'SEL ALLeRT','Net','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2107,'KTA Protechnica','Org','','','Halle','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2108,'Tweede kansonderwijs','Org','O.L.V. straat 94','2800','Mechelen','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2109,'Grijze Panters','Net','Kraenbrug','2800','Mechelen','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2110,'Lokaal Gezondheidsoverleg Mechelen','Net','M. Sabbestraat 119','2800','Mechelen','België','108',32, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2111,'Klimop ','Org','','','Herenthout','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2112,'JAC Westerlo','Org','','','Westerlo','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2113,'PVI','Org','','','Antwerpen','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2114,'regionaal preventie overleg','Net','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2115,'Web','Org','','','turnhout','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2116,'Travoo','Org','','','Herentals','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2117,'Steiger, De dagcentrum','Org','Min Delbekelaan 30','2170','Merksem','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2118,'Elegast Potgieter OOOC','Org','Potgieterstraat 11','2060','Antwerpen ','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2119,'JAC Mol','Org','','','Mol','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2120,'humanistische thuisbegeleidingsdienst ','Org','Collegelaan 6','2140','Borgerhout','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2121,'Kordaat- kortdurende directieve thuisbegeleiding','Org','Bredabaan  943','2930','Brasschaat','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2122,'JOBA thuisbegeleiding','Org','Kloosterstraat 113','2660','Hoboken','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2123,'SJB College Mol','Org','','','Mol','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2124,'Elegast BZW','Org','Jacob Jordaensstraat 73','2018','Antwerpen','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2125,'Onze thuis - de vlinderkens','Org','Hovestraat 140','2650','Edegem','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2126,'Vreugdeborg ','Org','Van Peborghlei 31','2640','Mortsel','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2127,'Huis de post','Org','','','Geel','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2128,'OCMW Malle','Org','','','Oostmalle','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2129,'Lokgroep HA','Net','','','Lichtaart','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2130,'Zenit','Org','','','turnhout','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2131,'De Waag','Org','','','Turnhout','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2132,'VGC','Net','Lombardstraat 61-67','1000','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2133,'VRIJ CENTRUM LEERLINGENBEGELEIDING','Org','','','MAASEIK','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2134,'POLITIE MAASMECHELEN','Org','','','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2135,'OCMW LANAKEN','Org','','','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2136,'OCMW MAASMECHELEN','Org','','','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2137,'KATHOLIEKE HOGESCHOOL LIMBURG','Org','','','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2138,'GEZINSRAAD LANAKEN','Net','','','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2139,'BASISSCHOOL LEUT','Org','','','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2140,'SENIORENRAAD MAASMECHELEN','Net','','','','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2141,'MEANDER','Org','','','DILSENSTOKKEM','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2142,'PIETER SIMENON','Org','','','LOMMEL','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2143,'BANDAG','Org','','','MAASMECHELEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2144,'OCMW KINROOI','Org','','','KINROOI','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2145,'Service Club Innerwheel','Net','','','','België','98',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2146,'MAROKKAANSE AMBASSADE','Org','SINT-MICHIELSLAAN 29','1040','BRUSSEL','België','41',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2147,'Zoersel gemeente','Org','Handelslei 167','2980','Zoersel','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2148,'Oostkamp','Org','','','','België','98',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2149,'Tachkemoni Atheneum','Org','Lange Leemstraat 3/3','2000','Antwerpen','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2150,'Agora vzw','Org','Neerjouten 11','3550','Heusden-Zolder','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2151,'DRUGSLINK','Net','BOOMKENSSTRAAT 18','3500','HASSELT','België','32',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2152,'SOWEL','Org','Kipdorp','2000','Antwerpen','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2153,'TKO Mechelen','Org','','2800','Mechelen','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2154,'OCMW St-Katelijne-Waver','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2155,'Brandweer Bornem','Org','','2880','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2156,'ST. FRANCISCUSCOLLEGE','Org','','3550','HEUSDEN ZOLDER','België','31',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2157,'centrum derde leeftijd','Org','Leopoldstraat 25','1000','Brussel','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2158,'O_Hoger Technisch Instituut Sint-Antonius','Org','Holstraat 66','9000','Gent','België','47',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2159,'Radio Q-Music JOE fm','Org','Medialaan 1','','Vilvoorde','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2160,'ACV - centrale Voeding en Diensten','Org','Karthuizersstraat 70B','1000','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2161,'OCMW Antwerpen','Org','Luitenant Lippenslaan 59','2140','Borgerhout','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2162,'LSM','Org','Universiteitslaan 1','3500','','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2163,'CLB BREE','Org','','','BREE','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2164,'Centric Belgium','Org','Siemenslaan 12','8020','Oostkamp','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2165,'VAN WIJS E','Org','','2000','Antwerpen','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2166,'GENERALI','Org','Louizalaan 149 bus 1','1050','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2167,'LIR','Net','','3500','hASSELT','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2168,'De Kiem','Org','Schravenboer','','Gavere','België','48',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2169,'Diakonie Baden','Org','','','','Ander land','133',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2170,'Stad Gent','Net','','','','België','133',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2171,'HAZODI','Net','','','','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2172,'SINT JANSBERG','Org','','','MAASEIK','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2173,'Similes','Org','','Gent','','België','48',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2174,'SUICIDEPREVENTIE','Net','','','','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2175,'VIVO','Net','','','','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2176,'JESSA ZIEKENHUIS','Org','','','hASSELT','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2177,'b-holding NMBS-GROEP','Org','Frankrijkstraat 85','1060','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2178,'IBSO Woudlucht','Org','Prosperdreef','3001','Heverlee','België','87',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2179,'Televil vzw','Org','Mechelsesteenweg 588 D','1800','Vilvoorde','België','87',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2180,'Heilig Hart Ziekenhuis','Org','Naamsestraat','3000','Leuven','België','86',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2181,'ACV - LBC','Org','Sudermanstraat 5','2000','Antwerpen','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2182,'Stad Leuven','Org','','3000','Leuven','België','86',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2183,'de Hutten','Org','','','mol','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2184,'Comité voor Bijzondere Jeugdzorg Turnhout','Org','','','Turnhout','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2186,'Politie Sint-Pieters-Leeuw','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2187,'Vragen van studenten ','Net','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2188,'MFC Multifunctioneel centrum ','Org','','2800','Mechelen','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2189,'HoReCa Vlaanderen','Org','Anspachlaan 111b4','1000','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2190,'OCMW Grimbergen','Org','Verbeytstraat 30','1853','Grimbergen','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2191,'St-Virgo Instituut','Org','Heldenplein 6','1840','Londerzeel','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2192,'CGG Passant','Org','Ninoofsesteenweg 358','1700','Dilbeek','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2193,'Kraft Foods','Org','Brusselsesteenweg 450','1500','Halle','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2194,'OCMW Vilvoorde','Org','','1800','Vilvoorde','België','8',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2195,'Berkenboom','Org','Kalkstraat 26','9100','Sint-Niklaas','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2196,'Jeugdrechtbank Turnhout','Org','Graatakker','2300','Turnhout','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2197,'Brusselse Welzijns- en Gezondheidsraad vzw','Org','Blekerijstraat 25 bus 5','1000','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2198,'Christelijke Mutualiteiten','Org','Haachtsesteenweg 579','1030','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2199,'BRUGGE11','Org','','8000','','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2200,'OOSTENDE11','Org','','8400','','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2201,'TYCO Electronics11','Org','','','Oostkamp','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2202,'Daikin NV11','Org','','8400','','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2203,'Provinciebestuur West-Vlaanderen11','Org','','8000','','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2204,'Preventieraad V-A-L-R11','Net','','','','België','101',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2205,'Blankenberge-Zuienkerke11','Net','','','','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2206,'TORHOUT11','Org','','','','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2207,'WG Middelengebruik Visserij11','Net','','','Brugge','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2208,'OCPP11','Org','','','Brugge','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2209,'Electrawinds11','Org','','8400','Oostende','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2210,'STUFF11','Net','','8000','Brugge','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2211,'Integrale Jeugdhulp11','Net','','8000','Brugge','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2212,'RWC Oostende11','Net','','8400','Oostende','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2213,'VAD11','Org','','','Brussel','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2214,'Paravang vzw11','Org','','','Middelkerke','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2215,'Penitentiaire inrichting Brugge11','Org','','','Brugge','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2216,'KORTRIJK11','Org','','8500','kortrijk','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2217,'CGG Noord-West-Vlaanderen11','Org','','8400','Oostende','België','102',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2218,'Sint-Ritacollege Kontich','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2219,'RVA','Org','Keizerslaan 7','1000','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2220,'OOSTKAMP11','Org','','','','België','98',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2221,'vzw Verpleging aan Huis','Org','Peter Benoitstraat 48','9100','Sint-Niklaas','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2222,'vzw Koma-ar','Org','','','Doel','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2223,'Miniemeninstituut','Org','','3000','Leuven','België','85',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2224,'CGG Ahasverus','Org','','','Asse','België','85',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2225,'Archeduc','Org','Stationsstraat 70','1730','Asse','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2226,'UGent','Org','Sint-Pietersnieuwstraat 25','9000','Gent','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2227,'Productions & Zonen','Org','Nekkersputstraat 47','9000','Gent','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2228,'Vragen van clienten','Net','','','','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2229,'T Pasrel Halle','Org','H. Placestraat 45','1702','Dilbeek','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2230,'Oostende','Net','','8400','Oostende','België','79',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2231,'Daikin NV','Org','','8400','Oostende','België','79',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2232,'Brugge','Net','','8000','Brugge','België','79',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2234,'Opleidings Centrum Penitentiair Personeel','Net','','8000','Brugge','België','79',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2235,'Campus Kompas Wetteren','Org','Noordlaan 10','9230','Wetteren','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2236,'IFE Benelux','Org','Wetenschapsstraat 4','1040','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2237,'Afton Chemical','Org','Parc Industriel Zone C','7181','FELUY - Belgium','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2238,'CGG Waas en Dender','Org','','','','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2239,'VVSG','Org','','','','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2240,'Leonardo lyceum, Zuid, CDO','Org','Grote Steenweg 226 ','2600','Berchem ','België','19',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2241,'OCMW Turnhout','Org','','','Turnhout','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2242,'CROSS MUNDOS VZW','Org','','','','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2243,'Houba Brussel','Org','','','','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2244,'Sint Elisabeth Wijchmaal BUSO','Org','Steenovenstraat','','Wijchmaal ','België','29',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2245,'DE DAGERAAD BUSO BORGLOON','Org','','','Borgloon','België','29',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2246,'DE RICHTER LAGER ONDERWIJS','Org','','','genk','België','29',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2247,'CAW ''T VERSCHIL HASSELT ','Org','Kuringersteenweg 439','3500','Hasselt','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2248,'KLAVERTJE 3 BILZEN','Org','','','Bilzen','België','29',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2249,'DE REGENBOOG BUSO SINT TRUIDEN','Org','','','Sint Truiden','België','29',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2250,'Studiedag','Org','','','','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2251,'CGG Ahasverus','Org','Muurveld 38','1730','Asse','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2252,'Individuele Coaching : Joyce Borremans','Org','','','Leuven','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2253,'Welzijnskoepel','Org','','','','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2254,'Voorzieningen Bijzondere Jeugdzorg Arr. Turnhout','Net','','','','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2255,'BUSO DE WISSEL GENK','Org','','3600','genk','België','29',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2256,'MPI De Luchtballon GENK','Org','','3600','Genk','België','29',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2257,'BUSO WICO OVERPELT','Org','','','Overpelt','België','29',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2258,'MPI ZONNEWEELDE LOMMEL','Org','','','Lommel','België','29',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2259,'BUSO ZONNEWEELDE LOMMEL','Org','','','Lommel','België','29',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2260,'BUSO SINT FERDINAND LUMMEN','Org','','','Lummen','België','29',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2261,'JOH jeugdhuis','Org','Oudestraat 81','2660','Hoboken','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2262,'Kapellen opvangcentrum','Org','','','Kapellen','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2263,'Kalmthout Jac-punt','Org','Dorpsstraat 3','2920','Kalmthout','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2264,'Dar Al Amal','Org','Ribaucourtstraat 51','1080','Sint-Jans-Molenbeek','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2265,'Reseau Aide toxicomane','Net','charbolaan 35','1030','Schaarbeek','België','113',33, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2266,'Politie TARL','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2267,'Vroeginterventie','Net','','','','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2268,'Politie Willebroek','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2269,'Atelier Mechelen','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2270,'FOD Volksgezondheid','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2271,'CLB Dender - hoofdzetel Aalst','Org','Zonnestraat 25','9300','Aalst','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2272,'De Moerbei - Middenschool','Org','Hospicestraat 16','9180','Moerbeke-Waas','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2273,'AZ Nikolaas','Org','Moerlandstraat 1 ','9100','Sint-Niklaas','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2274,'Werkgroep','Net','','','','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2275,'Sint Eduardus Merksem','Org','Broeder Frederikstraat 3','2170','merksem','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2276,'Rode Kruis Voorkempen','Org','','','sint Job','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2277,'Red & Blue','Org','Lange schipperkapelstraat ','2000','antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2278,'Touter, De ','Org','Auwersstraat 48','2600','Berchem','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2279,'Politiezone AMOW','Org','Zone 5','1730','Asse','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2280,'Informant','Org','Beheerstraat 44','8500','kortrijk','België','48',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2281,'De Pelgrim','Org','Spiegel 14 ','','Oosterzele','België','48',8, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2282,'Schoolhuis Opwijk','Org','','','Opwijk','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2283,'GTB','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2284,'Kluwer uitgeverij','Org','Ragheno Business Park - Motstraat 30','2800','Mechelen','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2285,'EDPB Medimar','Org','Adriaan Brouwerstraat 24 ','2000','Antwerpen','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2287,'VAD','Org','Vanderlindenstraat 15','','Brussel','België','115',35, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2288,'Stedelijke Jeuddienst DieZie','Org','St. Michielstraat','','Roeselare','België','115',35, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2289,'Politiezone RIHO','Org','Kwadestraat','','Roeselare','België','115',35, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2290,'Werkgroep onderwijs','Net','Zuidstraat 17','','Roeselare','België','115',35, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2291,'Werkgroep hulpverlening','Net','Zuidstraat 17','8800','Roeselare','België','115',35, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2292,'Werkgroep Theater','Net','Zuidstraat 17','8800','Roeselare','België','115',35, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2294,'Logo Midden West-Vlaanderen','Org','Mandellaan','8800','Roeselare','België','115',35, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2295,'VAD','Org','Vanderlindenstraat 15','1030','Brussel','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2296,'FOD controleurs volksgezondheid','Org','','','','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2297,'CGG Eclips','Org','Lange Violettenstraat','','gent','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2298,'Wetteren','Org','','','','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2299,'gemeente hamme','Net','','','','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2300,'FOD Binnenlandse Zaken','Org','Leuvensestraat 1','1000','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2301,'VLAAMSE GEMEENSCHAP DEP. ONDERWIJS','Org','KONING ALBERT II LAAN 15','1210','BRUSSEL','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2302,'CAMPUS RUSSELBERG','Org','GERHAGENSTRAAT 58','3980','TESSENDERLO','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2303,'DE SLEUTEL','Org','DAMBRUGGESTRAAT 78','2060','ANTWERPEN','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2304,'JEUGDHUIS DE STIP','Org','STIPSTRAAT 2','3945','HAM','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2305,'DON BOSCO HECHTEL','Org','DON BOSCOSTRAAT 72','3940','HECHTEL','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2306,'LOGO Zenneland','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2307,'Arista','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2308,'gemeente Grimbergen','Net','','1850','Grimbergen','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2309,'Sint Theresia College','Org','Veldstraat 11','1880','Kapelle Op den Bos','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2310,'gemeente Steenokkerzeel','Net','','1820','Steenokkerzeel','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2311,'JEUGDHUIS XL','Org','RIDDERSTRAAT 6','3540','HERK DE STAD','België','26',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2312,'Kogeka','Net','','','','België','60',12, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2313,'KHK','Net','Kleinhoefstraat','2440','Geel','België','60',12, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2314,'Chiro Oost-Vlaanderen','Org','Hoefslagstraatje','','Gent','België','58',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2315,'OCMW Sint-Amands','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2316,'Intercommunale Ontwikkelingsmaatschappij Kempen ','Org','','','','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2317,'PWA Kasterlee','Org','','','Kasterlee','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2318,'Stad Herentals','Org','','','Herentals ','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2319,'Brasschaat KA','Org','Van Hemelrijcklei 29','2930','Brasschaat','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2320,'TENNECO','Org','','','','België','37',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2321,'Al Mawada','Org','','','','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2322,'Madrassat Arrahma','Org','De Bosschaertstraat 31','2020','Antwerpen','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2323,'DE TUNNEL','Org','MARIA PYPRLINCKXSTRAAT 20','3500','HASSELT KURINGEN','België','27',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2324,'Pool Shelter','Org','','','','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2325,'De Wip','Org','Deken Michielstraat 89','1500','Halle','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2326,'TELE-ONTHAAL11','Org','','','Assebroek','België','98',28, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2327,'Eénmaking, De','Org','','Gent','','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2328,'Brasschaat GO! CLB','Org','Van Hemelrijcklei 81','2930','Brasschaat','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2329,'Grote Robijn, de (OOOC)','Org','korte Sint-Annastraat 4','2000','Antwerpen','België','20',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2330,'ELIA','Org','Keizerslaan 20','1000','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2331,'Integrale jeugdhulp Crisisteam -18','Net','','','','België','20',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2332,'ZNA Psychiatrisch Ziekenhuis Stuivenberg','Net','Lange Beeldekensstraat 267 ','2060','Antwerpen','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2333,'Zorgbedrijf Antwerpen','Org','Lange Gasthuisstraat 39','2000','Antwerpen','België','11',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2334,'Denise Grésiac','Org','Koninklijkelaan 9','2600','Berchem','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2335,'DE WINNING','Org','TROISDORFLAAN 19','3600','GENK','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2336,'HEILIG HART BREE','Org','ST JACOBSSTRAAT 10','3960','BREE','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2337,'ST-AUGUSTINUS INSTITUUT BREE','Org','ST JACOBSSTRAAT 12','3960','BREE','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2339,'OCMW NEERPELT','Org','KERKSTRAAT 10','3910','NEERPELT','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2340,'VZW SEHER','Org','SPRINGSTRAAT 26','3530','HOUTHALEN-HELCHTEREN','België','25',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2341,'OCMW MEEUWEN-GRUITRODE','Org','','','MEEUWEN-GRUITRODE','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2342,'OCMW HAMONT-ACHEL','Org','','','ACHEL','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2343,'OCMW LOMMEL','Org','','','LOMMEL','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2344,'REGINA MUNDI GENK','Org','','','GENK','België','35',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2345,'Chiro Nationaal','Org','Kipdorp 30','2000','Antwerpen','België','87',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2346,'Stuurgroep Express Yourself','Net','','','','België','87',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2347,'Jeugddienst Kortenberg','Org','De Walsplein 30','3070','Kortenberg','België','87',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2348,'BJZ Leuven (LSD: laten we samen iets doen)','Net','','','','België','87',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2349,'vroeginterventie onderwijs Leuven','Net','','','','België','87',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2350,'KLJ','Org','Waversebaan 99','3050','Oud-Heverlee','België','87',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2351,'Jeugddienst Diest','Org','Cleynaertstraat 12','3290','Diest','België','87',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2352,'FOD','Org','','','','België','87',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2353,'De Meander','Org','','','','België','87',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2354,'De Spiegel','Org','Pellenbergstraat 160','','Kessel-Lo','België','85',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2355,'GTB','Org','','','','België','87',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2356,'CGG Vagga Antwerpen','Org','','','','België','87',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2357,'CGG Eclips Gent','Org','','','','België','87',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2358,'Centric Belgium','Org','Posthofbrug 12','2600','Berchem','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2359,'Toneelhuis','Org','Orgelstraat 7','2000','Antwerpen','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2360,'De Spiegel','Org','Pellenbergstraat 160','','Kessel-lo','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2361,'Gemeente Kraainem','Org','Arthur Dezangrélaan 17','1950','Kraainem','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2362,'Heuvelland','Net','Bergstraat 24','8950','Heuvelland','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2364,'Vleteren','Net','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2365,'t Rad','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2366,'Basiseducatie','Org','','','','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2367,'Kompas','Org','','','','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2368,'Logo Leieland','Org','beverlaai 3','','Kortrijk','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2369,'Hart voor West-Vlaanderen','Org','','','','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2370,'OCMW Lendelede','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2371,'KSA Noordzeegouw','Org','dwarsweg 1','8560','Gullegem','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2372,'Parket Ieper','Org','','','','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2373,'Dosko','Org','','','','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2374,'Internaat Zuid','Org','Zuidstraat ','8800','Roeselare','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2375,'Regionale welzijnsraad Ieper','Net','','','Ieper','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2376,'Diksmuide','Net','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2377,'Bond Moyson','Org','','','','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2378,'Vormingplus Waas-en-Dender','Org','Grote Baan 183','9120','Beveren-Melsele','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2379,'Ieper','Net','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2380,'Grenslandscholen','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2381,'Focus / WTV','Org','Kwadestraat 151 B','8800','Roeselare','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2382,'Gezinsbond Lendelede','Org','','','','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2383,'LOGO Midden-West-Vlaanderen','Org','','','','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2384,'CLB go Tielt','Org','statjonstraat 67 B1','8700','Tielt','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2386,'Stuff','Org','','','','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2387,'Studenten','Org','','','','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2388,'Vitalsounds','Org','','','Menen','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2389,'Centra voor Leerlingenbegeleiding Dendermonde','Net','','','','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2390,'CGG Noord West-Vlaanderen','Org','','','Oostende','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2391,'Don Bosco Groenveld','Org','Groenveldstraat 44','3001','Heverlee','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2392,'Centrum leren en werken Roeselare','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2393,'VTS','Org','Breedstraat 152','9100','Sint-Niklaas','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2394,'MSOC Sint-Niklaas','Org','Parkstraat 16','9100','Sint-Niklaas','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2395,'NV Chauffage Declercq','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2396,'Deceuninck','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2397,'NV Nerva','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2398,'Milcobel','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2399,'Turbo s Hoet Parts & Revisie NV','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2400,'plastivan NV','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2401,'Alivio NV','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2402,'Orbo Labels','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2403,'EUprevent','Net','','','','Ander land','123',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2404,'OCMW Menen','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2405,'Devos Plaatbewerking','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2406,'vzw Golfbreker Veurne','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2407,'AZ Sint Augustinus Veurne','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2408,'Huize Godtschalck','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2409,'COHEsie','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2410,'VTI Ieper','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2411,'vrij clb Ieper','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2412,'CLB Groeninge Kortrijk','Org','','','','België','82',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2413,'JAC Menen','Org','Koningstraat 32','8930','Menen','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2414,'DIVAM','Org','Poperingseweg 30','8900','Ieper','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2415,'West-Vlaamse Pleeggezinnendienst','Org','Burchtstraat 3','8900','Ieper','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2416,'De Ast Poperinge','Org','','','','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2417,'OOOC centrum de wijzer','Org','','','','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2418,'VTI Waregem','Org','','','','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2419,'CLB Ieper','Org','','','','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2420,'KA Ieper','Org','','','','België','81',22, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2421,'SOWEL','Org','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2422,'basisschool De Vlinder','Org','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2423,'t Spijker','Org','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2424,'stad Hoogstraten','Org','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2425,'Preventiewerker gezondheid','Org','Zuidstraat 17','8800','Roeselare','België','115',35, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2426,'LOGO Kempen','Org','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2427,'College Sint-Jozef Turnhout','Org','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2428,'Provincie West-Vlaanderen','Org','Boeverbos','8000','Brugge','België','115',35, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2429,'OCMW Vorselaar','Org','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2430,'VIBO De Brem','Org','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2431,'De fakkel','Org','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2432,'NOXX','Org','Kotterstraat 1','2030','Antwerpen','België','14',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2433,'Gemeente Wezembeek-Oppem','Org','Louis Marcelisstraat 134','1970','Wezembeek-Oppem','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2434,'Europese school Mol','Org','','','','België','91',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2435,'Humanistische Jongeren (HUJO)','Org','Zelfbestuursstraat 14','1070','Anderlecht','België','140',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2436,'CLBs Vlaams-Brabant','Net','','','','België','84',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2437,'Chiro','Org','Kipdorp 30','2000','Antwerpen','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2438,'Stuivenbergziekenhuis','Org','Lange Beeldekensstraat 267','2060','Antwerpen','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2439,'PIVA','Org','Desguinlei 244','2018','Antwerpen','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2440,'KSJ-KSA-VKSJ Nationaal','Org','Vooruitgangstraat 225','1030','Brussel','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2441,'Grens politiezone','Org','Kapellensteenweg 32','2920','Kalmthout','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2442,'FOD volksgezondheid','Org','Victor Hortaplein 40 bus 10','1060','Brussel','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2443,'Antwerpen studentenstad','Org','Sint-Jacobsmarkt 16','2000','Antwerpen','België','15',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2444,'JLG','Org','','','maasmechelen','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2445,'MAASEIK CHAMP','Org','','','MAASEIK','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2446,'GEMEENSCHAPSWACHTEN','Org','','','MAASEIK','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2447,'VDAB LANAKEN','Org','','','LANAKEN','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2448,'SCC','Org','','','HEVERLEE','België','34',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2449,'EHSAL','Org','','','Brussel','België','131',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2450,'Erwin Cuyx (Coördinator)','Org','Brusselsesteenweg 617','1731','Zellik','België','63',15, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2451,'DE SINGEL','Org','','3600','GENK','België','30',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2452,'SIBBO Tongeren','Org','corversstraat 33','3700','tongeren','België','39',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2453,'Agnetendal','Org','kloosterstraat 27','3990','peer','België','39',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2454,'Vlaamse Jeugdraad','Org','Arenbergstraat 1D','1000','Brussel','België','140',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2455,'Vereniging Vlaamse Jeugddiensten','Org','Ossenmarkt 3','2000','Antwerpen','België','140',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2456,'Gezin en Handicap','Org','Arthur Goemaerelei 66','2018','Antwerpen','België','140',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2457,'JEUGDDIENST TONGEREN','Org','schiervelstraat 17','3700','Tongeren','België','39',7, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2458,'Levanto','Org','Clara Snellingsstraat 27','2100','Deurne','België','17',4, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2459,'HAK Pajottenland','Net','','','','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2460,'OCMW Affligem','Org','Driesstraat 11','1790','Affligem','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2461,'OBC Espero','Org','Kloosterstraat 79','1745','Opwijk','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2462,'Transitcentrum Karikol','Org','Tervuursesteenweg 302','1820','Steenokkerzeel','België','7',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2463,'Organization_ONE1','Net','ADDRESS_ORG_ONE1','2560','Brussels','België','68',18, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2464,'FOD Justitie (als werkgever)','Org','Hallepoortlaan 5-8','1060','Brussel','België','137',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2465,'Otis','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2466,'OCMW Dessel','Org','','','Dessel','België','90',25, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2467,'AFS Vlaanderen','Org','','','','België','10',3, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2468,'Sint-NorbertusInstituut Duffel','Org','','','','België','94',26, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2469,'FMIV (festivalkoepel)','Net','Gent','','','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2470,'wg quality nights','Net','','','','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2471,'Pukkelpop','Org','','','','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2472,'wg fuifbuddys','Net','','','','België','132',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2473,'Kringwinkels Hageland vzw','Org','','','','België','87',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2474,'Wonen en Werken','Org','','','','België','87',23, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2475,'JOC Antigoon','Org','Margote 16b','9260','Wichelen','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2476,'Drugpreventiedienst Wetteren, Wichelen, Laarne','Org','Scheldedreef 52','9230','Wetteren','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2477,'Drugpreventiedienst Lokeren, Berlare, Zele','Org','Lepelstraat 4','9160','Lokeren','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2478,'Jeugddienst Lokeren','Org','Tweebruggenstraat 28','9160','Lokeren','België','55',10, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2479,'BMCDDA - WIV','Org','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2480,'iDA','Org','Vanderlindenstraat 15','1030','Brussel','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2481,'De Lijn','Org','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2482,'Australische MPs','Net','','','','België','139',42, 1)
-INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES (2483,'koepels CGG','Net','','','','België','139',42, 1)
 
-SET IDENTITY_INSERT  [test14].[dbo].[Organisaties] OFF
-GO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

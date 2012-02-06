@@ -39,7 +39,9 @@ public class PropsUtils {
 
 	public PropsUtils() throws Exception {
 		Properties props = new Properties();
-		File file = new File("app.config");
+    File test = new File(".");
+    String address = test.getAbsolutePath();
+		File file = new File("SQLScriptGenerator/app.config");
 		InputStream is = new FileInputStream(file);
 		props.load(is);
 		sectorsFile = props.getProperty("sectors_file");

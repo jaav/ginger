@@ -1,667 +1,699 @@
 
 
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1028,' ',1, 1,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1030,'Vlaamse Ardennen',1, 42,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1030,896);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1030,885);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1030,869);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1030,916);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1030,908);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1030,938);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1030,880);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1030,883);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1030,919);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1030,942);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1042,'Hageland',1, 42,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1042,325);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1042,314);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1042,334);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1042,321);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1048,'samenwerking EKASI',1, 2,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1048,988);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1048,997);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1048,1008);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1048,995);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1048,1006);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1048,1007);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1056,'Interlokale Vereniging West Meetjesland',1, 2,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1056,988);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1056,997);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1056,1008);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1061,'samenwerking Drugpunt',1, 2,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1061,988);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1061,997);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1061,1008);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1061,959);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1061,985);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1061,968);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1061,970);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1061,961);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1071,'samenwerking ELZA',1, 2,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1071,988);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1071,997);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1071,1008);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1071,1003);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1071,772);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1071,766);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1071,1005);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1080,'Meetjesland',1, 2,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1080,988);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1080,997);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1080,1008);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1080,995);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1080,1007);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1080,1006);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1080,1003);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1080,1005);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1080,998);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1080,999);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1092,'West-Limburg',1, 42,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1092,402);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1092,397);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1092,393);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1092,564);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1098,'AKM',1, 42,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1098,988);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1098,997);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1098,1008);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1103,'WELZIJNSREGIO NOORD-LIMBURG',1, 7,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1103,548);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1103,546);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1103,568);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1103,436);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1103,549);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1103,552);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1103,557);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1103,554);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1113,'JAC LOMMEL',1, 7,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1113,549);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1113,548);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1113,546);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1113,436);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1113,557);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1113,554);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1113,552);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1113,562);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1113,568);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1124,'REGIO NOORD-LIMBURG',1, 7,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1124,548);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1124,568);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1124,546);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1124,436);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1124,552);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1124,549);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1124,557);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1133,'WEST LIMBURG',1, 7,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1133,402);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1133,397);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1133,564);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1133,563);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1139,'maasland',1, 7,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1139,424);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1139,439);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1139,420);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1139,429);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1139,413);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1146,'KBVB WEST LIMBURG',1, 7,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1146,402);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1146,563);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1146,564);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1146,393);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1146,397);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1146,400);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1154,'KLM',1, 3,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1154,149);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1154,142);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1154,146);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1159,'DSZ',1, 11,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1159,325);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1159,321);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1163,'KASTZE',1, 3,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1163,153);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1163,138);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1163,159);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1168,'Maasland',1, 42,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1168,420);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1168,439);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1168,413);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1173,'Regionale welzijnscommissie Oostende',1, 42,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1173,602);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1173,615);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1173,611);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1173,605);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1173,607);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1173,606);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1173,618);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1182,'Klein Brabant',1, 26,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1182,266);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1182,262);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1182,269);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1187,'ROM',1, 26,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1187,247);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1187,222);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1187,182);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1187,257);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1193,'regio Leuven + Provincie + intergemeentelijke prev',1, 40,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1193,286);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1193,334);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1193,325);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1198,'regio drugpunt',1, 8,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1198,959);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1198,985);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1198,961);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1198,970);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1198,968);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1205,'Regio Lokeren-Berlare-Zele',1, 8,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1205,828);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1205,816);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1205,795);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1210,'Regio AKM',1, 8,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1210,988);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1210,997);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1210,1008);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1215,'Regio Rhode&Schelde',1, 8,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1215,774);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1215,967);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1215,768);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1220,'Regio Elza',1, 8,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1220,1003);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1220,1005);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1220,766);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1220,772);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1226,'regio EEKASI',1, 8,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1226,995);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1226,1006);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1226,1007);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1231,'Regio Wetteren_Laarne_Wichelen',1, 8,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1231,815);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1231,822);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1231,820);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1236,'Regio INDRA',1, 8,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1236,829);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1236,856);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1236,840);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1236,859);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1236,860);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1243,'Aalter Knesselare',1, 8,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1243,988);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1243,997);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1247,'RWO regio Sint Niklaas',1, 8,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1247,776);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1247,795);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1247,781);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1247,799);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1247,802);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1247,792);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1247,789);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1247,817);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1257,'Halle-Vilvoorde',1, 3,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1257,94);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1257,135);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1257,118);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1262,'Brussel-Halle-Vilvoorde',1, 3,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1262,2);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1262,94);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1262,135);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1262,118);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1268,'MIdden en Zuid- West-Vlaanderen',1, 22,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1268,624);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1268,720);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1272,'Ternat-Roosdaal-Asse-Affligem',1, 3,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1272,119);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1272,127);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1272,118);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1272,133);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1278,'Brussels Gewest',1, 42,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1278,2);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1278,8);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1278,5);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1278,16);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1278,13);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1278,18);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1278,4);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1278,19);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1278,9);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1289,'Intergemeentelijke samenwerking Zele-Berlare',1, 10,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1289,828);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1289,816);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1293,'Regio Waas en Dender',1, 10,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1295,'Intergmeentelijk St-Niklaas - Beveren',1, 10,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1295,781);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1295,776);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1299,'zorgregio VAGGA Ketsstraat',1, 4,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1299,160);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1299,273);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1299,281);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1299,208);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1299,243);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1299,172);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1299,170);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1299,279);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1299,276);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1299,271);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1311,'Regio Waasland',1, 10,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1313,'Vilvoorde en rand',1, 3,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1313,135);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1313,159);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1313,149);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1313,143);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1313,139);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1313,138);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1313,153);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1322,'Asse en rand',1, 3,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1322,118);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1322,129);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1322,114);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1322,133);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1322,119);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1329,'ECAT Sint-Niklaas & Dendermonde',1, 10,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1329,810);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1329,776);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1333,'RWR Ieper',1, 28,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1335,'Rhode en Schelde',1, 21,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1335,774);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1335,967);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1335,768);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1340,'Pajottenland',1, 3,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1340,100);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1340,96);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1340,111);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1340,123);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1346,'Faciliteitengemeenten (PW Haviland)',1, 3,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1346,129);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1346,156);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1346,157);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1346,104);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1346,105);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1353,'KASTZE',1, 19,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1353,159);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1353,153);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1353,138);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1358,'haviland',1, 15,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1358,104);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1358,105);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1358,156);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1358,157);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1358,129);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1365,'intergemeentelijke drugpreventie Gooik',1, 13,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1365,100);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1365,96);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1365,111);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1365,123);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1371,'groot leuven',1, 23,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1371,308);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1371,304);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1371,311);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1371,312);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1371,307);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1371,305);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1371,286);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1371,348);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1371,299);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1382,'hageland',1, 23,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1382,325);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1382,378);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1382,361);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1382,376);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1382,321);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1382,381);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1382,314);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1382,334);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1392,'Regio Mechelen',1, 26,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1392,247);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1395,'Regio Antwerpen/Mechelen',1, 26,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1397,'Regio Mechelen/Turnhout',1, 26,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1399,'BODUKAP',1, 26,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1399,249);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1399,234);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1399,258);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1399,236);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1405,'Rupel',1, 26,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1405,257);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1405,256);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1405,241);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1410,'Halle-Vilvoorde',1, 42,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1410,94);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1410,108);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1410,114);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1410,118);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1410,135);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1410,155);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1410,303);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1410,107);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1410,103);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1410,111);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1422,'Regio Oostende',1, 28,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1422,602);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1422,615);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1422,607);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1422,606);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1428,'politiezone spoorkin',1, 28,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1428,675);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1428,694);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1432,'kust',1, 28,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1432,607);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1432,574);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1432,602);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1432,606);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1432,684);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1432,605);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1432,596);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1432,687);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1432,663);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1443,'Interlokale vereniging drugpreventie Noord-Pajot',1, 43,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1443,118);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1443,133);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1443,127);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1443,119);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1449,'Interlokale vereniging drugpreventie Pajottenland',1, 43,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1449,100);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1449,96);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1449,123);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1449,111);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1455,'Interlokale vereniging drugpreventie Haacht-Bo-Kee',1, 43,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1455,311);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1455,312);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1455,308);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1460,'Interlokale vereniging drugpreventie Haviland',1, 43,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1460,129);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1460,156);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1460,157);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1460,104);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1460,105);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1467,'Interlokale vereniging drugpreventie KASTZE',1, 43,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1467,159);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1467,153);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1467,138);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1472,'Interlokale vereniging drugpreventie BRT',1, 43,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1472,307);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1472,304);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1472,305);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1477,'ACV Gent-Eeklo',1, 8,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1477,761);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1477,995);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1477,959);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1482,'Regionaal Overleg Drugs Mechelen',1, 32,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1482,247);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1482,257);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1482,222);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1482,182);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1488,'Aalter-Knesselare',1, 2,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1488,988);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1488,997);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1492,'Regionaal Overleg Mechelen 8/1/2009',1, 24,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1492,257);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1492,222);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1492,182);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1492,247);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1498,'CGG-regio Antwerpen - De Pont',1, 42,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1498,222);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1498,247);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1498,257);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1503,'Regionaal Overleg Drugpreventie 20/4/2009',1, 24,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1503,257);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1503,222);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1503,247);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1503,182);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1509,'Regionaal Overleg Drugpreventie 13/7/2009',1, 24,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1509,257);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1509,222);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1509,247);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1509,182);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1515,'Regionaal Overleg Drugpreventie 16/12/2009',1, 24,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1515,257);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1515,247);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1515,222);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1515,182);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1521,'Regio Brugge',1, 22,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1521,574);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1521,583);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1521,578);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1521,708);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1521,586);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1521,586);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1529,'RWR Veurne-Diksmuide',1, 28,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1529,675);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1529,656);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1529,660);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1529,690);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1529,682);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1529,694);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1529,663);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1529,687);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1529,684);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1540,'zorgregio Roeselare',1, 22,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1540,732);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1540,720);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1540,713);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1540,728);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1540,710);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1540,712);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1540,721);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1540,715);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1540,714);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1551,'Halle-Vilvoorde',1, 15,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1553,'Waasland',1, 42,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1553,776);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1556,'CGG-regio Middelpunt',1, 42,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1558,'CGG-regio VAGGA-Altox',1, 42,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1560,'CGG-regio Gent',1, 42,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1562,'CGG-regio Limburg',1, 42,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1564,'CGG-regio Asse-Vilvoorde',1, 42,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1566,'CGG-regio Leuven',1, 42,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1568,'CGG-regio Sint-Niklaas',1, 42,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1570,'CGG-regio Brussel',1, 42,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1572,'CGG-regio Turnhout',1, 42,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1574,'haacht',1, 23,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1574,308);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1574,311);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1574,312);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1579,'brt',1, 23,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1579,307);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1579,304);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1579,305);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1584,'haviland',1, 23,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1584,156);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1584,157);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1584,105);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1584,104);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1584,129);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1591,'kastze',1, 23,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1591,153);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1591,138);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1591,159);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1596,'pajottenland',1, 23,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1596,100);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1596,96);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1596,123);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1596,111);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1602,'tarl',1, 23,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1602,127);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1602,119);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1602,133);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1602,118);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1608,'Drugpunt-regio',1, 9,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1608,959);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1608,985);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1608,970);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1608,968);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1608,961);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1615,'Regio Turnhout',1, 25,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1615,203);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1615,196);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1615,217);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1615,205);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1621,'Regio Geel',1, 25,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1621,213);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1621,192);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1621,188);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1621,212);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1621,214);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1628,'Regio Mol',1, 25,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1628,220);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1628,209);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1628,218);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1628,219);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1634,'Regio Herentals',1, 25,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1634,180);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1634,193);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1634,194);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1639,'Regio Beerse',1, 25,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1639,201);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1639,195);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1643,'Regio Hoogstraten',1, 25,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1643,198);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1643,199);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1643,197);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1648,'Regio Herselt',1, 25,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1648,184);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1651,'Kempen',1, 25,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1651,196);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1651,213);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1651,209);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1651,180);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1651,184);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1651,198);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1651,204);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1651,201);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1661,'Regio Dendermonde',1, 8,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1661,810);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1661,825);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1661,812);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1661,817);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1667,'JES',1, 33,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1667,2);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1667,761);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1667,160);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1672,'Halle en rand',1, 3,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1672,94);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1672,108);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1672,107);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1677,'Brussel-Halle',1, 33,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1677,94);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1677,135);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1677,143);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1677,2);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1683,'Pajottenland',1, 34,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1683,94);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1683,108);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1687,'Zorgregio Kortrijk',1, 22,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1687,624);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1687,629);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1687,716);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1687,630);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1687,729);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1687,631);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1695,'Politiezone WOKRA',1, 15,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1695,156);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1695,157);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1699,'Regio Aalst',1, 10,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1701,'Regio Dendermonde',1, 10,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1703,'Kempen',1, 12,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1703,213);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1703,209);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1703,180);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1703,196);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1709,'Regio LOGO Waasland',1, 10,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1711,'ALLeRT',1, 3,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1711,133);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1711,128);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1711,123);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1711,127);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1711,119);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1718,'Faciliteitengemeenten',1, 15,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1718,104);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1718,105);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1718,156);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1718,129);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1718,157);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1725,'Politiezone Rode',1, 15,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1725,107);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1725,105);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1725,104);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1730,'TARL',1, 3,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1730,119);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1730,133);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1730,127);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1730,128);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1736,'Voorkempen',1, 4,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1736,279);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1736,285);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1740,'Logo regio dender',1, 10,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1742,'logo regio gezond plus',1, 10,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1744,'Politiezone ARRO Ieper',1, 22,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1744,741);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1744,752);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1744,745);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1744,737);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1744,755);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1744,727);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1744,679);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1744,750);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1744,760);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1755,'regio leieland',1, 22,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1755,639);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1755,705);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1755,631);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1755,630);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1755,624);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1755,629);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1755,748);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1755,716);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1755,750);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1766,'gerechtelijk arrondisement Ieper',1, 22,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1766,741);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1766,750);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1766,752);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1766,755);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1766,675);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1766,656);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1766,682);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1766,687);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1766,663);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1777,'regio welzijnsraad Ieper',1, 22,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1777,741);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1777,752);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1777,750);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1777,755);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1777,679);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1777,745);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1777,760);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1786,'regio logo midden-west-vlaanderen',1, 22,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1786,728);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1786,656);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1786,752);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1786,682);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1786,724);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1786,741);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1786,714);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1786,732);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1786,660);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1786,729);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1798,'Regio CLB GO Tielt',1, 22,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1798,698);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1798,716);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1798,959);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1798,995);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1798,970);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1805,'Regio LOP Hamme',1, 10,1);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1807,'Centrumsteden',1, 35,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1807,720);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1807,574);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1807,624);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1807,602);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1813,'MSOC',1, 35,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1813,720);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1813,602);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1813,624);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1818,'CLUSTER_ONE1',1, 18,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1818,242);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1818,401);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1818,574);
-INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES (1823,'Politiezone AMOW',1, 15,1);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1823,118);
-INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES (1823,129);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

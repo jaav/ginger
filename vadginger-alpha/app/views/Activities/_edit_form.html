@@ -5,9 +5,7 @@
 <div class="row">
   <div class="label">Omschrijving van de activiteit:</div>
   <div class="field">
-
-    <input type="text" name="entity.beschrijving" value="${entity?.beschrijving}" size="80"/>
-
+    <input type="text" name="entity.beschrijving" value="${entity?.beschrijving}" size="80" title="Omschrijving"  id="Omschrijving"/>
   </div>
   <span class="error">${errors.forKey('entity.beschrijving')}</span>
 </div>
@@ -16,7 +14,7 @@
   <div class="label">Organisatie</div>
   <div class="field">
 
-    <select name="organization" id="organizationSelect">
+    <select name="organization" id="organizationSelect"  title="Organisatie"  id="Organisatie">
 
       <option value="">Selecteer een organisatie</option>
      #{if userRole.compareTo(models.RoleType.ORG_ADMIN) > 0 }
@@ -60,7 +58,7 @@
   #{if entity.organizationId!=null&&entity.organizationId.ouder!=null }
   <div class="label">Sub-organisatie</div>
   <div class="field">
-  <select name="sub_org_id" id="subOrganizationSelect" multiple size="4">
+  <select name="sub_org_id" id="subOrganizationSelect" multiple size="5">
 
    <option value="" >None</option>
     %{ models.Organisaties.find("isActive=1 and ouder is " + entity.organizationId.ouder.id).fetch().sort{ it.toString() }.each() { }%
@@ -114,7 +112,7 @@
   <div class="label">Op welke dag vond de activiteit plaats?</div>
   <div class="field">
 
-    <input type="text" name="activity_date" value="${entity?.activityDate?.format('dd/MM/yyyy', 'nl')}" id="datepicker"/>
+    <input type="text" name="activity_date" value="${entity?.activityDate?.format('dd/MM/yyyy', 'nl')}" id="datepicker" title="Datum"  id="Datum"/>
     <script>
       $("#datepicker").datepicker({ appendText: '(dd/mm/yyyy)', dateFormat: 'dd/mm/yy', monthNames: ['Januari', 'Februari', 'Maart', 'April', 'Mei', 'Juni', 'Juli', 'Augustus', 'September', 'Oktober', 'November', 'December']});
     </script>
@@ -125,7 +123,7 @@
   <div class="label">Hoe lang duurde de activiteit (in minuten)?</div>
   <div class="field">
 
-    <input type="text" name="entity.duur" value="${entity?.duur}"/>
+    <input type="text" name="entity.duur" value="${entity?.duur}" title="Duur" id="Duur"/>
 
   </div>
   <span class="error">${errors.forKey('entity.duur')}</span>
@@ -136,7 +134,7 @@
   <div class="label">Welke sector(en) en detailsector(en) waren aanwezig op de activiteit?
     <div class="label">Sector:</div>
   </div>
-  <div class="field">
+  <div class="field" id="Sector">
 
 
     %{ models.Sectors.find("ouder is null and isActive=1").fetch().sort{ it.id }.each() { }%
@@ -145,39 +143,45 @@
     selected=false
     subSecId = []
     for(models.SectorActivityJunction sac: entity.sectorActivityJunctions) {
-		if (sac.sectorId!=null && sac.sectorId.ouder!=null) {
-			if (sac.sectorId.ouder.id==it.id) {
+      if (sac.sectorId!=null && sac.sectorId.ouder!=null) {
+        if (sac.sectorId.ouder.id==it.id) {
 			selected=true
-			secOuder = it.id
-			subSecId.add(sac.sectorId.id)
-			}
-		} else if (sac.sectorId!=null && sac.sectorId.id==it.id) {
+        secOuder = it.id
+        subSecId.add(sac.sectorId.id)
+        }
+      } else if (sac.sectorId!=null && sac.sectorId.id==it.id) {
 		selected=true
-		secOuder = it.id
-		}
+        secOuder = it.id
+      }
     }
 
     }%
 
 
-    <input id="${it?.id}" name="sector_${it?.id}" type="checkbox" class="chkbx" ${selected ? 'checked'.raw() : ''}>
+    <input id="${it?.id}" name="sector_${it?.id}" type="checkbox" class="chkbx" title="Sector" ${selected ? 'checked' : ''}>
     <label class="choice" for="sector_${it?.id}">${it?.naam}</label>
+    <input type="hidden" value="" title="Sector" id="hs_${it?.id}"/>
     <span class="field" id="${it?.id}cont">
     #{if selected}
+    %{
+       List secs = controllers.Sectorss.getOrderedSubSectorList(secOuder);
+       if(!secs.isEmpty()){
+    }%
     <div class="label">Detailsector</div>
     <div class="field">
-    <select name="sub_sector_${secOuder}" id="subSectorSelect" multiple size="4">
-     %{ models.Sectors.find("isActive=1 and ouder is " + secOuder).fetch().sort{ it.toString() }.each() { }%
+    <select name="sub_sector_${secOuder}" class="subSectorSelect" multiple size="5">
 
           %{
-            checked=false
-            if (it.id in subSecId) {
-              checked = true
-            }
+            secs.each(){
+              checked=false
+              if (it.id in subSecId) {
+                checked = true
+              }
           }%
           <option value="${it?.id}" ${checked ? 'selected'.raw() : ''}>${it}</option>
         %{ } }%
      </select></div>
+        %{ } }%
     #{/if}
     </span><br>
     <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
@@ -242,7 +246,7 @@
 <div class="row">
   <div class="label">Tot welk locatieniveau richt de activiteit zich?</div>
   <div class="field">
-    <select name="location" id="locationSelect">
+    <select name="location" id="locationSelect" title="Locatie">
       <option value="">Selecteer een locatieniveau</option>
       %{ models.Locations.find("ouder is null and isCluster = 0 and isActive=1").fetch().sort{ it.id }.each() { }%
       %{
@@ -330,10 +334,10 @@
   }
   }%
 
-  <input id="${it?.id}" name="attendant_type" type="radio" class="rdbx" value="${it?.id}" ${checked}>${it}&nbsp;&nbsp;&nbsp;
+  <input id="${it?.id}" name="attendant_type" type="radio" class="rdbx" value="${it?.id}" ${checked} title="Doelgroep">${it}&nbsp;&nbsp;&nbsp;
   <!-- <span class="field" id="${it?.id}cont"></span><br> -->
   <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
-  %{ } }%
+  %{ } }%<input type="hidden" id="attendant_type_h" title="Doelgroep" />
   <div class="field" id="atd_type"></div>
   %{
   if (entity?.id) {
@@ -369,24 +373,29 @@
 <hr>
 
 <div class="row">
+  %{
+      List<Long> acTypeSubIds = new ArrayList<Long>();
+  %}
   <div class="label">Over welke soort activiteit gaat het?</div>
   <div class="field">
-    <select name="activity_type" id="activity_type_select">
+    <select name="activity_type" id="activity_type_select" title="Soort activiteit">
       <option value="">Selecteer de soort activiteit</option>
-      %{ models.ActivityType.find("ouder is null and isActive=1").fetch().sort{ it.toString() }.each() { }%
+      %{ models.ActivityType.find("ouder is null and isActive=1 order by id").fetch().each() { }%
       %{
       selected = false;
       for(models.ActivityTypeJunction atj: entity.activityTypeJunctions) {
       	 if (atj.activityTypeId!=null && atj.activityTypeId.ouder!=null) {
-      	 if (atj.activityTypeId.ouder.id == it.id) {
-      	 	selected=true
-      	 	acTypeOuder= it.id
-      	 	acTypeSubId = atj.activityTypeId.id
-      	 } else {
-
-      	 if (atj.activityTypeId.id==it.id)
-      	 	selected = true
-      }}}
+           if (atj.activityTypeId.ouder.id == it.id) {
+            selected=true
+            acTypeOuder= it.id
+            acTypeSubIds.add(atj.activityTypeId.id);
+           }
+         }
+         else {
+          if (atj.activityTypeId.id==it.id)
+          selected = true
+         }
+      }
 
       }%
       <option value="${it?.id}"
@@ -399,12 +408,11 @@
    	#{if acTypeOuder!=null}
    	<div class="label">Detailsoort</div>
    	<div class="field">
-   	<select name="sub_activity_type" id="subActivityTypeSelect" multiple size="4">
-   	  <option value="">(None)</option>
+   	<select name="sub_activity_type" id="subActivityTypeSelect" multiple size="5">
       %{ models.ActivityType.find("ouder is "+ acTypeOuder+" and isActive=1").fetch().sort{ it.toString() }.each() { }%
       %{
      	 selected=false
-      	 if (it.id==acTypeSubId){
+      	 if (acTypeSubIds.contains(it.id)){
       		selected=true
       		}
           }%
@@ -524,3 +532,69 @@
     <span class="error">${errors.forKey('entity.defForm')}</span>
   </div>
 </div>
+<script type="text/javascript">
+    $("form").submit(function(ev){
+      $("label.error").remove();
+      $("form").validity(function() {
+        var test = ev;
+        test = $("input[name='entity.beschrijving']");
+        $("input[name='entity.beschrijving']").require();
+        $("input[name='activity_date']").require();
+        $("input[name='entity.duur']").require().match('integer', "De duur moet een positief geheel getal zijn");
+        $("#organizationSelect").require();
+        $("#locationSelect").require();
+        $("#activity_type_select").require();
+        if($("#subActivityTypeSelect").length){
+          $("#activity_type_select").assert(
+            ($("#subActivityTypeSelect").val()),
+                "Gelieve minstens één detail soort aan te duiden"
+            );
+        }
+        $("#attendant_type_h").assert(
+          $("input[name='attendant_type']:checked").length != 0,
+              "Gelieve minstens één doelgroep aan te vinken"
+          );
+
+        if ($("#Sector input:checked").length == 0)
+            $("#Sector input:hidden:first").require("Gelieve minstens één sector aan te vinken");
+        $(".subSectorSelect").each(function(index, elem){
+          if($(elem).val()==undefined){
+            var sectorId = elem.name.substring(11);
+            $("#hs_"+sectorId).require("Gelieve minstens één detail sector aan te duiden");
+          }
+        });
+        if ($("#atd_type input:checked").length == 0)
+            $("#atd_type input:hidden:first").require("Gelieve minstens één type aanwezigen van deze doelgroep aan te vinken");
+        if($("#TheItem").length){
+          if ($("#TheItem input:checked").length == 0) {
+              $("#TheItem input:hidden:first").require("Gelieve minstens één item aan te vinken");
+          }
+        }
+        if ($("#Materiaal input:checked").length == 0) {
+            $("#Materiaal input:hidden:first").require("Gelieve minstens één gebruikt materiaal aan te vinken");
+        }
+        if ($("#evaluvated").css("display")!='none' && $("#evaluvated input[type='checkbox']:checked").length == 0){
+            $("#evaluvated #eval_type_h").require("Gelieve aan te duiden hoe de activiteit werd geëvalueerd");
+        }
+        if ($("#evaluvated").css("display")!='none' && $("#evaluvated input[name='evaluvators'][type='radio']:checked").length == 0){
+            $("#evaluvated #eval_who_h").require("Gelieve aan te duiden door wie de activiteit werd geëvalueerd");
+        }
+        var participants = $("#atd_type input[name='entity.totalParticipants']");
+        if(participants.length){
+          try{
+          participants.require().match('integer', "Het aantal deelnemers moet een positief geheel getal zijn");
+          }catch(err){
+            var e = err;
+            alert(e.message);
+          }
+        }
+
+        var validationerrors = $("label.error");
+        if($("label.error").length){
+          var top = validationerrors.first().offset().top;
+          $(window).scrollTop(top-50);
+          ev.preventDefault();
+        }
+      }());
+    });
+</script>

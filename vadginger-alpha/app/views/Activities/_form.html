@@ -5,7 +5,6 @@
 <div class="row">
   <div class="label">Omschrijving van de activiteit:</div>
   <div class="field">
-
     <input type="text" name="entity.beschrijving" value="${entity?.beschrijving}" size="80" title="Omschrijving"  id="Omschrijving"/>
 
   </div>
@@ -249,7 +248,7 @@
   <input id="${it?.id}" name="attendant_type" type="radio" class="rdbx" value="${it?.id}" ${checked} title="Doelgroep">${it}&nbsp;&nbsp;&nbsp;
   <!-- <span class="field" id="${it?.id}cont"></span><br> -->
   <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
-  %{ } }%
+  %{ } }%<input type="hidden" id="attendant_type_h" title="Doelgroep" />
   <div class="field" id="atd_type"></div>
   %{
   if (entity?.id) {
@@ -289,7 +288,7 @@
   <div class="field">
     <select name="activity_type" id="activity_type_select" title="Soort activiteit">
       <option value="">Selecteer de soort activiteit</option>
-      %{ models.ActivityType.find("ouder is null and isActive=1").fetch().sort{ it.id }.each() { }%
+      %{ models.ActivityType.find("ouder is null and isActive=1 order by id").fetch().each() { }%
       %{
       selected = false;
       if (entity?.userId?.id == it.id) {
@@ -421,26 +420,70 @@
   })();
 </script>
 <script type="text/javascript">
-    // Select all of the forms on the page (in this case the only one)
-    // and call 'validity' on the result.
-    $(function() {
-        $("form").validity(function() {
-          $("input[type=text]").require();
-          $("#organizationSelect").require();
-          $("#locationSelect").require();
-          $("#activity_type_select").require();
+    $("form").submit(function(ev){
+      $("label.error").remove();
+      $("form").validity(function() {
+        var test = ev;
+        test = $("input[name='attendant_type']");
+        $("input[name='entity.beschrijving']").require();
+        $("input[name='activity_date']").require();
+        $("input[name='entity.duur']").require().match('integer', "De duur moet een positief geheel getal zijn");
+        $("#organizationSelect").require();
+        $("#locationSelect").require();
+        $("#activity_type_select").require();
+        if($("#subActivityTypeSelect").length){
+          $("#activity_type_select").assert(
+            ($("#subActivityTypeSelect").val()),
+                "Gelieve minstens één detail soort aan te duiden"
+            );
+        }
 
-          if ($("#Sector input:checked").length == 0) {
-              $("#Sector input:hidden:first").require("Gelieve minstens één sector aan te vinken");
-          }
-          if($("#TheItem").length){
-            if ($("#TheItem input:checked").length == 0) {
-                $("#TheItem input:hidden:first").require("Gelieve minstens één item aan te vinken");
-            }
-          }
-          if ($("#Materiaal input:checked").length == 0) {
-              $("#Materiaal input:hidden:first").require("Gelieve minstens één gebruikt materiaal aan te vinken");
+
+        $("#attendant_type_h").assert(
+          $("input[name='attendant_type']:checked").length != 0,
+              "Gelieve minstens één doelgroep aan te vinken"
+          );
+
+        if ($("#Sector input:checked").length == 0)
+            $("#Sector input:hidden:first").require("Gelieve minstens één sector aan te vinken");
+        $(".subSectorSelect").each(function(index, elem){
+          if($(elem).val()==undefined){
+            var sectorId = elem.name.substring(11);
+            $("#hs_"+sectorId).require("Gelieve minstens één detail sector aan te duiden");
           }
         });
+        if ($("#atd_type input:checked").length == 0)
+            $("#atd_type input:hidden:first").require("Gelieve minstens één type aanwezigen van deze doelgroep aan te vinken");
+        if($("#TheItem").length){
+          if ($("#TheItem input:checked").length == 0) {
+              $("#TheItem input:hidden:first").require("Gelieve minstens één item aan te vinken");
+          }
+        }
+        if ($("#evaluvated").css("display")!='none' && $("#evaluvated input[type='checkbox']:checked").length == 0){
+            $("#evaluvated #eval_type_h").require("Gelieve aan te duiden hoe de activiteit werd geëvalueerd");
+        }
+        if ($("#evaluvated").css("display")!='none' && $("#evaluvated input[name='evaluvators'][type='radio']:checked").length == 0){
+            $("#evaluvated #eval_who_h").require("Gelieve aan te duiden door wie de activiteit werd geëvalueerd");
+        }
+
+        if ($("#Materiaal input:checked").length == 0)
+            $("#Materiaal input:hidden:first").require("Gelieve minstens één gebruikt materiaal aan te vinken");
+        var participants = $("#atd_type input[name='entity.totalParticipants']");
+        if(participants.length){
+          try{
+          participants.require().match('integer', "Het aantal deelnemers moet een positief geheel getal zijn");
+          }catch(err){
+            var e = err;
+            alert(e.message);
+          }
+        }
+
+        var validationerrors = $("label.error");
+        if($("label.error").length){
+          var top = validationerrors.first().offset().top;
+          $(window).scrollTop(top-50);
+          ev.preventDefault();
+        }
+      }());
     });
 </script>

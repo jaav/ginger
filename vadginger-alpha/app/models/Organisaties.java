@@ -80,4 +80,11 @@ public class Organisaties extends Model {
       return ouder.naam + " (" + naam + ")";
 		return naam;
 	}
+
+  public static String toString(Long id){
+    if(id==null) return "" ;
+    Organisaties org = Organisaties.findById(id);
+    if(org!=null) return org.naam;
+    else return "";
+  }
 }

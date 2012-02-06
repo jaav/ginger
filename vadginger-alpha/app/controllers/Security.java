@@ -27,9 +27,9 @@ public class Security extends Secure.Security {
       return false;
     }
     //String passwordHash = md5(password);
-    String passwordHash = play.libs.Codec.encodeBASE64(Security.md5(password));
-    Logger.debug("***********************Passwordhash = %s",passwordHash);
-    boolean match = user != null && user.passwordHash.equals(passwordHash);
+    //String passwordHash = play.libs.Codec.encodeBASE64(Security.md5(password));
+    //Logger.debug("***********************Passwordhash = %s",passwordHash);
+    boolean match = user != null && user.passwordHash.equals(password);
     if (match) {
       session.put("userId", user.id);
       if (user.centrumId!=null) {
@@ -41,7 +41,7 @@ public class Security extends Secure.Security {
     return match;
   }
 
-  public static String md5(String password) {
+  /*public static String md5(String password) {
     byte[] bytesOfMessage = password.getBytes();
     MessageDigest md;
     try {
@@ -53,7 +53,7 @@ public class Security extends Secure.Security {
     byte[] thedigest = md.digest(bytesOfMessage);
     String passwordHash = new String(thedigest);
     return play.libs.Codec.encodeBASE64(passwordHash);
-  }
+  }*/
 
   static boolean check(String profile) {
     VadGingerUser user = VadGingerUser.find("byUserID", connected()).first();

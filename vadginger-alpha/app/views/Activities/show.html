@@ -50,12 +50,12 @@
 			Ge&euml;valueerd:
 		</span>
 		<span class="value">
-      ${entity.evaluvated}
+      ${entity.evaluvated ? "Ja" : "Neen"}
 		#{if entity.evaluvated}
       <ul>
 			#{list items:aes, as:'ae'}
-			<li><span class="value"$>Type evaluatie: </span>${ae.evalTypeId}
-			<BR><span class="value"$>Evaluvators: </span>${ae.evaluvatorsId}</li>
+			<li><span class="value">Type evaluatie: </span>${ae.evalTypeId}
+			<BR><span class="value">Evaluvators: </span>${ae.evaluvatorsId}</li>
 			#{/list}
       </ul>
 		#{/if}
@@ -67,7 +67,7 @@
 			Standaardevaluatieformulier:
 		</span>
 		<span class="value">
-      ${entity.defForm}
+      ${entity.defForm ? "Ja" : "Neen"}
 		</span>
 
 	</div>
@@ -78,12 +78,11 @@
 		</span>
 		<span class="value">
 		<ul>
+    #{list items:iia, as:'ia'}
 		<li>
-     		#{list items:iia, as:'ia'}
 			<span class="value">${ia.itemId} </span>
-			
-			#{/list}
 		</li>
+		#{/list}
 		</ul>
 		</span>
 	</div>
@@ -94,12 +93,11 @@
 		</span>
 		<span class="value">
 		<ul>
+    #{list items:mia, as:'ia'}
 		<li>
-     		#{list items:mia, as:'ia'}
 			<span class="value">${ia.materialId} </span>
-			
-			#{/list}
 		</li>
+		#{/list}
 		</ul>
 		</span>
 	</div>
@@ -110,16 +108,19 @@
 		</span>
 		<span class="value">
 		<ul>
-		<li>
-     		#{list items:asc, as:'ia'}
+      #{list items:sajs, as:'ia'}
+		  <li>
      		#{if ia.sectorId.ouder!=null}
      		<span class="value">${ia.sectorId.ouder} </span>
-     		#{/if}
      		<ul><li>
-			<span class="value">${ia.sectorId} </span>
-			</li></ul>
+          <span class="value">${ia.sectorId} </span>
+        </li></ul>
+        #{/if}
+        #{else}
+            <span class="value">${ia.sectorId} </span>
+        #{/else}
+		  </li>
 			#{/list}
-		</li>
 		</ul>
 		</span>
 	</div>
@@ -150,7 +151,7 @@
 			Interne Activiteit:
 		</span>
 		<span class="value">
-      ${entity.internalActivity}
+      ${entity.internalActivity ? "Ja" : "Neen"}
 		</span>
 		
 	</div>

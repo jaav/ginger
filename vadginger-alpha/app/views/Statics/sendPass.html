@@ -1,0 +1,15 @@
+#{extends 'main.html' /}
+
+<h2>Gebruikersnaam/Paswoord vergeten?</h2>
+
+#{if status=='OK'}
+<div>Je aanvraag werd met succes verwerkt.<br />Je ontvangt zo dadelijk een mail met daarin je paswoord op het door jou geregistreerde email addres.</div>
+#{/if}
+#{else}
+<div>
+  De door jou opgegeven gebruikersnaam is bij ons niet bekend.<br />
+  Gelieve nog eens te proberen met een andere gebruikersnaam. Indien u uw gebruikersnaam bent vergeten, gelieve dan contact op te nemen met Johan Rosiers:<br />
+  Tel: +32 (0)2 423 03 58<br />
+  Mail: johan.rosiers@vad.be
+</div>
+#{/else}

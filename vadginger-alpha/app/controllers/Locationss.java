@@ -84,7 +84,7 @@ public class Locationss extends GingerController {
 
   public static void createCluster(Locations entity) {
     setAccordionTab(3);
-    String query = "ouder_id = 1 and isActive = 1";
+    String query = "ouder_id = 1 and isActive = 1 order by naam";
     renderArgs.put("locations", models.Locations.find(query).fetch());
     render("Locationss/cluster_create.html", entity);
 
@@ -214,7 +214,15 @@ public class Locationss extends GingerController {
     index();
   }
 
-  public static void list(String id) {
+  public static void list(String id, boolean filter){
+    doList(id, filter);
+  }
+
+  public static void list(String id){
+    doList(id, false);
+  }
+
+  public static void doList(String id, boolean filter) {
     models.Locations org1 = models.Locations.find("id is " + id).first();
     String query = "ouder is " + id + " and isActive=1";
     models.VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
@@ -233,6 +241,7 @@ public class Locationss extends GingerController {
       htmlData.append("<div class=\"label\">Sub-locatie</div>");
       htmlData.append("<div class=\"field\">");
       htmlData.append("<select name=\"entity.locationId.id\" id=\"subLocationSelect\">\n");
+      if(filter) htmlData.append(" <option value=\"-1\">GEEN SPECIFIEKE SUBLOCATIE</option>\n");
       for (models.Locations loc : locs) {
         htmlData.append(" <option value=\"" + loc.id + "\" >" + loc.naam + "</option>\n");
 

@@ -1,0 +1,20 @@
+#{extends 'main.html' /}
+
+<h2>Paswoord vergeten?</h2>
+
+<div style="margin-bottom: 20px;">Gelieve je gebruikersnaam hier in te geven.<br />Je ontvangt dan onmiddellijk een mail met daarin je paswoord op het door jou geregistreerde email addres.</div>
+
+<div class="form">
+
+#{form @Statics.sendPass(gebruikersnaam), id:'sendPass'}
+ <div class="row">
+  <div class="label">Je gebruikersnaam:</div>
+  <div class="field">
+      <input type="text" name="gebruikersnaam" id="gebruikersnaam" />
+  </div>
+  </div>
+
+	<button class="submit ui-corner-all submitbutton"">Versturen</button>
+  <button class="submit ui-corner-all" onclick="history.back();return false;">Terug</button>
+#{/form}
+</div>

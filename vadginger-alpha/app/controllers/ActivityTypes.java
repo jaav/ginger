@@ -75,7 +75,7 @@ public class ActivityTypes extends GingerController {
 			if (actTyps.size()>0){
 			 htmlData.append("<div class=\"label\">Detailsoort</div>");
 		      htmlData.append("<div class=\"field\">");
-		      htmlData.append("<select name=\"sub_activity_type\" id=\"subActivityTypeSelect\"  multiple size=\"4\">\n");
+		      htmlData.append("<select name=\"sub_activity_type\" id=\"subActivityTypeSelect\"  multiple size=\""+actTyps.size()+"\">\n");
 		      for (models.ActivityType org: actTyps) {
 		        htmlData.append(" <option value=\""+org.id+"\" >"+org.naam+"</option>\n");
 

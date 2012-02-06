@@ -151,6 +151,7 @@ public class AttendantTypes extends GingerController {
       if(attendants!=null && attendants.contains(atd.id)) checked = "checked";
 			htmlData.append("<input id=\""+atd.getId()+"\" name=\"atd_typ_"+ atd.getId()+"\" type=\"checkbox\" "+checked+">");
 			htmlData.append("<label class =\"choice\" for=\"atd_typ_"+ atd.getId()+"\">"+ atd.naam+"</label>");
+      htmlData.append("<input type=\"hidden\" value=\"\" title=\"Aanwezigen\" id=\"ha_"+ atd.getId()+"\"/>");
 			htmlData.append("<span class=\"field\" id=\"atd_typ_"+ atd.getId()+"\"></span><br>");
 					
 		}
@@ -177,7 +178,7 @@ public class AttendantTypes extends GingerController {
 		htmlData.append("<div class=\"row\">");
 		htmlData.append("<div class=\"label\">Totaal aantal aanwezigen</div>");
 		htmlData.append("<div class=\"field\">");
-		htmlData.append("<input type=\"text\" name=\"entity.totalParticipants\" value=\""+s_amount+"\"/>");
+		htmlData.append("<input type=\"text\" name=\"entity.totalParticipants\" value=\""+s_amount+"\" title=\"Aantal aanwezigen\" id=\"Aantal_Aanwezigen\"/>");
 		htmlData.append("</div>");
 		//htmlData.append("<span class=\"error\">${errors.forKey('entity.totalParticipants')}</span>");
 		htmlData.append("</div><BR><BR>");

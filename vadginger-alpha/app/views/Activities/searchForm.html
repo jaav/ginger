@@ -11,12 +11,71 @@
 #{form @Activities.search()}
 
 <!--  form begins here -->
+#{if userRole.compareTo(models.RoleType.SUPER_ADMIN) == 0}
+
+  <div class="row">
+  <div class="label">Centra en Gebruikers:</div>
+  <div class="field">
+    <select name="centrum" id="centrumselector">
+           <option value="">Selecteer een centrum</option>
+        %{ models.Centrums.find("isActive=1").fetch().sort{ it.naam }.each() { }%
+           <option value="${it?.id}">${it.naam}</option>
+        %{ } }%
+    </select><br />
+    <select name="gebruiker" id="gebruikerselector">
+           <option value="">Selecteer eerst een centrum</option>
+    </select>
+  </div>
+  </div>
+  <hr />
+  <script type="text/javascript">
+    $(function() {
+     $("#centrumselector").change(function(ev){
+       $("#gebruikerselector").empty();
+        var selectedCentrum = $(this).val();
+        var listUsers = #{jsAction @VadGingerUsers.list(':id')/}
+          $("#gebruikerselector").load(listUsers({id: selectedCentrum}), function() {
+        });
+     });
+    });
+  </script>
+#{/if}
+
+#{elseif userRole.compareTo(models.RoleType.ORG_ADMIN) == 0}
+
+  <div class="row">
+  <div class="label">Gebruikers:</div>
+  <div class="field">
+    <select name="gebruiker" id="gebruikerselector">
+           <option value="">Selecteer een gebruiker</option>
+        %{ models.VadGingerUser.find("centrumId = "+centrumId.id+" and isActive=1").fetch().sort{ it.userID }.each() { }%
+           <option value="${it?.id}">${it.userID}</option>
+        %{ } }%
+    </select>
+  </div>
+  </div>
+  <hr />
+  <script type="text/javascript">
+    $(function() {
+     $("#centrumselector").change(function(ev){
+       $("#gebruikerselector").empty();
+        var selectedCentrum = $(this).val();
+        var listUsers = #{jsAction @VadGingerUsers.list(':id')/}
+          $("#gebruikerselector").load(listUsers({id: selectedCentrum}), function() {
+        });
+     });
+    });
+  </script>
+#{/elseif}
 
 
  <div class="row">
-  <!-- <div class="label">Internal Activity</div> -->
+  <div class="label">Interne activiteit?</div>
   <div class="field">
-    <input name="internal_activity" type="checkbox" class="check_box" value="1">&nbsp;Interne activiteit
+      <input type="radio" name="internal_activity" value="yes"/> Ja&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="internal_activity" value="no" checked /> Neen&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="internal_activity" value="both" /> Zowel interne als niet-interne activiteiten
+
          
   </div>
   <span class="error">${errors.forKey('entity.internalActivity')}</span>
@@ -56,6 +115,19 @@
         </select>
   </div>
 
+  <div class="field" id="hiddenOrg"></div>
+
+  <script>
+    $("#organizationSelect").change(
+      function() {
+        $("#hiddenOrg").empty();
+        var selectedOrganization = $("#organizationSelect option:selected").val();
+        var listLocations = "/suborganizations/list?id="+selectedOrganization+"&centrumId=${centrumId.id}";
+          $("#hiddenOrg").load(listLocations, function() {
+          });
+      });
+  </script>
+
 </div>
 <hr>
 
@@ -78,11 +150,15 @@
   			var $input = $(this);
   		    var currentId = $(this).attr('id');
   		    var currentIdcont = "#"+currentId+"cont";
-  		  	if($input.is(':checked'))
-  		  	{
-  		  	var listLocations = #{jsAction @Sectorss.list(':id')/}
-  			$(currentIdcont).load(listLocations({id: currentId}), function(){});
-  			} 
+  		  	if($input.is(':checked')){
+            var listLocations = #{jsAction @Sectorss.list(':id')/}
+            $(currentIdcont).load(listLocations({id: currentId}), function(){
+              var currentselect = $(currentIdcont+" div select");
+              //currentselect.prepend($('<option value="-1">Geen enkele detailsector</option>'));
+              //currentselect.append($('<option value="">Al deze detailsectoren</option>'));
+              currentselect.attr("size", parseInt(currentselect.attr('size'))+2);
+            });
+          }
   		  	else { $(currentIdcont).html(""); } 
   		});
   	</script>
@@ -91,7 +167,7 @@
 </div>
 <hr>
 <div class="row">
-  <div class="label">Datum vanaf</div>
+  <div class="label"><b>Datum vanaf</b></div>
   <div class="field">
       <input type="text" name="from_date" id="datepicker"/>
       <script>
@@ -101,7 +177,7 @@
   <span class="error">${errors.forKey('entity.activityDate')}</span>
 </div>
 <div class="row">
-  <div class="label">Datum tot en met</div>
+  <div class="label"><b>Datum tot en met</b></div>
   <div class="field">
 
       <input type="text" name="to_date" id="datepicker1"/>
@@ -154,8 +230,8 @@
   			$("#hiddenLoc").empty();
   			var selectedLocation = $("#locationSelect option:selected").val();
   			 //var listLocations = "/suborganizations/list?id="+selectedOrganization+"&centrumId=${centrumId.id}";
-  			var listLocations = #{jsAction @Locationss.list(':id')/}
-			$("#hiddenLoc").load(listLocations({id: selectedLocation}), function(){});
+  			var listLocations = #{jsAction @Locationss.list(':id', ':filter')/}
+			$("#hiddenLoc").load(listLocations({id: selectedLocation, filter: true}), function(){});
   		});
   	</script>
   	<!-- </select> -->
