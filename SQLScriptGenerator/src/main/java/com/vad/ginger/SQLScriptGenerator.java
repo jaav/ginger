@@ -424,7 +424,7 @@ public class SQLScriptGenerator {
 				
 			}
 		}
-		if (removeQuote(tokens[37]).equals("2")) {
+		if (removeQuote(tokens[38]).equals("2")) {
 			if (removeQuote(tokens[50]).equals("TRUE"))
 				targetBuffer.append("INSERT INTO ActivityTargets (activityId_id,attendantTypeId_id) VALUES ("+removeQuote(tokens[0])+","+6+")\n");
 			if (removeQuote(tokens[51]).equals("TRUE"))

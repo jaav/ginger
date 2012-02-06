@@ -1,0 +1,28 @@
+source sql/0.sql;
+source sql/1.sql;
+source sql/2.sql;
+source sql/3.sql;
+source sql/4.sql;
+source sql/5.sql;
+source sql/6.sql;
+source sql/7.sql;
+source sql/8.sql;
+source sql/9.sql;
+source sql/10.sql;
+source sql/11.sql;
+source sql/12.sql;
+source sql/13.sql;
+source sql/14.sql;
+source sql/15.sql;
+source sql/16.sql;
+source sql/17.sql;
+source sql/18.sql;
+source sql/19.sql;
+#source sql/20.sql;
+
+
+#update Activity set LocationId_id = (LocationId_id - 1) where LocationId_id < 1009;
+#Update Activity set locationId_id = (locationId_id - 1878) where locationId_id >= 2888 and locationId_id < 2896;
+#Update Activity set locationId_id = (locationId_id - 1878) where locationId_id >= 2896 and locationId_id < 2903;
+#Update Activity set locationId_id = 1025 where locationId_id = 384;
+#Update Activity set locationId_id = 1026 where locationId_id = 385;
