@@ -22,3 +22,12 @@ UPDATE Locations SET Naam=(REPLACE (Naam, '-$',''));
 UPDATE Locations SET Naam=(REPLACE (Naam,'Regionaal O', 'RegiOOO'));
 UPDATE Locations SET Naam=(REPLACE (Naam,'Regionaal', 'Regionaal (clusters)'));
 UPDATE Locations SET Naam=(REPLACE (Naam,'RegiOOO', 'Regionaal O'));
+
+
+UPDATE Activity SET locationId_id = 379 WHERE locationId_id = 381;
+UPDATE Activity SET locationId_id = 585 WHERE locationId_id = 586;
+UPDATE Activity SET locationId_id = 589 WHERE locationId_id = 594;
+UPDATE Activity SET locationId_id = 399 WHERE locationId_id = 336;
+UPDATE Activity SET locationId_id = 689 WHERE locationId_id = 690;
+
+UPDATE VadGingerUser SET passwordHash = 'maWAdo464B' WHERE userID = 'jefwau';

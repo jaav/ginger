@@ -43,7 +43,7 @@
       <a href="/secure/login">Gebruiker login</a>
       #{/if}
       #{else}
-      <a href="/secure/logout">Logout</a>
+      Hallo ${session.get("username")} - <a href="/secure/logout">Logout</a>
       #{/else}
     </span>
   </div>
@@ -104,7 +104,7 @@
           
 
           #{if user && user.role && user.role.compareTo(models.RoleType.MEMBER) >=0}
-          <h3><a href="#" onclick="location.href='@{Statics.organisationsStart()}';return false;">Databank ${centrumId != null ? centrumId.naam : 'mijn centrum'}</a></h3>
+          <h3><a href="#">Databank ${centrumId != null ? centrumId.naam : 'mijn centrum'}</a></h3>
           <div><ul>
             <li><a href="@{Statics.organisationsStart()}">Startpagina</a></li>
           #{if user && user.role && user.role.compareTo(models.RoleType.ORG_ADMIN) >=0}
@@ -142,9 +142,9 @@
             #{/if}
       </div>
       <div id="after-accordion" class="ui-accordion ui-widget ui-helper-reset ui-accordion-icons">
-        <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" role="tab" aria-expanded="false" aria-selected="false" tabindex="-1">
+        <!--h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" role="tab" aria-expanded="false" aria-selected="false" tabindex="-1">
           <a href="@{Statics.tips()}">Tips voor Gebruikers</a>
-        </h3>
+        </h3-->
         <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" role="tab" aria-expanded="false" aria-selected="false" tabindex="-1">
           <a href="@{Statics.passforgot()}">Wachtwoord vergeten?</a>
         </h3>

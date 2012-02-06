@@ -9,4 +9,3 @@ INSERT INTO Items (id,Naam, IsActive) VALUES (6,'Gokken',1);
 INSERT INTO Items (id,Naam, IsActive) VALUES (7,'ICT-verslavingen (games, chatten, surfen, ...)',1);
 
 
-

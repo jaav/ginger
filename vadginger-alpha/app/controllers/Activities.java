@@ -5,6 +5,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+import javax.management.Query;
 import javax.persistence.TemporalType;
 
 import models.*;
@@ -18,6 +19,7 @@ import play.data.validation.Valid;
 import play.i18n.Messages;
 import play.libs.Mail;
 import play.modules.paginate.ModelPaginator;
+import play.modules.paginate.ValuePaginator;
 import play.mvc.With;
 
 @With(Secure.class)
@@ -36,7 +38,7 @@ public class Activities extends GingerController {
 		} else {
 			entities = new ModelPaginator(Activity.class, "userId is " + user.id + " and isActive=1"+orderquery);
 		}
-		entities.setPageSize(20);
+		entities.setPageSize(100);
 		setAccordionTab(2);
     //renderArgs.put("allowExport", true);
 		render(entities);
@@ -60,7 +62,7 @@ public class Activities extends GingerController {
     Activity copy = new Activity();
     try {
       //BeanUtils.copyProperties(copy, entity);
-      copy.beschrijving = "";
+      copy.beschrijving = entity.beschrijving;
       copy.activityDate = entity.activityDate;
       copy.centrumId = entity.centrumId;
       copy.evaluvated = entity.evaluvated;
@@ -455,18 +457,15 @@ public static void searchForm() {
 		   whereClause.add("act.centrumId=" + user.centrumId.id);
 	   }
 	  // List<models.Activity> entities = new ArrayList<Activity>();
-	   boolean internalActivity = (getParam("internal_activity")!=null);
-	   boolean nonInternalActivity = (getParam("non_internal_activity")!=null);
-	   if (!(internalActivity&&nonInternalActivity)) {
-		   if (internalActivity)
-			   whereClause.add("act.internalActivity=1");
-		   if (nonInternalActivity)
-			   whereClause.add("act.internalActivity=0");
-	   }
+    String intActivity = request.params.get("internal_activity");
+    if (!StringUtils.isBlank(intActivity)&&intActivity.trim().toLowerCase().equals("yes"))
+      whereClause.add("act.internalActivity=1");
+    else if (!StringUtils.isBlank(intActivity)&&intActivity.trim().toLowerCase().equals("no"))
+      whereClause.add("act.internalActivity=0");
 	   getActivityByItemsUsed(whereClause, joinClause);
 	   getActivityByMaterialUsed(whereClause, joinClause);
 	   getActivityBySector(whereClause, joinClause);
-	   getActivityByLocation(whereClause);
+	   getActivityByLocation(whereClause, joinClause);
 	   getActivityByOrganization(whereClause, joinClause);
 	   getActivityByTotalParticipants(whereClause);
 	   getActivityByDuration(whereClause);
@@ -492,7 +491,8 @@ public static void searchForm() {
 	   else {
        String quer = joinClause.toString() + " where " +where.toString()+ " order by act.id desc";
        System.out.println("=========================> query=" + quer);
-       List<models.Activity> entities = models.Activity.find(quer).fetch();
+       List<models.Activity> result = models.Activity.find(quer).fetch();
+		   ValuePaginator entities = new ValuePaginator(result);
        if (request.params.get("sector_999")!=null) {
     	   for (Iterator<Activity> i = entities.iterator(); i.hasNext();) {
     		   Activity e = i.next();
@@ -508,6 +508,7 @@ public static void searchForm() {
     	   }
     	   
        }
+		   entities.setPageSize(100);
        setAccordionTab(2);
        renderArgs.put("allowExport", true);
 		   session.put("query", quer);
@@ -519,8 +520,10 @@ public static void searchForm() {
   private static void orderSearch(String orderQuery){
 		   String query = session.get("query");
         query = query.substring(0, query.indexOf("order by"))+orderQuery.replace("order by ", "order by act.");
-       List<models.Activity> entities = models.Activity.find(query).fetch();
+       List<models.Activity> result = models.Activity.find(query).fetch();
+		   ValuePaginator entities = new ValuePaginator(result);
        setAccordionTab(2);
+		   entities.setPageSize(100);
        renderArgs.put("allowExport", true);
        renderArgs.put("count", entities.size());
        renderTemplate("Activities/index.html", entities);
@@ -553,36 +556,50 @@ private static void getActivityByDate(ArrayList<String> whereClause) {
 private static void getActivityByActivityTargets(ArrayList<String> whereClause, StringBuffer joinClause) {
 	String activityTargetId = request.params.get("attendant_type");
 		
-		if (activityTargetId!=null) {
-			List<models.AttendantType> atdTypes = models.AttendantType.find("byTargetTypeId", models.TargetType.find("id is " + activityTargetId).first()).fetch();
-			String atdId = null;
-			for (models.AttendantType atd: atdTypes) {
-				atdId = request.params.get("atd_typ_" + atd.getId());
-				if (atdId!=null) {
-					joinClause.append(" join act.activityTargets actTarget join actTarget.attendantTypeId atdTypeId ");
-					whereClause.add("atdTypeId="+atd.getId());
-					
-				}
-			}
-		}
+  if (activityTargetId!=null) {
+    List<models.AttendantType> atdTypes = models.AttendantType.find("byTargetTypeId", models.TargetType.find("id is " + activityTargetId).first()).fetch();
+    String atdId = null;
+    boolean hasTarget = false;
+    joinClause.append(" join act.activityTargets actTarget join actTarget.attendantTypeId atdTypeId ");
+    for (models.AttendantType atd: atdTypes) {
+      atdId = request.params.get("atd_typ_" + atd.getId());
+      if (atdId!=null) {
+        whereClause.add("atdTypeId="+atd.getId());
+        hasTarget = true;
+      }
+    }
+    if(!hasTarget){
+      StringBuffer targetWhere = new StringBuffer("atdTypeId in (");
+      for (models.AttendantType atd: atdTypes) {
+        targetWhere.append(atd.getId()).append(",");
+      }
+      whereClause.add(targetWhere.deleteCharAt(targetWhere.length()-1).append(")").toString());
+    }
+  }
 }
 
 private static void getActivityByActvityType(ArrayList<String> whereClause, StringBuffer joinClause) {
 	
 	String activityType = getParam("activity_type");
-	String[] sub_act_types = request.params.getAll("sub_activity_type");
-	String act_typ_ids = "";
-	if (sub_act_types != null) {
-	for (String actId : sub_act_types) {
-		act_typ_ids += actId + ",";
-	}
-	}
-	act_typ_ids += activityType;
-	//System.out.println(":: act Types = " + act_typ_ids);
-	   if (activityType!=null&&!activityType.trim().equals("")) {
-		   joinClause.append(" join act.activityTypeJunctions actTypeJunc join actTypeJunc.activityTypeId actTypeId ");
-		   whereClause.add(" actTypeId in ("+act_typ_ids+")");
-	   }
+  if (activityType!=null&&!activityType.trim().equals("")) {
+    String[] sub_act_types = request.params.getAll("sub_activity_type");
+    String act_typ_ids = "";
+    if (sub_act_types != null) {
+      for (String actId : sub_act_types) {
+      act_typ_ids += actId + ",";
+      }
+    }
+    else{
+      List<ActivityType> subtypes = ActivityType.find("ouder_id is " + activityType).fetch();
+      for (ActivityType subtype : subtypes) {
+      act_typ_ids += subtype.getId() + ",";
+      }
+    }
+    act_typ_ids += activityType;
+    //System.out.println(":: act Types = " + act_typ_ids);
+    joinClause.append(" join act.activityTypeJunctions actTypeJunc join actTypeJunc.activityTypeId actTypeId ");
+    whereClause.add(" actTypeId in ("+act_typ_ids+")");
+   }
 }
 
 private static void getActivityByDescription(ArrayList<String> whereClause) {
@@ -594,13 +611,24 @@ private static void getActivityByDescription(ArrayList<String> whereClause) {
 	   }
 }
 
-private static void getActivityByLocation(ArrayList<String> whereClause) {
+private static void getActivityByLocation(ArrayList<String> whereClause, StringBuffer joincaluse) {
 	String locId = getParam("entity.locationId.id");
-	   if (locId==null)
-		   locId = getParam("location");
-	   if (locId!=null&&!locId.trim().equalsIgnoreCase("")) {
-		   whereClause.add("act.locationId="+locId);
-	   }
+  //join Locations loc where loc.ouder_id=1 and act.locationId_id=loc.id
+   if (locId!=null){
+     Long lid = Long.parseLong(locId);
+     if(lid < 0){ //no specific sublocation
+      locId = getParam("location");
+       joincaluse.append(" join act.locationId loid ");
+       whereClause.add("loid.ouder = "+locId);
+     }
+     else
+      whereClause.add("act.locationId="+locId);
+   }
+  else{
+    locId = getParam("location");
+     if(StringUtils.isNotBlank(locId))
+      whereClause.add("act.locationId="+locId);
+   }
 }
 
 private static void getActivityByOrganization(ArrayList<String> whereClause, StringBuffer joinClause) {
@@ -624,6 +652,54 @@ private static void getActivityByOrganization(ArrayList<String> whereClause, Str
 }
 
 private static void getActivityBySector(ArrayList<String> whereClause, StringBuffer joinClause) {
+  if (request.params.get("sector_999") != null) {
+    joinClause.append(" join act.sectorActivityJunctions ass ");
+    whereClause.add("ass.size  > 1");
+  }
+  else {
+    boolean hasSubSecs = false;
+    List<String> ids = new ArrayList<String>();
+    List<Long> emptyParents = new ArrayList<Long>();
+    List<Sectors> sectors = models.Sectors.find("ouder is null").fetch();
+    StringBuffer idswhere = new StringBuffer();
+    int counter = 1;
+    for (models.Sectors sector: sectors) {
+      if(getParam("sector_"+sector.getId())!=null) emptyParents.add(sector.getId());
+      String[] subsecs = request.params.getAll("sub_sector_"+sector.getId());
+      if (subsecs!=null) {
+        hasSubSecs = true;
+        emptyParents.remove(sector.getId());
+        for (int i = 0; i < subsecs.length; i++)
+          ids.add(subsecs[i]);
+      }
+    }
+    if(hasSubSecs){
+      for (String id : ids) {
+        joinClause.append(" join act.sectorActivityJunctions saj").append(counter).append(" ");
+        if(counter==1) idswhere.append(" saj1.activityId=act.id and ");
+        else  idswhere.append(" saj").append(counter-1).append(".activityId=saj").append(counter).append(".activityId and ");
+        idswhere.append("saj").append(counter).append(".sectorId = ").append(id).append(" and ");
+        counter++;
+      }
+      //joinCaluse.append("join act.itemsInActivity iat join iat.itemId iid ");
+    }
+    if(!emptyParents.isEmpty()){
+      //join SectorActivityJunction saj join Sectors sec1 join SectorActivityJunction saj2 join Sectors sec2
+      //where act.id=saj.activityId_id and act.id=saj2.activityId_id and saj.sectorId_id=sec1.id and saj2.sectorId_id=sec2.id and sec1.ouder_id=11 and sec2.ouder_id= 1
+      for (Long parentSector : emptyParents) {
+        joinClause.append(" join act.sectorActivityJunctions saj").append(counter).append(" join saj").append(counter).append(".sectorId sajsid").append(counter).append(" ");
+        if(counter==1) idswhere.append(" saj1.activityId=act.id and ");
+        else  idswhere.append(" saj").append(counter-1).append(".activityId=saj").append(counter).append(".activityId and ");
+        idswhere.append("sajsid").append(counter).append(".ouder = ").append(parentSector).append(" and ");
+        counter++;
+      }
+    }
+    if(idswhere.length()>3) whereClause.add(idswhere.substring(0, idswhere.length()-4));
+  }
+}
+
+
+/*private static void getActivityBySector(ArrayList<String> whereClause, StringBuffer joinClause) {
 		if (request.params.get("sector_999") != null) {
 			joinClause.append(" join act.sectorActivityJunctions ass ");
 			whereClause.add("ass.size  > 1");
@@ -660,20 +736,31 @@ private static void getActivityBySector(ArrayList<String> whereClause, StringBuf
 				whereClause.add("asid in (" + sub_org_idss + ")");
 			}
 		}
-}
+}*/
 
 private static void getActivityByItemsUsed(ArrayList<String> whereClause, StringBuffer joinCaluse) {
-	boolean joinAdded = false;
+	boolean hasItems = false;
+  List<Long> ids = new ArrayList<Long>();
 	List<models.Items> items = models.Items.all().fetch();
-	   for (models.Items item: items) {
-		   if (getParam("item_1_"+item.getId())!=null) {
-			   if(!joinAdded) {
-				   joinCaluse.append("join act.itemsInActivity iat join iat.itemId iid ");
-				   joinAdded = true;
-			   }
-			   whereClause.add("iid="+item.id);
-		   }			   
-	   }
+  for (models.Items item: items) {
+    if (getParam("item_1_"+item.getId())!=null) {
+      hasItems = true;
+      ids.add(item.getId());
+    }
+  }
+  if(hasItems){
+    StringBuffer idswhere = new StringBuffer();
+    StringBuffer idsjoin = new StringBuffer();
+    int counter = 1;
+    for (Long id : ids) {
+      joinCaluse.append(" join act.itemsInActivity iia").append(counter).append(" ");
+      if(counter>1) idswhere.append(" iia").append(counter-1).append(".activityId=iia").append(counter).append(".activityId and ");
+      idswhere.append("iia").append(counter).append(".itemId = ").append(id).append(" and ");
+      counter++;
+    }
+    //joinCaluse.append("join act.itemsInActivity iat join iat.itemId iid ");
+    whereClause.add(idswhere.substring(0, idswhere.length()-4));
+  }
 }
 
 

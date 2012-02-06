@@ -9,4 +9,3 @@ INSERT INTO Materials (id,Naam, IsActive) VALUES (6,'Ander materiaal op federaal
 INSERT INTO Materials (id,Naam, IsActive) VALUES (7,'Geen materiaal',1);
 
 
-

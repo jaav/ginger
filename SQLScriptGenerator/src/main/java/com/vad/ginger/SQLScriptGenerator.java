@@ -1,12 +1,6 @@
 package com.vad.ginger;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -75,24 +69,24 @@ public class SQLScriptGenerator {
 		StringBuffer buffer = new StringBuffer();
 		int i = 1;
 		int k = 0;
-		buffer.append("USE ["+ PropsUtils.getDbName()+"]");
+		//buffer.append("USE "+ PropsUtils.getDbName()+"");
 		buffer.append("\n");
-		//buffer.append("SET IDENTITY_INSERT ["+ PropsUtils.getDbName()+"].[dbo].[UserRoles] ON");
+		////buffer.append("SET IDENTITY_INSERT UserRoles] ON");
 		buffer.append("\n");
 		try {
-		BufferedReader reader = new BufferedReader(new FileReader(f));
+		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));
 		String line =  reader.readLine(); // reading first line which has symbol
 		while ((line = reader.readLine()) != null) {
 				String[] tokens = line.split("\t");
-				buffer.append("INSERT INTO  ["+ PropsUtils.getDbName()+"].[dbo].[UserRoles] ([UserId],[RoleId]) VALUES ('"+tokens[0]+"','"+roleIdKeyId.get(tokens[1]) +"')");	
+				buffer.append("INSERT INTO  UserRoles (UserId,RoleId) VALUES ('"+tokens[0]+"','"+roleIdKeyId.get(tokens[1]) +"')");
 				buffer.append("\n");
 				k = i;i++;
 		}
 		buffer.append("\n");
-		buffer.append("INSERT INTO  ["+ PropsUtils.getDbName()+"].[dbo].[UserRoles] ([UserId],[RoleId]) VALUES ('{2D62FE78-F86D-4DAA-8C7F-E19D25963077}','2')");
-		//buffer.append("SET IDENTITY_INSERT ["+ PropsUtils.getDbName()+"].[dbo].[UserRoles] OFF");
+		buffer.append("INSERT INTO  UserRoles (UserId,RoleId) VALUES ('{2D62FE78-F86D-4DAA-8C7F-E19D25963077}','2')");
+		////buffer.append("SET IDENTITY_INSERT UserRoles] OFF");
 		buffer.append("\n");
-		buffer.append("GO");
+//		buffer.append("GO");
 		writeBufferToFile("user_roles.sql", buffer);
 		reader.close();
 		} catch (FileNotFoundException fnfe) {
@@ -109,24 +103,24 @@ public class SQLScriptGenerator {
 		StringBuffer buffer = new StringBuffer();
 		int i = 1;
 		int k = 0;
-		buffer.append("USE ["+ PropsUtils.getDbName()+"]");
+		//buffer.append("USE "+ PropsUtils.getDbName()+"");
 		buffer.append("\n");
-		buffer.append("SET IDENTITY_INSERT ["+ PropsUtils.getDbName()+"].[dbo].[Roles] ON");
+		//buffer.append("SET IDENTITY_INSERT Roles] ON");
 		buffer.append("\n");
 		try {
-		BufferedReader reader = new BufferedReader(new FileReader(f));
+		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));
 		String line = reader.readLine(); // reading first line which has symbol
 		while ((line = reader.readLine()) != null) {
 				String[] tokens = line.split("\t");
 				roleIdKeyId.put(tokens[1],i+"");
-				buffer.append("INSERT INTO [dbo].[Roles] ([RoleId],[RoleName]) VALUES ('"+i+"','"+tokens[2]+"' )");
+				buffer.append("INSERT INTO Roles (RoleId,RoleName) VALUES ('"+i+"','"+tokens[2]+"' )");
 				buffer.append("\n");
 				k = i;i++;
 		}
 		buffer.append("\n");
-		buffer.append("SET IDENTITY_INSERT ["+ PropsUtils.getDbName()+"].[dbo].[Roles] OFF");
+		//buffer.append("SET IDENTITY_INSERT Roles] OFF");
 		buffer.append("\n");
-		buffer.append("GO");
+//		buffer.append("GO");
 		writeBufferToFile("role_id.sql", buffer);
 		reader.close();
 		} catch (FileNotFoundException fnfe) {
@@ -143,31 +137,31 @@ public class SQLScriptGenerator {
 		StringBuffer buffer = new StringBuffer();
 		int i = 1;
 		int k = 0;
-		buffer.append("USE ["+ PropsUtils.getDbName()+"]");
+		//buffer.append("USE "+ PropsUtils.getDbName()+"");
 		buffer.append("\n");
-		buffer.append("SET IDENTITY_INSERT ["+ PropsUtils.getDbName()+"].[dbo].[VadGingerUser] ON");
+		//buffer.append("SET IDENTITY_INSERT VadGingerUser] ON");
 		buffer.append("\n");
 		try {
-		BufferedReader reader = new BufferedReader(new FileReader(f));
+		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));
 		String line = reader.readLine(); // reading first line which has symbol
 		int user_id_num = 2;
 		while ((line = reader.readLine()) != null) {
 				String[] tokens = line.split("\t");
 				userIdKeyId.put(tokens[2].toLowerCase(), user_id_num+"");
-				buffer.append("INSERT INTO [dbo].[VadGingerUser] ([id],[userID],[passwordHash], [emailAddress], [role], [loginCount], [centrumId_id], [IsActive]) VALUES ('"+user_id_num+"','"+tokens[2]+"','"+"123456"+"','"+"admin@vadginger.be"+"', '0','0', "+centrumIdKeyId.get(removeQuote(tokens[2]).substring(0,3).toUpperCase())+", 1)");
+				buffer.append("INSERT INTO VadGingerUser (id,userID,passwordHash, emailAddress, role, loginCount, centrumId_id, IsActive) VALUES ('"+user_id_num+"','"+tokens[2]+"','"+"123456"+"','"+"admin@vadginger.be"+"', '0','0', "+centrumIdKeyId.get(removeQuote(tokens[2]).substring(0,3).toUpperCase())+", 1)");
 				buffer.append("\n");
 				user_id_num++;
 				k = i;i++;
 				centrums.add(removeQuote(tokens[2]).substring(0,3).toUpperCase());
 		}
 		user_id_num++;
-		buffer.append("INSERT INTO [dbo].[VadGingerUser] ([id],[userID],[passwordHash], [emailAddress], [role], [loginCount],[IsActive]) VALUES ('"+user_id_num+"','UNKNOWN_USER','"+"123456"+"','"+"admin@vadginger.be"+"', '0','0',1)\n");
+		buffer.append("INSERT INTO VadGingerUser (id,userID,passwordHash, emailAddress, role, loginCount,IsActive) VALUES ('"+user_id_num+"','UNKNOWN_USER','"+"123456"+"','"+"admin@vadginger.be"+"', '0','0',1)\n");
 		user_id_num++;
-		buffer.append("INSERT INTO [dbo].[VadGingerUser] ([id],[userID],[passwordHash], [emailAddress], [role], [loginCount],[IsActive]) VALUES ('"+user_id_num+"','admin','"+"SkR2dnY3M3Z2NzBENzcrOTc3KzlCZSsvdmUrL3ZVUHZ2NzBCWkdvPQ=="+"','"+"admin@vadginger.be"+"', '1','0',1)\n");
+		buffer.append("INSERT INTO VadGingerUser (id,userID,passwordHash, emailAddress, role, loginCount,IsActive) VALUES ('"+user_id_num+"','admin','"+"SkR2dnY3M3Z2NzBENzcrOTc3KzlCZSsvdmUrL3ZVUHZ2NzBCWkdvPQ=="+"','"+"admin@vadginger.be"+"', '1','0',1)\n");
 		userIdKeyId.put("UNKNOWN_USER".toLowerCase(),user_id_num+"");
-		buffer.append("\nSET IDENTITY_INSERT ["+ PropsUtils.getDbName()+"].[dbo].[VadGingerUser] OFF");
+		//buffer.append("\nSET IDENTITY_INSERT VadGingerUser OFF");
 		buffer.append("\n");
-		buffer.append("GO");
+//		buffer.append("GO");
 		writeBufferToFile("1-user_id.sql", buffer);
 		reader.close();
 		
@@ -193,26 +187,26 @@ public class SQLScriptGenerator {
 		StringBuffer evalBuffer = new StringBuffer();
 		StringBuffer locationBuffer = new StringBuffer();
 		try {
-		BufferedReader reader = new BufferedReader(new FileReader(f));
-		buffer.append("USE ["+ PropsUtils.getDbName()+"]");
-		materialBuffer.append("USE ["+ PropsUtils.getDbName()+"]");
-		itemsBuffer.append("USE ["+ PropsUtils.getDbName()+"]");
+		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));
+		//buffer.append("USE "+ PropsUtils.getDbName()+"");
+		//material//buffer.append("USE "+ PropsUtils.getDbName()+"");
+		//items//buffer.append("USE "+ PropsUtils.getDbName()+"");
 		buffer.append("\n");
 		itemsBuffer.append("\n");
 		materialBuffer.append("\n");
-		buffer.append("SET IDENTITY_INSERT ["+ PropsUtils.getDbName()+"].[dbo].[Activity] ON");
+		//buffer.append("SET IDENTITY_INSERT Activity] ON");
 		buffer.append("\n");
 		materialBuffer.append("\n");
 		itemsBuffer.append("\n");
-		activityTypeBuffer.append("USE ["+ PropsUtils.getDbName()+"]");
+		//activityType//buffer.append("USE "+ PropsUtils.getDbName()+"");
 		activityTypeBuffer.append("\n");
-		sectorBuffer.append("USE ["+ PropsUtils.getDbName()+"]");
+		//sector//buffer.append("USE "+ PropsUtils.getDbName()+"");
 		sectorBuffer.append("\n");
-		targetBuffer.append("USE ["+ PropsUtils.getDbName()+"]");
+		//target//buffer.append("USE "+ PropsUtils.getDbName()+"");
 		targetBuffer.append("\n");
-		evalBuffer.append("USE ["+ PropsUtils.getDbName()+"]");
+		//eval//buffer.append("USE "+ PropsUtils.getDbName()+"");
 		evalBuffer.append("\n");
-		locationBuffer.append("USE ["+ PropsUtils.getDbName()+"]");
+		//location//buffer.append("USE "+ PropsUtils.getDbName()+"");
 		locationBuffer.append("\n");
 		String line = reader.readLine(); // reading first line which has symbol
 		
@@ -238,9 +232,9 @@ public class SQLScriptGenerator {
 				}
 				//if (orgId == null)
 					//System.out.println("++>" + tokens[15].replace("\"", "") + "," + tokens[16].replace("\"", "") );
-				buffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[Activity] ([id],[Duur],[Evaluvated],[InternalActivity],[Reported],[TotalParticipants],[organizationId_id],[userId_id], [beschrijving], [Activity_date], [centrumId_id], [IsActive]) VALUES " +
+				buffer.append("INSERT INTO Activity (id,Duur,Evaluvated,InternalActivity,Reported,TotalParticipants,organizationId_id,userId_id, beschrijving, Activity_date, centrumId_id, IsActive) VALUES " +
 						"("+ tokens[0].replace("\"", "") + ","+tokens[3].replace("\"", "") + ","+tokens[69].replace("\"", "")+ ","+((tokens[87]=="TRUE")?1:0) + ","+
-						isReported + ","+tokens[54].replace("\"", "")+ ","+ orgId + ",'"+userId+ "','"+removeQuote(tokens[2])+"',"+tokens[1]+","+centrumIdKeyId.get(removeQuote(tokens[4]).toUpperCase())+", 1)");
+						isReported + ","+tokens[54].replace("\"", "")+ ","+ orgId + ","+userId+ ",'"+removeQuote(tokens[2])+"',\""+tokens[1]+"\","+centrumIdKeyId.get(removeQuote(tokens[4]).toUpperCase())+", 1)");
 				if (userId == null)
 					System.out.println(tokens[5]);
 				buffer.append("\n");
@@ -256,23 +250,23 @@ public class SQLScriptGenerator {
 		}
 		reader.close();
 		buffer.append("\n");
-		buffer.append("SET IDENTITY_INSERT ["+ PropsUtils.getDbName()+"].[dbo].[Activity] OFF");
+		//buffer.append("SET IDENTITY_INSERT Activity] OFF");
 		buffer.append("\n");
-		buffer.append("GO");
+//		buffer.append("GO");
 		materialBuffer.append("\n");
-		materialBuffer.append("GO");
+//		materialBuffer.append("GO");
 		itemsBuffer.append("\n");
-		itemsBuffer.append("GO");
+//		itemsBuffer.append("GO");
 		evalBuffer.append("\n");
-		evalBuffer.append("GO");
+//		evalBuffer.append("GO");
 		sectorBuffer.append("\n");
-		sectorBuffer.append("GO");
+//		sectorBuffer.append("GO");
 		targetBuffer.append("\n");
-		targetBuffer.append("GO");
+//		targetBuffer.append("GO");
 		activityTypeBuffer.append("\n");
-		activityTypeBuffer.append("GO");
+//		activityTypeBuffer.append("GO");
 		locationBuffer.append("\n");
-		locationBuffer.append("GO");
+//		locationBuffer.append("GO");
 		writeBufferToFile("11-activity.sql", buffer);
 		writeBufferToFile("12-materialInActivity.sql", materialBuffer);
 		writeBufferToFile("13-itemsInActivity.sql", itemsBuffer);
@@ -348,50 +342,82 @@ public class SQLScriptGenerator {
 				if (locationId == null || locationId.equals("")) {
 					System.out.println(":: POSTCODE " +removeQuote(tokens[85]).trim());
 				}
-				locationBuffer.append("UPDATE ["+ PropsUtils.getDbName()+"].[dbo].[Activity] SET [locationId_id] = "+locationId+" WHERE [id] = "+removeQuote(tokens[0])+"\n");
+				locationBuffer.append("UPDATE Activity SET locationId_id = "+locationId+" WHERE id = "+removeQuote(tokens[0])+"\n");
 			}			
 		}
 		if (removeQuote(tokens[82]).equals("2")) {
 			String locationId = clusterIdKeyId.get(removeQuote(tokens[86]));
 			if (locationId == null)
 				System.out.println(":*: CLUSTERId " +removeQuote(tokens[86]).trim());
-			locationBuffer.append("UPDATE ["+ PropsUtils.getDbName()+"].[dbo].[Activity] SET [locationId_id] = "+locationId+" WHERE [id] = "+removeQuote(tokens[0])+"\n");
+			locationBuffer.append("UPDATE Activity SET locationId_id = "+locationId+" WHERE id = "+removeQuote(tokens[0])+"\n");
 		}
 		if (removeQuote(tokens[82]).equals("3")) {
 			String locationId = (1010 + Integer.parseInt(removeQuote(tokens[83]))) +"" ;
-			locationBuffer.append("UPDATE ["+ PropsUtils.getDbName()+"].[dbo].[Activity] SET [locationId_id] = "+locationId+" WHERE [id] = "+removeQuote(tokens[0])+"\n");
+			locationBuffer.append("UPDATE Activity SET locationId_id = "+locationId+" WHERE id = "+removeQuote(tokens[0])+"\n");
 		}
 		if(removeQuote(tokens[82]).equals("4")) {
 			String locationId = (1018 + Integer.parseInt(removeQuote(tokens[84]))) +"" ;
-			locationBuffer.append("UPDATE ["+ PropsUtils.getDbName()+"].[dbo].[Activity] SET [locationId_id] = "+locationId+" WHERE [id] = "+removeQuote(tokens[0])+"\n");
+			locationBuffer.append("UPDATE Activity SET locationId_id = "+locationId+" WHERE id = "+removeQuote(tokens[0])+"\n");
 		}
 		if (removeQuote(tokens[82]).equals("5"))
-			locationBuffer.append("UPDATE ["+ PropsUtils.getDbName()+"].[dbo].[Activity] SET [locationId_id] = "+1025+" WHERE [id] = "+removeQuote(tokens[0])+"\n");
+			locationBuffer.append("UPDATE Activity SET locationId_id = "+1025+" WHERE id = "+removeQuote(tokens[0])+"\n");
 		if (removeQuote(tokens[82]).equals("6"))
-			locationBuffer.append("UPDATE ["+ PropsUtils.getDbName()+"].[dbo].[Activity] SET [locationId_id] = "+1026+" WHERE [id] = "+removeQuote(tokens[0])+"\n");
+			locationBuffer.append("UPDATE Activity SET locationId_id = "+1026+" WHERE id = "+removeQuote(tokens[0])+"\n");
 	}
 
 	private static void loadEvalBuffer(StringBuffer evalBuffer, String[] tokens) {
 		if (removeQuote(tokens[69]).equals("1")) {
 			if  (removeQuote(tokens[72]).trim().equals(""))
-				evalBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivityEvaluvators] ([activityId_id],[evalTypeId_id]) VALUES ("+removeQuote(tokens[0])+","+((removeQuote(tokens[70]).equals("TRUE"))? 1 : 2)+")\n");
+				evalBuffer.append("INSERT INTO ActivityEvaluvators (activityId_id,evalTypeId_id) VALUES ("+removeQuote(tokens[0])+","+((removeQuote(tokens[70]).equals("TRUE"))? 1 : 2)+")\n");
 			else
-				evalBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivityEvaluvators] ([activityId_id] ,[evaluvatorsId_id],[evalTypeId_id]) VALUES ("+removeQuote(tokens[0])+","+ removeQuote((tokens[72])) +","+((removeQuote(tokens[70]).equals("TRUE"))? 1 : 2)+")\n");
+				evalBuffer.append("INSERT INTO ActivityEvaluvators (activityId_id ,evaluvatorsId_id,evalTypeId_id) VALUES ("+removeQuote(tokens[0])+","+ removeQuote((tokens[72])) +","+((removeQuote(tokens[70]).equals("TRUE"))? 1 : 2)+")\n");
 		}
 	}
+
+
 
 	private static void loadTargetsBuffer(StringBuffer targetBuffer,
 			String[] tokens) {
 		if (removeQuote(tokens[38]).equals("1")) {
 			if (removeQuote(tokens[39]).equals("TRUE"))
-			targetBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivityTargets] ([activityId_id],[attendantTypeId_id]) VALUES ("+removeQuote(tokens[0])+","+2+")\n");
+			targetBuffer.append("INSERT INTO ActivityTargets (activityId_id,attendantTypeId_id) VALUES ("+removeQuote(tokens[0])+","+2+")\n");
 			if (removeQuote(tokens[40]).equals("TRUE"))
-				targetBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivityTargets] ([activityId_id],[attendantTypeId_id]) VALUES ("+removeQuote(tokens[0])+","+3+")\n");
+				targetBuffer.append("INSERT INTO ActivityTargets (activityId_id,attendantTypeId_id) VALUES ("+removeQuote(tokens[0])+","+3+")\n");
 			if (removeQuote(tokens[41]).equals("TRUE"))
-				targetBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivityTargets] ([activityId_id],[attendantTypeId_id]) VALUES ("+removeQuote(tokens[0])+","+4+")\n");
+				targetBuffer.append("INSERT INTO ActivityTargets (activityId_id,attendantTypeId_id) VALUES ("+removeQuote(tokens[0])+","+4+")\n");
 			//int secActJunc = 42;
 			for (int secAct = 1; secAct < 9; secAct++) {
 				//System.out.println(tokens[secAct+41]);
+				if (removeQuote(tokens[secAct+41]).equalsIgnoreCase("true")) {
+					sAJBuffer.append("INSERT INTO ActivitySectors (activityId_id, sectorId_id) VALUES ("+ removeQuote(tokens[0]) +","+ sectorOuderKeyId.get(secAct+"") +");\n");
+				}
+
+			}
+		}
+		if (removeQuote(tokens[38]).equals("2")) {
+			if (removeQuote(tokens[50]).equals("TRUE"))
+				targetBuffer.append("INSERT INTO ActivityTargets (activityId_id,attendantTypeId_id) VALUES ("+removeQuote(tokens[0])+","+6+")\n");
+			if (removeQuote(tokens[51]).equals("TRUE"))
+				targetBuffer.append("INSERT INTO ActivityTargets (activityId_id,attendantTypeId_id) VALUES ("+removeQuote(tokens[0])+","+7+")\n");
+			if (removeQuote(tokens[52]).equals("TRUE"))
+				targetBuffer.append("INSERT INTO ActivityTargets (activityId_id,attendantTypeId_id) VALUES ("+removeQuote(tokens[0])+","+8+")\n");
+			if (removeQuote(tokens[53]).equals("TRUE"))
+				targetBuffer.append("INSERT INTO ActivityTargets (activityId_id,attendantTypeId_id) VALUES ("+removeQuote(tokens[0])+","+9+")\n");
+		}
+	}
+
+	/*private static void loadTargetsBuffer(StringBuffer targetBuffer,
+			String[] tokens) {
+		if (removeQuote(tokens[38]).equals("1")) {
+			if (removeQuote(tokens[39]).equals("TRUE"))
+			targetBuffer.append("INSERT INTO ActivityTargets (activityId_id,attendantTypeId_id) VALUES ("+removeQuote(tokens[0])+","+2+")\n");
+			if (removeQuote(tokens[40]).equals("TRUE"))
+				targetBuffer.append("INSERT INTO ActivityTargets (activityId_id,attendantTypeId_id) VALUES ("+removeQuote(tokens[0])+","+3+")\n");
+			if (removeQuote(tokens[41]).equals("TRUE"))
+				targetBuffer.append("INSERT INTO ActivityTargets (activityId_id,attendantTypeId_id) VALUES ("+removeQuote(tokens[0])+","+4+")\n");
+			//int secActJunc = 42;
+			for (int secAct = 1; secAct < 9; secAct++) {
+				//System.out.println(tokens[secAct+41);
 				if (removeQuote(tokens[secAct+41]).equalsIgnoreCase("true")) {
 					sAJBuffer.append("INSERT INTO ActivitySectors (activityId_id, sectorId_id) VALUES ("+ removeQuote(tokens[0]) +","+ sectorOuderKeyId.get(secAct+"") +");\n");
 				}
@@ -400,98 +426,101 @@ public class SQLScriptGenerator {
 		}
 		if (removeQuote(tokens[37]).equals("2")) {
 			if (removeQuote(tokens[50]).equals("TRUE"))
-				targetBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivityTargets] ([activityId_id],[attendantTypeId_id]) VALUES ("+removeQuote(tokens[0])+","+6+")\n");
+				targetBuffer.append("INSERT INTO ActivityTargets (activityId_id,attendantTypeId_id) VALUES ("+removeQuote(tokens[0])+","+6+")\n");
 			if (removeQuote(tokens[51]).equals("TRUE"))
-				targetBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivityTargets] ([activityId_id],[attendantTypeId_id]) VALUES ("+removeQuote(tokens[0])+","+7+")\n");
+				targetBuffer.append("INSERT INTO ActivityTargets (activityId_id,attendantTypeId_id) VALUES ("+removeQuote(tokens[0])+","+7+")\n");
 			if (removeQuote(tokens[52]).equals("TRUE"))
-				targetBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivityTargets] ([activityId_id],[attendantTypeId_id]) VALUES ("+removeQuote(tokens[0])+","+8+")\n");
+				targetBuffer.append("INSERT INTO ActivityTargets (activityId_id,attendantTypeId_id) VALUES ("+removeQuote(tokens[0])+","+8+")\n");
 			if (removeQuote(tokens[53]).equals("TRUE"))
-				targetBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivityTargets] ([activityId_id],[attendantTypeId_id]) VALUES ("+removeQuote(tokens[0])+","+9+")\n");
+				targetBuffer.append("INSERT INTO ActivityTargets (activityId_id,attendantTypeId_id) VALUES ("+removeQuote(tokens[0])+","+9+")\n");
 		}
-	}
+	}*/
 
 	private static void loadSectorBuffer(StringBuffer sectorBuffer,
 			String[] tokens) {
+    //Arbeid
 		if(removeQuote(tokens[7]).equals("TRUE")) {
 			String a = "1";
 			String b = removeQuote(tokens[17]);
 			if (!b.equals("0"))
-				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[SectorActivityJunction] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
+				sectorBuffer.append("INSERT INTO SectorActivityJunction (activityId_id,sectorId_id) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
 		}
+    //Gezondheid
 		if(removeQuote(tokens[8]).equals("TRUE")) {
 			String a = "2";
 			String b = removeQuote(tokens[18]);
 			if (!b.equals("0"))
-				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[SectorActivityJunction] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
+				sectorBuffer.append("INSERT INTO SectorActivityJunction (activityId_id,sectorId_id) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
 		}
+    //Onderwijs
 		if(removeQuote(tokens[9]).equals("TRUE")) {
 			String a = "3";
 			String b = removeQuote(tokens[19]);
 			if (!b.equals("0"))
-				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[SectorActivityJunction] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
+				sectorBuffer.append("INSERT INTO SectorActivityJunction (activityId_id,sectorId_id) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
 		}
 		if(removeQuote(tokens[10]).equals("TRUE")) {
 			String a = "4";
 			String b = removeQuote(tokens[20]);
 			if (!b.equals("0"))
-				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[SectorActivityJunction] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
+				sectorBuffer.append("INSERT INTO SectorActivityJunction (activityId_id,sectorId_id) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
 		}
 		if(removeQuote(tokens[11]).equals("TRUE")) {
 			String a = "5";
 			String b = removeQuote(tokens[21]);
 			if (!b.equals("0"))
-				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[SectorActivityJunction] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
+				sectorBuffer.append("INSERT INTO SectorActivityJunction (activityId_id,sectorId_id) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
 		}
 		if(removeQuote(tokens[12]).equals("TRUE")) {
 			String a = "6";
 			String b = removeQuote(tokens[22]);
 			if (!b.equals("0"))
-				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[SectorActivityJunction] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
+				sectorBuffer.append("INSERT INTO SectorActivityJunction (activityId_id,sectorId_id) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
 		}
 		if(removeQuote(tokens[13]).equals("TRUE")) {
 			String a = "7";
 			String b = removeQuote(tokens[23]);
 			if (!b.equals("0"))
-				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[SectorActivityJunction] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
+				sectorBuffer.append("INSERT INTO SectorActivityJunction (activityId_id,sectorId_id) VALUES ("+removeQuote(tokens[0])+","+ sectorIdKeyId.get(a+","+b)+")\n");
 		}
 		if(removeQuote(tokens[14]).equals("TRUE")) {
 			//String a = "1";
 			//String b = removeQuote(tokens[17]);
 			//if (!b.equals("0"))
-				sectorBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[SectorActivityJunction] ([activityId_id],[sectorId_id]) VALUES ("+removeQuote(tokens[0])+","+ 97+")\n");
+				sectorBuffer.append("INSERT INTO SectorActivityJunction (activityId_id,sectorId_id) VALUES ("+removeQuote(tokens[0])+","+ 97+")\n");
 		}
 	}
 
 	private static void loadActivityTypeBuffer(StringBuffer activityTypeBuffer,
 			String[] tokens) {
 		if (removeQuote(tokens[24]).equals("2"))
-			activityTypeBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivityTypeJunction]([activityId_id],[activityTypeId_id]) VALUES ("+removeQuote(tokens[0])+","+7+")\n");
+			activityTypeBuffer.append("INSERT INTO ActivityTypeJunction(activityId_id,activityTypeId_id) VALUES ("+removeQuote(tokens[0])+","+7+")\n");
 		if (removeQuote(tokens[24]).equals("1")) {
 			int k = 24;
 			for (int i = 1; i <6; i++) {
 			if(removeQuote(tokens[k+i]).equals("TRUE"))
-				activityTypeBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivityTypeJunction]([activityId_id],[activityTypeId_id]) VALUES ("+removeQuote(tokens[0])+","+activityTypeIdKeyId.get("1," + i)+")\n");
+				activityTypeBuffer.append("INSERT INTO ActivityTypeJunction(activityId_id,activityTypeId_id) VALUES ("+removeQuote(tokens[0])+","+activityTypeIdKeyId.get("1," + i)+")\n");
 		}}
 		if (removeQuote(tokens[24]).equals("3")) {
 			int k = 29;
 			for (int i = 1; i <3; i++)
 			if(removeQuote(tokens[k+i]).equals("TRUE"))
-				activityTypeBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivityTypeJunction]([activityId_id],[activityTypeId_id]) VALUES ("+removeQuote(tokens[0])+","+activityTypeIdKeyId.get("3," + i)+")\n");
+				activityTypeBuffer.append("INSERT INTO ActivityTypeJunction(activityId_id,activityTypeId_id) VALUES ("+removeQuote(tokens[0])+","+activityTypeIdKeyId.get("3," + i)+")\n");
 		}
 		if (removeQuote(tokens[24]).equals("4")) {
 			int k = 31;
 			for (int i = 1; i <5; i++)
 			if(removeQuote(tokens[k+i]).equals("TRUE"))
-				activityTypeBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivityTypeJunction]([activityId_id],[activityTypeId_id]) VALUES ("+removeQuote(tokens[0])+","+activityTypeIdKeyId.get("4," + i)+")\n");
+				activityTypeBuffer.append("INSERT INTO ActivityTypeJunction(activityId_id,activityTypeId_id) VALUES ("+removeQuote(tokens[0])+","+activityTypeIdKeyId.get("4," + i)+")\n");
 		} 
 		if (removeQuote(tokens[24]).equals("5")) {
 			int k = 35;
 			for (int i = 1; i <3; i++)
 			if(removeQuote(tokens[k+i]).equals("TRUE"))
-				activityTypeBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivityTypeJunction]([activityId_id],[activityTypeId_id]) VALUES ("+removeQuote(tokens[0])+","+activityTypeIdKeyId.get("5," + i)+")\n");
+				activityTypeBuffer.append("INSERT INTO ActivityTypeJunction(activityId_id,activityTypeId_id) VALUES ("+removeQuote(tokens[0])+","+activityTypeIdKeyId.get("5," + i)+")\n");
 		}
 		if (removeQuote(tokens[24]).equals("6")) {
-			activityTypeBuffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[ActivityTypeJunction]([activityId_id],[activityTypeId_id]) VALUES ("+removeQuote(tokens[0])+","+19+")\n");
+			activityTypeBuffer.append("INSERT INTO ActivityTypeJunction(activityId_id,activityTypeId_id) VALUES ("+removeQuote(tokens[0])+","+19+")\n");
 		}
 	}
 	
@@ -502,49 +531,49 @@ public class SQLScriptGenerator {
 	private static void loadItemsInBuffer(StringBuffer itemsBuffer,
 			String[] tokens) {
 		if (removeQuote(tokens[55]).equals("TRUE"))
-			itemsBuffer.append("INSERT INTO  ["+ PropsUtils.getDbName()+"].[dbo].[ItemsInActivity] ([activityId_id],[itemId_id]) VALUES ("+removeQuote(tokens[0])+","+ 1+")\n");
+			itemsBuffer.append("INSERT INTO  ItemsInActivity (activityId_id,itemId_id) VALUES ("+removeQuote(tokens[0])+","+ 1+")\n");
 		if (removeQuote(tokens[56]).equals("TRUE"))
-			itemsBuffer.append("INSERT INTO  ["+ PropsUtils.getDbName()+"].[dbo].[ItemsInActivity] ([activityId_id],[itemId_id]) VALUES ("+removeQuote(tokens[0])+","+ 2+")\n");
+			itemsBuffer.append("INSERT INTO  ItemsInActivity (activityId_id,itemId_id) VALUES ("+removeQuote(tokens[0])+","+ 2+")\n");
 		if (removeQuote(tokens[57]).equals("TRUE"))
-			itemsBuffer.append("INSERT INTO  ["+ PropsUtils.getDbName()+"].[dbo].[ItemsInActivity] ([activityId_id],[itemId_id]) VALUES ("+removeQuote(tokens[0])+","+ 3+")\n");
+			itemsBuffer.append("INSERT INTO  ItemsInActivity (activityId_id,itemId_id) VALUES ("+removeQuote(tokens[0])+","+ 3+")\n");
 		if (removeQuote(tokens[58]).equals("TRUE"))
-			itemsBuffer.append("INSERT INTO  ["+ PropsUtils.getDbName()+"].[dbo].[ItemsInActivity] ([activityId_id],[itemId_id]) VALUES ("+removeQuote(tokens[0])+","+ 4+")\n");
+			itemsBuffer.append("INSERT INTO  ItemsInActivity (activityId_id,itemId_id) VALUES ("+removeQuote(tokens[0])+","+ 4+")\n");
 		if (removeQuote(tokens[59]).equals("TRUE"))
-			itemsBuffer.append("INSERT INTO  ["+ PropsUtils.getDbName()+"].[dbo].[ItemsInActivity] ([activityId_id],[itemId_id]) VALUES ("+removeQuote(tokens[0])+","+ 5+")\n");
+			itemsBuffer.append("INSERT INTO  ItemsInActivity (activityId_id,itemId_id) VALUES ("+removeQuote(tokens[0])+","+ 5+")\n");
 		if (removeQuote(tokens[60]).equals("TRUE"))
-			itemsBuffer.append("INSERT INTO  ["+ PropsUtils.getDbName()+"].[dbo].[ItemsInActivity] ([activityId_id],[itemId_id]) VALUES ("+removeQuote(tokens[0])+","+ 6+")\n");
+			itemsBuffer.append("INSERT INTO  ItemsInActivity (activityId_id,itemId_id) VALUES ("+removeQuote(tokens[0])+","+ 6+")\n");
 		if (removeQuote(tokens[61]).equals("TRUE"))
-			itemsBuffer.append("INSERT INTO  ["+ PropsUtils.getDbName()+"].[dbo].[ItemsInActivity] ([activityId_id],[itemId_id]) VALUES ("+removeQuote(tokens[0])+","+ 7+")\n");
+			itemsBuffer.append("INSERT INTO  ItemsInActivity (activityId_id,itemId_id) VALUES ("+removeQuote(tokens[0])+","+ 7+")\n");
 	}
 
 	private static void loadMaterialBuffers(StringBuffer materialBuffer,
 			String[] tokens) {
 		if (removeQuote(tokens[62]).equals("TRUE"))
-			materialBuffer.append("INSERT INTO  ["+ PropsUtils.getDbName()+"].[dbo].[MaterialsInActivity] ([activityId_id],[materialId_id]) VALUES ("+ removeQuote(tokens[0]) +",6)\n");
+			materialBuffer.append("INSERT INTO  MaterialsInActivity (activityId_id,materialId_id) VALUES ("+ removeQuote(tokens[0]) +",6)\n");
 		if (removeQuote(tokens[63]).equals("TRUE"))
-			materialBuffer.append("INSERT INTO  ["+ PropsUtils.getDbName()+"].[dbo].[MaterialsInActivity] ([activityId_id],[materialId_id]) VALUES ("+ removeQuote(tokens[0] )+",1)\n");
+			materialBuffer.append("INSERT INTO  MaterialsInActivity (activityId_id,materialId_id) VALUES ("+ removeQuote(tokens[0] )+",1)\n");
 		if (removeQuote(tokens[64]).equals("TRUE"))
-			materialBuffer.append("INSERT INTO  ["+ PropsUtils.getDbName()+"].[dbo].[MaterialsInActivity] ([activityId_id],[materialId_id]) VALUES ("+ removeQuote(tokens[0] )+",2)\n");
+			materialBuffer.append("INSERT INTO  MaterialsInActivity (activityId_id,materialId_id) VALUES ("+ removeQuote(tokens[0] )+",2)\n");
 		if (removeQuote(tokens[65]).equals("TRUE"))
-			materialBuffer.append("INSERT INTO  ["+ PropsUtils.getDbName()+"].[dbo].[MaterialsInActivity] ([activityId_id],[materialId_id]) VALUES ("+ removeQuote(tokens[0] )+",3)\n");
+			materialBuffer.append("INSERT INTO  MaterialsInActivity (activityId_id,materialId_id) VALUES ("+ removeQuote(tokens[0] )+",3)\n");
 		if (removeQuote(tokens[66]).equals("TRUE"))
-			materialBuffer.append("INSERT INTO  ["+ PropsUtils.getDbName()+"].[dbo].[MaterialsInActivity] ([activityId_id],[materialId_id]) VALUES ("+ removeQuote(tokens[0] )+",4)\n");
+			materialBuffer.append("INSERT INTO  MaterialsInActivity (activityId_id,materialId_id) VALUES ("+ removeQuote(tokens[0] )+",4)\n");
 		if (removeQuote(tokens[67]).equals("TRUE"))
-			materialBuffer.append("INSERT INTO  ["+ PropsUtils.getDbName()+"].[dbo].[MaterialsInActivity] ([activityId_id],[materialId_id]) VALUES ("+ removeQuote(tokens[0] )+",5)\n");
+			materialBuffer.append("INSERT INTO  MaterialsInActivity (activityId_id,materialId_id) VALUES ("+ removeQuote(tokens[0] )+",5)\n");
 		if (removeQuote(tokens[68]).equals("TRUE"))
-			materialBuffer.append("INSERT INTO  ["+ PropsUtils.getDbName()+"].[dbo].[MaterialsInActivity] ([activityId_id],[materialId_id]) VALUES ("+ removeQuote(tokens[0] )+",7)\n");
+			materialBuffer.append("INSERT INTO  MaterialsInActivity (activityId_id,materialId_id) VALUES ("+ removeQuote(tokens[0] )+",7)\n");
 	}
 	
 	private static void generateSubOrganizationInsertStatements(int i, int k) {
 
 		File f = checkFileExists(PropsUtils.getSubOrganizationFile());
 		StringBuffer buffer = new StringBuffer();
-		buffer.append("USE ["+ PropsUtils.getDbName()+"]");
+		//buffer.append("USE "+ PropsUtils.getDbName()+"");
 		buffer.append("\n");
-		buffer.append("SET IDENTITY_INSERT ["+ PropsUtils.getDbName()+"].[dbo].[Organisaties] ON");
+		//buffer.append("SET IDENTITY_INSERT Organisaties] ON");
 		buffer.append("\n");
 		try {
-		BufferedReader reader = new BufferedReader(new FileReader(f));
+		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));
 		String line = reader.readLine(); // reading first line which has symbol
 		while ((line = reader.readLine()) != null) {
 				String[] tokens = line.replaceAll("'", "''").split("\t");
@@ -554,7 +583,7 @@ public class SQLScriptGenerator {
 				String userId = userIdKeyId.get(tokens[5].toLowerCase());
 				if (userId == null)
 					userId = userIdKeyId.get("UNKNOWN_USER".toLowerCase());
-				buffer.append("INSERT INTO [dbo].[Organisaties] ([id],[Naam],[ouder_id],[userId_id], [IsActive],[centrumId_id]) VALUES " +
+				buffer.append("INSERT INTO Organisaties (id,Naam,ouder_id,userId_id, IsActive,centrumId_id) VALUES " +
 						"("+i+",'"+tokens[1].replace("\"", "")+"',"+tokens[2]+","+"'"+userId+"',1,"+ centrumIdKeyId.get(removeQuote(tokens[4]).toUpperCase())+")");
 				organizationIdKeyId.put(tokens[2].trim() + "," + tokens[0].trim(), i+ "");
 				//System.out.println(tokens[2].trim() + "," + tokens[0].trim() +"=>"+ i+ "");
@@ -562,9 +591,9 @@ public class SQLScriptGenerator {
 				k = i;i++;
 		}
 		buffer.append("\n");
-		buffer.append("SET IDENTITY_INSERT ["+ PropsUtils.getDbName()+"].[dbo].[Organisaties] OFF");
+		//buffer.append("SET IDENTITY_INSERT Organisaties] OFF");
 		buffer.append("\n");
-		buffer.append("GO");
+//		buffer.append("GO");
 		writeBufferToFile("10-sub_organisaties.sql", buffer);
 		reader.close();
 		/*for (String key: organizationIdKeyId.keySet()) {
@@ -585,12 +614,12 @@ public class SQLScriptGenerator {
 		StringBuffer buffer = new StringBuffer();
 		int i = 1;
 		int k = 0;
-		buffer.append("USE ["+ PropsUtils.getDbName()+"]");
+		//buffer.append("USE "+ PropsUtils.getDbName()+"");
 		buffer.append("\n");
-		buffer.append("SET IDENTITY_INSERT  ["+ PropsUtils.getDbName()+"].[dbo].[Organisaties] ON");
+		//buffer.append("SET IDENTITY_INSERT  Organisaties] ON");
 		buffer.append("\n");
 		try {
-		BufferedReader reader = new BufferedReader(new FileReader(f));
+		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));
 		String line = reader.readLine(); // reading first line which has symbol
 		while ((line = reader.readLine()) != null) {
 				String[] tokens = line.replaceAll("'", "''").split("\t");
@@ -602,8 +631,8 @@ public class SQLScriptGenerator {
 				String userId = userIdKeyId.get(tokens[8].toLowerCase());
 				if (userId == null)
 					userId = userIdKeyId.get("UNKNOWN_USER".toLowerCase());
-				buffer.append("INSERT INTO [dbo].[Organisaties] ([id],[Naam],[OrganisatieNetwerk],[Adres],[Postcode],[Gemeente],[Land],[userId_id], [centrumId_id], [IsActive]) VALUES " +
-						"("+tokens[0]+",'"+tokens[1].replace("\"", "")+"','"+tokens[2]+"','"+tokens[3]+"','"+tokens[4]+"','"+tokens[5]+"','"+tokens[6]+"','"+userId+"',"+centrumIdKeyId.get(removeQuote(tokens[7]).toUpperCase())+", 1)");
+				buffer.append("INSERT INTO Organisaties (id,Naam,OrganisatieNetwerk,Adres,Postcode,Gemeente,Land,userId_id, centrumId_id, IsActive) VALUES " +
+						"("+tokens[0]+",'"+tokens[1].replace("\"", "")+"','"+tokens[2]+"','"+tokens[3]+"','"+tokens[4]+"','"+tokens[5]+"','"+tokens[6]+"',"+userId+","+centrumIdKeyId.get(removeQuote(tokens[7]).toUpperCase())+", 1)");
 				buffer.append("\n");
 				organizationIdKeyId.put(tokens[0].trim(), tokens[0].trim());
 				if (Integer.parseInt(tokens[0]) > i)
@@ -611,9 +640,9 @@ public class SQLScriptGenerator {
 				
 		}
 		buffer.append("\n");
-		buffer.append("SET IDENTITY_INSERT  ["+ PropsUtils.getDbName()+"].[dbo].[Organisaties] OFF");
+		//buffer.append("SET IDENTITY_INSERT  Organisaties] OFF");
 		buffer.append("\n");
-		buffer.append("GO");
+//		buffer.append("GO");
 		writeBufferToFile("9-organisaties.sql", buffer);
 		reader.close();
 		} catch (FileNotFoundException fnfe) {
@@ -633,48 +662,48 @@ public class SQLScriptGenerator {
 		StringBuffer buffer1 = new StringBuffer();
 		int i = 1;
 		int k = 0;
-		buffer.append("USE  ["+ PropsUtils.getDbName()+"]");
+		//buffer.append("USE  "+ PropsUtils.getDbName()+"");
 		buffer.append("\n");
 		buffer1.append("\n");
-		buffer.append("SET IDENTITY_INSERT  ["+ PropsUtils.getDbName()+"].[dbo].[TargetType] ON");
+		//buffer.append("SET IDENTITY_INSERT  TargetType] ON");
 		buffer.append("\n");
-		buffer1.append("SET IDENTITY_INSERT  ["+ PropsUtils.getDbName()+"].[dbo].[AttendantType] ON");
+		//buffer1.append("SET IDENTITY_INSERT  AttendantType ON");
 		buffer1.append("\n");
 		try {
-		BufferedReader reader = new BufferedReader(new FileReader(f));
+		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));
 		String head = null;
 		String line = reader.readLine(); // reading first line which has symbol
 		String symbol = line.split("=")[1]; // ugly
 		while ((line = reader.readLine()) != null) {
 			if (line.startsWith(symbol)) {
 				head = line.substring(symbol.length()).trim();
-				buffer.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[TargetType] ([id],[Beschrijving], [IsActive]) VALUES ("+i+",'"+ head+"',1)");
+				buffer.append("INSERT INTO TargetType (id,Beschrijving, IsActive) VALUES ("+i+",'"+ head+"',1)");
 				buffer.append("\n");
 				k = i;i++;
 			}
 			else {
 				head = line.trim();
-				buffer1.append("INSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[AttendantType] ([id],[targetTypeId_id],[Naam]) VALUES ("+ i +", "+ k +", '"+ head +"')");
+				buffer1.append("INSERT INTO AttendantType (id,targetTypeId_id,Naam) VALUES ("+ i +", "+ k +", '"+ head +"')");
 				buffer1.append("\n");i++;
 			}
 		}
 		buffer.append("\n");
-		buffer.append("SET IDENTITY_INSERT  ["+ PropsUtils.getDbName()+"].[dbo].[TargetType] OFF");
+		//buffer.append("SET IDENTITY_INSERT  TargetType] OFF");
 		buffer.append("\n");
 		buffer.append(buffer1);
 		buffer.append("\n");
-		buffer.append("\nSET IDENTITY_INSERT  ["+ PropsUtils.getDbName()+"].[dbo].[AttendantType] OFF");
-		buffer.append("\nSET IDENTITY_INSERT ["+ PropsUtils.getDbName()+"].[dbo].[Evaluvators] ON");
-		buffer.append("\nINSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[Evaluvators] ([id], [Naam],[IsActive]) VALUES (1, 'Jijzelf', 1)");
-		buffer.append("\nINSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[Evaluvators] ([id], [Naam], [IsActive]) VALUES (2, 'Een externe persoon of organisatie', 1)");
-		buffer.append("\nINSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[Evaluvators] ([id], [Naam], [IsActive]) VALUES (3, 'Beide', 1)");
-		buffer.append("\nSET IDENTITY_INSERT ["+ PropsUtils.getDbName()+"].[dbo].[Evaluvators] OFF");
-		buffer.append("\nSET IDENTITY_INSERT ["+ PropsUtils.getDbName()+"].[dbo].[Evaluvation_Type] ON");
-		buffer.append("\nINSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[Evaluvation_Type] ([id],[EvalType]) VALUES (1,'Mondeling')");
-		buffer.append("\nINSERT INTO ["+ PropsUtils.getDbName()+"].[dbo].[Evaluvation_Type] ([id],[EvalType]) VALUES (2,'Schriftel')");
-		buffer.append("\nSET IDENTITY_INSERT ["+ PropsUtils.getDbName()+"].[dbo].[Evaluvation_Type] OFF");
+		//buffer.append("\nSET IDENTITY_INSERT  AttendantType OFF");
+		//buffer.append("\nSET IDENTITY_INSERT Evaluvators] ON");
+		buffer.append("\nINSERT INTO Evaluvators (id, Naam,IsActive) VALUES (1, 'Jijzelf', 1)");
+		buffer.append("\nINSERT INTO Evaluvators (id, Naam, IsActive) VALUES (2, 'Een externe persoon of organisatie', 1)");
+		buffer.append("\nINSERT INTO Evaluvators (id, Naam, IsActive) VALUES (3, 'Beide', 1)");
+		//buffer.append("\nSET IDENTITY_INSERT Evaluvators] OFF");
+		//buffer.append("\nSET IDENTITY_INSERT Evaluvation_Type] ON");
+		buffer.append("\nINSERT INTO Evaluvation_Type (id,EvalType) VALUES (1,'Mondeling')");
+		buffer.append("\nINSERT INTO Evaluvation_Type (id,EvalType) VALUES (2,'Schriftelijk')");
+		//buffer.append("\nSET IDENTITY_INSERT Evaluvation_Type] OFF");
 		buffer.append("\n");
-		buffer.append("GO");
+//		buffer.append("GO");
 		writeBufferToFile("8-attendant_type.sql", buffer);
 		reader.close();
 		} catch (FileNotFoundException fnfe) {
@@ -693,32 +722,32 @@ public class SQLScriptGenerator {
 		StringBuffer buffer = new StringBuffer();
 		int i = 1;
 		int k = 0;
-		buffer.append("USE  ["+ PropsUtils.getDbName()+"]");
+		//buffer.append("USE  "+ PropsUtils.getDbName()+"");
 		buffer.append("\n");
-		buffer.append("SET IDENTITY_INSERT  ["+ PropsUtils.getDbName()+"].[dbo].[Materials] ON");
+		//buffer.append("SET IDENTITY_INSERT  Materials] ON");
 		buffer.append("\n");
 		try {
-		BufferedReader reader = new BufferedReader(new FileReader(f));
+		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));
 		String head = null;
 		String line = reader.readLine(); // reading first line which has symbol
 		String symbol = line.split("=")[1]; // ugly
 		while ((line = reader.readLine()) != null) {
 			if (line.startsWith(symbol)) {
 				head = line.substring(symbol.length()).trim();
-				buffer.append("INSERT INTO [dbo].[Materials] ([id],[Naam], [IsActive]) VALUES ("+i+",'"+head+"',1)");
+				buffer.append("INSERT INTO Materials (id,Naam, IsActive) VALUES ("+i+",'"+head+"',1)");
 				buffer.append("\n");
 				k = i;i++;
 			}
 			else {
 				head = line.trim();
-				buffer.append("INSERT INTO [dbo].[Items] ([Materials],[Naam],[Ouder]) VALUES ("+ i +",'"+ head +"',"+k+")");
+				buffer.append("INSERT INTO Items (Materials,Naam,Ouder) VALUES ("+ i +",'"+ head +"',"+k+")");
 				buffer.append("\n");i++;
 			}
 		}
 		buffer.append("\n");
-		buffer.append("SET IDENTITY_INSERT  ["+ PropsUtils.getDbName()+"].[dbo].[Materials] OFF");
+		//buffer.append("SET IDENTITY_INSERT  Materials] OFF");
 		buffer.append("\n");
-		buffer.append("GO");
+//		buffer.append("GO");
 		writeBufferToFile("7-materials.sql", buffer);
 		reader.close();
 		} catch (FileNotFoundException fnfe) {
@@ -737,32 +766,32 @@ public class SQLScriptGenerator {
 		StringBuffer buffer = new StringBuffer();
 		int i = 1;
 		int k = 0;
-		buffer.append("USE  ["+ PropsUtils.getDbName()+"]");
+		//buffer.append("USE  "+ PropsUtils.getDbName()+"");
 		buffer.append("\n");
-		buffer.append("SET IDENTITY_INSERT  ["+ PropsUtils.getDbName()+"].[dbo].[Items] ON");
+		//buffer.append("SET IDENTITY_INSERT  Items] ON");
 		buffer.append("\n");
 		try {
-		BufferedReader reader = new BufferedReader(new FileReader(f));
+		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));
 		String head = null;
 		String line = reader.readLine(); // reading first line which has symbol
 		String symbol = line.split("=")[1]; // ugly
 		while ((line = reader.readLine()) != null) {
 			if (line.startsWith(symbol)) {
 				head = line.substring(symbol.length()).trim();
-				buffer.append("INSERT INTO [dbo].[Items] ([id],[Naam], [IsActive]]) VALUES ("+i+",'"+head+"',1)");
+				buffer.append("INSERT INTO Items (id,Naam, IsActive) VALUES ("+i+",'"+head+"',1)");
 				buffer.append("\n");
 				k = i;i++;
 			}
 			else {
 				head = line.trim();
-				buffer.append("INSERT INTO [dbo].[Items] ([id],[Naam],[Ouder]) VALUES ("+ i +",'"+ head +"',"+k+")");
+				buffer.append("INSERT INTO Items (id,Naam,Ouder) VALUES ("+ i +",'"+ head +"',"+k+")");
 				buffer.append("\n");i++;
 			}
 		}
 		buffer.append("\n");
-		buffer.append("SET IDENTITY_INSERT  ["+ PropsUtils.getDbName()+"].[dbo].[Items] OFF");
+		//buffer.append("SET IDENTITY_INSERT  Items] OFF");
 		buffer.append("\n");
-		buffer.append("GO");
+//		buffer.append("GO");
 		writeBufferToFile("6-items.sql", buffer);
 		reader.close();
 		} catch (FileNotFoundException fnfe) {
@@ -783,12 +812,12 @@ public class SQLScriptGenerator {
 		int k = 0;
 		int a = 0;
 		int b = 0;
-		buffer.append("USE  ["+ PropsUtils.getDbName()+"]");
+		//buffer.append("USE  "+ PropsUtils.getDbName()+"");
 		buffer.append("\n");
-		buffer.append("SET IDENTITY_INSERT  ["+ PropsUtils.getDbName()+"].[dbo].[ActivityType] ON");
+		//buffer.append("SET IDENTITY_INSERT  ActivityType] ON");
 		buffer.append("\n");
 		try {
-		BufferedReader reader = new BufferedReader(new FileReader(f));
+		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));
 		String head = null;
 		String line = reader.readLine(); // reading first line which has symbol
 		String symbol = line.split("=")[1]; // ugly
@@ -797,22 +826,22 @@ public class SQLScriptGenerator {
 				a++;
 				b = 0;
 				head = line.substring(symbol.length()).trim();
-				buffer.append("INSERT INTO [dbo].[ActivityType] ([id],[Naam],[IsActive]) VALUES ("+ i +",'"+ head +"',1)");
+				buffer.append("INSERT INTO ActivityType (id,Naam,IsActive) VALUES ("+ i +",'"+ head +"',1)");
 				buffer.append("\n");
 				k = i;i++;
 			}
 			else {
 				b++;
 				head = line.trim();
-				buffer.append("INSERT INTO [dbo].[ActivityType] ([id],[Naam],[ouder_id], [IsActive]) VALUES ("+ i +",'"+ head +"',"+k+", 1)");
+				buffer.append("INSERT INTO ActivityType (id,Naam,ouder_id, IsActive) VALUES ("+ i +",'"+ head +"',"+k+", 1)");
 				activityTypeIdKeyId.put(a+ "," + b, i+"");
 				buffer.append("\n");i++;
 			}
 		}
 		buffer.append("\n");
-		buffer.append("SET IDENTITY_INSERT  ["+ PropsUtils.getDbName()+"].[dbo].[ActivityType] OFF");
+		//buffer.append("SET IDENTITY_INSERT  ActivityType] OFF");
 		buffer.append("\n");
-		buffer.append("GO");
+//		buffer.append("GO");
 		writeBufferToFile("5-activity_type.sql", buffer);
 		reader.close();
 		} catch (FileNotFoundException fnfe) {
@@ -837,12 +866,12 @@ public class SQLScriptGenerator {
 		int k = 0;
 		int a = 0;
 		int b = 1;
-		buffer.append("USE  ["+ PropsUtils.getDbName()+"]");
+		//buffer.append("USE  "+ PropsUtils.getDbName()+"");
 		buffer.append("\n");
-		buffer.append("SET IDENTITY_INSERT  ["+ PropsUtils.getDbName()+"].[dbo].[Locations] ON");
+		//buffer.append("SET IDENTITY_INSERT  Locations] ON");
 		buffer.append("\n");
 		try {
-		BufferedReader reader = new BufferedReader(new FileReader(f));
+		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));
 		String head = null;
 		String line = reader.readLine(); // reading first line which has symbol
 		String symbol = line.split("=")[1]; // ugly
@@ -850,7 +879,7 @@ public class SQLScriptGenerator {
 			if (line.startsWith(symbol)) {
 				a++;b=1;
 				head = line.substring(symbol.length()).trim().replace("\'", "\'\'");
-				buffer.append("INSERT INTO [dbo].[Locations] ([id],[Naam],[IsActive]) VALUES ("+ i +",'"+ head +"',1)");
+				buffer.append("INSERT INTO Locations (id,Naam,IsActive) VALUES ("+ i +",'"+ head +"',1)");
 				buffer.append("\n");
 				k = i;i++;
 			}
@@ -861,7 +890,7 @@ public class SQLScriptGenerator {
 				locationIdKeyId.put(a+","+b, i+"");
 				locationIdKeyId.put(head.toLowerCase(), a+","+b);
 				head = line.trim().replace("\'", "\'\'");
-				buffer.append("INSERT INTO [dbo].[Locations] ([id],[Naam],[ouder_id],[IsActive]) VALUES ("+ i +",'"+ head +"',"+k+",1)");
+				buffer.append("INSERT INTO Locations (id,Naam,ouder_id,IsActive) VALUES ("+ i +",'"+ head +"',"+k+",1)");
 				if (k==1) {
 					lokaalCities.put(head.trim(), i);
 				}
@@ -873,9 +902,9 @@ public class SQLScriptGenerator {
 			System.out.println(key + "==="+locationIdKeyId.get(key));
 		}*/
 		buffer.append("\n");
-		buffer.append("SET IDENTITY_INSERT  ["+ PropsUtils.getDbName()+"].[dbo].[Locations] OFF");
+		//buffer.append("SET IDENTITY_INSERT  Locations] OFF");
 		buffer.append("\n");
-		buffer.append("GO");
+//		buffer.append("GO");
 		writeBufferToFile("3-locations.sql", buffer);
 		reader.close();
 		} catch (FileNotFoundException fnfe) {
@@ -899,33 +928,33 @@ public class SQLScriptGenerator {
 	private static void addClustersToLocations(int i) {
 		File f = checkFileExists(PropsUtils.getClusterFile());
 		StringBuffer buffer = new StringBuffer();
-		buffer.append("USE  ["+ PropsUtils.getDbName()+"]");
+		//buffer.append("USE  "+ PropsUtils.getDbName()+"");
 		buffer.append("\n");
-		buffer.append("SET IDENTITY_INSERT  ["+ PropsUtils.getDbName()+"].[dbo].[Locations] ON");
+		//buffer.append("SET IDENTITY_INSERT  Locations] ON");
 		buffer.append("\n");
 		int k = 0;
 		String line = "";
 		try {
-			BufferedReader reader = new BufferedReader(new FileReader(f));
+			BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));
 			line = reader.readLine();
 			while((line=reader.readLine())!=null) {
 				++i;
 				String tokens[] = line.split("\t");
 				centrums.add(tokens[2]);
-				buffer.append("INSERT INTO [dbo].[Locations] ([id],[Naam],[IsCluster], [centrumId_id],[IsActive]) VALUES ("+ i +",'"+ tokens[1].replace("\'", "\'\'") +"',1, "+centrumIdKeyId.get(removeQuote(tokens[2]).toUpperCase())+",1)\n");
+				buffer.append("INSERT INTO Locations (id,Naam,IsCluster, centrumId_id,IsActive) VALUES ("+ i +",'"+ tokens[1].replace("\'", "\'\'") +"',1, "+centrumIdKeyId.get(removeQuote(tokens[2]).toUpperCase())+",1)\n");
 				clusterIdKeyId.put(tokens[0], i+"");
 				k = i;i++;
 				for (int p = 5; p < tokens.length; p++) {
 					if (!tokens[p].trim().equals("")&&tokens[p]!=null&&!tokens[p].trim().equals("0")&&tokens[p].trim().charAt(tokens[p].length()-1) == '0') {
-						buffer.append("INSERT INTO [dbo].[CityClusterJunction] ([clusterId_id],[cityId_id]) VALUES ("+ k +","+lokaalCities.get(postCodes.get(tokens[p].trim())) +")\n");
+						buffer.append("INSERT INTO CityClusterJunction (clusterId_id,cityId_id) VALUES ("+ k +","+lokaalCities.get(postCodes.get(tokens[p].trim())) +")\n");
 						i++;
 					}
 				}
 			}
 			buffer.append("\n");
-			buffer.append("SET IDENTITY_INSERT  ["+ PropsUtils.getDbName()+"].[dbo].[Locations] OFF");
+			//buffer.append("SET IDENTITY_INSERT  Locations] OFF");
 			buffer.append("\n");
-			buffer.append("GO");
+//			buffer.append("GO");
 			writeBufferToFile("4-clusters.sql", buffer);
 		}catch(Exception e){e.printStackTrace();
 		System.out.println(line);}
@@ -935,7 +964,7 @@ public class SQLScriptGenerator {
 	private static void loadPostCodesFile() {
 		try {
 		File f = checkFileExists(PropsUtils.getPostCodesFile());
-		BufferedReader reader = new BufferedReader(new FileReader(f));
+		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));
 		String line = null;
 		while ((line=reader.readLine())!=null) {
 			
@@ -961,12 +990,12 @@ public class SQLScriptGenerator {
 		int a = 0;
 		int b = 1;
 		int ouder = 1;
-		buffer.append("USE  ["+ PropsUtils.getDbName()+"]");
+		//buffer.append("USE  "+ PropsUtils.getDbName()+"");
 		buffer.append("\n");
-		buffer.append("SET IDENTITY_INSERT  ["+ PropsUtils.getDbName()+"].[dbo].[Sectors] ON");
+		//buffer.append("SET IDENTITY_INSERT  Sectors] ON");
 		buffer.append("\n");
 		try {
-		BufferedReader reader = new BufferedReader(new FileReader(f));
+		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));
 		String head = null;
 		String line = reader.readLine(); // reading first line which has symbol
 		String symbol = line.split("=")[1]; // ugly
@@ -975,7 +1004,7 @@ public class SQLScriptGenerator {
 				a++;
 				b = 1;
 				head = line.substring(symbol.length()).trim();
-				buffer.append("INSERT INTO [dbo].[Sectors] ([id],[Naam],[IsActive]) VALUES ("+ i +",'"+ head +"', 1)");
+				buffer.append("INSERT INTO Sectors (id,Naam,IsActive) VALUES ("+ i +",'"+ head +"', 1)");
 				buffer.append("\n");
 				
 				k = i;i++;
@@ -984,15 +1013,15 @@ public class SQLScriptGenerator {
 			else {
 				sectorIdKeyId.put(a + "," + b, i+"");
 				head = line.trim();
-				buffer.append("INSERT INTO [dbo].[Sectors] ([id],[Naam],[ouder_id],[IsActive]) VALUES ("+ i +",'"+ head +"',"+k+",1)");
+				buffer.append("INSERT INTO Sectors (id,Naam,ouder_id,IsActive) VALUES ("+ i +",'"+ head +"',"+k+",1)");
 				buffer.append("\n");i++;
 				b++;
 			}
 		}
 		buffer.append("\n");
-		buffer.append("SET IDENTITY_INSERT  ["+ PropsUtils.getDbName()+"].[dbo].[Sectors] OFF");
+		//buffer.append("SET IDENTITY_INSERT  Sectors] OFF");
 		buffer.append("\n");
-		buffer.append("GO");
+//		buffer.append("GO");
 		writeBufferToFile("2-sectors.sql", buffer);
 		reader.close();
 		
@@ -1013,7 +1042,7 @@ public class SQLScriptGenerator {
 	}
 	
 	private static void writeBufferToFile(String fileName, StringBuffer buffer) {
-		String filename = "/media/mynewdrive/sql_files3/" + fileName;
+		String filename = "/Users/jefw/Data/vad/" + fileName;
 		try {
 			
 			BufferedWriter writer = new BufferedWriter(new FileWriter(filename));

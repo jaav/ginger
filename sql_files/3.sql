@@ -1028,4 +1028,3 @@ INSERT INTO Locations (id,Naam,IsActive) VALUES (1025,'Federaal',1);
 INSERT INTO Locations (id,Naam,IsActive) VALUES (1026,'Internationaal',1);
 
 
-

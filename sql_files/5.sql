@@ -21,4 +21,3 @@ INSERT INTO ActivityType (id,Naam,ouder_id, IsActive) VALUES (18,'Aan persoon (i
 INSERT INTO ActivityType (id,Naam,IsActive) VALUES (19,'Andere actie',1);
 
 
-
