@@ -73,8 +73,8 @@
   <div class="label">Interne activiteit?</div>
   <div class="field">
       <input type="radio" name="internal_activity" value="yes"/> Ja&nbsp;&nbsp;&nbsp;&nbsp;
-      <input type="radio" name="internal_activity" value="no"/> Neen&nbsp;&nbsp;&nbsp;&nbsp;
-      <input type="radio" name="internal_activity" value="both" checked /> Om het even
+      <input type="radio" name="internal_activity" value="no" checked /> Neen&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="internal_activity" value="both" /> Zowel interne als niet-interne activiteiten
 
          
   </div>
@@ -167,7 +167,7 @@
 </div>
 <hr>
 <div class="row">
-  <div class="label">Datum vanaf</div>
+  <div class="label"><b>Datum vanaf</b></div>
   <div class="field">
       <input type="text" name="from_date" id="datepicker"/>
       <script>
@@ -177,7 +177,7 @@
   <span class="error">${errors.forKey('entity.activityDate')}</span>
 </div>
 <div class="row">
-  <div class="label">Datum tot en met</div>
+  <div class="label"><b>Datum tot en met</b></div>
   <div class="field">
 
       <input type="text" name="to_date" id="datepicker1"/>
