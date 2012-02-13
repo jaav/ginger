@@ -105,32 +105,36 @@ else
 	line += org_id + ";" + sub_org_id + ";";
 
 	//SECTORS and STUFF
+	int secs_size = secs.size();
 	sec_ouder_det = []
 	sub_sec_det = []
-	for (k in 0..i-1) {
+	for (k in 0..secs_size-1) {
 		sec_ouder_det.add("Neen")
-		sub_sec_det.add("");
+		//sub_sec_det.add("");
 	}
 	int sub_sec_counter = 0;
 	for (models.SectorActivityJunction saj: entity.sectorActivityJunctions) {
 		if (saj.sectorId.ouder==null) {
 			id = sec_ouder.get(saj.sectorId.id);
-			if(id!=null) sec_ouder_det[id] = "Ja";
+			if(id!=null){
+			  sec_ouder_det[id] = "Ja";
+			  sub_sec_det[sub_sec_counter++] = saj.sectorId.naam;
+			}
 
 		} else {
 			id = sec_ouder.get(saj.sectorId.ouder.id);
 			if(id!=null){
 			  sec_ouder_det[id] = "Ja";
-			  sub_sec_det[sub_sec_counter++] = models.Sectors.toString(saj.sectorId.id);
+			  sub_sec_det[sub_sec_counter++] = saj.sectorId.naam;//models.Sectors.toString(saj.sectorId.id);
 			}
 		}
 	}
 	sub_sec_line = ""
-	for (k in 0..i-1) {
+	for (k in 0..secs_size-1) {
 		line += sec_ouder_det[k] + ";";
 
 	}
-	for (k in 1..12) {
+	for (k in 0..11) {
 	  if(k<sub_sec_det.size())
 		  line += sub_sec_det[k] + ";";
     else
@@ -138,18 +142,20 @@ else
 	}
 	//ACTIVITY_TYPES & SUBTYPES
 	sub_act_type_det = [];
-	for (k in 0..4) {
+	/*for (k in 0..4) {
 		sub_act_type_det.add("");
-	}
+	}*/
 	int act_sub_type_counter = 0;
 	for(models.ActivityTypeJunction at: entity.activityTypeJunctions) {
 		soortAct = "";
-		if (at.activityTypeId.ouder==null)
+		if (at.activityTypeId.ouder==null){
 			id = at.activityTypeId.id;
+			//sub_act_type_det[act_sub_type_counter++] = at.activityTypeId.naam;
+		}
 		else {
 			id = at.activityTypeId.ouder.id;
 			sub_act_type_det[act_sub_type_counter++] = at.activityTypeId.naam;
-			}
+		}
 		if(id!=null) soortAct = 	act_type.get(id);
 	}
 	line+=soortAct + ";";
