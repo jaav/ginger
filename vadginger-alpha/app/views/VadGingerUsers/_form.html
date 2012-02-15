@@ -85,31 +85,11 @@
  <div class="row">
   <div class="label">Paswoord</div>
   <div class="field">
-      <input name="c_password" id="password" title="Paswoord" />
+      <input type="password" name="c_password" id="password" title="Paswoord" />
 
       <span id="invalidPassword"></span>
   </div>
   </div>
-<script>
-$("form").submit(function(){
-	var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-	var emailIdVal = $("#emailId").val();
-	if(emailIdVal==''||!emailReg.test(emailIdVal)) {
-		$("#emailIdSpan").text("Invalid Email Id").show();
-		return false;
-	} else {
-		$("#emailIdSpan").hide();
-		return true;
-	}
-	//alert($("#password").val());
-	if($("#password").val().length<5) {
-		$('#invalidPassword').text("Invalid Password").show();
-		return false;
-	}
-	
-	
-});
-</script>
 
 
  <div class="row">
@@ -137,6 +117,11 @@ $("form").submit(function(){
         $("form").validity(function() {
           $("input[type=text]").require();
           $("#centrumSelect").require();
+          $("#emailId").match("email", "Gelieve een geldig email adres in te geven");
+          $("input[type=password]").assert(
+            ($("input[type=password]").val().length>5),
+                "Gelieve een paswoord van minstens 6 karakters in te geven"
+            );
         });
     });
 </script>
