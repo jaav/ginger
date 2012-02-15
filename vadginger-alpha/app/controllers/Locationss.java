@@ -31,8 +31,8 @@ public class Locationss extends GingerController {
 
   public static void subLocindex() {
     //List<Locations> entities = models.Locations.all().fetch();
-    ModelPaginator entities = new ModelPaginator(Locations.class, "ouder is not null and isCluster=0");
-    entities.setPageSize(20);
+    ModelPaginator entities = new ModelPaginator(Locations.class, "ouder is not null and isCluster=0 order by ouder.id, naam");
+    entities.setPageSize(50);
     setAccordionTab(4);
     render("Locationss/index.html", entities);
   }
@@ -123,6 +123,8 @@ public class Locationss extends GingerController {
       render("@create", entity);
     }
     entity.isActive = true;
+    if(entity.isCluster==null) entity.isCluster = false;
+    if(entity.isCluster) entity.ouder = null;
     entity.save();
     flash.success(Messages.get("scaffold.created", "Locations"));
     index();
@@ -208,6 +210,7 @@ public class Locationss extends GingerController {
     }
 
     entity = entity.merge();
+    if(entity.isCluster) entity.ouder = null;
 
     entity.isActive = true;
     entity.save();
