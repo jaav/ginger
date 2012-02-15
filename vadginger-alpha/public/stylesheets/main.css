@@ -101,6 +101,10 @@ body {
 }
 
 /* *********** TABLES ************ */
+
+.deleted{
+  color: #808080;
+}
 #mytable {
 	width: 100%;
 	padding: 0;

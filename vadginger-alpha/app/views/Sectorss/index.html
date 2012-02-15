@@ -13,16 +13,21 @@
 	</thead>
 	<tbody>
 	#{paginate.list items:entities, as:'entity'}
-		<tr>
+		<tr class="${entity.isActive ? '' : 'deleted'}">
 					<td>${entity.naam}</td>
 					<td>${entity.beschrijving}</td>
 					<td>${entity.ouder}</td>
           <td>
+            #{if entity.isActive}
             <table class="actiontable"><tr>
               <td><a href="@{Sectorss.show(entity.id)}" title="Bekijken" name="Bekijken"><div class="viewer actionbutton"></div></a></td>
               <td><a href="@{Sectorss.edit(entity.id)}" title="Bewerken" name="Bewerken"><div class="editor actionbutton"></div></a></td>
               <td><a href="@{Sectorss.delete(entity.id)}" title="Verwijderen" name="Verwijderen" onclick="if (!confirm('Ben je zeker dat je dit object will verwijderen?')) return false;"><div class="deleter actionbutton"></div></a></td>
             </tr></table>
+            #{/if}
+            #{else}
+            <span class="error">verwijderd</span>
+            #{/else}
           </td>
 		</tr>
 	#{/paginate.list}

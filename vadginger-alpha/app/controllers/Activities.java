@@ -19,6 +19,7 @@ import play.data.validation.Valid;
 import play.i18n.Messages;
 import play.libs.Mail;
 import play.modules.paginate.ModelPaginator;
+import play.modules.paginate.Paginator;
 import play.modules.paginate.ValuePaginator;
 import play.mvc.With;
 
@@ -29,15 +30,31 @@ public class Activities extends GingerController {
 		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
     String orderquery = StringUtils.isNotBlank(orderby)&&StringUtils.isNotBlank(orderhow) ? " order by "+orderby+" "+orderhow : " order by id desc";
     if(params.getAll("filter")!=null) orderSearch(orderquery);
-		ModelPaginator entities = null;
-		if (user.role.compareTo(RoleType.ADMIN)>= 0) {
-		  entities = new ModelPaginator(Activity.class, "isActive=1"+orderquery);
-		}
-		else if (user.role.equals(RoleType.ORG_ADMIN)) {
-			entities = new ModelPaginator(Activity.class, "centrumId is " + user.centrumId.id +" and isActive=1"+orderquery);
-		} else {
-			entities = new ModelPaginator(Activity.class, "userId is " + user.id + " and isActive=1"+orderquery);
-		}
+    Paginator entities = null;
+    if("organizationId.naam".equals(orderby)){
+      String query;
+      List<models.Activity> result;
+      if (user.role.compareTo(RoleType.ADMIN)>= 0)
+        query = "isActive=1";
+      else if (user.role.equals(RoleType.ORG_ADMIN))
+        query = "centrumId is " + user.centrumId.id +" and isActive=1";
+      else
+        query = "userId is " + user.id + " and isActive=1";
+
+      result = getSortedByOrganisation(query, orderhow);
+      entities = new ValuePaginator(result);
+    }
+    else{
+      entities = null;
+      if (user.role.compareTo(RoleType.ADMIN)>= 0) {
+        entities = new ModelPaginator(Activity.class, "isActive=1"+orderquery);
+      }
+      else if (user.role.equals(RoleType.ORG_ADMIN)) {
+        entities = new ModelPaginator(Activity.class, "centrumId is " + user.centrumId.id +" and isActive=1"+orderquery);
+      } else {
+        entities = new ModelPaginator(Activity.class, "userId is " + user.id + " and isActive=1"+orderquery);
+      }
+    }
 		entities.setPageSize(100);
 		setAccordionTab(2);
     //renderArgs.put("allowExport", true);
@@ -391,10 +408,10 @@ public class Activities extends GingerController {
 		entity.isActive = true;
 		getDate(entity);
 		entity = entity.merge();
-		if(request.params.get("entity.internalActivity")==null)
+		/*if(request.params.get("entity.internalActivity")==null)
 			entity.internalActivity = false;
 		else
-			entity.internalActivity = true;
+			entity.internalActivity = true;*/
 		if (entity.evaluvated)
 			entity.evaluvated = true;
 		else
@@ -459,6 +476,8 @@ public static void searchForm() {
       whereClause.add("act.internalActivity=1");
     else if (!StringUtils.isBlank(intActivity)&&intActivity.trim().toLowerCase().equals("no"))
       whereClause.add("act.internalActivity=0");
+    else if (!StringUtils.isBlank(intActivity)&&intActivity.trim().toLowerCase().equals("both"))
+      whereClause.add("act.internalActivity in (0,1)");
 	   getActivityByItemsUsed(whereClause, joinClause);
 	   getActivityByMaterialUsed(whereClause, joinClause);
 	   getActivityBySector(whereClause, joinClause);
@@ -515,15 +534,64 @@ public static void searchForm() {
    }
 
   private static void orderSearch(String orderQuery){
-		   String query = session.get("query");
-        query = query.substring(0, query.indexOf("order by"))+orderQuery.replace("order by ", "order by act.");
-       List<models.Activity> result = models.Activity.find(query).fetch();
-		   ValuePaginator entities = new ValuePaginator(result);
-       setAccordionTab(2);
-		   entities.setPageSize(100);
-       renderArgs.put("allowExport", true);
-       renderArgs.put("count", entities.size());
-       renderTemplate("Activities/index.html", entities);
+		String query = session.get("query");
+    List<models.Activity> result;
+    if(orderQuery.indexOf("organizationId.naam")>0){
+      result = getSortedByOrganisation(query, orderQuery.indexOf("desc")>0 ? "desc" : "asc");
+    }
+    else{
+      query = query.substring(0, query.indexOf("order by"))+orderQuery.replace("order by ", "order by act.");
+      result = Activity.find(query).fetch();
+    }
+    ValuePaginator entities = new ValuePaginator(result);
+    setAccordionTab(2);
+    entities.setPageSize(100);
+    renderArgs.put("allowExport", true);
+    renderArgs.put("count", entities.size());
+    renderTemplate("Activities/index.html", entities);
+  }
+
+  private static List<Activity> getSortedByOrganisation(String query, String ascdesc){
+    List<Activity> activities = Activity.find(query).fetch();
+    Comparator<Activity> comp;
+    if("asc".equals(ascdesc))
+      comp = new ActivityComparableAsc();
+    else
+      comp = new ActivityComparableDesc();
+    Collections.sort(activities, comp);
+    return activities;
+  }
+  
+  private static class ActivityComparableDesc implements Comparator<Activity>{
+ 
+    @Override
+    public int compare(Activity a1, Activity a2) {
+      String name1 = getComparableOrganizationName(a1);
+      String name2 = getComparableOrganizationName(a2);
+      return (name1.compareTo(name2)>0 ? -1 : (name1.equals(name2) ? 0 : 1));
+    }
+  }
+
+  private static class ActivityComparableAsc implements Comparator<Activity>{
+
+    @Override
+    public int compare(Activity a1, Activity a2) {
+      String name1 = getComparableOrganizationName(a1);
+      String name2 = getComparableOrganizationName(a2);
+      return (name2.compareTo(name1)>0 ? -1 : (name2.equals(name1) ? 0 : 1));
+    }
+  }
+
+  private static String getComparableOrganizationName(Activity activity){
+      String name;
+    if(activity.organizationId!=null){
+      if(activity.organizationId.ouder!=null)
+        name = activity.organizationId.ouder.naam+activity.organizationId.naam;
+      else
+        name = activity.organizationId.naam;
+    }
+    else name = "";
+    return name;
   }
 
 private static void getActivityByDuration(ArrayList<String> whereClause) {
