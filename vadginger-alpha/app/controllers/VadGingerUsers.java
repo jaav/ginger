@@ -26,10 +26,11 @@ public class VadGingerUsers extends GingerController {
 		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
 		ModelPaginator entities = null;
 		if (user.role.equals(models.RoleType.ADMIN))
-			entities = new ModelPaginator(VadGingerUser.class, "role in (0,1) and isActive=1");
+			entities = new ModelPaginator(VadGingerUser.class, "role in (0,1) and isActive=1 order by userID");
 		else
-			entities = new ModelPaginator(VadGingerUser.class, "isActive=1");
+			entities = new ModelPaginator(VadGingerUser.class, "isActive=1 order by userID");
 		setAccordionTab(1);
+    entities.setPageSize(50);
 		render(entities);
 	}
 
@@ -41,6 +42,7 @@ public class VadGingerUsers extends GingerController {
 		else
 			entities = new ModelPaginator(VadGingerUser.class, "isActive=1");
     setAccordionTab(3);
+    entities.setPageSize(50);
 		renderTemplate("VadGingerUsers/index.html", entities);
 	}
 
