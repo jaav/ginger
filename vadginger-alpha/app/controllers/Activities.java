@@ -511,8 +511,28 @@ public static void searchForm() {
        String quer = joinClause.toString() + " where " +where.toString()+ " order by act.id desc";
        System.out.println("=========================> query=" + quer);
        List<models.Activity> result = models.Activity.find(quer).fetch();
-		   ValuePaginator entities = new ValuePaginator(result);
+       List<models.Activity> multisectorResult;
+		   ValuePaginator entities;
        if (request.params.get("sector_999")!=null) {
+         multisectorResult = new ArrayList<Activity>();
+         for (Activity activity : result) {
+    		   HashSet<Long> secIds = new HashSet<Long>();
+    		   for (models.SectorActivityJunction saj: activity.sectorActivityJunctions) {
+    			   if (saj.sectorId.ouder!=null)
+    				   secIds.add(saj.sectorId.ouder.id);
+    			   else
+    				   secIds.add(saj.sectorId.id);
+    		   }
+    		   if (secIds.size() > 1)
+    			   multisectorResult.add(activity);
+         }
+        entities = new ValuePaginator(multisectorResult);
+       }
+       else{
+        entities = new ValuePaginator(result);
+       }
+
+       /*if (request.params.get("sector_999")!=null) {
     	   for (Iterator<Activity> i = entities.iterator(); i.hasNext();) {
     		   Activity e = i.next();
     		   HashSet<Long> secIds = new HashSet<Long>();
@@ -526,7 +546,7 @@ public static void searchForm() {
     			   i.remove();
     	   }
     	   
-       }
+       }*/
 		   entities.setPageSize(100);
        setAccordionTab(2);
        renderArgs.put("allowExport", true);
