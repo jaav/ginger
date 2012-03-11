@@ -64,7 +64,7 @@ for (models.EvaluvationType evalType: evalTypes) {
 	eval_type_string += evalType.evalType + ";";
 	eval_arr.put(evalType.id,eval_count);eval_count++;
 }
-eval_type_string += "WieEvaluatie" + ";"
+eval_type_string += "WieEvaluatie" + ";Verslag"
 
 evaluators = [:]
 List<models.Evaluvators> evaluvators = models.Evaluvators.all().fetch();
@@ -75,7 +75,8 @@ for (models.Evaluvators evaluvator: evaluvators) {
 //,GrootteDoelgroep,MiddelengebruikAlgemeen,Alcohol,IllegaleDrugs,Medicatie,Tabak,Gokken,ICTverslavingen,MatAnder,MatZelf,MatVAD,MatVlaamsN,MatLokaalN,MatInternationaalN,MatGeen,Geevalueerd,Mondeling,Schriftelijk,WieEvaluatie,Verslag,School,Werkplek,Vrijetijdsectoren,Residentiele,Gevangenissen,Lokaal,SpecifiekeDoelgroepen,GeenVanDeze,Locatie,Provincie,Gemeenschap,Postcode,Regio,InterneActiviteit
 }%
 
-ActiviteitID;Datum;Omschrijving;Duur;Centrum;Gebruiker;OrgID;SubOrgID;${sec_string}${sub_sec_string}${act_type_string}${sub_act_type_string}${target_type_string}Grootte Doelgroep;${mat_string}${item_string}Geëvalueerd;${eval_type_string}
+ActiviteitID;Datum;Omschrijving;Duur;Centrum;Gebruiker;OrgID;SubOrgID;${sec_string}${sub_sec_string}${act_type_string}${sub_act_type_string}${target_type_string}Grootte Doelgroep;${mat_string}${item_string}Geëvalueerd;${eval_type_string};Locatie;Provincie;Gemeenschap;Postcode;Regio;InterneActiviteit
+
 
 
 #{list entities, as :'entity'}
@@ -239,7 +240,53 @@ else
 		line+= eval_type_det[k] + ";"
 	}
 	
-	line+= examined_by +";"
+	
+	verslag = "0"
+	if (entity.evaluvated)
+		verslag = "1"
+	line+= examined_by +";" + verslag
+	
+	locatie = ""
+	province = ""
+	gemeen = ""
+	postcode = "0"
+	cluster = ""
+	
+	location = entity.locationId
+	location_ouder = entity.locationId
+	
+	if (location.ouder==null)
+		location_ouder = location
+	else if (location.ouder!=null)
+		location_ouder = location.ouder
+	
+	if (location_ouder.naam.toLowerCase().startsWith("lok")) {
+		locatie = "1";
+		postcode = location.naam;
+	} else if (location_ouder.naam.toLowerCase().startsWith("pro")) {
+		locatie = "3";
+		province = location.id - location_ouder.id;
+	} else if (location_ouder.naam.toLowerCase().startsWith("gem")) {
+		locatie = "4"
+		gemeen = location.id - location_ouder.id ;
+	} else if (location_ouder.naam.toLowerCase().startsWith("fed")) {
+		locatie = "5"
+		
+	} else if (location_ouder.naam.toLowerCase().startsWith("int")) {
+		locatie = "6"
+	}
+	
+	if (location.isCluster) {
+		locatie = "2";
+		cluster = location.naam
+		province =""
+		gemeen = ""
+		postcode = "0"
+	}
+	
+	internal = entity.internalActivity ? "TRUE" : "FALSE"
+	line = "\n" + line + ";" + locatie + ";" + province + ";" + gemeen + ";" + postcode + ";" + cluster + ";" + internal
+	
 	
 }%
 ${line}
