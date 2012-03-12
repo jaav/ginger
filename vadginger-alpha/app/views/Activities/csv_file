@@ -241,15 +241,15 @@ else
 	}
 	
 	
-	verslag = "0"
+	verslag = "Neen"
 	if (entity.evaluvated)
-		verslag = "1"
+		verslag = "Ja"
 	line+= examined_by +";" + verslag
 	
 	locatie = ""
 	province = ""
 	gemeen = ""
-	postcode = "0"
+	postcode = ""
 	cluster = ""
 	
 	location = entity.locationId
@@ -261,27 +261,28 @@ else
 		location_ouder = location.ouder
 	
 	if (location_ouder.naam.toLowerCase().startsWith("lok")) {
-		locatie = "1";
+		locatie = location_ouder.naam
 		postcode = location.naam;
 	} else if (location_ouder.naam.toLowerCase().startsWith("pro")) {
-		locatie = "3";
-		province = location.id - location_ouder.id;
+		locatie = location_ouder.naam
+		province = location.naam
 	} else if (location_ouder.naam.toLowerCase().startsWith("gem")) {
-		locatie = "4"
-		gemeen = location.id - location_ouder.id ;
+		locatie = location_ouder.naam
+		gemeen = location.naam
 	} else if (location_ouder.naam.toLowerCase().startsWith("fed")) {
-		locatie = "5"
+		locatie = location_ouder.naam//locatie = "5"
 		
 	} else if (location_ouder.naam.toLowerCase().startsWith("int")) {
-		locatie = "6"
+		locatie = location_ouder.naam//locatie = "6"
 	}
 	
+	
 	if (location.isCluster) {
-		locatie = "2";
+		locatie = "Region";
 		cluster = location.naam
 		province =""
 		gemeen = ""
-		postcode = "0"
+		postcode = ""
 	}
 	
 	internal = entity.internalActivity ? "TRUE" : "FALSE"
