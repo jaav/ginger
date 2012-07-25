@@ -365,6 +365,34 @@
   </div>
   <span class="error">${errors.forKey('entity.id')}</span>
 </div>
+
+
+
+<div class="row">
+  <div class="label">Welke items werden tijdens de activiteit behandeld?</div>
+  <div class="field" id="TheItem">
+
+
+    <ul>
+
+      <!-- 				<li id="li_1" > -->
+		<span>
+#{list items, as:'item'}
+<li>
+  <input id="item_1_${item.id}" name="item_1_${item.id}" class="element checkbox" type="checkbox" value="1" titel="Item"/>
+  <label class="choice" for="item_1_${item.id}">${item.naam}</label>
+  <input type="hidden" value="" title="Item" id="hi_${item?.id}"/><BR>
+</li>
+#{/list}
+		</span>
+
+      <!-- </li> -->
+    </ul>
+
+  </div>
+</div>
+<hr>
+
 <div class="row">
   <div class="label">Is de activiteit geëvalueerd?</div>
   <div class="field">

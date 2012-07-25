@@ -485,6 +485,45 @@
   </div>
   <span class="error">${errors.forKey('entity.id')}</span>
 </div>
+
+
+
+
+
+<div class="row">
+  <div class="label">Welke items werden tijdens de activiteit behandeld?</div>
+  <div class="field" id="TheItem">
+
+
+    <ul>
+
+      <!-- 				<li id="li_1" > -->
+		<span>
+
+ %{ models.Items.find("isActive=1").fetch().sort{ it.id }.each() { }%
+      %{
+      selected = false;
+      for(models.ItemsInActivity iia: entity.itemsInActivity) {
+		if (iia?.itemId?.id == it?.id) {
+		selected = true
+		}
+	}
+      }%
+      <li>
+      <input id="item_1_${itid}" name="item_1_${it.id}" class="element checkbox" type="checkbox" value="1" ${selected ? 'checked'.raw() : ''}/>
+      <label class="choice" for="item_1_${it.id}">${it.naam}</label>
+      <input type="hidden" value="" title="Item" id="hi_${item?.id}"/><BR>
+</li>
+      %{ } }%
+		</span>
+
+      <!-- </li> -->
+    </ul>
+
+  </div>
+</div>
+<hr>
+
 <div class="row">
   <div class="label">Is de activiteit ge&euml;valueerd?</div>
   <div class="field">
