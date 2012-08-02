@@ -270,10 +270,10 @@ else
 		locatie = location_ouder.naam
 		gemeen = location.naam
 	} else if (location_ouder.naam.toLowerCase().startsWith("fed")) {
-		locatie = location_ouder.naam//locatie = "5"
+		locatie = location_ouder.naam
 		
 	} else if (location_ouder.naam.toLowerCase().startsWith("int")) {
-		locatie = location_ouder.naam//locatie = "6"
+		locatie = location_ouder.naam
 	}
 	
 	
