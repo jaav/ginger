@@ -449,7 +449,7 @@ public class Activities extends GingerController {
 	
 	}
 
-public static void searchForm() {
+  public static void searchForm() {
 	   //System.out.println("++++++++++++> HERE");
      setAccordionTab(2);
 	   render();
@@ -508,7 +508,7 @@ public static void searchForm() {
 		   session.put("query", "");
      }
 	   else {
-       String quer = joinClause.toString() + " where " +where.toString()+ " order by act.id desc";
+       String quer = joinClause.toString() + " where " +where.toString()+ " and IsActive = 1 order by act.id desc";
        System.out.println("=========================> query=" + quer);
        List<models.Activity> result = models.Activity.find(quer).fetch();
        List<models.Activity> multisectorResult;
