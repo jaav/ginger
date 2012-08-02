@@ -142,7 +142,7 @@ public class Locationss extends GingerController {
     entity.isActive = true;
     entity = entity.save();
     saveClusterLocations(entity);
-    clustersIndex();
+    centrumClustersIndex();
 
   }
 
