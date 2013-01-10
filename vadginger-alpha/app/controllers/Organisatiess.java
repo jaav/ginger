@@ -170,7 +170,7 @@ public class Organisatiess extends GingerController {
 	}
 
   private static boolean isUnique(Organisaties org, Long centrumId){
-    return Organisaties.find("centrumId = " + centrumId + "and UPPER(naam) = '" + org.naam.toUpperCase() + "'" + " and isActive=1").fetch().isEmpty();
+    return Organisaties.find("centrumId = " + centrumId + "and UPPER(naam) = ? and isActive=1", org.naam.toUpperCase()).fetch().isEmpty();
   }
 
 }
