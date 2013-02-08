@@ -508,7 +508,7 @@ public class Activities extends GingerController {
 		   session.put("query", "");
      }
 	   else {
-       String quer = joinClause.toString() + " where " +where.toString()+ " and IsActive = 1 order by act.id desc";
+       String quer = joinClause.toString() + " where " +where.toString()+ " and act.isActive = 1 order by act.id desc";
        System.out.println("=========================> query=" + quer);
        List<models.Activity> result = models.Activity.find(quer).fetch();
        List<models.Activity> multisectorResult;
