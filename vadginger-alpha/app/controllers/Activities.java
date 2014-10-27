@@ -751,6 +751,7 @@ private static void getActivityBySector(ArrayList<String> whereClause, StringBuf
     List<Sectors> sectors = models.Sectors.find("ouder is null").fetch();
     StringBuffer idswhere = new StringBuffer();
     int counter = 1;
+	  //loop parent sectors and create a list of selected parent sectors in list emptyParents
     for (models.Sectors sector: sectors) {
       if(getParam("sector_"+sector.getId())!=null) emptyParents.add(sector.getId());
       String[] subsecs = request.params.getAll("sub_sector_"+sector.getId());
@@ -778,7 +779,7 @@ private static void getActivityBySector(ArrayList<String> whereClause, StringBuf
         joinClause.append(" join act.sectorActivityJunctions saj").append(counter).append(" join saj").append(counter).append(".sectorId sajsid").append(counter).append(" ");
         if(counter==1) idswhere.append(" saj1.activityId=act.id and ");
         else  idswhere.append(" saj").append(counter-1).append(".activityId=saj").append(counter).append(".activityId and ");
-        idswhere.append("sajsid").append(counter).append(".ouder = ").append(parentSector).append(" and ");
+        idswhere.append("(sajsid").append(counter).append(".ouder = ").append(parentSector).append(" or sajsid").append(counter).append(".id = ").append(parentSector).append(") and ");
         counter++;
       }
     }

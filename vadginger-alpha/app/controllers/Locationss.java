@@ -218,23 +218,26 @@ public class Locationss extends GingerController {
     index();
   }
 
-  public static void list(String id, boolean filter){
-    doList(id, filter);
+  public static void list(String id, String centrum_id, boolean filter){
+    doList(id, centrum_id, filter);
   }
 
   public static void list(String id){
-    doList(id, false);
+    doList(id, null, false);
   }
 
-  public static void doList(String id, boolean filter) {
+  public static void doList(String id, String centrum_id, boolean filter) {
     models.Locations org1 = models.Locations.find("id is " + id).first();
     String query = "ouder is " + id + " and isActive=1";
     models.VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
     if (org1.naam.toLowerCase().indexOf("regionaal") > -1) {
-      if (user.role != RoleType.ADMIN)
+      if (user.role != RoleType.ADMIN && user.role != RoleType.SUPER_ADMIN)
         query = "isActive=1 and isCluster=1 and centrumId=" + user.centrumId.id + " order by naam";
-      else
-        query = "isActive=1 and isCluster=1 order by naam ";
+      else {
+	      String centrumFilter = " ";
+	      if(StringUtils.isNotBlank(centrum_id)) centrumFilter = " and centrumId="+centrum_id+" ";
+	      query = "isActive=1 and isCluster=1"+centrumFilter+"order by naam ";
+      }
     }
     else
       query = "isActive=1 and ouder=" + id + " order by naam";

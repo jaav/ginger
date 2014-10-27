@@ -33,6 +33,8 @@
      $("#centrumselector").change(function(ev){
        $("#gebruikerselector").empty();
         var selectedCentrum = $(this).val();
+	      gingerdomain = {};
+	      gingerdomain['selectedCentrum'] = selectedCentrum;
         var listUsers = #{jsAction @VadGingerUsers.list(':id')/}
           $("#gebruikerselector").load(listUsers({id: selectedCentrum}), function() {
         });
@@ -230,8 +232,9 @@
   			$("#hiddenLoc").empty();
   			var selectedLocation = $("#locationSelect option:selected").val();
   			 //var listLocations = "/suborganizations/list?id="+selectedOrganization+"&centrumId=${centrumId.id}";
-  			var listLocations = #{jsAction @Locationss.list(':id', ':filter')/}
-			$("#hiddenLoc").load(listLocations({id: selectedLocation, filter: true}), function(){});
+			  if(typeof gingerdomain !== 'undefined' && typeof gingerdomain.selectedCentrum!== 'undefined') var selectedCentrum = gingerdomain.selectedCentrum;
+  			var listLocations = #{jsAction @Locationss.list(':id', ':centrum_id', ':filter')/}
+			$("#hiddenLoc").load(listLocations({id: selectedLocation, centrum_id: selectedCentrum, filter: true}), function(){});
   		});
   	</script>
   	<!-- </select> -->
