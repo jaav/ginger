@@ -649,20 +649,21 @@ private static void getActivityByActivityTargets(ArrayList<String> whereClause, 
     String atdId = null;
     boolean hasTarget = false;
     joinClause.append(" join act.activityTargets actTarget join actTarget.attendantTypeId atdTypeId ");
+	  //add selective 'in' clause to the 'where' clause
+	  StringBuffer targetWhere = new StringBuffer("atdTypeId in (");
     for (models.AttendantType atd: atdTypes) {
       atdId = request.params.get("atd_typ_" + atd.getId());
       if (atdId!=null) {
-        whereClause.add("atdTypeId="+atd.getId());
+	      targetWhere.append(atd.getId()).append(",");
         hasTarget = true;
       }
     }
     if(!hasTarget){
-      StringBuffer targetWhere = new StringBuffer("atdTypeId in (");
       for (models.AttendantType atd: atdTypes) {
         targetWhere.append(atd.getId()).append(",");
       }
-      whereClause.add(targetWhere.deleteCharAt(targetWhere.length()-1).append(")").toString());
     }
+	  whereClause.add(targetWhere.deleteCharAt(targetWhere.length()-1).append(")").toString());
   }
 }
 

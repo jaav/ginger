@@ -4,6 +4,7 @@ import java.util.List;
 
 import antlr.StringUtils;
 import models.Centrums;
+import models.RoleType;
 import models.VadGingerUser;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.SimpleEmail;
@@ -24,26 +25,37 @@ public class VadGingerUsers extends GingerController {
 	public static void index() {
 		//List<VadGingerUser> entities = models.VadGingerUser.all().fetch();
 		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
-		ModelPaginator entities = null;
-		if (user.role.equals(models.RoleType.ADMIN))
-			entities = new ModelPaginator(VadGingerUser.class, "role in (0,1) and isActive=1 order by userID");
+
+		if(user==null || user.userID==null) user = models.VadGingerUser.find("id is " + session.get("userId")).first();
+		if (user!=null && user.role.equals(RoleType.SUPER_ADMIN)) {
+			ModelPaginator entities = new ModelPaginator(VadGingerUser.class, "role in (0,1) and isActive=1 order by userID");
+			setAccordionTab(1);
+			entities.setPageSize(50);
+			render(entities);
+		}
+		else if (user!=null && user.role.equals(RoleType.ORG_ADMIN))
+			centrumUsers();
 		else
-			entities = new ModelPaginator(VadGingerUser.class, "isActive=1 order by userID");
-		setAccordionTab(1);
-    entities.setPageSize(50);
-		render(entities);
+			Statics.index();
 	}
 
 	public static void centrumUsers() {
 		VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
+		if(user==null || user.userID==null){
+			String userId = session.get("userId");
+			//user = models.VadGingerUser.findById(session.get("userId"));
+			user = models.VadGingerUser.findById(Long.parseLong(session.get("userId")));
+			//user = models.VadGingerUser.find("id is " + session.get("userId")).first();
+		}
 		ModelPaginator entities = null;
-		if (user.centrumId!=null)
+		if (user!=null && user.centrumId!=null) {
 			entities = new ModelPaginator(VadGingerUser.class, "centrumId = " + user.centrumId.id + " and isActive=1");
+			setAccordionTab(3);
+		  entities.setPageSize(50);
+			renderTemplate("VadGingerUsers/index.html", entities);
+		}
 		else
-			entities = new ModelPaginator(VadGingerUser.class, "isActive=1");
-    setAccordionTab(3);
-    entities.setPageSize(50);
-		renderTemplate("VadGingerUsers/index.html", entities);
+			Application.index();
 	}
 
 	public static void create(VadGingerUser entity) {
