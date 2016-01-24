@@ -104,6 +104,14 @@ public class Activity extends Model {
 	@Column(name="IsActive", nullable=false)
 	@Type(type = "org.hibernate.type.NumericBooleanType")
 	public Boolean isActive;
+
+
+	@Column(name = "Pers")
+	public String pers;
+
+	@Column(name = "Indicatoren")
+	public String indicatoren;
+
 	
 	/*@ManyToOne
 	public VadGingerUser userId;

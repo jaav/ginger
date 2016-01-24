@@ -39,6 +39,11 @@ public class AttendantType extends Model {
 	@Column(name = "Beschrijving")
 	@Lob
 	public String beschrijving;
+
+
+
+	@Column(name = "UsedBy", length = 10)
+	public String usedBy;
 	
 	public String toString() {
 		return this.naam;

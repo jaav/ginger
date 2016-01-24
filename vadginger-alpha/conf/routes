@@ -6,7 +6,6 @@
 GET     /                                       Statics.index
 *       /admin                                  module:crud
 GET     /activity                               Activities.index
-GET     /activity/search						Activities.searchForm
 GET		/sublocations/list						Locationss.list
 GET     /ActivityEvaluvatorss                   ActivityEvaluvatorss.index
 GET     /ActivitySectorss                       ActivitySectorss.index

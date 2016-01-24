@@ -211,6 +211,11 @@ public class Activities extends GingerController {
 			flash.error(Messages.get("scaffold.validation"));
 			render("@create", entity);
 		}
+		StringBuffer indicatoren = new StringBuffer();
+		if(request.params.get("activityIndicators_3A")!=null) indicatoren.append("3A_");
+		if(request.params.get("activityIndicators_3B")!=null) indicatoren.append("3B");
+		if(indicatoren.length()==3)indicatoren.deleteCharAt(2);
+		entity.indicatoren = indicatoren.toString();
 		storeLocation(entity);
 		storeOrganization(entity);
 		entity.isActive = true;

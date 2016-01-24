@@ -1,0 +1,3 @@
+SELECT Target.activityId_id, Target.attendantTypeId_id, User.userId FROM ActivityTargets Target join Activity as A on A.id=Target.activityId_id join AttendantType AT on AT.id = Target.attendantTypeId_id join VadGingerUser User on User.id=A.UserId_id where UPPER(User.userId) like 'VAD%' and Target.attendantTypeId_id = 2;
+
+UPDATE ActivityTargets Target join Activity as A on A.id=Target.activityId_id join AttendantType AT on AT.id = Target.attendantTypeId_id join VadGingerUser User on User.id=A.UserId_id SET Target.attendantTypeId_id = 10 WHERE UPPER(User.userId) like 'VAD%' and Target.attendantTypeId_id = 2;

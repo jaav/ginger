@@ -40,4 +40,8 @@ public class Centrums extends Model {
 	@Type(type = "org.hibernate.type.NumericBooleanType")
 	public Boolean isActive;
 
+	@Column(name="IsRegional", nullable=true)
+	@Type(type = "org.hibernate.type.NumericBooleanType")
+	public Boolean isRegional;
+
 }

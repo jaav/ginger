@@ -1,6 +1,24 @@
 %{user_cur = models.VadGingerUser.find("id is " + session.get("userId")).first();
   	userRole = user_cur.role;
-  	centrumId = user_cur.centrumId;%}
+  	centrumId = user_cur.centrumId;
+    isVad = user_cur.userID.toLowerCase().startsWith("vad");
+    isRegional = user_cur.centrumId.isRegional
+    pressId = 100%}
+<script>
+  var pressId = ${pressId};
+#{if isVad}
+  window.isVad = true;
+#{/if}
+#{else}
+  window.isVad = false;
+#{/else}
+#{if isRegional}
+  window.isRegional = true;
+#{/if}
+#{else}
+  window.isRegional = false;
+#{/else}
+</script>
 
 <div class="row">
   <div class="label">Omschrijving van de activiteit:</div>
@@ -182,6 +200,11 @@
         %{ } }%
      </select></div>
         %{ } }%
+      #{if isVad && it?.id==pressId}
+      <script>
+        $('#${it?.id}cont').html("<div class=\"label\">Over welke media gaat het? (namen)</div><div class='field'><textarea name='entity.pers' rows=\"5\" cols=\"100\" >${entity?.beschrijving}</textarea></div>");
+      </script>
+      #{/if}
     #{/if}
     </span><br>
     <!-- <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it}</option> -->
@@ -196,9 +219,13 @@
       var currentId = $(this).attr('id');
       var currentIdcont = "#" + currentId + "cont";
       if ($input.is(':checked')) {
-        var listLocations = #{jsAction @Sectorss.list(':id')/}
-          $(currentIdcont).load(listLocations({id: currentId}), function() {
-          });
+        if(currentId==pressId && isVad){
+          $(currentIdcont).html("<div class=\"label\">Over welke media gaat het? (namen)</div><div class='field'><textarea name='whatPress' rows=\"5\" cols=\"100\" ></textarea></div>");
+        }
+        else {
+	        var listLocations = #{jsAction @Sectorss.list(':id')/}
+          $(currentIdcont).load(listLocations({id: currentId}), function () {});
+        }
       }
       else {
         $(currentIdcont).html("");
@@ -345,8 +372,8 @@
   <script>
     $(document).ready(function(){
       var currentIdcont = "#atd_type";
-      var listAtdTypes = #{jsAction @AttendantTypes.filledList(':id')/}
-      $(currentIdcont).load(listAtdTypes({id: ${entity.id}}), function() {
+      var listAtdTypes = #{jsAction @AttendantTypes.filledList(':id', ':usedBy')/}
+      $(currentIdcont).load(listAtdTypes({id: ${entity.id}, usedBy: isVad ? 'VAD' : 'NOTVAD'}), function() {
       });
     })
   </script>
@@ -359,8 +386,8 @@
       var currentId = $(this).attr('id');
       var currentIdcont = "#atd_type";
       if ($input.is(':checked')) {
-        var listAtdTypes = #{jsAction @AttendantTypes.list(':id')/}
-          $(currentIdcont).load(listAtdTypes({id: currentId}), function() {
+        var listAtdTypes = #{jsAction @AttendantTypes.list(':id', ':usedBy')/}
+          $(currentIdcont).load(listAtdTypes({id: currentId, usedBy: isVad ? 'VAD' : 'NOTVAD'}), function() {
           });
       }
       else {
@@ -423,16 +450,22 @@
 
    </div>
 
-  <script>
-    $("#activity_type_select").change(
-      function() {
-        $("#hiddenOrg").empty();
-        var selectedActivityType = $("#activity_type_select option:selected").val();
-        var listLocations = #{jsAction @ActivityTypes.list(':id')/}
-          $("#hiddenActType").load(listLocations({id: selectedActivityType}), function() {
-          });
-      });
-  </script>
+    <script>
+      $("#activity_type_select").change(
+        function() {
+          //$("#hiddenOrg").empty();
+          var selectedActivityType = $("#activity_type_select option:selected").val();
+          var listLocations = #{jsAction @ActivityTypes.list(':id', ':usedBy')/}
+            $("#hiddenActType").load(listLocations({id: selectedActivityType, usedBy: isVad ? 'VAD' : 'NOTVAD'}), function () {
+            });
+          if(isRegional && selectedActivityType == 1){
+              $("#hiddenIndType").show()
+          }
+          else{
+            $("#hiddenIndType").hide()
+          }
+        });
+    </script>
 </div>
 <hr>
 

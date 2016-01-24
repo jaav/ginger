@@ -1,7 +1,8 @@
 #{extends 'main.html' /}
 %{user_cur = models.VadGingerUser.find("id is " + session.get("userId")).first();
   	userRole = user_cur.role;
-  	centrumId = user_cur.centrumId;%}
+  	centrumId = user_cur.centrumId;
+    isVad = user_cur.userID.toLowerCase().startsWith("vad");%}
 <div class="content">
 <p>Hoeveel preventieactiviteiten voerde ons centrum uit met de welzijnssector? Wat is het aandeel van coaching in mijn jaaractiviteiten? Deze en andere vragen kan Ginger beantwoorden. Ginger biedt namelijk niet enkel op macroniveau mogelijkheden om een overzicht te geven van de uitgevoerde preventieactiviteiten. Ook op meso- en microniveau is dit mogelijk. Zo kan een registrator of een centrum de eigen ingevoerde data analyseren en aldus een overzicht krijgen. De mogelijkheden zijn legio. Er kan gefilterd worden op tien variabelen, met alle mogelijke combinaties van dien. Hieronder kan je de selectiecriteria ingeven en dan op "Filter uitvoeren” klikken. Zo worden enkel de ingevoerde activiteiten weergegeven die aan de opgegeven selectiecriteria voldoen. Bovendien kan je de filterresultaten naar een tekstbestand exporteren en van daaruit de data in andere bestanden (word, excel, ...) importeren of plakken.</p>
 </div><br />
@@ -137,11 +138,20 @@
 <div class="label">Sector:</div>  
 
   <div class="field">
-        %{ models.Sectors.find("ouder is null and isActive=1").fetch().sort{ it.id }.each() { }%
-        <input id="${it?.id}" name="sector_${it?.id}" type="checkbox" class="chkbx" >  
-        <label class = "choice" for="sector_${it?.id}">${it?.naam}</label>
-		<span class="field" id="${it?.id}cont"></span><br>
-        %{ } }%
+    #{if isVad}
+    %{ models.Sectors.find("ouder is null and isActive=1").fetch().sort{ it.id }.each() { }%
+      <input id="${it?.id}" name="sector_${it?.id}" type="checkbox" class="chkbx" >
+      <label class = "choice" for="sector_${it?.id}">${it?.naam}</label>
+<span class="field" id="${it?.id}cont"></span><br>
+      %{ } }%
+    #{/if}
+    #{else}
+    %{ models.Sectors.find("ouder is null and isActive=1 and id != 104").fetch().sort{ it.id }.each() { }%
+      <input id="${it?.id}" name="sector_${it?.id}" type="checkbox" class="chkbx" >
+      <label class = "choice" for="sector_${it?.id}">${it?.naam}</label>
+<span class="field" id="${it?.id}cont"></span><br>
+      %{ } }%
+    #{/else}
 
         <input name="sector_999" id="sector_999" type="checkbox" class="chkbx" >
         <label class = "choice" for="sector_999">Intersectoraal</label>
