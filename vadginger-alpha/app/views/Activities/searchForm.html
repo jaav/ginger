@@ -2,7 +2,25 @@
 %{user_cur = models.VadGingerUser.find("id is " + session.get("userId")).first();
   	userRole = user_cur.role;
   	centrumId = user_cur.centrumId;
-    isVad = user_cur.userID.toLowerCase().startsWith("vad");%}
+    isVad = user_cur.userID.toLowerCase().startsWith("vad");
+    isRegional = user_cur.centrumId.isRegional
+    pressId = 100%}
+<script>
+  var pressId = ${pressId};
+#{if isVad}
+  window.isVad = true;
+#{/if}
+#{else}
+  window.isVad = false;
+#{/else}
+#{if isRegional}
+  window.isRegional = true;
+#{/if}
+#{else}
+  window.isRegional = false;
+#{/else}
+</script>
+
 <div class="content">
 <p>Hoeveel preventieactiviteiten voerde ons centrum uit met de welzijnssector? Wat is het aandeel van coaching in mijn jaaractiviteiten? Deze en andere vragen kan Ginger beantwoorden. Ginger biedt namelijk niet enkel op macroniveau mogelijkheden om een overzicht te geven van de uitgevoerde preventieactiviteiten. Ook op meso- en microniveau is dit mogelijk. Zo kan een registrator of een centrum de eigen ingevoerde data analyseren en aldus een overzicht krijgen. De mogelijkheden zijn legio. Er kan gefilterd worden op tien variabelen, met alle mogelijke combinaties van dien. Hieronder kan je de selectiecriteria ingeven en dan op "Filter uitvoeren” klikken. Zo worden enkel de ingevoerde activiteiten weergegeven die aan de opgegeven selectiecriteria voldoen. Bovendien kan je de filterresultaten naar een tekstbestand exporteren en van daaruit de data in andere bestanden (word, excel, ...) importeren of plakken.</p>
 </div><br />
@@ -90,6 +108,9 @@
   <div class="field">
         <select name="org_id" id="organizationSelect">
           <option value="">Selecteer een organisatie</option>
+          #{if isVad}
+            <option value="-1">Niet VAD als organisatie</option>
+          #{/if}
           #{if userRole.compareTo(models.RoleType.ORG_ADMIN) <=0}
              
         %{ models.Organisaties.find("ouder is null and isActive=1 and centrumId="+centrumId.id).fetch().sort{ it.toString() }.each() { }%
@@ -271,8 +292,8 @@
       function() {
         $("#hiddenOrg").empty();
         var selectedActivityType = $("#activity_type_select option:selected").val();
-        var listLocations = #{jsAction @ActivityTypes.list(':id')/}
-          $("#hiddenActType").load(listLocations({id: selectedActivityType}), function() {
+        var listLocations = #{jsAction @ActivityTypes.list(':id', ':usedBy')/}
+          $("#hiddenActType").load(listLocations({id: selectedActivityType, usedBy: isVad ? 'VAD' : 'NOTVAD'}), function() {
           });
       });
   </script>
@@ -290,8 +311,8 @@
         var currentId = $(this).attr('id');
         var currentIdcont = "#atd_type";
   		  if($input.is(':checked')){
-  		  	var listAtdTypes = #{jsAction @AttendantTypes.nList(':id')/}
-          $(currentIdcont).load(listAtdTypes({id: currentId}), function(){});
+  		  	var listAtdTypes = #{jsAction @AttendantTypes.nList(':id', ':usedBy')/}
+          $(currentIdcont).load(listAtdTypes({id: currentId, usedBy: isVad ? 'VAD' : 'NOTVAD'}), function(){});
         }
         else { $(currentIdcont).html(""); }
   		});

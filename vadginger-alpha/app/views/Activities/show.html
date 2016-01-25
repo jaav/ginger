@@ -1,4 +1,6 @@
 #{extends 'main.html' /}
+%{pressId = 100
+	overlegType = 1}%
 <div class="show">
 <h2>Detail Activiteit</h2>
 
@@ -119,6 +121,9 @@
         #{/if}
         #{else}
             <span class="value">${ia.sectorId} </span>
+            #{if ia.sectorId.id==pressId}
+              (${entity.pers})
+            #{/if}
         #{/else}
 		  </li>
 			#{/list}
@@ -134,7 +139,7 @@
 		<ul>
 		<li>
      		#{list items:atj, as:'ia'}
-     		#{if ia.activityTypeId.ouder!=null} 
+     		#{if ia.activityTypeId.ouder!=null}
      		<span class="value">${ia.activityTypeId.ouder} </span>
      		#{/if}
      		<ul><li>
@@ -145,6 +150,46 @@
 		</ul>
 		</span>
 	</div>
+
+
+	#{list items:atj, as:'ia'}
+		%{hasWrittenIndicators = false}%
+		#{if ia.activityTypeId.ouder!=null && ia.activityTypeId.ouder.id == overlegType && !hasWrittenIndicators}
+			<div class="row">
+				<span class="elem">
+					Indicatoren van de Vlaamse overheid:
+				</span>
+				<span class="value">
+					<ul>
+						#{if entity.indicatoren == '3A_3B'}
+							<li>Indicator 3A: overleg met (inter)gemeentelijke preventiewerkers uit de regio</li>
+							<li>Indicator 3B: sectoraal of intersectoraal overleg</li>
+						#{/if}
+						#{elseif  entity.indicatoren == '3A'}
+							<li>Indicator 3A: overleg met (inter)gemeentelijke preventiewerkers uit de regio</li>
+						#{/elseif}
+						#{elseif  entity.indicatoren == '3B'}
+							<li>Indicator 3B: sectoraal of intersectoraal overleg</li>
+						#{/elseif}
+					</ul>
+				</span>
+			</div>
+			%{hasWrittenIndicators = true}%
+	  #{/if}
+	  #{if ia.activityTypeId.id == overlegType && !hasWrittenIndicators}
+		  <div class="row">
+				<span class="elem">
+					Indicatoren van de Vlaamse overheid:
+				</span>
+				<span class="value">
+					<ul>
+						<li>${entity.indicatoren}</li>
+					</ul>
+				</span>
+			</div>
+	    %{hasWrittenIndicators = true}%
+	  #{/if}
+	#{/list}
 
   
 	<div class="row">

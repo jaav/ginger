@@ -406,6 +406,12 @@ public class Activities extends GingerController {
 			render("@edit", entity);
 		}
 
+		StringBuffer indicatoren = new StringBuffer();
+		if(request.params.get("activityIndicators_3A")!=null) indicatoren.append("3A_");
+		if(request.params.get("activityIndicators_3B")!=null) indicatoren.append("3B");
+		if(indicatoren.length()==3)indicatoren.deleteCharAt(2);
+		entity.indicatoren = indicatoren.toString();
+
 
 		//entity.save();
 		storeOrganization(entity);
@@ -730,18 +736,34 @@ private static void getActivityByOrganization(ArrayList<String> whereClause, Str
 	   if (orgId==null)
 		   orgId = getParam("org_id");
 	   if (orgId!=null&&!orgId.trim().equalsIgnoreCase("")) {
-		   List<Organisaties> orgs = models.Organisaties.find("isActive=1 and ouder="+orgId).fetch();
-		   String sub_org_ids = "";
-		   for (models.Organisaties org: orgs) {
-			   sub_org_ids += org.id + ",";
+		   if(orgId.equals("-1")){
+			   List<Organisaties> orgs = models.Organisaties.find("isActive=1 and ouder in (30, 46, 330, 351, 352, 371, 432, 450, 545, 743, 756, 1084, 1179, 2287, 2295, 4433)").fetch();
+			   String sub_org_ids = "";
+			   for (models.Organisaties org: orgs) {
+				   sub_org_ids += org.id + ", ";
+						   //"30, 46, 330, 351, 352, 371, 432, 450, 545, 743, 756, 1084, 1179, 2287, 2295, 4433,";
+			   }
+			   sub_org_ids += "30, 46, 330, 351, 352, 371, 432, 450, 545, 743, 756, 1084, 1179, 2287, 2295, 4433";
+			   //System.out.println(":: sub_org_ids = " + sub_org_ids);
+			   whereClause.add("act.organizationId not in ("+sub_org_ids+")");
+
+
 		   }
-		   sub_org_ids += orgId;
-		   //System.out.println(":: sub_org_ids = " + sub_org_ids);
-		   whereClause.add("act.organizationId in ("+sub_org_ids+")");
-		   //System.out.println("::: Org Id = " + orgId);
-		   /*models.Organisaties org = models.Organisaties.find("id is " + orgId).first();
-		   List<Activity> acts = Activity.find("byOrganizationId", org).fetch();
-		   activities.addAll(acts);*/
+		   else{
+			   List<Organisaties> orgs = models.Organisaties.find("isActive=1 and ouder="+orgId).fetch();
+			   String sub_org_ids = "";
+			   for (models.Organisaties org: orgs) {
+				   sub_org_ids += org.id + ",";
+			   }
+			   sub_org_ids += orgId;
+			   //System.out.println(":: sub_org_ids = " + sub_org_ids);
+			   whereClause.add("act.organizationId in ("+sub_org_ids+")");
+			   //System.out.println("::: Org Id = " + orgId);
+			   /*models.Organisaties org = models.Organisaties.find("id is " + orgId).first();
+			   List<Activity> acts = Activity.find("byOrganizationId", org).fetch();
+			   activities.addAll(acts);*/
+
+		   }
 	   }
 }
 

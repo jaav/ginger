@@ -2,7 +2,7 @@
   	userRole = user_cur.role;
   	centrumId = user_cur.centrumId;
     isVad = user_cur.userID.toLowerCase().startsWith("vad");
-    isRegional = user_cur.centrumId.isRegional
+    isCentreRegional = user_cur.centrumId.isRegional
     pressId = 100%}
 <script>
   var pressId = ${pressId};
@@ -12,11 +12,11 @@
 #{else}
   window.isVad = false;
 #{/else}
-#{if isRegional}
-  window.isRegional = true;
+#{if isCentreRegional}
+  window.isCentreRegional = true;
 #{/if}
 #{else}
-  window.isRegional = false;
+  window.isCentreRegional = false;
 #{/else}
 </script>
 
@@ -425,8 +425,7 @@
       }
 
       }%
-      <option value="${it?.id}"
-      ${selected ? 'selected'.raw() : ''}>${it.naam}</option>
+      <option value="${it?.id}" ${selected ? 'selected'.raw() : ''}>${it.naam}</option>
       %{ } }%
     </select>
   </div>
@@ -450,19 +449,55 @@
 
    </div>
 
+    <div class="field" id="hiddenIndType" style="display: none;">
+      <div class="label">In welke indicatoren van de Vlaamse overheid past de activiteit?</div>
+      <div class="field">
+        <input id="activityIndicators_3A" name="activityIndicators_3A" type="checkbox" title="Activity indicator">
+        <label class="choice" for="activityIndicators_3A">Indicator 3A: overleg met (inter)gemeentelijke preventiewerkers uit de regio</label>
+        <br />
+        <input id="activityIndicators_3B" name="activityIndicators_3B" type="checkbox" title="Activity indicator">
+        <label class="choice" for="activityIndicators_3A">Indicator 3B: sectoraal of intersectoraal overleg</label>
+      </div>
+    </div>
+
+	  <script>
+	    $(document).ready(function(){
+          //$("#hiddenOrg").empty();
+          var selectedActivityType = $("#activity_type_select option:selected").val();
+          if(isCentreRegional && selectedActivityType == 1){
+            $("#hiddenIndType").show();
+            #{if entity.indicatoren == '3A_3B'}
+              $('#activityIndicators_3A').prop('checked', true);
+              $('#activityIndicators_3B').prop('checked', true);
+            #{/if}
+            #{elseif entity.indicatoren == '3A'}
+              $('#activityIndicators_3A').prop('checked', true);
+            #{/elseif}
+            #{elseif entity.indicatoren == '3B'}
+              $('#activityIndicators_3B').prop('checked', true);
+            #{/elseif}
+          }
+          else{
+            $("#hiddenIndType").hide();
+          }
+	    })
+	  </script>
+
     <script>
       $("#activity_type_select").change(
         function() {
           //$("#hiddenOrg").empty();
           var selectedActivityType = $("#activity_type_select option:selected").val();
-          var listLocations = #{jsAction @ActivityTypes.list(':id', ':usedBy')/}
-            $("#hiddenActType").load(listLocations({id: selectedActivityType, usedBy: isVad ? 'VAD' : 'NOTVAD'}), function () {
-            });
-          if(isRegional && selectedActivityType == 1){
-              $("#hiddenIndType").show()
+	        var listLocations = #{jsAction @ActivityTypes.list(':id', ':usedBy')/}
+	          $("#hiddenActType").load(listLocations({id: selectedActivityType, usedBy: isVad ? 'VAD' : 'NOTVAD'}), function () {
+	          });
+          if(selectedActivityType != 1){
+	          $('#activityIndicators_3A').prop('checked', false);
+            $('#activityIndicators_3B').prop('checked', false);
+            $("#hiddenIndType").hide();
           }
-          else{
-            $("#hiddenIndType").hide()
+	        else if(isCentreRegional && selectedActivityType == 1) {
+	          $("#hiddenIndType").show();
           }
         });
     </script>
