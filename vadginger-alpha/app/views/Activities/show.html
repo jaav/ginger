@@ -1,5 +1,7 @@
 #{extends 'main.html' /}
-%{pressId = 100
+%{
+	thisPress = models.Sectors.find("naam is 'Pers'").first();
+	pressId = thisPress.id
 	overlegType = 1}%
 <div class="show">
 <h2>Detail Activiteit</h2>

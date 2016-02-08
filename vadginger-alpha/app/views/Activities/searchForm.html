@@ -1,10 +1,11 @@
 #{extends 'main.html' /}
 %{user_cur = models.VadGingerUser.find("id is " + session.get("userId")).first();
+    thisPress = models.Sectors.find("naam is 'Pers'").first();
   	userRole = user_cur.role;
   	centrumId = user_cur.centrumId;
     isVad = user_cur.userID.toLowerCase().startsWith("vad");
     isRegional = user_cur.centrumId.isRegional
-    pressId = 100%}
+    pressId = thisPress.id%}
 <script>
   var pressId = ${pressId};
 #{if isVad}
@@ -167,7 +168,7 @@
       %{ } }%
     #{/if}
     #{else}
-    %{ models.Sectors.find("ouder is null and isActive=1 and id != 104").fetch().sort{ it.id }.each() { }%
+    %{ models.Sectors.find("ouder is null and isActive=1 and id != "+pressId).fetch().sort{ it.id }.each() { }%
       <input id="${it?.id}" name="sector_${it?.id}" type="checkbox" class="chkbx" >
       <label class = "choice" for="sector_${it?.id}">${it?.naam}</label>
 <span class="field" id="${it?.id}cont"></span><br>

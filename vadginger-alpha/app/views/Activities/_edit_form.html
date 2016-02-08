@@ -1,9 +1,10 @@
 %{user_cur = models.VadGingerUser.find("id is " + session.get("userId")).first();
+thisPress = models.Sectors.find("naam is 'Pers'").first();
   	userRole = user_cur.role;
   	centrumId = user_cur.centrumId;
     isVad = user_cur.userID.toLowerCase().startsWith("vad");
     isCentreRegional = user_cur.centrumId.isRegional
-    pressId = 100%}
+    pressId = thisPress.id%}
 <script>
   var pressId = ${pressId};
 #{if isVad}
@@ -202,7 +203,7 @@
         %{ } }%
       #{if isVad && it?.id==pressId}
       <script>
-        $('#${it?.id}cont').html("<div class=\"label\">Over welke media gaat het? (namen)</div><div class='field'><textarea name='entity.pers' rows=\"5\" cols=\"100\" >${entity?.beschrijving}</textarea></div>");
+        $('#${it?.id}cont').html("<div class=\"label\">Over welke media gaat het? (namen)</div><div class='field'><textarea name='entity.pers' rows=\"5\" cols=\"100\" >${entity?.pers}</textarea></div>");
       </script>
       #{/if}
     #{/if}

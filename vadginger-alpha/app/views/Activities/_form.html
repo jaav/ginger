@@ -1,10 +1,12 @@
 %{user_cur = models.VadGingerUser.find("id is " + session.get("userId")).first();
+thisPress = models.Sectors.find("naam is 'Pers'").first();
   	userRole = user_cur.role;
   	centrumId = user_cur.centrumId;
     isVad = user_cur.userID.toLowerCase().startsWith("vad");
-    isRegional = user_cur.centrumId.isRegional%}
+    isRegional = user_cur.centrumId.isRegional
+    pressId = thisPress.id%}
 <script>
-  var pressId = 100;
+  var pressId = ${pressId};
 #{if isVad}
   window.isVad = true;
 #{/if}
