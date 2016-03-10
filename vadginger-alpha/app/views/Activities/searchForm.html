@@ -111,6 +111,7 @@
           <option value="">Selecteer een organisatie</option>
           #{if isVad}
             <option value="-1">Niet VAD als organisatie</option>
+            <option value="-2">Enkel netwerken</option>
           #{/if}
           #{if userRole.compareTo(models.RoleType.ORG_ADMIN) <=0}
              

@@ -59,10 +59,10 @@ public class Locationss extends GingerController {
   public static void centrumClustersIndex() {
     VadGingerUser user = models.VadGingerUser.find("id is " + session.get("userId")).first();
     //String query = "select loc.naam from Locations loc, CityClusterJunction ccj where ccj.cityId = loc and loc.ouder is null and loc.isCluster=1";//ccj.clusterId_id = 2908;";
-    String query = "ouder is null and isCluster=1 and centrumId=" + user.centrumId.id + " order by naam";
+    String query = "(ouder=1009 or ouder is null) and isActive=1 and isCluster=1 and centrumId=" + user.centrumId.id + " order by naam";
 
     List<Locations> entities = Locations.find(query).fetch();
-    for (Locations entity : entities) {
+    /*for (Locations entity : entities) {
       StringBuilder sb = new StringBuilder();
       String namesquery = "select loc from CityClusterJunction ccj, Locations loc where ccj.clusterId = " + entity.id + " and ccj.cityId=loc";
       List<Locations> cities = Locations.find(namesquery).fetch();
@@ -70,7 +70,7 @@ public class Locationss extends GingerController {
         sb.append(city.naam).append(", ");
       }
       entity.cities = sb.toString();
-    }
+    }*/
     /*ModelPaginator entities = new ModelPaginator(Locations.class, query);
       entities.setPageSize(20);*/
     setAccordionTab(3);

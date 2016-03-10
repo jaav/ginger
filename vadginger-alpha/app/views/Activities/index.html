@@ -1,5 +1,17 @@
 #{extends 'main.html' /}
-
+%{
+user_cur = models.VadGingerUser.find("id is " + session.get("userId")).first();
+isVad = user_cur.userID.toLowerCase().startsWith("vad");
+%}
+<script>
+  var pressId = ${pressId};
+#{if isVad}
+  window.isVad = true;
+#{/if}
+#{else}
+  window.isVad = false;
+#{/else}
+</script>
 <h2>
   #{if count >= 0}${count} activiteiten gevonden#{/if}
   #{else}Activiteiten#{/else}
@@ -21,7 +33,10 @@
 				<th><a href="@{Activities.index()}?orderby=totalParticipants&orderhow=${params.orderby=='totalParticipants'&&params.orderhow=='asc' ? 'desc':'asc'}${allowExport ? '&filter=true':''}" class="sorter">Deel-nemers</a></th>
 				<th><a href="@{Activities.index()}?orderby=locationId.naam&orderhow=${params.orderby=='locationId.naam'&&params.orderhow=='asc' ? 'desc':'asc'}${allowExport ? '&filter=true':''}" class="sorter">Locatie</a></th>
 				<th><a href="@{Activities.index()}?orderby=userId.userID&orderhow=${params.orderby=='userId.userID'&&params.orderhow=='asc' ? 'desc':'asc'}${allowExport ? '&filter=true':''}" class="sorter">Gebr.</a></th>
-			  <th><!-- actions --></th>
+        #{if isVad}
+        <th><a href="@{Activities.index()}?orderby=pers&orderhow=${params.orderby=='pers'&&params.orderhow=='asc' ? 'desc':'asc'}${allowExport ? '&filter=true':''}" class="sorter">Pers</a></th>
+        #{/if}
+				<th><!-- actions --></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -43,6 +58,9 @@
 					<td>${entity.totalParticipants}</td>
 					<td>${entity.locationId}</td>
 					<td>${entity.userId}</td>
+          #{if isVad}
+					<td>${entity.pers}</td>
+          #{/if}
           <td>
             <table class="actiontable"><tr>
               <td><a href="@{Activities.show(entity.id)}" title="Bekijken" name="Bekijken"><div class="viewer actionbutton"></div></a></td>

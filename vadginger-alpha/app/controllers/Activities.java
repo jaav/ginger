@@ -222,6 +222,7 @@ public class Activities extends GingerController {
 		storeOrganization(entity);
 		entity.isActive = true;
 		entity.centrumId = user.centrumId;
+		if(entity.pers != null) entity.pers = entity.pers.replaceAll("[\n\r]", " - ");
 		getDate(entity);
 		entity.save();
 		storeEvaluvationsAndEvaluvators(entity);
@@ -432,6 +433,7 @@ public class Activities extends GingerController {
 			entity.evaluvated = false;
 			entity.reported = false;
     }
+		if(entity.pers != null) entity.pers = entity.pers.replaceAll("[\n\r]", " - ");
 		entity.save();
 		deletedAllRelationships(entity);
 		storeEvaluvationsAndEvaluvators(entity);
@@ -749,6 +751,11 @@ private static void getActivityByOrganization(ArrayList<String> whereClause, Str
 			   //System.out.println(":: sub_org_ids = " + sub_org_ids);
 			   whereClause.add("act.organizationId not in ("+sub_org_ids+")");
 
+
+		   }
+		   else if(orgId.equals("-2")){
+			   //System.out.println(":: sub_org_ids = " + sub_org_ids);
+			   whereClause.add("act.organizationId.organisatieNetwerk = 'Net'");
 
 		   }
 		   else{
