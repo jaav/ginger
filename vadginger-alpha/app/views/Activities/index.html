@@ -4,7 +4,9 @@ user_cur = models.VadGingerUser.find("id is " + session.get("userId")).first();
 isVad = user_cur.userID.toLowerCase().startsWith("vad");
 %}
 <script>
-  var pressId = ${pressId};
+#{if pressId}
+var pressId = ${pressId};
+#{/if}
 #{if isVad}
   window.isVad = true;
 #{/if}

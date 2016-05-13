@@ -115,7 +115,7 @@
           #{/if}
           #{if userRole.compareTo(models.RoleType.ORG_ADMIN) <=0}
              
-        %{ models.Organisaties.find("ouder is null and isActive=1 and centrumId="+centrumId.id).fetch().sort{ it.toString() }.each() { }%
+        %{ models.Organisaties.find("ouder is null and isActive=1 and centrumId="+centrumId.id+ "order by naam").fetch().each() { }%
           
           %{
             selected = false;
